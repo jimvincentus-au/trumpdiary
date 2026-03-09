@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase1_window_package.schema.json",
+  "title": "Trump Diary Phase 1 Discovery Window Package",
+  "description": "A package of overlapping weekly development allocator files used for year-wide thread discovery.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "package_type",
+    "window",
+    "build",
+    "source_manifest",
+    "weeks"
+  ],
+  "properties": {
+    "schema_name": {
+      "type": "string",
+      "const": "phase1_window_package"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "package_type": {
+      "type": "string",
+      "const": "thread_discovery_window"
+    },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "window_id",
+        "start_week",
+        "end_week",
+        "week_count",
+        "window_size",
+        "stride",
+        "dormancy_window",
+        "week_numbers"
+      ],
+      "properties": {
+        "window_id": {
+          "type": "string",
+          "pattern": "^window_[0-9]{3}$"
+        },
+        "start_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "week_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "window_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "stride": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "dormancy_window": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "week_numbers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "created_by",
+        "program_name",
+        "program_version"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "program_name": {
+          "type": "string"
+        },
+        "program_version": {
+          "type": "string"
+        },
+        "git_commit": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        }
+      }
+    },
+    "source_manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_root",
+        "file_count",
+        "files"
+      ],
+      "properties": {
+        "source_root": {
+          "type": "string"
+        },
+        "file_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "week_number",
+              "path",
+              "filename"
+            ],
+            "properties": {
+              "week_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "path": {
+                "type": "string"
+              },
+              "filename": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-fA-F0-9]{64}$"
+              },
+              "mtime_utc": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "size_bytes": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "weeks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/week_entry"
+      }
+    }
+  },
+  "$defs": {
+    "week_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week_number",
+        "source_file",
+        "allocator_payload"
+      ],
+      "properties": {
+        "week_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source_file": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "filename"
+          ],
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "filename": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-fA-F0-9]{64}$"
+            },
+            "mtime_utc": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "size_bytes": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "allocator_payload": {
+          "type": "object",
+          "description": "The raw or normalized contents of development_allocator_weekN.json."
+        }
+      }
+    }
+  }
+}

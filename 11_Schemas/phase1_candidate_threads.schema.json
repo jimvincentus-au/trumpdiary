@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase1_candidate_threads.schema.json",
+  "title": "Trump Diary Phase 1 Candidate Threads",
+  "description": "LLM-produced candidate continuity threads derived from one overlapping discovery window of weekly development allocator files.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "package_type",
+    "source_window",
+    "build",
+    "candidate_threads"
+  ],
+  "properties": {
+    "schema_name": {
+      "type": "string",
+      "const": "phase1_candidate_threads"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "package_type": {
+      "type": "string",
+      "const": "thread_discovery_candidates"
+    },
+    "source_window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "window_id",
+        "start_week",
+        "end_week",
+        "week_count",
+        "week_numbers"
+      ],
+      "properties": {
+        "window_id": {
+          "type": "string",
+          "pattern": "^window_[0-9]{3}$"
+        },
+        "start_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "week_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "week_numbers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "created_by",
+        "model"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        }
+      }
+    },
+    "candidate_threads": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/candidate_thread"
+      }
+    },
+    "notes_on_window": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rejected_or_folded_candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rejected_candidate"
+      }
+    }
+  },
+  "$defs": {
+    "candidate_thread": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "canonical_name",
+        "short_name",
+        "description",
+        "scope_level",
+        "supporting_weeks",
+        "supporting_developments",
+        "aliases",
+        "inclusion_notes",
+        "boundary_notes"
+      ],
+      "properties": {
+        "candidate_id": {
+          "type": "string",
+          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+        },
+        "canonical_name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "short_name": {
+          "type": "string",
+          "minLength": 3
+        },
+        "description": {
+          "type": "string",
+          "minLength": 10
+        },
+        "scope_level": {
+          "type": "string",
+          "enum": ["super_thread", "thread", "sub_thread"]
+        },
+        "supporting_weeks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        },
+        "supporting_developments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/supporting_development"
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "inclusion_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusion_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "boundary_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cand_[A-Z0-9_]{3,80}$"
+          },
+          "uniqueItems": true
+        },
+        "possible_parent_candidate_id": {
+          "type": "string",
+          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+        },
+        "possible_child_candidate_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^cand_[A-Z0-9_]{3,80}$"
+          },
+          "uniqueItems": true
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "continuity_assessment": {
+          "type": "string",
+          "enum": ["emergent", "recurring", "sustained", "unclear"]
+        },
+        "merge_suggestions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "split_suggestions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "supporting_development": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week_number",
+        "development_title"
+      ],
+      "properties": {
+        "week_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "development_id": {
+          "type": "string"
+        },
+        "development_title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "role": {
+          "type": "string",
+          "enum": ["primary", "secondary", "contextual"]
+        },
+        "why_it_supports_thread": {
+          "type": "string"
+        }
+      }
+    },
+    "rejected_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "reason"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "folded_into_candidate_id": {
+          "type": "string",
+          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+        }
+      }
+    }
+  }
+}

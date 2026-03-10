@@ -1,0 +1,1167 @@
+{
+  "schema_name": "phase1_candidate_threads",
+  "schema_version": "1.0",
+  "package_type": "thread_discovery_candidates",
+  "source_window": {
+    "window_id": "window_002",
+    "start_week": 5,
+    "end_week": 14,
+    "week_count": 10,
+    "week_numbers": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "build": {
+    "created_at": "2026-03-09T00:00:00Z",
+    "created_by": "OpenAI_API_Assistant",
+    "model": "gpt-5.4",
+    "run_id": "window_002_phase1_discovery",
+    "prompt_version": "Trump_Diary_Phase1_Discovery_v1"
+  },
+  "candidate_threads": [
+    {
+      "candidate_id": "cand_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through DOGE, mass layoffs, and politicized restructuring",
+      "short_name": "Administrative state capture",
+      "description": "A recurring pattern in which Trump, DOGE, and allied appointees hollow out agencies, centralize operational control, purge staff, weaken internal oversight, and redirect public functions toward loyalty, privatization, and executive command.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D1",
+          "development_title": "DOGE-Driven Purge Reshapes the Federal Workforce and Public Services",
+          "role": "primary",
+          "why_it_supports_thread": "Introduces DOGE as a parallel power center driving layoffs, downsizing, and service degradation across federal agencies."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D1",
+          "development_title": "Musk’s DOGE tightens control over federal money, data, and the civil service",
+          "role": "primary",
+          "why_it_supports_thread": "Shows DOGE consolidating authority over payments, staffing, and data access while courts begin limited resistance."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D2",
+          "development_title": "The federal bureaucracy is hollowed out and repurposed toward loyalty and privatization",
+          "role": "primary",
+          "why_it_supports_thread": "Directly frames mass layoffs, closure of offices, and governance changes as a repurposing of the professional civil service."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D1",
+          "development_title": "Trump centralizes power through sweeping executive orders and DOGE-driven state restructuring",
+          "role": "primary",
+          "why_it_supports_thread": "Connects DOGE-led hollowing out of agencies to broader executive centralization."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D5",
+          "development_title": "DOGE’s austerity campaign and Musk’s messaging reshape the federal footprint while obscuring the true costs",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds the fiscal and messaging dimension of DOGE-driven shrinkage and obscured public costs."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D5",
+          "development_title": "Administrative state hollowed out and repurposed through DOGE, agency purges, and privatization",
+          "role": "primary",
+          "why_it_supports_thread": "Explicitly captures agency purges, DOGE access, privatization, and reassignment of state functions."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D5",
+          "development_title": "Civil service, unions, and core federal agencies come under structural attack",
+          "role": "primary",
+          "why_it_supports_thread": "Shows continuation through agency dismantling, anti-union action, and weakening service capacity."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D2",
+          "development_title": "Administrative state hollowed and outsourced: HHS, EPA, USAID, and DOGE-driven restructuring",
+          "role": "primary",
+          "why_it_supports_thread": "Demonstrates the spread of the pattern into health, science, environment, and foreign-aid bureaucracy."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D6",
+          "development_title": "Administrative state hollowed out and repurposed for private profit and ideological control",
+          "role": "primary",
+          "why_it_supports_thread": "Links cuts and restructurings to both privatized gain and ideological steering."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D7",
+          "development_title": "Civil service, security apparatus, and civil society are politicized and brought to heel",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds the personnel-control dimension through at-will categories, loyalty enforcement, and leak policing."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D5",
+          "development_title": "Executive agencies are centralized, captured, and outsourced to loyalists and private allies",
+          "role": "primary",
+          "why_it_supports_thread": "Extends the thread into agency capture, contractor favoritism, and loyalist control of state systems."
+        }
+      ],
+      "aliases": [
+        "DOGE-driven state restructuring",
+        "civil-service purge",
+        "bureaucratic hollowing",
+        "agency capture and privatization",
+        "federal workforce purge",
+        "state restructuring via DOGE"
+      ],
+      "inclusion_notes": [
+        "Include DOGE-led layoffs, payment/data centralization, office closures, anti-union restructuring, and loyalist personnel changes.",
+        "Include capture or dismantling of agencies where the underlying pattern is weakening neutral state capacity and redirecting it toward executive or private control.",
+        "Include outsourcing and contractor favoritism when tied to state-capacity erosion."
+      ],
+      "exclusion_notes": [
+        "Exclude purely ideological content-control actions unless they are primarily about agency restructuring.",
+        "Exclude standalone court fights unless they directly concern the restructuring/purge machinery.",
+        "Exclude crony-capitalist enrichment stories unless they are clearly tied to capture of an agency or administrative function."
+      ],
+      "boundary_notes": [
+        "Distinct from cand_EXECUTIVE_POWER_AND_CHECKS, which centers separation-of-powers conflict rather than internal state restructuring.",
+        "Distinct from cand_CRONYISM_PRIVATE_STATE_FUSION, which centers enrichment and private patronage rather than bureaucracy hollowing as such.",
+        "Related to cand_INFO_CONTROL_AND_RECORD_ERASURE when transparency is reduced to shield restructuring."
+      ],
+      "related_candidate_ids": [
+        "cand_EXECUTIVE_POWER_AND_CHECKS",
+        "cand_CRONYISM_PRIVATE_STATE_FUSION",
+        "cand_INFO_CONTROL_AND_RECORD_ERASURE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [
+        "cand_DOGE_DATA_AND_PAYMENTS_CONTROL"
+      ],
+      "confidence": 0.98,
+      "continuity_assessment": "sustained",
+      "merge_suggestions": [
+        "Likely merge later with similar candidates named 'DOGE/civil-service purge', 'bureaucratic hollowing', or 'state capture via layoffs and privatization'.",
+        "May absorb narrower DOGE-specific subthreads if later windows do not keep them distinct."
+      ],
+      "split_suggestions": [
+        "Could later split a narrower sub-thread around DOGE control of payments/data systems if that pattern continues independently of layoffs."
+      ]
+    },
+    {
+      "candidate_id": "cand_EXECUTIVE_POWER_AND_CHECKS",
+      "canonical_name": "Executive power expansion through emergency claims, unilateral action, and defiance of checks",
+      "short_name": "Executive overreach and defiance",
+      "description": "A recurring pattern in which Trump uses executive orders, emergency rationales, funding freezes, foreign-policy unilateralism, and direct resistance to courts or Congress to centralize authority and weaken institutional checks.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D2",
+          "development_title": "Executive Power Sidesteps Congress and Courts to Centralize Control",
+          "role": "primary",
+          "why_it_supports_thread": "Early clear statement of unilateral control over spending, regulation, and independent agencies."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D5",
+          "development_title": "Executive power defies oversight at home and reorients foreign policy abroad",
+          "role": "primary",
+          "why_it_supports_thread": "Shows use of pardons, funding freezes, and unilateral diplomacy against oversight constraints."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D1",
+          "development_title": "Executive power sidelines Congress on foreign aid, war powers, and legal accountability",
+          "role": "primary",
+          "why_it_supports_thread": "Demonstrates unilateral action in foreign aid, arms transfers, and legal self-protection."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D1",
+          "development_title": "Trump centralizes power through sweeping executive orders and DOGE-driven state restructuring",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds the broader executive-order framework behind state restructuring."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D2",
+          "development_title": "Trump escalates a direct confrontation with the judiciary over deportations",
+          "role": "primary",
+          "why_it_supports_thread": "Centers attacks on judicial authority and attempts to narrow court reach over executive action."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D1",
+          "development_title": "Alien Enemies Act mass deportations defy courts and normalize emergency rule",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds emergency-rule logic and direct defiance of court orders."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D3",
+          "development_title": "Law becomes a weapon: Trump targets disfavored law firms, judges, and civil servants",
+          "role": "secondary",
+          "why_it_supports_thread": "Shows executive retaliation against legal counterweights and threats to courts."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D1",
+          "development_title": "Emergency tariff regime lets Trump seize control of trade policy despite market shock and partial pushback",
+          "role": "primary",
+          "why_it_supports_thread": "Expands the pattern into trade policy through emergency powers and bypass of Congress."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D1",
+          "development_title": "Tariff emergency cements one-man economic rule and triggers chaotic global backlash",
+          "role": "primary",
+          "why_it_supports_thread": "Reinforces economic emergency rule as a tool of personalized executive governance."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D5",
+          "development_title": "Executive power expands through militarization, faith politics, and personal spectacle",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds militarization, symbolic power, and norm-testing around term limits and personal rule."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D1",
+          "development_title": "Abrego García and Alien Enemies Act cases expose open executive defiance of the courts",
+          "role": "primary",
+          "why_it_supports_thread": "Displays overt executive treatment of court orders as optional in immigration enforcement."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D1",
+          "development_title": "White House escalates confrontation with courts over immigration and sanctuary policy",
+          "role": "primary",
+          "why_it_supports_thread": "Continues direct resistance to judicial rulings and constitutional confrontation."
+        }
+      ],
+      "aliases": [
+        "executive overreach",
+        "one-man rule",
+        "emergency governance",
+        "unilateral executive control",
+        "defiance of courts and Congress",
+        "presidential power grab"
+      ],
+      "inclusion_notes": [
+        "Include emergency declarations, impoundment-like spending freezes, unilateral foreign-policy actions, and direct court defiance.",
+        "Include attacks on judges or institutional checks when they are tied to assertion of executive supremacy.",
+        "Include policy areas from trade to immigration where the common pattern is bypassing or degrading checks and balances."
+      ],
+      "exclusion_notes": [
+        "Exclude routine executive actions not tied to bypassing checks.",
+        "Exclude law-enforcement weaponization when the central pattern is selective punishment rather than executive supremacy.",
+        "Exclude pure administrative restructuring unless the emphasis is on constitutional or interbranch conflict."
+      ],
+      "boundary_notes": [
+        "Overlaps with cand_ADMIN_STATE_CAPTURE but focuses on constitutional power concentration rather than bureaucratic hollowing.",
+        "Overlaps with cand_IMMIGRATION_AS_CONTROL where emergency powers are used in immigration; immigration-specific belonging logic belongs there.",
+        "Related to cand_WEAPONIZED_LAW_AND_JUSTICE when courts and prosecutors become targets of retaliatory executive power."
+      ],
+      "related_candidate_ids": [
+        "cand_ADMIN_STATE_CAPTURE",
+        "cand_IMMIGRATION_AS_CONTROL",
+        "cand_WEAPONIZED_LAW_AND_JUSTICE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [
+        "cand_EMERGENCY_RULE_IN_IMMIGRATION",
+        "cand_EMERGENCY_RULE_IN_TRADE"
+      ],
+      "confidence": 0.96,
+      "continuity_assessment": "sustained",
+      "merge_suggestions": [
+        "Likely merge with later-window labels such as 'emergency governance', 'executive unilateralism', or 'separation-of-powers erosion'.",
+        "Could subsume narrower tariff-emergency or deportation-defiance labels if those remain manifestations of the same governing method."
+      ],
+      "split_suggestions": [
+        "Could later split into separate sub-threads for emergency economic powers and direct judicial defiance if both remain dense and distinct."
+      ]
+    },
+    {
+      "candidate_id": "cand_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration and citizenship as instruments of coercion, stratified belonging, and dissent control",
+      "short_name": "Immigration as control",
+      "description": "A sustained thread in which immigration law, detention, deportation, status revocation, and citizenship rules are used to create a hierarchy of belonging, punish disfavored groups, and chill activism and public participation.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D4",
+          "development_title": "Immigration and Citizenship Policy Harden Into a Tiered System of Rights",
+          "role": "primary",
+          "why_it_supports_thread": "Frames immigration status and identity as determinants of access to rights and protections."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D2",
+          "development_title": "Trump accelerates mass deportation and a tiered immigration regime",
+          "role": "primary",
+          "why_it_supports_thread": "Shows escalation into surveillance, Guantánamo detention, and monetized citizenship."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D4",
+          "development_title": "Immigration and citizenship policy harden into a tiered system of rights",
+          "role": "primary",
+          "why_it_supports_thread": "Continues the pattern through family detention, nationality-based restrictions, and anti-immigrant symbolic politics."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D2",
+          "development_title": "Immigration and citizenship are weaponized into a multi-tier system of belonging",
+          "role": "primary",
+          "why_it_supports_thread": "Expands the thread into birthright citizenship, family detention, offshore detention, and ideology-linked status changes."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D1",
+          "development_title": "Alien Enemies Act mass deportations defy courts and normalize emergency rule",
+          "role": "primary",
+          "why_it_supports_thread": "Marks a major escalation through wartime authorities, mass deportations, and normalized emergency logic."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D3",
+          "development_title": "Immigration powers weaponized against activists, academics, and stratified citizenship",
+          "role": "primary",
+          "why_it_supports_thread": "Explicitly ties immigration coercion to punishment of speech and activism."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D2",
+          "development_title": "Immigration and citizenship tools are weaponized against dissenters and marginalized groups",
+          "role": "primary",
+          "why_it_supports_thread": "Shows data-sharing, visa revocations, and deportation tools turned against protesters, students, and migrants."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D3",
+          "development_title": "Immigration and security tools repurposed to punish dissenters and vulnerable migrants",
+          "role": "primary",
+          "why_it_supports_thread": "Adds arbitrary criteria, propaganda, and ideological screening to the coercive apparatus."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D2",
+          "development_title": "Immigration system weaponized into a data-driven mass-deportation and intimidation regime",
+          "role": "primary",
+          "why_it_supports_thread": "Highlights the data-driven, bureaucratic, and error-prone expansion of mass deportation and intimidation."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D3",
+          "development_title": "Courts both enable and resist an increasingly lawless deportation apparatus",
+          "role": "secondary",
+          "why_it_supports_thread": "Shows legal contestation around the same immigration-control machinery."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D2",
+          "development_title": "Immigration and citizenship tools are weaponized against dissenters, students, and even citizens",
+          "role": "primary",
+          "why_it_supports_thread": "Extends the pattern to students, citizens, and ideological punishment through status insecurity."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D4",
+          "development_title": "Immigration and detention systems harden into tools of intimidation and stratified citizenship",
+          "role": "primary",
+          "why_it_supports_thread": "Reinforces detention, oversight closure, wrongful detention, and political targeting as a consolidated system."
+        }
+      ],
+      "aliases": [
+        "tiered citizenship",
+        "stratified belonging",
+        "mass deportation regime",
+        "immigration as domestic control",
+        "citizenship as political weapon",
+        "multi-tier system of belonging"
+      ],
+      "inclusion_notes": [
+        "Include deportations, detention, nationality- or ideology-based status restrictions, birthright citizenship attacks, and surveillance/registration tied to immigration enforcement.",
+        "Include use of immigration law to punish campus activism, protest, or perceived dissent.",
+        "Include wrongful detention and bureaucratic coercion when they reveal stratified belonging."
+      ],
+      "exclusion_notes": [
+        "Exclude general border-security rhetoric without a concrete coercive policy pattern.",
+        "Exclude court-defiance aspects when the main issue is constitutional confrontation rather than belonging/status hierarchy.",
+        "Exclude standalone anti-trans policies unless linked to citizenship, detention, or differential legal membership."
+      ],
+      "boundary_notes": [
+        "This is narrower than generic 'immigration policy'; the core is immigration/citizenship used as a domestic control system.",
+        "Related to cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION where visa threats and student targeting overlap.",
+        "Related to cand_EXECUTIVE_POWER_AND_CHECKS when emergency powers and court defiance are the mechanism."
+      ],
+      "related_candidate_ids": [
+        "cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "cand_EXECUTIVE_POWER_AND_CHECKS",
+        "cand_WEAPONIZED_LAW_AND_JUSTICE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [
+        "cand_IMMIGRATION_TARGETING_OF_STUDENTS_AND_ACTIVISTS"
+      ],
+      "confidence": 0.99,
+      "continuity_assessment": "sustained",
+      "merge_suggestions": [
+        "Strong candidate for year-level merge with labels like 'immigration as control', 'tiered citizenship', and 'mass deportation state'.",
+        "A later consolidation may keep a sub-thread for student/activist targeting if it remains especially salient."
+      ],
+      "split_suggestions": [
+        "Could split into a sub-thread around immigration tools against campus activism and speech if that becomes independently recurring."
+      ]
+    },
+    {
+      "candidate_id": "cand_WEAPONIZED_LAW_AND_JUSTICE",
+      "canonical_name": "Law, prosecution, clemency, and security tools used to protect allies and punish opponents",
+      "short_name": "Weaponized law and justice",
+      "description": "A recurring pattern in which DOJ, prosecutorial discretion, pardons, security clearances, investigations, and legal retaliation are deployed asymmetrically—shielding regime allies while exposing critics, opponents, lawyers, and dissenters to punishment or intimidation.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D3",
+          "development_title": "Justice System Bent Toward Regime Protection and Impunity for Allies",
+          "role": "primary",
+          "why_it_supports_thread": "Establishes selective legality through dropped cases, purges, pardons, and redeployed enforcement."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D4",
+          "development_title": "Law and regulation bent to favor donors and regime‑aligned business",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds selective non-enforcement and donor favoritism as part of legal asymmetry."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D3",
+          "development_title": "Law enforcement and clemency are turned into tools to protect allies and punish opponents",
+          "role": "primary",
+          "why_it_supports_thread": "Directly ties pardons, case dismissals, and coercive investigations to loyalty-based justice."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D8",
+          "development_title": "Security and legal tools repurposed to punish political and legal opponents",
+          "role": "primary",
+          "why_it_supports_thread": "Expands the thread into clearances, protections, terrorism labels, and legal punishment of rivals."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D3",
+          "development_title": "Law becomes a weapon: Trump targets disfavored law firms, judges, and civil servants",
+          "role": "primary",
+          "why_it_supports_thread": "Shows retaliation against law firms, judges, and public employees through executive and legal tools."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D4",
+          "development_title": "Crony capitalism and personal enrichment fuse with federal policy",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds pardon and security-resource favoritism for well-connected actors."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D7",
+          "development_title": "National security and law enforcement leadership reshaped around loyalty and political interference",
+          "role": "primary",
+          "why_it_supports_thread": "Shows prosecutorial and security leadership being remade around loyalty and interference."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D9",
+          "development_title": "Law and security tools are turned against critics while some institutional checks persist",
+          "role": "primary",
+          "why_it_supports_thread": "Directly captures DOJ investigations, clearance stripping, pardons, and retaliatory use of state power."
+        }
+      ],
+      "aliases": [
+        "law as protection for allies and punishment for opponents",
+        "selective justice",
+        "personalized law enforcement",
+        "retaliatory DOJ use",
+        "clemency and prosecution asymmetry"
+      ],
+      "inclusion_notes": [
+        "Include selective dropping of cases, political pardons, retaliatory investigations, security-clearance punishments, and coercive treatment of law firms or lawyers.",
+        "Include misuse of justice or security institutions where the pattern is asymmetric legal protection for allies and punishment for critics.",
+        "Include prosecutorial interference and direct White House pressure on legal outcomes."
+      ],
+      "exclusion_notes": [
+        "Exclude broad executive-overreach stories where selective justice is not central.",
+        "Exclude general cronyism unless the mechanism is prosecutorial or legal favoritism.",
+        "Exclude immigration enforcement unless the main point is legal asymmetry rather than status hierarchy."
+      ],
+      "boundary_notes": [
+        "Distinct from cand_EXECUTIVE_POWER_AND_CHECKS because the emphasis here is selective legal application, not merely unilateralism.",
+        "Distinct from cand_CRONYISM_PRIVATE_STATE_FUSION because favoritism here operates through legal and punitive instruments.",
+        "Overlaps with cand_IMMIGRATION_AS_CONTROL when deportation tools are used to punish speech; keep immigration-status hierarchy there unless legal retaliation is the main story."
+      ],
+      "related_candidate_ids": [
+        "cand_EXECUTIVE_POWER_AND_CHECKS",
+        "cand_IMMIGRATION_AS_CONTROL",
+        "cand_CRONYISM_PRIVATE_STATE_FUSION"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [],
+      "confidence": 0.92,
+      "continuity_assessment": "recurring",
+      "merge_suggestions": [
+        "Likely merge with labels such as 'weaponized justice', 'selective legality', or 'rule of law inverted'.",
+        "May later absorb law-firm retaliation sublabels if those remain part of the same broader method."
+      ],
+      "split_suggestions": [
+        "Could later split a sub-thread around retaliation against legal profession and courts if that becomes more sustained than ally-protection/clemency stories."
+      ]
+    },
+    {
+      "candidate_id": "cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, nonprofits, and civil society coerced through funding, regulation, and legal pressure",
+      "short_name": "Civil society coercion",
+      "description": "A recurring thread in which the administration uses grants, contracts, accreditation, tax status, investigations, and legal threats to discipline universities, law firms, nonprofits, and other semi-independent institutions that can host dissent or challenge executive power.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 7,
+          "development_id": "D6",
+          "development_title": "Universities and campuses become battlegrounds for speech control and punishment",
+          "role": "primary",
+          "why_it_supports_thread": "Introduces funding, investigations, and visa tools being used to force campus conformity."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D4",
+          "development_title": "Universities and campuses are pressured to police pro-Palestinian dissent under threat of federal punishment",
+          "role": "primary",
+          "why_it_supports_thread": "Shows coercive use of funding and immigration enforcement against campus protest."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D4",
+          "development_title": "Universities and education policy become battlegrounds for suppressing dissent and reshaping civic life",
+          "role": "primary",
+          "why_it_supports_thread": "Expands from campuses to education governance and coercive funding freezes tied to ideology."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D4",
+          "development_title": "Federal power weaponized against universities, blue jurisdictions, and equity programs",
+          "role": "primary",
+          "why_it_supports_thread": "Broadens the pattern to coercive leverage over universities and disfavored jurisdictions."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D4",
+          "development_title": "Universities, law firms, and civil society face coordinated financial and legal retaliation",
+          "role": "primary",
+          "why_it_supports_thread": "Explicitly unifies universities, law firms, nonprofits, and advocacy groups under one coercive pattern."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D5",
+          "development_title": "Universities and academic freedom come under coordinated financial, regulatory, and immigration pressure",
+          "role": "primary",
+          "why_it_supports_thread": "Demonstrates sustained financial, tax, and visa pressure on higher education."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D2",
+          "development_title": "Universities become a central battleground as Trump weaponizes federal funding and regulation",
+          "role": "primary",
+          "why_it_supports_thread": "Continues the pattern through grant freezes, tax threats, accreditation pressure, and immigration-linked campus coercion."
+        }
+      ],
+      "aliases": [
+        "campus repression",
+        "coercion of universities and civil society",
+        "funding pressure on dissent institutions",
+        "legal and financial retaliation against independent institutions",
+        "ideological discipline of universities"
+      ],
+      "inclusion_notes": [
+        "Include federal funding freezes, tax threats, accreditation pressure, investigations, and visa tools used to discipline universities.",
+        "Include legal and regulatory retaliation against law firms, nonprofits, advocacy groups, and comparable institutions that can organize dissent or challenge power.",
+        "Include blue-jurisdiction punishment when the mechanism is coercive leverage over semi-independent institutions."
+      ],
+      "exclusion_notes": [
+        "Exclude broad election-law or immigration stories unless the primary target is campus/civil-society dissent.",
+        "Exclude general information control unless institutional coercion is the mechanism.",
+        "Exclude routine education policy changes not tied to punishment or ideological compliance."
+      ],
+      "boundary_notes": [
+        "Distinct from cand_IMMIGRATION_AS_CONTROL: here immigration tools matter insofar as they coerce campuses and civil society.",
+        "Distinct from cand_WEAPONIZED_LAW_AND_JUSTICE: this thread focuses on disciplining institutions, not only legal asymmetry in prosecutions.",
+        "Related to cand_INFO_CONTROL_AND_RECORD_ERASURE because these institutions are often sites of knowledge production and memory."
+      ],
+      "related_candidate_ids": [
+        "cand_IMMIGRATION_AS_CONTROL",
+        "cand_WEAPONIZED_LAW_AND_JUSTICE",
+        "cand_INFO_CONTROL_AND_RECORD_ERASURE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [
+        "cand_CAMPUS_REPRESSION"
+      ],
+      "confidence": 0.95,
+      "continuity_assessment": "sustained",
+      "merge_suggestions": [
+        "Likely merge with labels like 'campus repression', 'coercion of universities', and 'retaliation against civil society institutions'.",
+        "May later split law firms out only if legal-profession retaliation becomes more autonomous than campus/civil-society pressure."
+      ],
+      "split_suggestions": [
+        "Could split into sub-threads for universities and for law firms/nonprofits if later windows give both substantial independent continuity."
+      ]
+    },
+    {
+      "candidate_id": "cand_INFO_CONTROL_AND_RECORD_ERASURE",
+      "canonical_name": "Information control, media punishment, record erasure, and curated public memory",
+      "short_name": "Information control and memory",
+      "description": "A sustained pattern in which the administration pressures media, manipulates public narratives, deletes records and data, curates official history, and weakens transparency in order to control what the public can know, say, and remember.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D6",
+          "development_title": "Information Control Tightens: Media Punished, Data Seized, and Critics Cast as Threats",
+          "role": "primary",
+          "why_it_supports_thread": "Establishes media punishment, data seizure, and criminalization of criticism as an integrated control pattern."
+        },
+        {
+          "week_number": 5,
+          "development_id": "D7",
+          "development_title": "Civic Education, Culture, and Public Memory Are Rewritten Along Ideological Lines",
+          "role": "primary",
+          "why_it_supports_thread": "Adds the memory, curriculum, and cultural-erasure dimension."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D6",
+          "development_title": "Information space and culture brought under tighter political control",
+          "role": "primary",
+          "why_it_supports_thread": "Shows control over media access, language, culture, and propaganda channels."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D7",
+          "development_title": "Information control, propaganda, and curated memory tighten around the regime’s narratives",
+          "role": "primary",
+          "why_it_supports_thread": "Links propaganda, archive control, symbol politics, and media retaliation."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D8",
+          "development_title": "Media, information, and archives come under coordinated pressure at home and abroad",
+          "role": "primary",
+          "why_it_supports_thread": "Demonstrates attacks on independent media, archives, records, and scientific information."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D7",
+          "development_title": "Media, information, and history are reshaped to favor regime narratives",
+          "role": "primary",
+          "why_it_supports_thread": "Continues through media access restrictions, VOA dismantling, deleted guidance, and propaganda imagery."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D6",
+          "development_title": "Information control, media attacks, and the fight over national memory intensify",
+          "role": "primary",
+          "why_it_supports_thread": "Expands to museums, banned words, public media pressure, and memory politics."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D6",
+          "development_title": "Media, information, and memory brought under tighter executive and allied control",
+          "role": "primary",
+          "why_it_supports_thread": "Shows FCC pressure, defamation threats, sealed reports, off-channel communications, and rewritten memory institutions."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D8",
+          "development_title": "Information and memory are aggressively curated to erase dissent and inconvenient facts",
+          "role": "primary",
+          "why_it_supports_thread": "Centers official-history edits, climate/science suppression, library deletions, and information opacity."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D8",
+          "development_title": "Information, media, and public memory are aggressively curated to favor the regime",
+          "role": "primary",
+          "why_it_supports_thread": "Adds media blocking, site deletions, propaganda rewriting, and book bans."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D7",
+          "development_title": "Information control, disinformation, and security breaches deepen chaos politics",
+          "role": "primary",
+          "why_it_supports_thread": "Shows official disinformation, attacks on media, manipulated claims, and collapse of trustworthy information channels."
+        }
+      ],
+      "aliases": [
+        "record erasure and narrative control",
+        "media punishment and memory politics",
+        "public-memory rewriting",
+        "information manipulation",
+        "transparency rollback",
+        "curated history"
+      ],
+      "inclusion_notes": [
+        "Include media access punishment, defamation/regulatory pressure, deletion of websites or records, archive destruction, official-history rewrites, and propaganda substitution.",
+        "Include attacks on scientific/public-health information where the key pattern is controlling what the public can know.",
+        "Include official or semi-official narrative coercion tied to naming, language, symbols, or educational content."
+      ],
+      "exclusion_notes": [
+        "Exclude routine misinformation by politicians unless paired with institutional control over information channels.",
+        "Exclude campus or university coercion unless the main issue is public knowledge production and memory control rather than institutional punishment.",
+        "Exclude DOGE data access stories unless the key point is secrecy, record removal, or narrative manipulation."
+      ],
+      "boundary_notes": [
+        "Broader than media alone: includes archives, museums, curriculum, websites, and public records.",
+        "Related to cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION where universities and museums are coerced as knowledge institutions.",
+        "Related to cand_ADMIN_STATE_CAPTURE when transparency is reduced to shield bureaucratic dismantling."
+      ],
+      "related_candidate_ids": [
+        "cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "cand_ADMIN_STATE_CAPTURE",
+        "cand_CIVIL_RIGHTS_ROLLBACK_AND_DEI_ERASURE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [
+        "cand_CULTURE_AND_MEMORY_REWRITING"
+      ],
+      "confidence": 0.99,
+      "continuity_assessment": "sustained",
+      "merge_suggestions": [
+        "Very likely year-level merge point for labels such as 'information control', 'record erasure', 'media retaliation', and 'memory politics'.",
+        "Could later absorb narrower culture-war memory threads if they do not require separate treatment."
+      ],
+      "split_suggestions": [
+        "Could split a sub-thread for public-record/archives destruction versus cultural-memory rewriting if both remain dense across windows."
+      ]
+    },
+    {
+      "candidate_id": "cand_CIVIL_RIGHTS_ROLLBACK_AND_DEI_ERASURE",
+      "canonical_name": "Civil-rights rollback through anti-DEI policy, anti-trans measures, and narrowed equality enforcement",
+      "short_name": "Civil-rights rollback",
+      "description": "A recurring pattern in which the administration dismantles DEI infrastructure, targets transgender people, narrows civil-rights doctrine, and redirects equality enforcement away from structural discrimination toward grievance politics and exclusion.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        5,
+        6,
+        7,
+        8,
+        10,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 5,
+          "development_id": "D7",
+          "development_title": "Civic Education, Culture, and Public Memory Are Rewritten Along Ideological Lines",
+          "role": "secondary",
+          "why_it_supports_thread": "Shows DEI, LGBTQ+, and Black-history erasure across institutions as part of rights rollback."
+        },
+        {
+          "week_number": 6,
+          "development_id": "D3",
+          "development_title": "Coordinated assault on transgender people and DEI across government, schools, and culture",
+          "role": "primary",
+          "why_it_supports_thread": "Directly identifies anti-trans and anti-DEI action across multiple state domains."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D5",
+          "development_title": "Coordinated attacks on LGBTQ rights, reproductive autonomy, and DEI reshape civil equality",
+          "role": "primary",
+          "why_it_supports_thread": "Extends the thread through federal-state coordination targeting equality protections."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D6",
+          "development_title": "Civil rights, labor protections, and diversity infrastructure are rolled back across the state",
+          "role": "primary",
+          "why_it_supports_thread": "Shows institutional rollback of civil-rights enforcement and diversity programs."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D8",
+          "development_title": "Rights and policing: selective protections amid ongoing abuses and activism",
+          "role": "secondary",
+          "why_it_supports_thread": "Includes pressure on trans rights and DEI as part of an uneven rights landscape."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D3",
+          "development_title": "Civil rights enforcement is inverted to protect regime constituencies and dismantle protections for marginalized groups",
+          "role": "primary",
+          "why_it_supports_thread": "Sharpens the thread into doctrinal inversion of civil-rights enforcement itself."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D3",
+          "development_title": "Civil-rights enforcement is structurally rewritten to narrow protections and entrench inequality",
+          "role": "primary",
+          "why_it_supports_thread": "Continues through disparate-impact rollback, disability-service cuts, and environmental-justice termination."
+        }
+      ],
+      "aliases": [
+        "anti-DEI state campaign",
+        "anti-trans and anti-DEI rollback",
+        "inversion of civil-rights enforcement",
+        "narrowing equality protections",
+        "DEI erasure"
+      ],
+      "inclusion_notes": [
+        "Include attacks on DEI offices, grants, and language; anti-trans executive or administrative actions; and doctrinal narrowing of civil-rights enforcement.",
+        "Include disability and environmental-justice protections when they are explicitly recast as illegitimate equality initiatives.",
+        "Include federal civil-rights machinery being redirected toward grievance-based or exclusionary priorities."
+      ],
+      "exclusion_notes": [
+        "Exclude generic culture-war messaging without institutional enforcement consequences.",
+        "Exclude immigration-status hierarchy unless civil-rights doctrine itself is at issue.",
+        "Exclude public-memory erasure unless the main stake is rights protection rather than narrative control."
+      ],
+      "boundary_notes": [
+        "Distinct from cand_INFO_CONTROL_AND_RECORD_ERASURE, though many DEI removals also affect memory and culture.",
+        "Distinct from cand_IMMIGRATION_AS_CONTROL, which concerns belonging/status rather than equality doctrine.",
+        "Related to cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION where universities are pressured over DEI compliance."
+      ],
+      "related_candidate_ids": [
+        "cand_INFO_CONTROL_AND_RECORD_ERASURE",
+        "cand_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "cand_IMMIGRATION_AS_CONTROL"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [],
+      "confidence": 0.91,
+      "continuity_assessment": "recurring",
+      "merge_suggestions": [
+        "Likely merge with similar labels around 'anti-DEI campaign', 'civil-rights inversion', and 'anti-trans state action'.",
+        "May later incorporate environmental-justice and disability-rights sublabels if they remain tied to the same rollback logic."
+      ],
+      "split_suggestions": [
+        "Could split a narrower anti-trans sub-thread only if later windows show that pattern recurring independently of broader civil-rights rollback."
+      ]
+    },
+    {
+      "candidate_id": "cand_CRONYISM_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion benefiting regime-aligned firms and donors",
+      "short_name": "Cronyism and private-state fusion",
+      "description": "A recurring thread in which public policy, contracting, regulation, and enforcement are bent to benefit politically aligned business interests—especially Musk-linked ventures, crypto allies, favored extractive industries, and other elite insiders—blurring the line between state power and private gain.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        6,
+        7,
+        9,
+        10,
+        12,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 6,
+          "development_id": "D4",
+          "development_title": "Law and regulation bent to favor donors and regime‑aligned business",
+          "role": "primary",
+          "why_it_supports_thread": "Introduces selective enforcement and policymaking benefiting donors, insiders, and allied capital."
+        },
+        {
+          "week_number": 7,
+          "development_id": "D3",
+          "development_title": "Crony capitalism and the crypto reserve blur the line between public policy and private enrichment",
+          "role": "primary",
+          "why_it_supports_thread": "Makes private enrichment via public economic policy explicit, especially around crypto and donor influence."
+        },
+        {
+          "week_number": 9,
+          "development_id": "D6",
+          "development_title": "Crony capitalism and Musk’s expanding role blur lines between public power and private profit",
+          "role": "primary",
+          "why_it_supports_thread": "Shows contracts, infrastructure, security rhetoric, and policy choices increasingly favoring Musk and allies."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D4",
+          "development_title": "Crony capitalism and personal enrichment fuse with federal policy",
+          "role": "primary",
+          "why_it_supports_thread": "Extends the pattern to tariffs, meme-coin promotion, clemency, and favored-firm protection."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D6",
+          "development_title": "Administrative state hollowed out and repurposed for private profit and ideological control",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds the privatization and profit-taking dimension tied to agency restructuring and contracting."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D5",
+          "development_title": "Executive agencies are centralized, captured, and outsourced to loyalists and private allies",
+          "role": "primary",
+          "why_it_supports_thread": "Shows agency systems and procurement being redirected toward loyalists and politically connected contractors."
+        }
+      ],
+      "aliases": [
+        "private-state fusion",
+        "regime-aligned business favoritism",
+        "donor-driven policy",
+        "state power for insider profit",
+        "Musk-state fusion",
+        "crony capitalism"
+      ],
+      "inclusion_notes": [
+        "Include favored contracts, selective deregulation, tariff or financial policies that visibly enrich insiders, and use of state resources to protect allied firms.",
+        "Include privatization and outsourcing when the key pattern is politically aligned private gain rather than mere state shrinkage.",
+        "Include crypto reserve, meme coin, Starlink, and similar cases when public power is visibly fused with elite enrichment."
+      ],
+      "exclusion_notes": [
+        "Exclude generic deregulation unless tied to insider benefit.",
+        "Exclude agency hollowing where private gain is not clearly central.",
+        "Exclude selective prosecution unless the main pattern is economic favoritism rather than legal asymmetry."
+      ],
+      "boundary_notes": [
+        "Distinct from cand_ADMIN_STATE_CAPTURE: that thread centers hollowing and control of bureaucracy, while this one centers who profits from capture.",
+        "Distinct from cand_WEAPONIZED_LAW_AND_JUSTICE, though both can involve selective enforcement.",
+        "Related to cand_EXECUTIVE_POWER_AND_CHECKS when emergency powers or executive discretion are used to channel benefits."
+      ],
+      "related_candidate_ids": [
+        "cand_ADMIN_STATE_CAPTURE",
+        "cand_WEAPONIZED_LAW_AND_JUSTICE",
+        "cand_EXECUTIVE_POWER_AND_CHECKS"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [],
+      "confidence": 0.88,
+      "continuity_assessment": "recurring",
+      "merge_suggestions": [
+        "Likely merge with labels such as 'crony capitalism', 'private-state fusion', or 'policy for insiders'.",
+        "May later merge with Musk-specific sublabels if no independent Musk thread is needed year-wide."
+      ],
+      "split_suggestions": [
+        "Could split a Musk-specific sub-thread from a broader donor/crypto cronyism thread if later windows sustain both separately."
+      ]
+    },
+    {
+      "candidate_id": "cand_VOTING_RIGHTS_AND_ELECTION_RULES",
+      "canonical_name": "Voting rights and election rules narrowed under an 'integrity' frame",
+      "short_name": "Voting rights under integrity frame",
+      "description": "An emergent-to-recurring thread in the latter half of the window in which proof-of-citizenship requirements, ballot challenges, voter-data access, and election-administration pressure are justified as integrity measures while making voting more exclusionary and politically manipulable.",
+      "scope_level": "thread",
+      "supporting_weeks": [
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "supporting_developments": [
+        {
+          "week_number": 7,
+          "development_id": "D8",
+          "development_title": "Judicial independence and legal oversight face intimidation, but courts still check some abuses",
+          "role": "contextual",
+          "why_it_supports_thread": "Introduces SAVE Act and election-administration details as part of a broader legal-governance struggle."
+        },
+        {
+          "week_number": 8,
+          "development_id": "D9",
+          "development_title": "Democratic norms, religion, and elections are contested as civil society mobilizes",
+          "role": "secondary",
+          "why_it_supports_thread": "Adds election-legitimacy attacks, ballot-discard efforts, and voting-rights defense as an emerging pattern."
+        },
+        {
+          "week_number": 10,
+          "development_id": "D1",
+          "development_title": "Trump centralizes control over elections and voter data under the guise of integrity",
+          "role": "primary",
+          "why_it_supports_thread": "Makes election control, voter-data access, and integrity rhetoric the central development."
+        },
+        {
+          "week_number": 11,
+          "development_id": "D5",
+          "development_title": "Coordinated assault on voting rights and election rules under an 'integrity' banner",
+          "role": "primary",
+          "why_it_supports_thread": "Extends the thread through SAVE Act backing, ballot purges, and elite election spending."
+        },
+        {
+          "week_number": 12,
+          "development_id": "D7",
+          "development_title": "Voting rights and election legitimacy eroded under the banner of integrity",
+          "role": "primary",
+          "why_it_supports_thread": "Adds documentary proof requirements, post-election ID demands, and fraud narratives."
+        },
+        {
+          "week_number": 13,
+          "development_id": "D4",
+          "development_title": "Voting rights and election rules are reshaped through proof-of-citizenship mandates and post-election challenges",
+          "role": "primary",
+          "why_it_supports_thread": "Shows coordinated federal-state movement toward exclusionary documentation and challenge regimes."
+        },
+        {
+          "week_number": 14,
+          "development_id": "D8",
+          "development_title": "Courts and civil society show pockets of resistance amid broader backsliding",
+          "role": "secondary",
+          "why_it_supports_thread": "Includes injunctions and democratic-maintenance measures resisting the same restrictive election trend."
+        }
+      ],
+      "aliases": [
+        "election integrity as voter restriction",
+        "proof-of-citizenship voting regime",
+        "SAVE Act voter suppression",
+        "ballot challenge regime",
+        "election rule narrowing"
+      ],
+      "inclusion_notes": [
+        "Include proof-of-citizenship mandates, ballot-discard efforts, post-election challenges, voter-data access fights, and elite pressure on election-administration institutions.",
+        "Include fraud narratives when they are tied to concrete restrictive rule changes.",
+        "Include court and state resistance only as context for the same election-rule conflict."
+      ],
+      "exclusion_notes": [
+        "Exclude generic election rhetoric without institutional implications.",
+        "Exclude broad democratic-norm concerns not specifically tied to franchise or election administration.",
+        "Exclude immigration/citizenship policy unless it directly affects voter eligibility rules or rhetoric."
+      ],
+      "boundary_notes": [
+        "Narrower than general democracy backsliding; specifically about rules of voting and election administration.",
+        "Related to cand_EXECUTIVE_POWER_AND_CHECKS when executive orders reshape election rules.",
+        "Related to cand_CIVIL_RIGHTS_ROLLBACK_AND_DEI_ERASURE where voting-rights enforcement is redirected or weakened."
+      ],
+      "related_candidate_ids": [
+        "cand_EXECUTIVE_POWER_AND_CHECKS",
+        "cand_CIVIL_RIGHTS_ROLLBACK_AND_DEI_ERASURE"
+      ],
+      "possible_parent_candidate_id": null,
+      "possible_child_candidate_ids": [],
+      "confidence": 0.89,
+      "continuity_assessment": "recurring",
+      "merge_suggestions": [
+        "Likely merge with labels such as 'voter suppression under integrity rhetoric', 'proof-of-citizenship restrictions', and 'election administration interference'.",
+        "May later absorb narrower SAVE Act or ballot-challenge sublabels."
+      ],
+      "split_suggestions": [
+        "Could split between voter-eligibility restrictions and control over election administrators/judicial races if later windows strongly differentiate them."
+      ]
+    }
+  ],
+  "notes_on_window": [
+    "The clearest sustained threads across weeks 5-14 are administrative-state capture, executive overreach, immigration as a control system, and information/memory control.",
+    "Several themes intensify in the back half of the window, especially voting-rule restriction and coercion of universities/law firms/civil society.",
+    "Cronyism/private-state fusion is visible but somewhat less uniformly foregrounded than the core state-capture and immigration threads.",
+    "Court resistance appears often, but mostly as context or counterpressure rather than as a standalone continuity thread for catalogue purposes."
+  ],
+  "rejected_or_folded_candidates": [
+    {
+      "label": "Fragmented resistance",
+      "reason": "Visible in several weeks but functions mostly as a cross-cutting counterforce rather than a governing method of democratic erosion; better treated as context in later phases.",
+      "folded_into_candidate_id": null
+    },
+    {
+      "label": "Emergency tariff regime",
+      "reason": "Too narrow as a standalone year-level thread within this window; better treated as a manifestation of executive overreach and, secondarily, crony economic governance.",
+      "folded_into_candidate_id": "cand_EXECUTIVE_POWER_AND_CHECKS"
+    },
+    {
+      "label": "Signal scandal / off-channel national security communications",
+      "reason": "Important recurring scandal pattern but not broad enough in this window to stand as a main continuity thread apart from information control and executive unaccountability.",
+      "folded_into_candidate_id": "cand_INFO_CONTROL_AND_RECORD_ERASURE"
+    },
+    {
+      "label": "Third-term and personal-rule norm testing",
+      "reason": "Meaningful but too intermittently visible in this window to justify separate thread status; folded into broader executive-power expansion and personalized rule.",
+      "folded_into_candidate_id": "cand_EXECUTIVE_POWER_AND_CHECKS"
+    },
+    {
+      "label": "Environmental deregulation and fossil-fuel favoritism",
+      "reason": "Recurs, but within this window it reads more as a policy theater nested inside executive emergency rule, administrative capture, and crony extraction than as a distinct continuity thread.",
+      "folded_into_candidate_id": "cand_CRONYISM_PRIVATE_STATE_FUSION"
+    },
+    {
+      "label": "Courts as partial resistance",
+      "reason": "Appears frequently, but as an institutional response pattern rather than a primary erosion method; better preserved contextually within supporting developments and boundary notes.",
+      "folded_into_candidate_id": null
+    }
+  ]
+}

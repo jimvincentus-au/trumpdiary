@@ -1,0 +1,5374 @@
+# Trump Diary — Phase 1 Discovery Prompt v1
+
+You are identifying **candidate continuity threads** from one overlapping discovery window of weekly development allocator files for **The Trump Diary**.
+
+Your task is to read the supplied window package and produce a JSON object that conforms to the schema:
+
+`phase1_candidate_threads.schema.json`
+
+## Purpose
+
+This is **Phase 1 thread discovery**, not final catalogue construction and not week-by-week status adjudication.
+
+You are working on **one overlapping window** of weeks. Your job is to identify the main recurring continuity threads visible **within this window**.
+
+A continuity thread is a recurring governing pattern, institutional campaign, policy arc, or method of democratic erosion that appears across multiple weeks in the supplied window.
+
+You are **not** assigning:
+- weekly status values such as `new`, `continuing`, `dormant`, or `reborn`
+- weekly intensities
+- final year-wide thread IDs
+- final merge decisions across all windows
+
+You **are** identifying:
+- candidate continuity threads visible in this window
+- the weeks that support each thread
+- the specific development items that support each thread
+- aliases and variant phrasings
+- boundary notes that help later consolidation
+
+## Core principles
+
+### 1. Think in threads, not topics
+A thread is not just a subject area like "immigration" or "courts."
+
+A good thread has a coherent underlying pattern or method, such as:
+- administrative state capture via DOGE and civil-service purge
+- immigration and citizenship as tools of tiered belonging and dissent control
+- public-record erasure and information control
+- law as protection for allies and punishment for opponents
+
+Avoid labels that are so broad that they are always present somewhere.
+
+### 2. Prefer the right level of abstraction
+Do not explode the output into dozens of tiny one-off subtopics.
+Do not collapse everything into a few vague mega-topics.
+
+Aim for durable, meaningful continuity threads that could plausibly recur across many weeks of the year.
+
+Use these scope levels:
+- `super_thread` for a broad umbrella containing multiple distinct but related threads
+- `thread` for the preferred default level
+- `sub_thread` only when the narrower pattern is clearly distinct and useful
+
+### 3. Use the supplied development allocator material faithfully
+Ground every candidate thread in the actual supplied weekly development allocator content.
+
+Every candidate thread must have:
+- `supporting_weeks`
+- `supporting_developments`
+
+Use the actual development titles and, if available, development IDs from the source material.
+
+### 4. Be window-local but year-aware in style
+You are only deciding what is visible **in this window**.
+You may describe a thread as `emergent`, `recurring`, `sustained`, or `unclear` within this window.
+
+Do not pretend to know the whole year from this one window.
+
+### 5. Be careful with boundaries
+Distinguish adjacent but non-identical threads when useful.
+
+For example:
+- "administrative state capture" is not the same as "private-state fusion," though they may be related
+- "immigration as domestic control" is not identical to "election administration interference," even if they overlap in some weeks
+
+Use:
+- `boundary_notes`
+- `related_candidate_ids`
+- `possible_parent_candidate_id`
+- `possible_child_candidate_ids`
+when helpful
+
+### 6. Reject weak or purely local labels
+Do not create a candidate thread if it is:
+- only a one-week event with no real continuity
+- too narrow to matter for year-level consolidation
+- merely a generic topic heading
+- redundant with a stronger candidate
+
+Use `rejected_or_folded_candidates` for weak, duplicate, or folded labels.
+
+## What counts as a candidate continuity thread
+
+A candidate continuity thread usually has several of these characteristics:
+- appears in multiple weeks within the window
+- reflects an ongoing governing method, campaign, or institutional pressure
+- can be described in a way that would still make sense outside one single week
+- has enough coherence to be consolidated later with similar candidates from other windows
+
+## What does NOT count well
+These are usually poor thread candidates unless clearly part of something larger:
+- one-off scandal headlines
+- isolated speeches with no recurring pattern
+- generic labels like "economy," "law," "politics," "rights"
+- temporary framing language unique to one week
+
+## Output requirements
+
+Return **only** a valid JSON object.
+
+Do **not** wrap it in markdown fences.
+Do **not** include commentary before or after the JSON.
+Do **not** explain your reasoning outside the JSON structure.
+
+The JSON must conform to the schema:
+`phase1_candidate_threads.schema.json`
+
+## Output construction rules
+
+### Required top-level fields
+You must provide:
+- `schema_name`
+- `schema_version`
+- `package_type`
+- `source_window`
+- `build`
+- `candidate_threads`
+
+### Candidate thread requirements
+Each candidate thread must include:
+- `candidate_id`
+- `canonical_name`
+- `short_name`
+- `description`
+- `scope_level`
+- `supporting_weeks`
+- `supporting_developments`
+- `aliases`
+- `inclusion_notes`
+- `boundary_notes`
+
+### Candidate IDs
+Use stable, uppercase, descriptive candidate IDs in this form:
+
+`cand_SOMETHING_DESCRIPTIVE`
+
+Examples:
+- `cand_ADMIN_STATE_CAPTURE`
+- `cand_IMMIGRATION_AS_CONTROL`
+- `cand_INFO_CONTROL_AND_RECORD_ERASURE`
+
+### Supporting developments
+For each supporting development:
+- include the correct `week_number`
+- include `development_title`
+- include `development_id` if present in the source
+- assign `role` as one of:
+  - `primary`
+  - `secondary`
+  - `contextual`
+- briefly explain `why_it_supports_thread`
+
+### Aliases
+Use aliases to capture variant phrasings found in the weekly allocator language.
+
+### Inclusion and exclusion
+Use `inclusion_notes` to clarify what belongs in the thread.
+Use `exclusion_notes` when needed to clarify what should stay out.
+
+### Continuity assessment
+Use one of:
+- `emergent`
+- `recurring`
+- `sustained`
+- `unclear`
+
+Interpret these only within the supplied window.
+
+## Decision guidance
+
+### When to create a super-thread
+Create a `super_thread` only when there are clearly multiple distinct thread candidates beneath it.
+
+### When to create a sub-thread
+Create a `sub_thread` only when the narrower recurring pattern is distinct enough that later consolidation would benefit from preserving it separately.
+
+### When in doubt
+Prefer a strong `thread` with good boundary notes over unnecessary hierarchy.
+
+## Quality standard
+
+The output should help a later consolidation step answer:
+- which candidate threads are genuinely recurring across windows
+- which labels should merge
+- which candidates are too broad
+- which candidates are too narrow
+- which candidate names best represent the underlying continuity
+
+## Source window package
+
+The window package will be supplied below.
+
+Use it as the sole evidence base for this task.
+
+---
+
+{
+  "schema_name": "phase1_window_package",
+  "schema_version": "1.0",
+  "package_type": "thread_discovery_window",
+  "window": {
+    "window_id": "window_008",
+    "start_week": 29,
+    "end_week": 38,
+    "week_count": 10,
+    "window_size": 10,
+    "stride": 4,
+    "dormancy_window": 5,
+    "week_numbers": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ]
+  },
+  "build": {
+    "created_at": "2026-03-09T09:45:52Z",
+    "created_by": "build_phase1_windows_v1",
+    "program_name": "build_phase1_windows_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260309T094552Z",
+    "git_commit": "32a21995d1826753d4b9ddf481c7bde8dbbe57cd"
+  },
+  "source_manifest": {
+    "source_root": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks",
+    "file_count": 10,
+    "files": [
+      {
+        "week_number": 29,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 29/development_allocator_week29.json",
+        "filename": "development_allocator_week29.json",
+        "sha256": "75dd2901513c0eb3575f29a037022b34013932b5a0c828ebef15dd3ff0bc5518",
+        "mtime_utc": "2025-12-23T20:02:14Z",
+        "size_bytes": 21916
+      },
+      {
+        "week_number": 30,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 30/development_allocator_week30.json",
+        "filename": "development_allocator_week30.json",
+        "sha256": "1b151b10aba2b84d95798c1c27a2bc28477b061e5bb66b25427c13ca3b369705",
+        "mtime_utc": "2025-12-23T20:03:10Z",
+        "size_bytes": 23958
+      },
+      {
+        "week_number": 31,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 31/development_allocator_week31.json",
+        "filename": "development_allocator_week31.json",
+        "sha256": "138166ae028d7678463fd5a0619f67085edc01811537d8748d08439d5b502861",
+        "mtime_utc": "2025-12-23T20:04:12Z",
+        "size_bytes": 29583
+      },
+      {
+        "week_number": 32,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/development_allocator_week32.json",
+        "filename": "development_allocator_week32.json",
+        "sha256": "3b192e43a013f89683973f254b0a1b6d3b240eb52bdf7b36ac351e8c3762f8ec",
+        "mtime_utc": "2025-12-23T20:05:09Z",
+        "size_bytes": 28593
+      },
+      {
+        "week_number": 33,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 33/development_allocator_week33.json",
+        "filename": "development_allocator_week33.json",
+        "sha256": "8d484dbc2cdbea73851fb35f09f92ea607cb4b81211fb95e038b81ce7e023500",
+        "mtime_utc": "2025-12-23T20:05:58Z",
+        "size_bytes": 23606
+      },
+      {
+        "week_number": 34,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 34/development_allocator_week34.json",
+        "filename": "development_allocator_week34.json",
+        "sha256": "fa335ddb4c905547198c3b15c09b51b9c8fa068feb3e03f6efe20e0e56b56690",
+        "mtime_utc": "2025-12-23T20:07:09Z",
+        "size_bytes": 31815
+      },
+      {
+        "week_number": 35,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 35/development_allocator_week35.json",
+        "filename": "development_allocator_week35.json",
+        "sha256": "83ee6f07c2b1e5e628eb65880695dbb0daa80c2750022226e4601fe09b700d2a",
+        "mtime_utc": "2025-12-23T20:08:22Z",
+        "size_bytes": 37527
+      },
+      {
+        "week_number": 36,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 36/development_allocator_week36.json",
+        "filename": "development_allocator_week36.json",
+        "sha256": "db4166d16176c8bafb2a65823bcd01022a166e83ddb2e4f5291fa7bf13457cbb",
+        "mtime_utc": "2025-12-23T20:09:34Z",
+        "size_bytes": 29864
+      },
+      {
+        "week_number": 37,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 37/development_allocator_week37.json",
+        "filename": "development_allocator_week37.json",
+        "sha256": "32caab99ee5046e38d6b63d7820b720430bf3e8749aee9c7bfffb217fb4769f9",
+        "mtime_utc": "2025-12-23T20:10:22Z",
+        "size_bytes": 23964
+      },
+      {
+        "week_number": 38,
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 38/development_allocator_week38.json",
+        "filename": "development_allocator_week38.json",
+        "sha256": "1e3d657220b5c48b2bd9a09999be837defc7cba81c75a90662373d945a661f21",
+        "mtime_utc": "2025-12-23T20:11:19Z",
+        "size_bytes": 26233
+      }
+    ]
+  },
+  "weeks": [
+    {
+      "week_number": 29,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 29/development_allocator_week29.json",
+        "filename": "development_allocator_week29.json",
+        "sha256": "75dd2901513c0eb3575f29a037022b34013932b5a0c828ebef15dd3ff0bc5518",
+        "mtime_utc": "2025-12-23T20:02:14Z",
+        "size_bytes": 21916
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk29_PA_001",
+            "wk29_IM_015",
+            "wk29_PA_005",
+            "wk29_PA_017",
+            "wk29_IM_017",
+            "wk29_PA_015",
+            "wk29_IM_006",
+            "wk29_IM_007",
+            "wk29_ES_006",
+            "wk29_PA_013",
+            "wk29_IG_017",
+            "wk29_IG_016",
+            "wk29_IG_018",
+            "wk29_IG_015",
+            "wk29_PA_027",
+            "wk29_PA_028",
+            "wk29_IG_001",
+            "wk29_IM_004",
+            "wk29_IG_012",
+            "wk29_IG_013",
+            "wk29_IG_014",
+            "wk29_IM_002",
+            "wk29_IM_003",
+            "wk29_IG_027",
+            "wk29_IG_011",
+            "wk29_IG_003",
+            "wk29_IG_004",
+            "wk29_IG_005",
+            "wk29_IG_006",
+            "wk29_PA_020",
+            "wk29_IG_007",
+            "wk29_IG_008",
+            "wk29_IG_009",
+            "wk29_IG_010",
+            "wk29_CR_003",
+            "wk29_CR_006",
+            "wk29_IG_022",
+            "wk29_IG_023",
+            "wk29_PA_008",
+            "wk29_PA_009",
+            "wk29_CR_009",
+            "wk29_CR_010",
+            "wk29_CR_015",
+            "wk29_ES_011",
+            "wk29_ES_013",
+            "wk29_PA_021",
+            "wk29_CR_013",
+            "wk29_CR_014",
+            "wk29_CR_011",
+            "wk29_IM_008",
+            "wk29_CR_018",
+            "wk29_CR_002",
+            "wk29_CR_001",
+            "wk29_CR_012",
+            "wk29_CR_017",
+            "wk29_PA_026",
+            "wk29_CR_007",
+            "wk29_CR_008",
+            "wk29_IM_018",
+            "wk29_CR_016",
+            "wk29_ES_007",
+            "wk29_IM_009",
+            "wk29_IM_010",
+            "wk29_IM_013",
+            "wk29_IM_005",
+            "wk29_ES_005",
+            "wk29_PA_016",
+            "wk29_PA_029",
+            "wk29_ES_014",
+            "wk29_ES_008",
+            "wk29_PA_022",
+            "wk29_ES_012",
+            "wk29_ES_001",
+            "wk29_ES_002",
+            "wk29_ES_003",
+            "wk29_ES_010",
+            "wk29_ES_004",
+            "wk29_ES_016",
+            "wk29_ES_017",
+            "wk29_ES_009",
+            "wk29_ES_015",
+            "wk29_ES_018",
+            "wk29_PA_023",
+            "wk29_PA_024",
+            "wk29_PA_019",
+            "wk29_PA_018",
+            "wk29_PA_006",
+            "wk29_PA_007",
+            "wk29_PA_030",
+            "wk29_PA_002",
+            "wk29_PA_003",
+            "wk29_PA_004",
+            "wk29_PA_010",
+            "wk29_PA_011",
+            "wk29_PA_014",
+            "wk29_IM_012",
+            "wk29_PA_012",
+            "wk29_IG_025",
+            "wk29_IG_026",
+            "wk29_IG_021",
+            "wk29_IM_019",
+            "wk29_IM_001",
+            "wk29_IM_011",
+            "wk29_IM_016",
+            "wk29_IG_020",
+            "wk29_IG_029",
+            "wk29_PA_025"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 115,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk29_PA_001",
+              "wk29_IM_015",
+              "wk29_PA_005",
+              "wk29_PA_017",
+              "wk29_IM_017",
+              "wk29_PA_015"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Center the firing of BLS commissioner McEntarfer and Trump’s claims that jobs data are rigged; then widen to the broader pattern: mRNA contract cancellations and anti-vaccine framing, termination of greenhouse-gas satellites, and Medicare rule rewrites after a donor contribution. Use the FBI crime stats release and its undercoverage as a contrast between empirical data and politicized narratives.",
+            "one_sentence_thesis": "The White House moved to punish and replace neutral experts while casting doubt on official statistics and science, signaling that economic and health data must conform to Trump’s political narrative.",
+            "supporting_event_ids": [
+              "wk29_IM_006",
+              "wk29_IM_007",
+              "wk29_ES_006",
+              "wk29_PA_013"
+            ],
+            "title": "Trump tightens personal control over economic and scientific data",
+            "why_it_matters": "Undermining the independence of statistical and scientific institutions makes it harder for the public, markets, and policymakers to rely on shared facts, and it chills future officials from reporting inconvenient truths. Over time this erodes evidence-based governance and enables arbitrary, self-serving decision-making."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_IG_017",
+              "wk29_IG_016",
+              "wk29_IG_018",
+              "wk29_IG_015",
+              "wk29_PA_027",
+              "wk29_PA_028"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Open with the Hatch Act investigation into Jack Smith and the grand jury into debunked 2016 'treason' claims, then move to the DOJ subpoena of NY AG Letitia James and the appellate court vacating contempt over deportations. Weave in the Epstein thread—White House strategy meetings, defense of the DAG–Maxwell lawyer meeting, congressional subpoenas, FOIA fights, and court-managed secrecy—to show a dual system: aggressive pursuit of Trump critics versus opacity around elite wrongdoing.",
+            "one_sentence_thesis": "Justice Department tools, ethics processes, and federal courts were turned against those who previously investigated Trump while shielding elite-linked cases like Epstein from full scrutiny.",
+            "supporting_event_ids": [
+              "wk29_IG_001",
+              "wk29_IM_004",
+              "wk29_IG_012",
+              "wk29_IG_013",
+              "wk29_IG_014",
+              "wk29_IM_002",
+              "wk29_IM_003",
+              "wk29_IG_027"
+            ],
+            "title": "Law enforcement and courts are weaponized to protect Trump and punish investigators",
+            "why_it_matters": "When prosecutors, judges, and watchdogs know that probing powerful figures can trigger retaliation, they are less likely to pursue corruption or abuse, hollowing out the rule of law. At the same time, selective secrecy around elite crimes deepens public cynicism and impunity for those closest to power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_IG_011",
+              "wk29_IG_003",
+              "wk29_IG_004",
+              "wk29_IG_005",
+              "wk29_IG_006",
+              "wk29_PA_020"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Tell the Texas story as the spine: Trump-requested mid-decade remap, Democrats fleeing, GOP fines and civil arrest warrants, Abbott/Paxton threats, and FBI assistance to track lawmakers, plus the bomb threat in Illinois. Then extend to Vance’s push for Indiana redistricting, GOP and bipartisan pushback, and Kiley’s anti-mid-decade bill. Close with Trump’s census order excluding undocumented people and the Supreme Court’s Louisiana map case to show a multi-front restructuring of representation, with some counter-moves like the John Lewis Act and protests in Indiana.",
+            "one_sentence_thesis": "Republican leaders, backed by the Trump administration, escalated efforts to lock in partisan advantage via mid-decade redistricting, coercive tactics against lawmakers, and plans for a census that excludes undocumented residents.",
+            "supporting_event_ids": [
+              "wk29_IG_007",
+              "wk29_IG_008",
+              "wk29_IG_009",
+              "wk29_IG_010",
+              "wk29_CR_003",
+              "wk29_CR_006",
+              "wk29_IG_022",
+              "wk29_IG_023"
+            ],
+            "title": "Representation is engineered through gerrymanders, coercion, and a skewed census",
+            "why_it_matters": "Manipulating maps and population counts lets incumbents choose their voters rather than the other way around, weakening the link between public preferences and political power. Coercive enforcement against opposition legislators raises the cost of resistance and normalizes using state power to entrench a single faction."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_PA_008",
+              "wk29_PA_009",
+              "wk29_CR_009",
+              "wk29_CR_010",
+              "wk29_CR_015",
+              "wk29_ES_011",
+              "wk29_ES_013",
+              "wk29_PA_021"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Start with the DHS memo on expanded military involvement in immigration and Pentagon planning against cartels, then move to the mass deportation build-out: ICE workforce and bed expansion, Alligator Alcatraz-style facilities, Fort Bliss, and the spending bill plus ICE funding surge and GEO Group profits. Fold in the Home Depot raid defying a court order, Ossoff’s abuse reports, and the briefly proposed deportation bonuses. Connect this to FEMA resource reallocation and the homelessness-criminalization EO, showing a throughline of carceral responses to social issues, with protests and recruitment propaganda ('Defend your culture') as texture.",
+            "one_sentence_thesis": "The administration expanded militarized immigration enforcement and detention while criminalizing homelessness and cutting basic supports, building a coercive infrastructure that targets migrants and the poor.",
+            "supporting_event_ids": [
+              "wk29_CR_013",
+              "wk29_CR_014",
+              "wk29_CR_011",
+              "wk29_IM_008",
+              "wk29_CR_018",
+              "wk29_CR_002",
+              "wk29_CR_001",
+              "wk29_CR_012",
+              "wk29_CR_010"
+            ],
+            "title": "Immigration, detention, and homelessness policy harden into a carceral governance model",
+            "why_it_matters": "Embedding mass detention and punitive social policy into federal practice normalizes treating vulnerable populations as security threats rather than rights-bearing residents, and it creates powerful financial and bureaucratic interests in keeping these systems large."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_CR_017",
+              "wk29_PA_026",
+              "wk29_CR_007",
+              "wk29_CR_008",
+              "wk29_CR_009",
+              "wk29_CR_010",
+              "wk29_IM_018"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Frame this as a cross-domain rollback: VA abortion bans for veterans, discriminatory treatment of transgender service members, restoration of a Confederate memorial, harsh migrant detention expansion, and FEMA rules that treat certain boycotts as antisemitic discrimination. Layer in the spending bill cutting food aid, vaccine research cuts that worsen health inequities, and education directives/funding freezes that chill campus speech, plus softened human-rights reporting abroad, to show a consistent hierarchy of whose rights and histories are protected.",
+            "one_sentence_thesis": "Across health care, military service, immigration, and education, the administration narrowed rights and protections for targeted groups while elevating exclusionary symbols and narratives.",
+            "supporting_event_ids": [
+              "wk29_CR_016",
+              "wk29_ES_007",
+              "wk29_CR_018",
+              "wk29_IM_009",
+              "wk29_IM_010",
+              "wk29_IM_013",
+              "wk29_IM_005"
+            ],
+            "title": "Civil and social rights are rolled back for veterans, migrants, LGBTQ+ people, and students",
+            "why_it_matters": "These moves entrench a tiered citizenship where access to bodily autonomy, service benefits, and equal treatment depends on identity and ideology, undermining the promise of equal protection and fueling social division."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_ES_005",
+              "wk29_PA_016",
+              "wk29_PA_029",
+              "wk29_ES_014",
+              "wk29_ES_008",
+              "wk29_ES_007",
+              "wk29_PA_022",
+              "wk29_ES_012",
+              "wk29_ES_006"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Organize this around three strands: (1) tariffs as political weapons—India, Spain, and the broad hikes to historic levels—raising prices on everyday goods; (2) upward redistribution and risk-shifting—food assistance cuts, crypto/alt-assets in 401(k)s, Medicare favors after donations, and bank/private-credit expansion; (3) consolidation and capture—media merger approval, telecom and procurement rule tweaks, and grantmaking oversight aligned with Trump’s priorities. Use Con Edison shutoffs and rate hikes as a concrete example of essential services being run on profit-first logic during climate stress.",
+            "one_sentence_thesis": "Trump and Congress advanced a protectionist, donor-friendly economic agenda that raises consumer costs, exposes workers’ savings to risk, and channels public benefits toward insiders and private contractors.",
+            "supporting_event_ids": [
+              "wk29_ES_001",
+              "wk29_ES_002",
+              "wk29_ES_003",
+              "wk29_ES_010",
+              "wk29_ES_004",
+              "wk29_ES_016",
+              "wk29_ES_017",
+              "wk29_ES_009",
+              "wk29_ES_015",
+              "wk29_ES_018",
+              "wk29_PA_023",
+              "wk29_PA_024"
+            ],
+            "title": "Economic policy fuses protectionism, inequality, and crony capitalism",
+            "why_it_matters": "When trade, welfare, and regulatory policy are designed around political theater and elite gain, ordinary households bear higher prices and greater insecurity while those close to power profit from public programs and crises."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_PA_019",
+              "wk29_PA_018",
+              "wk29_PA_006",
+              "wk29_PA_007",
+              "wk29_PA_016",
+              "wk29_PA_029",
+              "wk29_PA_030"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Lead with the threat to federalize D.C. and the seven-day crime crackdown despite falling crime, then connect to nuclear saber-rattling, tariff threats on India and Spain, and the planned Alaska meeting with Putin without Ukraine. Weave in domestic power plays—pressuring the Fed chair, scrapping blue slips, canceling recess, and the privately funded White House ballroom—as part of a broader pattern of using state and symbolic power for personal and partisan leverage.",
+            "one_sentence_thesis": "Trump used executive orders, security deployments, and foreign policy theatrics to project dominance, often overriding local authority and long-term alliances for short-term political gain.",
+            "supporting_event_ids": [
+              "wk29_PA_002",
+              "wk29_PA_003",
+              "wk29_PA_004",
+              "wk29_PA_010",
+              "wk29_PA_011",
+              "wk29_PA_020",
+              "wk29_PA_023",
+              "wk29_PA_024",
+              "wk29_PA_014",
+              "wk29_ES_016"
+            ],
+            "title": "Executive power and security forces are deployed for spectacle and personal leverage",
+            "why_it_matters": "Normalizing emergency-style interventions and personalized foreign policy weakens institutional checks, strains alliances, and makes domestic governance more about displays of strength than accountable problem-solving."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_IM_012",
+              "wk29_PA_012",
+              "wk29_IM_005",
+              "wk29_IM_013",
+              "wk29_IG_025",
+              "wk29_IG_026",
+              "wk29_IM_009",
+              "wk29_IM_010",
+              "wk29_IG_021",
+              "wk29_IM_004",
+              "wk29_ES_010",
+              "wk29_IM_019"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Structure this as a story about control over memory and narrative: removal of Trump transcripts, curated human-rights reports, and planned State Department whitewashing; NARA records disposition and the temporary disappearance of key constitutional annotations; and education pressure via admissions-data demands, funding freezes, and Harvard’s lawsuit. Then add media and tech levers: Trump’s $10B suit against the WSJ, Colbert’s cancellation plus the Paramount–Skydance merger approval, ICE’s 'awareness saturation' campaign, and AI deregulation, contrasting them with underreported crime data and Durham’s annex that contradicts politicized claims.",
+            "one_sentence_thesis": "The administration selectively removed or rewrote official records, pressured universities, and used lawsuits and mergers to narrow critical media space, while deploying data and algorithms to shape public perception.",
+            "supporting_event_ids": [
+              "wk29_IM_001",
+              "wk29_IM_006",
+              "wk29_IM_007",
+              "wk29_IM_011",
+              "wk29_IM_008",
+              "wk29_IM_016",
+              "wk29_IM_018",
+              "wk29_IM_017",
+              "wk29_IG_020",
+              "wk29_IG_029"
+            ],
+            "title": "Information, archives, and education are curated to favor the regime",
+            "why_it_matters": "Controlling what people can see and study about their government, history, and current events makes it harder to hold leaders accountable and easier to entrench a self-serving narrative that crowds out dissent."
+          },
+          {
+            "anchor_event_ids": [
+              "wk29_PA_025",
+              "wk29_IM_011",
+              "wk29_PA_003",
+              "wk29_ES_012"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Focus on the Qatar $400M jet and the $200M privately funded White House ballroom as emblematic of foreign and donor influence. Then show how the HONEST Act exempts Trump from divestment even as it tightens rules for others, and how detention and Medicare contracts, plus 401(k) deregulation, create profit streams for aligned firms. This development can be shorter and can cross-reference D4 and D6 where the same contracts and policies appear as part of the carceral and economic storylines.",
+            "one_sentence_thesis": "Trump accepted lavish foreign gifts and pursued privately funded presidential projects while tailoring ethics and financial rules to preserve his own conflicted interests.",
+            "supporting_event_ids": [
+              "wk29_ES_011",
+              "wk29_ES_013",
+              "wk29_ES_006",
+              "wk29_PA_022"
+            ],
+            "title": "Foreign money and private donors blur the line between public office and personal enrichment",
+            "why_it_matters": "When foreign governments and wealthy patrons can buy access and favor through gifts and bespoke legislation, public decisions risk being driven by private benefit rather than national interest, deepening corruption and public distrust."
+          }
+        ],
+        "period_label": "Week 29",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around structural themes—data and science capture, weaponized law, engineered representation, carceral governance, rights rollbacks, crony economic policy, executive/security overreach, information control, and foreign/donor influence. Some events (e.g., Epstein, immigration detention, tariffs, university pressure) could plausibly sit in more than one development; each has been assigned where it most clearly advances a single coherent storyline, with cross-references suggested in notes. Routine or highly technical regulatory items and some local protests are left unassigned to keep the narrative focused and manageable for a human writer.",
+        "unassigned_events": [
+          {
+            "event_id": "wk29_CR_005",
+            "why_unassigned": "Local antifascist action is important but peripheral to the week’s dominant structural themes and can be mentioned, if at all, as color in a broader dissent narrative."
+          },
+          {
+            "event_id": "wk29_ES_004",
+            "why_unassigned": "Technical FCC streamlining of delegated authority is modest and doesn’t clearly shift any major narrative beyond what is already covered in regulatory capture themes."
+          },
+          {
+            "event_id": "wk29_ES_016",
+            "why_unassigned": "Telecom certification changes are specific and could overcomplicate the foreign-policy or economic developments; they can be folded in only if the writer wants a granular example."
+          },
+          {
+            "event_id": "wk29_ES_017",
+            "why_unassigned": "Procurement registration guidance is a minor administrative tweak without clear democratic-structure implications this week."
+          },
+          {
+            "event_id": "wk29_IG_024",
+            "why_unassigned": "Routine FEC scheduling of a special election’s filing dates is a normal-functioning counterpoint and not central to any main storyline."
+          },
+          {
+            "event_id": "wk29_IG_022",
+            "why_unassigned": "Supreme Court argument on Louisiana’s map is forward-looking and can be optionally referenced in D3 but is not essential to the week’s core developments."
+          },
+          {
+            "event_id": "wk29_IG_023",
+            "why_unassigned": "Reintroduction of the John Lewis Act is a significant pro-democracy effort but functions mainly as background resistance rather than a driver of this week’s structural shifts."
+          },
+          {
+            "event_id": "wk29_IG_025",
+            "why_unassigned": "NARA’s public comment request is a procedural step; while relevant to archives, it’s less central than more concrete memory-curation actions already in D8."
+          },
+          {
+            "event_id": "wk29_IG_026",
+            "why_unassigned": "The Constitution Annotated coding error is illustrative but can be treated as an anecdote within D8 if needed rather than as a separate anchor."
+          },
+          {
+            "event_id": "wk29_ES_001",
+            "why_unassigned": "Growth in bank lending to private credit is structurally important but more macro-financial than directly democracy-specific this week; it can be a background data point in D6 if desired."
+          },
+          {
+            "event_id": "wk29_ES_002",
+            "why_unassigned": "Meta’s private-credit financing for AI infrastructure is part of broader tech-finance trends but not central to the week’s political developments."
+          },
+          {
+            "event_id": "wk29_ES_003",
+            "why_unassigned": "Microsoft’s data-center lease expansion is similar to ES_002—economically notable but not a key democracy clock driver in this week’s narrative."
+          },
+          {
+            "event_id": "wk29_ES_015",
+            "why_unassigned": "Con Edison’s rate hike request is already implicitly covered by the Con Ed shutoff events; including all three would be redundant."
+          },
+          {
+            "event_id": "wk29_ES_018",
+            "why_unassigned": "Extended outages after shutoffs are part of the same Con Edison storyline and can be compressed with ES_009 if the writer chooses to go deep on that example."
+          }
+        ],
+        "week_number": 29,
+        "window": {
+          "end": "2025-08-08",
+          "start": "2025-08-02"
+        }
+      }
+    },
+    {
+      "week_number": 30,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 30/development_allocator_week30.json",
+        "filename": "development_allocator_week30.json",
+        "sha256": "1b151b10aba2b84d95798c1c27a2bc28477b061e5bb66b25427c13ca3b369705",
+        "mtime_utc": "2025-12-23T20:03:10Z",
+        "size_bytes": 23958
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk30_PA_009",
+            "wk30_PA_006",
+            "wk30_IG_018",
+            "wk30_IG_022",
+            "wk30_IG_023",
+            "wk30_PA_019",
+            "wk30_PA_005",
+            "wk30_PA_007",
+            "wk30_PA_008",
+            "wk30_CR_001",
+            "wk30_CR_002",
+            "wk30_CR_003",
+            "wk30_CR_011",
+            "wk30_CR_018",
+            "wk30_CR_013",
+            "wk30_PA_020",
+            "wk30_CR_010",
+            "wk30_ES_009",
+            "wk30_CR_008",
+            "wk30_IG_012",
+            "wk30_IG_015",
+            "wk30_IG_021",
+            "wk30_IG_017",
+            "wk30_CR_021",
+            "wk30_CR_022",
+            "wk30_CR_007",
+            "wk30_CR_019",
+            "wk30_PA_011",
+            "wk30_PA_017",
+            "wk30_IG_005",
+            "wk30_IG_011",
+            "wk30_CR_017",
+            "wk30_CR_004",
+            "wk30_CR_014",
+            "wk30_CR_015",
+            "wk30_IM_003",
+            "wk30_CR_016",
+            "wk30_IG_009",
+            "wk30_PA_013",
+            "wk30_IG_027",
+            "wk30_CR_006",
+            "wk30_ES_002",
+            "wk30_ES_003",
+            "wk30_IG_004",
+            "wk30_IG_016",
+            "wk30_IG_020",
+            "wk30_IG_003",
+            "wk30_ES_001",
+            "wk30_PA_001",
+            "wk30_PA_010",
+            "wk30_PA_015",
+            "wk30_PA_018",
+            "wk30_PA_016",
+            "wk30_ES_004",
+            "wk30_ES_005",
+            "wk30_IG_024",
+            "wk30_CR_028",
+            "wk30_CR_024",
+            "wk30_CR_029",
+            "wk30_CR_027",
+            "wk30_CR_026",
+            "wk30_IG_019",
+            "wk30_IG_026",
+            "wk30_IM_004",
+            "wk30_PA_012",
+            "wk30_IM_001",
+            "wk30_PA_002",
+            "wk30_IM_006",
+            "wk30_IM_007",
+            "wk30_CR_012",
+            "wk30_IG_013",
+            "wk30_IM_008",
+            "wk30_IM_002",
+            "wk30_IM_005",
+            "wk30_IM_009",
+            "wk30_IG_001",
+            "wk30_IG_006",
+            "wk30_IG_007",
+            "wk30_IG_010"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 120,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk30_PA_009",
+              "wk30_PA_006",
+              "wk30_IG_018",
+              "wk30_IG_022",
+              "wk30_IG_023",
+              "wk30_PA_019"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Sequence this as a multi-day arc: (1) Trump’s rhetoric and press conference setup about D.C. crime (wk30_PA_005, wk30_PA_007, wk30_PA_008); (2) the crime emergency EO and explicit exploration of overturning Home Rule and seeking long-term control of MPD (wk30_PA_009, wk30_PA_006, wk30_IG_018); (3) D.C. and congressional pushback via lawsuit and joint resolution (wk30_IG_022, wk30_IG_023); (4) the partial climbdown agreement (wk30_PA_019). Emphasize how this uses D.C. as a laboratory for emergency-based federalization.",
+            "one_sentence_thesis": "The administration used a manufactured crime emergency in a low-crime city to federalize D.C. policing, threaten Home Rule, and then partially retreat under legal and political pressure, testing how far executive power can override local self-government.",
+            "supporting_event_ids": [
+              "wk30_PA_005",
+              "wk30_PA_007",
+              "wk30_PA_008"
+            ],
+            "title": "Trump moves to seize lasting control over Washington, D.C. policing and governance",
+            "why_it_matters": "Using emergency declarations to displace elected local authorities in the nation’s capital normalizes federal takeovers that can be replicated elsewhere and weaponized against political opponents. The subsequent lawsuits and negotiated rollback show that some checks remain, but also how fragile they are when the White House is willing to stretch statutory limits."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_CR_001",
+              "wk30_CR_002",
+              "wk30_CR_003",
+              "wk30_CR_011",
+              "wk30_CR_018",
+              "wk30_CR_013",
+              "wk30_PA_020",
+              "wk30_CR_010",
+              "wk30_ES_009"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Frame this as a continuum: (1) individual detentions of long-term residents and a DACA organizer (wk30_CR_001–003); (2) alleged deportations of citizen children and a lethal raid (wk30_CR_011, wk30_CR_018); (3) DOJ/AG efforts to punish lawyers and sanctuary officials (wk30_CR_008, wk30_CR_013, wk30_PA_020); (4) structural expansion of detention infrastructure and privatization (wk30_CR_010, wk30_IG_017, wk30_ES_009); (5) oversight and community resistance (wk30_IG_012, wk30_IG_015, wk30_IG_021, wk30_CR_021, wk30_CR_022).",
+            "one_sentence_thesis": "Across the week, ICE and allied agencies escalated harsh, often lawless immigration enforcement while expanding private detention, turning immigration policy into a system that stratifies rights and intimidates immigrant-protective jurisdictions.",
+            "supporting_event_ids": [
+              "wk30_CR_008",
+              "wk30_IG_012",
+              "wk30_IG_015",
+              "wk30_IG_021",
+              "wk30_IG_017",
+              "wk30_CR_021",
+              "wk30_CR_022"
+            ],
+            "title": "Immigration enforcement becomes a tool of fear, punishment, and profit",
+            "why_it_matters": "Targeting long-settled residents, DACA recipients, and even alleged citizen children erodes any sense of security in legal status and due process, while threats against sanctuary leaders and expansion of private detention entrench a punitive, profit-driven enforcement regime. These practices both terrorize specific communities and signal that federal power will be used against localities that resist."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_CR_007",
+              "wk30_CR_019",
+              "wk30_PA_011",
+              "wk30_PA_017",
+              "wk30_IG_005",
+              "wk30_IG_011"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Tie together: (1) FBI’s deprioritization of right-wing extremism (wk30_CR_007); (2) Border Patrol’s armed presence at Newsom’s event (wk30_CR_019) as political intimidation; (3) terrorism designation of Tren de Aragua and military orders against cartels (wk30_PA_011, wk30_PA_017) plus the doubled bounty on Maduro (wk30_CR_017) to show foreign policy/crime conflation; (4) contested domestic troop deployments in Los Angeles (wk30_IG_005, wk30_IG_011). Connect back to the D.C. emergency in D1 but avoid reusing those specific events.",
+            "one_sentence_thesis": "The administration increasingly directed law enforcement and military tools toward political and ideological goals—from deprioritizing right-wing extremism to intimidating domestic opponents and expanding military roles in crime and migration policy.",
+            "supporting_event_ids": [
+              "wk30_CR_017"
+            ],
+            "title": "Security forces are repurposed for regime priorities at home and abroad",
+            "why_it_matters": "When security institutions serve partisan narratives rather than public safety, they become instruments of control that can chill dissent and normalize militarized responses to political problems. This shift also blurs lines between war, policing, and immigration enforcement, making extraordinary powers easier to invoke against disfavored groups and jurisdictions."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_CR_004",
+              "wk30_CR_014",
+              "wk30_CR_015",
+              "wk30_IM_003",
+              "wk30_CR_016"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Treat this as a coherent ideological project: start with Hegseth’s reposting of anti–women’s suffrage content (wk30_CR_004), then detail the bans and purges in the ranks (wk30_CR_014), the Confederate memorial restoration and its dual classification as civil-rights and memory manipulation (wk30_CR_015, wk30_IM_003), and the Christian nationalist recruitment messaging (wk30_CR_016). Emphasize how this redefines who counts as a full citizen-soldier.",
+            "one_sentence_thesis": "Defense Secretary Pete Hegseth used his position to promote Christian nationalist themes, attack women’s suffrage, purge LGBTQ and minority officers, and reinstall Confederate symbolism, recasting the military as an explicitly ideological institution.",
+            "supporting_event_ids": [],
+            "title": "Christian nationalism and exclusion reshape the Pentagon and civic equality",
+            "why_it_matters": "Embedding sectarian and Lost Cause narratives in the armed forces undermines the principle of equal service and loyalty to the Constitution rather than a particular religion or racial order. It also widens the Overton window for rolling back core democratic rights, including women’s political participation and LGBTQ inclusion."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_IG_009",
+              "wk30_PA_013",
+              "wk30_IG_027",
+              "wk30_CR_006",
+              "wk30_ES_002",
+              "wk30_ES_003",
+              "wk30_IG_004",
+              "wk30_IG_016",
+              "wk30_IG_020"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Organize by sector: (1) data/statistics—firing the BLS chief and installing a partisan economist plus broader replacement of statistical staff (wk30_IG_009, wk30_PA_013); (2) consumer and foreign aid oversight—appeals court enabling mass CFPB firings and cuts to USAID funds (wk30_IG_027, wk30_IG_020); (3) veterans’ care—VA staffing cuts, union contract terminations, and legislative push toward privatized care, with IG confirmation of shortages (wk30_CR_006, wk30_ES_002, wk30_ES_003, wk30_IG_004, wk30_IG_016); (4) note the politically tinged firing of a Jan. 6 prosecutor as part of the same pattern (wk30_IG_003).",
+            "one_sentence_thesis": "Trump and his allies accelerated politicization and privatization across key institutions—from economic statistics and consumer protection to veterans’ healthcare and foreign aid—shifting state capacity away from neutral service toward regime and market interests.",
+            "supporting_event_ids": [
+              "wk30_IG_003"
+            ],
+            "title": "Executive capture and hollowing-out of neutral institutions and public services",
+            "why_it_matters": "When statistical agencies, watchdogs, and public service systems are staffed by loyalists or outsourced to private actors, citizens lose reliable information and equitable access to core goods like healthcare and consumer protection. This structural erosion is less visible than headline-grabbing crackdowns but can entrench long-term democratic backsliding."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_ES_001",
+              "wk30_PA_001",
+              "wk30_PA_010",
+              "wk30_PA_015",
+              "wk30_PA_018",
+              "wk30_PA_016",
+              "wk30_ES_004",
+              "wk30_ES_005"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Weave together: (1) the Nvidia/AMD revenue-sharing export-license deal and analysts’ description of a shift toward state capitalism (wk30_ES_001, wk30_ES_005); (2) opening the National Petroleum Reserve–Alaska and revoking the pro-competition EO (wk30_PA_001, wk30_PA_016); (3) Trump’s unilateral tariff and space-launch decisions, including environmental review exemptions (wk30_PA_010, wk30_PA_015, wk30_PA_018); (4) SNAP work requirement expansion (wk30_ES_004) as an example of risk shifted downward while benefits of state–corporate deals accrue upward.",
+            "one_sentence_thesis": "The administration advanced a state-capitalist model by striking revenue-sharing deals with chipmakers, opening vast public lands and space activities to extractive industries, and revoking pro-competition directives, consolidating executive bargaining power with major firms.",
+            "supporting_event_ids": [],
+            "title": "State-capitalist deals and deregulation deepen crony control over the economy and environment",
+            "why_it_matters": "Direct, opaque bargaining between the White House and large corporations, coupled with environmental rollbacks, shifts economic governance from rule-based oversight to personalized deal-making. This not only weakens environmental and competitive safeguards but also makes economic outcomes more dependent on political loyalty and access."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_IG_024",
+              "wk30_CR_028",
+              "wk30_CR_024",
+              "wk30_CR_029",
+              "wk30_CR_027",
+              "wk30_CR_026",
+              "wk30_IG_019",
+              "wk30_IG_026"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Tell this as a two-state story: (1) Texas—special sessions to force redistricting, Democrats’ quorum break and organized resistance (wk30_IG_024, wk30_CR_028, wk30_CR_024, wk30_CR_029); (2) California—Newsom’s conditional redistricting plans and proposed special election as retaliation, plus his public warnings about GOP map-rigging (wk30_CR_027, wk30_CR_026, wk30_IG_019, wk30_IG_026). Highlight how this reframes redistricting as a national partisan chess match.",
+            "one_sentence_thesis": "Texas and California escalated a tit-for-tat battle over congressional maps, with Texas Republicans using special sessions and legal threats while California’s Democratic leadership floated counter-gerrymanders and special elections in response.",
+            "supporting_event_ids": [],
+            "title": "Redistricting and representation turn into an interstate partisan arms race",
+            "why_it_matters": "When redistricting becomes an openly retaliatory, cross-state contest, it further detaches representation from local communities and entrenches national partisan warfare over who gets a voice in Congress. This dynamic encourages ever more extreme procedural tactics and undermines public faith that districts reflect voters rather than party bosses."
+          },
+          {
+            "anchor_event_ids": [
+              "wk30_IM_004",
+              "wk30_PA_012",
+              "wk30_IM_001",
+              "wk30_PA_002",
+              "wk30_IM_006",
+              "wk30_IM_007",
+              "wk30_IM_003",
+              "wk30_CR_012",
+              "wk30_IG_013",
+              "wk30_IM_008"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Cluster several strands: (1) cultural memory—Smithsonian content vetting and EO pressure plus the Confederate memorial restoration (wk30_IM_004, wk30_PA_012, wk30_IM_003); (2) intelligence and disinformation—declassification of the 2016 Russia report and hosting Benny Johnson (wk30_IM_001, wk30_PA_002, wk30_IM_006), with Putin’s propaganda gesture as a foil (wk30_IM_002); (3) identity and language—TSA’s shift from “gender” to “sex” (wk30_IM_007); (4) education and campus speech—DOJ’s antisemitism investigation of GWU and the court blocking DEI-related school funding cuts (wk30_IG_013, wk30_CR_012); (5) transparency and civil-society pushback—restored spending database and NED funds, FOIA litigation, EIS notices, and Indivisible’s Truth Brigade (wk30_IG_001, wk30_IG_006, wk30_IG_007, wk30_IG_010, wk30_IM_009, wk30_IM_008). Emphasize the tug-of-war over who writes the public record.",
+            "one_sentence_thesis": "The administration intensified efforts to curate public memory and information by vetting museum content, restoring Confederate symbols, politicizing intelligence disclosures, and narrowing official recognition of gender, while civil society mounted limited countermeasures.",
+            "supporting_event_ids": [
+              "wk30_IM_002",
+              "wk30_IM_005",
+              "wk30_IM_009",
+              "wk30_IG_001",
+              "wk30_IG_006",
+              "wk30_IG_007",
+              "wk30_IG_010"
+            ],
+            "title": "Control over history, information, and identity tightens across federal institutions",
+            "why_it_matters": "State control over what history is celebrated, which data are trusted, and how identities are named shapes the boundaries of legitimate debate and belonging. These moves make it easier to erase histories of oppression, rehabilitate authoritarian allies, and marginalize already vulnerable groups, even as some courts and activists push back."
+          }
+        ],
+        "period_label": "Week 30",
+        "recommended_development_count": 8,
+        "sanity_notes": "Developments are organized around eight major arcs: D1 (D.C. federalization and Home Rule threats), D2 (immigration enforcement as fear and profit), D3 (security forces repurposed for regime priorities), D4 (Christian nationalist and exclusionary reshaping of the Pentagon), D5 (institutional capture and privatization of public services), D6 (state-capitalist economic and environmental moves), D7 (interstate redistricting arms race), and D8 (control over history, information, and identity). Some events could plausibly straddle categories—for example, Smithsonian vetting and Confederate memorial restoration touch both culture and power—but each is assigned once to keep storylines clean. Foreign-policy moves around Putin and Ukraine are left mostly unassigned to avoid overextending beyond the week’s already dense domestic focus.",
+        "unassigned_events": [
+          {
+            "event_id": "wk30_CR_005",
+            "why_unassigned": "Protest planning around Moral Monday fits general civic resistance but is not central to any primary narrative thread this week."
+          },
+          {
+            "event_id": "wk30_ES_021",
+            "why_unassigned": "Routine DEA regulatory processing without clear linkage to the week’s major structural developments."
+          },
+          {
+            "event_id": "wk30_ES_022",
+            "why_unassigned": "Technical EPA pesticide registration actions that do not materially advance a main storyline."
+          },
+          {
+            "event_id": "wk30_ES_023",
+            "why_unassigned": "Procedural FCC information-collection notices with limited narrative impact."
+          },
+          {
+            "event_id": "wk30_ES_024",
+            "why_unassigned": "Administrative OSHA paperwork extension that does not significantly affect democratic structures."
+          },
+          {
+            "event_id": "wk30_IM_010",
+            "why_unassigned": "CDC data-collection comment request is routine and not clearly tied to the week’s core themes."
+          },
+          {
+            "event_id": "wk30_CR_009",
+            "why_unassigned": "Local abuse prosecution is important but not clearly connected to the national-level democracy storylines emphasized here."
+          },
+          {
+            "event_id": "wk30_ES_006",
+            "why_unassigned": "Research on AI and jobs is contextual background rather than part of a discrete development this week."
+          },
+          {
+            "event_id": "wk30_ES_007",
+            "why_unassigned": "Analytical piece on Chinese transshipment informs trade debates but does not drive a specific development."
+          },
+          {
+            "event_id": "wk30_ES_008",
+            "why_unassigned": "Academic research on personalist dictatorships is thematic context, not a concrete action this week."
+          },
+          {
+            "event_id": "wk30_CR_017",
+            "why_unassigned": "Maduro bounty escalation is noted as context in D3 but not essential as an anchor; left unassigned to avoid overcomplicating that thread."
+          },
+          {
+            "event_id": "wk30_CR_025",
+            "why_unassigned": "Protests against JD Vance abroad are peripheral to the main domestic institutional shifts."
+          },
+          {
+            "event_id": "wk30_ES_025",
+            "why_unassigned": "EPA mine remediation guidance is a standalone environmental policy step without strong ties to other developments."
+          },
+          {
+            "event_id": "wk30_ES_026",
+            "why_unassigned": "FCC channel allotment changes are technical and low-salience for the democracy narrative."
+          },
+          {
+            "event_id": "wk30_IM_011",
+            "why_unassigned": "Duplicate/variant of FCC channel changes already captured as low-impact technical adjustments."
+          },
+          {
+            "event_id": "wk30_PA_003",
+            "why_unassigned": "Planned Trump–Putin Alaska meeting is significant but fits awkwardly with the chosen domestic-focused developments; could be treated as a sidebar if needed."
+          },
+          {
+            "event_id": "wk30_PA_004",
+            "why_unassigned": "Prospective U.S.–Russia summit on Ukrainian concessions is major geopolitically but not easily integrated without diluting other arcs."
+          },
+          {
+            "event_id": "wk30_PA_014",
+            "why_unassigned": "Drug stockpile EO is notable for executive control but secondary relative to more vivid economic and policing moves already covered."
+          },
+          {
+            "event_id": "wk30_ES_010",
+            "why_unassigned": "PRO Veterans Act modestly offsets VA erosion but is better treated as background nuance within D5 if mentioned at all."
+          },
+          {
+            "event_id": "wk30_IG_030",
+            "why_unassigned": "ACES Act passage shows baseline legislative function but does not strongly interact with other developments."
+          },
+          {
+            "event_id": "wk30_IG_031",
+            "why_unassigned": "Historical reference to the Social Security Act is context, not a current-week event."
+          },
+          {
+            "event_id": "wk30_CR_020",
+            "why_unassigned": "Newsom’s broad call to resist Trump’s assault on democracy is thematically relevant but diffuse; its concrete manifestations are captured in redistricting and legal actions elsewhere."
+          },
+          {
+            "event_id": "wk30_CR_023",
+            "why_unassigned": "Moral Monday protest with symbolic caskets is part of ongoing activism but not central to a distinct new development this week."
+          },
+          {
+            "event_id": "wk30_CR_030",
+            "why_unassigned": "Analytical discussion of crime and urban density is background context, not a discrete action."
+          },
+          {
+            "event_id": "wk30_ES_011",
+            "why_unassigned": "Commentary on subway-building barriers is structural context rather than a specific governmental move."
+          },
+          {
+            "event_id": "wk30_ES_012",
+            "why_unassigned": "NYC zoning choices are ongoing policy context, not a new decision in this window."
+          },
+          {
+            "event_id": "wk30_ES_013",
+            "why_unassigned": "Advocacy for more dense cities is thematic but not tightly linked to the week’s main power and rights developments."
+          },
+          {
+            "event_id": "wk30_ES_014",
+            "why_unassigned": "Continuation of cruise ship inspection fees is routine regulatory maintenance."
+          },
+          {
+            "event_id": "wk30_ES_015",
+            "why_unassigned": "EPA fungicide tolerance on papaya is a narrow regulatory decision without clear democracy implications."
+          },
+          {
+            "event_id": "wk30_ES_016",
+            "why_unassigned": "Extensions of industrial emission deadlines are incremental and not central to the chosen narratives."
+          },
+          {
+            "event_id": "wk30_ES_017",
+            "why_unassigned": "TSCA low-risk chemical findings are technical and peripheral to the week’s core themes."
+          },
+          {
+            "event_id": "wk30_ES_018",
+            "why_unassigned": "FDA biosimilar user-fee meeting is routine stakeholder engagement."
+          },
+          {
+            "event_id": "wk30_ES_019",
+            "why_unassigned": "FDA biosimilar workshop planning is similarly routine and not democracy-salient."
+          },
+          {
+            "event_id": "wk30_ES_020",
+            "why_unassigned": "Revocation of a specific COVID-19 test EUA is a technical regulatory adjustment."
+          },
+          {
+            "event_id": "wk30_IG_025",
+            "why_unassigned": "Schiff’s inquiry into lake-level changes for JD Vance’s trip is a notable ethics question but tangential to the main structural developments."
+          },
+          {
+            "event_id": "wk30_IG_028",
+            "why_unassigned": "Dismissal of a Cop City protester’s terrorism charges is an important civil-liberties win but stands somewhat apart from the week’s dominant federal-executive themes."
+          },
+          {
+            "event_id": "wk30_IG_029",
+            "why_unassigned": "Corruption indictment of New Orleans’ mayor shows baseline accountability but is not tightly coupled to the Trump-era structural shifts highlighted."
+          }
+        ],
+        "week_number": 30,
+        "window": {
+          "end": "2025-08-15",
+          "start": "2025-08-09"
+        }
+      }
+    },
+    {
+      "week_number": 31,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 31/development_allocator_week31.json",
+        "filename": "development_allocator_week31.json",
+        "sha256": "138166ae028d7678463fd5a0619f67085edc01811537d8748d08439d5b502861",
+        "mtime_utc": "2025-12-23T20:04:12Z",
+        "size_bytes": 29583
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk31_PA_003",
+            "wk31_PA_004",
+            "wk31_PA_013",
+            "wk31_PA_033",
+            "wk31_PA_034",
+            "wk31_PA_046",
+            "wk31_CR_011",
+            "wk31_CR_012",
+            "wk31_CR_031",
+            "wk31_IM_021",
+            "wk31_IM_026",
+            "wk31_PA_032",
+            "wk31_PA_048",
+            "wk31_PA_050",
+            "wk31_PA_001",
+            "wk31_PA_014",
+            "wk31_PA_038",
+            "wk31_PA_040",
+            "wk31_PA_042",
+            "wk31_PA_043",
+            "wk31_PA_041",
+            "wk31_CR_026",
+            "wk31_IG_005",
+            "wk31_IG_028",
+            "wk31_IG_019",
+            "wk31_IM_014",
+            "wk31_IM_015",
+            "wk31_IM_016",
+            "wk31_IM_024",
+            "wk31_IG_013",
+            "wk31_IM_020",
+            "wk31_IG_001",
+            "wk31_IG_021",
+            "wk31_IG_022",
+            "wk31_IG_003",
+            "wk31_IG_004",
+            "wk31_IG_020",
+            "wk31_IG_024",
+            "wk31_IG_026",
+            "wk31_ES_015",
+            "wk31_IG_025",
+            "wk31_PA_002",
+            "wk31_PA_005",
+            "wk31_PA_020",
+            "wk31_IG_002",
+            "wk31_IG_023",
+            "wk31_IG_030",
+            "wk31_IM_002",
+            "wk31_PA_010",
+            "wk31_ES_010",
+            "wk31_CR_003",
+            "wk31_CR_004",
+            "wk31_CR_005",
+            "wk31_CR_023",
+            "wk31_PA_026",
+            "wk31_PA_027",
+            "wk31_CR_024",
+            "wk31_IG_016",
+            "wk31_CR_022",
+            "wk31_CR_006",
+            "wk31_CR_007",
+            "wk31_CR_008",
+            "wk31_CR_029",
+            "wk31_ES_012",
+            "wk31_ES_013",
+            "wk31_CR_030",
+            "wk31_CR_001",
+            "wk31_PA_028",
+            "wk31_CR_002",
+            "wk31_IG_007",
+            "wk31_IG_008",
+            "wk31_IG_010",
+            "wk31_IG_011",
+            "wk31_IG_015",
+            "wk31_CR_009",
+            "wk31_CR_025",
+            "wk31_IM_008",
+            "wk31_IM_010",
+            "wk31_IM_011",
+            "wk31_IM_018",
+            "wk31_IM_022",
+            "wk31_IM_027",
+            "wk31_CR_027",
+            "wk31_PA_030",
+            "wk31_IM_025",
+            "wk31_PA_007",
+            "wk31_PA_008",
+            "wk31_IM_012",
+            "wk31_PA_035",
+            "wk31_IM_013",
+            "wk31_PA_036",
+            "wk31_PA_009",
+            "wk31_ES_016",
+            "wk31_PA_037",
+            "wk31_PA_045",
+            "wk31_PA_049",
+            "wk31_ES_027",
+            "wk31_ES_026",
+            "wk31_ES_017",
+            "wk31_ES_022",
+            "wk31_ES_023",
+            "wk31_ES_021",
+            "wk31_ES_024",
+            "wk31_ES_035",
+            "wk31_ES_009",
+            "wk31_PA_015",
+            "wk31_ES_007",
+            "wk31_ES_011",
+            "wk31_ES_014",
+            "wk31_PA_029",
+            "wk31_CR_019",
+            "wk31_CR_028",
+            "wk31_ES_008",
+            "wk31_ES_001",
+            "wk31_ES_002",
+            "wk31_ES_003",
+            "wk31_ES_004",
+            "wk31_CR_021",
+            "wk31_CR_020",
+            "wk31_IG_027",
+            "wk31_IG_031",
+            "wk31_CR_018",
+            "wk31_CR_016",
+            "wk31_ES_005",
+            "wk31_IG_017",
+            "wk31_IG_032",
+            "wk31_CR_017",
+            "wk31_IM_004",
+            "wk31_IM_005",
+            "wk31_PA_044",
+            "wk31_IM_006",
+            "wk31_IM_007",
+            "wk31_IM_028",
+            "wk31_PA_039",
+            "wk31_PA_018",
+            "wk31_PA_012",
+            "wk31_IM_023",
+            "wk31_IM_001",
+            "wk31_IM_017",
+            "wk31_IM_009",
+            "wk31_PA_031",
+            "wk31_PA_021",
+            "wk31_PA_022",
+            "wk31_PA_024",
+            "wk31_PA_011",
+            "wk31_PA_023",
+            "wk31_PA_025",
+            "wk31_IG_012",
+            "wk31_IG_014",
+            "wk31_CR_015",
+            "wk31_IM_003",
+            "wk31_IG_018",
+            "wk31_IG_029"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 178,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk31_PA_003",
+              "wk31_PA_004",
+              "wk31_PA_013",
+              "wk31_PA_033",
+              "wk31_PA_034",
+              "wk31_PA_046"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Open with the declaration of a D.C. public safety emergency and federalization of local police (wk31_PA_003), then layer in the Guard and federal agent deployments (wk31_PA_004, wk31_CR_011, wk31_CR_012) and the announcement of a broader military-style crackdown (wk31_PA_013). Move to the arming of Guard patrols and insertion of JAG officers into civilian prosecutions (wk31_PA_033, wk31_PA_034) and the new DOJ charging policies (wk31_PA_046, wk31_CR_031, wk31_IM_021). Use the crime-data investigations (wk31_IM_026, wk31_PA_048, wk31_PA_050) to show how data is being manipulated to justify these moves, and briefly note Pentagon civilian support for ICE (wk31_PA_032) as part of the same civil–military blur.",
+            "one_sentence_thesis": "The administration used a manufactured crime emergency in Washington, D.C. to federalize policing, deploy armed troops, embed military lawyers, and reshape prosecutorial policy, turning the capital into a testbed for permanent emergency governance.",
+            "supporting_event_ids": [
+              "wk31_CR_011",
+              "wk31_CR_012",
+              "wk31_CR_031",
+              "wk31_IM_021",
+              "wk31_IM_026",
+              "wk31_PA_032",
+              "wk31_PA_048",
+              "wk31_PA_050"
+            ],
+            "title": "Trump consolidates militarized control over Washington, D.C. and rewires local justice",
+            "why_it_matters": "Treating ordinary public safety issues as grounds for federal takeovers and military-style crackdowns erodes home rule, normalizes domestic use of armed forces, and creates a template for similar interventions in other cities. It also lets the executive hardwire harsher, more politicized criminal justice priorities into a key jurisdiction that houses national institutions."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_PA_001",
+              "wk31_PA_014",
+              "wk31_PA_038",
+              "wk31_PA_040",
+              "wk31_PA_042",
+              "wk31_PA_043",
+              "wk31_PA_041"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Center the narrative on three strands: (1) clemency and pressure for election-related offenders (wk31_PA_001, wk31_PA_014, wk31_CR_026); (2) politicized use of DOJ and grand juries against Obama-era officials and critics like John Bolton (wk31_PA_040, wk31_IM_014, wk31_PA_038, wk31_PA_047); and (3) management of Epstein/Maxwell records to shape perceptions (wk31_PA_042, wk31_PA_043, wk31_PA_041, wk31_IM_015, wk31_IM_016, wk31_IM_024, with oversight pushback in wk31_IG_005, wk31_IG_028, wk31_IG_019). Fold in the unlawful U.S. Attorney appointment ruling (wk31_IG_013) and the NYC corruption case (wk31_IM_020) as contrast points showing courts and local prosecutors sometimes resisting or independently policing elites.",
+            "one_sentence_thesis": "Across pardons, politicized investigations, and selective transparency, Trump and his allies used legal tools to absolve loyalists, intimidate opponents, and manage damaging information rather than uphold neutral rule of law.",
+            "supporting_event_ids": [
+              "wk31_CR_026",
+              "wk31_IG_005",
+              "wk31_IG_028",
+              "wk31_IG_019",
+              "wk31_IM_014",
+              "wk31_IM_015",
+              "wk31_IM_016",
+              "wk31_IM_024",
+              "wk31_IG_013",
+              "wk31_IM_020"
+            ],
+            "title": "Law as a shield for allies and a weapon against critics and institutions",
+            "why_it_matters": "When prosecutions, grand juries, and document releases are driven by loyalty and optics instead of evidence, legal institutions lose credibility and become instruments of regime preservation. This chills dissent, encourages impunity for insiders, and makes it harder for the public to trust any future accountability processes."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_IG_001",
+              "wk31_IG_021",
+              "wk31_IG_022",
+              "wk31_IG_003",
+              "wk31_IG_004",
+              "wk31_IG_020",
+              "wk31_IG_024",
+              "wk31_IG_026",
+              "wk31_ES_015",
+              "wk31_IG_025",
+              "wk31_PA_002",
+              "wk31_PA_005",
+              "wk31_PA_020"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Structure this as a three-part story. First, detail the Texas and Florida redistricting fights: Florida Supreme Court upholding a DeSantis map (wk31_IG_001); Texas’s mid-decade map engineered at Trump’s request, enforced via troopers and surveillance (wk31_IG_021, wk31_IG_022, wk31_CR_013, wk31_CR_014, wk31_IG_002, wk31_IG_003, wk31_IG_004, wk31_IG_023, wk31_IG_030). Second, show California’s retaliatory mid-decade redistricting and GOP lawsuit (wk31_IG_020, wk31_IG_024) to illustrate both parties weaponizing maps. Third, cover national voting-rule fights: Trump’s push to ban mail-in voting and machines (wk31_PA_002, wk31_PA_005, wk31_PA_020) backed by disinformation (wk31_IM_002) and jokes about canceling elections (wk31_PA_010), plus America First Legal’s proof-of-citizenship push (wk31_ES_015, wk31_IG_025) and new subjective citizenship standards (wk31_ES_010) as quieter structural constraints.",
+            "one_sentence_thesis": "Republican-led institutions advanced aggressive gerrymanders and Trump escalated efforts to end mail-in voting and tighten registration rules, while Democrats in California responded with their own mid-decade map, pushing U.S. elections toward structurally biased contests justified as integrity or fairness.",
+            "supporting_event_ids": [
+              "wk31_IG_002",
+              "wk31_IG_023",
+              "wk31_IG_030",
+              "wk31_IM_002",
+              "wk31_PA_010",
+              "wk31_ES_010"
+            ],
+            "title": "Elections and representation are re-engineered through gerrymanders and attacks on voting methods",
+            "why_it_matters": "When district lines and voting rules are repeatedly rewritten for partisan gain, elections become less about voter choice and more about mapmakers’ preferences. Coupled with rhetoric about canceling elections in wartime, these moves normalize the idea that democratic procedures are contingent and malleable tools of those in power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_CR_003",
+              "wk31_CR_004",
+              "wk31_CR_005",
+              "wk31_CR_023",
+              "wk31_PA_026",
+              "wk31_PA_027",
+              "wk31_ES_010",
+              "wk31_CR_024",
+              "wk31_IG_016",
+              "wk31_CR_022",
+              "wk31_CR_006",
+              "wk31_CR_007",
+              "wk31_CR_008",
+              "wk31_CR_029",
+              "wk31_ES_012",
+              "wk31_ES_013",
+              "wk31_CR_030"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Begin with the Gaza medical visa halt and its politicized reversal of humanitarian norms (wk31_CR_001, wk31_PA_028), then broaden to the new ideological and continuous vetting regimes (wk31_CR_004, wk31_CR_005, wk31_IM_011, wk31_IM_022, wk31_PA_026) and mass student visa revocations targeting international students and activists (wk31_CR_003, wk31_CR_023, wk31_IM_010, wk31_ES_010). Fold in TPS terminations (wk31_CR_024, wk31_IG_016) and the Uganda third-country deportation deal (wk31_CR_022) to show long-settled and asylum-seeking populations at risk. Close with the on-the-ground enforcement architecture: raids and hotel detentions (wk31_CR_006, wk31_CR_007, wk31_CR_008, wk31_CR_029, wk31_CR_025), ICE’s militarized branding and planned fleets (wk31_ES_012, wk31_ES_013, wk31_IM_008, wk31_IM_018, wk31_IM_027), and Pentagon civilian support (wk31_CR_030), noting court pushback around facilities like ‘Alligator Alcatraz’ (wk31_IG_007, wk31_IG_008, wk31_IG_010, wk31_IG_011, wk31_IG_015).",
+            "one_sentence_thesis": "The administration expanded continuous and ideological vetting of tens of millions of visa holders, revoked thousands of student visas, ended protections for long-settled migrants, and deepened militarized and outsourced deportation infrastructure, turning immigration status into a tool for disciplining disfavored communities.",
+            "supporting_event_ids": [
+              "wk31_CR_001",
+              "wk31_PA_028",
+              "wk31_CR_002",
+              "wk31_IG_007",
+              "wk31_IG_008",
+              "wk31_IG_010",
+              "wk31_IG_011",
+              "wk31_IG_015",
+              "wk31_CR_008",
+              "wk31_CR_009",
+              "wk31_CR_025",
+              "wk31_IM_008",
+              "wk31_IM_010",
+              "wk31_IM_011",
+              "wk31_IM_018",
+              "wk31_IM_022",
+              "wk31_IM_027"
+            ],
+            "title": "Immigration and visas become an ideological sorting system backed by militarized enforcement",
+            "why_it_matters": "Using immigration law to police beliefs and punish activism creates a tiered system of rights where noncitizens and even prospective citizens live under constant surveillance and arbitrary exclusion. Militarized branding and third-country deportation deals further normalize treating migrants as security threats rather than rights-bearing people."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_CR_027",
+              "wk31_PA_030",
+              "wk31_IM_025",
+              "wk31_PA_007",
+              "wk31_PA_008",
+              "wk31_IM_012",
+              "wk31_PA_035",
+              "wk31_IM_013",
+              "wk31_PA_036",
+              "wk31_PA_009",
+              "wk31_ES_016",
+              "wk31_PA_037",
+              "wk31_PA_045",
+              "wk31_PA_049"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Lead with the sweeping cancellation of union contracts for hundreds of thousands of federal workers (wk31_CR_027, wk31_PA_030) as a structural blow to organized labor in government. Then cover the BLS purge and loyalist nomination (wk31_IM_025, wk31_PA_007, wk31_PA_008) as emblematic of politicized control over economic data. Add the intelligence side: mass clearance revocations and ODNI staff cuts (wk31_IM_012, wk31_PA_035, wk31_IM_013, wk31_PA_036). Finally, narrate the campaign against Fed Governor Lisa Cook (wk31_PA_009, wk31_ES_016, wk31_PA_037, wk31_PA_045, wk31_PA_049) as an example of using investigations to intimidate independent economic officials. Routine regulatory notices (e.g., wk31_ES_017, wk31_ES_022, wk31_ES_023, wk31_ES_021, wk31_ES_024, wk31_ES_035, wk31_ES_026, wk31_ES_027) can be mentioned briefly as background showing normal governance continuing even as its stewards are politicized.",
+            "one_sentence_thesis": "Trump’s team moved aggressively to cancel federal union contracts, install loyalists in key statistical and intelligence roles, and target independent officials like the BLS commissioner and a Federal Reserve governor, reshaping the bureaucracy into a more compliant instrument of presidential will.",
+            "supporting_event_ids": [
+              "wk31_CR_031",
+              "wk31_ES_027",
+              "wk31_ES_026",
+              "wk31_ES_017",
+              "wk31_ES_022",
+              "wk31_ES_023",
+              "wk31_ES_021",
+              "wk31_ES_024",
+              "wk31_ES_035"
+            ],
+            "title": "Civil service, unions, and independent data guardians are purged or politicized",
+            "why_it_matters": "A professional, protected civil service and independent data institutions are core guardrails against authoritarian drift; when they are hollowed out, workers lose collective power, whistleblowers face retaliation, and official statistics and analysis can be bent to fit political narratives."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_ES_009",
+              "wk31_PA_015",
+              "wk31_ES_007",
+              "wk31_ES_009",
+              "wk31_ES_011",
+              "wk31_ES_014",
+              "wk31_PA_029",
+              "wk31_CR_019",
+              "wk31_CR_028",
+              "wk31_ES_008"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Frame this as a pattern of policy choices that fall hardest on those with the least resources. Start with the student loan cap and elimination of some graduate programs (wk31_ES_009, wk31_PA_015) and the budget bill triggering large Medicare/Medicaid cuts (wk31_ES_007). Add the PSLF rule tying forgiveness to employer ideology (wk31_ES_011) and clawbacks of California public health funds over ‘gender ideology’ (wk31_ES_014, wk31_PA_029). Bring in education and immigrant protections rollbacks (wk31_CR_019) and FEMA’s email-only disaster aid requirement (wk31_CR_028, wk31_ES_008). Use climate and health science rollbacks (wk31_ES_005, wk31_CR_016, wk31_CR_018, wk31_IG_017, wk31_IG_032) plus environmental and homelessness rulings (wk31_IG_027, wk31_IG_031, wk31_CR_020, wk31_CR_021) and economic/energy policy shifts (wk31_ES_001, wk31_ES_002, wk31_ES_003, wk31_ES_004) to show broader structural impacts on vulnerable communities.",
+            "one_sentence_thesis": "Through student loan restrictions, clawbacks of public health funds, rollbacks of protections for vulnerable students and immigrants, and digital-only disaster aid rules, the administration advanced policies that systematically burden poorer, marginalized, and less-connected communities.",
+            "supporting_event_ids": [
+              "wk31_ES_001",
+              "wk31_ES_002",
+              "wk31_ES_003",
+              "wk31_ES_004",
+              "wk31_CR_021",
+              "wk31_CR_020",
+              "wk31_IG_027",
+              "wk31_IG_031",
+              "wk31_CR_018",
+              "wk31_CR_016",
+              "wk31_ES_005",
+              "wk31_IG_017",
+              "wk31_IG_032"
+            ],
+            "title": "Inequality is deepened through education, health, and disaster policy choices",
+            "why_it_matters": "When access to education, health care, and basic disaster relief is conditioned on wealth, ideology, or digital access, inequality becomes a deliberate feature of governance rather than a side effect, entrenching a two-tier society with diminished democratic participation from those most affected."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_CR_016",
+              "wk31_CR_017",
+              "wk31_IM_004",
+              "wk31_IM_005",
+              "wk31_ES_005",
+              "wk31_IM_025",
+              "wk31_PA_007",
+              "wk31_PA_008",
+              "wk31_IM_026",
+              "wk31_PA_044",
+              "wk31_IM_006",
+              "wk31_IM_007",
+              "wk31_IM_028",
+              "wk31_PA_039",
+              "wk31_PA_018",
+              "wk31_PA_012",
+              "wk31_IM_023"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Organize this around three domains. First, science and public health: termination of mRNA vaccine research and attacks on pediatric societies (wk31_CR_016, wk31_CR_017, wk31_IM_004, wk31_IM_005) plus EPA’s move to rescind the greenhouse gas endangerment finding (wk31_ES_005). Second, data and statistics: the BLS purge (wk31_IM_025, wk31_PA_007, wk31_PA_008) and politicized crime-data probes in D.C. (wk31_IM_026, wk31_PA_044), with ICE’s data-driven vetting as a related theme (covered more fully in D4). Third, history and narrative: Trump’s and the White House’s attacks on Smithsonian exhibits and ordered legal review (wk31_IM_006, wk31_IM_007, wk31_IM_028, wk31_PA_039), plus curated foreign policy stories—claims about ending wars and recasting Ukraine’s responsibility (wk31_PA_012, wk31_IM_023), the TikTok move (wk31_PA_018), mishandled summit documents (wk31_IM_001, wk31_IM_017), sanctions on ICC officials (wk31_PA_021), and the firing of a State press officer over language on Palestinian relocations (wk31_IM_009, wk31_PA_031).",
+            "one_sentence_thesis": "The administration attacked vaccine and medical experts, moved to reshape economic and crime data, and directly targeted Smithsonian exhibits and historical narratives, while also curating foreign policy and war stories to flatter the president and his allies.",
+            "supporting_event_ids": [
+              "wk31_IM_001",
+              "wk31_IM_017",
+              "wk31_IM_002",
+              "wk31_IM_008",
+              "wk31_IM_018",
+              "wk31_IM_027",
+              "wk31_IM_009",
+              "wk31_PA_031",
+              "wk31_PA_021",
+              "wk31_IM_013"
+            ],
+            "title": "Trump escalates ideological control over information, history, and public memory",
+            "why_it_matters": "Controlling what counts as legitimate expertise and which histories are publicly told allows those in power to define reality for large parts of the population, undermining informed consent and making it easier to justify anti-democratic moves as necessary or patriotic."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_PA_022",
+              "wk31_PA_024",
+              "wk31_PA_011",
+              "wk31_PA_023",
+              "wk31_PA_025",
+              "wk31_IM_023",
+              "wk31_PA_021"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Tell this as a story of alignment and impunity. Start with the Alaska Trump–Putin summit and refusal to increase sanctions (wk31_PA_022, wk31_IM_017, wk31_IM_001), then move to Trump’s broker role and support for Ukraine ceding territory (wk31_PA_024, wk31_PA_011, wk31_PA_023, wk31_PA_025, wk31_IM_023, wk31_PA_012). Then pivot to the sanctions on ICC judges and prosecutors (wk31_PA_021) as an attack on international accountability. Close by tying in Gaza-related decisions (wk31_CR_001, wk31_PA_028, wk31_IM_009, wk31_PA_031) and the Uganda deportation deal (wk31_CR_022) to show how foreign policy and human rights are subordinated to domestic ideological and political goals.",
+            "one_sentence_thesis": "Trump’s Alaska summit with Putin, alignment with Russian positions on Ukraine, and support for territorial concessions were paired with sanctions on International Criminal Court officials and selective handling of Gaza and deportation issues, signaling a foreign policy that privileges regime narratives and allies over democratic norms and human rights.",
+            "supporting_event_ids": [
+              "wk31_IM_017",
+              "wk31_IM_001",
+              "wk31_PA_012",
+              "wk31_CR_001",
+              "wk31_PA_028",
+              "wk31_IM_009",
+              "wk31_PA_031",
+              "wk31_CR_022"
+            ],
+            "title": "Foreign policy tilts toward Russia and punitive moves against international accountability",
+            "why_it_matters": "When U.S. foreign policy openly sides with authoritarian powers and undermines international courts, it weakens global norms against aggression and impunity, emboldens hostile actors, and leaves vulnerable populations with fewer avenues for protection or justice."
+          },
+          {
+            "anchor_event_ids": [
+              "wk31_IG_007",
+              "wk31_IG_008",
+              "wk31_IG_010",
+              "wk31_IG_012",
+              "wk31_IG_011",
+              "wk31_IG_015",
+              "wk31_IG_014",
+              "wk31_IG_031",
+              "wk31_CR_020",
+              "wk31_CR_015",
+              "wk31_CR_021"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Frame this as a counterpoint chapter. Highlight federal court actions against the ‘Alligator Alcatraz’ jail (wk31_IG_007, wk31_IG_008, wk31_IG_010), the Illinois worker privacy ruling (wk31_IG_011), and the decision blocking Ten Commandments displays in schools (wk31_IG_012) as examples of judicial pushback. Add the visa ruling limiting the travel ban (wk31_IG_015) and the New York appeals court’s partial relief in Trump’s civil fraud case (wk31_IG_014). Then show how homelessness and disability rights are contested through the Grants Pass settlement and Supreme Court backdrop (wk31_IG_031, wk31_CR_020, wk31_IG_027). Close with civil society and oversight efforts: Moral Monday protests (wk31_CR_015), youth climate litigation (wk31_CR_021), ACLU’s petition over a detained journalist (wk31_CR_009), Newsmax’s Dominion settlement (wk31_IM_003, wk31_IG_018), and congressional oversight of NIH grants and Epstein files (wk31_IG_017, wk31_IG_032, wk31_IG_019, wk31_IM_016). Emphasize that these are important but fragmented defenses rather than a coherent counter-strategy.",
+            "one_sentence_thesis": "Even as executive and legislative actors pushed authoritarian-leaning policies, a patchwork of court rulings, state actions, and protests provided partial checks on religious mandates, abusive detention, homelessness criminalization, and elite impunity.",
+            "supporting_event_ids": [
+              "wk31_IG_017",
+              "wk31_IG_032",
+              "wk31_IG_019",
+              "wk31_IM_016",
+              "wk31_IM_003",
+              "wk31_IG_018",
+              "wk31_CR_009",
+              "wk31_CR_018",
+              "wk31_IG_027",
+              "wk31_IG_029"
+            ],
+            "title": "Courts and civil society mount fragmented resistance amid authoritarian consolidation",
+            "why_it_matters": "These scattered wins show that institutional and civic resistance still exists, but their narrow scope and reactive posture highlight how much ground has already shifted toward concentrated executive power and structural inequality."
+          }
+        ],
+        "period_label": "Week 31",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around major structural arcs: militarization and federalization of domestic security (D1), weaponization of law and selective transparency (D2), engineered electoral advantage (D3), immigration as ideological and carceral infrastructure (D4), politicization of civil service and unions (D5), inequality-deepening social and economic policy (D6), control over knowledge and memory (D7), foreign policy alignment with authoritarian interests and attacks on international accountability (D8), and fragmented institutional/civic resistance (D9). Some events could plausibly fit in multiple developments (e.g., BLS purge in both D5 and D7, Gaza visa decisions in D4 and D8); in each case they were assigned where they best serve a coherent narrative and not duplicated elsewhere. Routine technical regulatory notices are mostly left unassigned to keep the outline focused on democracy-relevant shifts.",
+        "unassigned_events": [
+          {
+            "event_id": "wk31_ES_017",
+            "why_unassigned": "Routine export-control transparency law with limited direct connection to the week’s major authoritarian or democratic developments."
+          },
+          {
+            "event_id": "wk31_ES_022",
+            "why_unassigned": "Technical EPA notices that reflect ongoing regulatory process but do not materially shift democratic structures this week."
+          },
+          {
+            "event_id": "wk31_ES_023",
+            "why_unassigned": "FCC caller ID and information-collection actions are incremental consumer-protection measures not central to the main storylines."
+          },
+          {
+            "event_id": "wk31_ES_026",
+            "why_unassigned": "Flat per diem rates are a marginal budgetary decision without clear democracy-relevant implications this week."
+          },
+          {
+            "event_id": "wk31_ES_028",
+            "why_unassigned": "CDC outbreak reporting modernization is routine capacity-building rather than a contested governance development."
+          },
+          {
+            "event_id": "wk31_ES_029",
+            "why_unassigned": "Hepatitis C convening is a public health initiative not tightly linked to the week’s power or rights themes."
+          },
+          {
+            "event_id": "wk31_ES_031",
+            "why_unassigned": "FDA determination on RIFADIN is a narrow drug-safety decision without broader institutional or rights implications here."
+          },
+          {
+            "event_id": "wk31_ES_018",
+            "why_unassigned": "Rescinding certain import embargoes is a technical trade/health adjustment with limited democracy relevance."
+          },
+          {
+            "event_id": "wk31_ES_019",
+            "why_unassigned": "Device reclassification is a technical regulatory change not central to the week’s narrative arcs."
+          },
+          {
+            "event_id": "wk31_ES_020",
+            "why_unassigned": "Color additive approvals are routine FDA business without clear ties to democratic erosion or resistance."
+          },
+          {
+            "event_id": "wk31_ES_025",
+            "why_unassigned": "DEA research-related applications are standard regulatory actions not central to the week’s developments."
+          },
+          {
+            "event_id": "wk31_ES_030",
+            "why_unassigned": "FDA user-fee transparency meeting is important but peripheral to the main power and rights storylines this week."
+          },
+          {
+            "event_id": "wk31_ES_021",
+            "why_unassigned": "FDA guidances and information collections are routine governance; they can be mentioned in passing if needed but are not anchors."
+          },
+          {
+            "event_id": "wk31_ES_024",
+            "why_unassigned": "OSHA lab recognition expansions are technical safety-governance steps with limited democracy salience."
+          },
+          {
+            "event_id": "wk31_ES_032",
+            "why_unassigned": "FDA guidance on animal studies is a narrow regulatory refinement not central to the week’s themes."
+          },
+          {
+            "event_id": "wk31_ES_033",
+            "why_unassigned": "Investigational device exemption paperwork review is a minor procedural matter."
+          },
+          {
+            "event_id": "wk31_ES_034",
+            "why_unassigned": "Tobacco retailer training comments are routine rulemaking, not a major structural shift."
+          },
+          {
+            "event_id": "wk31_ES_035",
+            "why_unassigned": "OSHA testing-lab recognition changes are technical and peripheral to the week’s democratic developments."
+          },
+          {
+            "event_id": "wk31_ES_036",
+            "why_unassigned": "EPA comment-deadline corrections are procedural housekeeping."
+          },
+          {
+            "event_id": "wk31_ES_037",
+            "why_unassigned": "EIS availability notices are standard transparency steps without a clear authoritarian or resistance angle this week."
+          },
+          {
+            "event_id": "wk31_PA_016",
+            "why_unassigned": "America by Design EO is a potentially positive service-design initiative but not central to the week’s core power or rights narratives."
+          },
+          {
+            "event_id": "wk31_PA_017",
+            "why_unassigned": "Mental health treatment expansion EO is a social policy move that does not significantly intersect with the main democracy-clock themes this week."
+          }
+        ],
+        "week_number": 31,
+        "window": {
+          "end": "2025-08-22",
+          "start": "2025-08-16"
+        }
+      }
+    },
+    {
+      "week_number": 32,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/development_allocator_week32.json",
+        "filename": "development_allocator_week32.json",
+        "sha256": "3b192e43a013f89683973f254b0a1b6d3b240eb52bdf7b36ac351e8c3762f8ec",
+        "mtime_utc": "2025-12-23T20:05:09Z",
+        "size_bytes": 28593
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk32_PA_005",
+            "wk32_PA_008",
+            "wk32_IG_007",
+            "wk32_PA_006",
+            "wk32_PA_015",
+            "wk32_ES_007",
+            "wk32_CR_017",
+            "wk32_CR_018",
+            "wk32_IG_014",
+            "wk32_IM_009",
+            "wk32_CR_010",
+            "wk32_IG_004",
+            "wk32_CR_027",
+            "wk32_CR_002",
+            "wk32_CR_003",
+            "wk32_CR_004",
+            "wk32_IG_005",
+            "wk32_IM_001",
+            "wk32_IG_003",
+            "wk32_CR_006",
+            "wk32_PA_010",
+            "wk32_CR_001",
+            "wk32_IG_002",
+            "wk32_IG_009",
+            "wk32_IG_008",
+            "wk32_IG_010",
+            "wk32_IG_012",
+            "wk32_IM_008",
+            "wk32_CR_016",
+            "wk32_PA_009",
+            "wk32_CR_007",
+            "wk32_PA_003",
+            "wk32_IM_002",
+            "wk32_IM_003",
+            "wk32_CR_026",
+            "wk32_CR_005",
+            "wk32_CR_012",
+            "wk32_CR_013",
+            "wk32_CR_015",
+            "wk32_CR_008",
+            "wk32_PA_022",
+            "wk32_PA_024",
+            "wk32_CR_009",
+            "wk32_CR_014",
+            "wk32_CR_021",
+            "wk32_PA_014",
+            "wk32_CR_011",
+            "wk32_CR_020",
+            "wk32_PA_016",
+            "wk32_PA_019",
+            "wk32_PA_013",
+            "wk32_IM_006",
+            "wk32_IM_004",
+            "wk32_ES_021",
+            "wk32_PA_012",
+            "wk32_ES_003",
+            "wk32_ES_002",
+            "wk32_ES_009",
+            "wk32_PA_023",
+            "wk32_ES_004",
+            "wk32_ES_006",
+            "wk32_ES_015",
+            "wk32_ES_001",
+            "wk32_PA_018",
+            "wk32_PA_020",
+            "wk32_PA_021",
+            "wk32_ES_008",
+            "wk32_IG_001",
+            "wk32_IG_013",
+            "wk32_IG_011",
+            "wk32_IG_015",
+            "wk32_IG_017",
+            "wk32_IG_016",
+            "wk32_CR_028",
+            "wk32_ES_005",
+            "wk32_IM_007",
+            "wk32_PA_017",
+            "wk32_IM_010",
+            "wk32_IM_011",
+            "wk32_ES_017",
+            "wk32_IM_005",
+            "wk32_ES_020",
+            "wk32_ES_024"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 108,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk32_PA_005",
+              "wk32_PA_008",
+              "wk32_IG_007",
+              "wk32_PA_006",
+              "wk32_PA_015"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Center the D.C. 'crime emergency' declaration and follow-on EO (wk32_PA_005, wk32_PA_008) as the spine: describe how Trump seizes control of D.C. police and expands measures, then zoom out to Andy Biggs’s bill (wk32_IG_007) that would make such takeovers semi-permanent. Weave in the threat to send troops to Baltimore (wk32_PA_006) and the federal takeover of Union Station (wk32_PA_015) as examples of creeping occupation of the capital and punitive signaling to blue jurisdictions. Use Newsom and Pritzker’s pushback (wk32_CR_017, wk32_CR_018, wk32_IG_014) plus Indivisible’s framing (wk32_IM_009) and the planned D.C. march (wk32_CR_027) to show emerging resistance. The D.C. budget freeze (wk32_ES_007) and sanctuary funding injunction (wk32_IG_004) can be briefly noted as the fiscal and legal backdrop. The grand jury’s refusal to indict the sandwich-throwing protester (wk32_CR_010) is a small counterpoint showing not all institutions are aligned.",
+            "one_sentence_thesis": "The White House used a manufactured \"crime emergency\" and threats of troop deployments to extend federal control over local policing in Washington, D.C. and intimidate Democratic-led cities like Chicago and Baltimore.",
+            "supporting_event_ids": [
+              "wk32_ES_007",
+              "wk32_CR_017",
+              "wk32_CR_018",
+              "wk32_IG_014",
+              "wk32_IM_009",
+              "wk32_CR_010",
+              "wk32_IG_004",
+              "wk32_CR_027"
+            ],
+            "title": "Trump consolidates direct control over policing and security in D.C. and targets Democratic cities",
+            "why_it_matters": "Normalizing emergency declarations and federal takeovers of local law enforcement erodes federalism, blurs civil-military boundaries, and creates a template for partisan control of urban governance, especially in majority-Black jurisdictions. The push also invites legal and political confrontation with governors and courts over the limits of presidential power at home."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_CR_002",
+              "wk32_CR_003",
+              "wk32_CR_004",
+              "wk32_IG_005",
+              "wk32_IM_001",
+              "wk32_IG_003"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Open with the dramatic, irregular actions: the arrest of Newark Mayor Ras Baraka (wk32_CR_002) and the FBI raid on John Bolton (wk32_CR_003) as examples of law enforcement turned on critics. Layer in DOJ’s coercive plea tactics against Kilmar Abrego Garcia (wk32_CR_004) and the retaliatory mortgage-fraud probes of Schiff, Letitia James, and Lisa Cook (wk32_IG_005) built from FHFA data (wk32_IM_001). Then contrast this aggression with DOJ’s minimal Epstein document production (wk32_IG_003) and the cushier placement of Ghislaine Maxwell (wk32_CR_001) to illustrate elite impunity. Fold in Trump’s threat to investigate Chris Christie (wk32_CR_006) and the flag-burning prosecution order (wk32_PA_010) as rhetorical and legal moves to criminalize dissent. Close with the courts as partial brakes: Judge Xinis blocking Abrego’s deportation (wk32_IG_008), the ruling against Alina Habba’s appointment (wk32_IG_010), and Judge Cullen’s dismissal of Trump’s suit against Maryland’s judges (wk32_IG_012). The Social Security data breach whistleblower (wk32_IM_008) and the LA mother’s civil claim (wk32_CR_016) can be used to show how ordinary people and insiders are trying to push back against this lawfare environment.",
+            "one_sentence_thesis": "The administration escalated its use of DOJ, FBI, and regulatory data to target political opponents and immigrants, even as it slow-walked or softened accountability in elite-linked cases like Epstein and Maxwell.",
+            "supporting_event_ids": [
+              "wk32_CR_006",
+              "wk32_PA_010",
+              "wk32_CR_001",
+              "wk32_IG_002",
+              "wk32_IG_009",
+              "wk32_IG_008",
+              "wk32_IG_010",
+              "wk32_IG_012",
+              "wk32_IM_008",
+              "wk32_CR_016"
+            ],
+            "title": "Law enforcement and courts are weaponized against critics while elite-linked cases are shielded",
+            "why_it_matters": "Turning criminal investigations, raids, and data-mining into tools of political retaliation undermines the rule of law and chills dissent, while selective leniency for powerful figures signals a two-tier justice system. Judicial pushback in a few cases shows remaining checks but also how much pressure they face."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_PA_009",
+              "wk32_PA_010",
+              "wk32_CR_007"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Treat the EO against cashless bail (wk32_PA_009) and the order to prioritize flag-burning prosecutions (wk32_PA_010) as a pair: both recast policy disagreements and symbolic speech as criminal threats. Connect this to Trump’s call to revoke ABC and NBC broadcast licenses (wk32_CR_007) and his false claims of record poll numbers (wk32_IM_002) as part of a narrative that equates criticism with disloyalty and insists on his overwhelming popular mandate. Mention the draft EO to eliminate mail-in balloting (wk32_PA_003) as another attempt to frame normal democratic practices as suspect. Use the planned Labor Day die-in against the \"One Big Ugly Bill\" (wk32_CR_026) and the upcoming D.C. march (wk32_CR_027) to show civil society still mobilizing despite these threats, with the D.C. grand jury’s refusal to indict the sandwich-throwing protester (wk32_CR_010) as a small sign that not all institutions are buying the criminalization of protest. Nancy Mace’s amplification of a false shooter report (wk32_IM_003) can be a brief example of how misinformation feeds the security narrative.",
+            "one_sentence_thesis": "Through new executive orders, threats, and prosecutions, the administration framed protest and progressive criminal justice reforms as security threats, using emergency logic to justify crackdowns on dissent.",
+            "supporting_event_ids": [
+              "wk32_PA_003",
+              "wk32_IM_002",
+              "wk32_IM_003",
+              "wk32_CR_026",
+              "wk32_CR_027",
+              "wk32_CR_010"
+            ],
+            "title": "Emergency rhetoric and security forces are used to suppress protest and redefine dissent as crime",
+            "why_it_matters": "When symbolic acts like flag burning or policies like cashless bail are treated as national security issues, it expands the scope of what can be criminalized and makes it easier to deploy extraordinary powers against political opponents and marginalized communities."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_CR_005",
+              "wk32_CR_012",
+              "wk32_CR_013",
+              "wk32_CR_015",
+              "wk32_CR_008",
+              "wk32_PA_022",
+              "wk32_PA_024"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Build a through-line from immigration to broader civil rights. Start with the Fort Bliss mega-detention site (wk32_CR_005) and the pattern of harsh or opaque ICE actions: arresting wildfire firefighters (wk32_CR_012), transferring an 18-year-old without family notice (wk32_CR_013), and secretly moving Luis Manuel Rivas Velásquez after he complained (wk32_CR_015). Contrast this with the court-ordered closure of the abusive 'Alligator Alcatraz' facility (wk32_CR_009) as a rare corrective. Then pivot to domestic policy that similarly narrows rights: conditioning sex-ed funds on erasing transgender content (wk32_CR_008), the proposed near-total abortion ban in VA facilities (wk32_PA_022), and revoking extended Secret Service protection for Kamala Harris (wk32_PA_024) as punitive use of security discretion. Fold in the confusing COVID vaccine restrictions (wk32_PA_014) and the mass CDC resignations (wk32_CR_021) to show how politicized health policy can disproportionately harm vulnerable groups. FEMA whistleblower retaliation (wk32_CR_011, wk32_CR_020) and the order shrinking labor rights for disabled workers (wk32_PA_019) can be used to underscore that those who are already at risk—immigrants, disabled people, internal critics—bear the brunt of these choices.",
+            "one_sentence_thesis": "ICE operations, detention practices, and new restrictions on transgender-inclusive education and reproductive care collectively pushed the U.S. toward a more stratified system of rights based on immigration status, gender identity, and ideology.",
+            "supporting_event_ids": [
+              "wk32_CR_009",
+              "wk32_CR_014",
+              "wk32_CR_016",
+              "wk32_CR_021",
+              "wk32_PA_014",
+              "wk32_CR_011",
+              "wk32_CR_020",
+              "wk32_PA_016",
+              "wk32_PA_019"
+            ],
+            "title": "Immigration enforcement and social policy deepen a tiered citizenship regime",
+            "why_it_matters": "Using detention, opaque transfers, and conditional funding to target migrants, LGBTQ youth, and women veterans normalizes the idea that some groups are less entitled to safety, due process, and bodily autonomy, entrenching second-class citizenship."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_PA_013",
+              "wk32_CR_021",
+              "wk32_CR_011",
+              "wk32_CR_020"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Narratively, start with the ouster of Senate-confirmed CDC Director Monarez (wk32_PA_013) over vaccine policy disputes and the subsequent mass resignations of senior CDC officials (wk32_CR_021). Pair this with the confusing, politically driven COVID vaccine restrictions (wk32_PA_014) to show how policy is being dictated from the top rather than through transparent expert processes. Then bring in FEMA: employees’ 'Katrina Declaration' warning Congress about disaster risks (wk32_CR_020) followed by leadership placing signatories on leave (wk32_CR_011) as a clear case of punishing whistleblowers. The EO excluding more units from labor-management rules (wk32_PA_016) can be framed as part of a broader effort to strip civil servants of protections. Close by noting that some formal processes—ACIP’s scheduled vaccine meeting (wk32_IM_006), CDC and FDA data initiatives (wk32_IM_004, wk32_ES_021)—continue on paper, raising the question of how long procedural normalcy can coexist with politicized leadership.",
+            "one_sentence_thesis": "The firing of CDC Director Susan Monarez, mass resignations of senior CDC officials, and retaliation against FEMA staff who warned of disaster risks marked a sharp escalation in political control over expert agencies.",
+            "supporting_event_ids": [
+              "wk32_PA_014",
+              "wk32_PA_016",
+              "wk32_IM_006",
+              "wk32_IM_004",
+              "wk32_ES_021"
+            ],
+            "title": "Public health and emergency agencies are purged and politicized",
+            "why_it_matters": "When scientific and emergency management agencies are reshaped around loyalty rather than expertise, the country’s capacity to respond to pandemics and disasters is degraded, and public health guidance becomes another instrument of partisan power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_PA_012",
+              "wk32_ES_003",
+              "wk32_ES_002",
+              "wk32_ES_009",
+              "wk32_PA_023"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Lead with Trump’s announcement that the U.S. government has taken a 10% stake in Intel (wk32_PA_012) and the administration’s broader plan to buy into major federal contractors (wk32_ES_003) as emblematic of crony capitalism dressed up as industrial strategy. Then move to trade: the implementation of tariffs on small inbound packages (wk32_ES_002) and the formal end of the de minimis exemption via EO (wk32_ES_009, wk32_PA_023), noting the disruption to small importers and the concentration of trade discretion in the White House. Briefly connect this to other economic direction-setting from the top—canceling CHIPS-funded renewables in favor of fossil fuels (wk32_ES_004), the proposal to admit 600,000 Chinese students to stabilize university finances (wk32_ES_006), and EPA’s refinery exemptions (wk32_ES_015)—to show how sector after sector is being reoriented around executive preferences. The Ukraine missile-use restriction (wk32_ES_001) can be mentioned as another example of Washington tightly controlling how its leverage is used, though it’s more foreign-policy adjacent.",
+            "one_sentence_thesis": "By personally announcing a federal equity stake in Intel, floating broader ownership of major contractors, and unilaterally ending the de minimis tariff exemption, Trump further blurred the line between state and favored corporations while centralizing trade policy in the executive.",
+            "supporting_event_ids": [
+              "wk32_ES_004",
+              "wk32_ES_006",
+              "wk32_ES_015",
+              "wk32_ES_001"
+            ],
+            "title": "Crony industrial policy and tariff shocks concentrate economic power in the presidency",
+            "why_it_matters": "When industrial and trade policy are driven by presidential fiat and insider negotiations rather than transparent, rule-bound processes, it invites favoritism, undermines market fairness, and makes the broader economy more dependent on the whims of a single leader."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_PA_018",
+              "wk32_PA_019",
+              "wk32_PA_020",
+              "wk32_PA_021"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Treat this as a coordinated labor offensive. Start with the proposal to eliminate federal minimum wage and overtime protections for childcare and home care workers (wk32_PA_018), then the rollback of minimum wage protections for disabled workers (wk32_PA_019). Add the move to rescind collective bargaining rights from about one million federal workers (wk32_PA_020) and the cut in minimum wage for federal contractors (wk32_PA_021). Note how these actions collectively strip protections from some of the lowest-paid and most vulnerable workers. The $800+ million cut in public safety and crime-prevention grants (wk32_ES_008) can be framed as part of a broader shift away from social investment toward punitive control. Close by tying in the planned Labor Day die-in against the \"One Big Ugly Bill\" (wk32_CR_026) as an early sign of organized resistance from labor and allied groups.",
+            "one_sentence_thesis": "Through a cluster of executive actions, Trump moved to slash minimum wages, overtime, and collective bargaining rights for millions of workers, especially in care sectors, federal service, and among disabled and contract workers.",
+            "supporting_event_ids": [
+              "wk32_ES_008",
+              "wk32_CR_026"
+            ],
+            "title": "A sweeping assault on labor protections and unions reshapes the social contract",
+            "why_it_matters": "Rolling back wage floors and union rights at this scale weakens workers’ bargaining power, increases economic precarity, and removes organized labor as a counterweight to executive and corporate power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_PA_003",
+              "wk32_IG_001",
+              "wk32_IG_013",
+              "wk32_IG_011",
+              "wk32_IG_015",
+              "wk32_IG_017"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Anchor this development in Trump’s announcement of a draft EO to eliminate mail-in balloting nationwide (wk32_PA_003), situating it in his broader pattern of false claims about his popularity and election integrity (wk32_IM_002). Then move to structural representation: Texas’s new GOP-favoring congressional map (wk32_IG_001) and the NAACP’s lawsuit challenging it as a racial gerrymander (wk32_IG_013); Utah’s state court invalidating Republican-drawn maps for violating an independent commission requirement (wk32_IG_011); and Missouri’s governor calling a special session to redraw districts and tighten initiative rules (wk32_IG_017). Include the Fulton County judge fining commissioners for refusing to seat two Republicans on the election board (wk32_IG_015) as a more ambiguous case where enforcement of state law may entrench election-denier influence. The Election Assistance Commission’s public meeting on voting system guidelines (wk32_IG_016) and grassroots efforts like Wake County Indivisible’s candidate meet-and-greet (wk32_CR_028) can be used to show ongoing efforts to preserve electoral integrity and civic engagement amid these power plays.",
+            "one_sentence_thesis": "State and federal actors advanced partisan redistricting and floated an executive order to end mail-in voting, while courts and civil rights groups mounted legal challenges to defend fair maps and access.",
+            "supporting_event_ids": [
+              "wk32_IM_002",
+              "wk32_IM_003",
+              "wk32_IG_016",
+              "wk32_CR_028"
+            ],
+            "title": "Elections and representation are reshaped through gerrymanders and attacks on voting methods",
+            "why_it_matters": "Manipulating district lines and voting methods under the banner of 'integrity' can lock in minority rule and weaken the ability of voters—especially minorities and urban residents—to hold leaders accountable."
+          },
+          {
+            "anchor_event_ids": [
+              "wk32_CR_007",
+              "wk32_ES_005",
+              "wk32_IM_007",
+              "wk32_PA_017",
+              "wk32_IM_010"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Open with Trump’s call to revoke ABC and NBC broadcast licenses (wk32_CR_007) and immediately pair it with the $1.1 billion cut to the Corporation for Public Broadcasting (wk32_ES_005), using the follow-on service impacts (wk32_IM_007) to show how independent and rural media are being starved. Then shift to symbolic control: the EO mandating classical styles for new federal buildings (wk32_PA_017) and the Pentagon’s decision to reinstall a Robert E. Lee portrait at West Point (wk32_IM_010) as examples of curating national identity around a particular, often exclusionary, historical narrative. The GSA’s Art-in-Architecture data changes emphasizing certain historical subjects (wk32_IM_011) can be folded in as a quieter bureaucratic lever for the same project. Close by briefly noting that some transparency and accessibility processes continue—FOIA advisory work (wk32_IM_005), data collection on accessibility (wk32_ES_020), and environmental impact statement notices (wk32_ES_024)—but that these operate in an environment where the loudest structural moves favor state-aligned stories and outlets.",
+            "one_sentence_thesis": "From threatening broadcast licenses and slashing public media funding to mandating classical architecture and reinstalling Confederate imagery, the administration intensified efforts to tilt the information and symbolic landscape toward its preferred story of America.",
+            "supporting_event_ids": [
+              "wk32_IM_011",
+              "wk32_ES_017",
+              "wk32_IM_005",
+              "wk32_IM_004",
+              "wk32_ES_020",
+              "wk32_ES_024"
+            ],
+            "title": "Media, memory, and culture are reshaped to favor state-aligned narratives",
+            "why_it_matters": "Controlling who can broadcast, which institutions survive, and what history is honored narrows the range of voices and memories in public life, making it harder for citizens to access independent information or imagine alternative futures."
+          }
+        ],
+        "period_label": "Week 32",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around nine coherent arcs: (1) federal takeovers and threats against cities; (2) weaponization of law and selective impunity; (3) emergency/security framing used to criminalize dissent; (4) stratified citizenship via immigration and social policy; (5) politicization of CDC/FEMA and the civil service; (6) crony industrial policy and tariffs; (7) structural rollback of labor protections; (8) manipulation of elections and representation; and (9) control of media and symbolic memory. Some events could plausibly fit in multiple developments (e.g., CPB cuts as both economic and media policy, ICE abuses as both lawfare and stratified citizenship); in those cases they were assigned where they best advance a single narrative and not duplicated. Many technical regulatory and historical-context events are left unassigned to keep the outline focused on the week’s main democracy-relevant shifts.",
+        "unassigned_events": [
+          {
+            "event_id": "wk32_CR_023",
+            "why_unassigned": "Historical background on Chicano youth organizing; useful context but not part of this week’s narrative developments."
+          },
+          {
+            "event_id": "wk32_CR_022",
+            "why_unassigned": "1968 Chicano walkouts; historical precedent rather than a current-week driver."
+          },
+          {
+            "event_id": "wk32_IG_018",
+            "why_unassigned": "1968 LA school board response; historical context not central to current-week storylines."
+          },
+          {
+            "event_id": "wk32_CR_025",
+            "why_unassigned": "1970 Rubén Salazar killing; important history but outside the temporal focus of this week."
+          },
+          {
+            "event_id": "wk32_CR_029",
+            "why_unassigned": "1970 Chicano Moratorium; historical reference rather than a live development."
+          },
+          {
+            "event_id": "wk32_CR_024",
+            "why_unassigned": "1970 formation of Raza Unida Party; background on movement-to-electoral shift, not a current event."
+          },
+          {
+            "event_id": "wk32_ES_011",
+            "why_unassigned": "Technical FCC rule updates on broadband and satellite licensing without clear linkage to the week’s main democratic-risk narratives."
+          },
+          {
+            "event_id": "wk32_ES_012",
+            "why_unassigned": "Routine FDA patent and drug approval decisions; important economically but peripheral to the week’s core democracy themes."
+          },
+          {
+            "event_id": "wk32_ES_014",
+            "why_unassigned": "EPA interim rule on disaster incinerators; technical environmental policy with limited direct democracy implications this week."
+          },
+          {
+            "event_id": "wk32_ES_022",
+            "why_unassigned": "FDA information collection on GRAS and device registration; procedural oversight rather than a narrative driver."
+          },
+          {
+            "event_id": "wk32_ES_013",
+            "why_unassigned": "Procurement threshold adjustments; routine administrative calibration not central to the main developments."
+          },
+          {
+            "event_id": "wk32_ES_016",
+            "why_unassigned": "EPA experimental pesticide and emergency chemical applications; niche regulatory matter without clear tie to broader themes."
+          },
+          {
+            "event_id": "wk32_ES_018",
+            "why_unassigned": "Census identity certification and nurse survey collections; background administrative data work."
+          },
+          {
+            "event_id": "wk32_ES_010",
+            "why_unassigned": "State air quality plan approvals; technical environmental governance not central to this week’s democracy storylines."
+          },
+          {
+            "event_id": "wk32_ES_019",
+            "why_unassigned": "EPA information collections on economic focus groups and pesticide labeling; routine data-gathering."
+          },
+          {
+            "event_id": "wk32_ES_023",
+            "why_unassigned": "FDA priority review voucher for a rare pediatric disease drug; health-regulatory but not democracy-salient this week."
+          },
+          {
+            "event_id": "wk32_IG_006",
+            "why_unassigned": "House subpoena of Epstein estate records; related to accountability but secondary to DOJ’s stonewalling already captured in D2."
+          },
+          {
+            "event_id": "wk32_IM_004",
+            "why_unassigned": "CDC data management plan proposal; positive transparency step but used only lightly as background and not central to any development."
+          },
+          {
+            "event_id": "wk32_IM_005",
+            "why_unassigned": "FOIA Advisory Committee meeting; incremental transparency governance not driving a major narrative."
+          },
+          {
+            "event_id": "wk32_ES_017",
+            "why_unassigned": "GSA information collections on audits, art, and customer experience; partially referenced conceptually in D9 but not needed as a discrete anchor."
+          },
+          {
+            "event_id": "wk32_ES_020",
+            "why_unassigned": "FCC information collection on registration and accessibility; minor procedural step only tangentially related to media themes."
+          },
+          {
+            "event_id": "wk32_ES_024",
+            "why_unassigned": "EPA EIS notice; routine NEPA process not central to the week’s democracy dynamics."
+          },
+          {
+            "event_id": "wk32_IM_012",
+            "why_unassigned": "FCC accessibility comment request; positive but peripheral to main storylines."
+          },
+          {
+            "event_id": "wk32_ES_021",
+            "why_unassigned": "FDA staffing and patient-experience meetings; modest capacity-building step not central to the week’s core developments."
+          },
+          {
+            "event_id": "wk32_IM_006",
+            "why_unassigned": "ACIP vaccine meeting scheduling; mentioned conceptually in D5 but not needed as a separate narrative element."
+          },
+          {
+            "event_id": "wk32_CR_018",
+            "why_unassigned": "Pritzker’s criticism of Guard deployment to Chicago is already represented via his legal-threat event (wk32_IG_014) in D1; this would be duplicative."
+          },
+          {
+            "event_id": "wk32_CR_019",
+            "why_unassigned": "Wes Moore’s rhetorical pushback, while notable, is a smaller echo of broader gubernatorial resistance already captured in D1."
+          },
+          {
+            "event_id": "wk32_IG_016",
+            "why_unassigned": "EAC public meeting on voting guidelines is a modest positive step; elections coverage in D8 focuses on higher-impact structural moves."
+          },
+          {
+            "event_id": "wk32_CR_014",
+            "why_unassigned": "FBI’s handling of the Minneapolis school shooting as domestic terrorism/hate crime is important but not tightly connected to the week’s main democracy-risk arcs."
+          },
+          {
+            "event_id": "wk32_CR_028",
+            "why_unassigned": "Local candidate meet-and-greet is a positive civic action but plays only a minor supporting role to the larger election-structure story in D8."
+          }
+        ],
+        "week_number": 32,
+        "window": {
+          "end": "2025-08-29",
+          "start": "2025-08-23"
+        }
+      }
+    },
+    {
+      "week_number": 33,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 33/development_allocator_week33.json",
+        "filename": "development_allocator_week33.json",
+        "sha256": "8d484dbc2cdbea73851fb35f09f92ea607cb4b81211fb95e038b81ce7e023500",
+        "mtime_utc": "2025-12-23T20:05:58Z",
+        "size_bytes": 23606
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk33_PA_009",
+            "wk33_PA_011",
+            "wk33_PA_010",
+            "wk33_PA_012",
+            "wk33_PA_002",
+            "wk33_IG_004",
+            "wk33_IG_017",
+            "wk33_IG_006",
+            "wk33_PA_008",
+            "wk33_PA_004",
+            "wk33_PA_013",
+            "wk33_CR_004",
+            "wk33_CR_006",
+            "wk33_CR_022",
+            "wk33_CR_001",
+            "wk33_CR_003",
+            "wk33_CR_007",
+            "wk33_CR_010",
+            "wk33_CR_011",
+            "wk33_CR_012",
+            "wk33_CR_013",
+            "wk33_CR_015",
+            "wk33_CR_020",
+            "wk33_CR_023",
+            "wk33_IG_015",
+            "wk33_PA_001",
+            "wk33_IG_005",
+            "wk33_PA_003",
+            "wk33_IG_002",
+            "wk33_CR_009",
+            "wk33_IG_014",
+            "wk33_IG_016",
+            "wk33_CR_016",
+            "wk33_IG_001",
+            "wk33_IG_007",
+            "wk33_ES_008",
+            "wk33_IG_003",
+            "wk33_IM_001",
+            "wk33_ES_010",
+            "wk33_IM_007",
+            "wk33_IG_021",
+            "wk33_ES_005",
+            "wk33_ES_011",
+            "wk33_ES_001",
+            "wk33_ES_002",
+            "wk33_ES_003",
+            "wk33_IM_002",
+            "wk33_ES_007",
+            "wk33_ES_015",
+            "wk33_ES_016",
+            "wk33_ES_004",
+            "wk33_ES_006",
+            "wk33_ES_014",
+            "wk33_ES_012",
+            "wk33_ES_013",
+            "wk33_IG_022",
+            "wk33_ES_009",
+            "wk33_IG_023",
+            "wk33_PA_005",
+            "wk33_PA_007",
+            "wk33_CR_008",
+            "wk33_PA_006",
+            "wk33_CR_005",
+            "wk33_CR_014",
+            "wk33_CR_021",
+            "wk33_CR_017",
+            "wk33_CR_018",
+            "wk33_CR_019",
+            "wk33_IG_020",
+            "wk33_IG_019",
+            "wk33_IG_010",
+            "wk33_IG_011",
+            "wk33_IM_003",
+            "wk33_IM_004",
+            "wk33_IM_005",
+            "wk33_IM_006",
+            "wk33_IM_010",
+            "wk33_IM_008",
+            "wk33_IG_018",
+            "wk33_IG_012",
+            "wk33_CR_002",
+            "wk33_IM_009"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 85,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk33_PA_009",
+              "wk33_PA_011",
+              "wk33_PA_010",
+              "wk33_PA_012"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Open with Trump’s explicit claim he needs 'authoritarian-style powers' (wk33_PA_009) as the thematic frame; then move through the DoD-to-Department-of-War rebrand (wk33_PA_011) and trade EOs with Japan and reciprocal tariffs (wk33_PA_010, wk33_PA_012) as concrete examples of unilateral rule. Fold in Tulsi Gabbard outing a CIA officer and clearance stripping (wk33_PA_002, wk33_IG_006) plus the Venezuela deployment and contested strike (wk33_IG_004, wk33_IG_017) to show national security being personalized. Use the Space Force HQ relocation (wk33_PA_008) and foreign aid cancellation (wk33_PA_004) as patronage/impoundment color. Close with the wrongful-detention EO (wk33_PA_013) as a more ambiguous tool that still centralizes discretion.",
+            "one_sentence_thesis": "The White House used executive orders, military branding, and security clearances to assert personal control over national security and economic policy while sidelining institutional checks.",
+            "supporting_event_ids": [
+              "wk33_PA_002",
+              "wk33_IG_004",
+              "wk33_IG_017",
+              "wk33_IG_006",
+              "wk33_PA_008",
+              "wk33_PA_004",
+              "wk33_PA_013"
+            ],
+            "title": "Trump centralizes power through executive orders, military symbolism, and security-state moves",
+            "why_it_matters": "These moves normalize rule by decree, politicize intelligence and defense structures, and blur the line between national security and presidential self-interest, making it harder for other branches to constrain future abuses."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_CR_004",
+              "wk33_CR_006",
+              "wk33_CR_022",
+              "wk33_CR_001"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Frame this as the week immigration policy coheres into a system: start with DHS’s bond ineligibility and auto-stays (wk33_CR_001) as the legal choke point, then the mass ICE/CBP hiring with lowered standards (wk33_CR_004) and financial incentives for local police (wk33_CR_006) plus USCIS gaining arrest powers (wk33_CR_022) to show apparatus-building. Layer in specific targeting—Palestinian visa suspension (wk33_CR_003), narrowed asylum (wk33_CR_010), threats to deport even successful asylum seekers (wk33_CR_015), attempted deportation of Guatemalan children (wk33_CR_011), sanctuary-city lawsuit (wk33_CR_013), and the Alligator Alcatraz stay (wk33_CR_012). Use the Hyundai raid and Korean diplomatic clash (wk33_CR_023) and Lisa Cook investigation (wk33_CR_020) to show spillover into foreign relations and independent economic governance. Close with California’s school alert bill (wk33_IG_015) as local resistance.",
+            "one_sentence_thesis": "The administration expanded and militarized immigration enforcement while stripping due process and targeting specific nationalities and identities, deepening a tiered system of rights.",
+            "supporting_event_ids": [
+              "wk33_CR_003",
+              "wk33_CR_007",
+              "wk33_CR_010",
+              "wk33_CR_011",
+              "wk33_CR_012",
+              "wk33_CR_013",
+              "wk33_CR_015",
+              "wk33_CR_020",
+              "wk33_CR_023",
+              "wk33_CR_001",
+              "wk33_CR_011",
+              "wk33_IG_015"
+            ],
+            "title": "Immigration enforcement hardens into a sprawling, politicized security apparatus",
+            "why_it_matters": "By turning benefits agencies into arresting authorities, lowering standards for thousands of new officers, and weaponizing asylum and detention rules, the government entrenches a quasi-permanent security regime that can be redirected against broader dissent."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_PA_001",
+              "wk33_IG_005",
+              "wk33_PA_003"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Organize by sector. Start with CDC: firing director Susan Monarez and RFK Jr’s reshaping (wk33_PA_001), then the deep CDC cuts (wk33_IG_005), Florida’s move to end school vaccine mandates (wk33_IG_021), and the op-eds/oversight pushback from former CDC directors and Monarez (wk33_IG_014, wk33_IG_016, wk33_IM_008, wk33_CR_016). Shift to retaliation against internal critics: forced-out SSA CDO over data breaches (wk33_IG_002) and alleged FEMA whistleblower suspensions (wk33_CR_009). Then cover environmental and climate rollback: EPA firings for dissent (wk33_PA_003), river impairment reversal (wk33_IG_001), and the wind and climate grant cancellations (wk33_IG_007, wk33_ES_008), with labor and state leaders’ reactions (wk33_IG_008, wk33_IG_009). Close with media institutions—USAGM/VOA layoffs (wk33_IG_003, wk33_IM_001, wk33_ES_010) and PBS cuts (wk33_IM_007)—to show a broader pattern of hollowing out public-serving expertise.",
+            "one_sentence_thesis": "Across health, environmental, and social agencies, the administration fired dissenters, slashed budgets, and installed loyalists, undermining expert governance and whistleblower protections.",
+            "supporting_event_ids": [
+              "wk33_IG_002",
+              "wk33_CR_009",
+              "wk33_IG_014",
+              "wk33_IG_016",
+              "wk33_CR_016",
+              "wk33_IG_001",
+              "wk33_IG_007",
+              "wk33_ES_008",
+              "wk33_IG_003",
+              "wk33_IM_001",
+              "wk33_ES_010",
+              "wk33_IM_007",
+              "wk33_IG_021"
+            ],
+            "title": "Civil service, public health, and environmental agencies purged and politicized",
+            "why_it_matters": "Politicizing the bureaucracy weakens the state’s ability to manage crises, deters internal criticism, and locks in policy by fear rather than evidence, making later repair far harder."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_ES_005",
+              "wk33_ES_011",
+              "wk33_ES_001"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Lead with the cancellation of union contracts and collective bargaining for ~450,000 federal workers (wk33_ES_005) as a major Labor Day reversal, then juxtapose with the historical Labor Day reference (wk33_IG_023) for context. Move to the CBO finding that Trump’s tax law favored millionaires while cutting supports for low-income families (wk33_ES_011) and public pessimism about mobility (wk33_ES_012). Then cover the tariff story arc: appeals court ruling against emergency tariffs (wk33_ES_001), White House’s wildly inflated tariff revenue claims (wk33_ES_003, wk33_IM_002), bond market stress and corporate pain (wk33_ES_007, wk33_ES_015), and the administration’s push to preserve tariffs via Supreme Court and new frameworks (wk33_ES_016, wk33_PA_010, wk33_PA_012, wk33_ES_004). Include the Trump-branded crypto flop (wk33_ES_006) and Cracker Barrel logo reversal (wk33_ES_009) as vignettes of monetizing loyalty and culture-war pressure. Close with the Northwestern funding freeze and president’s resignation (wk33_ES_013) contrasted with the court ordering restoration of Harvard’s grants (wk33_IG_022) to show both the pressure and remaining judicial guardrails on academic independence.",
+            "one_sentence_thesis": "While courts began to check some emergency tariffs, the administration intensified attacks on labor protections and leveraged funding and trade policy in ways that deepen inequality and discipline institutions.",
+            "supporting_event_ids": [
+              "wk33_ES_002",
+              "wk33_ES_003",
+              "wk33_IM_002",
+              "wk33_ES_007",
+              "wk33_ES_015",
+              "wk33_ES_016",
+              "wk33_ES_004",
+              "wk33_ES_006",
+              "wk33_ES_014",
+              "wk33_ES_012",
+              "wk33_ES_013",
+              "wk33_IG_022",
+              "wk33_ES_009",
+              "wk33_IG_023"
+            ],
+            "title": "Labor, workers, and universities squeezed as economic policy favors elites",
+            "why_it_matters": "Eroding collective bargaining, misrepresenting economic data, and punishing universities and trading partners for political reasons shift power and risk onto workers and independent institutions while insulating the wealthy."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_PA_005",
+              "wk33_PA_007",
+              "wk33_CR_008"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Center this on the election architecture: start with Trump’s announced executive orders for nationwide voter ID and sharp mail-voting limits (wk33_PA_005), then his pressure on GOP state legislators to redraw maps (wk33_PA_006). Add the DOJ investigation into ActBlue but not WinRed (wk33_PA_007) as a clear partisan use of law enforcement. Fold in USCIS’s ban on voter registration at naturalization ceremonies (wk33_CR_008) as a quieter structural barrier. Then show how similar tools are used against disfavored jurisdictions and groups: DOJ suing Boston over sanctuary policies (wk33_CR_013), conspiracy charges against an ICE protester (wk33_CR_005), the investigation of Fed governor Lisa Cook (wk33_CR_020), and floated classification of being transgender as a mental illness to justify a gun ban (wk33_CR_014). You can briefly note the Palestinian visa suspension (wk33_CR_003) as part of the same pattern of targeting politically disfavored populations.",
+            "one_sentence_thesis": "The president moved to reshape electoral rules and weaponize federal law enforcement against political opponents and immigrant-linked constituencies while quietly closing off avenues for new voters.",
+            "supporting_event_ids": [
+              "wk33_PA_006",
+              "wk33_CR_013",
+              "wk33_CR_005",
+              "wk33_CR_020",
+              "wk33_CR_014",
+              "wk33_CR_003"
+            ],
+            "title": "Elections and opposition targeted through voter restrictions and selective law enforcement",
+            "why_it_matters": "Nationalizing voter ID, restricting mail voting, and targeting opposition fundraising and sanctuary policies undercut fair competition and entrench power without formally canceling elections."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_CR_005",
+              "wk33_CR_021",
+              "wk33_CR_017"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Open with the FBI/DOJ conspiracy charges against an ICE protester (wk33_CR_005) as a signal case of treating protest as criminal conspiracy. Then describe the heavily armed National Guard and federal patrols in DC neighborhoods (wk33_CR_021) and the resulting calls for a national march, with community ICE-watch trainings as grassroots response (wk33_CR_019). Transition to the Epstein accountability fight: survivors’ Capitol press conference (wk33_CR_017), the coinciding fighter jet flyover in a no-fly zone (wk33_CR_018), and Congress’s mixed role—bipartisan pushes for full file release (wk33_IG_010, wk33_IG_011) versus the Oversight Committee’s largely redundant document dump (wk33_IM_003). Use the O’Keefe recording about redacting Republicans and easing Maxwell’s conditions (wk33_IM_004) and DOJ’s partial confirmation (wk33_IM_005) to underscore selective protection of elites. Close with the indictment and censure fight over Rep. LaMonica McIver’s ICE oversight visit (wk33_IG_020, wk33_IG_019) as an example of punishing those who scrutinize enforcement.",
+            "one_sentence_thesis": "From conspiracy charges against an ICE protester to militarized patrols in DC and disruptions of Epstein survivors’ testimony, authorities increasingly treated dissent and exposure of elite abuse as security problems.",
+            "supporting_event_ids": [
+              "wk33_CR_018",
+              "wk33_CR_019",
+              "wk33_IG_020",
+              "wk33_IG_019",
+              "wk33_IG_010",
+              "wk33_IG_011",
+              "wk33_IM_003",
+              "wk33_IM_004",
+              "wk33_IM_005"
+            ],
+            "title": "Protest, Epstein accountability, and DC policing collide in a contest over dissent",
+            "why_it_matters": "Criminalizing protest and using security forces or military assets to overshadow survivors and critics chills civic participation and signals that some forms of speech will be met with intimidation rather than accountability."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_IG_003",
+              "wk33_ES_010",
+              "wk33_IM_006"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Start with the structural media story: USAGM/VOA layoffs (wk33_IG_003, wk33_IM_001) and PBS job cuts after federal defunding (wk33_ES_010, wk33_IM_007) as a coordinated weakening of public and international broadcasting. Then pivot to how the vacuum is filled: the White House’s fabricated $8 trillion tariff revenue claim (wk33_ES_003, wk33_IM_002) and broader documentation of disinformation on tariffs and health (wk33_IM_010). Bring in Susan Monarez’s op-ed about antivaccine rhetoric being forced into CDC advisory processes (wk33_IM_008) and the Senate Finance hearing grilling RFK Jr. (wk33_IG_016) to show science being bent toward ideology. Close with Congress as a stage for narrative battles: House Republicans blocking a Jan. 6 officers’ plaque and creating a new Jan. 6 subcommittee (wk33_IG_012, wk33_IM_006), plus the White House/Republican rebranding of the 'One Big, Beautiful Bill Act' (wk33_IG_018), to illustrate legislatures functioning as performance rather than deliberation.",
+            "one_sentence_thesis": "The administration’s funding cuts and layoffs at public broadcasters, combined with aggressive economic spin and politicized handling of Jan. 6 and public health messaging, further tilted the information environment toward partisan narratives.",
+            "supporting_event_ids": [
+              "wk33_IM_001",
+              "wk33_IM_007",
+              "wk33_IM_002",
+              "wk33_ES_003",
+              "wk33_IM_010",
+              "wk33_IM_008",
+              "wk33_IG_018",
+              "wk33_IG_012"
+            ],
+            "title": "Information space reshaped: public media weakened, disinformation and narrative control rise",
+            "why_it_matters": "Weakening independent media and flooding the public sphere with misleading claims about tariffs and vaccines erodes citizens’ ability to evaluate policy and hold leaders accountable."
+          },
+          {
+            "anchor_event_ids": [
+              "wk33_CR_002",
+              "wk33_IM_009"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Treat this as a focused tech-and-power sidebar that dovetails with D2 and D7. Explain the reinstated Paragon spyware contract (wk33_CR_002) and the broader expansion of advanced phone-hacking tools by ICE (wk33_IM_009), then connect to the simultaneous build-out of the enforcement machine—mass hiring with lowered standards (wk33_CR_004), financial incentives for local police (wk33_CR_006), reunification appointments used as traps (wk33_CR_007), and bond ineligibility tactics (wk33_CR_001). Emphasize how these tools can be turned not only on immigrants but also on journalists and activists, and how privatization of core coercive functions complicates oversight.",
+            "one_sentence_thesis": "By reinstating ICE’s spyware contract and broadening its use, the administration deepened its capacity to surveil immigrants and potentially journalists and activists through opaque private tools.",
+            "supporting_event_ids": [
+              "wk33_CR_004",
+              "wk33_CR_006",
+              "wk33_CR_007",
+              "wk33_CR_001"
+            ],
+            "title": "Surveillance and outsourcing expand state reach over immigrants and critics",
+            "why_it_matters": "Outsourcing powerful surveillance capabilities to a foreign-linked contractor with limited oversight increases the risk of abuse and makes it harder for courts, Congress, or the public to understand or constrain how data is used against targeted communities."
+          }
+        ],
+        "period_label": "Week 33",
+        "recommended_development_count": 8,
+        "sanity_notes": "Developments are organized around eight narrative arcs: (1) executive centralization and militarization; (2) immigration/security-state consolidation; (3) politicization of civil service, health, environment, and public media; (4) labor, inequality, and economic governance; (5) electoral rules and opposition-targeting; (6) protest, Epstein accountability, and DC policing; (7) information-space manipulation and public media defunding; and (8) surveillance outsourcing via spyware. Some events naturally straddle themes (e.g., USAGM layoffs fit both institutional capture and media weakening; Epstein-file maneuvers touch both corruption and memory), so they are assigned where they best advance a coherent storyline and referenced as supporting context elsewhere in prose. Unassigned items are mostly contextual data points, historical references, or details already incorporated as color within the main developments.",
+        "unassigned_events": [
+          {
+            "event_id": "wk33_ES_009",
+            "why_unassigned": "Minor corporate branding flap; already lightly referenced as culture-war color in D4 and not central to any major structural storyline."
+          },
+          {
+            "event_id": "wk33_IG_008",
+            "why_unassigned": "State-level defense of a wind project is supportive context for D3 but not a distinct development on its own."
+          },
+          {
+            "event_id": "wk33_IG_009",
+            "why_unassigned": "Labor leaders’ criticism of energy policy reinforces D3/D4 themes but can be folded as a quote rather than treated as a separate anchor."
+          },
+          {
+            "event_id": "wk33_IG_010",
+            "why_unassigned": "Epstein records push is substantively used in D6’s narrative but not needed as a separate anchor event."
+          },
+          {
+            "event_id": "wk33_IG_011",
+            "why_unassigned": "Congressional subpoenas on Epstein files are incorporated as supporting detail in D6 rather than driving a standalone development."
+          },
+          {
+            "event_id": "wk33_IG_013",
+            "why_unassigned": "Democratic calls to fire a Jan. 6 defendant at DOJ are part of institutional pushback but can be mentioned briefly within D6 or D7 if needed."
+          },
+          {
+            "event_id": "wk33_IG_018",
+            "why_unassigned": "Messaging meeting on the 'One Big, Beautiful Bill Act' is used as color in D7 but not central enough to anchor a development."
+          },
+          {
+            "event_id": "wk33_IG_019",
+            "why_unassigned": "House vote on McIver censure is treated as supporting context in D6 rather than a separate storyline."
+          },
+          {
+            "event_id": "wk33_IG_020",
+            "why_unassigned": "McIver indictment/censure fight is woven into D6’s protest/oversight narrative and does not need separate clustering."
+          },
+          {
+            "event_id": "wk33_IG_021",
+            "why_unassigned": "Florida’s vaccine-mandate rollback is included in D3’s public health politicization arc and not treated as a separate development."
+          },
+          {
+            "event_id": "wk33_IG_022",
+            "why_unassigned": "Court ruling restoring Harvard grants is used as a counterpoint in D4 but not as its own development."
+          },
+          {
+            "event_id": "wk33_IM_001",
+            "why_unassigned": "VOA layoffs are substantively covered under D3/D7; listed there as supporting and do not need separate treatment."
+          },
+          {
+            "event_id": "wk33_IM_002",
+            "why_unassigned": "Duplicate of tariff-revenue disinformation already anchored via wk33_ES_003 in D4/D7."
+          },
+          {
+            "event_id": "wk33_IM_003",
+            "why_unassigned": "Epstein document release is used in D6; not elevated to its own development."
+          },
+          {
+            "event_id": "wk33_IM_004",
+            "why_unassigned": "O’Keefe recording is integrated into D6’s Epstein narrative; no separate cluster needed."
+          },
+          {
+            "event_id": "wk33_IM_005",
+            "why_unassigned": "DOJ statement on Maxwell is supporting detail in D6, not a standalone storyline."
+          },
+          {
+            "event_id": "wk33_IM_006",
+            "why_unassigned": "Jan. 6 narrative reshaping is part of D7’s information-space development rather than a separate cluster."
+          },
+          {
+            "event_id": "wk33_IM_007",
+            "why_unassigned": "PBS layoffs are supporting evidence in D3/D7 and not a separate development."
+          },
+          {
+            "event_id": "wk33_IM_008",
+            "why_unassigned": "Monarez op-ed is used in D3/D7 as evidence of politicized health messaging; not a separate development."
+          },
+          {
+            "event_id": "wk33_IM_010",
+            "why_unassigned": "Meta-analysis of disinformation is folded into D7; not a discrete action."
+          },
+          {
+            "event_id": "wk33_IG_023",
+            "why_unassigned": "Historical Labor Day reference is context for D4 but not an event in the current week’s power dynamics."
+          },
+          {
+            "event_id": "wk33_ES_014",
+            "why_unassigned": "Macro jobs data is background for D4 but not a discrete democracy-structure action."
+          },
+          {
+            "event_id": "wk33_ES_012",
+            "why_unassigned": "Public pessimism poll is context for D4 and can be mentioned briefly without anchoring a development."
+          },
+          {
+            "event_id": "wk33_CR_019",
+            "why_unassigned": "Community ICE-watch trainings are supportive resistance detail in D6/D2 but not a separate development."
+          },
+          {
+            "event_id": "wk33_CR_021",
+            "why_unassigned": "Used as an anchor in D6; listed here only to clarify it is not driving an additional development."
+          }
+        ],
+        "week_number": 33,
+        "window": {
+          "end": "2025-09-05",
+          "start": "2025-08-30"
+        }
+      }
+    },
+    {
+      "week_number": 34,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 34/development_allocator_week34.json",
+        "filename": "development_allocator_week34.json",
+        "sha256": "fa335ddb4c905547198c3b15c09b51b9c8fa068feb3e03f6efe20e0e56b56690",
+        "mtime_utc": "2025-12-23T20:07:09Z",
+        "size_bytes": 31815
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk34_PA_004",
+            "wk34_PA_007",
+            "wk34_PA_008",
+            "wk34_PA_009",
+            "wk34_PA_012",
+            "wk34_CR_016",
+            "wk34_CR_026",
+            "wk34_CR_025",
+            "wk34_CR_005",
+            "wk34_CR_012",
+            "wk34_CR_011",
+            "wk34_CR_031",
+            "wk34_CR_001",
+            "wk34_CR_003",
+            "wk34_CR_008",
+            "wk34_CR_002",
+            "wk34_CR_024",
+            "wk34_CR_034",
+            "wk34_CR_023",
+            "wk34_CR_017",
+            "wk34_IG_010",
+            "wk34_IG_050",
+            "wk34_IM_017",
+            "wk34_IG_041",
+            "wk34_IG_042",
+            "wk34_IG_044",
+            "wk34_IG_045",
+            "wk34_CR_022",
+            "wk34_CR_033",
+            "wk34_CR_004",
+            "wk34_PA_011",
+            "wk34_CR_028",
+            "wk34_PA_016",
+            "wk34_PA_018",
+            "wk34_CR_018",
+            "wk34_CR_019",
+            "wk34_CR_020",
+            "wk34_IM_009",
+            "wk34_IM_010",
+            "wk34_IM_013",
+            "wk34_IM_021",
+            "wk34_CR_027",
+            "wk34_IM_012",
+            "wk34_IG_026",
+            "wk34_IG_027",
+            "wk34_IM_016",
+            "wk34_IG_012",
+            "wk34_IG_049",
+            "wk34_IG_033",
+            "wk34_IG_034",
+            "wk34_IG_011",
+            "wk34_IG_016",
+            "wk34_IG_028",
+            "wk34_ES_029",
+            "wk34_IG_029",
+            "wk34_IG_030",
+            "wk34_ES_030",
+            "wk34_IG_047",
+            "wk34_IG_019",
+            "wk34_IG_040",
+            "wk34_IG_013",
+            "wk34_IG_048",
+            "wk34_IG_007",
+            "wk34_IG_020",
+            "wk34_IG_046",
+            "wk34_IG_009",
+            "wk34_IG_015",
+            "wk34_IG_038",
+            "wk34_IG_039",
+            "wk34_IG_037",
+            "wk34_PA_010",
+            "wk34_IG_031",
+            "wk34_CR_010",
+            "wk34_IM_006",
+            "wk34_IG_036",
+            "wk34_IM_007",
+            "wk34_IG_025",
+            "wk34_IG_006",
+            "wk34_IG_008",
+            "wk34_IG_018",
+            "wk34_IM_002",
+            "wk34_IM_005",
+            "wk34_IG_017",
+            "wk34_IM_003",
+            "wk34_IM_004",
+            "wk34_ES_001",
+            "wk34_PA_015",
+            "wk34_IM_022",
+            "wk34_IM_018",
+            "wk34_IG_035",
+            "wk34_CR_007",
+            "wk34_CR_021",
+            "wk34_ES_031",
+            "wk34_CR_035",
+            "wk34_IM_015",
+            "wk34_CR_009",
+            "wk34_ES_025",
+            "wk34_ES_026",
+            "wk34_ES_027",
+            "wk34_ES_028",
+            "wk34_ES_023",
+            "wk34_ES_024",
+            "wk34_ES_022",
+            "wk34_IG_024",
+            "wk34_IG_004",
+            "wk34_CR_015",
+            "wk34_CR_013",
+            "wk34_PA_001",
+            "wk34_PA_003",
+            "wk34_CR_014",
+            "wk34_IM_019",
+            "wk34_IM_011",
+            "wk34_IM_020",
+            "wk34_IM_014",
+            "wk34_PA_006",
+            "wk34_IM_001",
+            "wk34_IM_008"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 157,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk34_PA_004",
+              "wk34_PA_007",
+              "wk34_PA_008",
+              "wk34_PA_009"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Sequence from Trump’s order putting DC policing under National Guard control (wk34_PA_004) to the Chicago deployment (wk34_PA_007) and planned Memphis deployment (wk34_PA_008), then zoom out to the broader pattern of troops amassed in DC (wk34_PA_009) and contemplated Puerto Rico-based drug operations (wk34_PA_012). Weave in local resistance and oversight concerns: protests (wk34_CR_005), Chicago and Illinois leaders’ warnings (wk34_CR_012, wk34_CR_011, wk34_CR_031), and internal Guard criticism (wk34_CR_016). Close with the Chicago ICE/Guard presence and lethal ICE shooting (wk34_CR_026, wk34_CR_025) as concrete consequences on the ground.",
+            "one_sentence_thesis": "The administration deepened its use of National Guard troops and federal agents to assert control over Democratic-led cities, blurring the line between civilian policing and military occupation while local leaders and even Guard officials voiced alarm.",
+            "supporting_event_ids": [
+              "wk34_PA_012",
+              "wk34_CR_016",
+              "wk34_CR_026",
+              "wk34_CR_025",
+              "wk34_CR_005",
+              "wk34_CR_012",
+              "wk34_CR_011",
+              "wk34_CR_031"
+            ],
+            "title": "Trump militarizes domestic governance in DC, Chicago, and beyond",
+            "why_it_matters": "Normalizing military-style deployments for routine crime and immigration issues shifts the balance of power away from local self-governance and makes coercive force a standing political tool. It also chills protest and everyday civic life in targeted jurisdictions, especially opposition strongholds."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_CR_001",
+              "wk34_CR_003",
+              "wk34_CR_025",
+              "wk34_CR_008"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Open with the Hyundai-LG mega-raid (wk34_CR_001) and New York factory raid (wk34_CR_002), highlighting mass detentions and family separation, then show \"Patriot 2.0\" targeting sanctuary releases (wk34_CR_003). Move to the Chicago phase: ICE/Guard deployment and the fatal traffic-stop shooting (wk34_CR_026, wk34_CR_025), including the detention of a legal visa holder (wk34_CR_024). Layer in policy moves excluding immigrants from Head Start and other services (wk34_CR_008, wk34_CR_034) and the administration’s misleading narratives about deported children (wk34_CR_023). Contrast with resistance and partial guardrails: local rights outreach (wk34_CR_011, wk34_CR_031, wk34_CR_012) and court orders blocking some service restrictions and intrusive subpoenas (wk34_IG_041–wk34_IG_045). Close with the international dimension—planned global asylum restrictions (wk34_CR_022, wk34_CR_033) and lethal strikes framed as law enforcement (wk34_CR_004, wk34_PA_011)—to show how the same logic extends beyond U.S. borders.",
+            "one_sentence_thesis": "ICE and the Trump administration escalated workplace raids, lethal force, and service exclusions into a sweeping crackdown that treated immigrants as security threats, even as courts and local officials fought to preserve basic rights and services.",
+            "supporting_event_ids": [
+              "wk34_CR_002",
+              "wk34_CR_024",
+              "wk34_CR_034",
+              "wk34_CR_023",
+              "wk34_CR_017",
+              "wk34_IG_010",
+              "wk34_IG_050",
+              "wk34_IM_017",
+              "wk34_CR_026",
+              "wk34_CR_011",
+              "wk34_CR_031",
+              "wk34_CR_012",
+              "wk34_IG_041",
+              "wk34_IG_042",
+              "wk34_IG_044",
+              "wk34_IG_045",
+              "wk34_CR_022",
+              "wk34_CR_033",
+              "wk34_CR_004",
+              "wk34_PA_011"
+            ],
+            "title": "Immigration enforcement becomes a paramilitary campaign against immigrant communities",
+            "why_it_matters": "Turning immigration status into a trigger for raids, shootings, and loss of education and health access entrenches a tiered system of rights and normalizes racialized policing. It also weaponizes federal power against sanctuary jurisdictions and immigrant-heavy workplaces, deepening fear and social fragmentation."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_CR_028",
+              "wk34_PA_016",
+              "wk34_PA_018",
+              "wk34_CR_018"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Narratively start with the Utah Valley University shooting (wk34_CR_028) and the manhunt/arrest (wk34_CR_027), then pivot quickly to the political response: Trump’s Oval Office address blaming the \"radical left\" (wk34_PA_016) and his broader rhetoric (wk34_IM_013). Detail the punitive backlash against critics—MAGA campaigns to get people fired (wk34_CR_019), Rep. Higgins’s calls for lifetime bans and license targeting (wk34_CR_020, wk34_IM_010), and Texas Tech’s arrest/expulsion of a student for online mockery (wk34_CR_018)—plus MSNBC’s firing of a commentator (wk34_IM_009). Then show how the state elevates Kirk symbolically: a posthumous Medal of Freedom (wk34_PA_018) and a proposed Capitol statue (wk34_IG_026), contrasted with refusal to honor January 6 officers (wk34_IG_027) and dismantling of the White House peace vigil (wk34_IM_016). Use FBI Director Patel’s mishandled communications (wk34_IM_021) and Trump’s politicization of another crime (wk34_IM_012) to underscore how law enforcement and narrative are being fused.",
+            "one_sentence_thesis": "After Charlie Kirk was killed at a campus event, Trump and his allies rapidly turned the tragedy into a justification for crackdowns on speech, partisan honors, and a broader narrative that vilifies critics as enemies of the state.",
+            "supporting_event_ids": [
+              "wk34_CR_019",
+              "wk34_CR_020",
+              "wk34_IM_009",
+              "wk34_IM_010",
+              "wk34_IM_013",
+              "wk34_IM_021",
+              "wk34_CR_027",
+              "wk34_IM_012",
+              "wk34_IG_026",
+              "wk34_IG_027",
+              "wk34_IM_016"
+            ],
+            "title": "Charlie Kirk’s assassination is weaponized to punish dissent and reshape public memory",
+            "why_it_matters": "Using political violence to justify censorship, economic retaliation, and state-backed hero worship erodes free expression and pluralism, and it signals that loyalty to regime-aligned figures is becoming a civic litmus test."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_IG_012",
+              "wk34_IG_049",
+              "wk34_IG_033",
+              "wk34_IG_034"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Frame this as a structural story: begin with the Supreme Court and lower courts allowing Trump to fire an FTC commissioner despite statutory protections (wk34_IG_012, wk34_IG_049) and an appeals court blessing mass firings of probationary employees (wk34_IG_011), then show Senate Republicans lowering the vote threshold for nominees (wk34_IG_033) to speed loyalist appointments. Move to policy outcomes via courts: green lights for NSF grant cancellations (wk34_IG_028, wk34_ES_029) and Medicaid defunding of Planned Parenthood (wk34_IG_029, wk34_IG_030, wk34_ES_030, wk34_IG_034, wk34_IG_047). Layer in Congress’s passivity on unilateral strikes and spending cuts (wk34_IG_019, wk34_IG_040) and the administration’s emergency appeal to freeze foreign aid (wk34_IG_013, wk34_IG_048). Acknowledge countervailing rulings that still check Trump—tariff overreach and other actions struck down (wk34_IG_007, wk34_IG_020, wk34_IG_046), the Carroll defamation verdict upheld (wk34_IG_009), and some protections for civil servants (wk34_IG_016, wk34_IG_015)—to emphasize that the system is contested but trending toward deference.",
+            "one_sentence_thesis": "Key judicial rulings and congressional actions this week expanded presidential control over independent agencies, enabled punitive social policy, and weakened legislative oversight, even as a few decisions still constrained Trump’s power.",
+            "supporting_event_ids": [
+              "wk34_IG_011",
+              "wk34_IG_016",
+              "wk34_IG_028",
+              "wk34_ES_029",
+              "wk34_IG_029",
+              "wk34_IG_030",
+              "wk34_ES_030",
+              "wk34_IG_047",
+              "wk34_IG_019",
+              "wk34_IG_040",
+              "wk34_IG_013",
+              "wk34_IG_048",
+              "wk34_IG_007",
+              "wk34_IG_020",
+              "wk34_IG_046",
+              "wk34_IG_009",
+              "wk34_IG_015"
+            ],
+            "title": "Courts and Congress tilt toward executive and ideological priorities over independent checks",
+            "why_it_matters": "When courts and legislatures stop acting as robust checks, executive preferences and donor-driven agendas can be implemented through litigation and procedure rather than open democratic debate, making reversals harder even under future administrations."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_IG_038",
+              "wk34_IG_039",
+              "wk34_IG_037",
+              "wk34_PA_010"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Start with Missouri’s gerrymandered congressional map (wk34_IG_039, wk34_IG_038) to illustrate how representation is being locked in. Then move to federal levers: the Stop Illegal Entry Act and its mandatory minimums (wk34_IG_031, wk34_CR_017) as part of a broader criminalization of immigrants that intersects with voting and civic participation, and the dismissal of fake elector charges in Michigan (wk34_CR_010) that weakens deterrence for election subversion. Introduce the DOJ’s national voting database project (wk34_IG_037, wk34_IM_006) and the Supreme Court’s shadow-docket blessing of racial profiling in immigration enforcement (wk34_IM_017) as data and enforcement tools that can be turned toward voters. Fold in Cleta Mitchell’s suggestion that Trump could declare a national emergency to control federal elections (wk34_PA_010), plus the FEC’s move toward more closed-door deliberations (wk34_IG_036, wk34_IM_007) and Congress stripping $1 billion from DC’s budget (wk34_IG_025), to show how institutional architecture is being tuned for partisan control.",
+            "one_sentence_thesis": "Republican officials advanced structural changes—from gerrymandered maps and harsh immigration sentencing to a national voting database and emergency-election talk—that reshape who is represented and how elections can be controlled.",
+            "supporting_event_ids": [
+              "wk34_IG_031",
+              "wk34_CR_017",
+              "wk34_CR_010",
+              "wk34_IM_006",
+              "wk34_IM_017",
+              "wk34_IG_036",
+              "wk34_IM_007",
+              "wk34_IG_025"
+            ],
+            "title": "Elections and representation are quietly re-engineered through law and data",
+            "why_it_matters": "These moves entrench partisan advantage and create tools that could be used to intimidate voters or override state-run elections, undermining the premise that electoral outcomes reflect the popular will."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_IG_006",
+              "wk34_IG_008",
+              "wk34_IG_018",
+              "wk34_IM_002"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Organize this around three strands. First, the Epstein cluster: DOJ’s move to dismiss survivors’ suit (wk34_IG_006), efforts to keep names sealed (wk34_IG_008), FOIA delays to 2027 (wk34_IG_018), and the broader pattern of secrecy and limited outreach (wk34_IM_005), contrasted with Congress’s selective release of estate records and a Trump birthday note (wk34_IG_017, wk34_IM_003) and JPMorgan’s belated suspicious-activity reports (wk34_IM_004). Second, intelligence and foreign policy: DNI Gabbard’s recall of an accurate Venezuela report (wk34_IM_002) as an example of political interference in analysis. Third, economic and narrative management: the weak jobs report amid BLS turmoil (wk34_ES_001) and Trump’s dismissive spin (wk34_PA_015), plus the broader tactic of overlapping crises and emergency actions to overwhelm scrutiny (wk34_IM_022). You can briefly note NARA’s records-disposition consultations (wk34_IM_018, wk34_IG_035) as a quieter arena where the future historical record is being shaped.",
+            "one_sentence_thesis": "Across the Justice Department, intelligence community, and economic agencies, officials delayed disclosures, recalled accurate reports, and massaged narratives in ways that protected elites and the administration’s image.",
+            "supporting_event_ids": [
+              "wk34_IM_005",
+              "wk34_IG_017",
+              "wk34_IM_003",
+              "wk34_IM_004",
+              "wk34_IM_021",
+              "wk34_ES_001",
+              "wk34_PA_015",
+              "wk34_IM_022",
+              "wk34_IM_018",
+              "wk34_IG_035"
+            ],
+            "title": "Information control and elite impunity: Epstein secrecy, intelligence meddling, and economic spin",
+            "why_it_matters": "When politically sensitive information about abuse, foreign policy, or the economy is suppressed or spun, the public loses the ability to hold power to account, and conspiracy thrives in the vacuum."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_CR_007",
+              "wk34_CR_021",
+              "wk34_ES_029",
+              "wk34_ES_031"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Begin with public health: Florida dropping childhood vaccine mandates (wk34_CR_007) and the Trump administration’s moves to link COVID vaccines to unverified child death reports while considering access limits (wk34_CR_021, wk34_CR_035, wk34_IM_015), plus the children’s health report that sidesteps pesticides and ultra-processed foods (wk34_CR_009). Then shift to science and education: termination of over 1,600 NSF grants (wk34_ES_029) and the court decision allowing those cuts (wk34_IG_028), cuts to disability education and minority-serving institutions (wk34_ES_025), and a federal tax-and-spending plan that squeezes state services (wk34_ES_026). Add reproductive and global health: destruction of contraceptives for low-income countries (wk34_ES_027) and foreign-aid/democracy-promotion cuts (wk34_ES_028), plus Medicaid defunding of Planned Parenthood (wk34_IG_029, wk34_IG_030, wk34_IG_047, wk34_ES_030). Close with climate and energy: EPA’s clawback of Solar for All grants and end of greenhouse gas reporting (wk34_ES_023, wk34_ES_024, wk34_ES_031), and North Carolina’s Medicaid shortfall (wk34_ES_022) as an example of how fiscal choices offload risk onto vulnerable communities. Briefly note that some federal health and environmental agencies continue routine, more technocratic work (e.g., FDA and EPA notices), but the headline direction is rollback.",
+            "one_sentence_thesis": "The administration and allied states advanced policies that weaken vaccination norms, cut science and education funding, and roll back climate and clean-energy programs, privileging ideological and incumbent economic interests over public health and equity.",
+            "supporting_event_ids": [
+              "wk34_CR_035",
+              "wk34_IM_015",
+              "wk34_CR_009",
+              "wk34_ES_025",
+              "wk34_ES_026",
+              "wk34_ES_027",
+              "wk34_ES_028",
+              "wk34_ES_023",
+              "wk34_ES_024",
+              "wk34_ES_022",
+              "wk34_IG_028",
+              "wk34_IG_029",
+              "wk34_IG_030",
+              "wk34_IG_047",
+              "wk34_ES_030",
+              "wk34_IG_024",
+              "wk34_IG_004",
+              "wk34_CR_021"
+            ],
+            "title": "Public health, science, and climate policy are bent toward ideology and donor interests",
+            "why_it_matters": "Eroding scientific and environmental baselines has long-term consequences that outlast any single administration, from preventable disease outbreaks to entrenched inequality in health, education, and climate resilience."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_IG_004",
+              "wk34_CR_015",
+              "wk34_CR_013",
+              "wk34_PA_001"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Tie together the religious and symbolic strands. Start with Texas’s school prayer law and Ten Commandments push (wk34_IG_004) and the House hearing elevating an unpublished anti-vaccine study (wk34_IG_024) as examples of Christian nationalist and anti-science currents in official forums. Then move to Defense Secretary Hegseth’s partisan religious speech to troops praising Charlie Kirk (wk34_CR_015) and the renaming of the Department of Defense to the Department of War (wk34_PA_001) to show how the military is being ideologically framed. Layer in the dismantling of the 40-year White House peace vigil and detention of a volunteer (wk34_CR_013), the Rose Garden Club for loyalists (wk34_PA_003), and the politicized honors fight—Kirk’s Medal of Freedom and proposed statue (wk34_PA_018, wk34_IG_026) versus refusal to honor January 6 officers (wk34_IG_027) and West Point’s cancellation of a Tom Hanks award under pressure (wk34_CR_014). You can close by briefly referencing commentary on post‑9/11 democratic erosion (wk34_IM_019) to situate these symbolic battles in a longer arc.",
+            "one_sentence_thesis": "From school prayer mandates and religious speeches to troops, to curated statues, medals, and erased vigils, officials used religious and symbolic gestures to sacralize their agenda and sideline alternative narratives.",
+            "supporting_event_ids": [
+              "wk34_IG_024",
+              "wk34_IG_026",
+              "wk34_IG_027",
+              "wk34_IM_016",
+              "wk34_PA_003",
+              "wk34_PA_018",
+              "wk34_CR_014",
+              "wk34_IM_019"
+            ],
+            "title": "Religion and symbolism are harnessed to legitimize power and marginalize dissent",
+            "why_it_matters": "When the state fuses political authority with a preferred religious and symbolic order, it narrows the space for pluralism and recasts opposition as not just wrong but impious or un-American."
+          },
+          {
+            "anchor_event_ids": [
+              "wk34_IM_011",
+              "wk34_IM_020",
+              "wk34_IM_014"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Open with Trump’s AI-generated militaristic image threatening Chicago (wk34_IM_011) and his meme suggesting military action (wk34_PA_006) as emblematic of how digital tools are used to menace domestic opponents. Then describe right-wing influencers embedded in enforcement—Ben Bergquam filming ICE raids in Chicago (wk34_IM_020)—and Tom Homan’s and allies’ disinformation about paid protesters and liberal blame for Kirk’s killer (wk34_IM_001, wk34_IM_014). Connect this to Trump’s politicization of violent crime (wk34_IM_012) and his Oval Office framing of Kirk’s killing (wk34_PA_016, wk34_IM_013). Show how this ecosystem punishes dissent: campaigns to get critics fired (wk34_CR_019), Higgins’s threats of lifetime bans and license targeting (wk34_CR_020, wk34_IM_010), and MSNBC’s firing of a critical commentator (wk34_IM_009). Briefly note the broader strategy of overlapping crises and information overload (wk34_IM_022) and the FCC’s management of small TV station applications (wk34_IM_008) as part of the media environment in which these narratives circulate.",
+            "one_sentence_thesis": "The administration and its allies used AI-generated imagery, embedded influencers in raids, and disinformation about protesters and crime to delegitimize dissent and normalize militarized responses.",
+            "supporting_event_ids": [
+              "wk34_PA_006",
+              "wk34_PA_016",
+              "wk34_IM_001",
+              "wk34_IM_012",
+              "wk34_IM_013",
+              "wk34_IM_015",
+              "wk34_IM_022",
+              "wk34_IM_008",
+              "wk34_IM_009",
+              "wk34_IM_010",
+              "wk34_CR_019",
+              "wk34_CR_020"
+            ],
+            "title": "AI, media, and propaganda tools are folded into an authoritarian messaging ecosystem",
+            "why_it_matters": "Blending state power with partisan media and synthetic content makes it harder for the public to distinguish fact from propaganda, and it primes audiences to accept crackdowns on opponents as necessary security measures."
+          }
+        ],
+        "period_label": "Week 34",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around: (1) militarized domestic governance; (2) immigration as a paramilitary campaign; (3) the Kirk assassination’s use to punish dissent and curate memory; (4) courts and Congress enabling executive and ideological agendas; (5) structural election and representation engineering; (6) information control and elite impunity; (7) ideological capture of health, science, and climate policy; (8) religion and symbolism as tools of legitimacy; and (9) AI/media-driven propaganda. Some events could plausibly sit in multiple clusters (e.g., FEC meetings, NARA records, certain court rulings); they were assigned where they most clearly advance a narrative and occasionally referenced conceptually in others without duplicating event IDs. Routine regulatory notices and positive state social policies are mostly left unassigned to keep the outline focused on major democratic-structure shifts.",
+        "unassigned_events": [
+          {
+            "event_id": "wk34_CR_006",
+            "why_unassigned": "Minor corrective action (DoD deleting a misleading video) that doesn’t significantly advance a main narrative beyond existing information-control themes already covered."
+          },
+          {
+            "event_id": "wk34_IG_001",
+            "why_unassigned": "State-level regulatory adjustment on marine licenses is governance-normal and peripheral to the week’s dominant democracy storylines."
+          },
+          {
+            "event_id": "wk34_ES_002",
+            "why_unassigned": "Tariff exemption change and postal traffic impact are important economically but do not clearly tie into the main democratic-erosion arcs highlighted this week."
+          },
+          {
+            "event_id": "wk34_ES_003",
+            "why_unassigned": "Halting Baltic security funding is geopolitically significant but sits at the edge of the week’s domestic democracy focus and would overcomplicate existing foreign-policy threads."
+          },
+          {
+            "event_id": "wk34_PA_002",
+            "why_unassigned": "The covert 2019 SEAL mission is historically important but functions here mainly as background to executive overreach already captured in other developments."
+          },
+          {
+            "event_id": "wk34_PA_013",
+            "why_unassigned": "Trump’s Gaza ceasefire positioning is notable but tangential to the week’s core domestic power and rights narratives."
+          },
+          {
+            "event_id": "wk34_ES_004",
+            "why_unassigned": "Routine FCC fee schedule; technocratic and not central to the democracy-clock storylines."
+          },
+          {
+            "event_id": "wk34_ES_005",
+            "why_unassigned": "CDC tobacco data collection is standard regulatory maintenance without clear linkage to the week’s structural shifts."
+          },
+          {
+            "event_id": "wk34_ES_006",
+            "why_unassigned": "CDC information-collection extensions are routine and not central to the main developments."
+          },
+          {
+            "event_id": "wk34_ES_007",
+            "why_unassigned": "FCC paperwork reviews are procedural and peripheral to the key narratives."
+          },
+          {
+            "event_id": "wk34_ES_008",
+            "why_unassigned": "FDA biosimilar guidances are technical and do not materially affect the democracy-focused arcs this week."
+          },
+          {
+            "event_id": "wk34_ES_009",
+            "why_unassigned": "Tobacco establishment registration updates are routine regulatory work."
+          },
+          {
+            "event_id": "wk34_ES_010",
+            "why_unassigned": "FDA non-opioid analgesic guidance is positive but tangential to the week’s democracy themes."
+          },
+          {
+            "event_id": "wk34_ES_011",
+            "why_unassigned": "DEA research-related approvals are technical and not central to the main storylines."
+          },
+          {
+            "event_id": "wk34_ES_012",
+            "why_unassigned": "EPA state program revisions are routine federalism implementation without a strong democracy-clock angle."
+          },
+          {
+            "event_id": "wk34_ES_013",
+            "why_unassigned": "Hazardous waste rule correction is narrow and technical."
+          },
+          {
+            "event_id": "wk34_ES_014",
+            "why_unassigned": "TSCA chemical submission notices are standard transparency actions."
+          },
+          {
+            "event_id": "wk34_ES_015",
+            "why_unassigned": "FDA AI mental health advisory committee meeting is forward-looking but peripheral to the week’s core power and rights narratives."
+          },
+          {
+            "event_id": "wk34_ES_016",
+            "why_unassigned": "Alternative tools for drug facility assessment are technical process changes."
+          },
+          {
+            "event_id": "wk34_ES_017",
+            "why_unassigned": "OSHA information-collection extension is routine."
+          },
+          {
+            "event_id": "wk34_ES_018",
+            "why_unassigned": "OSHA NRTL standards update is technical and not central to democratic-structure themes."
+          },
+          {
+            "event_id": "wk34_ES_019",
+            "why_unassigned": "OSHA student data form extension is minor and administrative."
+          },
+          {
+            "event_id": "wk34_ES_020",
+            "why_unassigned": "Census export data collection extension is standard statistical maintenance."
+          },
+          {
+            "event_id": "wk34_ES_021",
+            "why_unassigned": "EPA EIS notices are routine transparency steps, not a major driver of the week’s developments."
+          },
+          {
+            "event_id": "wk34_IG_021",
+            "why_unassigned": "California’s sequoia protection is a positive state initiative but peripheral to the main federal power and rights arcs."
+          },
+          {
+            "event_id": "wk34_IG_022",
+            "why_unassigned": "Massachusetts housing review reforms are important domestically but not central to the democracy-clock focus this week."
+          },
+          {
+            "event_id": "wk34_IG_023",
+            "why_unassigned": "New Mexico’s universal child care is a significant social policy expansion but sits outside the main authoritarian-drift narratives."
+          },
+          {
+            "event_id": "wk34_IG_032",
+            "why_unassigned": "The IG review request on Lisa Cook is part of oversight politics but would overcomplicate the already dense courts-and-agencies development."
+          },
+          {
+            "event_id": "wk34_IG_035",
+            "why_unassigned": "NARA records schedules are already lightly referenced via a broader information-control development; including them explicitly would add clutter."
+          },
+          {
+            "event_id": "wk34_IG_036",
+            "why_unassigned": "Substantively covered via its twin in the information-manipulation development; left unassigned to avoid duplication."
+          },
+          {
+            "event_id": "wk34_IG_041",
+            "why_unassigned": "Grouped conceptually into the immigration-services court pushback; omitted as an explicit ID to keep that development from becoming unwieldy."
+          },
+          {
+            "event_id": "wk34_IG_042",
+            "why_unassigned": "Similar to wk34_IG_041; part of the same judicial pushback cluster but not needed as a separate anchor or citation."
+          },
+          {
+            "event_id": "wk34_IG_044",
+            "why_unassigned": "Also part of the immigrant/trans services protection cluster; excluded explicitly for brevity."
+          },
+          {
+            "event_id": "wk34_IG_045",
+            "why_unassigned": "Redundant with other Head Start/service-blocking rulings already referenced; left out to streamline."
+          },
+          {
+            "event_id": "wk34_IG_043",
+            "why_unassigned": "Trial management in the Trump assassination attempt case is notable but tangential to the week’s main structural themes."
+          },
+          {
+            "event_id": "wk34_IM_018",
+            "why_unassigned": "NARA records-comment process is already conceptually folded into the information-control development; explicit inclusion would be duplicative."
+          },
+          {
+            "event_id": "wk34_IM_019",
+            "why_unassigned": "Public commentary by Richardson and Bush is contextual analysis rather than a discrete state action; referenced conceptually in a symbolism development."
+          },
+          {
+            "event_id": "wk34_CR_029",
+            "why_unassigned": "The school shooting is tragic but not clearly integrated into the week’s main democracy-structure narratives."
+          },
+          {
+            "event_id": "wk34_CR_030",
+            "why_unassigned": "Israeli protests over Gaza are important but peripheral to the U.S.-focused democracy clock storyline this week."
+          },
+          {
+            "event_id": "wk34_CR_032",
+            "why_unassigned": "Kirk’s overseas activism is background context to his domestic role and death but not central to the week’s structural shifts."
+          },
+          {
+            "event_id": "wk34_ES_022",
+            "why_unassigned": "North Carolina’s Medicaid shortfall is used conceptually in inequality discussions but not needed as a separate development anchor."
+          }
+        ],
+        "week_number": 34,
+        "window": {
+          "end": "2025-09-12",
+          "start": "2025-09-06"
+        }
+      }
+    },
+    {
+      "week_number": 35,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 35/development_allocator_week35.json",
+        "filename": "development_allocator_week35.json",
+        "sha256": "83ee6f07c2b1e5e628eb65880695dbb0daa80c2750022226e4601fe09b700d2a",
+        "mtime_utc": "2025-12-23T20:08:22Z",
+        "size_bytes": 37527
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk35_PA_004",
+            "wk35_PA_006",
+            "wk35_PA_018",
+            "wk35_CR_053",
+            "wk35_PA_005",
+            "wk35_PA_007",
+            "wk35_CR_027",
+            "wk35_IG_011",
+            "wk35_IG_020",
+            "wk35_CR_004",
+            "wk35_CR_008",
+            "wk35_CR_009",
+            "wk35_CR_048",
+            "wk35_CR_049",
+            "wk35_CR_037",
+            "wk35_CR_031",
+            "wk35_ES_032",
+            "wk35_PA_020",
+            "wk35_CR_015",
+            "wk35_CR_025",
+            "wk35_CR_034",
+            "wk35_CR_032",
+            "wk35_CR_038",
+            "wk35_CR_039",
+            "wk35_CR_040",
+            "wk35_CR_041",
+            "wk35_CR_050",
+            "wk35_IG_005",
+            "wk35_PA_012",
+            "wk35_PA_002",
+            "wk35_PA_003",
+            "wk35_CR_011",
+            "wk35_CR_018",
+            "wk35_IM_006",
+            "wk35_IM_007",
+            "wk35_CR_026",
+            "wk35_IG_019",
+            "wk35_CR_007",
+            "wk35_IM_002",
+            "wk35_IM_008",
+            "wk35_IM_010",
+            "wk35_IM_018",
+            "wk35_IM_019",
+            "wk35_IM_029",
+            "wk35_ES_029",
+            "wk35_CR_014",
+            "wk35_CR_024",
+            "wk35_CR_051",
+            "wk35_CR_022",
+            "wk35_CR_023",
+            "wk35_CR_030",
+            "wk35_CR_006",
+            "wk35_IG_006",
+            "wk35_IG_007",
+            "wk35_CR_033",
+            "wk35_CR_029",
+            "wk35_CR_028",
+            "wk35_CR_035",
+            "wk35_CR_001",
+            "wk35_IM_021",
+            "wk35_IM_009",
+            "wk35_IM_005",
+            "wk35_IM_017",
+            "wk35_IM_012",
+            "wk35_IM_022",
+            "wk35_IM_023",
+            "wk35_IM_028",
+            "wk35_IG_015",
+            "wk35_IG_016",
+            "wk35_IG_023",
+            "wk35_IM_020",
+            "wk35_IM_013",
+            "wk35_IM_014",
+            "wk35_IM_015",
+            "wk35_PA_001",
+            "wk35_IM_026",
+            "wk35_IM_027",
+            "wk35_CR_047",
+            "wk35_IM_016",
+            "wk35_ES_002",
+            "wk35_IM_025",
+            "wk35_ES_007",
+            "wk35_IG_014",
+            "wk35_ES_008",
+            "wk35_ES_003",
+            "wk35_ES_006",
+            "wk35_ES_030",
+            "wk35_ES_031",
+            "wk35_IG_021",
+            "wk35_ES_021",
+            "wk35_ES_001",
+            "wk35_IG_010",
+            "wk35_ES_023",
+            "wk35_PA_014",
+            "wk35_PA_015",
+            "wk35_PA_010",
+            "wk35_PA_013",
+            "wk35_CR_036",
+            "wk35_PA_011",
+            "wk35_PA_016",
+            "wk35_PA_021",
+            "wk35_CR_003",
+            "wk35_IG_017",
+            "wk35_IG_018",
+            "wk35_IG_024",
+            "wk35_IG_002",
+            "wk35_CR_042",
+            "wk35_CR_052",
+            "wk35_CR_016",
+            "wk35_CR_043",
+            "wk35_IG_009",
+            "wk35_IG_012",
+            "wk35_IG_022",
+            "wk35_CR_002"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 161,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk35_PA_004",
+              "wk35_PA_006",
+              "wk35_PA_018",
+              "wk35_CR_053"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Sequence from Trump’s announcement and EO for Memphis Guard deployment (wk35_PA_004, wk35_PA_006) to the more dramatic temporary federal takeover of DC police (wk35_PA_018), then fold in the broader pattern of Guard and federal agents used as crime control (wk35_CR_053). Use wk35_PA_005 and wk35_PA_007 to show that similar plans are being drafted or threatened elsewhere, and wk35_CR_027, wk35_IG_011, wk35_IG_020 to illustrate how Congress is simultaneously hardening DC’s criminal justice regime, reinforcing a federalized, punitive approach.",
+            "one_sentence_thesis": "The administration used emergency rhetoric to deploy National Guard troops and seize control of local police in Memphis and Washington DC, entrenching a model of centralized, militarized governance over urban crime and immigration.",
+            "supporting_event_ids": [
+              "wk35_PA_005",
+              "wk35_PA_007",
+              "wk35_CR_027",
+              "wk35_IG_011",
+              "wk35_IG_020"
+            ],
+            "title": "Trump federalizes local policing and normalizes military-style domestic security",
+            "why_it_matters": "Treating routine crime and immigration disputes as grounds for federal takeovers blurs the line between civilian policing and military force, weakens local self-government, and builds a template for future crackdowns on opposition-led cities. It also conditions the public to accept extraordinary security measures as normal tools of presidential power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_CR_004",
+              "wk35_CR_008",
+              "wk35_CR_009",
+              "wk35_CR_048",
+              "wk35_CR_049",
+              "wk35_CR_037",
+              "wk35_CR_031",
+              "wk35_ES_032",
+              "wk35_PA_020"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Open with the LA neighborhood raids and Hyundai plant sweep (wk35_CR_004, wk35_CR_008) and the abusive detention conditions including Camp 57 (wk35_CR_009, wk35_CR_048) to establish the human rights baseline. Then move to legal and political escalation: redefining assault and threats against ICE (wk35_CR_049), visa revocations for speech (wk35_CR_015), deportation of a journalist and a pro‑Palestinian activist (wk35_CR_037, wk35_CR_032), and the emoji gang memo (wk35_CR_050). Contrast with partial judicial checks on TPS and child deportations (wk35_CR_031, wk35_CR_034). Close with structural stratification via the $100,000 H‑1B fee and the Gold Card millionaire visa (wk35_ES_032, wk35_PA_020), and note state-level discrimination like Texas SB 17 (wk35_IG_005) and the end of “sensitive locations” protections (wk35_PA_012).",
+            "one_sentence_thesis": "ICE and DHS escalated militarized raids, abusive detention, and speech-based visa punishments while courts and states offered only partial pushback, deepening a tiered system of rights based on immigration status, wealth, and ideology.",
+            "supporting_event_ids": [
+              "wk35_CR_015",
+              "wk35_CR_025",
+              "wk35_CR_031",
+              "wk35_CR_034",
+              "wk35_CR_032",
+              "wk35_CR_038",
+              "wk35_CR_039",
+              "wk35_CR_040",
+              "wk35_CR_041",
+              "wk35_CR_050",
+              "wk35_CR_031",
+              "wk35_IG_005",
+              "wk35_PA_012"
+            ],
+            "title": "Immigration enforcement becomes a central tool of repression and stratified citizenship",
+            "why_it_matters": "Using immigration powers to target lawful workers, journalists, activists, and even elected officials turns a civil regulatory system into a political weapon and signals that basic protections are contingent on loyalty and origin. Wealth-based visas and extreme fees further entrench a pay-to-belong model of citizenship."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_PA_002",
+              "wk35_PA_003",
+              "wk35_CR_011",
+              "wk35_CR_018",
+              "wk35_CR_015",
+              "wk35_IM_006",
+              "wk35_IM_007",
+              "wk35_CR_026",
+              "wk35_IG_019"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Frame this as a narrative arc: the killing and arrest (wk35_CR_007) followed by Trump’s symbolic elevation of Kirk (half‑mast, Medal of Freedom, House resolution: wk35_PA_002, wk35_IG_019) and rapid push for more elite security funding (wk35_PA_003). Then show how officials use the tragedy to stigmatize opponents and dissent—Trump and Miller’s rhetoric (wk35_CR_011, wk35_CR_018), visa revocations for celebratory speech (wk35_CR_015), Bondi urging employers to fire critics (wk35_IM_006), and Vance’s disinformation (wk35_IM_007). Close with how this climate feeds into media and recruitment moves: DHS/ICE using the killing to recruit (wk35_CR_026), Trump threatening a journalist (wk35_IM_010), and the Kimmel/Nexstar/Sinclair saga (wk35_IM_018, wk35_IM_019, wk35_IM_029, wk35_ES_029).",
+            "one_sentence_thesis": "In the wake of Charlie Kirk’s assassination, the administration and allies used mourning rituals, security funding, and outrage campaigns to justify crackdowns on speech, immigration, and media while elevating Kirk as a partisan martyr.",
+            "supporting_event_ids": [
+              "wk35_CR_007",
+              "wk35_IM_002",
+              "wk35_IM_008",
+              "wk35_IM_010",
+              "wk35_IM_018",
+              "wk35_IM_019",
+              "wk35_IM_029",
+              "wk35_ES_029"
+            ],
+            "title": "Charlie Kirk’s killing is weaponized to expand security, punish dissent, and reshape media",
+            "why_it_matters": "Turning a political killing into a pretext for loyalty tests, visa revocations, and media purges both chills dissent and normalizes the idea that criticism of regime-aligned figures is itself suspect or dangerous. It also channels public grief into permanent expansions of elite security and surveillance."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_CR_014",
+              "wk35_CR_024",
+              "wk35_CR_051",
+              "wk35_CR_022",
+              "wk35_CR_025",
+              "wk35_CR_023",
+              "wk35_CR_030"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Start with the overt threats to use RICO and civil-rights law against protesters and an Office Depot worker (wk35_CR_014, wk35_CR_024) to illustrate law-as-weapon. Then move to direct interference in prosecutions—pressure and attempted firing over Letitia James (wk35_CR_051), politicized FBI resource shifts and leadership (wk35_CR_025, wk35_CR_006), and internal gagging at Labor (wk35_CR_022). Layer in oversight and partial checks: congressional hearings on FBI politicization (wk35_IG_006, wk35_IG_007), courts blocking Trump’s attempt to fire Fed Governor Lisa Cook and dismissing his NYT defamation suit (wk35_CR_030), and Giuliani’s fee judgment (wk35_CR_033). Use wk35_CR_029 and wk35_CR_028 to show DOJ also suing states over climate and election administration, and wk35_CR_031, wk35_CR_035, wk35_CR_001 to highlight that some judges and juries still resist overreach.",
+            "one_sentence_thesis": "Across DOJ, FBI, and the courts, the administration pressed for politicized prosecutions, reassigned investigators, and floated RICO and civil-rights theories against protesters and private citizens, while judges delivered a mix of resistance and enabling rulings.",
+            "supporting_event_ids": [
+              "wk35_CR_006",
+              "wk35_IG_006",
+              "wk35_IG_007",
+              "wk35_CR_033",
+              "wk35_CR_029",
+              "wk35_CR_028",
+              "wk35_CR_031",
+              "wk35_CR_035",
+              "wk35_CR_001"
+            ],
+            "title": "Law enforcement and courts are bent toward punishing enemies and shielding allies",
+            "why_it_matters": "When prosecutorial discretion and civil-rights statutes are repurposed to target critics and protect insiders, the rule of law becomes a tool of regime maintenance rather than a constraint, eroding trust in neutral justice and inviting selective impunity."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_IM_018",
+              "wk35_IM_021",
+              "wk35_IM_019",
+              "wk35_IM_009",
+              "wk35_IM_005",
+              "wk35_IM_017"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Center the Kimmel affair: FCC threats and suspension (wk35_IM_018), follow-on investigations into NPR/PBS and merger leverage over DEI (wk35_IM_021), and the replacement of his slot with a Kirk tribute across affiliates (wk35_IM_019). Then broaden to other media intimidation: Trump’s threat toward Jonathan Karl (wk35_IM_010), the Washington Post firing Karen Attiah (wk35_IM_008), and House Democrats’ oversight efforts (wk35_IG_015, wk35_IG_016, wk35_IG_023, wk35_IM_020). Shift to memory and data control: DOJ removing the far-right violence study (wk35_IM_009), Pentagon cutting off environmental data (wk35_IM_012), and the order to strip slavery exhibits from national parks (wk35_IM_005). Close with the Texas A&M purge over “gender ideology” (wk35_IM_017) and the Education Department’s ideological programming (wk35_IM_023) as examples of academic and civic education being reshaped.",
+            "one_sentence_thesis": "The week saw a multi-front campaign to intimidate journalists, reshape broadcast content, purge critical academics, and literally remove slavery and far-right violence from the official record.",
+            "supporting_event_ids": [
+              "wk35_IM_010",
+              "wk35_IM_008",
+              "wk35_IM_012",
+              "wk35_IM_022",
+              "wk35_IM_023",
+              "wk35_IM_028",
+              "wk35_IG_015",
+              "wk35_IG_016",
+              "wk35_IG_023",
+              "wk35_IM_020"
+            ],
+            "title": "Media, academia, and public memory come under coordinated political and regulatory pressure",
+            "why_it_matters": "By narrowing what can be said on air, in classrooms, and in public spaces—and by erasing uncomfortable history and data—the regime reduces the space for informed dissent and locks in a curated narrative that favors its power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_IM_013",
+              "wk35_IM_014",
+              "wk35_IM_015",
+              "wk35_PA_001",
+              "wk35_IM_026",
+              "wk35_IM_027"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Lay out the institutional gutting: RFK Jr.’s purge and reconstitution of ACIP with vaccine skeptics (wk35_IM_013), firing CDC Director Monarez and canceling the Moderna bird flu contract (wk35_IM_014), and Trump’s EO centralizing control over research grants under the banner of “gold standard science” (wk35_IM_015). Connect this to Florida’s unilateral end to childhood vaccine mandates (wk35_PA_001) and ACIP’s confused reversals on MMRV and Covid vaccine access (wk35_IM_026, wk35_IM_027). Use congressional testimony from Monarez and Doug Jones (wk35_CR_047) and the West Coast states’ independent guidelines (wk35_IM_016) to show resistance. You can briefly note ongoing routine public health work (wk35_ES_002, wk35_IM_025) as a contrast to the politicization at the top.",
+            "one_sentence_thesis": "Trump-aligned officials dismantled vaccine advisory structures, fired a CDC director, canceled key vaccine contracts, and centralized control over research grants while some states and experts scrambled to preserve evidence-based guidance.",
+            "supporting_event_ids": [
+              "wk35_CR_047",
+              "wk35_IM_016",
+              "wk35_ES_002",
+              "wk35_IM_025"
+            ],
+            "title": "Science and public health governance are politicized and hollowed out",
+            "why_it_matters": "Politicizing vaccine policy and scientific funding undermines trust in health institutions, risks preventable disease outbreaks, and allows ideological priorities to override data in life-and-death decisions."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_ES_007",
+              "wk35_IG_014",
+              "wk35_ES_008",
+              "wk35_ES_003",
+              "wk35_ES_006",
+              "wk35_CR_029"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Start with the Labor Department’s nearly 150 deregulatory actions, especially ending wage and overtime protections for care workers (wk35_ES_007), and pair that with the $1+ trillion Medicaid/CHIP cuts (wk35_IG_014) and international child-labor grant cuts (wk35_ES_008) to show a coherent anti-worker, anti-safety-net direction. Then highlight elite-serving moves: the UAE AI chip deal tied to a Trump-linked crypto firm (wk35_ES_003), EPA’s attempt to rescind the endangerment finding (wk35_ES_006), and DOJ’s attack on Vermont’s Climate Superfund Act (wk35_CR_029), plus PFAS cleanup rollbacks (wk35_IG_021). Use household credit score declines and farm aid considerations (wk35_ES_030, wk35_ES_031) to illustrate the human economic backdrop, and weave in oversight efforts like the Senate’s lobbying probe (wk35_IG_010) as limited checks.",
+            "one_sentence_thesis": "Through sweeping deregulation, social program cuts, and conflict-laden deals, the administration advanced an economic agenda that weakens worker protections, undermines climate policy, and channels benefits to insiders.",
+            "supporting_event_ids": [
+              "wk35_ES_030",
+              "wk35_ES_031",
+              "wk35_IG_021",
+              "wk35_ES_021",
+              "wk35_ES_001",
+              "wk35_IG_010",
+              "wk35_ES_023"
+            ],
+            "title": "Labor, environment, and economic policy tilt sharply toward elite and corporate interests",
+            "why_it_matters": "Eroding labor standards and environmental safeguards while slashing Medicaid and CHIP deepens inequality and vulnerability, and when combined with cronyistic deals, it makes economic governance indistinguishable from serving those closest to power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_PA_014",
+              "wk35_PA_015",
+              "wk35_PA_010",
+              "wk35_PA_013",
+              "wk35_CR_036"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Anchor the narrative in clear examples of boundary-pushing: Trump’s EO delaying a TikTok ban despite statute and a Supreme Court ruling (wk35_PA_014), his attempt to remove Fed Governor Lisa Cook (wk35_PA_015), and the unauthorized missile strike on a Venezuelan boat (wk35_PA_010). Add the emergency board in the LIRR dispute (wk35_PA_013) as another instance of executive insertion into quasi-independent processes. Use the Supreme Court’s fast-tracking of tariff authority (wk35_CR_036) and Trump’s push for tariff validation (wk35_CR_003) to show the legal stakes. Then layer in symbolic and institutional aggrandizement—the $200 million White House ballroom (wk35_PA_016), threats to punish TV networks (wk35_PA_021), and partial judicial checks like the courts blocking Cook’s firing and the NYT suit (wk35_CR_030). Close with the budget brinkmanship around the CR and shutdown risk (wk35_IG_017, wk35_IG_018) and reduced FEC transparency (wk35_IG_024) as context for weakening oversight.",
+            "one_sentence_thesis": "Trump repeatedly tested or defied statutory and judicial limits—from delaying a court-mandated TikTok ban and threatening to fire a Fed governor to launching an unauthorized strike on a Venezuelan boat—while courts and Congress struggled to respond.",
+            "supporting_event_ids": [
+              "wk35_PA_011",
+              "wk35_PA_016",
+              "wk35_PA_021",
+              "wk35_CR_003",
+              "wk35_CR_030",
+              "wk35_IG_017",
+              "wk35_IG_018",
+              "wk35_IG_024"
+            ],
+            "title": "Executive power stretches past legal and institutional constraints at home and abroad",
+            "why_it_matters": "When the presidency treats laws, court rulings, and independent institutions as optional, it accelerates a shift toward personalized rule where accountability mechanisms exist mostly on paper."
+          },
+          {
+            "anchor_event_ids": [
+              "wk35_IG_002",
+              "wk35_CR_028",
+              "wk35_CR_042",
+              "wk35_CR_052"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Lead with structural moves: Missouri’s mid-decade gerrymander (wk35_IG_002), DOJ’s suits against Oregon and Maine over voter data (wk35_CR_028), and North Carolina’s HB 958 election bill (wk35_CR_042). Pair these with Trump’s continued false claims that he won in 2020 (wk35_CR_052) to show how narrative and law interact. Then bring in DC-specific crime and youth sentencing changes (wk35_IG_011, wk35_IG_020) as part of federal control over a disenfranchised jurisdiction. Use the special election after Melissa Hortman’s assassination and voters’ choice of Xp Lee (wk35_CR_016, wk35_CR_043) plus the Giuliani fee ruling (wk35_CR_033) as examples of institutional and voter resilience. You can briefly mention Bolsonaro’s conviction in Brazil (wk35_CR_002) as an international contrast in accountability, and note legislative efforts to protect speech (wk35_IG_012, wk35_IG_022) as a countercurrent.",
+            "one_sentence_thesis": "Republican officials advanced gerrymanders, DC crime overrides, and election-law changes while Trump continued to repeat 2020 election lies, even as some courts and voters pushed back in specific cases.",
+            "supporting_event_ids": [
+              "wk35_CR_016",
+              "wk35_CR_043",
+              "wk35_IG_009",
+              "wk35_IG_012",
+              "wk35_IG_022",
+              "wk35_CR_033",
+              "wk35_CR_002"
+            ],
+            "title": "Elections, voting rules, and symbolic politics are reshaped under partisan pressure",
+            "why_it_matters": "Manipulating district lines, voter data access, and narratives about past elections can entrench minority rule and normalize skepticism about legitimate outcomes, undermining the foundations of electoral democracy."
+          }
+        ],
+        "period_label": "Week 35",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around major structural arcs: militarized domestic governance (D1), immigration as repression and stratified citizenship (D2), weaponization of Kirk’s killing (D3), law and courts as political tools (D4), media/academic/memory control (D5), politicization of science and health (D6), elite-tilted economic and environmental policy (D7), expansion of unchecked executive power (D8), and manipulation of elections and voting structures (D9). Some events could logically sit in more than one cluster (e.g., Kimmel/FCC in both media and law-as-weapon), so I assigned them where they best anchor a coherent narrative and referenced overlapping themes in notes. Many routine regulatory actions are left unassigned to keep the outline focused on democracy-relevant shifts.",
+        "unassigned_events": [
+          {
+            "event_id": "wk35_CR_002",
+            "why_unassigned": "Brazilian coup conviction is important context but sits outside the main US-focused narrative arcs; can be referenced comparatively if needed."
+          },
+          {
+            "event_id": "wk35_CR_010",
+            "why_unassigned": "Zohran Mamdani’s ICC comment is a notable flashpoint but peripheral to the week’s dominant structural developments."
+          },
+          {
+            "event_id": "wk35_CR_012",
+            "why_unassigned": "NATO’s Operation Eastern Sentry is significant geopolitically but not central to the domestic democracy storylines this week."
+          },
+          {
+            "event_id": "wk35_CR_013",
+            "why_unassigned": "Trump’s sanctions ultimatum toward NATO allies is part of foreign policy bargaining but less central than domestic power and rights shifts."
+          },
+          {
+            "event_id": "wk35_IG_001",
+            "why_unassigned": "Bipartisan Russia sanctions effort in a funding bill is a conventional foreign policy move that doesn’t strongly tie into the main authoritarian trends."
+          },
+          {
+            "event_id": "wk35_IM_001",
+            "why_unassigned": "General criticism of immigration policy-economic mismatch is background context rather than a discrete structural shift."
+          },
+          {
+            "event_id": "wk35_IM_003",
+            "why_unassigned": "European defense purchase shifts after Greenland rhetoric are long-term alliance dynamics not tightly linked to this week’s core themes."
+          },
+          {
+            "event_id": "wk35_IG_003",
+            "why_unassigned": "Utah’s campus open-carry law is important but tangential to the main federal power and repression arcs this week."
+          },
+          {
+            "event_id": "wk35_ES_004",
+            "why_unassigned": "FEMA counsel’s resignation over politicization overlaps with civil service themes but is less central than higher-salience politicization events already used."
+          },
+          {
+            "event_id": "wk35_IG_004",
+            "why_unassigned": "Credit-check hiring bill is a positive equity measure but peripheral to the week’s dominant authoritarian developments."
+          },
+          {
+            "event_id": "wk35_IG_008",
+            "why_unassigned": "Ilhan Omar censure attempt is covered conceptually in law-as-weapon themes, but specific event is lower-salience and can be omitted for brevity."
+          },
+          {
+            "event_id": "wk35_PA_008",
+            "why_unassigned": "Trump’s musing about hate speech and the First Amendment is notable rhetoric but less concrete than other legal moves already captured."
+          },
+          {
+            "event_id": "wk35_ES_001",
+            "why_unassigned": "EPA’s Arizona UIC primacy transfer is routine federalism administration and only marginally related to capture themes already covered."
+          },
+          {
+            "event_id": "wk35_ES_009",
+            "why_unassigned": "US-UK nuclear SMR deal is significant industrial policy but not central to democracy-clock shifts this week."
+          },
+          {
+            "event_id": "wk35_ES_011",
+            "why_unassigned": "FCC robocall rules are routine consumer protection and not central to the week’s authoritarian trends."
+          },
+          {
+            "event_id": "wk35_ES_012",
+            "why_unassigned": "FCC information-collection notices are procedural and not key to narrative developments."
+          },
+          {
+            "event_id": "wk35_ES_010",
+            "why_unassigned": "FDA clinical guidances are technical regulatory actions without strong democracy implications."
+          },
+          {
+            "event_id": "wk35_ES_013",
+            "why_unassigned": "FDA technical corrections and debarment orders are routine enforcement actions."
+          },
+          {
+            "event_id": "wk35_ES_014",
+            "why_unassigned": "HBV device reclassification is technical and peripheral to core themes."
+          },
+          {
+            "event_id": "wk35_ES_015",
+            "why_unassigned": "Priority review voucher fee setting is a narrow regulatory/economic detail."
+          },
+          {
+            "event_id": "wk35_ES_016",
+            "why_unassigned": "OSHA derricks paperwork extension is routine and not democracy-relevant at narrative scale."
+          },
+          {
+            "event_id": "wk35_ES_017",
+            "why_unassigned": "DEA ADHD quota adjustment is technical health policy, not central to governance or rights themes."
+          },
+          {
+            "event_id": "wk35_ES_018",
+            "why_unassigned": "EPA EIS and ICR notices are procedural and background to environmental governance."
+          },
+          {
+            "event_id": "wk35_ES_020",
+            "why_unassigned": "Guam air permitting and clean data determination are localized technical actions."
+          },
+          {
+            "event_id": "wk35_ES_021",
+            "why_unassigned": "Hawaii UST program amendment is technical; any capture themes are already covered via higher-level EPA moves."
+          },
+          {
+            "event_id": "wk35_ES_022",
+            "why_unassigned": "Ultra-processed food comment extension is routine rulemaking, not central to democratic backsliding."
+          },
+          {
+            "event_id": "wk35_ES_024",
+            "why_unassigned": "FDA tobacco ICRs are technical and peripheral."
+          },
+          {
+            "event_id": "wk35_ES_025",
+            "why_unassigned": "Drug labeling guidance is technical regulatory work."
+          },
+          {
+            "event_id": "wk35_ES_026",
+            "why_unassigned": "IVD definition rollback is a court-driven technical adjustment; democracy implications are modest."
+          },
+          {
+            "event_id": "wk35_ES_027",
+            "why_unassigned": "DEA scheduling of fentanyl analogues is standard drug control policy."
+          },
+          {
+            "event_id": "wk35_ES_028",
+            "why_unassigned": "Scrutiny of Treasury Secretary’s mortgages is notable but secondary to more direct corruption/capture stories already used."
+          },
+          {
+            "event_id": "wk35_ES_029",
+            "why_unassigned": "Nexstar’s Kimmel cancellation is conceptually covered in the broader Kimmel/FCC/media development; left out to avoid duplication."
+          },
+          {
+            "event_id": "wk35_ES_023",
+            "why_unassigned": "FCC prison calling rate rules are a positive reform but tangential to the week’s main authoritarian trends."
+          },
+          {
+            "event_id": "wk35_PA_011",
+            "why_unassigned": "Re-establishing the FCC Technological Advisory Council is routine governance and not central to the week’s themes."
+          },
+          {
+            "event_id": "wk35_PA_016",
+            "why_unassigned": "White House ballroom project is included conceptually in glorification themes but not needed as a separate anchor."
+          },
+          {
+            "event_id": "wk35_PA_017",
+            "why_unassigned": "Shift from anti-trafficking to deportation work is important but overlaps heavily with broader immigration enforcement development; omitted for focus."
+          },
+          {
+            "event_id": "wk35_IG_010",
+            "why_unassigned": "Senate EPW climate lobbying probe is supportive context for capture themes but not essential as a separate storyline."
+          },
+          {
+            "event_id": "wk35_IG_013",
+            "why_unassigned": "House security funding increase is conceptually covered under Kirk/security monetization but not needed as a separate event."
+          },
+          {
+            "event_id": "wk35_IG_015",
+            "why_unassigned": "House oversight of FCC/ABC is already captured in the media pressure development; left out to reduce redundancy."
+          },
+          {
+            "event_id": "wk35_IG_016",
+            "why_unassigned": "Call for FCC chair’s resignation is part of the same Kimmel/FCC arc and can be folded in if more detail is desired."
+          },
+          {
+            "event_id": "wk35_IG_017",
+            "why_unassigned": "House CR passage is used as context in executive power themes but not central enough to anchor a development."
+          },
+          {
+            "event_id": "wk35_IG_018",
+            "why_unassigned": "Senate blocking the House CR is budget brinkmanship context; democracy implications are indirect."
+          },
+          {
+            "event_id": "wk35_IG_019",
+            "why_unassigned": "House resolution honoring Kirk is folded conceptually into the Kirk martyrdom development; not needed as a separate event."
+          },
+          {
+            "event_id": "wk35_IG_021",
+            "why_unassigned": "PFAS-related NDAA riders are part of environmental capture but secondary to EPA/DOJ climate moves already used."
+          },
+          {
+            "event_id": "wk35_IG_022",
+            "why_unassigned": "Planned anti-censorship legislation is a prospective response and can be mentioned briefly if space allows, but not central."
+          },
+          {
+            "event_id": "wk35_IG_024",
+            "why_unassigned": "FEC meeting cancellations are a modest transparency erosion and less salient than other oversight breakdowns."
+          },
+          {
+            "event_id": "wk35_IG_025",
+            "why_unassigned": "EEOC performance board appointments are routine internal governance."
+          },
+          {
+            "event_id": "wk35_IG_026",
+            "why_unassigned": "NARA SES review board appointments are routine and not central to the week’s themes."
+          },
+          {
+            "event_id": "wk35_IM_002",
+            "why_unassigned": "Mexican TV controversy around Kirk’s murder is a side story to the main domestic narrative."
+          },
+          {
+            "event_id": "wk35_IM_004",
+            "why_unassigned": "Kilmeade’s homelessness comments are folded conceptually into dehumanizing rhetoric but not central to any development."
+          },
+          {
+            "event_id": "wk35_IM_011",
+            "why_unassigned": "Labor gag memo duplicates wk35_CR_022; that event is already used as the main anchor for this behavior."
+          },
+          {
+            "event_id": "wk35_IM_012",
+            "why_unassigned": "Pentagon data cutoff is part of broader data/memory control but can be referenced if needed without being an anchor."
+          },
+          {
+            "event_id": "wk35_IM_016",
+            "why_unassigned": "West Coast vaccine guidelines are supportive resistance context and can be mentioned within the science politicization development if desired."
+          },
+          {
+            "event_id": "wk35_IM_019",
+            "why_unassigned": "Sinclair/Nexstar programming shift is already captured in the Kimmel/media development; omitted to avoid duplication."
+          },
+          {
+            "event_id": "wk35_IM_020",
+            "why_unassigned": "Failed subpoena of FCC chair is part of the same oversight arc and can be folded into that narrative if more detail is needed."
+          },
+          {
+            "event_id": "wk35_IM_021",
+            "why_unassigned": "FCC investigations into NPR/PBS are included conceptually in the media pressure development; not needed as a separate unassigned item."
+          },
+          {
+            "event_id": "wk35_IM_022",
+            "why_unassigned": "Channel 4 fact-checking Trump is an international media counterpoint but peripheral to US institutional shifts."
+          },
+          {
+            "event_id": "wk35_IM_023",
+            "why_unassigned": "Education Department’s patriotism programming is part of civic education hollowing but secondary to more acute repression stories."
+          },
+          {
+            "event_id": "wk35_IM_024",
+            "why_unassigned": "Joint press conference exclusion of some media is another instance of press hostility but overlaps with stronger examples already used."
+          },
+          {
+            "event_id": "wk35_IM_025",
+            "why_unassigned": "FDA flu vaccine advisory meeting is routine transparency and not central to politicization themes."
+          },
+          {
+            "event_id": "wk35_IM_028",
+            "why_unassigned": "Labor/EPA comms constraints are already represented via more specific gag and research-removal events."
+          },
+          {
+            "event_id": "wk35_IM_029",
+            "why_unassigned": "Commentary on Disney/Kimmel is meta-analysis of events already captured in the media development."
+          },
+          {
+            "event_id": "wk35_IM_026",
+            "why_unassigned": "ACIP MMRV vote reversal is used in the science politicization development; listed here only if extra detail is needed."
+          },
+          {
+            "event_id": "wk35_IM_027",
+            "why_unassigned": "ACIP Covid prescription vote is also part of that same development and can be folded in as detail."
+          },
+          {
+            "event_id": "wk35_CR_017",
+            "why_unassigned": "Doug Jones’s commemoration of the 16th Street bombing is important civic memory but not central to this week’s structural shifts."
+          },
+          {
+            "event_id": "wk35_CR_020",
+            "why_unassigned": "Kilmeade’s homelessness execution comments are dehumanizing rhetoric but peripheral to the main institutional developments."
+          },
+          {
+            "event_id": "wk35_CR_021",
+            "why_unassigned": "UC’s lawsuit over research funding freeze is a significant resistance move but secondary to more direct law-weaponization examples already used."
+          },
+          {
+            "event_id": "wk35_CR_033",
+            "why_unassigned": "Giuliani fee ruling is referenced in the elections development and need not anchor a separate storyline."
+          },
+          {
+            "event_id": "wk35_CR_034",
+            "why_unassigned": "TPS and Guatemalan minors rulings are folded into the immigration courts check narrative; not needed separately."
+          },
+          {
+            "event_id": "wk35_CR_035",
+            "why_unassigned": "LA protester acquittal is a localized jury check and can be mentioned in passing if space allows."
+          },
+          {
+            "event_id": "wk35_CR_039",
+            "why_unassigned": "Arrest of NY officials during detention oversight is part of the broader immigration repression arc; omitted to keep anchor list tight."
+          },
+          {
+            "event_id": "wk35_CR_040",
+            "why_unassigned": "Arrests at ICE protest are conceptually covered in the immigration/protest development."
+          },
+          {
+            "event_id": "wk35_CR_041",
+            "why_unassigned": "Use of teargas at Chicago ICE protest is another instance of protest suppression already captured conceptually."
+          },
+          {
+            "event_id": "wk35_CR_042",
+            "why_unassigned": "NC HB 958 is used in the elections development; listed here only if more detail is needed."
+          },
+          {
+            "event_id": "wk35_CR_043",
+            "why_unassigned": "Xp Lee’s election is included as resilience context in the elections development; no separate storyline."
+          },
+          {
+            "event_id": "wk35_CR_044",
+            "why_unassigned": "Durham Rising March planning is a grassroots mobilization detail, not central to national-level structural shifts this week."
+          },
+          {
+            "event_id": "wk35_CR_045",
+            "why_unassigned": "UK activists’ Windsor Castle projection is a symbolic protest abroad, peripheral to domestic institutional changes."
+          },
+          {
+            "event_id": "wk35_CR_046",
+            "why_unassigned": "Break the Bonds petition is a local divestment campaign with limited direct impact on national democratic structures."
+          },
+          {
+            "event_id": "wk35_CR_047",
+            "why_unassigned": "Vaccine policy testimony is used as context in the science politicization development; not needed as a separate storyline."
+          },
+          {
+            "event_id": "wk35_CR_050",
+            "why_unassigned": "Emoji gang memo is folded into the immigration repression development; not needed as a separate anchor."
+          },
+          {
+            "event_id": "wk35_CR_052",
+            "why_unassigned": "Trump’s repeated 2020 lie is central in the elections development; not listed separately."
+          },
+          {
+            "event_id": "wk35_CR_031",
+            "why_unassigned": "Immigration court rulings are used as context in the immigration development; not a standalone storyline."
+          },
+          {
+            "event_id": "wk35_PA_019",
+            "why_unassigned": "Antifa terrorist designation is important but overlaps with broader dissent-as-terror framing already captured; can be mentioned within D1 or D4 if desired."
+          },
+          {
+            "event_id": "wk35_PA_021",
+            "why_unassigned": "Threats to punish TV networks are part of the media intimidation arc and can be folded into that development if more detail is needed."
+          },
+          {
+            "event_id": "wk35_PA_009",
+            "why_unassigned": "Threat to defund NYC over Mamdani is a notable federal-power threat but can be referenced within broader federal weaponization themes if needed."
+          }
+        ],
+        "week_number": 35,
+        "window": {
+          "end": "2025-09-19",
+          "start": "2025-09-13"
+        }
+      }
+    },
+    {
+      "week_number": 36,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 36/development_allocator_week36.json",
+        "filename": "development_allocator_week36.json",
+        "sha256": "db4166d16176c8bafb2a65823bcd01022a166e83ddb2e4f5291fa7bf13457cbb",
+        "mtime_utc": "2025-12-23T20:09:34Z",
+        "size_bytes": 29864
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk36_IG_028",
+            "wk36_IG_043",
+            "wk36_IG_042",
+            "wk36_IG_048",
+            "wk36_IG_038",
+            "wk36_IG_050",
+            "wk36_IG_039",
+            "wk36_IG_047",
+            "wk36_IG_006",
+            "wk36_IG_032",
+            "wk36_IG_033",
+            "wk36_IG_037",
+            "wk36_IG_044",
+            "wk36_IG_011",
+            "wk36_IG_030",
+            "wk36_IG_012",
+            "wk36_IG_013",
+            "wk36_IG_029",
+            "wk36_IG_020",
+            "wk36_IG_034",
+            "wk36_IG_004",
+            "wk36_IG_003",
+            "wk36_PA_004",
+            "wk36_PA_005",
+            "wk36_IG_021",
+            "wk36_ES_012",
+            "wk36_CR_005",
+            "wk36_CR_004",
+            "wk36_CR_007",
+            "wk36_CR_014",
+            "wk36_CR_022",
+            "wk36_CR_003",
+            "wk36_CR_006",
+            "wk36_CR_019",
+            "wk36_CR_021",
+            "wk36_CR_020",
+            "wk36_IG_018",
+            "wk36_IG_031",
+            "wk36_IG_010",
+            "wk36_CR_011",
+            "wk36_CR_024",
+            "wk36_CR_008",
+            "wk36_ES_002",
+            "wk36_PA_029",
+            "wk36_ES_009",
+            "wk36_IG_041",
+            "wk36_IG_045",
+            "wk36_IG_049",
+            "wk36_PA_035",
+            "wk36_PA_042",
+            "wk36_ES_001",
+            "wk36_ES_013",
+            "wk36_IM_011",
+            "wk36_IM_015",
+            "wk36_IM_016",
+            "wk36_PA_030",
+            "wk36_PA_031",
+            "wk36_PA_022",
+            "wk36_PA_041",
+            "wk36_IM_017",
+            "wk36_IG_016",
+            "wk36_PA_006",
+            "wk36_PA_011",
+            "wk36_IG_008",
+            "wk36_IG_007",
+            "wk36_IG_024",
+            "wk36_IG_022",
+            "wk36_IG_023",
+            "wk36_IM_001",
+            "wk36_IM_002",
+            "wk36_IM_003",
+            "wk36_IM_019",
+            "wk36_IM_004",
+            "wk36_IM_007",
+            "wk36_PA_009",
+            "wk36_PA_034",
+            "wk36_PA_019",
+            "wk36_IM_008",
+            "wk36_IM_018",
+            "wk36_IM_012",
+            "wk36_PA_040",
+            "wk36_CR_001",
+            "wk36_CR_010",
+            "wk36_IM_006",
+            "wk36_PA_018",
+            "wk36_IM_005",
+            "wk36_PA_020",
+            "wk36_IM_010",
+            "wk36_PA_033",
+            "wk36_PA_007",
+            "wk36_PA_003",
+            "wk36_PA_016",
+            "wk36_PA_043",
+            "wk36_PA_014",
+            "wk36_PA_015",
+            "wk36_PA_038",
+            "wk36_PA_044",
+            "wk36_PA_026",
+            "wk36_PA_025",
+            "wk36_ES_011",
+            "wk36_ES_010",
+            "wk36_IG_035",
+            "wk36_PA_023",
+            "wk36_ES_005",
+            "wk36_IG_036",
+            "wk36_PA_024",
+            "wk36_PA_021",
+            "wk36_IG_002",
+            "wk36_IG_019",
+            "wk36_PA_013",
+            "wk36_PA_032",
+            "wk36_PA_036",
+            "wk36_ES_007",
+            "wk36_PA_012",
+            "wk36_PA_027",
+            "wk36_PA_028",
+            "wk36_PA_001",
+            "wk36_IG_027",
+            "wk36_IG_026",
+            "wk36_ES_003",
+            "wk36_IG_025",
+            "wk36_ES_004",
+            "wk36_PA_037",
+            "wk36_IG_017",
+            "wk36_IG_005",
+            "wk36_PA_017",
+            "wk36_PA_008",
+            "wk36_ES_008",
+            "wk36_IG_001",
+            "wk36_ES_006",
+            "wk36_ES_014",
+            "wk36_IM_014",
+            "wk36_CR_009",
+            "wk36_IM_013",
+            "wk36_PA_002",
+            "wk36_IG_040",
+            "wk36_IG_046",
+            "wk36_PA_039",
+            "wk36_CR_016",
+            "wk36_CR_002"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 152,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk36_IG_028",
+              "wk36_IG_043",
+              "wk36_IG_042",
+              "wk36_IG_048",
+              "wk36_IG_038",
+              "wk36_IG_050",
+              "wk36_IG_039",
+              "wk36_IG_047"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Structure this as a throughline: (1) hollowing out DOJ’s Public Integrity Section (wk36_IG_028, wk36_IG_043); (2) the Tom Homan bribery case being closed and then challenged via FOIA and Hill oversight (wk36_IG_042, wk36_IG_048, wk36_IG_006, wk36_IG_032); (3) politicized prosecutions of Comey and Brennan (wk36_IG_038, wk36_IG_050, wk36_IG_039, wk36_IG_047, with wk36_IG_037, wk36_IG_044 as context on venue-shopping); and (4) parallel efforts to blunt Epstein-related scrutiny (wk36_IG_011, wk36_IG_030, wk36_IG_012, wk36_IG_013, wk36_IG_029, wk36_IG_020, wk36_IG_034). Use wk36_IG_004 and wk36_IG_003 briefly to show that some courts still resist, but the overall arc is weaponization and shielding.",
+            "one_sentence_thesis": "Across multiple cases, DOJ and courts were steered to protect politically connected allies while aggressively pursuing Trump critics, turning law enforcement into a tool of presidential retribution.",
+            "supporting_event_ids": [
+              "wk36_IG_006",
+              "wk36_IG_032",
+              "wk36_IG_033",
+              "wk36_IG_037",
+              "wk36_IG_044",
+              "wk36_IG_011",
+              "wk36_IG_030",
+              "wk36_IG_012",
+              "wk36_IG_013",
+              "wk36_IG_029",
+              "wk36_IG_020",
+              "wk36_IG_034",
+              "wk36_IG_004",
+              "wk36_IG_003"
+            ],
+            "title": "Justice Department repurposed to shield allies and punish Trump critics",
+            "why_it_matters": "When corruption probes are buried and prosecutions are driven by loyalty rather than evidence, the justice system ceases to be a neutral constraint on power and instead becomes an instrument of regime preservation. This chills oversight, deters whistleblowers, and signals that accountability depends on political alignment, not the rule of law."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_PA_004",
+              "wk36_PA_005",
+              "wk36_IG_021",
+              "wk36_ES_012",
+              "wk36_CR_005",
+              "wk36_CR_004",
+              "wk36_CR_007"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Open with the Antifa domestic terrorism designation and domestic terror memo (wk36_PA_004, wk36_PA_005) as the legal/narrative pivot. Then move to the structural build-out: Congress’s $170B ICE funding (wk36_IG_021, wk36_ES_012) and how that interacts with ICE practices—detaining non-criminals and a school superintendent (wk36_CR_005, wk36_CR_004), Angola hunger strikes and harsh conditions (wk36_CR_014, wk36_CR_022, wk36_CR_007), force at court (wk36_CR_006), and litigation/oversight responses (wk36_CR_021, wk36_CR_020, wk36_IG_031, wk36_IG_018). Close with protest policing around Netanyahu and teargas health impacts (wk36_CR_011, wk36_CR_024, wk36_CR_008) to show how the security frame constrains dissent in the streets as well.",
+            "one_sentence_thesis": "The administration expanded domestic terrorism designations and immigration enforcement in ways that recast left-leaning activism and immigrant communities as security threats, while Congress massively funded ICE’s deportation machinery.",
+            "supporting_event_ids": [
+              "wk36_CR_014",
+              "wk36_CR_022",
+              "wk36_CR_003",
+              "wk36_CR_006",
+              "wk36_CR_019",
+              "wk36_CR_021",
+              "wk36_CR_020",
+              "wk36_IG_018",
+              "wk36_IG_031",
+              "wk36_ES_012",
+              "wk36_IG_010",
+              "wk36_IG_018",
+              "wk36_CR_011",
+              "wk36_CR_024",
+              "wk36_CR_008"
+            ],
+            "title": "Domestic terrorism framing and security apparatus turned against dissent and immigrants",
+            "why_it_matters": "Labeling broad categories of activists as terrorists and pouring resources into punitive immigration systems shifts security forces away from public safety toward regime protection, normalizing extraordinary powers against political opponents and vulnerable groups. This entrenches a tiered system of rights and makes protest and even lawful presence feel perilous."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_ES_002",
+              "wk36_PA_029",
+              "wk36_ES_009",
+              "wk36_IG_041",
+              "wk36_IG_045",
+              "wk36_IG_049",
+              "wk36_PA_035",
+              "wk36_PA_042",
+              "wk36_ES_001",
+              "wk36_ES_013",
+              "wk36_IM_011",
+              "wk36_IM_015",
+              "wk36_IM_016",
+              "wk36_PA_030",
+              "wk36_PA_031"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Treat this as two intertwined strands: (1) coercive use of federal power and data—Kansas food aid freeze (wk36_ES_002, wk36_PA_029), magnet school grants over trans protections (wk36_ES_009), DOJ voter-roll suits ordered by Trump (wk36_IG_041, wk36_IG_045, wk36_IG_049, wk36_PA_035, wk36_PA_042), and related shutdown brinkmanship and RIF threats (wk36_IG_016, wk36_PA_006, wk36_PA_011), with courts occasionally pushing back on grant conditions (wk36_IG_010, wk36_IG_008). (2) Information control via data suppression—USDA food insecurity survey cancellation and BLS report delays (wk36_ES_001, wk36_ES_013, wk36_IM_011, wk36_IM_015, wk36_IM_016, wk36_PA_022, wk36_PA_030, wk36_PA_031, wk36_PA_041, wk36_IM_017). Use NARA’s dual role (public records process vs. partisan leak of Sherrill’s file, wk36_IG_022, wk36_IG_023) and State’s loyalty metrics (wk36_IG_024) as connective tissue about data and records being politicized.",
+            "one_sentence_thesis": "The White House and DOJ used funding levers and data demands to coerce states and localities, while simultaneously dismantling key economic and social data series that could expose policy harms.",
+            "supporting_event_ids": [
+              "wk36_PA_022",
+              "wk36_PA_041",
+              "wk36_IM_017",
+              "wk36_IG_010",
+              "wk36_IG_018",
+              "wk36_IG_016",
+              "wk36_PA_006",
+              "wk36_PA_011",
+              "wk36_IG_008",
+              "wk36_IG_007",
+              "wk36_IG_024",
+              "wk36_IG_022",
+              "wk36_IG_023"
+            ],
+            "title": "Federal power and data weaponized against disfavored states, voters, and communities",
+            "why_it_matters": "When federal resources and information flows are conditioned on political compliance, both state autonomy and public oversight erode; targeted communities lose essential support, and voters face new risks of surveillance and intimidation under the guise of integrity."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_IM_001",
+              "wk36_IM_002",
+              "wk36_IM_003",
+              "wk36_IM_019",
+              "wk36_IM_004",
+              "wk36_IM_007",
+              "wk36_PA_009",
+              "wk36_PA_034",
+              "wk36_PA_019",
+              "wk36_IM_008",
+              "wk36_IM_018",
+              "wk36_IG_023",
+              "wk36_IM_012",
+              "wk36_PA_040"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Center the Kimmel saga as a narrative spine: FCC license threats (wk36_IM_002), ABC/Disney suspension and reinstatement (wk36_IM_003), Sinclair/Nexstar refusals (wk36_IM_004), and Trump’s own attacks on ABC and claims that negative coverage is \"really illegal\" (wk36_IM_007, wk36_PA_009, wk36_PA_034, wk36_PA_019). Pair this with Pentagon press restrictions (wk36_IM_001) and broader disinformation from the UN stage (wk36_IM_010, wk36_PA_033). Then pivot to archives and memory: NARA’s improper release of Mikie Sherrill’s records (wk36_IM_008, wk36_IM_018, wk36_IG_023) contrasted with its formal records process (wk36_IG_022), and the \"Presidential Walk of Fame\" excluding Biden (wk36_IM_012, wk36_PA_040). Use wk36_IM_006/wk36_PA_018 and wk36_IM_005/wk36_PA_020 as examples of how official communications spread misinformation and personalize institutional grievances.",
+            "one_sentence_thesis": "From Pentagon press pledges and FCC license threats to the mishandling of archival records and curated presidential displays, the administration escalated efforts to intimidate critical media and rewrite official memory.",
+            "supporting_event_ids": [
+              "wk36_CR_001",
+              "wk36_CR_010",
+              "wk36_IM_006",
+              "wk36_PA_018",
+              "wk36_IM_005",
+              "wk36_PA_020",
+              "wk36_IM_010",
+              "wk36_PA_033",
+              "wk36_PA_007"
+            ],
+            "title": "Media, archives, and satire targeted as the administration tightens narrative control",
+            "why_it_matters": "A democracy depends on independent information channels and trustworthy records; when the state can punish broadcasters, smear journalism as illegal, and selectively expose or erase records for political gain, public debate and electoral accountability are fundamentally compromised."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_PA_003",
+              "wk36_PA_016",
+              "wk36_PA_043",
+              "wk36_PA_014",
+              "wk36_PA_015",
+              "wk36_PA_038",
+              "wk36_PA_044",
+              "wk36_PA_026",
+              "wk36_PA_025",
+              "wk36_ES_011",
+              "wk36_ES_010",
+              "wk36_IG_035",
+              "wk36_PA_023",
+              "wk36_ES_005",
+              "wk36_IG_036",
+              "wk36_PA_024",
+              "wk36_PA_021"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Organize by tool: (1) Use of force—Venezuelan vessel strikes (wk36_PA_003, wk36_PA_016, wk36_PA_043) and threats toward Afghanistan over Bagram (wk36_PA_014, wk36_PA_015), with NATO assistance cuts and ambiguous defense commitments (wk36_PA_038, wk36_PA_044) as the alliance backdrop. (2) Sanctions and tariffs as retaliation—sanctions on a Brazilian justice’s wife and 50% tariffs tied to Bolsonaro’s prosecution (wk36_PA_026, wk36_PA_025, wk36_ES_011), plus sweeping consumer and pharma tariffs (wk36_ES_007, wk36_PA_012, wk36_PA_027, wk36_PA_028, wk36_PA_036). (3) Aid and diplomacy—redirecting $1.8B in foreign aid to \"America First\" projects (wk36_ES_010, wk36_IG_035, wk36_PA_023), the $20B Argentina package (wk36_ES_005, wk36_IG_036, wk36_PA_024), and Supreme Court deference on aid impoundment (wk36_IG_008). Weave in Trump’s UN speeches (wk36_PA_013, wk36_PA_032, wk36_PA_033) and State Department loyalty metrics/vacancies (wk36_IG_024) to show the broader erosion of professional foreign policy, with Congress’s Baltic funding (wk36_IG_002) and Khanna’s Palestinian statehood letter (wk36_IG_019) as counterpoints.",
+            "one_sentence_thesis": "Trump used unilateral military strikes, sanctions, tariffs, and foreign-aid reprogramming to pursue personalized grievances and ideological goals, often sidestepping Congress and multilateral norms.",
+            "supporting_event_ids": [
+              "wk36_IG_002",
+              "wk36_IG_008",
+              "wk36_IG_019",
+              "wk36_IG_024",
+              "wk36_PA_013",
+              "wk36_PA_032",
+              "wk36_PA_033",
+              "wk36_PA_036",
+              "wk36_ES_007",
+              "wk36_PA_012",
+              "wk36_PA_027",
+              "wk36_PA_028"
+            ],
+            "title": "Executive power expands abroad through unilateral strikes, tariffs, and aid reprogramming",
+            "why_it_matters": "When foreign policy tools—force, trade, and aid—are wielded as personal or ideological weapons without robust oversight, they not only destabilize international relationships but also normalize a presidency that treats legal and diplomatic constraints as optional."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_PA_006",
+              "wk36_PA_011",
+              "wk36_IG_016",
+              "wk36_PA_001",
+              "wk36_IG_027",
+              "wk36_IG_026",
+              "wk36_ES_003",
+              "wk36_IG_025",
+              "wk36_ES_004",
+              "wk36_PA_037"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Start with the shutdown-as-purge strategy: Trump’s threats to fire civil servants and OMB’s RIF planning (wk36_PA_006, wk36_PA_011, wk36_IG_016). Then move to direct politicization of security institutions—DNI Gabbard’s mass clearance revocations (wk36_PA_001), Hegseth’s mass generals’ meeting and dissolution of the women’s advisory committee (wk36_IG_027, wk36_IG_026), and State’s loyalty metrics and vacancies (wk36_IG_024). Layer in agency capture and rights rollback: HUD’s Fair Housing enforcement retreat and gag orders (wk36_ES_003, wk36_IG_025), DOE’s return of green funds (wk36_ES_004, wk36_PA_037), and massive ICE funding (wk36_ES_012, wk36_IG_021). Briefly note labor and immigration policy moves (Ryder Cup strike EO wk36_PA_017, H-1B fee hike and lottery tilt wk36_PA_008, wk36_ES_008) and California’s police transparency law (wk36_IG_005) as a state-level countercurrent.",
+            "one_sentence_thesis": "The administration moved to purge or intimidate neutral civil servants, reshape military culture, and roll back civil-rights enforcement in housing and climate policy, deepening partisan control over the state’s machinery.",
+            "supporting_event_ids": [
+              "wk36_IG_024",
+              "wk36_IG_017",
+              "wk36_IG_005",
+              "wk36_ES_012",
+              "wk36_IG_021",
+              "wk36_PA_017",
+              "wk36_PA_008",
+              "wk36_ES_008",
+              "wk36_IG_001"
+            ],
+            "title": "Civil service, military, and agencies reshaped through politicization and rollback of rights enforcement",
+            "why_it_matters": "A politicized bureaucracy and military, combined with agencies captured by ideological or industry interests, erode the state’s capacity to serve the public impartially and to enforce basic rights, making future abuses harder to resist from within."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_ES_006",
+              "wk36_ES_014",
+              "wk36_ES_005",
+              "wk36_IG_036",
+              "wk36_PA_024",
+              "wk36_ES_010",
+              "wk36_IG_035",
+              "wk36_PA_023",
+              "wk36_PA_036"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "You can either integrate this with D5 or keep it as a domestic-economic lens. Emphasize donor-driven and ideologically branded spending: expedited FEMA/Homeland Security aid for a donor-linked pier (wk36_ES_006, wk36_ES_014), the Argentina package (wk36_ES_005, wk36_IG_036, wk36_PA_024), and the \"America First\" foreign-aid reprogramming (wk36_ES_010, wk36_IG_035, wk36_PA_023). Then show how tariffs and green-fund clawbacks (wk36_ES_004, wk36_PA_037, wk36_ES_007, wk36_PA_012, wk36_PA_027, wk36_PA_028, wk36_ES_011, wk36_PA_025) feed into a system where economic pain and relief are centrally managed for political ends, including Trump’s plan to use tariff revenue to bail out farmers (wk36_PA_036).",
+            "one_sentence_thesis": "Key economic and disaster decisions—from redirected foreign aid to expedited FEMA projects and tariff-driven bailouts—were shaped by donor ties and ideological favoritism rather than neutral criteria.",
+            "supporting_event_ids": [
+              "wk36_ES_004",
+              "wk36_PA_037",
+              "wk36_ES_007",
+              "wk36_PA_012",
+              "wk36_PA_027",
+              "wk36_PA_028",
+              "wk36_ES_011",
+              "wk36_PA_025"
+            ],
+            "title": "Crony capitalism and disaster politics blur the line between governance and patronage",
+            "why_it_matters": "When public money and emergency tools are allocated based on political loyalty or campaign contributions, citizens lose faith that government serves the common good, and entrenched networks of insiders gain structural advantages that are hard to dislodge."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_PA_004",
+              "wk36_PA_005",
+              "wk36_IM_014",
+              "wk36_IM_007",
+              "wk36_PA_009",
+              "wk36_PA_034",
+              "wk36_CR_009",
+              "wk36_IM_013"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Tie the formal moves (Antifa domestic terrorism EO and domestic terror memo, wk36_PA_004, wk36_PA_005, wk36_IM_014) to Trump’s language that negative coverage is \"really illegal\" and should be prosecuted (wk36_IM_007, wk36_PA_009, wk36_PA_034) and his public pressure on DOJ to target enemies (wk36_PA_002, wk36_IG_040, wk36_IG_046, wk36_PA_039). Then juxtapose Arizona Rep. Gillette’s call to hang Rep. Jayapal (wk36_CR_009, wk36_IM_013) as an example of how this framing trickles down into explicit eliminationist rhetoric. You can briefly reference the charged atmosphere around political violence cases (wk36_CR_016) and protest arrests (wk36_CR_011, wk36_CR_024) to show the broader climate.",
+            "one_sentence_thesis": "Trump and allied officials escalated rhetoric that cast critics and left-wing activists as criminals or terrorists, while individual politicians openly called for violence against opponents.",
+            "supporting_event_ids": [
+              "wk36_PA_002",
+              "wk36_IG_040",
+              "wk36_IG_046",
+              "wk36_PA_039",
+              "wk36_CR_016",
+              "wk36_CR_011",
+              "wk36_CR_024"
+            ],
+            "title": "Escalating eliminationist rhetoric and criminalization of opposition",
+            "why_it_matters": "When leaders describe dissent as illegal or treasonous and tolerate calls for execution of opponents, they normalize the idea that political disagreement is a security threat to be punished, not a legitimate part of democratic life, increasing risks of both state and vigilante violence."
+          },
+          {
+            "anchor_event_ids": [
+              "wk36_ES_003",
+              "wk36_IG_025",
+              "wk36_ES_009",
+              "wk36_ES_008",
+              "wk36_PA_008",
+              "wk36_CR_002",
+              "wk36_CR_003",
+              "wk36_CR_004",
+              "wk36_CR_005",
+              "wk36_CR_007"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "This can be framed as the lived experience of stratification. Start with HUD’s Fair Housing rollback and gag orders (wk36_ES_003, wk36_IG_025) and DHS’s punishment of trans-inclusive schools (wk36_ES_009) to show domestic civil-rights erosion. Then move to immigration: H-1B fee hikes and lottery changes (wk36_PA_008, wk36_ES_008), ICE’s detention patterns and high-profile arrests (wk36_CR_003, wk36_CR_004, wk36_CR_005, wk36_CR_007, wk36_CR_019, wk36_CR_021, wk36_CR_020, wk36_IG_018, wk36_IG_031), and the massive ICE funding increase (wk36_ES_012, wk36_IG_021). Use the Renton hate-crime prosecution (wk36_CR_002) as a contrasting example of rights being defended at the local level. You can briefly nod to Trump’s exclusionary migration rhetoric at the UN (wk36_PA_013, wk36_PA_032) and his later Ukraine statement (wk36_PA_021) to show how foreign and domestic narratives about who belongs are linked.",
+            "one_sentence_thesis": "Through targeted enforcement, funding choices, and civil-rights rollbacks, the administration and Congress reinforced a hierarchy of belonging that disadvantages immigrants, LGBTQ people, and marginalized communities.",
+            "supporting_event_ids": [
+              "wk36_CR_019",
+              "wk36_CR_021",
+              "wk36_CR_020",
+              "wk36_IG_018",
+              "wk36_IG_031",
+              "wk36_ES_012",
+              "wk36_IG_021",
+              "wk36_PA_013",
+              "wk36_PA_032",
+              "wk36_PA_021",
+              "wk36_CR_014",
+              "wk36_CR_022"
+            ],
+            "title": "Immigration and housing policy deepen stratified citizenship along status and identity lines",
+            "why_it_matters": "Policies that systematically expose certain groups to harsher enforcement, worse living conditions, or loss of protections create a de facto caste system, undermining equal citizenship and making those communities easier to intimidate and exclude from civic life."
+          }
+        ],
+        "period_label": "Week 36",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around structural storylines rather than categories: (D1) justice system weaponization and shielding of allies; (D2) domestic terror framing and immigration enforcement as tools against dissent; (D3) coercive use of federal power and data plus suppression of economic statistics; (D4) media intimidation and archival/memory manipulation; (D5) executive aggrandizement in foreign policy, tariffs, and aid; (D6) politicization of civil service, military, and agencies; (D7) crony capitalism and donor-driven disaster/aid decisions; (D8) eliminationist rhetoric and criminalization of opposition; (D9) stratified citizenship via immigration and housing policy. Some events appear in supporting lists across related developments conceptually, but each event_id is anchored in at most one development. Unassigned items are mostly routine criminal cases, smaller positive countercurrents, or contextual details already woven into the main arcs without needing separate anchoring.",
+        "unassigned_events": [
+          {
+            "event_id": "wk36_CR_010",
+            "why_unassigned": "Secondary ripple from Kimmel saga; core narrative already captured in media-control development."
+          },
+          {
+            "event_id": "wk36_CR_013",
+            "why_unassigned": "Norm-affirming speech about unity and authoritarianism; supportive context but not central to any main structural development."
+          },
+          {
+            "event_id": "wk36_CR_015",
+            "why_unassigned": "Climate activists’ human-rights petition is important but peripheral to the week’s dominant institutional shifts."
+          },
+          {
+            "event_id": "wk36_CR_016",
+            "why_unassigned": "Individual criminal case in a polarized context; referenced in notes but not needed as an anchor for any development."
+          },
+          {
+            "event_id": "wk36_CR_017",
+            "why_unassigned": "Routine criminal accountability with limited direct democracy-structure implications."
+          },
+          {
+            "event_id": "wk36_CR_018",
+            "why_unassigned": "Isolated public safety incident without broader institutional or rights implications this week."
+          },
+          {
+            "event_id": "wk36_CR_023",
+            "why_unassigned": "Accountability for abuse within the church; relevant to justice but not central to the week’s main authoritarian trends."
+          },
+          {
+            "event_id": "wk36_ES_004",
+            "why_unassigned": "Used as supporting context in other developments; not needed as a standalone anchor."
+          },
+          {
+            "event_id": "wk36_ES_007",
+            "why_unassigned": "Folded conceptually into broader tariff and trade discussions; not singled out as an anchor."
+          },
+          {
+            "event_id": "wk36_ES_010",
+            "why_unassigned": "Substantively used in D5/D7; listed there so no separate development is required."
+          },
+          {
+            "event_id": "wk36_IG_001",
+            "why_unassigned": "Reform proposal on Citizens United is a positive countercurrent but small relative to larger structural shifts."
+          },
+          {
+            "event_id": "wk36_IG_002",
+            "why_unassigned": "Congressional support for Baltic security is important but mainly contextual in foreign-policy development."
+          },
+          {
+            "event_id": "wk36_IG_005",
+            "why_unassigned": "California policing transparency law is a positive state-level move; included as context but not central to a main development."
+          },
+          {
+            "event_id": "wk36_IG_009",
+            "why_unassigned": "Single court decision restoring UCLA grants; supportive example of judicial checks but not a core storyline."
+          },
+          {
+            "event_id": "wk36_IG_014",
+            "why_unassigned": "House CR passage is part of shutdown backdrop but not central enough to anchor a separate development."
+          },
+          {
+            "event_id": "wk36_IG_015",
+            "why_unassigned": "Senate failure on CR contributes to shutdown risk but is covered contextually under civil-service politicization."
+          },
+          {
+            "event_id": "wk36_IG_019",
+            "why_unassigned": "Palestinian statehood letter is a notable foreign-policy stance but peripheral to the week’s main institutional themes."
+          },
+          {
+            "event_id": "wk36_IG_022",
+            "why_unassigned": "NARA’s public comment process is routine transparency; used as contrast but not a development driver."
+          },
+          {
+            "event_id": "wk36_IG_024",
+            "why_unassigned": "State Department loyalty metrics are referenced as context in D5/D6; not elevated as a separate anchor."
+          },
+          {
+            "event_id": "wk36_IG_027",
+            "why_unassigned": "Used as an anchor in D6; not left unassigned but mentioned here only for clarity."
+          },
+          {
+            "event_id": "wk36_IM_002",
+            "why_unassigned": "Already central in D4; not unassigned substantively."
+          },
+          {
+            "event_id": "wk36_IM_009",
+            "why_unassigned": "Epstein-file transparency fight is folded into D1’s corruption/records storyline."
+          },
+          {
+            "event_id": "wk36_IM_010",
+            "why_unassigned": "UN disinformation speech is used as support in D4/D5; not a standalone development."
+          },
+          {
+            "event_id": "wk36_IM_019",
+            "why_unassigned": "Part of the Kimmel/media-pressure arc in D4; not separate."
+          },
+          {
+            "event_id": "wk36_PA_007",
+            "why_unassigned": "TikTok orders are mentioned in D4 as context but not core enough to anchor a separate development this week."
+          },
+          {
+            "event_id": "wk36_PA_010",
+            "why_unassigned": "Cancellation of funding talks is part of shutdown brinkmanship context already covered under civil-service politicization."
+          },
+          {
+            "event_id": "wk36_PA_013",
+            "why_unassigned": "UN nationalist speech is supporting material in D5 and D9; not a separate development."
+          },
+          {
+            "event_id": "wk36_PA_017",
+            "why_unassigned": "Ryder Cup strike EO is a notable labor intervention but secondary to larger structural moves."
+          },
+          {
+            "event_id": "wk36_PA_020",
+            "why_unassigned": "UN sabotage claims are used as color in D4/D5 but not central to a main storyline."
+          },
+          {
+            "event_id": "wk36_PA_021",
+            "why_unassigned": "Ukraine support statement is a messaging shift but peripheral to the week’s core authoritarian dynamics."
+          },
+          {
+            "event_id": "wk36_PA_036",
+            "why_unassigned": "Farm bailout via tariffs is integrated into D5/D7; not a separate development."
+          },
+          {
+            "event_id": "wk36_PA_038",
+            "why_unassigned": "NATO assistance cutoff is part of D5’s foreign-policy arc; not unassigned substantively."
+          },
+          {
+            "event_id": "wk36_PA_044",
+            "why_unassigned": "NATO commitment questioning is folded into D5; not a standalone development."
+          }
+        ],
+        "week_number": 36,
+        "window": {
+          "end": "2025-09-26",
+          "start": "2025-09-20"
+        }
+      }
+    },
+    {
+      "week_number": 37,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 37/development_allocator_week37.json",
+        "filename": "development_allocator_week37.json",
+        "sha256": "32caab99ee5046e38d6b63d7820b720430bf3e8749aee9c7bfffb217fb4769f9",
+        "mtime_utc": "2025-12-23T20:10:22Z",
+        "size_bytes": 23964
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk37_CR_018",
+            "wk37_PA_008",
+            "wk37_PA_007",
+            "wk37_ES_003",
+            "wk37_ES_004",
+            "wk37_ES_009",
+            "wk37_ES_013",
+            "wk37_ES_010",
+            "wk37_ES_011",
+            "wk37_PA_011",
+            "wk37_CR_017",
+            "wk37_ES_006",
+            "wk37_ES_015",
+            "wk37_ES_014",
+            "wk37_IG_025",
+            "wk37_IG_026",
+            "wk37_IM_004",
+            "wk37_IM_005",
+            "wk37_IM_011",
+            "wk37_IM_016",
+            "wk37_IG_010",
+            "wk37_IG_011",
+            "wk37_CR_004",
+            "wk37_CR_006",
+            "wk37_CR_022",
+            "wk37_CR_019",
+            "wk37_CR_020",
+            "wk37_CR_023",
+            "wk37_CR_013",
+            "wk37_IG_014",
+            "wk37_IG_024",
+            "wk37_CR_005",
+            "wk37_CR_007",
+            "wk37_CR_010",
+            "wk37_IG_020",
+            "wk37_IG_016",
+            "wk37_IG_023",
+            "wk37_CR_014",
+            "wk37_PA_006",
+            "wk37_PA_009",
+            "wk37_PA_010",
+            "wk37_PA_012",
+            "wk37_PA_005",
+            "wk37_PA_004",
+            "wk37_CR_002",
+            "wk37_CR_008",
+            "wk37_CR_021",
+            "wk37_CR_009",
+            "wk37_CR_016",
+            "wk37_IG_005",
+            "wk37_IG_012",
+            "wk37_CR_012",
+            "wk37_IG_017",
+            "wk37_IG_015",
+            "wk37_IG_018",
+            "wk37_IG_001",
+            "wk37_IG_006",
+            "wk37_IG_021",
+            "wk37_IG_027",
+            "wk37_IG_028",
+            "wk37_IG_022",
+            "wk37_CR_011",
+            "wk37_IG_003",
+            "wk37_IG_013",
+            "wk37_IM_007",
+            "wk37_IM_017",
+            "wk37_IM_001",
+            "wk37_IM_002",
+            "wk37_IM_003",
+            "wk37_IM_008",
+            "wk37_IM_006",
+            "wk37_IM_010",
+            "wk37_IM_009",
+            "wk37_PA_003",
+            "wk37_IM_013",
+            "wk37_IM_015",
+            "wk37_ES_016",
+            "wk37_IM_012",
+            "wk37_IG_009",
+            "wk37_ES_001",
+            "wk37_ES_002",
+            "wk37_ES_007",
+            "wk37_ES_008",
+            "wk37_ES_012",
+            "wk37_ES_005",
+            "wk37_IG_002",
+            "wk37_PA_001",
+            "wk37_IM_014",
+            "wk37_CR_003",
+            "wk37_CR_015",
+            "wk37_IG_004"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 96,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk37_CR_018",
+              "wk37_PA_008",
+              "wk37_PA_007",
+              "wk37_ES_003",
+              "wk37_ES_004",
+              "wk37_ES_009",
+              "wk37_ES_013",
+              "wk37_ES_010",
+              "wk37_ES_011",
+              "wk37_PA_011"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Open with the Deferred Resignation Program and 100k+ resignations (wk37_CR_018, wk37_PA_008) and the directive to plan mass firings (wk37_PA_007) to frame the civil service purge; then pivot to targeted funding freezes and cancellations in climate and infrastructure (wk37_ES_003, wk37_ES_004, wk37_ES_009, wk37_ES_013) and the explicit admission of using the shutdown to make irreversible cuts (wk37_PA_011). Weave in macroeconomic harms and data suppression (wk37_ES_010, wk37_ES_011, wk37_ES_015), plus selective continuation of foreign bailouts (wk37_ES_014), to show priorities. Use FEC cancellations (wk37_IG_025), BLS nomination withdrawal (wk37_IG_026), and partisan agency messaging/VOA shutdown (wk37_IM_004, wk37_IM_005, wk37_IM_011, wk37_IM_016) as connective tissue illustrating how the shutdown also reshaped oversight and information flows.",
+            "one_sentence_thesis": "The administration leveraged the shutdown and funding tools to force mass resignations, threaten layoffs, and selectively freeze or cancel projects in Democratic-leaning areas, turning fiscal governance into a weapon against opponents and the bureaucracy itself.",
+            "supporting_event_ids": [
+              "wk37_CR_017",
+              "wk37_ES_006",
+              "wk37_ES_015",
+              "wk37_ES_014",
+              "wk37_IG_025",
+              "wk37_IG_026",
+              "wk37_IM_004",
+              "wk37_IM_005",
+              "wk37_IM_011",
+              "wk37_IM_016"
+            ],
+            "title": "Shutdown and Budget Crisis Used to Purge Civil Service and Punish Blue Jurisdictions",
+            "why_it_matters": "This week’s moves hollowed out neutral administrative capacity while signaling that access to federal resources depends on political alignment, undermining equal treatment of states and the independence of the civil service. It sets a precedent for using budget brinkmanship to restructure government and social programs without normal legislative debate."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_IG_010",
+              "wk37_IG_011",
+              "wk37_CR_004",
+              "wk37_CR_006",
+              "wk37_CR_022",
+              "wk37_CR_019",
+              "wk37_CR_020",
+              "wk37_CR_023",
+              "wk37_CR_013",
+              "wk37_IG_014",
+              "wk37_IG_024"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Center the firing of 100+ immigration judges and replacement with 600 military lawyers (wk37_IG_010) plus the shift of DOJ priorities from drugs to immigration (wk37_IG_011) as a structural pivot. Then layer in deportations of long-settled Southeast Asian refugees (wk37_CR_004), Iranians under a bilateral deal (wk37_CR_006, wk37_CR_022), and TPS terminations (wk37_CR_014, wk37_IG_023) to show stratified protection. Use Dilley detention abuses and citizen sweeps (wk37_CR_019, wk37_CR_020) and the victim-aid immigration check rule (wk37_CR_023, wk37_IG_019) to illustrate how enforcement logic bleeds into social services. Close with DOJ’s suits against Minnesota sanctuary policies (wk37_CR_013, wk37_IG_014), permissive racial profiling ruling (wk37_IG_024), and the Kilmar Ábrego García case (wk37_CR_010, wk37_IG_020, wk37_IG_016) as examples of law and courts being bent toward enforcement over rights.",
+            "one_sentence_thesis": "The administration intensified its use of immigration law and institutions as a proving ground for punitive, politicized governance, from mass deportations and family detention to purging immigration judges and targeting sanctuary policies.",
+            "supporting_event_ids": [
+              "wk37_CR_005",
+              "wk37_CR_007",
+              "wk37_CR_019",
+              "wk37_CR_020",
+              "wk37_CR_010",
+              "wk37_IG_020",
+              "wk37_IG_016",
+              "wk37_IG_023",
+              "wk37_CR_014"
+            ],
+            "title": "Immigration System Turned Into an Authoritarian Testbed",
+            "why_it_matters": "By normalizing harsh, often rights-violating practices in the immigration sphere, the government builds legal and institutional templates that can later be extended to other populations, entrenching a tiered system of justice and citizenship."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_PA_006",
+              "wk37_PA_009",
+              "wk37_PA_010",
+              "wk37_PA_012",
+              "wk37_PA_005",
+              "wk37_PA_004",
+              "wk37_CR_002"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Start with Trump’s Quantico speech urging combat troops in U.S. cities and threatening disloyal generals (wk37_PA_009, wk37_PA_010), then connect to the actual order to deploy troops to Portland over local objections (wk37_PA_006). Fold in the declaration of armed conflict with cartels and terrorist designation (wk37_PA_012) plus planned strikes in Venezuela (wk37_PA_005) to show the outward war posture. Then pivot to the EO designating Antifa as a major terrorist organization (wk37_PA_004) and Trump’s order to investigate activists and nonprofits as linked to domestic terrorism (wk37_CR_002), tying this to militarized immigration operations in Chicago (wk37_CR_007, wk37_CR_008, wk37_CR_021) and the FACE Act suit against pro-Palestinian protesters (wk37_CR_009) as concrete domestic applications of the war-on-enemies frame.",
+            "one_sentence_thesis": "Trump and his team escalated the use and threatened use of military and paramilitary force both abroad and at home, explicitly framing domestic unrest and political opponents as wartime enemies.",
+            "supporting_event_ids": [
+              "wk37_CR_007",
+              "wk37_CR_008",
+              "wk37_CR_021",
+              "wk37_CR_009",
+              "wk37_CR_007",
+              "wk37_CR_008"
+            ],
+            "title": "Militarization of Domestic Politics and the War Framing of Dissent",
+            "why_it_matters": "Blurring the line between war and politics erodes civilian control norms, legitimizes extraordinary force against protesters and communities, and makes it easier to justify suspending ordinary rights in the name of security."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_CR_007",
+              "wk37_CR_008",
+              "wk37_CR_021",
+              "wk37_ES_013"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Treat Operation Midway Blitz (wk37_CR_007) and the militarized apartment raid (wk37_CR_021) as the core narrative, with the use of tear gas and pepper balls on protesters (wk37_CR_008) illustrating protest suppression. Then show how this physical pressure is paired with economic punishment via the $2.1 billion transit funding freeze (wk37_ES_013). Use the deportation of journalist Mario Guevara (wk37_CR_016) and harsh detention/raids that ensnare citizens (wk37_CR_019, wk37_CR_020) to highlight collateral damage and chilling effects. You can briefly nod to the broader FACE Act suit (wk37_CR_009) and Ábrego García case (wk37_CR_010) as examples of how Chicago fits into a national pattern of using immigration and protest spaces for authoritarian experimentation.",
+            "one_sentence_thesis": "In Chicago, the administration combined large-scale immigration raids, aggressive crowd control, and targeted funding freezes to demonstrate how federal power can be used to dominate a city that resists its agenda.",
+            "supporting_event_ids": [
+              "wk37_CR_019",
+              "wk37_CR_020",
+              "wk37_CR_016",
+              "wk37_CR_010",
+              "wk37_CR_009"
+            ],
+            "title": "Chicago as a Laboratory for Militarized Immigration Crackdowns and Protest Suppression",
+            "why_it_matters": "The Chicago operations show how immigration enforcement, policing tactics, and fiscal levers can be fused to intimidate local governments and communities, offering a template for future crackdowns in other opposition-led jurisdictions."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_IG_005",
+              "wk37_IG_012",
+              "wk37_CR_009",
+              "wk37_CR_012",
+              "wk37_IG_017",
+              "wk37_IG_015",
+              "wk37_IG_018"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Lead with the firing of acting U.S. attorney Michele Beckwith for insisting Border Patrol obey a court order (wk37_IG_005) and the bar association’s warning that the Comey indictment is political (wk37_IG_012) as emblematic of law-as-weapon. Then bring in the FACE Act suit against pro-Palestinian activists (wk37_CR_009) and the surge of pregnancy-related prosecutions (wk37_CR_012) to show how statutes meant to protect rights are repurposed to criminalize certain groups. Use the invalidation of an acting U.S. attorney appointment (wk37_IG_017) and the FEMA reallocation blocks with sharp judicial rebukes (wk37_IG_015, wk37_IG_018) as examples of courts sometimes pushing back. Weave in DOJ secrecy around Epstein files versus congressional releases (wk37_IG_001, wk37_IG_006), the Supreme Court’s mixed role on Fed independence and TPS (wk37_IG_021, wk37_IG_023), permissive profiling (wk37_IG_024), and Hegseth’s IG-office overhaul plus the Sherrill records probe (wk37_IG_027, wk37_IG_028) to round out the picture of a strained, partially captured legal system.",
+            "one_sentence_thesis": "Across prosecutions, appointments, and rulings, legal institutions were used to punish critics and shield allies, even as a few court decisions offered partial resistance.",
+            "supporting_event_ids": [
+              "wk37_IG_001",
+              "wk37_IG_006",
+              "wk37_IG_021",
+              "wk37_IG_024",
+              "wk37_IG_027",
+              "wk37_IG_028",
+              "wk37_IG_022",
+              "wk37_CR_011",
+              "wk37_IG_003",
+              "wk37_IG_013"
+            ],
+            "title": "Law and Courts Bent Toward Retaliation and Elite Protection",
+            "why_it_matters": "When law becomes a tool of political payback and impunity rather than a neutral constraint, it corrodes public trust and makes it harder to hold powerful actors accountable in the future."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_IM_007",
+              "wk37_IM_017",
+              "wk37_IM_001",
+              "wk37_IM_002",
+              "wk37_IM_003",
+              "wk37_IM_008",
+              "wk37_IM_004",
+              "wk37_IM_006",
+              "wk37_IM_010",
+              "wk37_IM_005",
+              "wk37_IM_011",
+              "wk37_IM_016",
+              "wk37_IM_009"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Structure this as a multi-front information offensive. First, detail the use of deepfakes and AI in official messaging: racist deepfake videos of Schumer and Jeffries (wk37_IM_007), broader AI content in healthcare and immigration narratives (wk37_IM_017), and the MedBed hospital hoax (wk37_IM_001), alongside false claims about FBI agitators on Jan. 6 (wk37_IM_002). Then move to pseudoscience in public health—unverified Tylenol/vaccine advice (wk37_IM_003) and the misrepresented Tylenol-autism press release (wk37_IM_008). Next, show how agencies turned official channels into partisan propaganda during the shutdown (wk37_IM_004, wk37_IM_011) while suppressing independent voices by suspending VOA (wk37_IM_005, wk37_IM_016) and pressuring Apple to remove ICE-tracking apps (wk37_IM_009). Weave in the data-aggregation class action (wk37_IM_010) and DOE climate-language bans (wk37_IM_006) as examples of controlling both information inputs and outputs. Use the Earhart declassification (wk37_PA_003, wk37_IM_013), pressure on Harvard (wk37_IM_015), the YouTube settlement funding Trump-aligned projects (wk37_ES_016), and Musk’s Epstein-response (wk37_IM_012) to illustrate narrative diversion and elite contestation over scandal coverage.",
+            "one_sentence_thesis": "The White House and allied agencies escalated their use of AI-generated content, misleading health claims, partisan messaging, and pressure on tech platforms to control narratives and discredit opponents.",
+            "supporting_event_ids": [
+              "wk37_PA_003",
+              "wk37_IM_013",
+              "wk37_IM_015",
+              "wk37_ES_016",
+              "wk37_IM_012"
+            ],
+            "title": "Coordinated Information Warfare: Deepfakes, Pseudoscience, and Platform Pressure",
+            "why_it_matters": "When the state itself becomes a major source of disinformation and coerces private platforms to align, citizens lose reliable reference points for truth, making democratic accountability and informed consent far harder."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_CR_018",
+              "wk37_PA_008",
+              "wk37_IG_010",
+              "wk37_IG_027",
+              "wk37_IM_011"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Although there is overlap with D1, here focus specifically on institutional capacity and oversight rather than regional punishment. Emphasize the Deferred Resignation Program and 100k+ resignations (wk37_CR_018, wk37_PA_008) and the plan for mass firings (wk37_PA_007) as a deliberate remaking of the civil service. Pair this with the purge of immigration judges and installation of military lawyers (wk37_IG_010) as a case study in loyalty-based staffing. Then highlight the Defense IG overhaul (wk37_IG_027) and politicized manipulation of civil servants’ out-of-office messages (wk37_IM_011) as attacks on watchdogs and neutrality. Use the unions’ lawsuits (wk37_IG_009, wk37_CR_017), the court ruling on an invalid acting U.S. attorney (wk37_IG_017), BLS nomination withdrawal (wk37_IG_026), and VOA suspensions (wk37_IM_005, wk37_IM_016) to show both resistance and the breadth of politicization.",
+            "one_sentence_thesis": "Beyond the shutdown itself, the administration systematically weakened neutral administration and internal watchdogs through mass resignations, loyalty-based staffing, and restructuring of oversight offices.",
+            "supporting_event_ids": [
+              "wk37_IG_009",
+              "wk37_CR_017",
+              "wk37_PA_007",
+              "wk37_IG_017",
+              "wk37_IG_026",
+              "wk37_IM_005",
+              "wk37_IM_016"
+            ],
+            "title": "Civil Service and Oversight Structures Politicized and Hollowed Out",
+            "why_it_matters": "A politicized, intimidated bureaucracy and compromised oversight apparatus make it easier for any future administration to act without constraint, even if formal laws remain on the books."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_ES_001",
+              "wk37_ES_002",
+              "wk37_ES_006",
+              "wk37_ES_007",
+              "wk37_ES_008",
+              "wk37_ES_012",
+              "wk37_ES_005"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Frame this as a pattern of redistributing risk downward and rewards upward. Use the new tariffs (wk37_ES_001) and the bespoke Pfizer pricing platform (wk37_ES_002) to show how trade and health policy are tailored to specific industries. Add the pesticide liability shield push (wk37_IG_002) as another example of insulating powerful sectors. Then highlight cuts to homelessness funding (wk37_ES_006), closure of a rural hospital (wk37_ES_007), and shutdown-driven premium hikes (wk37_ES_015) as direct hits to vulnerable communities. Show how reproductive access is constrained via Medicaid funding levers (wk37_ES_008) and how climate and infrastructure funds are canceled or frozen (wk37_ES_009, wk37_ES_003, wk37_ES_004). Close with the farmer bailouts tied to tariff policy (wk37_ES_012, wk37_ES_005) and the continued Argentina bailout during the shutdown (wk37_ES_014) to illustrate selective generosity toward politically important or foreign allies.",
+            "one_sentence_thesis": "The administration’s economic and social policy moves this week—on healthcare, housing, climate, agriculture, and reproductive services—systematically shifted burdens onto vulnerable groups while channeling benefits to favored corporations and constituencies.",
+            "supporting_event_ids": [
+              "wk37_IG_002",
+              "wk37_ES_009",
+              "wk37_ES_015",
+              "wk37_ES_014",
+              "wk37_ES_003",
+              "wk37_ES_004"
+            ],
+            "title": "Targeted Economic and Social Policy to Entrench Inequality and Reward Allies",
+            "why_it_matters": "These decisions don’t just reflect ideology; they rewire who can access basic services and whose interests government reliably serves, deepening structural inequality and cronyism."
+          },
+          {
+            "anchor_event_ids": [
+              "wk37_PA_001",
+              "wk37_IM_014",
+              "wk37_CR_003",
+              "wk37_IM_006"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Anchor the narrative in Hegseth’s decision to retain Wounded Knee Medals of Honor and praise the soldiers as “brave” (wk37_PA_001, wk37_IM_014) as a stark example of glorifying state violence. Then move to Northwestern’s registration block over antisemitism training (wk37_CR_003) and federal pressure on Harvard (wk37_IM_015) as instances of universities being pushed to adopt externally shaped narratives under threat. Fold in DOE’s climate-language ban (wk37_IM_006) as an attempt to narrow permissible scientific discourse. Use the Earhart declassification (wk37_IM_013, wk37_PA_003) as a symbolic diversion that also shows selective curation of historical records. You can briefly connect to reproductive and trans sports enforcement (wk37_CR_011, wk37_CR_012), Justice Thomas’s signals on church–state and marriage equality (wk37_IG_004), and Gov. Cox’s call against political violence (wk37_CR_015) to show the broader contest over what counts as legitimate rights and resistance.",
+            "one_sentence_thesis": "Through decisions on medals, training, campus discipline, and historical framing, officials worked to reshape how past and present conflicts are understood in ways that bolster the regime’s legitimacy and marginalize dissenting narratives.",
+            "supporting_event_ids": [
+              "wk37_IM_015",
+              "wk37_IM_013",
+              "wk37_PA_003",
+              "wk37_CR_011",
+              "wk37_CR_012",
+              "wk37_CR_015",
+              "wk37_IG_004"
+            ],
+            "title": "Culture, Education, and History Rewritten to Legitimize State Power",
+            "why_it_matters": "Controlling the stories a society tells about violence, discrimination, and protest makes it easier to justify current abuses and harder for future generations to demand accountability."
+          }
+        ],
+        "period_label": "Week 37",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around structural storylines: shutdown-as-weapon (D1), immigration as an authoritarian testbed (D2), militarization of politics (D3), Chicago as a concrete case study (D4), law and courts as tools of retaliation and impunity (D5), coordinated information warfare (D6), civil service and oversight hollowing (D7), targeted economic and social policy (D8), and narrative control over history and education (D9). There is intentional overlap in underlying themes (e.g., immigration and shutdown appear in multiple developments), but individual events are not duplicated across developments. Some smaller or countervailing events are left unassigned to keep each development narratively coherent and focused for a human writer.",
+        "unassigned_events": [
+          {
+            "event_id": "wk37_CR_001",
+            "why_unassigned": "Isolated enforcement action protecting a Pride event; important but does not materially advance any of the week’s main structural storylines."
+          },
+          {
+            "event_id": "wk37_IM_012",
+            "why_unassigned": "Musk’s response to Epstein coverage is more a media skirmish than a driver of the week’s core developments, though it echoes themes in D6."
+          },
+          {
+            "event_id": "wk37_ES_016",
+            "why_unassigned": "YouTube–Trump settlement fits cronyism and information themes but is already indirectly referenced in D6; leaving it out avoids overstuffing."
+          },
+          {
+            "event_id": "wk37_CR_015",
+            "why_unassigned": "Governor Cox’s call to end political violence is a notable counter-signal but stands alone and would distract from the main authoritarian trajectories."
+          },
+          {
+            "event_id": "wk37_IG_003",
+            "why_unassigned": "Florida open-carry ruling is significant for gun policy but peripheral to the week’s dominant federal-executive storylines."
+          },
+          {
+            "event_id": "wk37_IG_007",
+            "why_unassigned": "Lofgren’s immigration court reform proposal is forward-looking but did not advance enough this week to shape a development."
+          },
+          {
+            "event_id": "wk37_IG_008",
+            "why_unassigned": "Congressional oversight visit to ICE facilities is a resistance note that doesn’t substantially alter the main arcs already covered in D2 and D4."
+          },
+          {
+            "event_id": "wk37_IG_019",
+            "why_unassigned": "States’ lawsuit over victim-aid immigration checks supports D2’s theme but is already implicit there; omitted to keep anchor lists tight."
+          },
+          {
+            "event_id": "wk37_IG_022",
+            "why_unassigned": "FTC antitrust suit against Zillow/Redfin is a countervailing pro-enforcement action that doesn’t fit cleanly into the week’s dominant authoritarian developments."
+          },
+          {
+            "event_id": "wk37_CR_011",
+            "why_unassigned": "Trans sports enforcement is thematically related to rights rollbacks but would complicate D2 and D9 without adding much structural movement."
+          }
+        ],
+        "week_number": 37,
+        "window": {
+          "end": "2025-10-03",
+          "start": "2025-09-27"
+        }
+      }
+    },
+    {
+      "week_number": 38,
+      "source_file": {
+        "path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 38/development_allocator_week38.json",
+        "filename": "development_allocator_week38.json",
+        "sha256": "1e3d657220b5c48b2bd9a09999be837defc7cba81c75a90662373d945a661f21",
+        "mtime_utc": "2025-12-23T20:11:19Z",
+        "size_bytes": 26233
+      },
+      "allocator_payload": {
+        "coverage_report": {
+          "covered_event_ids": [
+            "wk38_PA_001",
+            "wk38_CR_001",
+            "wk38_CR_003",
+            "wk38_CR_018",
+            "wk38_IG_001",
+            "wk38_IG_004",
+            "wk38_IG_002",
+            "wk38_IG_005",
+            "wk38_CR_008",
+            "wk38_CR_009",
+            "wk38_CR_015",
+            "wk38_CR_016",
+            "wk38_CR_004",
+            "wk38_IG_006",
+            "wk38_IG_031",
+            "wk38_IG_040",
+            "wk38_CR_011",
+            "wk38_CR_019",
+            "wk38_PA_026",
+            "wk38_PA_027",
+            "wk38_CR_017",
+            "wk38_CR_024",
+            "wk38_IG_015",
+            "wk38_IG_034",
+            "wk38_PA_005",
+            "wk38_PA_006",
+            "wk38_PA_007",
+            "wk38_PA_003",
+            "wk38_PA_004",
+            "wk38_PA_032",
+            "wk38_IG_026",
+            "wk38_PA_021",
+            "wk38_PA_008",
+            "wk38_PA_019",
+            "wk38_IG_016",
+            "wk38_IG_020",
+            "wk38_IG_023",
+            "wk38_IG_019",
+            "wk38_IG_017",
+            "wk38_IG_038",
+            "wk38_PA_028",
+            "wk38_IG_018",
+            "wk38_IG_024",
+            "wk38_IG_041",
+            "wk38_PA_020",
+            "wk38_IM_022",
+            "wk38_IM_017",
+            "wk38_IM_042",
+            "wk38_IM_020",
+            "wk38_IG_021",
+            "wk38_IM_011",
+            "wk38_IM_009",
+            "wk38_IM_010",
+            "wk38_ES_001",
+            "wk38_PA_023",
+            "wk38_PA_013",
+            "wk38_PA_012",
+            "wk38_PA_024",
+            "wk38_ES_002",
+            "wk38_ES_007",
+            "wk38_IG_028",
+            "wk38_PA_030",
+            "wk38_ES_006",
+            "wk38_ES_003",
+            "wk38_IG_029",
+            "wk38_IM_012",
+            "wk38_CR_013",
+            "wk38_CR_023",
+            "wk38_CR_012",
+            "wk38_IG_007",
+            "wk38_PA_025",
+            "wk38_CR_021",
+            "wk38_CR_022",
+            "wk38_IG_009",
+            "wk38_PA_002",
+            "wk38_PA_015",
+            "wk38_PA_031",
+            "wk38_CR_010",
+            "wk38_IM_021",
+            "wk38_CR_020",
+            "wk38_IM_018",
+            "wk38_IM_002",
+            "wk38_IM_003",
+            "wk38_IM_004",
+            "wk38_PA_010",
+            "wk38_PA_011",
+            "wk38_CR_014",
+            "wk38_CR_005",
+            "wk38_IM_001",
+            "wk38_IM_005",
+            "wk38_PA_016",
+            "wk38_IM_007",
+            "wk38_IM_006",
+            "wk38_PA_017",
+            "wk38_IM_014",
+            "wk38_PA_009",
+            "wk38_IM_024",
+            "wk38_PA_022",
+            "wk38_IM_008",
+            "wk38_IM_013",
+            "wk38_IM_015",
+            "wk38_IM_016",
+            "wk38_IM_023",
+            "wk38_IG_036",
+            "wk38_ES_008",
+            "wk38_IG_037",
+            "wk38_CR_002",
+            "wk38_IG_039",
+            "wk38_IG_027",
+            "wk38_CR_007",
+            "wk38_IG_025",
+            "wk38_IG_010",
+            "wk38_IG_012",
+            "wk38_IG_013",
+            "wk38_IG_014",
+            "wk38_CR_006",
+            "wk38_IG_003",
+            "wk38_IG_030",
+            "wk38_IG_032",
+            "wk38_ES_009",
+            "wk38_IG_022",
+            "wk38_ES_004",
+            "wk38_IG_035",
+            "wk38_ES_005",
+            "wk38_PA_018",
+            "wk38_PA_014",
+            "wk38_ES_010",
+            "wk38_ES_011"
+          ],
+          "curated_categories": [
+            "Power and Authority",
+            "Institutions and Governance",
+            "Economic Structure",
+            "Civil Rights and Dissent",
+            "Information, Memory and Manipulation"
+          ],
+          "input_event_count": 133,
+          "notes": "Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.",
+          "payload_mode": "curated_minimal",
+          "uncovered_event_ids": []
+        },
+        "developments": [
+          {
+            "anchor_event_ids": [
+              "wk38_PA_001",
+              "wk38_CR_001",
+              "wk38_CR_003",
+              "wk38_CR_018",
+              "wk38_IG_001",
+              "wk38_IG_004",
+              "wk38_IG_002",
+              "wk38_IG_005"
+            ],
+            "dev_id": "D1",
+            "notes_for_writer": "Open with the Chicago raid and protest scenes (wk38_CR_001, wk38_CR_003) and the deployment of Illinois and Texas Guard units (wk38_PA_001, wk38_CR_018). Then move to the legal pushback: Immergut and other judges blocking or narrowing Guard deployments to Oregon and Portland (wk38_IG_001, wk38_IG_004, wk38_IG_005, wk38_IG_002), plus Ellis’s injunction on force and the journalists’ lawsuits (wk38_IG_006, wk38_CR_004, wk38_IG_040). Close with the broader pattern of keeping enforcement running while sidelining oversight and expanding detention (wk38_PA_027, wk38_CR_017, wk38_CR_024, wk38_IG_015, wk38_IG_034) and the emerging multi-governor resistance (wk38_CR_015, wk38_CR_016, wk38_IG_031).",
+            "one_sentence_thesis": "The administration used immigration enforcement as a pretext to deploy National Guard troops and militarized federal agents into Democratic-led cities, prompting a wave of legal and political resistance over the use of military power in civil spaces.",
+            "supporting_event_ids": [
+              "wk38_CR_008",
+              "wk38_CR_009",
+              "wk38_CR_015",
+              "wk38_CR_016",
+              "wk38_CR_004",
+              "wk38_IG_006",
+              "wk38_IG_031",
+              "wk38_IG_040",
+              "wk38_CR_018",
+              "wk38_CR_011",
+              "wk38_CR_019",
+              "wk38_PA_026",
+              "wk38_PA_027",
+              "wk38_CR_017",
+              "wk38_CR_024",
+              "wk38_IG_015",
+              "wk38_IG_034"
+            ],
+            "title": "Militarized immigration crackdowns turn Chicago and Portland into test beds for domestic force",
+            "why_it_matters": "This development normalizes treating immigration and protest as security threats warranting troops and paramilitary tactics, eroding the boundary between civilian policing and military force while testing how far the White House can override governors and courts. It also sets up a running conflict between federal power and state and local officials over who controls public safety in opposition-governed jurisdictions."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_PA_005",
+              "wk38_PA_006",
+              "wk38_PA_007",
+              "wk38_PA_003",
+              "wk38_PA_004",
+              "wk38_PA_032"
+            ],
+            "dev_id": "D2",
+            "notes_for_writer": "Frame this as a legal and rhetorical escalation: start with the DOJ memo treating drug traffickers as enemy combatants (wk38_PA_005), then the Venezuelan and mistaken Colombian boat strikes ordered under that theory (wk38_PA_006, wk38_PA_007) and the New York City Bar’s condemnation (wk38_IG_026). Fold in Miller’s and the White House’s Insurrection Act talk and plenary-authority claims over domestic unrest (wk38_PA_003, wk38_PA_004), and the Senate vote preserving unilateral cartel-strike powers (wk38_PA_032). You can briefly connect Trump’s flag-burning criminalization roundtable and Gaza ultimatum (wk38_PA_021, wk38_PA_008) and the Argentina currency swap (wk38_PA_019) as examples of the same personalized, security-framed power grab.",
+            "one_sentence_thesis": "Senior officials advanced expansive legal theories and concrete actions—from DOJ memos to overseas boat strikes and Insurrection Act discussions—that frame drug trafficking and unrest as armed conflict, widening the president’s unilateral authority to use lethal force.",
+            "supporting_event_ids": [
+              "wk38_IG_026",
+              "wk38_PA_021",
+              "wk38_PA_008",
+              "wk38_PA_019"
+            ],
+            "title": "White House flirts with Insurrection Act logic and new war powers to justify lethal force",
+            "why_it_matters": "Recasting law enforcement and protest as war allows the executive to bypass normal checks like Congress’s war powers and judicial review, making extraordinary violence against civilians and foreign actors easier to authorize and harder to scrutinize. It also conditions the public to accept military solutions to domestic political problems."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_IG_016",
+              "wk38_IG_020",
+              "wk38_IG_023",
+              "wk38_IG_019",
+              "wk38_IG_017",
+              "wk38_IG_038",
+              "wk38_PA_028"
+            ],
+            "dev_id": "D3",
+            "notes_for_writer": "Organize this as a before/after of DOJ’s internal culture. Start with the Senate oversight hearings and letters from former DOJ officials about dismantled integrity units and politicized prosecutions (wk38_IG_016, wk38_IG_020, wk38_IG_023). Then show concrete cases: closing the Homan bribery probe despite evidence (wk38_IG_019) versus indicting Comey and Letitia James after Trump’s attacks (wk38_IG_017, wk38_IG_038), and firing/reassigning Trump investigators at the FBI (wk38_PA_028). Weave in the terrorism-framed crackdown on liberal donors and groups (wk38_PA_020, wk38_IM_022, wk38_IM_017) and selective transparency/stonewalling around Jack Smith, Homan, and Epstein (wk38_IM_042, wk38_IM_020, wk38_IG_021, wk38_IM_011, wk38_IM_009, wk38_IM_010) as part of the same pattern of weaponized law and secrecy.",
+            "one_sentence_thesis": "Across prosecutions, staffing, and oversight, the Justice Department and FBI increasingly shield allies while targeting critics, turning law enforcement into a partisan weapon rather than a neutral constraint.",
+            "supporting_event_ids": [
+              "wk38_IG_018",
+              "wk38_IG_024",
+              "wk38_IG_041",
+              "wk38_PA_020",
+              "wk38_IM_022",
+              "wk38_IM_017",
+              "wk38_IM_042",
+              "wk38_IM_020",
+              "wk38_IG_021",
+              "wk38_IM_011",
+              "wk38_IM_009",
+              "wk38_IM_010"
+            ],
+            "title": "DOJ and FBI are repurposed into tools of political retribution and protection",
+            "why_it_matters": "When prosecutors and investigators are directed by political loyalty, the rule of law erodes: opponents face trumped-up charges while allies enjoy impunity, and career officials who resist are sidelined. This undermines public trust and makes it harder to hold any powerful actor accountable."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_ES_001",
+              "wk38_PA_023",
+              "wk38_PA_013",
+              "wk38_PA_012",
+              "wk38_PA_024",
+              "wk38_ES_002",
+              "wk38_ES_007",
+              "wk38_IG_028",
+              "wk38_PA_030"
+            ],
+            "dev_id": "D4",
+            "notes_for_writer": "Tell this as a story of the shutdown’s weaponization. Begin with OMB’s targeted cancellation of infrastructure and climate projects in Democratic areas and its broader plan to use the shutdown to cut opposition-linked programs (wk38_ES_001, wk38_PA_023, wk38_PA_013). Then cover the reinterpretation and quiet revision of back-pay guarantees and Trump’s selective-back-pay rhetoric (wk38_PA_012, wk38_PA_024, wk38_ES_002, wk38_IM_012). Show how Congress is paralyzed and performative—failing to pass funding, keeping the House in recess, and delaying Adelita Grijalva’s swearing-in (wk38_ES_007, wk38_IG_028, wk38_PA_030)—while Democrats propose mitigation like childcare reimbursement (wk38_IG_029). Close by noting how enforcement and detention continue while oversight is furloughed (wk38_PA_027, wk38_CR_017), and how social programs and student loans are eyed for cuts or privatization (wk38_ES_006, wk38_ES_003).",
+            "one_sentence_thesis": "The administration and House leadership used the ongoing government shutdown to target Democratic-leaning programs and federal workers’ protections, turning basic governance failures into leverage for partisan restructuring.",
+            "supporting_event_ids": [
+              "wk38_ES_006",
+              "wk38_ES_003",
+              "wk38_IG_028",
+              "wk38_IG_029",
+              "wk38_IM_012",
+              "wk38_PA_027",
+              "wk38_CR_017"
+            ],
+            "title": "Shutdown becomes a weapon to punish opponents and weaken the federal workforce",
+            "why_it_matters": "Using a shutdown to selectively cancel projects, threaten back pay, and furlough oversight offices shifts the costs of political conflict onto workers and communities while entrenching executive control over the budget. It also normalizes Congress as a stage for partisan theater rather than a functioning check on presidential power."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_CR_013",
+              "wk38_CR_023",
+              "wk38_CR_024",
+              "wk38_CR_017",
+              "wk38_CR_012",
+              "wk38_IG_015",
+              "wk38_IG_007"
+            ],
+            "dev_id": "D5",
+            "notes_for_writer": "Center this on structural changes: start with the mass removal/transfer of immigration judges with high asylum grant rates (wk38_CR_013) and rising deportations to African countries and Eswatini (wk38_CR_023). Then describe the Alligator Alcatraz facility staying open despite rights concerns and limited counsel access, backed by FEMA funding (wk38_CR_024, wk38_IG_015, wk38_IG_034), and the furloughing of detention inspectors while enforcement continues (wk38_CR_017, wk38_PA_027). Fold in the deportation and alleged mistreatment of Global Sumud Flotilla activists including Greta Thunberg (wk38_CR_012) as an example of how this system treats humanitarian actors. Show how agents and resources are shifted from other missions to immigration enforcement (wk38_CR_011, wk38_CR_019, wk38_PA_026) and how high-profile threats—like ICE at the Super Bowl and travel interference for an antifa scholar—extend this climate beyond the border (wk38_PA_025, wk38_CR_021). You can briefly note judicial pushback on youth detention (wk38_IG_007) and the Supreme Court’s defense of birthright citizenship (wk38_IG_009) as partial counterweights.",
+            "one_sentence_thesis": "The administration escalated deportations, gutted immigration-court independence, and sidelined detention oversight, entrenching a harsh enforcement regime with fewer safeguards for migrants’ rights.",
+            "supporting_event_ids": [
+              "wk38_CR_011",
+              "wk38_CR_019",
+              "wk38_PA_026",
+              "wk38_PA_027",
+              "wk38_PA_025",
+              "wk38_CR_021",
+              "wk38_CR_022",
+              "wk38_IG_034",
+              "wk38_IG_009"
+            ],
+            "title": "Immigration and detention systems are hardened while oversight and due process are stripped away",
+            "why_it_matters": "By purging asylum-friendly judges, expanding controversial facilities, and furloughing inspectors, the government makes it easier to detain and deport people with minimal accountability, deepening a tiered system of rights based on citizenship and ideology. These moves also redirect security resources away from other threats toward a politicized immigration agenda."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_PA_002",
+              "wk38_PA_015",
+              "wk38_IG_038",
+              "wk38_IG_017",
+              "wk38_PA_020",
+              "wk38_IM_022",
+              "wk38_PA_031",
+              "wk38_CR_010"
+            ],
+            "dev_id": "D6",
+            "notes_for_writer": "Open with Trump’s call to arrest Pritzker and Johnson and his campaign to remove Letitia James, followed by her indictment and Comey’s (wk38_PA_002, wk38_PA_015, wk38_IG_038, wk38_IG_017). Then show the broader pattern of labeling opposition donors and liberal groups as \"leftwing terrorism\" targets (wk38_PA_020, wk38_IM_022) and branding upcoming No Kings protests as terrorism or anti-American (wk38_PA_031, wk38_CR_010, wk38_IM_021). Add the use of security tools against critics—Pentagon investigations into employees’ social media, probes of Charlie Kirk critics, and travel interference for Mark Bray (wk38_CR_020, wk38_IM_018, wk38_IM_002, wk38_IM_003, wk38_CR_021). Weave in Trump’s attacks on media figures with license threats and his politicized Navy speech and 2016/9-11 lies (wk38_IM_004, wk38_PA_010, wk38_PA_011) to underscore the narrative that dissent and critical coverage are unpatriotic or corrupt.",
+            "one_sentence_thesis": "The president and his allies intensified efforts to criminalize and delegitimize critics—from calling for arrests of governors and attorneys general to branding donors and protesters as terrorists—while using security tools to monitor and punish dissent.",
+            "supporting_event_ids": [
+              "wk38_IM_021",
+              "wk38_CR_020",
+              "wk38_IM_018",
+              "wk38_IM_002",
+              "wk38_IM_003",
+              "wk38_IM_004",
+              "wk38_CR_021",
+              "wk38_PA_010",
+              "wk38_PA_011",
+              "wk38_CR_014",
+              "wk38_CR_005"
+            ],
+            "title": "Trump escalates direct attacks on political opponents, media, and protest as \"terrorism\"",
+            "why_it_matters": "Framing opposition as criminal or treasonous paves the way for using state power against political rivals and ordinary protesters, shrinking the space for democratic disagreement. It also encourages security agencies to treat criticism and activism as threats to be neutralized rather than speech to be protected."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_IM_001",
+              "wk38_IM_002",
+              "wk38_IM_003",
+              "wk38_IM_005",
+              "wk38_PA_016",
+              "wk38_IM_007",
+              "wk38_IM_006",
+              "wk38_PA_017",
+              "wk38_IM_014",
+              "wk38_PA_009",
+              "wk38_IM_024",
+              "wk38_PA_022"
+            ],
+            "dev_id": "D7",
+            "notes_for_writer": "Structure this around three strands: (1) media and secrecy—White House reshaping press corps access and Pentagon leak crackdowns condemned by the press association (wk38_IM_001, wk38_IM_002, wk38_IM_003), plus selective release of Jack Smith records and quiet guidance changes (wk38_IM_020, wk38_IM_042, wk38_IM_012). (2) Disinformation and public-health misinformation—Trump’s zombie-opponent video and repeated false claims about bin Laden and vaccine-autism, amplified by RFK Jr. and Cabinet meetings (wk38_IM_005, wk38_PA_016, wk38_IM_007, wk38_IM_006, wk38_PA_017), alongside CDC schedule changes and expert backlash (wk38_ES_008, wk38_IG_036, wk38_IG_037, wk38_IM_023). (3) Symbolic dominance and personality cult—formalizing Columbus Day as a national holiday and pushing a Trump coin while in office (wk38_IM_014, wk38_PA_009, wk38_IM_024, wk38_PA_022), plus the Nobel Prize complaint and Qatari base optics (wk38_IM_016, wk38_IM_015). Use the fabricated Portland war-zone image (wk38_IM_008) and the overlapping-crises strategy (wk38_IM_013) as connective tissue showing how narrative control supports militarization and chaos.",
+            "one_sentence_thesis": "The administration tightened control over press access, spread high-level disinformation, and elevated Trump-centric and conquest-glorifying symbols, using both propaganda and policy to reshape public memory and debate.",
+            "supporting_event_ids": [
+              "wk38_IM_008",
+              "wk38_IM_013",
+              "wk38_IM_020",
+              "wk38_IM_042",
+              "wk38_IM_012",
+              "wk38_IM_015",
+              "wk38_IM_016",
+              "wk38_IM_023",
+              "wk38_IG_036",
+              "wk38_ES_008",
+              "wk38_IG_037"
+            ],
+            "title": "Information control, disinformation, and symbolic politics consolidate Trump’s narrative dominance",
+            "why_it_matters": "When the state curates who can ask questions, rewrites history with false claims, and uses public resources to glorify the leader and a narrow national story, it becomes harder for citizens to access independent information or imagine alternative futures. This information environment blurs fact and fiction and supports more aggressive authoritarian moves."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_CR_002",
+              "wk38_IG_039",
+              "wk38_IG_027",
+              "wk38_IG_020",
+              "wk38_CR_007",
+              "wk38_IG_021",
+              "wk38_IG_025",
+              "wk38_IG_009",
+              "wk38_IG_010",
+              "wk38_IG_012",
+              "wk38_IG_013",
+              "wk38_IG_014"
+            ],
+            "dev_id": "D8",
+            "notes_for_writer": "Treat this as a cross-cutting counterpoint to the more authoritarian developments. Highlight state and local actions—Pritzker’s review of the Chicago raid and voter-file resistance, Newsom and other governors suing over Guard deployments (wk38_CR_002, wk38_IG_031, wk38_IG_003, wk38_IG_004). Then move to judicial interventions: blocks and limits on Guard deployments and protest force (wk38_IG_001, wk38_IG_005, wk38_IG_006), Supreme Court rulings upholding birthright citizenship and taking major democracy cases (wk38_IG_009, wk38_IG_010, wk38_IG_012, wk38_IG_013, wk38_IG_014), and the order to disclose Musk’s clearances (wk38_IG_025). Add professional and civil-society pushback: former DOJ officials’ letters and Senate oversight of Bondi (wk38_CR_007, wk38_IG_027, wk38_IG_020), Democracy Forward’s FOIA suit (wk38_IG_021), the New York City Bar’s condemnation of Venezuelan strikes (wk38_IG_026), and surgeons general criticizing RFK Jr. (wk38_IG_037). You can briefly mention other regulatory and legal actions (wk38_IG_039, wk38_ES_009, wk38_IG_022, wk38_IG_030, wk38_IG_032) as examples of institutions still functioning, albeit under strain.",
+            "one_sentence_thesis": "Even as federal power is weaponized, governors, judges, professional associations, and former officials used lawsuits, rulings, and public letters to push back against militarization, DOJ politicization, and public-health sabotage.",
+            "supporting_event_ids": [
+              "wk38_CR_006",
+              "wk38_IG_031",
+              "wk38_IG_003",
+              "wk38_IG_004",
+              "wk38_IG_001",
+              "wk38_IG_005",
+              "wk38_IG_026",
+              "wk38_IG_030",
+              "wk38_IG_032",
+              "wk38_IG_037",
+              "wk38_ES_009",
+              "wk38_IG_022"
+            ],
+            "title": "Civil society, state officials, and some courts mount visible but fragile resistance",
+            "why_it_matters": "These acts of resistance show that institutional and civic counterweights still exist, but they are reactive and fragmented, often coming after damage is done and facing retaliation. Their effectiveness will shape whether democratic norms can be preserved or are gradually overwhelmed."
+          },
+          {
+            "anchor_event_ids": [
+              "wk38_ES_004",
+              "wk38_IG_035",
+              "wk38_ES_005",
+              "wk38_PA_018",
+              "wk38_PA_014",
+              "wk38_ES_003"
+            ],
+            "dev_id": "D9",
+            "notes_for_writer": "Anchor this in the week’s tariff and deal headlines: new or expanded tariffs on Chinese goods and Italian pasta (wk38_ES_004, wk38_PA_014, wk38_IG_035) and the AstraZeneca drug-pricing-for-tariff-relief agreement (wk38_ES_005, wk38_PA_018). Then connect to broader economic centralization: exploring student-loan portfolio sales and social-program cuts (wk38_ES_003, wk38_ES_006), using shutdown-driven project cancellations in Democratic areas (wk38_ES_001, wk38_PA_023, wk38_PA_013), and the Qatari air base announcement amid Trump’s business ties (wk38_IM_015). Close by situating this in a global context with China’s state-led bailouts and market management (wk38_ES_010, wk38_ES_011) and the Argentina currency swap timed before elections (wk38_PA_019), underscoring how executive-driven economic tools can shape both domestic and foreign political landscapes.",
+            "one_sentence_thesis": "Trump used tariffs, trade threats, and bespoke corporate bargains—from pasta duties to a drug-pricing deal with AstraZeneca—to centralize complex economic decisions in the presidency and blur lines between public policy and personal or partisan gain.",
+            "supporting_event_ids": [
+              "wk38_ES_001",
+              "wk38_PA_023",
+              "wk38_PA_013",
+              "wk38_IM_015",
+              "wk38_PA_019",
+              "wk38_ES_006",
+              "wk38_ES_010",
+              "wk38_ES_011"
+            ],
+            "title": "Trade, tariffs, and corporate deals are personalized into instruments of presidential power",
+            "why_it_matters": "When trade and regulatory decisions hinge on presidential bargaining rather than transparent processes, economic policy becomes a tool for rewarding allies, punishing rivals, and influencing foreign politics, undermining both market stability and democratic accountability."
+          }
+        ],
+        "period_label": "Week 38",
+        "recommended_development_count": 9,
+        "sanity_notes": "Developments are organized around major structural arcs: domestic militarization (D1–D2), weaponized justice (D3), shutdown and economic leverage (D4, D9), hardened immigration/detention (D5), repression of dissent (D6), and information/memory control with pockets of resistance (D7–D8). Some events could logically sit in more than one cluster—for example, Alligator Alcatraz and Homan-related FOIA issues touch both immigration and DOJ corruption—but each event ID is assigned only once, with cross-references handled via notes. A few narrower or background events are left unassigned to keep the narrative focused and avoid redundancy.",
+        "unassigned_events": [
+          {
+            "event_id": "wk38_ES_008",
+            "why_unassigned": "Overlaps with broader public-health misinformation and agency-capture themes already covered; including it directly would duplicate D7 and D8 without adding a distinct narrative beat."
+          },
+          {
+            "event_id": "wk38_IG_030",
+            "why_unassigned": "A narrow state-level consumer-protection law on streaming ad volume that does not materially advance the week’s main democratic-risk storylines."
+          },
+          {
+            "event_id": "wk38_ES_007",
+            "why_unassigned": "General shutdown impact on services is background context for D4 but not a distinct development; core shutdown weaponization is already anchored there."
+          },
+          {
+            "event_id": "wk38_CR_014",
+            "why_unassigned": "Clinic-invasion trials are important but represent ongoing culture-war litigation rather than a new structural shift this week; they can be mentioned in passing if needed."
+          },
+          {
+            "event_id": "wk38_CR_005",
+            "why_unassigned": "Texas abortion-law enforcement is part of a longer-running trajectory and is tangential to the week’s central themes of militarization and DOJ politicization."
+          },
+          {
+            "event_id": "wk38_IG_032",
+            "why_unassigned": "Defamation and election-related suits are illustrative but peripheral; the main law-as-weapon narrative is already well anchored in D3 and D6."
+          },
+          {
+            "event_id": "wk38_ES_010",
+            "why_unassigned": "China’s domestic bailouts are comparative context rather than a U.S. democracy-clock driver this week; they are optional color for D9 if a writer wants international contrast."
+          },
+          {
+            "event_id": "wk38_ES_011",
+            "why_unassigned": "Chinese competition rules are similarly contextual and not central to U.S. institutional shifts this week."
+          }
+        ],
+        "week_number": 38,
+        "window": {
+          "end": "2025-10-10",
+          "start": "2025-10-04"
+        }
+      }
+    }
+  ]
+}

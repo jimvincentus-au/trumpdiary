@@ -180,6 +180,7 @@ Interpret these only within the supplied window.
 
 ### When to create a super-thread
 Create a `super_thread` only when there are clearly multiple distinct thread candidates beneath it.
+Do not create a `super_thread` merely because several developments feel related; prefer a strong `thread` unless the umbrella level is clearly necessary and likely to remain useful at year-level consolidation.
 
 ### When to create a sub-thread
 Create a `sub_thread` only when the narrower recurring pattern is distinct enough that later consolidation would benefit from preserving it separately.

@@ -1,24 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "phase1_candidate_threads.schema.json",
-  "title": "Trump Diary Phase 1 Candidate Threads",
-  "description": "LLM-produced candidate continuity threads derived from one overlapping discovery window of weekly development allocator files.",
+  "$id": "phase1_consolidated_thread_catalog.schema.json",
+  "title": "Trump Diary Phase 1 Consolidated Thread Catalog",
+  "description": "Year-wide canonical thread catalog consolidated from overlapping Phase 1 window candidate outputs.",
   "type": "object",
   "additionalProperties": false,
   "required": [
     "schema_name",
     "schema_version",
     "package_type",
-    "source_window",
+    "scope",
     "build",
-    "candidate_threads",
-    "notes_on_window",
-    "rejected_or_folded_candidates"
+    "source_windows",
+    "canonical_threads",
+    "rejected_or_folded_candidates",
+    "consolidation_notes"
   ],
   "properties": {
     "schema_name": {
       "type": "string",
-      "const": "phase1_candidate_threads"
+      "const": "phase1_consolidated_thread_catalog"
     },
     "schema_version": {
       "type": "string",
@@ -26,22 +27,25 @@
     },
     "package_type": {
       "type": "string",
-      "const": "thread_discovery_candidates"
+      "const": "thread_catalog_consolidation"
     },
-    "source_window": {
+    "scope": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "window_id",
+        "project",
+        "period_label",
         "start_week",
         "end_week",
-        "week_count",
-        "week_numbers"
+        "window_count",
+        "window_ids"
       ],
       "properties": {
-        "window_id": {
-          "type": "string",
-          "pattern": "^window_[0-9]{3}$"
+        "project": {
+          "type": "string"
+        },
+        "period_label": {
+          "type": "string"
         },
         "start_week": {
           "type": "integer",
@@ -51,16 +55,15 @@
           "type": "integer",
           "minimum": 1
         },
-        "week_count": {
+        "window_count": {
           "type": "integer",
           "minimum": 1
         },
-        "week_numbers": {
+        "window_ids": {
           "type": "array",
-          "minItems": 1,
           "items": {
-            "type": "integer",
-            "minimum": 1
+            "type": "string",
+            "pattern": "^window_[0-9]{3}$"
           }
         }
       }
@@ -91,57 +94,99 @@
         },
         "prompt_version": {
           "type": "string"
+        },
+        "git_commit": {
+          "type": ["string", "null"]
         }
       }
     },
-    "candidate_threads": {
+    "source_windows": {
       "type": "array",
-      "minItems": 1,
       "items": {
-        "$ref": "#/$defs/candidate_thread"
+        "$ref": "#/$defs/source_window"
       }
     },
-    "notes_on_window": {
+    "canonical_threads": {
       "type": "array",
       "items": {
-        "type": "string"
+        "$ref": "#/$defs/canonical_thread"
       }
     },
     "rejected_or_folded_candidates": {
       "type": "array",
       "items": {
-        "$ref": "#/$defs/rejected_candidate"
+        "$ref": "#/$defs/rejected_or_folded_candidate"
+      }
+    },
+    "consolidation_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     }
   },
   "$defs": {
-    "candidate_thread": {
+    "source_window": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "candidate_id",
+        "window_id",
+        "start_week",
+        "end_week",
+        "candidate_file",
+        "candidate_count"
+      ],
+      "properties": {
+        "window_id": {
+          "type": "string",
+          "pattern": "^window_[0-9]{3}$"
+        },
+        "start_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "end_week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "candidate_file": {
+          "type": "string"
+        },
+        "candidate_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "canonical_thread": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "thread_id",
         "canonical_name",
         "short_name",
         "description",
         "scope_level",
+        "window_ids",
         "supporting_weeks",
-        "supporting_developments",
+        "source_candidate_ids",
+        "source_candidate_names",
         "aliases",
         "inclusion_notes",
         "exclusion_notes",
         "boundary_notes",
-        "related_candidate_ids",
-        "possible_parent_candidate_id",
-        "possible_child_candidate_ids",
-        "confidence",
-        "continuity_assessment",
-        "merge_suggestions",
-        "split_suggestions"
+        "parent_thread_id",
+        "child_thread_ids",
+        "related_thread_ids",
+        "continuity_summary",
+        "merge_rationale",
+        "democracy_clock_categories",
+        "democracy_clock_traits"
       ],
       "properties": {
-        "candidate_id": {
+        "thread_id": {
           "type": "string",
-          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+          "pattern": "^THR_[A-Z0-9_]{3,100}$"
         },
         "canonical_name": {
           "type": "string",
@@ -159,19 +204,31 @@
           "type": "string",
           "enum": ["super_thread", "thread", "sub_thread"]
         },
+        "window_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^window_[0-9]{3}$"
+          }
+        },
         "supporting_weeks": {
           "type": "array",
-          "minItems": 1,
           "items": {
             "type": "integer",
             "minimum": 1
           }
         },
-        "supporting_developments": {
+        "source_candidate_ids": {
           "type": "array",
-          "minItems": 1,
           "items": {
-            "$ref": "#/$defs/supporting_development"
+            "type": "string",
+            "pattern": "^cand_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "source_candidate_names": {
+          "type": "array",
+          "items": {
+            "type": "string"
           }
         },
         "aliases": {
@@ -198,96 +255,77 @@
             "type": "string"
           }
         },
-        "related_candidate_ids": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "pattern": "^cand_[A-Z0-9_]{3,80}$"
-          }
-        },
-        "possible_parent_candidate_id": {
+        "parent_thread_id": {
           "type": ["string", "null"],
-          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+          "pattern": "^THR_[A-Z0-9_]{3,100}$"
         },
-        "possible_child_candidate_ids": {
+        "child_thread_ids": {
           "type": "array",
           "items": {
             "type": "string",
-            "pattern": "^cand_[A-Z0-9_]{3,80}$"
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
           }
         },
-        "confidence": {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        },
-        "continuity_assessment": {
-          "type": "string",
-          "enum": ["emergent", "recurring", "sustained", "unclear"]
-        },
-        "merge_suggestions": {
+        "related_thread_ids": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
           }
         },
-        "split_suggestions": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    "supporting_development": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "week_number",
-        "development_id",
-        "development_title",
-        "role",
-        "why_it_supports_thread"
-      ],
-      "properties": {
-        "week_number": {
-          "type": "integer",
-          "minimum": 1
-        },
-        "development_id": {
-          "type": ["string", "null"]
-        },
-        "development_title": {
-          "type": "string",
-          "minLength": 3
-        },
-        "role": {
-          "type": "string",
-          "enum": ["primary", "secondary", "contextual"]
-        },
-        "why_it_supports_thread": {
+        "continuity_summary": {
           "type": "string"
+        },
+        "merge_rationale": {
+          "type": "string"
+        },
+        "democracy_clock_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "democracy_clock_traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       }
     },
-    "rejected_candidate": {
+    "rejected_or_folded_candidate": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "label",
+        "source_window_id",
+        "source_candidate_id",
+        "source_candidate_name",
+        "disposition",
         "reason",
-        "folded_into_candidate_id"
+        "folded_into_thread_id"
       ],
       "properties": {
-        "label": {
+        "source_window_id": {
+          "type": "string",
+          "pattern": "^window_[0-9]{3}$"
+        },
+        "source_candidate_id": {
+          "type": ["string", "null"],
+          "pattern": "^cand_[A-Z0-9_]{3,100}$"
+        },
+        "source_candidate_name": {
           "type": "string"
+        },
+        "disposition": {
+          "type": "string",
+          "enum": ["folded", "rejected"]
         },
         "reason": {
           "type": "string"
         },
-        "folded_into_candidate_id": {
+        "folded_into_thread_id": {
           "type": ["string", "null"],
-          "pattern": "^cand_[A-Z0-9_]{3,80}$"
+          "pattern": "^THR_[A-Z0-9_]{3,100}$"
         }
       }
     }

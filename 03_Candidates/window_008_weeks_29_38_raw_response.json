@@ -1,0 +1,390 @@
+{
+  "id": "resp_09e88e26361e1ef80069af473872e88197a7cc627f4c3b2588",
+  "object": "response",
+  "created_at": 1773094712,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1773094849,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-2026-03-05",
+  "output": [
+    {
+      "id": "msg_09e88e26361e1ef80069af473a46948197b5d203f4ab5f666e",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"schema_name\":\"phase1_candidate_threads\",\"schema_version\":\"1.0\",\"package_type\":\"thread_discovery_candidates\",\"source_window\":{\"window_id\":\"window_008\",\"start_week\":29,\"end_week\":38,\"week_count\":10,\"week_numbers\":[29,30,31,32,33,34,35,36,37,38]},\"build\":{\"created_at\":\"2026-03-09T00:00:00Z\",\"created_by\":\"OpenAI\",\"model\":\"gpt-5\",\"run_id\":\"window_008_phase1\",\"prompt_version\":\"Trump Diary Phase 1 Discovery Prompt v1\"},\"candidate_threads\":[{\"candidate_id\":\"cand_MILITARIZED_DOMESTIC_CONTROL\",\"canonical_name\":\"Militarized domestic control through federalized policing, Guard deployment, and emergency rule\",\"short_name\":\"Militarized domestic control\",\"description\":\"A recurring pattern in which the administration uses crime, immigration, or protest as justification for federal takeovers of local policing, National Guard deployments, military-style operations, and emergency governance in opposition-led cities.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,31,32,34,35,37,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D7\",\"development_title\":\"Executive power and security forces are deployed for spectacle and personal leverage\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Introduces use of federalization threats and security deployments as instruments of dominance over local jurisdictions.\"},{\"week_number\":30,\"development_id\":\"D1\",\"development_title\":\"Trump moves to seize lasting control over Washington, D.C. policing and governance\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly centers emergency-based federalization of D.C. policing and threats to Home Rule.\"},{\"week_number\":30,\"development_id\":\"D3\",\"development_title\":\"Security forces are repurposed for regime priorities at home and abroad\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows law enforcement and military tools redirected toward political intimidation and contested domestic troop deployments.\"},{\"week_number\":31,\"development_id\":\"D1\",\"development_title\":\"Trump consolidates militarized control over Washington, D.C. and rewires local justice\",\"role\":\"primary\",\"why_it_supports_thread\":\"Escalates the D.C. model into armed troop presence, military lawyers, and permanent emergency governance.\"},{\"week_number\":32,\"development_id\":\"D1\",\"development_title\":\"Trump consolidates direct control over policing and security in D.C. and targets Democratic cities\",\"role\":\"primary\",\"why_it_supports_thread\":\"Extends the pattern from D.C. to threats against Chicago and Baltimore and semi-permanent takeover proposals.\"},{\"week_number\":34,\"development_id\":\"D1\",\"development_title\":\"Trump militarizes domestic governance in DC, Chicago, and beyond\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows Guard deployments and federal agents used as standing tools of control in Democratic-led cities.\"},{\"week_number\":35,\"development_id\":\"D1\",\"development_title\":\"Trump federalizes local policing and normalizes military-style domestic security\",\"role\":\"primary\",\"why_it_supports_thread\":\"Continues the pattern with Memphis and temporary federal takeover of D.C. police.\"},{\"week_number\":37,\"development_id\":\"D3\",\"development_title\":\"Militarization of Domestic Politics and the War Framing of Dissent\",\"role\":\"primary\",\"why_it_supports_thread\":\"Links troop deployment to U.S. cities with explicit wartime framing of domestic unrest.\"},{\"week_number\":37,\"development_id\":\"D4\",\"development_title\":\"Chicago as a Laboratory for Militarized Immigration Crackdowns and Protest Suppression\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Provides a city-level case study of militarized federal intervention against local resistance.\"},{\"week_number\":38,\"development_id\":\"D1\",\"development_title\":\"Militarized immigration crackdowns turn Chicago and Portland into test beds for domestic force\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows National Guard and federal agents deployed into major cities under immigration and protest pretexts.\"},{\"week_number\":38,\"development_id\":\"D2\",\"development_title\":\"White House flirts with Insurrection Act logic and new war powers to justify lethal force\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds the legal theory and executive rationale underpinning domestic militarization.\"}],\"aliases\":[\"federalized policing\",\"domestic militarization\",\"Guard deployment to cities\",\"emergency governance in blue cities\",\"federal takeover of local public safety\"],\"inclusion_notes\":[\"Include federal takeovers or attempted takeovers of city policing and public safety.\",\"Include use or threatened use of National Guard or military personnel in domestic civilian settings.\",\"Include emergency declarations and Home Rule override efforts when tied to coercive security control.\"],\"exclusion_notes\":[\"Exclude immigration enforcement developments unless the main emphasis is citywide militarization or domestic force posture.\",\"Exclude generic foreign-policy military actions unless clearly linked to domestic emergency logic.\"],\"boundary_notes\":[\"Distinct from cand_IMMIGRATION_AS_REPRESSION_AND_STRATIFIED_CITIZENSHIP, which centers migrants and detention rather than city governance.\",\"Related to cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT, but this thread emphasizes operational deployment and federal control rather than rhetoric alone.\"],\"related_candidate_ids\":[\"cand_IMMIGRATION_AS_REPRESSION_AND_STRATIFIED_CITIZENSHIP\",\"cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT\",\"cand_EXECUTIVE_POWER_BEYOND_CONSTRAINTS\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.98,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Could later merge with similar candidates labeled federalization of cities, emergency domestic deployments, or militarized urban governance.\"],\"split_suggestions\":[\"If yearwide evidence supports it, D.C. federalization could become a sub-thread separate from broader deployments to Chicago, Memphis, Portland, and other cities.\"]},{\"candidate_id\":\"cand_IMMIGRATION_AS_REPRESSION_AND_STRATIFIED_CITIZENSHIP\",\"canonical_name\":\"Immigration and citizenship policy as repression, ideological sorting, and tiered belonging\",\"short_name\":\"Immigration as repression\",\"description\":\"A sustained thread in which immigration law, detention, visa policy, and deportation infrastructure are used not just for border control but to discipline targeted communities, punish speech, create wealth- and ideology-based tiers of belonging, and expand coercive state capacity.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,31,32,33,34,35,36,37,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D4\",\"development_title\":\"Immigration, detention, and homelessness policy harden into a carceral governance model\",\"role\":\"primary\",\"why_it_supports_thread\":\"Establishes expansion of detention, militarized immigration enforcement, and punitive treatment of migrants.\"},{\"week_number\":29,\"development_id\":\"D5\",\"development_title\":\"Civil and social rights are rolled back for veterans, migrants, LGBTQ+ people, and students\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Places migrant rights rollback within a broader hierarchy of protections.\"},{\"week_number\":30,\"development_id\":\"D2\",\"development_title\":\"Immigration enforcement becomes a tool of fear, punishment, and profit\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows lawless enforcement, private detention expansion, and intimidation of sanctuary jurisdictions.\"},{\"week_number\":31,\"development_id\":\"D4\",\"development_title\":\"Immigration and visas become an ideological sorting system backed by militarized enforcement\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly frames visas, TPS, student revocations, and deportation infrastructure as ideological sorting.\"},{\"week_number\":32,\"development_id\":\"D4\",\"development_title\":\"Immigration enforcement and social policy deepen a tiered citizenship regime\",\"role\":\"primary\",\"why_it_supports_thread\":\"Connects detention abuses and opaque transfers with broader stratification of rights.\"},{\"week_number\":33,\"development_id\":\"D2\",\"development_title\":\"Immigration enforcement hardens into a sprawling, politicized security apparatus\",\"role\":\"primary\",\"why_it_supports_thread\":\"Highlights legal choke points, mass hiring, arrest powers, asylum narrowing, and sanctuary attacks.\"},{\"week_number\":33,\"development_id\":\"D8\",\"development_title\":\"Surveillance and outsourcing expand state reach over immigrants and critics\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds spyware and outsourced surveillance capacity to the immigration-control apparatus.\"},{\"week_number\":34,\"development_id\":\"D2\",\"development_title\":\"Immigration enforcement becomes a paramilitary campaign against immigrant communities\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows workplace raids, lethal force, service exclusions, and globalized asylum restrictions.\"},{\"week_number\":35,\"development_id\":\"D2\",\"development_title\":\"Immigration enforcement becomes a central tool of repression and stratified citizenship\",\"role\":\"primary\",\"why_it_supports_thread\":\"Explicitly links raids, abusive detention, speech-based visa punishments, and wealth-based immigration tiers.\"},{\"week_number\":36,\"development_id\":\"D2\",\"development_title\":\"Domestic terrorism framing and security apparatus turned against dissent and immigrants\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows how immigration enforcement is folded into a broader security state.\"},{\"week_number\":36,\"development_id\":\"D9\",\"development_title\":\"Immigration and housing policy deepen stratified citizenship along status and identity lines\",\"role\":\"primary\",\"why_it_supports_thread\":\"Frames immigration policy as part of a hierarchy of belonging and rights.\"},{\"week_number\":37,\"development_id\":\"D2\",\"development_title\":\"Immigration System Turned Into an Authoritarian Testbed\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows judge purges, deportations, family detention, sanctuary attacks, and social-service screening through immigration status.\"},{\"week_number\":37,\"development_id\":\"D4\",\"development_title\":\"Chicago as a Laboratory for Militarized Immigration Crackdowns and Protest Suppression\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Provides a concrete case where immigration enforcement becomes a model of urban domination.\"},{\"week_number\":38,\"development_id\":\"D5\",\"development_title\":\"Immigration and detention systems are hardened while oversight and due process are stripped away\",\"role\":\"primary\",\"why_it_supports_thread\":\"Extends the pattern through asylum-judge removals, deportations, detention expansion, and oversight furloughs.\"},{\"week_number\":38,\"development_id\":\"D1\",\"development_title\":\"Militarized immigration crackdowns turn Chicago and Portland into test beds for domestic force\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows immigration enforcement serving as the operational rationale for broader domestic force deployment.\"}],\"aliases\":[\"tiered citizenship\",\"immigration as domestic control\",\"ideological visa and deportation system\",\"migrant repression infrastructure\",\"pay-to-belong citizenship\"],\"inclusion_notes\":[\"Include detention expansion, deportation deals, visa revocations, asylum restrictions, and sanctuary crackdowns.\",\"Include wealth- or ideology-based sorting mechanisms such as gold cards, extreme visa fees, or speech-based removals.\",\"Include surveillance and outsourced coercive tools when primarily aimed at migrants or noncitizen communities.\"],\"exclusion_notes\":[\"Exclude purely local protest-policing unless immigration enforcement is central.\",\"Exclude general civil-rights rollback unless migrants or visa status are core to the development.\"],\"boundary_notes\":[\"Broader than detention alone: it includes visas, asylum, social-service exclusions, and ideological screening.\",\"Related to cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT because immigration tools often overlap with protest suppression, but this thread centers status-based repression and belonging.\"],\"related_candidate_ids\":[\"cand_MILITARIZED_DOMESTIC_CONTROL\",\"cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT\",\"cand_CIVIL_RIGHTS_AND_EQUAL_PROTECTION_ROLLBACKS\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.99,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Likely merge later with candidates framed as immigration as social control, deportation state expansion, or stratified belonging.\"],\"split_suggestions\":[\"Could later split into sub-threads for detention/carceral infrastructure and ideological visa/citizenship sorting if both recur strongly across windows.\"]},{\"candidate_id\":\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"canonical_name\":\"Law enforcement and courts used to protect allies and punish opponents\",\"short_name\":\"Law as weapon and shield\",\"description\":\"A recurring pattern in which DOJ, FBI, prosecutors, courts, and legal process are steered toward retaliating against critics, investigators, activists, and political opponents while slowing, burying, or managing accountability for allies and elite-linked cases.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,31,32,35,36,37,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D2\",\"development_title\":\"Law enforcement and courts are weaponized to protect Trump and punish investigators\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly states the dual pattern of retaliation against investigators and opacity around elite wrongdoing.\"},{\"week_number\":31,\"development_id\":\"D2\",\"development_title\":\"Law as a shield for allies and a weapon against critics and institutions\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows pardons, politicized investigations, and selective transparency as an integrated mode of rule.\"},{\"week_number\":32,\"development_id\":\"D2\",\"development_title\":\"Law enforcement and courts are weaponized against critics while elite-linked cases are shielded\",\"role\":\"primary\",\"why_it_supports_thread\":\"Connects raids, retaliatory probes, and coercive prosecutions with soft treatment of Maxwell/Epstein matters.\"},{\"week_number\":35,\"development_id\":\"D4\",\"development_title\":\"Law enforcement and courts are bent toward punishing enemies and shielding allies\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows RICO threats, interference in prosecutions, FBI politicization, and selective impunity.\"},{\"week_number\":36,\"development_id\":\"D1\",\"development_title\":\"Justice Department repurposed to shield allies and punish Trump critics\",\"role\":\"primary\",\"why_it_supports_thread\":\"Focuses on hollowing out Public Integrity, closing ally-linked cases, and pursuing critics such as Comey and Brennan.\"},{\"week_number\":37,\"development_id\":\"D5\",\"development_title\":\"Law and Courts Bent Toward Retaliation and Elite Protection\",\"role\":\"primary\",\"why_it_supports_thread\":\"Extends the pattern through politicized prosecutions, shielded allies, and courts under strain.\"},{\"week_number\":38,\"development_id\":\"D3\",\"development_title\":\"DOJ and FBI are repurposed into tools of political retribution and protection\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows partisan prosecutions, staffing moves, and secrecy arrangements all serving retribution and protection.\"},{\"week_number\":38,\"development_id\":\"D6\",\"development_title\":\"Trump escalates direct attacks on political opponents, media, and protest as \\\"terrorism\\\"\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds direct presidential demands for arrests and prosecutions of named opponents.\"}],\"aliases\":[\"weaponized DOJ\",\"two-tier justice\",\"retaliatory prosecutions\",\"impunity for allies, punishment for enemies\",\"politicized federal law enforcement\"],\"inclusion_notes\":[\"Include prosecutions, raids, subpoenas, and investigations aimed at critics, investigators, or opposition officials.\",\"Include burying, narrowing, or manipulating ally-linked or elite-linked cases such as Epstein/Homan/Maxwell-type secrecy and impunity.\",\"Include structural hollowing-out of integrity units where tied to retaliatory use of law.\"],\"exclusion_notes\":[\"Exclude election administration engineering unless legal retaliation is central.\",\"Exclude general civil service politicization unless specifically about DOJ/FBI/prosecutorial machinery.\"],\"boundary_notes\":[\"Distinct from cand_EXECUTIVE_STATE_CAPTURE, which covers wider bureaucratic politicization beyond legal institutions.\",\"Distinct from cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION, though selective disclosure and secrecy can support both threads.\"],\"related_candidate_ids\":[\"cand_EXECUTIVE_STATE_CAPTURE\",\"cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION\",\"cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.99,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Likely merge with labels such as lawfare against opponents, justice as personal protection, or two-tier rule of law.\"],\"split_suggestions\":[\"Could later split between retaliatory prosecutions and elite-impunity/secrecy if both become separately dense across the year.\"]},{\"candidate_id\":\"cand_ELECTIONS_AND_REPRESENTATION_ENGINEERING\",\"canonical_name\":\"Elections and representation are engineered through gerrymanders, voter restrictions, and administrative manipulation\",\"short_name\":\"Election engineering\",\"description\":\"A recurring thread in which partisan actors reshape representation and election access through mid-decade redistricting, coercive mapmaking, attacks on mail voting, voter-roll or citizenship enforcement schemes, and other institutional changes that bias competition before votes are cast.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,31,32,33,34,35],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D3\",\"development_title\":\"Representation is engineered through gerrymanders, coercion, and a skewed census\",\"role\":\"primary\",\"why_it_supports_thread\":\"Establishes redistricting coercion and census manipulation as representation engineering.\"},{\"week_number\":30,\"development_id\":\"D7\",\"development_title\":\"Redistricting and representation turn into an interstate partisan arms race\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows mapmaking becoming a cross-state escalation dynamic rather than normal districting.\"},{\"week_number\":31,\"development_id\":\"D3\",\"development_title\":\"Elections and representation are re-engineered through gerrymanders and attacks on voting methods\",\"role\":\"primary\",\"why_it_supports_thread\":\"Adds attacks on mail voting, machines, proof-of-citizenship rules, and retaliatory mid-decade maps.\"},{\"week_number\":32,\"development_id\":\"D8\",\"development_title\":\"Elections and representation are reshaped through gerrymanders and attacks on voting methods\",\"role\":\"primary\",\"why_it_supports_thread\":\"Continues the mix of executive anti-mail-voting ideas and state redistricting maneuvers.\"},{\"week_number\":33,\"development_id\":\"D5\",\"development_title\":\"Elections and opposition targeted through voter restrictions and selective law enforcement\",\"role\":\"primary\",\"why_it_supports_thread\":\"Combines voter-ID and mail-voting restrictions with selective federal pressure on opposition-linked political infrastructure.\"},{\"week_number\":34,\"development_id\":\"D5\",\"development_title\":\"Elections and representation are quietly re-engineered through law and data\",\"role\":\"primary\",\"why_it_supports_thread\":\"Adds national voting database ambitions, emergency-election talk, and data-driven partisan control tools.\"},{\"week_number\":35,\"development_id\":\"D9\",\"development_title\":\"Elections, voting rules, and symbolic politics are reshaped under partisan pressure\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows gerrymanders, voter-data suits, and continued 2020 lie narratives supporting structural election manipulation.\"}],\"aliases\":[\"engineered representation\",\"gerrymander and voting-rule manipulation\",\"mail-voting attacks\",\"partisan election architecture\",\"representation engineering\"],\"inclusion_notes\":[\"Include mid-decade remaps, coercive redistricting, skewed census/population counting, and nationalized voter restriction schemes.\",\"Include voter-roll, proof-of-citizenship, and administrative data projects when aimed at narrowing access or empowering election-denier control.\",\"Include selective law-enforcement actions when directly tied to election competition or opposition fundraising.\"],\"exclusion_notes\":[\"Exclude generic rhetoric about election fraud unless tied to concrete administrative or legal changes.\",\"Exclude broader DOJ retaliation not specifically related to elections or representation.\"],\"boundary_notes\":[\"This thread concerns pre-election structural biasing of competition, not generic criminalization of dissent.\",\"Related to cand_LAW_AS_WEAPON_AND_SHIELD where enforcement targets ActBlue or officials, but here the core issue is electoral advantage.\"],\"related_candidate_ids\":[\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_FEDERAL_POWER_AND_DATA_COERCION\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.96,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Likely merge with labels such as election administration interference, voting-access restriction, or partisan map and roll engineering.\"],\"split_suggestions\":[\"Could later split into mapmaking/representation and voter-access/registration manipulation if yearwide evidence warrants.\"]},{\"candidate_id\":\"cand_EXECUTIVE_STATE_CAPTURE\",\"canonical_name\":\"Executive capture of neutral institutions, civil service, and oversight bodies\",\"short_name\":\"State capture\",\"description\":\"A recurring pattern in which the administration purges career officials, weakens unions and watchdogs, installs loyalists, strips independence from agencies, and converts neutral state capacity into an instrument of presidential or ideological control.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,31,32,33,35,36,37],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D1\",\"development_title\":\"Trump tightens personal control over economic and scientific data\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows punishment and replacement of neutral experts in statistical and scientific bodies.\"},{\"week_number\":30,\"development_id\":\"D5\",\"development_title\":\"Executive capture and hollowing-out of neutral institutions and public services\",\"role\":\"primary\",\"why_it_supports_thread\":\"Explicitly centers politicization and privatization of statistics, veterans' care, consumer protection, and aid institutions.\"},{\"week_number\":31,\"development_id\":\"D5\",\"development_title\":\"Civil service, unions, and independent data guardians are purged or politicized\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly captures union contract cancellations, loyalist appointments, and intimidation of independent officials.\"},{\"week_number\":32,\"development_id\":\"D5\",\"development_title\":\"Public health and emergency agencies are purged and politicized\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows firing agency heads, mass resignations, whistleblower retaliation, and political control over expert agencies.\"},{\"week_number\":33,\"development_id\":\"D3\",\"development_title\":\"Civil service, public health, and environmental agencies purged and politicized\",\"role\":\"primary\",\"why_it_supports_thread\":\"Expands the pattern across health, environment, social agencies, and public broadcasting.\"},{\"week_number\":35,\"development_id\":\"D6\",\"development_title\":\"Science and public health governance are politicized and hollowed out\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows advisory-body capture and grant centralization as part of broader state capture.\"},{\"week_number\":36,\"development_id\":\"D6\",\"development_title\":\"Civil service, military, and agencies reshaped through politicization and rollback of rights enforcement\",\"role\":\"primary\",\"why_it_supports_thread\":\"Connects purge threats, loyalty metrics, military restructuring, and weakened rights enforcement.\"},{\"week_number\":37,\"development_id\":\"D1\",\"development_title\":\"Shutdown and Budget Crisis Used to Purge Civil Service and Punish Blue Jurisdictions\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows fiscal crisis used to drive resignations and irreversible bureaucratic cuts.\"},{\"week_number\":37,\"development_id\":\"D7\",\"development_title\":\"Civil Service and Oversight Structures Politicized and Hollowed Out\",\"role\":\"primary\",\"why_it_supports_thread\":\"Focuses directly on mass resignations, loyalty staffing, watchdog weakening, and manipulation of neutral administration.\"}],\"aliases\":[\"administrative state capture\",\"bureaucratic politicization\",\"civil service purge\",\"loyalist staffing of agencies\",\"hollowing out neutral institutions\"],\"inclusion_notes\":[\"Include purges, forced resignations, loyalty appointments, union stripping, and watchdog weakening across agencies.\",\"Include agency politicization when the core issue is loss of institutional neutrality or protected expertise.\",\"Include shutdown or budget tactics when used to permanently restructure bureaucracy or oversight.\"],\"exclusion_notes\":[\"Exclude legal retaliation confined to DOJ/FBI unless the main point is broader institutional capture.\",\"Exclude standalone economic favoritism unless it changes agency independence or administrative capacity.\"],\"boundary_notes\":[\"Broader than DOJ weaponization: covers public health, statistics, labor relations, military culture, watchdogs, and oversight bodies across the state.\",\"Overlaps with cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION when data institutions are captured; here the emphasis is institutional control, not the content of narrative.\"],\"related_candidate_ids\":[\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION\",\"cand_SCIENCE_HEALTH_AND_EXPERTISE_POLITICIZED\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[\"cand_SCIENCE_HEALTH_AND_EXPERTISE_POLITICIZED\"],\"confidence\":0.98,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Likely merge with candidates labeled administrative state capture, civil-service purge, or neutral-institution hollowing.\"],\"split_suggestions\":[\"Public health/science capture may merit a child thread if it remains especially dense across other windows.\"]},{\"candidate_id\":\"cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION\",\"canonical_name\":\"Information control, archive management, propaganda, and public-memory manipulation\",\"short_name\":\"Information and memory control\",\"description\":\"A recurring thread in which the administration curates or suppresses records, pressures media and universities, spreads official disinformation, and reshapes public memory through archives, museums, symbols, public broadcasting, and narrative management.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,31,32,33,34,35,36,37,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D8\",\"development_title\":\"Information, archives, and education are curated to favor the regime\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly links archive removal, university pressure, lawsuits, mergers, and perception-shaping tools.\"},{\"week_number\":30,\"development_id\":\"D8\",\"development_title\":\"Control over history, information, and identity tightens across federal institutions\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows museum vetting, Confederate restoration, politicized intelligence disclosure, and naming/control of identity.\"},{\"week_number\":31,\"development_id\":\"D7\",\"development_title\":\"Trump escalates ideological control over information, history, and public memory\",\"role\":\"primary\",\"why_it_supports_thread\":\"Combines attacks on experts, statistics, Smithsonian exhibits, and curated foreign-policy narratives.\"},{\"week_number\":32,\"development_id\":\"D9\",\"development_title\":\"Media, memory, and culture are reshaped to favor state-aligned narratives\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows broadcast threats, public media cuts, architecture mandates, and symbolic curation.\"},{\"week_number\":33,\"development_id\":\"D7\",\"development_title\":\"Information space reshaped: public media weakened, disinformation and narrative control rise\",\"role\":\"primary\",\"why_it_supports_thread\":\"Links public-broadcast weakening with economic disinformation and Jan. 6 narrative management.\"},{\"week_number\":34,\"development_id\":\"D6\",\"development_title\":\"Information control and elite impunity: Epstein secrecy, intelligence meddling, and economic spin\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds secrecy, recalled accurate intelligence, and managed economic narrative.\"},{\"week_number\":34,\"development_id\":\"D9\",\"development_title\":\"AI, media, and propaganda tools are folded into an authoritarian messaging ecosystem\",\"role\":\"primary\",\"why_it_supports_thread\":\"Extends the thread through AI imagery, influencer embeds, disinformation, and retaliatory media pressure.\"},{\"week_number\":35,\"development_id\":\"D5\",\"development_title\":\"Media, academia, and public memory come under coordinated political and regulatory pressure\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows FCC/media intimidation, erasure of slavery and far-right violence from public record, and academic purges.\"},{\"week_number\":36,\"development_id\":\"D4\",\"development_title\":\"Media, archives, and satire targeted as the administration tightens narrative control\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly combines broadcast threats, press restrictions, archive misuse, and curated presidential memory.\"},{\"week_number\":37,\"development_id\":\"D6\",\"development_title\":\"Coordinated Information Warfare: Deepfakes, Pseudoscience, and Platform Pressure\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows official AI disinformation, partisan messaging, pressure on tech platforms, and suppression of independent voices.\"},{\"week_number\":37,\"development_id\":\"D9\",\"development_title\":\"Culture, Education, and History Rewritten to Legitimize State Power\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds university pressure, historical reinterpretation, and narrowed permissible discourse.\"},{\"week_number\":38,\"development_id\":\"D7\",\"development_title\":\"Information control, disinformation, and symbolic politics consolidate Trump’s narrative dominance\",\"role\":\"primary\",\"why_it_supports_thread\":\"Brings together press-access control, leak crackdowns, public-health misinformation, symbolic glorification, and memory politics.\"}],\"aliases\":[\"narrative control\",\"memory manipulation\",\"public-record curation\",\"propaganda ecosystem\",\"archive and media control\"],\"inclusion_notes\":[\"Include archive/records manipulation, media intimidation, public-broadcast weakening, museum/history curation, and official disinformation.\",\"Include education and university pressure when the core issue is knowledge control or public-memory shaping.\",\"Include symbolic politics and leader-glorification when they function as memory or narrative management.\"],\"exclusion_notes\":[\"Exclude ordinary bureaucratic politicization unless it primarily affects public information or records.\",\"Exclude legal secrecy if the main issue is prosecutorial favoritism rather than narrative control.\"],\"boundary_notes\":[\"Broader than press freedom alone: it includes archives, museums, education, symbols, AI propaganda, and public-memory curation.\",\"Related to cand_EXECUTIVE_STATE_CAPTURE, but this thread centers control over what the public knows, sees, or remembers.\"],\"related_candidate_ids\":[\"cand_EXECUTIVE_STATE_CAPTURE\",\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_SCIENCE_HEALTH_AND_EXPERTISE_POLITICIZED\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.99,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Likely merge with labels such as info control, records erasure, propaganda state, or memory politics.\"],\"split_suggestions\":[\"Could later split between media/press intimidation and archive-history-memory curation if later windows show each as robustly distinct.\"]},{\"candidate_id\":\"cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT\",\"canonical_name\":\"Security and terrorism framing used to criminalize protest, opposition, and dissent\",\"short_name\":\"Dissent as security threat\",\"description\":\"A recurring pattern in which protest, criticism, left-wing activism, or opposition politics are reframed as terrorism, criminality, or enemy action, enabling harsher prosecution, surveillance, and force against dissenters.\",\"scope_level\":\"thread\",\"supporting_weeks\":[30,32,33,35,36,37,38],\"supporting_developments\":[{\"week_number\":30,\"development_id\":\"D3\",\"development_title\":\"Security forces are repurposed for regime priorities at home and abroad\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows security institutions redirected toward ideological goals and intimidation of domestic opponents.\"},{\"week_number\":32,\"development_id\":\"D3\",\"development_title\":\"Emergency rhetoric and security forces are used to suppress protest and redefine dissent as crime\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly frames protest and reform politics as security threats used to justify crackdowns.\"},{\"week_number\":33,\"development_id\":\"D6\",\"development_title\":\"Protest, Epstein accountability, and DC policing collide in a contest over dissent\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows conspiracy charges against an ICE protester and militarized intimidation of oversight and survivors.\"},{\"week_number\":35,\"development_id\":\"D4\",\"development_title\":\"Law enforcement and courts are bent toward punishing enemies and shielding allies\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Includes RICO and civil-rights threats against protesters and ordinary critics.\"},{\"week_number\":35,\"development_id\":\"D3\",\"development_title\":\"Charlie Kirk’s killing is weaponized to expand security, punish dissent, and reshape media\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Shows speech and criticism recast as suspect or punishable after a political killing.\"},{\"week_number\":36,\"development_id\":\"D2\",\"development_title\":\"Domestic terrorism framing and security apparatus turned against dissent and immigrants\",\"role\":\"primary\",\"why_it_supports_thread\":\"Adds Antifa terrorism designation and protest-related security constriction.\"},{\"week_number\":36,\"development_id\":\"D8\",\"development_title\":\"Escalating eliminationist rhetoric and criminalization of opposition\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows explicit framing of critics as criminals or terrorists and normalization of violent rhetoric.\"},{\"week_number\":37,\"development_id\":\"D3\",\"development_title\":\"Militarization of Domestic Politics and the War Framing of Dissent\",\"role\":\"primary\",\"why_it_supports_thread\":\"Connects domestic unrest and opposition to wartime enemy framing.\"},{\"week_number\":38,\"development_id\":\"D6\",\"development_title\":\"Trump escalates direct attacks on political opponents, media, and protest as \\\"terrorism\\\"\",\"role\":\"primary\",\"why_it_supports_thread\":\"Centers explicit branding of donors, protests, and critics as terrorism targets.\"},{\"week_number\":38,\"development_id\":\"D2\",\"development_title\":\"White House flirts with Insurrection Act logic and new war powers to justify lethal force\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Provides the war-powers logic that can turn dissent into enemy action.\"}],\"aliases\":[\"criminalization of dissent\",\"terrorism framing against opponents\",\"protest as enemy action\",\"security framing of opposition\",\"left-wing dissent as terrorism\"],\"inclusion_notes\":[\"Include terrorism labels, enemy-combatant logic, protest prosecutions, and rhetoric redefining dissent as criminal or treasonous.\",\"Include state actions or official statements that justify extraordinary force or surveillance against protest or opposition groups.\",\"Include politically motivated escalation after high-profile violent events when used to punish critics collectively.\"],\"exclusion_notes\":[\"Exclude general lawfare unless dissent/protest/opposition is the specific target.\",\"Exclude city militarization when the focus is jurisdictional control rather than criminalization of dissent.\"],\"boundary_notes\":[\"Related to cand_MILITARIZED_DOMESTIC_CONTROL, but this thread emphasizes rhetorical/legal recoding of dissent as threat rather than operational city takeovers.\",\"Related to cand_LAW_AS_WEAPON_AND_SHIELD where prosecutions are used, but this thread is specifically about dissent and protest.\"],\"related_candidate_ids\":[\"cand_MILITARIZED_DOMESTIC_CONTROL\",\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_IMMIGRATION_AS_REPRESSION_AND_STRATIFIED_CITIZENSHIP\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.95,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"Could merge with labels like protest criminalization, terrorism rhetoric against dissent, or opposition-as-enemy framing.\"],\"split_suggestions\":[\"If needed, later split rhetorical demonization from concrete protest prosecutions and force deployment.\"]},{\"candidate_id\":\"cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE\",\"canonical_name\":\"Economic governance personalized through crony deals, tariffs, patronage, and donor-serving intervention\",\"short_name\":\"Crony economic governance\",\"description\":\"A recurring thread in which trade, industrial policy, aid, regulation, and public spending are centralized in presidential bargaining and used to reward allies, donors, politically useful sectors, or favored firms while offloading costs onto the public.\",\"scope_level\":\"thread\",\"supporting_weeks\":[29,30,32,35,36,37,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D6\",\"development_title\":\"Economic policy fuses protectionism, inequality, and crony capitalism\",\"role\":\"primary\",\"why_it_supports_thread\":\"Establishes tariffs, donor favors, and insider-oriented economic policy as a unified governing style.\"},{\"week_number\":29,\"development_id\":\"D9\",\"development_title\":\"Foreign money and private donors blur the line between public office and personal enrichment\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds direct foreign and donor influence to the economic patronage pattern.\"},{\"week_number\":30,\"development_id\":\"D6\",\"development_title\":\"State-capitalist deals and deregulation deepen crony control over the economy and environment\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows opaque White House bargaining with firms and sectoral favoritism.\"},{\"week_number\":32,\"development_id\":\"D6\",\"development_title\":\"Crony industrial policy and tariff shocks concentrate economic power in the presidency\",\"role\":\"primary\",\"why_it_supports_thread\":\"Centers federal equity stakes, contractor favoritism, and unilateral tariff changes as personalized economic power.\"},{\"week_number\":35,\"development_id\":\"D7\",\"development_title\":\"Labor, environment, and economic policy tilt sharply toward elite and corporate interests\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows deregulation, cuts, conflict-laden deals, and corporate-benefiting climate rollback.\"},{\"week_number\":36,\"development_id\":\"D7\",\"development_title\":\"Crony capitalism and disaster politics blur the line between governance and patronage\",\"role\":\"primary\",\"why_it_supports_thread\":\"Explicitly frames aid, FEMA decisions, and tariff-driven bailouts as donor and patronage politics.\"},{\"week_number\":36,\"development_id\":\"D5\",\"development_title\":\"Executive power expands abroad through unilateral strikes, tariffs, and aid reprogramming\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Adds use of trade and aid tools as ideologically or personally directed executive levers.\"},{\"week_number\":37,\"development_id\":\"D8\",\"development_title\":\"Targeted Economic and Social Policy to Entrench Inequality and Reward Allies\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows burdens shifted downward and benefits steered to favored corporations and constituencies.\"},{\"week_number\":38,\"development_id\":\"D9\",\"development_title\":\"Trade, tariffs, and corporate deals are personalized into instruments of presidential power\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly centers tariffs and bespoke corporate bargains as presidential tools of control.\"}],\"aliases\":[\"crony capitalism\",\"personalized economic governance\",\"state-capitalist dealmaking\",\"tariffs and patronage\",\"donor-driven economic policy\"],\"inclusion_notes\":[\"Include tariffs, trade threats, industrial policy, aid reprogramming, and public spending when driven by opaque bargaining or favoritism.\",\"Include donor-linked or allied-firm benefits, bespoke deals, and politically targeted project cancellations or bailouts.\",\"Include patronage uses of disaster or emergency economic tools.\"],\"exclusion_notes\":[\"Exclude broad inequality or welfare cuts unless tied to patronage, favoritism, or centralized bargaining.\",\"Exclude generic public-health or science policy unless economic favoritism is central.\"],\"boundary_notes\":[\"Distinct from cand_EXECUTIVE_POWER_BEYOND_CONSTRAINTS, which is about power assertion generally; this thread is specifically about economic and distributive governance.\",\"Related to cand_FEDERAL_POWER_AND_DATA_COERCION where fiscal tools punish opponents, but this thread emphasizes cronyism and patronage more than coercive compliance.\"],\"related_candidate_ids\":[\"cand_EXECUTIVE_POWER_BEYOND_CONSTRAINTS\",\"cand_FEDERAL_POWER_AND_DATA_COERCION\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.94,\"continuity_assessment\":\"recurring\",\"merge_suggestions\":[\"Likely merge with crony capitalism, patronage economics, or personalized tariff-and-deal governance labels.\"],\"split_suggestions\":[\"Could later split trade/tariff personalization from donor/patronage spending if the yearwide corpus distinguishes them clearly.\"]},{\"candidate_id\":\"cand_SCIENCE_HEALTH_AND_EXPERTISE_POLITICIZED\",\"canonical_name\":\"Science, public health, and expert knowledge subordinated to ideology and loyalty\",\"short_name\":\"Science and health politicized\",\"description\":\"A recurring but narrower thread in which scientific agencies, vaccine policy, medical expertise, and health data are purged, manipulated, or subordinated to ideological narratives and political loyalty.\",\"scope_level\":\"sub_thread\",\"supporting_weeks\":[29,31,32,33,34,35,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D1\",\"development_title\":\"Trump tightens personal control over economic and scientific data\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows scientific and health data pressured to conform to political narrative.\"},{\"week_number\":31,\"development_id\":\"D7\",\"development_title\":\"Trump escalates ideological control over information, history, and public memory\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Includes attacks on vaccine and medical experts as part of the broader narrative-control project.\"},{\"week_number\":32,\"development_id\":\"D5\",\"development_title\":\"Public health and emergency agencies are purged and politicized\",\"role\":\"primary\",\"why_it_supports_thread\":\"Centers firing CDC leadership, mass resignations, and politically driven vaccine restrictions.\"},{\"week_number\":33,\"development_id\":\"D3\",\"development_title\":\"Civil service, public health, and environmental agencies purged and politicized\",\"role\":\"primary\",\"why_it_supports_thread\":\"Continues health-agency cuts, vaccine rollback, and retaliation against dissenting experts.\"},{\"week_number\":34,\"development_id\":\"D7\",\"development_title\":\"Public health, science, and climate policy are bent toward ideology and donor interests\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows antivaccine turns, science grant cuts, and ideologically driven health and climate policy.\"},{\"week_number\":35,\"development_id\":\"D6\",\"development_title\":\"Science and public health governance are politicized and hollowed out\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly captures advisory-body purge, CDC firing, contract cancellation, and centralized research control.\"},{\"week_number\":38,\"development_id\":\"D7\",\"development_title\":\"Information control, disinformation, and symbolic politics consolidate Trump’s narrative dominance\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Extends the pattern with high-level vaccine-autism misinformation and expert backlash.\"}],\"aliases\":[\"public health capture\",\"vaccine and science politicization\",\"expertise subordinated to ideology\",\"health-agency purge\",\"anti-expert public health governance\"],\"inclusion_notes\":[\"Include purges of scientific or public-health leadership, politicized vaccine guidance, and suppression or manipulation of health expertise.\",\"Include medical or scientific disinformation when it is backed by official institutions or used to restructure policy.\"],\"exclusion_notes\":[\"Exclude general media disinformation unless public-health expertise is central.\",\"Exclude broad agency capture if science/health-specific mechanisms are not salient.\"],\"boundary_notes\":[\"This is a narrower child of broader state capture and information-control dynamics.\",\"Kept separate because health and scientific expertise recur with distinctive institutions, harms, and tactics across the window.\"],\"related_candidate_ids\":[\"cand_EXECUTIVE_STATE_CAPTURE\",\"cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION\"],\"possible_parent_candidate_id\":\"cand_EXECUTIVE_STATE_CAPTURE\",\"possible_child_candidate_ids\":[],\"confidence\":0.9,\"continuity_assessment\":\"sustained\",\"merge_suggestions\":[\"May merge upward into administrative state capture in some catalogues, but worth preserving if science/health remains a distinct long-run arc.\"],\"split_suggestions\":[]},{\"candidate_id\":\"cand_FEDERAL_POWER_AND_DATA_COERCION\",\"canonical_name\":\"Federal funding, data systems, and administrative levers used to coerce compliance and conceal harms\",\"short_name\":\"Federal coercion via funds and data\",\"description\":\"An emergent thread in the later half of the window in which the administration uses grants, aid, shutdown conditions, voter-roll demands, statistical suppression, and record systems to pressure states and localities while limiting visibility into policy effects.\",\"scope_level\":\"thread\",\"supporting_weeks\":[36,37,38],\"supporting_developments\":[{\"week_number\":36,\"development_id\":\"D3\",\"development_title\":\"Federal power and data weaponized against disfavored states, voters, and communities\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly centers coercive use of grants, voter-roll suits, and suppression of economic/social data.\"},{\"week_number\":37,\"development_id\":\"D1\",\"development_title\":\"Shutdown and Budget Crisis Used to Purge Civil Service and Punish Blue Jurisdictions\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows shutdown and budget tools turned into selective punishment against Democratic-leaning areas and oversight bodies.\"},{\"week_number\":38,\"development_id\":\"D4\",\"development_title\":\"Shutdown becomes a weapon to punish opponents and weaken the federal workforce\",\"role\":\"primary\",\"why_it_supports_thread\":\"Continues targeted project cancellation, back-pay threats, furloughing of oversight, and partisan restructuring via fiscal leverage.\"}],\"aliases\":[\"coercive federal funding\",\"data suppression as governance\",\"administrative leverage against states\",\"grant and statistics coercion\",\"federal compliance pressure\"],\"inclusion_notes\":[\"Include coercive grant conditions, selective freezes, voter-roll or data demands, and suppression of official statistics when used to force political compliance.\",\"Include shutdown-based fiscal leverage where it specifically targets opponents or obscures harms.\"],\"exclusion_notes\":[\"Exclude general patronage economics focused on favored firms rather than coercion of jurisdictions or communities.\",\"Exclude archive or media control unless the main mechanism is administrative data suppression or records leverage.\"],\"boundary_notes\":[\"Adjacent to cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE, but here the emphasis is coercion and concealment rather than rewarding insiders.\",\"Could also overlap with cand_ELECTIONS_AND_REPRESENTATION_ENGINEERING when voter-roll systems are involved; include only when the main pattern is federal administrative leverage.\"],\"related_candidate_ids\":[\"cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE\",\"cand_ELECTIONS_AND_REPRESENTATION_ENGINEERING\",\"cand_EXECUTIVE_STATE_CAPTURE\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[],\"confidence\":0.82,\"continuity_assessment\":\"emergent\",\"merge_suggestions\":[\"Might later merge with shutdown-as-weapon, data suppression, or federal leverage against blue states candidates from adjacent windows.\"],\"split_suggestions\":[\"If the yearwide corpus supports it, could split into funding coercion and statistics/data suppression.\"]},{\"candidate_id\":\"cand_EXECUTIVE_POWER_BEYOND_CONSTRAINTS\",\"canonical_name\":\"Executive power asserted beyond statutory, judicial, and institutional constraints\",\"short_name\":\"Executive overreach\",\"description\":\"A recurring umbrella-level pattern in which the presidency treats statutes, courts, congressional prerogatives, and independent institutions as optional, using unilateral action at home and abroad to widen personal discretion.\",\"scope_level\":\"super_thread\",\"supporting_weeks\":[29,30,33,35,36,38],\"supporting_developments\":[{\"week_number\":29,\"development_id\":\"D7\",\"development_title\":\"Executive power and security forces are deployed for spectacle and personal leverage\",\"role\":\"primary\",\"why_it_supports_thread\":\"Introduces broad use of executive and security powers for personal and partisan leverage.\"},{\"week_number\":30,\"development_id\":\"D1\",\"development_title\":\"Trump moves to seize lasting control over Washington, D.C. policing and governance\",\"role\":\"secondary\",\"why_it_supports_thread\":\"Provides a domestic example of stretching executive authority over local self-government.\"},{\"week_number\":33,\"development_id\":\"D1\",\"development_title\":\"Trump centralizes power through executive orders, military symbolism, and security-state moves\",\"role\":\"primary\",\"why_it_supports_thread\":\"Directly frames executive orders and security-state control as tools for centralized personal power.\"},{\"week_number\":35,\"development_id\":\"D8\",\"development_title\":\"Executive power stretches past legal and institutional constraints at home and abroad\",\"role\":\"primary\",\"why_it_supports_thread\":\"Explicitly centers defiance or testing of statutory and judicial limits.\"},{\"week_number\":36,\"development_id\":\"D5\",\"development_title\":\"Executive power expands abroad through unilateral strikes, tariffs, and aid reprogramming\",\"role\":\"primary\",\"why_it_supports_thread\":\"Shows foreign-policy and economic powers used with minimal regard for oversight or normal process.\"},{\"week_number\":38,\"development_id\":\"D2\",\"development_title\":\"White House flirts with Insurrection Act logic and new war powers to justify lethal force\",\"role\":\"primary\",\"why_it_supports_thread\":\"Provides extreme legal-theory expansion of unilateral presidential power.\"}],\"aliases\":[\"executive aggrandizement\",\"presidential rule beyond checks\",\"personalized unilateral power\",\"presidency beyond constraints\"],\"inclusion_notes\":[\"Use as an umbrella for recurring patterns of unilateralism across domestic security, foreign policy, and administrative control.\",\"Include developments where the key point is bypassing or neutralizing courts, Congress, statutes, or independent institutions.\"],\"exclusion_notes\":[\"Do not use as a catch-all for every authoritarian development; specific operational threads should remain distinct beneath it.\"],\"boundary_notes\":[\"This is intentionally broad and should function as a super-thread rather than replacing more precise threads.\",\"Children likely include militarized domestic control, crony economic governance, and law as weapon/shield where overreach is central.\"],\"related_candidate_ids\":[\"cand_MILITARIZED_DOMESTIC_CONTROL\",\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE\"],\"possible_parent_candidate_id\":null,\"possible_child_candidate_ids\":[\"cand_MILITARIZED_DOMESTIC_CONTROL\",\"cand_LAW_AS_WEAPON_AND_SHIELD\",\"cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE\"],\"confidence\":0.84,\"continuity_assessment\":\"recurring\",\"merge_suggestions\":[\"May merge into a broader yearwide category such as executive aggrandizement if multiple windows produce similar umbrella candidates.\"],\"split_suggestions\":[\"Keep as umbrella only; avoid splitting unless later phases require a narrower legal-overreach thread separate from domestic militarization and foreign-policy unilateralism.\"]}],\"notes_on_window\":[\"This window shows especially strong continuity in immigration repression, information control, militarized domestic governance, and weaponized law.\",\"Several weeks pair operational coercion with narrative or legal justification; later consolidation may find repeated coupling between domestic militarization, dissent criminalization, and information manipulation.\",\"Election-engineering is strongest in weeks 29-35 and less central in weeks 36-38, suggesting a sustained but not omnipresent thread within this window.\",\"A later-window emergent pattern is use of shutdowns, grants, statistics, and records systems as coercive administrative leverage against states, workers, and oversight.\"],\"rejected_or_folded_candidates\":[{\"label\":\"D.C. Home Rule takeover\",\"reason\":\"Too narrow as a standalone year-level thread candidate within this window; folded into broader militarized domestic control.\",\"folded_into_candidate_id\":\"cand_MILITARIZED_DOMESTIC_CONTROL\"},{\"label\":\"Charlie Kirk martyrdom politics\",\"reason\":\"Important recurring cluster across weeks 34-35 but too event-contingent to stand alone as a durable year-level thread; folded into criminalization of dissent and information/memory control.\",\"folded_into_candidate_id\":\"cand_SECURITY_FRAME_CRIMINALIZATION_OF_DISSENT\"},{\"label\":\"Epstein secrecy\",\"reason\":\"Strong recurring motif, but in this window it functions mainly as evidence within broader law-as-weapon-and-shield and information-control threads rather than a fully independent continuity thread.\",\"folded_into_candidate_id\":\"cand_LAW_AS_WEAPON_AND_SHIELD\"},{\"label\":\"Christian nationalism in the Pentagon\",\"reason\":\"Present but not broad enough across the full window to justify a separate top-level thread here; folded into executive state capture and civil-rights rollback boundaries.\",\"folded_into_candidate_id\":\"cand_EXECUTIVE_STATE_CAPTURE\"},{\"label\":\"Public media defunding\",\"reason\":\"Too narrow on its own; better treated as one mechanism within broader information control and memory manipulation.\",\"folded_into_candidate_id\":\"cand_INFORMATION_CONTROL_AND_MEMORY_MANIPULATION\"},{\"label\":\"Labor protections rollback\",\"reason\":\"Recurring but often embedded in broader state-capture and crony-economic-governance stories rather than consistently distinct across the window.\",\"folded_into_candidate_id\":\"cand_CRONY_ECONOMIC_GOVERNANCE_AND_PATRONAGE\"},{\"label\":\"Foreign policy tilt toward Russia\",\"reason\":\"Visible in week 31 but not sufficiently recurrent across the full window to form a strong continuity candidate here.\",\"folded_into_candidate_id\":null}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": null,
+  "reasoning": {
+    "effort": "none",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": true,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "phase1_candidate_threads",
+      "schema": {
+        "title": "Trump Diary Phase 1 Candidate Threads",
+        "description": "LLM-produced candidate continuity threads derived from one overlapping discovery window of weekly development allocator files.",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema_name",
+          "schema_version",
+          "package_type",
+          "source_window",
+          "build",
+          "candidate_threads",
+          "notes_on_window",
+          "rejected_or_folded_candidates"
+        ],
+        "properties": {
+          "schema_name": {
+            "type": "string",
+            "const": "phase1_candidate_threads"
+          },
+          "schema_version": {
+            "type": "string",
+            "const": "1.0"
+          },
+          "package_type": {
+            "type": "string",
+            "const": "thread_discovery_candidates"
+          },
+          "source_window": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "window_id",
+              "start_week",
+              "end_week",
+              "week_count",
+              "week_numbers"
+            ],
+            "properties": {
+              "window_id": {
+                "type": "string",
+                "pattern": "^window_[0-9]{3}$"
+              },
+              "start_week": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "end_week": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "week_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "week_numbers": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            }
+          },
+          "build": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "created_at",
+              "created_by",
+              "model",
+              "run_id",
+              "prompt_version"
+            ],
+            "properties": {
+              "created_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "model": {
+                "type": "string"
+              },
+              "run_id": {
+                "type": "string"
+              },
+              "prompt_version": {
+                "type": "string"
+              }
+            }
+          },
+          "candidate_threads": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/candidate_thread"
+            }
+          },
+          "notes_on_window": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rejected_or_folded_candidates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/rejected_candidate"
+            }
+          }
+        },
+        "$defs": {
+          "candidate_thread": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "candidate_id",
+              "canonical_name",
+              "short_name",
+              "description",
+              "scope_level",
+              "supporting_weeks",
+              "supporting_developments",
+              "aliases",
+              "inclusion_notes",
+              "exclusion_notes",
+              "boundary_notes",
+              "related_candidate_ids",
+              "possible_parent_candidate_id",
+              "possible_child_candidate_ids",
+              "confidence",
+              "continuity_assessment",
+              "merge_suggestions",
+              "split_suggestions"
+            ],
+            "properties": {
+              "candidate_id": {
+                "type": "string",
+                "pattern": "^cand_[A-Z0-9_]{3,80}$"
+              },
+              "canonical_name": {
+                "type": "string",
+                "minLength": 3
+              },
+              "short_name": {
+                "type": "string",
+                "minLength": 3
+              },
+              "description": {
+                "type": "string",
+                "minLength": 10
+              },
+              "scope_level": {
+                "type": "string",
+                "enum": [
+                  "super_thread",
+                  "thread",
+                  "sub_thread"
+                ]
+              },
+              "supporting_weeks": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "supporting_developments": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/supporting_development"
+                }
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "inclusion_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "exclusion_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "boundary_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "related_candidate_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^cand_[A-Z0-9_]{3,80}$"
+                }
+              },
+              "possible_parent_candidate_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^cand_[A-Z0-9_]{3,80}$"
+              },
+              "possible_child_candidate_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^cand_[A-Z0-9_]{3,80}$"
+                }
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "continuity_assessment": {
+                "type": "string",
+                "enum": [
+                  "emergent",
+                  "recurring",
+                  "sustained",
+                  "unclear"
+                ]
+              },
+              "merge_suggestions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "split_suggestions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "supporting_development": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "week_number",
+              "development_id",
+              "development_title",
+              "role",
+              "why_it_supports_thread"
+            ],
+            "properties": {
+              "week_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "development_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "development_title": {
+                "type": "string",
+                "minLength": 3
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "primary",
+                  "secondary",
+                  "contextual"
+                ]
+              },
+              "why_it_supports_thread": {
+                "type": "string"
+              }
+            }
+          },
+          "rejected_candidate": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "reason",
+              "folded_into_candidate_id"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "folded_into_candidate_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^cand_[A-Z0-9_]{3,80}$"
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 75688,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 10824,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 86512
+  },
+  "user": null,
+  "metadata": {}
+}

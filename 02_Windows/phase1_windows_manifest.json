@@ -1,0 +1,272 @@
+{
+  "schema_name": "phase1_windows_manifest",
+  "schema_version": "1.0",
+  "program_name": "build_phase1_windows_v1",
+  "program_version": "1.0.0",
+  "created_at": "2026-03-09T09:45:52Z",
+  "run_id": "20260309T094552Z",
+  "parameters": {
+    "week": 1,
+    "weeks": 53,
+    "end_week": 53,
+    "window_size": 10,
+    "stride": 4,
+    "dormancy_window": 5,
+    "source_root": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks",
+    "output_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows",
+    "prompt_template": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/12_Prompts/phase1_discovery_prompt_v1.md",
+    "dry_run": false,
+    "force": false,
+    "level": "info"
+  },
+  "window_count": 13,
+  "windows": [
+    {
+      "window_id": "window_001",
+      "start_week": 1,
+      "end_week": 10,
+      "week_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_001_weeks_01_10.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_001_weeks_01_10_request.md"
+    },
+    {
+      "window_id": "window_002",
+      "start_week": 5,
+      "end_week": 14,
+      "week_numbers": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_002_weeks_05_14.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_002_weeks_05_14_request.md"
+    },
+    {
+      "window_id": "window_003",
+      "start_week": 9,
+      "end_week": 18,
+      "week_numbers": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_003_weeks_09_18.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_003_weeks_09_18_request.md"
+    },
+    {
+      "window_id": "window_004",
+      "start_week": 13,
+      "end_week": 22,
+      "week_numbers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_004_weeks_13_22.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_004_weeks_13_22_request.md"
+    },
+    {
+      "window_id": "window_005",
+      "start_week": 17,
+      "end_week": 26,
+      "week_numbers": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_005_weeks_17_26.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_005_weeks_17_26_request.md"
+    },
+    {
+      "window_id": "window_006",
+      "start_week": 21,
+      "end_week": 30,
+      "week_numbers": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_006_weeks_21_30.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_006_weeks_21_30_request.md"
+    },
+    {
+      "window_id": "window_007",
+      "start_week": 25,
+      "end_week": 34,
+      "week_numbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_007_weeks_25_34.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_007_weeks_25_34_request.md"
+    },
+    {
+      "window_id": "window_008",
+      "start_week": 29,
+      "end_week": 38,
+      "week_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_008_weeks_29_38.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_008_weeks_29_38_request.md"
+    },
+    {
+      "window_id": "window_009",
+      "start_week": 33,
+      "end_week": 42,
+      "week_numbers": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_009_weeks_33_42.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_009_weeks_33_42_request.md"
+    },
+    {
+      "window_id": "window_010",
+      "start_week": 37,
+      "end_week": 46,
+      "week_numbers": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_010_weeks_37_46.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_010_weeks_37_46_request.md"
+    },
+    {
+      "window_id": "window_011",
+      "start_week": 41,
+      "end_week": 50,
+      "week_numbers": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_011_weeks_41_50.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_011_weeks_41_50_request.md"
+    },
+    {
+      "window_id": "window_012",
+      "start_week": 44,
+      "end_week": 53,
+      "week_numbers": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_012_weeks_44_53.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_012_weeks_44_53_request.md"
+    },
+    {
+      "window_id": "window_013",
+      "start_week": 45,
+      "end_week": 53,
+      "week_numbers": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "json_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_013_weeks_45_53.json",
+      "request_md_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/02_Windows/window_013_weeks_45_53_request.md"
+    }
+  ],
+  "git_commit": "32a21995d1826753d4b9ddf481c7bde8dbbe57cd"
+}

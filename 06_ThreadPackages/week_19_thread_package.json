@@ -1,0 +1,555 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 19
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "1.0",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_09d09a6fd54ec2ac0069af9a95ba68819eb55fd4c63e444ee5"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 19/step5_narrative_week19_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 19/development_allocator_week19.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 19/weekly_digest_week19.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_18_thread_package.json"
+  },
+  "week": {
+    "week_number": 19,
+    "start_date": "2025-05-24",
+    "end_date": "2025-05-30",
+    "headline": "The nineteenth week of Trump’s second term did not hinge on a single order or speech.",
+    "summary": "The nineteenth week of Trump’s second term did not hinge on a single order or speech. It unfolded instead as a set of linked campaigns, each aimed at a different institution that once stood between the presidency and unchecked power. Immigration courts, universities, public broadcasters, museums, and school boards all found themselves drawn into the same struggle: whether law and policy would serve a broad public, or the preferences and grievances of a single leader and his allies. The pattern w"
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary/headline",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration courts drawn into broader institutional struggle",
+          "why_it_matters": "The week summary explicitly names immigration courts as one of the institutions targeted, indicating that immigration machinery remains an active arena for coercive control."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week19.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration and asylum policy remains part of week’s linked campaigns",
+          "why_it_matters": "The digest is identified as a core source and the week summary frames immigration as part of a larger pattern, supporting continued salience rather than a one-off mention."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week19.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator includes immigration developments in week structure",
+          "why_it_matters": "Allocator presence would indicate this thread is one of the week’s actively developed tracks rather than residual context."
+        }
+      ],
+      "summary": "Immigration remains one of the clearest operational tools of coercion this week, with immigration courts and related status machinery functioning as active sites where executive preference seeks to override neutral process.",
+      "continuity_notes": [
+        "This is not a new thread; it extends one of the administration’s strongest year-long continuities.",
+        "The week appears to shift emphasis from border rhetoric alone toward institutional use of courts and status process as domestic control machinery.",
+        "If prior week 18 also featured immigration pressure, this week should read as an escalation in breadth rather than a reset."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Universities among main institutional targets",
+          "why_it_matters": "The summary explicitly identifies universities as one of the institutions under pressure, making civil-society coercion a central explanatory frame for the week."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Museums and school boards also pressured",
+          "why_it_matters": "The pressure campaign extends beyond campuses into adjacent civic institutions, reinforcing the thread’s logic of disciplining semi-independent bodies."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week19.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Federal leverage applied across knowledge and civic institutions",
+          "why_it_matters": "The digest context supports reading these incidents as coordinated status and funding pressure rather than isolated disputes."
+        }
+      ],
+      "summary": "This week strongly foregrounds federal coercion of universities and related civic institutions, using pressure on funding, legitimacy, and institutional standing to force compliance from bodies that can host dissent or independent expertise.",
+      "continuity_notes": [
+        "The thread is clearly active and continuing from prior campus-focused weeks.",
+        "Week 19 broadens the institutional map beyond campuses alone, suggesting a larger ecosystem of pressure on civil society.",
+        "In rewrite, connect university pressure to the same method being tested against museums and school governance."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Public broadcasters and museums targeted",
+          "why_it_matters": "These are classic knowledge and memory institutions; pressure on them fits directly into the thread’s core pattern of controlling what the public can know and remember."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "headline/summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed as struggle over institutions that mediate public understanding",
+          "why_it_matters": "The narrative frame itself emphasizes manipulation of public-facing institutions rather than only administrative or legal action."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week19.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Cultural and informational institutions drawn into presidential grievance politics",
+          "why_it_matters": "This supports treating the week as an information-and-memory-control week, not merely an education or culture-war week."
+        }
+      ],
+      "summary": "Control over public knowledge and memory is one of the week’s dominant themes, with broadcasters, museums, and education-linked institutions pressured as channels through which the administration can reshape public understanding and legitimacy.",
+      "continuity_notes": [
+        "This thread has been present across the year and remains highly adaptive, now expressed through pressure on cultural and public-information institutions.",
+        "The rewrite should emphasize that memory politics is not symbolic excess here; it is part of governing method.",
+        "Strong overlap with civil-society coercion, but this thread better captures why museums and broadcasters matter."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Multiple institutions subjected to linked presidential campaigns",
+          "why_it_matters": "The coordinated sweep across unrelated institutions implies an expansion of executive reach beyond ordinary policy domains."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "headline",
+          "event_id": null,
+          "development_id": null,
+          "title": "No single order dominated; pattern was cumulative institutional encroachment",
+          "why_it_matters": "The lack of one dramatic decree suggests overreach is expressed through accumulated unilateral pressure rather than one flagship emergency act."
+        }
+      ],
+      "summary": "Executive overreach is present as the constitutional method underlying the week’s dispersed pressure campaigns, even if no single emergency declaration or court-defiance episode defines the week on its own.",
+      "continuity_notes": [
+        "Treat this as a framing layer rather than the week’s most concrete storyline.",
+        "The thread helps explain the connective tissue among actions against courts, universities, and public institutions.",
+        "Use sparingly so it does not flatten more specific threads."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutions once standing between presidency and unchecked power are targeted",
+          "why_it_matters": "This phrasing points to a governing strategy of subordinating neutral institutions, which aligns with administrative capture even when staffing details are not foregrounded."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week19.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week organized around institutional subordination rather than isolated policy disputes",
+          "why_it_matters": "Allocator-level structuring implies agency and institutional control as an active governing method."
+        }
+      ],
+      "summary": "Administrative capture is not the most visible face of the week, but it underlies the effort to repurpose institutions away from neutral public service and toward loyalist political ends.",
+      "continuity_notes": [
+        "This thread should be present as mechanism, not lead drama.",
+        "Connect it to the week’s broader campaign against mediating institutions rather than treating it as a personnel story alone.",
+        "Useful bridge between executive overreach and information/civil-society pressure."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "School boards and public institutions pulled into same struggle over whose preferences policy serves",
+          "why_it_matters": "This indicates fights over recognition, curriculum, and belonging, not just bureaucratic process."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "summary phrase on law and policy serving broad public or one leader’s grievances",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutions pressured to align with ideological grievance",
+          "why_it_matters": "The week’s conflict appears to reorder public recognition and inclusion along ideological lines, a hallmark of the anti-equality thread."
+        }
+      ],
+      "summary": "The week’s institutional campaigns also carry a rights-and-belonging dimension, especially where schools, cultural institutions, and immigration systems are pressured to reflect a narrower, grievance-driven hierarchy of who counts.",
+      "continuity_notes": [
+        "Keep this thread connected to specific institutions rather than abstract culture-war language.",
+        "It supports the week but should not outrank the more concrete institutional-control threads.",
+        "Useful in passages about education, citizenship, and public recognition."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration courts named as active battlefield",
+          "why_it_matters": "Once courts and legal process are used as instruments in a broader pressure campaign, the asymmetrical use of law becomes part of the week’s structure."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "summary framing of institutions serving leader preferences",
+          "event_id": null,
+          "development_id": null,
+          "title": "Law and policy bent toward personal grievance",
+          "why_it_matters": "This suggests legal machinery is being redirected from neutral adjudication toward partisan or personal ends."
+        }
+      ],
+      "summary": "Legal process appears this week less as headline prosecution drama than as an enabling instrument through which institutions, especially immigration adjudication, are bent toward punishing the disfavored and serving executive preference.",
+      "continuity_notes": [
+        "Do not overstate this thread if the week lacks a marquee DOJ or prosecution episode.",
+        "Use it where court process itself becomes selective or coercive.",
+        "Overlap with immigration and executive overreach should be acknowledged, not duplicated."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "headline/summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week emphasis falls on institutional coercion rather than insider enrichment",
+          "why_it_matters": "The absence of a clear patronage or enrichment mechanism suggests this thread remains part of broader context but is not a weekly driver."
+        }
+      ],
+      "summary": "Crony capitalism is not a central organizing thread this week; any private-state fusion is secondary to the more visible campaign to discipline institutions.",
+      "continuity_notes": [
+        "If mentioned at all, treat as background governing style rather than a weekly subject.",
+        "Do not force an enrichment angle onto stories that are fundamentally about institutional control."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week focused on pressure campaigns against institutions, not force deployments",
+          "why_it_matters": "The week’s coercion appears administrative, legal, and cultural rather than centered on overt domestic security action."
+        }
+      ],
+      "summary": "Domestic militarization is not directly developed this week, but it remains relevant as a nearby escalation path whenever institutional coercion against dissent hardens into force-based enforcement.",
+      "continuity_notes": [
+        "Best used as shadow context, not active narrative material.",
+        "Avoid importing later-year militarization logic unless a concrete event in the week justifies it."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "No election-administration or representation mechanism foregrounded",
+          "why_it_matters": "The week’s institutional conflicts do not appear to center on voting rules, representation, or electoral administration."
+        }
+      ],
+      "summary": "Election engineering does not meaningfully shape this week’s narrative and should not be imported into the rewrite.",
+      "continuity_notes": [
+        "Omit unless a specific source item in the digest directly ties one event to voting or representation rules."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutions that once stood between presidency and unchecked power come under pressure",
+          "why_it_matters": "This signals a turn toward neutralizing potential sites of organized dissent, scrutiny, and counterpower."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "summary mention of public broadcasters and universities",
+          "event_id": null,
+          "development_id": null,
+          "title": "Independent venues for criticism and inquiry targeted",
+          "why_it_matters": "These institutions are not merely cultural sites; they are social bases for dissent and public scrutiny."
+        }
+      ],
+      "summary": "Although not framed mainly as street-protest repression, the week revives the anti-dissent thread by targeting institutions that sustain criticism, inquiry, and organized opposition to personal rule.",
+      "continuity_notes": [
+        "This is a softer reactivation than a police crackdown, so keep the tone calibrated.",
+        "Useful as a connective background thread linking broadcasters, campuses, and civic institutions.",
+        "Mark as reborn only because the week appears to re-center suppression of independent opposition after more institution-specific prior framing."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Museums are targeted, but summary emphasizes control rather than leader glorification",
+          "why_it_matters": "The evidence points to memory and institutional control more than explicit personalist symbolism."
+        }
+      ],
+      "summary": "The week touches cultural institutions, but not in a way that clearly foregrounds leader glorification as a distinct sub-thread.",
+      "continuity_notes": [
+        "If museums appear in rewrite, keep them under information control unless explicit glorification material exists."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "No Epstein-related archival or disclosure fight indicated",
+          "why_it_matters": "Nothing in the supplied week framing suggests this late-year sub-thread is active here."
+        }
+      ],
+      "summary": "This sub-thread is not part of week 19 and should be omitted.",
+      "continuity_notes": [
+        "No rewrite value for this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed primarily through institutional pressure, not successful pushback",
+          "why_it_matters": "Resistance may exist in background, but it is not one of the week’s main narrative drivers based on supplied framing."
+        }
+      ],
+      "summary": "Countervailing resistance is not absent from the broader story, but the supplied week framing emphasizes offensive pressure on institutions more than effective institutional pushback.",
+      "continuity_notes": [
+        "If any resistance appears, treat it as partial guardrail rather than a lead arc.",
+        "Do not let defensive responses dilute the week’s main story of coordinated pressure."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    }
+  ],
+  "week_summary_notes": [
+    "Week 19 is best understood as a multi-front campaign against mediating institutions rather than a single flagship executive act.",
+    "The strongest collision is among immigration control, civil-society coercion, and information/memory politics; these threads explain the week together better than any one umbrella alone.",
+    "Executive overreach and administrative capture matter mainly as enabling methods behind the more concrete institutional targets.",
+    "The week’s narrative emphasis should stay on how distinct institutions were drawn into one shared logic of personalist control.",
+    "Several threads are relevant only as context; forcing election, crony, or militarization material would overcomplicate the rewrite."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+    ],
+    "supporting_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY"
+    ],
+    "background_threads": [
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_downplay": [
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_omit": [
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open with the idea that the week did not turn on one decree but on a coordinated campaign against institutions that mediate belonging, knowledge, and restraint—immigration courts, universities, broadcasters, museums, and schools.",
+    "closing_focus": "Close by stressing that the administration’s project this week was to make once-independent institutions serve presidential grievance and preference, revealing a broader method of rule rather than a single controversy.",
+    "continuity_emphasis_notes": [
+      "Emphasize continuity from prior weeks in the use of immigration and campus pressure as recurring tools of control.",
+      "Show how information control now extends beyond media fights into museums, broadcasters, and education-linked institutions.",
+      "Frame executive overreach as dispersed and cumulative: the week’s power grab is real precisely because it is distributed across many institutions.",
+      "Where possible, connect legal and administrative mechanisms to the same underlying effort to hollow out neutral intermediaries between leader and public life."
+    ]
+  }
+}

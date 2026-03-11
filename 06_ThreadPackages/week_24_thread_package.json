@@ -1,0 +1,535 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 24
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "1.0",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_0c632244458611770069af9c0e7e648190942254470f63043a"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 24/step5_narrative_week24_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 24/development_allocator_week24.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 24/weekly_digest_week24.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_23_thread_package.json"
+  },
+  "week": {
+    "week_number": 24,
+    "start_date": "2025-06-28",
+    "end_date": "2025-07-04",
+    "headline": "The twenty-fourth week of Trump’s second term unfolded as a week of hardwiring.",
+    "summary": "The twenty-fourth week of Trump’s second term unfolded as a week of hardwiring. What had been signaled in speeches and trial balloons in earlier weeks was now written into statute, case law, and budget lines. The pattern was not a single shock but a set of converging moves: a vast tax-and-spending package, a Supreme Court willing to shield the presidency and fragment rights, and an immigration and enforcement system expanded and repurposed as a tool of rule. The surface language was familiar—gro"
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed as power being written into statute and case law",
+          "why_it_matters": "The week summary explicitly centers durable institutional ratification of presidential power, making weakened checks and expanded executive discretion a principal explanatory frame."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week24.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Supreme Court willing to shield the presidency",
+          "why_it_matters": "Judicial decisions that protect presidential authority and narrow remedies fit the core constitutional pattern of executive aggrandizement through weakened checks."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week24.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Tax-and-spending package as governing hardwire",
+          "why_it_matters": "A large budget package becomes part of the mechanism that converts prior unilateral ambitions into durable governing capacity, reinforcing executive reach rather than merely signaling it."
+        }
+      ],
+      "summary": "This week’s constitutional story is not merely rhetoric about strong leadership but the embedding of executive advantage in doctrine and governing machinery. Court protection and statutory design together make executive overreach one of the main frames for understanding the week.",
+      "continuity_notes": [
+        "Carries directly forward from prior weeks in which executive maximalism was already a dominant pattern.",
+        "This week marks consolidation rather than a fresh opening: earlier claims of power are being normalized and fortified.",
+        "Should be written as structural entrenchment, not as an isolated legal episode."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration and enforcement system expanded and repurposed as a tool of rule",
+          "why_it_matters": "The week summary identifies immigration enforcement as one of the central systems being hardened, squarely placing this thread in the foreground."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week24.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Expansion of enforcement machinery",
+          "why_it_matters": "The emphasis is not only on border policy but on immigration institutions functioning as coercive domestic governance tools, matching the thread’s core definition."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week24.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Budgetary and legal reinforcement of detention/deportation capacity",
+          "why_it_matters": "When enforcement power is translated into funding lines and durable authority, the thread shifts from episodic crackdown to embedded rule architecture."
+        }
+      ],
+      "summary": "Immigration remains one of the strongest operative mechanisms of the week. What matters here is not a single raid or announcement but the hardening of a broader coercive apparatus that governs belonging through detention, deportation, and enforcement capacity.",
+      "continuity_notes": [
+        "Strong carry-forward from prior weeks where immigration functioned as a standing authoritarian testbed.",
+        "This week deepens the thread by moving from pressure campaigns and operational episodes to budgeted and legalized permanence.",
+        "Overlap with domestic militarization should be acknowledged, but immigration machinery remains the primary engine."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Enforcement system repurposed as a tool of rule",
+          "why_it_matters": "The language suggests not just immigration administration but a coercive apparatus directed inward, which is adjacent to domestic militarization."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week24.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Expanded enforcement and rule through coercive systems",
+          "why_it_matters": "When enforcement institutions are enlarged and normalized as governing instruments, the security-state dimension is relevant even if not the sole frame."
+        }
+      ],
+      "summary": "Domestic militarization is present mainly as a supporting dimension of the week’s enlarged enforcement state. The week is less about a single dramatic deployment than about the infrastructure that makes inward-directed coercion more normal and available.",
+      "continuity_notes": [
+        "Builds on prior weeks in which security and enforcement logic had already moved inward.",
+        "Should be treated as overlapping support for the immigration and executive-overreach story rather than replacing them.",
+        "Useful in rewrite as connective tissue showing where the hardwiring points operationally."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Supreme Court fragments rights",
+          "why_it_matters": "The week summary directly signals a rights-order story, with judicial action helping formalize unequal protection and recognition."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week24.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Rights rollback embedded through case law",
+          "why_it_matters": "This is not just cultural rhetoric; the rights hierarchy is being given durable legal form, which fits the thread precisely."
+        }
+      ],
+      "summary": "A major part of the week is the juridical reordering of rights. Court decisions make the anti-equality pattern more durable, linking legal doctrine to a broader governing hierarchy of belonging.",
+      "continuity_notes": [
+        "Extends prior weeks’ anti-equality actions into a more formal legal phase.",
+        "Should be connected to immigration and executive power as part of one converging structure, not treated as a separate culture-war island.",
+        "The emphasis is on institutionalized rights fragmentation rather than symbolic grievance politics."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Vast tax-and-spending package as central weekly event",
+          "why_it_matters": "A large fiscal package raises the question of who benefits materially from the new order; this is the week’s main opening for the private-state fusion thread."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week24.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Budget lines as instruments of governing entrenchment",
+          "why_it_matters": "Where statute and spending design channel advantages to aligned sectors or patronage networks, the thread is substantively present even if not the sole narrative lead."
+        }
+      ],
+      "summary": "The budget package gives this week a material political-economy dimension. The thread should be handled carefully: not every fiscal move is cronyism, but the conversion of policy into durable resource allocation makes insider-benefit and private-state fusion part of the week’s architecture.",
+      "continuity_notes": [
+        "Carries over from prior weeks where patronage and insider-benefiting policy were already visible.",
+        "Should be framed as embedded in the package design, not as a detached corruption scandal.",
+        "Use selectively unless the underlying week materials specify especially clear beneficiary groups."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week centered on statute, case law, and budget lines rather than narrative warfare",
+          "why_it_matters": "The absence of a strong information-control focal event suggests this thread remains contextual rather than actively developed this week."
+        }
+      ],
+      "summary": "Information control remains part of the larger governing environment, but this week’s main action lies in legal and institutional hardwiring rather than in records, media, or memory battles.",
+      "continuity_notes": [
+        "Relevant as background because earlier narrative-conditioning likely helped prepare the week’s substantive moves.",
+        "Do not force this thread into the foreground absent specific disclosure, censorship, or archive developments.",
+        "Can be gestured to only if needed to connect prior atmosphere to present entrenchment."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Hardwiring through budget and legal design rather than staffing drama",
+          "why_it_matters": "The week has state-building implications, but the available framing emphasizes statutory and judicial entrenchment over direct bureaucratic purge or staffing capture."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week24.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional consolidation context",
+          "why_it_matters": "Administrative capture is part of the background machinery that benefits from this week’s codification, even if it is not itself the headline development."
+        }
+      ],
+      "summary": "Administrative state capture is relevant as underlying capacity but not as the week’s active front-stage thread. The week is about giving already-altered institutions stronger legal and fiscal footing, not about a fresh personnel purge cycle.",
+      "continuity_notes": [
+        "Should be remembered as part of how the new statutory and budget architecture will be implemented.",
+        "Background rather than lead; avoid competing with executive overreach unless the source text specifies new agency-control moves.",
+        "Useful for continuity in a sentence or clause, not for sustained treatment."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week24.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Court shielding of the presidency",
+          "why_it_matters": "There is some overlap with impunity, but the week appears more centrally about executive protection and rights fragmentation than about selective legal retaliation as such."
+        }
+      ],
+      "summary": "The week touches impunity through judicial shielding, but the evidence base points more strongly to constitutional protection of executive power than to a standalone selective-justice narrative.",
+      "continuity_notes": [
+        "Keep in reserve as a contextual overlap with executive overreach.",
+        "Do not elevate unless the week materials contain explicit protect-allies/punish-opponents episodes beyond general court shielding.",
+        "Best used, if at all, as a brief connective note about normalized impunity."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week24.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Funding and regulatory pressure remains part of wider governance pattern",
+          "why_it_matters": "Given the catalogue support for week 24 and the broader week theme of rule through statute and budget, institutional coercion likely persists as a subordinate application of federal leverage."
+        }
+      ],
+      "summary": "Civil-society coercion remains in the week as part of the government’s expanding toolkit of funding and status pressure, but it does not appear to organize the week’s narrative on its own.",
+      "continuity_notes": [
+        "Carry-forward from earlier weeks where universities and comparable institutions were explicit targets.",
+        "Use only if the week materials include a clear campus or institutional-pressure episode.",
+        "Otherwise absorb into broader discussion of coercive governance."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No clear election-administration or representation change foregrounded",
+          "why_it_matters": "The week summary points elsewhere, so this thread should not shape the rewrite."
+        }
+      ],
+      "summary": "Election engineering does not appear meaningfully active in the supplied week framing.",
+      "continuity_notes": [
+        "Omit unless a buried week source contains a discrete voting-rule development.",
+        "Do not import from year-level relevance into this week’s narrative."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week emphasis is institutional hardwiring, not direct dissent crackdowns",
+          "why_it_matters": "Without a clear protest, journalism, or opposition-targeting episode in the supplied summary, this thread should remain out of the weekly foreground."
+        }
+      ],
+      "summary": "Although the week’s hardwiring may later enable repression, anti-dissent suppression is not itself the main event here.",
+      "continuity_notes": [
+        "Only mention if a specific crackdown is present in the underlying materials.",
+        "Otherwise keep focus on structural entrenchment rather than downstream repression effects."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No leader-symbolism focus in weekly summary",
+          "why_it_matters": "The week is defined by legal and institutional embedding, not symbolic personalization."
+        }
+      ],
+      "summary": "Leader glorification is not materially part of this week’s active narrative.",
+      "continuity_notes": [
+        "Omit unless a supplied source specifically raises renaming, monuments, or symbolic personalization."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No Epstein-related records conflict in week materials",
+          "why_it_matters": "This sub-thread is temporally and substantively absent from week 24."
+        }
+      ],
+      "summary": "This late-year elite-accountability sub-thread is not active here.",
+      "continuity_notes": [
+        "Omit entirely."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": null,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week24_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed around consolidation, not successful pushback",
+          "why_it_matters": "The dominant story is hardwiring of authority; resistance, if present, does not appear to define the week."
+        }
+      ],
+      "summary": "Resistance is not absent from the year, but it is not the governing mood of this week. The available framing emphasizes successful consolidation by the administration and the Court rather than meaningful checks.",
+      "continuity_notes": [
+        "Acknowledge only if needed to note the relative weakness or failure of guardrails this week.",
+        "Do not build the chapter around countervailing institutions."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "Week 24 is best understood as a consolidation week: prior experiments are being embedded in law, doctrine, and spending.",
+    "The strongest collision is among executive overreach, immigration-as-control, and the stratified rights order; these threads reinforce rather than compete with one another.",
+    "The fiscal package matters less as ordinary legislation than as a mechanism for durable governing capacity and resource allocation.",
+    "The Supreme Court is a major enabling actor in the week, turning what had been aggressive political ambition into protected institutional reality.",
+    "Several familiar threads remain relevant only as background because the week is driven by hardwiring rather than spectacle."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_IMMIGRATION_AS_CONTROL"
+    ],
+    "supporting_threads": [
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION"
+    ],
+    "background_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION"
+    ],
+    "threads_to_downplay": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION"
+    ],
+    "threads_to_omit": [
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "opening_focus": "Open on the idea of hardwiring: what earlier weeks previewed is now being locked into statute, case law, and budget architecture. Frame the week as consolidation of power rather than a burst of improvisation.",
+    "closing_focus": "Close on the durability of the new order: immigration enforcement, executive advantage, and rights fragmentation are no longer just threats or experiments but increasingly embedded operating rules.",
+    "continuity_emphasis_notes": [
+      "Emphasize that this week converts recurring prior threads into durable institutional form.",
+      "Link the Court, the budget package, and the enforcement buildout as converging mechanisms of the same governing project.",
+      "Keep the chapter focused on structural entrenchment, not a laundry list of disconnected developments.",
+      "Where overlap exists, let immigration machinery and executive power carry the narrative, with rights rollback as the major reinforcing consequence."
+    ]
+  }
+}

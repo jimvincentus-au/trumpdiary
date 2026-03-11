@@ -1,0 +1,575 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 49
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_07032f95e747825c0069afa3e6dfe8819794e44d0359da82fe"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 49/step5_narrative_week49_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 49/development_allocator_week49.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 49/weekly_digest_week49.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_48_thread_package.json"
+  },
+  "week": {
+    "week_number": 49,
+    "start_date": "2025-12-20",
+    "end_date": "2025-12-26",
+    "headline": "The forty-ninth week of Trump’s second term did not hinge on a single order or speech.",
+    "summary": "The forty-ninth week of Trump’s second term did not hinge on a single order or speech. It unfolded instead as a study in how a government can keep its formal shape while its inner workings are bent toward secrecy, loyalty, and fear. The surface looked familiar: agencies issued press releases, courts wrote opinions, Congress held hearings. Underneath, the levers that connect law to power were moved, one notch at a time, away from public control. The forms stayed. The function shifted."
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Government keeps formal shape while inner workings are bent toward secrecy, loyalty, and fear",
+          "why_it_matters": "This is the week’s core frame: institutions still operate outwardly, but administrative machinery is being redirected away from neutral public function toward loyalist control."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Agency actions continue under altered internal logic",
+          "why_it_matters": "The digest framing supports the idea that agencies remain active in form while being repurposed in function, a hallmark of administrative capture."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week49.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week-level development emphasis on institutional distortion rather than singular decree",
+          "why_it_matters": "Allocator emphasis indicates the week should be narrated through internal state deformation rather than one isolated event, supporting this thread as a lead."
+        }
+      ],
+      "summary": "This week is best understood as another stage in the conversion of ordinary federal administration into a loyalist-governed system whose outer procedures remain visible even as internal autonomy erodes.",
+      "continuity_notes": [
+        "Carries directly from prior late-year weeks in which capture shifted from headline purges to normalized institutional operation under altered incentives.",
+        "The week’s importance lies less in new firings than in routinized functioning after capture.",
+        "Use this as a structural frame rather than a single-event story."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 5
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Secrecy as governing method",
+          "why_it_matters": "The week summary explicitly centers secrecy, making information control not peripheral but integral to how power is exercised."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Forms stayed; function shifted",
+          "why_it_matters": "This formulation implies managed opacity: public-facing legality and institutional form conceal substantive changes, a key information-control dynamic."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Knowledge and accountability channels remain constrained",
+          "why_it_matters": "The digest supports the idea that the week’s developments depend on limiting what can be seen, verified, or remembered."
+        }
+      ],
+      "summary": "Secrecy and managed opacity are central to the week: not merely spin, but a condition in which public institutions continue to generate official outputs while the public loses visibility into how power is actually being used.",
+      "continuity_notes": [
+        "Builds on the late-year shift from overt media conflict toward deeper control of records, disclosure, and institutional visibility.",
+        "Closely intertwined with administrative capture this week; the rewrite should show them as mutually reinforcing rather than isolated threads.",
+        "The informational problem is practical and structural, not just rhetorical."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Law’s formal machinery remains active while control shifts underneath",
+          "why_it_matters": "The week’s description of intact forms with altered function maps directly onto asymmetric legal administration—law appearing regular while serving protection and pressure selectively."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Courts and hearings continue without restoring public control",
+          "why_it_matters": "This matters because legal institutions are present but insufficient, suggesting a system where process persists while accountability is weakened or uneven."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week49.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Justice/accountability developments embedded in broader secrecy frame",
+          "why_it_matters": "Allocator evidence supports treating legal asymmetry as a major supporting thread rather than the sole frame of the week."
+        }
+      ],
+      "summary": "The legal system remains part of the week’s architecture, but mostly as a system whose procedures still run while their capacity to constrain or expose the powerful is diminished.",
+      "continuity_notes": [
+        "Continues the late-year pattern of legality without equal accountability.",
+        "Should be tied to secrecy and selective disclosure rather than narrated as a standalone courtroom week.",
+        "Useful as a reinforcing thread showing how altered institutions protect insiders and intimidate outsiders."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration machinery remains part of the coercive backdrop",
+          "why_it_matters": "Even if not the sole headline, immigration remains one of the durable operational arenas where secrecy, fear, and state control are made concrete."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Government bent toward secrecy, loyalty, and fear",
+          "why_it_matters": "Immigration enforcement is one of the most established late-year vehicles for rule by fear, making it relevant to the week’s broader interpretive frame."
+        }
+      ],
+      "summary": "Immigration remains a live enforcement domain within the week’s larger story of coercive governance, though it appears more as an established operating field than as the single defining headline.",
+      "continuity_notes": [
+        "Strong carry-forward from week 48 and the broader late-year pattern of deportation-state normalization.",
+        "Should be referenced as one practical site where the week’s structural themes are enacted.",
+        "Do not let it displace the broader state-function frame unless a specific development in the source text demands it."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Fear as an organizing condition of governance",
+          "why_it_matters": "This suggests continuing reliance on coercive-security logic even where dramatic deployments are not the week’s only headline."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Power moved away from public control one notch at a time",
+          "why_it_matters": "Domestic security normalization often advances incrementally; this wording fits the slow entrenchment of inward-facing force and emergency-style control."
+        }
+      ],
+      "summary": "Domestic militarization remains part of the week’s coercive atmosphere, less as a dramatic standalone escalation than as a normalized background mechanism reinforcing fear and compliance.",
+      "continuity_notes": [
+        "Carries over from week 48’s late-year normalization of inward-facing security powers.",
+        "Keep in the rewrite as atmosphere and method rather than the opening frame unless specific incidents dominate the week materials.",
+        "Works best in tandem with immigration and anti-dissent threads."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Government oriented toward fear",
+          "why_it_matters": "Fear as a governing condition implies suppression of scrutiny and organized opposition, making anti-dissent a significant supporting frame."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional pressure on critics persists",
+          "why_it_matters": "This supports the assessment that dissent remains a target, even if not the week’s only major development."
+        }
+      ],
+      "summary": "The week sustains the pattern of treating opposition and scrutiny as conditions to be managed through intimidation, legal pressure, and chilled civic space.",
+      "continuity_notes": [
+        "Continuation from the previous week’s late-year intimidation climate.",
+        "Should be handled as a consequence of secrecy and coercive administration, not a disconnected subplot.",
+        "Useful for showing who pays the price when institutional function shifts away from public accountability."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week49.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "No clear week-dominant insider-enrichment frame",
+          "why_it_matters": "The allocator does not suggest that patronage or enrichment is the best explanatory driver of the week."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Focus falls on secrecy and institutional distortion rather than profit distribution",
+          "why_it_matters": "This indicates private-state fusion may remain relevant context but is not narratively central this week."
+        }
+      ],
+      "summary": "Insider enrichment and private-state fusion remain part of the broader year, but they are not the main explanatory lens for this week’s events.",
+      "continuity_notes": [
+        "Likely still operative beneath the surface, but not strongly foregrounded in the supplied week framing.",
+        "Mention only if needed to connect altered administration to beneficiary networks."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No week-defining equality or identity-policy escalation foregrounded",
+          "why_it_matters": "This suggests the thread persists as context but is not a primary driver of narrative emphasis this week."
+        }
+      ],
+      "summary": "The unequal-rights order remains a standing condition of the regime, but week 49 is better framed through secrecy, institutional control, and fear than through a specific rights rollback episode.",
+      "continuity_notes": [
+        "May appear indirectly through immigration or civil-society pressure, but should not dominate the chapter.",
+        "Use as background context if a concrete example from the weekly materials requires it."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "continuing",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Late-year symbolic personalization remains in the backdrop",
+          "why_it_matters": "As a late-year recurring sub-thread, symbolic personalization can help explain how neutral civic form is being refitted around personal rule, even if not the main event."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Formal shape retained while function changes",
+          "why_it_matters": "This wording also fits personalist reshaping of civic forms, though only at a supporting symbolic level this week."
+        }
+      ],
+      "summary": "Leader-centered symbolism remains part of the late-year atmosphere, but in week 49 it functions as background evidence of personal rule rather than a standalone focal development.",
+      "continuity_notes": [
+        "Carries forward from week 48’s late-year symbolic capture pattern.",
+        "If used, keep it brief and subordinate to the broader information-control frame."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Elite-accountability and disclosure conflict remains active",
+          "why_it_matters": "The continuing struggle over politically dangerous records fits the week’s larger theme of secrecy and selective exposure."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week49.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Late-year records fight resurfaces within broader opacity narrative",
+          "why_it_matters": "This supports coding the sub-thread as reactivated rather than merely ambient background."
+        }
+      ],
+      "summary": "The Epstein-files conflict resurfaces as a vivid example of how elite accountability is managed through delay, opacity, and selective control of records.",
+      "continuity_notes": [
+        "Tied closely to both weaponized law and information control.",
+        "Use only if the weekly sources give it concrete weight; it should illustrate the week’s secrecy theme rather than hijack the chapter.",
+        "'Reborn' fits if the prior week softened but this week renews its salience."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Courts wrote opinions, Congress held hearings",
+          "why_it_matters": "The week explicitly notes the continued operation of formal checking institutions, but also implies their limits, making resistance present yet uneven."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional response persists without regaining control",
+          "why_it_matters": "This supports the counter-thread of partial resistance that slows but does not reverse authoritarian drift."
+        }
+      ],
+      "summary": "Resistance remains visible in the continued activity of courts and Congress, but the week stresses how these formal responses coexist with a deeper loss of public control.",
+      "continuity_notes": [
+        "Important as a counter-thread, but the rewrite should emphasize its insufficiency rather than present it as a rebound story.",
+        "Best used to sharpen the contrast between intact forms and degraded substance."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week49_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Weakening of public control without a single headline order",
+          "why_it_matters": "The constitutional overreach pattern remains relevant context, but the week is not organized around one major unilateral emergency act."
+        }
+      ],
+      "summary": "Executive aggrandizement remains part of the underlying architecture, but week 49 is better told through captured institutions and managed opacity than through a singular overreach episode.",
+      "continuity_notes": [
+        "Keep as contextual backdrop only.",
+        "Do not let the rewrite drift into generic constitutional language at the expense of the week’s more concrete institutional themes."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No strong standalone civil-society coercion emphasis this week",
+          "why_it_matters": "The week does not appear to hinge on university or law-firm coercion as a distinct narrative track."
+        }
+      ],
+      "summary": "Civil-society coercion is not independently meaningful this week and should only surface if a specific example is necessary.",
+      "continuity_notes": [
+        "May be nested implicitly within broader anti-dissent or information-control dynamics, but not worth separate treatment."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week49.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No significant election-structure development foregrounded",
+          "why_it_matters": "This thread does not materially explain the week’s narrative emphasis."
+        }
+      ],
+      "summary": "Election engineering is not a meaningful organizing thread for week 49.",
+      "continuity_notes": [
+        "Omit unless a concrete election-administration development appears in the source text."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "Week 49 is best framed as a structural week: not one headline action, but the normalization of governance through secrecy, loyalty, and fear.",
+    "Administrative capture and information control form the dominant collision; together they explain how formal institutions remain visible while accountability drains away.",
+    "Weaponized law matters as a reinforcing mechanism rather than the sole lead frame.",
+    "Immigration, domestic militarization, and anti-dissent should appear as operational arenas where the week’s broader governing logic is enacted.",
+    "Resistance is present but mainly as contrast: courts and Congress still function in form, yet fail to restore public control.",
+    "Avoid overloading the week with too many parallel threads; this chapter should feel integrated around institutional function-shift, not scattered across every recurring theme."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+    ],
+    "supporting_threads": [
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "background_threads": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+    ],
+    "threads_to_downplay": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+    ],
+    "threads_to_omit": [
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+    ],
+    "opening_focus": "Open by stressing that the week lacked one dramatic decree but revealed something more consequential: a government whose visible procedures still run while its internal workings are bent toward secrecy, loyalty, and fear. Use administrative capture plus information control as the opening explanatory frame.",
+    "closing_focus": "Close on the contrast between intact democratic form and degraded democratic substance, with partial institutional resistance unable to prevent the continued movement of power away from public control.",
+    "continuity_emphasis_notes": [
+      "Emphasize continuity from week 48: late-year authoritarianism is no longer only episodic shock but normalized administration.",
+      "Show how secrecy is not separate from governance this week; it is one of the tools by which institutions are made to serve loyalty instead of law.",
+      "Treat immigration, security, and anti-dissent as fields where the broader structural shift becomes tangible.",
+      "If using the Epstein-files sub-thread, use it as a concrete illustration of elite-protective opacity rather than as a standalone scandal detour.",
+      "Keep the week unified around the idea that the forms stayed but the function shifted."
+    ]
+  }
+}

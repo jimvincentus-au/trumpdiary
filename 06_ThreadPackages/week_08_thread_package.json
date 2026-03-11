@@ -1,0 +1,592 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 8
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_084b7f60d32bef090069af9742f3948195849e8903815e536b"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 8/step5_narrative_week8_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 8/development_allocator_week8.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 8/weekly_digest_week8.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_07_thread_package.json"
+  },
+  "week": {
+    "week_number": 8,
+    "start_date": "2025-03-08",
+    "end_date": "2025-03-14",
+    "headline": "The eighth week of Trump’s second term did not hinge on a single shock.",
+    "summary": "The eighth week of Trump’s second term did not hinge on a single shock. It unfolded instead as a dense layering of decisions that altered who counts, who serves, and who remembers. Immigration rules, civil service structures, university budgets, and media funding all shifted in ways that looked technical when taken alone. Together, they traced a sharper outline of a state that answers more to personal power and aligned wealth than to law, expertise, or equal citizenship."
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Civil service structures shifted this week",
+          "why_it_matters": "The week summary explicitly identifies civil service structures as one of the main arenas of change, signaling that bureaucratic control and institutional remaking are central to the week's narrative."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Technical-looking decisions accumulate into a state answering to personal power",
+          "why_it_matters": "This language maps directly onto administrative capture: state machinery is being reoriented away from neutral expertise and toward personalist control through cumulative institutional decisions."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week8.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Agency and governance changes treated as part of a layered restructuring week",
+          "why_it_matters": "The digest is identified as a core source for the week, and the week summary indicates that multiple bureaucratic domains were altered together rather than as isolated incidents."
+        }
+      ],
+      "summary": "Administrative capture remains one of the clearest explanatory frames for Week 8. The week is described not as a single rupture but as an accumulation of seemingly technical changes that restructure who serves and how institutions operate, with civil-service change functioning as a core mechanism of personalized governance.",
+      "continuity_notes": [
+        "This appears to carry directly forward from prior weeks rather than debut here.",
+        "Week 8 deepens the pattern by making administrative restructuring feel routine and technical rather than spectacular.",
+        "The rewrite should connect agency and staffing change to the broader erosion of neutral state capacity."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "State increasingly answers to personal power rather than law",
+          "why_it_matters": "Even where the week is not framed through emergency declarations or direct constitutional confrontation, the summary implies an ongoing weakening of legal and institutional constraint that remains relevant background."
+        },
+        {
+          "source_type": "other",
+          "source_ref": "prior_week_thread_package",
+          "event_id": null,
+          "development_id": null,
+          "title": "Prior-week continuity context",
+          "why_it_matters": "The prior-week package provides basis for treating executive overreach as an ongoing backdrop rather than a fresh lead development this week."
+        }
+      ],
+      "summary": "Executive overreach is not the main operational story of Week 8, but it remains an important constitutional backdrop. The week's institutional changes imply continuing concentration of authority even without a single headline-grabbing emergency or direct separation-of-powers clash.",
+      "continuity_notes": [
+        "Keep this thread in background context rather than foregrounding it.",
+        "Use only if needed to explain why technical administrative changes carry broader constitutional meaning.",
+        "Do not let this umbrella displace the more concrete administrative, immigration, and information-control threads."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed as a shift away from law toward personal power",
+          "why_it_matters": "That framing suggests legal institutions are being subordinated unevenly, though the week summary does not make selective prosecution or clemency the dominant mechanism."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week8.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Layered institutional changes affecting accountability environment",
+          "why_it_matters": "The week's linked changes in administration, media funding, and coercive policy likely alter the context in which law protects insiders and burdens targeted groups, even if that is not the headline thread."
+        }
+      ],
+      "summary": "Weaponized law is present more as background logic than as the week's front-stage action. Week 8 points to a governance environment in which law is increasingly subordinated to power, but the strongest evidence here sits in institutional restructuring rather than explicit justice-system episodes.",
+      "continuity_notes": [
+        "Treat as supporting context, not a lead frame.",
+        "Reference only where selective enforcement or impunity helps explain how other threads function.",
+        "Avoid overstating this thread if the week materials do not center DOJ, courts, or legal retaliation directly."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration rules shifted this week",
+          "why_it_matters": "The week summary explicitly names immigration rules as one of the principal sites of action, making this a core thread rather than incidental context."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week altered who counts",
+          "why_it_matters": "This language strongly aligns with immigration and citizenship as instruments for sorting belonging and status, not just border administration."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week8.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration developments embedded in a larger hierarchy-of-belonging week",
+          "why_it_matters": "The digest source, together with the summary, supports reading immigration policy as part of a broader coercive and stratifying state project."
+        }
+      ],
+      "summary": "Immigration as control is one of the week's lead threads. The summary frames immigration not as an isolated policy area but as part of a deeper restructuring of who belongs and on what terms, making status hierarchy and coercive membership rules central to understanding the week.",
+      "continuity_notes": [
+        "This clearly continues an already strong year-long thread rather than starting anew.",
+        "Week 8 should show immigration policy as one component of a broader governing method that sorts rights and belonging.",
+        "Connect immigration developments to university pressure and rights hierarchy where appropriate, but keep immigration machinery itself visible."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media funding shifted this week",
+          "why_it_matters": "Changes to media funding fit this thread directly because they affect the public information environment and the independence of knowledge-distributing institutions."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "The week altered who remembers",
+          "why_it_matters": "That phrase points directly to memory politics and the shaping of public knowledge, not merely to ordinary communications strategy."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "State answers less to law and expertise",
+          "why_it_matters": "Information control often works by downgrading expertise, records, and institutional knowledge; the week summary makes that erosion of expert authority explicit."
+        }
+      ],
+      "summary": "Information control is a lead frame for Week 8 because the week is explicitly about memory, expertise, and the funding and shaping of public knowledge institutions. Media funding changes and the summary's emphasis on 'who remembers' make this more than background narrative management.",
+      "continuity_notes": [
+        "This continues prior weeks' pressure on information channels, but here it appears in a more institutional and budgetary form.",
+        "The rewrite should stress that information control is being operationalized through funding and institutional leverage, not just rhetoric.",
+        "Link media funding to broader knowledge-system pressure, including universities where useful."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week traced a state answering more to aligned wealth",
+          "why_it_matters": "This is the clearest direct signal in the supplied materials that insider wealth and political alignment are shaping public decisions, fitting the private-state fusion pattern."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Technical policy shifts linked to power and wealth rather than neutral governance",
+          "why_it_matters": "The summary implies that policy changes are not only about control but also about whose interests the state serves, which supports this thread's reactivation."
+        }
+      ],
+      "summary": "Crony capitalism is not the dominant storyline, but Week 8 explicitly ties state action to aligned wealth. That makes this thread more than background and suggests a renewed visibility of insider-serving governance within the week's broader institutional restructuring.",
+      "continuity_notes": [
+        "Marking as reborn reflects a week in which private-state fusion becomes textually explicit again after not being the clearest foreground frame every recent week.",
+        "Use this thread to sharpen the motive structure behind technical state changes.",
+        "Do not overtake the more operational lead threads with enrichment language unless week details strongly support it."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "The week altered who counts",
+          "why_it_matters": "This is direct evidence of a hierarchy of recognition and belonging, which is the core logic of the stratified-rights thread."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration rules and university budgets shifted in tandem",
+          "why_it_matters": "Taken together, these moves imply not just administrative change but differential recognition and access structured by identity, status, and ideology."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "State answers less to equal citizenship",
+          "why_it_matters": "The summary explicitly names equal citizenship as what is being displaced, making rights hierarchy a central interpretive frame for the week."
+        }
+      ],
+      "summary": "Stratified rights is a core interpretive thread for Week 8. The supplied summary is explicitly about equal citizenship giving way to graded membership and recognition, with immigration, university policy, and other institutional shifts combining into a more formal hierarchy of who counts.",
+      "continuity_notes": [
+        "This is a continuing thread and should be woven through the chapter rather than treated as a single siloed policy area.",
+        "Use it to connect immigration, campus pressure, and institutional restructuring into one larger rights-order story.",
+        "Keep the emphasis on concrete effects on belonging and recognition, not just culture-war rhetoric."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "University budgets shifted this week",
+          "why_it_matters": "The week summary explicitly identifies universities as a target of change, and budget pressure is a classic mechanism of coercing semi-independent institutions."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Technical institutional changes reshape who remembers and who serves",
+          "why_it_matters": "Universities function as both civil-society and knowledge institutions, so pressure on them bridges coercion and information-control concerns."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week8.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "University-focused developments embedded in a broader disciplinary week",
+          "why_it_matters": "The digest source supports reading campus pressure as part of a wider use of funding and status leverage rather than an isolated education-policy dispute."
+        }
+      ],
+      "summary": "Campus and civil-society coercion is clearly active in Week 8 because universities are directly named as targets of consequential budgetary shifts. This gives the week a concrete institutional arena in which federal leverage disciplines semi-independent bodies that can host expertise, dissent, and alternative memory.",
+      "continuity_notes": [
+        "Marking as reborn reflects a sharper standalone visibility this week, even if related pressure existed earlier.",
+        "This thread should be used to connect university pressure to both information control and stratified rights.",
+        "Do not reduce it to generic education policy; emphasize coercive leverage over autonomous institutions."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "other",
+          "source_ref": "catalog_supporting_weeks",
+          "event_id": null,
+          "development_id": null,
+          "title": "Thread not yet a normal early-year foreground pattern",
+          "why_it_matters": "The catalog places this thread mainly in later weeks, and the supplied week summary does not point to Guard deployments or overt domestic security force escalation."
+        }
+      ],
+      "summary": "Domestic militarization does not appear to be a meaningful Week 8 thread based on the supplied materials. The week's coercion is bureaucratic, legal, fiscal, and status-based rather than overtly militarized.",
+      "continuity_notes": [
+        "Omit unless detailed week materials contain a specific security-force episode absent from the summary.",
+        "Do not import later-year domestic militarization framing into an earlier week without direct evidence."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "new",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "other",
+          "source_ref": "catalog_supporting_weeks",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week 8 is one of the catalog's supporting weeks for election engineering",
+          "why_it_matters": "The canonical catalog itself flags Week 8 as a supporting week for this thread, indicating meaningful relevance even though the supplied summary does not foreground it."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week8.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week source set includes developments beyond the summary's lead frames",
+          "why_it_matters": "Because the digest is part of the evidence base and the catalog specifically marks this week, election-engineering material should be preserved as secondary/background if present in the underlying week materials."
+        }
+      ],
+      "summary": "Election engineering appears to enter the weekly picture here, but not as a dominant frame in the supplied summary. It should be treated as a newly relevant background thread whose presence matters more for continuity tracking than for chapter leadership.",
+      "continuity_notes": [
+        "Because Week 7 and Week 8 are both supporting weeks in the catalog, this may be emerging rather than dominant.",
+        "Keep any election-rule material concise unless the digest shows a clearer institutional shift than the summary suggests.",
+        "Use only enough to register the thread's arrival in the year."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week centers institutional reshaping more than direct crackdown on protest or opposition",
+          "why_it_matters": "The summary emphasizes structural changes in immigration, bureaucracy, universities, and media funding rather than explicit punishment of protest, journalism, or opposition actors as such."
+        }
+      ],
+      "summary": "Anti-dissent suppression is not a distinct Week 8 thread on the available evidence. Some week developments may indirectly constrain dissent, but the central action is institutional restructuring rather than overt repression of protest or opposition.",
+      "continuity_notes": [
+        "Do not foreground this later-year thread here without explicit evidence.",
+        "If needed, fold any indirect chilling effects into campus coercion or information control instead."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "other",
+          "source_ref": "catalog_supporting_weeks",
+          "event_id": null,
+          "development_id": null,
+          "title": "Sub-thread is a late-year pattern, not an early-week lead",
+          "why_it_matters": "The catalog places this sub-thread much later in the year, and nothing in the supplied Week 8 summary points specifically to leader-centered symbolic glorification."
+        }
+      ],
+      "summary": "Leader glorification is not a meaningful Week 8 thread. Although personal power is part of the week's framing, the evidence points to operational control and memory politics rather than symbolic cult-of-personality actions.",
+      "continuity_notes": [
+        "Keep this out of the rewrite.",
+        "Do not confuse personalist governance with the narrower symbolism sub-thread."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "other",
+          "source_ref": "catalog_supporting_weeks",
+          "event_id": null,
+          "development_id": null,
+          "title": "Sub-thread belongs to much later weeks",
+          "why_it_matters": "The catalog shows this sub-thread emerging only late in the year, with no indication in the supplied Week 8 materials that it is relevant here."
+        }
+      ],
+      "summary": "The Epstein-files sub-thread is not part of Week 8 and should not shape the rewrite.",
+      "continuity_notes": [
+        "Omit entirely."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week8_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary emphasizes governing advances rather than successful pushback",
+          "why_it_matters": "The summary is written from the perspective of accumulating state transformation, with no clear foregrounded resistance event."
+        },
+        {
+          "source_type": "other",
+          "source_ref": "prior_week_thread_package",
+          "event_id": null,
+          "development_id": null,
+          "title": "Prior-week continuity context for resistance",
+          "why_it_matters": "Resistance may remain part of the broader atmosphere, but the current week does not appear to elevate it as a major explanatory thread."
+        }
+      ],
+      "summary": "Resistance remains relevant mainly by contrast: Week 8 reads as a week in which restructuring outpaced visible counteraction. The absence of strong pushback helps explain the density and cumulative force of the week's changes.",
+      "continuity_notes": [
+        "Mention only if the rewrite benefits from noting the weakness or fragmentation of resistance this week.",
+        "Do not create a false balance if the supplied materials do not show meaningful institutional checks."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    }
+  ],
+  "week_summary_notes": [
+    "Week 8 is best understood as a cumulative institutional week rather than a single-crisis week.",
+    "The strongest narrative collision is between administrative capture, immigration-based hierarchy, information control, and rights stratification.",
+    "University and media funding changes make civil-society and knowledge-institution pressure more central than in some adjacent weeks.",
+    "Crony-capitalist motive is present but should remain subordinate to the operational story of state restructuring.",
+    "Several later-year coercion threads, especially domestic militarization and anti-dissent suppression, should not be imported too aggressively into this earlier week."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+    ],
+    "supporting_threads": [
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY"
+    ],
+    "background_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_downplay": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+    ],
+    "threads_to_omit": [
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open on the week's cumulative character: a cluster of technical-looking changes across immigration, civil service, universities, and media that together reveal a sharper state hierarchy about who belongs, who serves, and what institutions are allowed to know or remember.",
+    "closing_focus": "Close by stressing that the week's significance lies in consolidation rather than spectacle: the machinery of governance is being quietly reoriented toward personal power, aligned wealth, weakened expertise, and unequal citizenship.",
+    "continuity_emphasis_notes": [
+      "Emphasize that administrative restructuring is not isolated policy churn but a continuing method of governing.",
+      "Tie immigration developments to a broader hierarchy of belonging rather than treating them as a separate silo.",
+      "Show university and media funding pressure as linked efforts to discipline knowledge institutions and civil society.",
+      "Use rights-stratification language to connect otherwise disparate policy domains.",
+      "If mentioning crony capitalism, frame it as motive and beneficiary structure behind the week's institutional moves, not as the sole storyline."
+    ]
+  }
+}

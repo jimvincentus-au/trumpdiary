@@ -1,0 +1,571 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 10
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 10,
+    "start_date": "2025-03-22",
+    "end_date": "2025-03-28",
+    "headline": "The tenth week of Trump’s second term did not hinge on a single shock.",
+    "summary": "The tenth week of Trump’s second term did not hinge on a single shock. It unfolded as a dense layering of moves that, taken together, made the state feel less like a shared instrument and more like a personal tool. Elections, immigration, law, media, and public health were all touched, not by sweeping constitutional change, but by orders, appointments, and funding decisions that shifted who counted, who was watched, and who could push back. The pattern was one of tightening control over the chan"
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_10_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/weekly_digest_final_week10.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/development_allocator_week10.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/weekly_digest_final_week10.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 10
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_074d1b56ac860dc00069af97dd67c88190a300ba8104bb3198"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/step5_narrative_week10_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/development_allocator_week10.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 10/weekly_digest_week10.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_09_thread_package.json"
+    },
+    "week": {
+      "week_number": 10,
+      "start_date": "2025-03-22",
+      "end_date": "2025-03-28",
+      "headline": "The tenth week of Trump’s second term did not hinge on a single shock.",
+      "summary": "The tenth week of Trump’s second term did not hinge on a single shock. It unfolded as a dense layering of moves that, taken together, made the state feel less like a shared instrument and more like a personal tool. Elections, immigration, law, media, and public health were all touched, not by sweeping constitutional change, but by orders, appointments, and funding decisions that shifted who counted, who was watched, and who could push back. The pattern was one of tightening control over the chan"
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week framed as a layering of orders, appointments, and funding decisions",
+            "why_it_matters": "The week summary explicitly emphasizes government being turned into a personal tool through appointments and funding control, which is core administrative-state capture language."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Public-health, agency, and governance actions spread across multiple domains",
+            "why_it_matters": "Cross-domain agency interventions suggest not a single policy fight but a governing method of repurposing neutral institutions."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week10.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator likely groups multiple week developments around agency control and implementation",
+            "why_it_matters": "The week’s structure appears operational rather than symbolic: decisions about personnel, funding, and administrative machinery are central to how power is exercised."
+          }
+        ],
+        "summary": "Week 10 is strongly organized around the practical capture of institutions: appointments, funding decisions, and administrative moves across several policy areas make the state feel increasingly personalized and less neutral.",
+        "continuity_notes": [
+          "Carries forward an early-year pattern of using the bureaucracy itself as the main instrument of control.",
+          "This week appears less about spectacular purge headlines than about normalized implementation across domains.",
+          "Should be linked to prior weeks’ DOGE/loyalist-control pattern as an ongoing governing method rather than a fresh break."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Orders and funding decisions as instruments of control",
+            "why_it_matters": "The use of executive orders and unilateral funding leverage points to continued expansion of presidential discretion even if the week is not dominated by one major constitutional showdown."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Multiple policy domains altered without sweeping legislation",
+            "why_it_matters": "The pattern of acting through executive channels rather than ordinary legislative process reinforces overreach as the enabling constitutional method."
+          }
+        ],
+        "summary": "Executive overreach remains active as the constitutional method behind the week’s moves, but it is better treated as a supporting frame than the main story because the week reads more as institutional control in practice than as a singular emergency-power confrontation.",
+        "continuity_notes": [
+          "Should be referenced as the permissive structure enabling the week’s administrative actions.",
+          "Less vivid than in weeks defined by court conflict or dramatic emergency claims, but still clearly present."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Law explicitly named among the week’s affected domains",
+            "why_it_matters": "The week summary signals that legal institutions were part of the tightening pattern, making selective use of law a central interpretive thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Moves affecting who could push back",
+            "why_it_matters": "When legal or enforcement changes alter who can resist, the week fits the broader pattern of law as an asymmetric weapon rather than neutral guardrail."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week10.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator likely assigns legal-retaliation or justice-system developments",
+            "why_it_matters": "Week 10 appears to integrate legal tools into a broader architecture of control rather than treating them as isolated cases."
+          }
+        ],
+        "summary": "The week continues the pattern of law being folded into political control: legal institutions are part of the machinery deciding who is exposed, protected, or constrained.",
+        "continuity_notes": [
+          "Should connect to prior weeks in which DOJ, prosecutors, or legal process were bent toward asymmetric outcomes.",
+          "In this week, the legal thread likely functions less as a standalone scandal than as one layer in a larger system of control."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Immigration explicitly named as one of the week’s major domains",
+            "why_it_matters": "The summary identifies immigration as one of the principal arenas where control tightened, making this a lead thread for the week."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Moves that shift who counted and who was watched",
+            "why_it_matters": "That language strongly fits immigration/citizenship hierarchy, surveillance, and status-based coercion."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week10.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator likely includes immigration enforcement or status-policy developments",
+            "why_it_matters": "The week appears to use immigration machinery as part of a broader social-ordering project, not merely routine border policy."
+          }
+        ],
+        "summary": "Immigration remains one of the clearest operational arenas of coercive governance in Week 10, tied to surveillance, status sorting, and the narrowing of who fully belongs.",
+        "continuity_notes": [
+          "This is a stable carry-forward thread from prior weeks and should be treated as one of the administration’s most durable instruments.",
+          "Emphasize immigration not as a siloed policy area but as a template for wider hierarchy and control."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Media explicitly named among affected domains",
+            "why_it_matters": "The week summary directly places media within the pattern of tightening control, indicating pressure on the public sphere and what can be known."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Shifts in who could push back and what channels remained open",
+            "why_it_matters": "Control over media and information channels is part of limiting opposition capacity and shaping public understanding of the week’s actions."
+          }
+        ],
+        "summary": "Information control is present through media-related pressure and the narrowing of public-facing channels, but it serves mainly as one component of the week’s broader consolidation story.",
+        "continuity_notes": [
+          "Should be referenced as part of the administration’s recurring attempt to manage scrutiny and public knowledge.",
+          "Not the week’s main hook unless source specifics show a major press or records episode."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "State treated as a personal tool",
+            "why_it_matters": "That framing is adjacent to private-state fusion, but the visible emphasis here is on control rather than clear insider enrichment."
+          }
+        ],
+        "summary": "The personalized use of government in Week 10 gestures toward crony fusion, but insider-benefit or enrichment does not appear to be the main explanatory mechanism of the week.",
+        "continuity_notes": [
+          "Keep in the background only if a rewrite needs to remind readers that personalized state use often carries private beneficiaries.",
+          "Do not foreground unless specific week sources show concrete patronage, contracts, or insider gains."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "reborn",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week described as shifting who counted",
+            "why_it_matters": "That phrase points to reordered belonging and unequal recognition, which is central to the stratified-rights thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Public health and social policy touched by control measures",
+            "why_it_matters": "When public-health or institutional decisions sort access and recognition across groups, the week moves beyond pure administration into rights hierarchy."
+          }
+        ],
+        "summary": "Week 10 revives the anti-equality dimension more clearly than some immediately prior weeks, with policy moves implying differential belonging, recognition, and access across targeted populations.",
+        "continuity_notes": [
+          "Treat as reactivated if prior week emphasis was more on legal and institutional confrontation than explicit rights hierarchy.",
+          "Useful as a bridge between immigration control and public-health or social-policy actions this week."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary emphasizes funding decisions and limiting who could push back",
+            "why_it_matters": "Funding leverage against institutions that can resist is a hallmark of this thread even if no single campus confrontation dominates the week."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Media and institutional pressure as part of a tightening control pattern",
+            "why_it_matters": "The week’s logic appears to extend pressure outward from government agencies to semi-independent institutions."
+          }
+        ],
+        "summary": "Civil-society coercion remains active as the administration uses funding and status pressure to narrow the autonomy of institutions capable of opposition, though it is not the week’s headline thread.",
+        "continuity_notes": [
+          "Connect to prior weeks’ funding-threat and institutional-pressure pattern.",
+          "Use carefully unless the week sources name a major university, law firm, or nonprofit confrontation."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "The week does not appear to be driven by militarized domestic force or inward-facing security deployments.",
+        "continuity_notes": [
+          "Do not import later-year domestic militarization logic into this week.",
+          "Only mention if a source specifically ties immigration or protest management to security-force escalation."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "new",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Elections explicitly named among the week’s affected domains",
+            "why_it_matters": "The week summary identifies elections as a major site of action, making this thread newly prominent at week level."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week10.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Election-related changes folded into broader control pattern",
+            "why_it_matters": "Because election administration is mentioned as part of the same tightening sequence, it likely reflects structural engineering rather than rhetoric alone."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week10.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator likely flags voting-rule or representation developments",
+            "why_it_matters": "This suggests Week 10 is one of the first weeks where election engineering becomes narratively meaningful enough to foreground."
+          }
+        ],
+        "summary": "Election administration and representation rules emerge as a meaningful week-level thread, not just background election rhetoric, making Week 10 an important early point for showing entrenchment through the rules of participation themselves.",
+        "continuity_notes": [
+          "Treat as new at the weekly package level unless Week 9 already foregrounded election-rule manipulation.",
+          "Should be integrated with the broader theme that control is being exercised quietly through systems and eligibility rather than through one dramatic rupture."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary notes shifts in who could push back",
+            "why_it_matters": "This implies pressure on opposition capacity, but dissent itself does not appear to be the direct, central target of the week."
+          }
+        ],
+        "summary": "The suppression of opposition is implicit in Week 10’s narrowing of who can resist, but it remains backgrounded behind administrative, legal, and electoral mechanisms.",
+        "continuity_notes": [
+          "Useful as tonal context, not as a distinct lead thread.",
+          "Do not overstate protest or journalist targeting unless week sources contain explicit cases."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "Although the week is about personalized control, it does not appear to hinge on symbolic glorification or leader-centered civic branding.",
+        "continuity_notes": [
+          "Do not confuse personal rule with leader-glorification symbolism.",
+          "Omit unless source materials contain explicit symbolic or commemorative examples."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "This late-year elite-accountability sub-thread is not relevant to Week 10.",
+        "continuity_notes": [
+          "Omit entirely."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week10_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week framed mainly through tightening control rather than successful pushback",
+            "why_it_matters": "Resistance may exist in the background, but it is not what explains the week."
+          }
+        ],
+        "summary": "Any institutional resistance in Week 10 appears too weak or fragmentary to structure the narrative; the emphasis belongs on consolidation rather than guardrails.",
+        "continuity_notes": [
+          "If mentioned, present resistance as partial and insufficient.",
+          "Do not let countervailing material dilute the week’s core sense of tightening control."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      }
+    ],
+    "week_summary_notes": [
+      "Week 10 is best understood as cumulative consolidation rather than a single spectacular rupture.",
+      "Administrative control, immigration coercion, election engineering, and legal asymmetry intersect rather than competing for attention.",
+      "The week’s tone is one of quiet system-shaping through orders, appointments, and funding rather than overt constitutional drama alone.",
+      "Election-rule manipulation appears newly important enough this week to join the lead set.",
+      "Several threads are present as infrastructure rather than as standalone set pieces, so the rewrite should avoid over-fragmentation."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+      ],
+      "supporting_threads": [
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION"
+      ],
+      "background_threads": [
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "threads_to_downplay": [
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "threads_to_omit": [
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+      ],
+      "opening_focus": "Open on the week as a dense, multi-front tightening of control carried out through ordinary-seeming instruments—orders, appointments, funding, and rule changes—rather than a single dramatic break. From there, move quickly into how administrative capture, immigration coercion, and election engineering made the state feel more personalized and exclusionary.",
+      "closing_focus": "Close on the cumulative effect: multiple institutions and policy arenas were nudged into the same direction, making it harder to say the week was about any one controversy and easier to see it as an expanding method of governance.",
+      "continuity_emphasis_notes": [
+        "Emphasize that Week 10 extends existing early-term patterns rather than inaugurating an entirely new phase.",
+        "Show how immigration, law, media, and elections are connected by a common method of selective control.",
+        "Keep executive overreach in frame as the enabling constitutional condition, but let administrative capture do more of the explanatory work.",
+        "Treat election engineering as a notable escalation in domain breadth: the administration is not only controlling agencies and enforcement but also the rules of democratic participation.",
+        "If resistance appears, present it as partial backdrop rather than the main narrative counterweight."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "The week opened with a visible assertion of presidential power over both the legal system and the federal bureaucracy. On Saturday, the administration abolished diversity, equity, and inclusion programs across the federal government by executive order, signaling a sharp retreat from policies aimed at addressing discrimination and unequal access. That same day, the White House moved against specific law firms that had represented Trump’s political adversaries. An order stripping Paul Weiss of security clearances and federal contracts was issued and then quickly withdrawn after the firm agreed to concessions, while similar measures targeted Perkins Coie and Covington & Burling. A separate directive instructed Attorney General Pam Bondi to flag “partisan” lawsuits for potential sanctions from the White House. Taken together, these actions used national security and administrative tools to punish disfavored legal actors and to warn the broader bar that representing certain clients could carry professional and economic risks.\n\nFederal power was also turned on vulnerable migrants and a core social insurance agency over the weekend. The administration cut more than $200 million in grants that fund legal representation for unaccompanied migrant children, leaving many to face complex immigration proceedings without counsel. ICE detained 18 Cuban immigrants at routine check-ins despite their special status, while reporting indicated that the IRS was moving toward sharing undocumented migrants’ tax data with ICE, reversing longstanding confidentiality norms meant to encourage tax compliance. At Social Security, Acting Commissioner Leland Dudek threatened to shut down the agency in response to a court order blocking data transfers to the Department of Government Efficiency, prompting Judge Ellen Hollander to clarify that her order did not touch benefit payments. The episode showed how essential services and personal data could be used as leverage in disputes between the executive branch and the courts.\n\nEducation and public memory also came under early pressure. On Sunday, Trump signed an executive order aimed at dismantling the Department of Education, part of a broader effort to reduce federal oversight of schools and student protections. In North Carolina, lawmakers advanced a bill targeting DEI initiatives in state agencies, echoing the federal rollback and signaling that institutions anticipating funding and compliance risks were already adjusting. At the same time, reports surfaced that more than 200 terms—including “racism,” “women,” and “BIPOC”—were being limited or removed from government websites and curricula. The National Park Service scrubbed references to Pauli Murray’s gender identity and erased trans women from Stonewall history, while pages on pioneering women in the Air Force and Jackie Robinson briefly disappeared before public pressure forced their restoration. These moves foreshadowed a coordinated effort to reshape how inequality, gender, and race are discussed in official settings.\n\nThe weekend also highlighted the growing entanglement of public policy and private wealth. Investigations detailed how Elon Musk’s companies, including SpaceX and Starlink, were receiving major federal contracts and policy support at the same time that the IRS was undergoing deep staff cuts projected to cost hundreds of billions in lost revenue from wealthy taxpayers. In response, a grassroots “TeslaTakedown” movement organized peaceful protests at Tesla dealerships. Organizer Valerie Costa reported threats after Musk accused her of crimes on social media, illustrating how online attacks by powerful figures can chill dissent. Meanwhile, Democrats including Bernie Sanders and Alexandria Ocasio-Cortez launched a “Fighting Oligarchy” tour in Republican districts, filling town halls that GOP incumbents had avoided. Abroad, Trump’s casual talk of acquiring territories such as Greenland, Canada, and Gaza alarmed experts who saw it as eroding postwar norms against territorial conquest.\n\nBy Monday, the campaign against disfavored law firms intensified. Building on the weekend’s orders, Trump issued new directives penalizing Covington & Burling, Perkins Coie, and others by barring their lawyers from federal buildings, revoking security clearances, and restricting interactions with agencies, explicitly citing their past representation of figures like Jack Smith and Hillary Clinton. Judge Beryl Howell quickly blocked parts of the order against Perkins Coie on First Amendment grounds, but the broader pattern of using security classifications and access to punish legal adversaries remained in place. In a parallel move on education, a second executive order instructed Education Secretary Linda McMahon to begin dismantling the Department of Education’s core functions and to oversee the firing of at least 300 Federal Student Aid employees. Critics warned that gutting the unit responsible for student loans and financial aid would invite fraud and leave millions of borrowers with fewer protections, even as it allowed the White House to pursue structural change without congressional approval.\n\nMonday also brought a series of economic and informational maneuvers that blurred the line between public office and private gain. The White House formally solicited corporate sponsors for the historic Easter Egg Roll, offering naming rights and branding in exchange for contributions, turning a longstanding civic tradition into a marketing opportunity. Reporting underscored how Musk’s firms were benefiting from large federal contracts amid weakened tax enforcement. Trump used his social platform to promote a meme coin bearing his name, $TRUMP, in which he holds an 80 percent stake through a private entity. The promotion briefly spiked the coin’s value, and a small group of traders made large profits on well-timed trades that resembled insider advantage. Shortly after $TRUMP was listed on Coinbase, the SEC abruptly dropped a major lawsuit against the exchange without conditions, raising questions about regulatory independence. At the same time, Health Secretary Robert F. Kennedy Jr. continued to spread dubious claims about vaccines, contributing to rising skepticism and documented outbreaks, while Trump used a Justice Department podium to label CNN and MSNBC “illegal” and “corrupt,” suggesting they should be investigated or outlawed. These moves collectively signaled a governing style that commercializes public events, favors politically connected firms, undermines science-based guidance, and delegitimizes critical media.\n\nCourts began to push back more visibly on Monday. Judge James Boasberg rejected the administration’s attempt to vacate restraining orders protecting Venezuelan migrants accused of gang ties, insisting they receive hearings before deportation. Columbia student Yunseo Chung sued over efforts to revoke her status after pro-Palestinian protests, arguing that immigration law was being used to punish speech. These cases foreshadowed a week in which judges would repeatedly insist that emergency powers and immigration tools remain subject to due process and constitutional limits.\n\nOn Tuesday, the White House turned directly to the rules of voting. Trump signed an executive order titled “Preserving and Protecting the Integrity of American Elections,” requiring documentary proof of citizenship for federal voter registration, directing the Justice Department to prioritize prosecution of “election crimes,” and seeking to bar counting ballots received after Election Day. A companion order threatened to cut federal funds to states that did not comply. Legal experts noted that the Constitution assigns most authority over election rules to states and Congress, not the president, and warned that millions of eligible voters—particularly naturalized citizens and those without ready access to documents—could be disenfranchised. In the same vein of punitive executive power, a new order singled out Jenner & Block, directing agencies to review its security clearances and contracts and to cease providing goods and services to the firm over alleged partisan activities, extending the blacklist of law firms.\n\nTuesday also saw the Yemen Signal scandal break into public view. During a Senate Intelligence Committee hearing, Democratic senators questioned intelligence leaders about a Signal group chat that had mistakenly included journalist Jeffrey Goldberg and discussed U.S. strikes in Yemen. Officials denied sharing classified details, even as a Pentagon bulletin had warned against using Signal and later reporting showed operational content in the chat. The hearing marked the first public airing of what would become a major national security and records-keeping controversy, raising questions about both operational security and compliance with laws requiring preservation of government records.\n\nAt the state level, Texas advanced sweeping ideological controls over schools and libraries. The state Senate moved forward SB 412, which would criminalize teachers and librarians for providing certain “sexually explicit” materials, even when educational, with penalties of up to 10 years in prison. A broader package mandated school prayer, Ten Commandments displays, defunding libraries that host drag story hours, and bans on instruction about gender identity and DEI policies. These measures embedded a particular religious and ideological framework into public education and narrowed what could be taught, echoing federal efforts to dismantle DEI and reshape curricula. Meanwhile, courts and academics mobilized against protest-linked deportations: a federal judge in Manhattan issued a temporary restraining order blocking ICE from detaining Yunseo Chung and prohibiting her transfer out of the district, and academic groups in Boston sued to stop deportations of foreign students and scholars targeted for pro-Palestinian views, arguing that the administration was creating a “climate of repression” on campuses.\n\nBy midweek, the confrontation between the executive branch and the legal system escalated. On Wednesday, an executive order directed Attorney General Bondi to investigate lawyers who take actions to block administration priorities, effectively turning prosecutorial power toward disciplining legal opposition. Additional orders extended punitive measures to Jenner & Block, Covington, Perkins Coie, Paul Weiss, and WilmerHale, revoking clearances, restricting access to federal buildings, and requiring clients to disclose if they were represented by these firms. Another order encouraged disciplinary action against attorneys filing “frivolous” litigation against the administration. In Congress, House Speaker Mike Johnson suggested that lawmakers could defund, restructure, or even eliminate federal district courts in response to decisions blocking Trump’s policies, emphasizing legislative control over court funding and existence. Although later framed as theoretical, the remarks echoed ongoing impeachment threats against judges and underscored a willingness to use structural levers against the judiciary.\n\nThe Yemen Signal scandal widened on Wednesday as more details emerged. Republican senators joined Democrats in calling for investigations into the leak and the use of an unapproved app for war planning. House and Senate hearings questioned intelligence chiefs, while watchdog group American Oversight filed suit arguing that auto-deleting Signal messages violated the Federal Records Act. Judge Boasberg issued a temporary restraining order requiring preservation of all messages from the chat, and the case was formally assigned to him. Former officials Tulsi Gabbard and John Ratcliffe denied sharing classified information, while Rep. Jim Himes pressed Gabbard on inconsistencies in her testimony. The episode exposed both security lapses and attempts to conduct sensitive policy discussions off the official record, prompting a rare bipartisan push for oversight.\n\nCourts continued to act as a counterweight on immigration and protest. A federal judge granted another temporary restraining order preventing ICE from detaining Yunseo Chung, reinforcing earlier rulings that she could not be deported while her case proceeds. In Boston, a judge ordered the Department of Homeland Security to explain the detention of Tufts doctoral student Rumeysa Ozturk, whose visa had been revoked over alleged support for Hamas without presented evidence. At the same time, reports confirmed that the administration had moved to withhold $400 million in federal grants from Columbia University over its handling of pro-Palestine protests, with the university beginning to comply with federal demands to restore funding. The Social Security Administration appointed Scott Coulter, a former member of the Department of Government Efficiency team, as its Chief Information Officer shortly after a court barred DOGE affiliates from accessing SSA databases, an apparent attempt to preserve his access to sensitive personal data despite the restraining order. In Wisconsin, new reporting showed Elon Musk’s PAC had spent $19 million on a state Supreme Court race and was offering $100 payments for signing a petition plus $1 million prizes, prompting the state Department of Justice to prepare a lawsuit alleging violations of election laws against vote buying.\n\nOn Thursday, the Yemen Signal controversy crystallized into formal oversight. Despite mounting criticism, Trump announced he would not dismiss National Security Adviser Mike Waltz or Defense Secretary Pete Hegseth for their roles in the chat, reportedly to avoid admitting fault. Meanwhile, the bipartisan leaders of the Senate Armed Services Committee, Roger Wicker and Jack Reed, sent a formal letter to the Pentagon’s acting inspector general demanding an investigation into the leak and the use of unclassified networks for war planning. American Oversight’s lawsuit advanced as Judge Boasberg ordered preservation of all messages and took formal control of the case, ensuring that the administration’s handling of digital communications would face judicial scrutiny.\n\nThe administration used Thursday to deepen its reliance on executive orders in other arenas as well. Trump signed an order excluding a wide range of security-related agencies from the Federal Labor-Management Relations Program, curtailing union rights for large segments of the federal workforce under a broad national security rationale. Another order targeted WilmerHale, directing agencies to review and potentially terminate its contracts and clearances, adding to the growing blacklist of law firms. In the cultural sphere, an executive order to “restore truth and sanity” to American history directed federal sites, including the Smithsonian and Independence National Historical Park, to present a more “positive” view of American heritage and to restore certain monuments by July 4, 2026. The vice president was tasked with ensuring that museums and memorials reflect the administration’s preferred narrative, casting critical or “revisionist” accounts as divisive.\n\nCourts issued several significant rulings on Thursday that limited emergency and personnel powers. A D.C. Circuit panel upheld an order blocking deportations to El Salvador under the Alien Enemies Act, constraining the administration’s use of a centuries-old wartime law for modern removals. A federal judge in Washington refused to lift an injunction against the administration’s transgender military ban, calling its self-reporting scheme an invasion of privacy. The Ninth Circuit declined to pause a ruling requiring reinstatement of more than 17,000 probationary federal employees fired in a workforce reduction plan. At the same time, HHS announced the cancellation of more than $12 billion in grants to states for mental health, addiction treatment, and infectious disease tracking, along with plans to cut 10,000 employees, while the VA outlined plans to lay off over 80,000 employees nationwide. A leaked Department of Energy “hit list” showed plans to cancel long-duration energy storage and other clean energy projects funded under the bipartisan infrastructure law, even as Trump announced new 25 percent tariffs on imported cars and parts, including from Canada and Mexico. These decisions pointed toward a hollowing out of public health and veterans’ services and injected uncertainty into major economic sectors.\n\nDespite these pressures, signs of political resistance and civic mobilization appeared. Democrat James Malone’s upset win in a Pennsylvania state senate district that Trump had carried by 57 percent suggested shifting voter sentiment in key areas. Civil society groups announced a national mobilization for April 5 against authoritarian measures, with more than 800 events planned. Analysts documented how Trump-era protest crackdowns were influencing local law enforcement tactics, including expanded surveillance and aggressive permitting and zoning strategies, raising the stakes for how upcoming demonstrations would be policed.\n\nFriday capped the week with aggressive new executive orders on immigration, labor, and culture, and with the first coordinated legal pushback from targeted law firms. Trump created the “DC safe and beautiful task force,” chaired by Stephen Miller, through an executive order directing federal and local coordination to enforce immigration laws, increase law enforcement presence, expedite concealed carry permits, and remove homeless encampments and graffiti from federal lands in Washington. The order effectively extended federal influence over local policing and public space under the banner of safety and aesthetics, blending immigration enforcement with encampment sweeps in the nation’s capital. Another order instructed agencies to terminate collective bargaining agreements and stop payroll dues collection for hundreds of thousands of federal workers, arguing that unions constrain the executive branch. Coming on top of earlier exclusions for security agencies and deep staff cuts across multiple departments, the move sharply reduced organized labor’s influence inside the federal government.\n\nThe administration also moved to bring the Smithsonian and national memory under more direct ideological control. A companion order to Thursday’s history directive instructed Vice President JD Vance to purge “improper, divisive, or anti-American ideology” from the Smithsonian’s museums, education, and research centers, and to ensure that the American Women’s History Museum does not recognize trans women as women. It called for restoring Confederate-era names and statues in federal parks. Critics saw the move as an attempt to erase diversity and dissent from the nation’s official story, building on earlier scrubbing of terms like “racism” and “BIPOC” from federal materials. Universities and international students felt the pressure as well: the University of Michigan closed its flagship DEI program and office, citing compliance with anti-DEI executive orders and the risk of losing federal funds, despite the program’s role in diversifying enrollment. The State Department ordered consular officers to conduct mandatory social media reviews of student visa applicants and to deny visas under a broad definition of support for terrorism, with instructions to preserve derogatory content as evidence, raising the prospect that political speech online could bar entry to the United States.\n\nIn the legal arena, Jenner & Block and WilmerHale filed lawsuits in federal court in Washington seeking to block executive orders that would halt their federal business and revoke their attorneys’ security clearances. The suits followed a successful challenge by Perkins Coie and argued that the orders were retaliatory and unconstitutional, marking a coordinated pushback from the bar against the administration’s campaign to punish firms associated with Trump’s adversaries. At the same time, the administration filed an emergency request with the U.S. Supreme Court to allow deportations under the Alien Enemies Act to resume, after lower courts blocked removals that bypassed hearings. Officials argued that the injunction forced the country to harbor individuals deemed national security threats, while human rights groups and intelligence assessments disputed the underlying claims. As civil society groups prepared for the April 5 national mobilization, analyses warned that evolving protest policing and surveillance tactics could be used to constrain turnout and visibility, underscoring how the right to assemble would be tested in the weeks ahead.\n\nAcross these seven days, the federal government’s use of executive power pressed hard against long-standing guardrails in law, administration, and civic life. Orders targeting law firms, unions, universities, and cultural institutions sought to reshape who can challenge the state, how history is told, and which voices are welcome in public space. At the same time, courts, watchdogs, state officials, and grassroots organizers repeatedly asserted countervailing authority—blocking deportations, insisting on record-keeping, probing security breaches, enforcing election laws, and taking the administration to court. The balance between concentrated executive action and these dispersed forms of resistance will shape not only the immediate policies at issue but also the durability of independent institutions that underpin democratic governance.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk10_CR_001\",\n      \"wk10_IM_019\",\n      \"wk10_CR_020\",\n      \"wk10_CR_022\",\n      \"wk10_IG_027\",\n      \"wk10_IG_022\",\n      \"wk10_CR_004\",\n      \"wk10_CR_003\",\n      \"wk10_CR_007\",\n      \"wk10_CR_009\",\n      \"wk10_CR_002\",\n      \"wk10_ES_001\",\n      \"wk10_CR_011\",\n      \"wk10_CR_005\",\n      \"wk10_CR_006\",\n      \"wk10_CR_008\",\n      \"wk10_CR_010\",\n      \"wk10_CR_027\",\n      \"wk10_IG_008\",\n      \"wk10_IG_019\",\n      \"wk10_PA_020\",\n      \"wk10_PA_004\",\n      \"wk10_PA_013\",\n      \"wk10_PA_008\",\n      \"wk10_PA_001\",\n      \"wk10_PA_002\",\n      \"wk10_IG_021\",\n      \"wk10_IG_003\",\n      \"wk10_IG_004\",\n      \"wk10_IG_006\",\n      \"wk10_IG_010\",\n      \"wk10_IG_011\",\n      \"wk10_IG_009\",\n      \"wk10_PA_006\",\n      \"wk10_PA_005\",\n      \"wk10_PA_011\",\n      \"wk10_PA_014\",\n      \"wk10_PA_015\",\n      \"wk10_PA_022\",\n      \"wk10_IG_015\",\n      \"wk10_IG_017\",\n      \"wk10_IG_018\",\n      \"wk10_IG_026\",\n      \"wk10_IG_029\",\n      \"wk10_IG_020\",\n      \"wk10_IG_025\",\n      \"wk10_IG_001\",\n      \"wk10_PA_021\",\n      \"wk10_ES_008\",\n      \"wk10_ES_009\",\n      \"wk10_ES_004\",\n      \"wk10_ES_002\",\n      \"wk10_ES_003\",\n      \"wk10_ES_005\",\n      \"wk10_ES_006\",\n      \"wk10_ES_019\",\n      \"wk10_ES_007\",\n      \"wk10_ES_015\",\n      \"wk10_PA_009\",\n      \"wk10_CR_015\",\n      \"wk10_CR_016\",\n      \"wk10_CR_017\",\n      \"wk10_ES_020\",\n      \"wk10_ES_021\",\n      \"wk10_ES_022\",\n      \"wk10_PA_007\",\n      \"wk10_PA_017\",\n      \"wk10_ES_010\",\n      \"wk10_ES_011\",\n      \"wk10_ES_012\",\n      \"wk10_ES_013\",\n      \"wk10_ES_014\",\n      \"wk10_ES_016\",\n      \"wk10_ES_017\",\n      \"wk10_ES_018\",\n      \"wk10_PA_010\",\n      \"wk10_ES_023\",\n      \"wk10_IG_007\",\n      \"wk10_PA_012\",\n      \"wk10_IM_013\",\n      \"wk10_IM_001\",\n      \"wk10_IM_005\",\n      \"wk10_IM_002\",\n      \"wk10_IM_003\",\n      \"wk10_IM_010\",\n      \"wk10_IM_011\",\n      \"wk10_IG_023\",\n      \"wk10_IM_014\",\n      \"wk10_IM_004\",\n      \"wk10_IM_006\",\n      \"wk10_IM_015\",\n      \"wk10_IM_017\",\n      \"wk10_IG_024\",\n      \"wk10_CR_012\",\n      \"wk10_CR_018\",\n      \"wk10_CR_019\",\n      \"wk10_CR_021\",\n      \"wk10_CR_023\",\n      \"wk10_IM_007\",\n      \"wk10_IG_012\",\n      \"wk10_IG_013\",\n      \"wk10_PA_018\",\n      \"wk10_IM_008\",\n      \"wk10_IM_009\",\n      \"wk10_IM_016\",\n      \"wk10_IG_014\",\n      \"wk10_IG_016\",\n      \"wk10_IM_012\",\n      \"wk10_CR_013\",\n      \"wk10_CR_024\",\n      \"wk10_CR_025\",\n      \"wk10_CR_026\",\n      \"wk10_CR_014\",\n      \"wk10_PA_003\",\n      \"wk10_PA_019\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 121,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk10_CR_001\",\n        \"wk10_IM_019\",\n        \"wk10_CR_020\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Open with the EO on proof-of-citizenship and ballot deadlines (wk10_CR_001) as the week\\u2019s marquee move, then explain DOGE\\u2019s push for SSA and voter data access (wk10_IM_019) as the data backbone of this strategy. Fold in the Democratic secretaries of state investment (wk10_CR_020) and Musk\\u2019s spending in Wisconsin court races (wk10_CR_022) as the partisan and oligarchic arms race over election administration. Close with the Louisiana VRA case (wk10_IG_027) and Wisconsin DOJ suit (wk10_IG_022) to show courts and state actors fighting over the same terrain.\",\n      \"one_sentence_thesis\": \"The administration used executive power and elite money to reshape election rules and oversight, tightening control over who can vote and who runs key election-related institutions.\",\n      \"supporting_event_ids\": [\n        \"wk10_CR_022\",\n        \"wk10_IG_027\",\n        \"wk10_IG_022\"\n      ],\n      \"title\": \"Trump centralizes control over elections and voter data under the guise of integrity\",\n      \"why_it_matters\": \"Proof-of-citizenship mandates, DOGE access to voter data, and heavy spending in judicial and secretary-of-state races together harden structural advantages for the ruling coalition and make it easier to justify future restrictions as neutral 'integrity' measures. This development also shows how state and federal levers, plus private capital, converge to influence who counts and who counts the votes.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_CR_004\",\n        \"wk10_CR_003\",\n        \"wk10_CR_007\",\n        \"wk10_CR_009\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Structure this as a narrative arc: start with the Alien Enemies Act deportations of Venezuelans (wk10_CR_004) and Trump\\u2019s denial of responsibility (wk10_PA_020), then move to the allegation that ICE ignored a court order on a deportation flight (wk10_CR_003). Layer in the pattern of targeting pro-Palestinian and antiwar students and academics\\u2014visa revocations, detentions, and social media screening (wk10_CR_007, wk10_CR_011, wk10_CR_005, wk10_CR_006, wk10_CR_008, wk10_CR_009, wk10_CR_027)\\u2014and the funding squeeze on Columbia (wk10_CR_010, wk10_PA_016) as part of the same toolkit. Use IRS\\u2013ICE tax data sharing (wk10_ES_001) and DOGE-linked appointment at SSA (wk10_IG_019) to show the data infrastructure behind this, and end with courts partially pushing back (wk10_IG_008) and the broader enforcement climate (wk10_PA_004, wk10_PA_013).\",\n      \"one_sentence_thesis\": \"Across multiple fronts, the administration and ICE used deportation powers, data access, and visa controls to punish protesters, students, and migrants while courts and advocates scrambled to impose due-process guardrails.\",\n      \"supporting_event_ids\": [\n        \"wk10_CR_002\",\n        \"wk10_ES_001\",\n        \"wk10_CR_011\",\n        \"wk10_CR_005\",\n        \"wk10_CR_006\",\n        \"wk10_CR_008\",\n        \"wk10_CR_010\",\n        \"wk10_CR_027\",\n        \"wk10_IG_008\",\n        \"wk10_IG_019\",\n        \"wk10_PA_020\",\n        \"wk10_PA_004\",\n        \"wk10_PA_013\"\n      ],\n      \"title\": \"Immigration and citizenship tools are weaponized against dissenters and marginalized groups\",\n      \"why_it_matters\": \"Turning immigration status into a lever against political speech and basic rights stratifies citizenship by ideology and origin, making whole communities more vulnerable to arbitrary state power. The tug-of-war with courts also tests whether legal constraints can still meaningfully protect noncitizens and dissenters.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_PA_008\",\n        \"wk10_PA_001\",\n        \"wk10_PA_002\",\n        \"wk10_IG_021\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Lead with the cluster of EOs against law firms (wk10_PA_008, wk10_PA_001) and Trump\\u2019s directive to the AG to flag and punish partisan lawsuits (wk10_PA_002) as a coherent campaign to intimidate legal opposition. Then introduce Alina Habba\\u2019s appointment as interim U.S. Attorney (wk10_IG_021) and Trump\\u2019s clearance revocations (wk10_PA_006) as examples of loyalty-based control over justice. Weave in congressional threats to impeach judges and defund courts (wk10_IG_003, wk10_IG_006) alongside Roberts\\u2019s rebuke and court orders blocking some EOs (wk10_IG_004, wk10_IG_010, wk10_IG_011, wk10_IG_009) to show institutional pushback. Use the SSA shutdown threat (wk10_PA_005), civil service and labor-relations EOs (wk10_PA_011, wk10_PA_014, wk10_PA_015), and the Trevor Milton pardon (wk10_PA_022) to broaden the picture of law as a selective weapon. Close with smaller governance and reform notes (NLRB FOIA systems, DEI rollback bill, WA interrogation bill) as context that not all institutional movement is in one direction.\",\n      \"one_sentence_thesis\": \"The president and his allies escalated efforts to punish legal adversaries and reshape the justice system through retaliatory executive orders, politicized appointments, and threats to the judiciary and civil service, even as some courts pushed back.\",\n      \"supporting_event_ids\": [\n        \"wk10_IG_003\",\n        \"wk10_IG_004\",\n        \"wk10_IG_006\",\n        \"wk10_IG_010\",\n        \"wk10_IG_011\",\n        \"wk10_IG_009\",\n        \"wk10_PA_006\",\n        \"wk10_PA_005\",\n        \"wk10_PA_011\",\n        \"wk10_PA_014\",\n        \"wk10_PA_015\",\n        \"wk10_PA_022\",\n        \"wk10_IG_015\",\n        \"wk10_IG_017\",\n        \"wk10_IG_018\",\n        \"wk10_IG_026\",\n        \"wk10_IG_029\",\n        \"wk10_IG_020\",\n        \"wk10_IG_025\",\n        \"wk10_IG_001\"\n      ],\n      \"title\": \"Law becomes a weapon: Trump targets disfavored law firms, judges, and civil servants\",\n      \"why_it_matters\": \"When access to courts, legal representation, and public employment depends on loyalty to the president, the rule of law erodes into a system of personalized rewards and punishments. This week\\u2019s clashes also reveal how much resistance still exists inside the judiciary and bureaucracy.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_PA_021\",\n        \"wk10_ES_008\",\n        \"wk10_ES_009\",\n        \"wk10_ES_004\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Center the $TRUMP coin storyline: Trump\\u2019s promotion of a coin he largely owns (wk10_PA_021) and the rapid listing and windfall profits (wk10_ES_008, wk10_ES_009) as a vivid example of monetizing the presidency. Then broaden to trade and industrial policy: auto tariffs and Venezuela-linked tariffs (wk10_ES_004, wk10_PA_009) and deep cuts or shifts in public services and energy funding (wk10_ES_002, wk10_ES_005, wk10_ES_006, wk10_ES_019, wk10_ES_007). Use the Tesla vandalism terrorism task force and Trump\\u2019s rhetoric (wk10_CR_015, wk10_CR_016, wk10_CR_017) to show security resources deployed for a favored firm. Weave in the Easter Egg Roll sponsorships (wk10_ES_003), regulatory freezes (wk10_ES_015), and the Trevor Milton pardon (wk10_PA_022) as further examples of policy and clemency serving well-connected actors. Contrast briefly with Biden-era antitrust rhetoric and industrial policy (wk10_ES_021, wk10_ES_022) and local corruption probes (wk10_ES_020) to show competing models of state\\u2013market relations.\",\n      \"one_sentence_thesis\": \"The administration used tariffs, regulatory cuts, pardons, and even a presidentially promoted meme coin to reward allies, punish critics, and blur the line between public policy and private gain.\",\n      \"supporting_event_ids\": [\n        \"wk10_ES_002\",\n        \"wk10_ES_003\",\n        \"wk10_ES_005\",\n        \"wk10_ES_006\",\n        \"wk10_ES_019\",\n        \"wk10_ES_007\",\n        \"wk10_ES_015\",\n        \"wk10_PA_009\",\n        \"wk10_PA_022\",\n        \"wk10_CR_015\",\n        \"wk10_CR_016\",\n        \"wk10_CR_017\",\n        \"wk10_ES_020\",\n        \"wk10_ES_021\",\n        \"wk10_ES_022\"\n      ],\n      \"title\": \"Crony capitalism and personal enrichment fuse with federal policy\",\n      \"why_it_matters\": \"When economic decisions are driven by personal stakes and elite deals rather than transparent public-interest criteria, markets become tools of political patronage and ordinary people bear the costs through higher prices, weaker services, and skewed enforcement.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_PA_007\",\n        \"wk10_PA_017\",\n        \"wk10_PA_014\",\n        \"wk10_PA_015\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"Frame this as a structural story about the administrative state: start with the EO dismantling the Department of Education (wk10_PA_007) and the announced plan to eliminate FEMA (wk10_PA_017) as headline-grabbing moves. Then detail the anti-union and workforce EOs (wk10_PA_014, wk10_PA_011, wk10_PA_015) and connect them to specific planned layoffs and grant cuts at VA and HHS (wk10_ES_005, wk10_ES_007). Use the Ninth Circuit decision restoring fired probationary employees (wk10_IG_009) as a momentary check. Round out with smaller but telling administrative changes\\u2014payment centralization (wk10_PA_010) and various regulatory delays or technical actions (wk10_ES_010\\u2013wk10_ES_018, wk10_ES_011\\u2013wk10_ES_014, wk10_ES_016\\u2013wk10_ES_018)\\u2014to show how the machinery of government is being retooled, not just rhetorically attacked.\",\n      \"one_sentence_thesis\": \"Through sweeping executive orders and staffing decisions, the administration moved to dismantle major departments, gut unions, and shrink or politicize the federal workforce and safety-net capacity.\",\n      \"supporting_event_ids\": [\n        \"wk10_ES_005\",\n        \"wk10_ES_007\",\n        \"wk10_PA_011\",\n        \"wk10_IG_009\",\n        \"wk10_ES_010\",\n        \"wk10_ES_011\",\n        \"wk10_ES_012\",\n        \"wk10_ES_013\",\n        \"wk10_ES_014\",\n        \"wk10_ES_016\",\n        \"wk10_ES_017\",\n        \"wk10_ES_018\",\n        \"wk10_PA_010\",\n        \"wk10_ES_023\",\n        \"wk10_IG_007\"\n      ],\n      \"title\": \"Civil service, unions, and core federal agencies come under structural attack\",\n      \"why_it_matters\": \"Weakening or abolishing agencies like the Department of Education, FEMA, HHS programs, and VA staffing erodes the state\\u2019s ability to deliver basic services and leaves remaining functions more tightly controlled by political appointees and private contractors.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_PA_012\",\n        \"wk10_IM_013\",\n        \"wk10_IM_001\",\n        \"wk10_IM_005\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Open with the EO ordering federal institutions to reshape history and purge 'improper' ideologies (wk10_PA_012) and the Smithsonian purge directive (wk10_IM_013) as the clearest examples of top-down memory control. Then fold in the banned-words list (wk10_IM_001) and specific content removals and restorations at NPS and DoD (wk10_IM_002, wk10_IM_003) to show how this plays out in practice. Move to media: Trump\\u2019s attacks on CNN/MSNBC (wk10_IM_005), the congressional hearing targeting NPR/PBS (wk10_IG_023), and Fox sidelining a reporter (wk10_IM_010) as a coordinated pressure campaign on independent journalism, with public media funding in the crosshairs (wk10_IM_011). Include the University of Michigan\\u2019s DEI shutdown (wk10_IM_014) and Texas education bills (wk10_IG_024, wk10_IG_025) to show how federal and state actions reshape education. Use vaccine disinformation and counterexamples (wk10_IM_004, wk10_IM_017, wk10_IM_006, wk10_IM_015) plus civic activism and elections (wk10_CR_018, wk10_CR_019, wk10_CR_021, wk10_CR_023) as context for a contested information environment.\",\n      \"one_sentence_thesis\": \"The administration expanded efforts to delegitimize independent media, sanitize official language and history, and exert direct control over museums and universities, while some institutions and journalists resisted.\",\n      \"supporting_event_ids\": [\n        \"wk10_IM_002\",\n        \"wk10_IM_003\",\n        \"wk10_IM_010\",\n        \"wk10_IM_011\",\n        \"wk10_IG_023\",\n        \"wk10_IM_014\",\n        \"wk10_IM_004\",\n        \"wk10_IM_006\",\n        \"wk10_IM_015\",\n        \"wk10_IM_017\",\n        \"wk10_IG_024\",\n        \"wk10_IG_025\",\n        \"wk10_CR_012\",\n        \"wk10_CR_018\",\n        \"wk10_CR_019\",\n        \"wk10_CR_021\",\n        \"wk10_CR_023\"\n      ],\n      \"title\": \"Information control, media attacks, and the fight over national memory intensify\",\n      \"why_it_matters\": \"Controlling what can be said, taught, and remembered narrows the space for democratic deliberation and accountability, especially when combined with attacks on outlets that investigate or criticize those in power.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_IM_007\",\n        \"wk10_IG_012\",\n        \"wk10_IG_013\",\n        \"wk10_PA_018\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Tell this as a scandal narrative: start with the revelation that national security officials used Signal, including accidentally adding a journalist, to plan Yemen strikes (wk10_IM_007). Then show the institutional response\\u2014Pentagon\\u2019s Signal warning (wk10_IM_008), Der Spiegel\\u2019s reporting on leaked credentials (wk10_IM_009), and Wired\\u2019s Venmo findings (wk10_IM_016). Move to formal oversight: Judge Boasberg\\u2019s preservation order and records lawsuit (wk10_IG_012, wk10_IG_013), House Intelligence questioning (wk10_IG_015), and bipartisan IG requests from Senate Armed Services (wk10_IG_014, wk10_IG_016). Contrast this with Trump\\u2019s refusal to fire those involved (wk10_PA_018) and his attacks on Jeffrey Goldberg (wk10_IM_012) to underscore the gap between institutional concern and presidential impunity.\",\n      \"one_sentence_thesis\": \"Revelations that senior officials used auto-deleting Signal chats for Yemen war planning triggered security warnings, leaks, and multiple oversight actions, while Trump refused to hold his team accountable and attacked the journalist who broke the story.\",\n      \"supporting_event_ids\": [\n        \"wk10_IM_008\",\n        \"wk10_IM_009\",\n        \"wk10_IM_016\",\n        \"wk10_IG_014\",\n        \"wk10_IG_016\",\n        \"wk10_IG_015\",\n        \"wk10_IM_012\"\n      ],\n      \"title\": \"Signal war-plans scandal exposes secretive decision-making and weak accountability in national security\",\n      \"why_it_matters\": \"Conducting high-stakes military planning off official systems undermines records laws, democratic oversight, and basic operational security, especially when the response is to smear reporters rather than fix practices.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk10_CR_015\",\n        \"wk10_CR_012\",\n        \"wk10_CR_013\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Use the Tesla vandalism terrorism task force and Trump\\u2019s rhetoric (wk10_CR_015, wk10_CR_016) as an entry point into how 'terrorism' labels are being stretched to protect corporate property, contrasting with peaceful Tesla protests (wk10_CR_017). Then highlight positive rights protections like the injunction against the transgender military ban (wk10_CR_012) and state-level reforms on interrogations and labor rights (wk10_IG_001, wk10_IG_007). Weave in police misconduct and internal retaliation cases (wk10_CR_013, wk10_CR_014) and broader social issues like homelessness and local elections (wk10_CR_021, wk10_CR_023, wk10_CR_024, wk10_CR_025, wk10_CR_026). Close by tying in Trump\\u2019s abolition of federal DEI programs and pressure on states over trans athletes (wk10_PA_003, wk10_PA_019) as part of the same contested landscape over whose rights are protected and whose are curtailed.\",\n      \"one_sentence_thesis\": \"While some courts and agencies took steps to protect civil rights and accountability, other actions\\u2014from terrorism charges over property damage to police misconduct and internal retaliation\\u2014showed how security and justice systems remain uneven and politicized.\",\n      \"supporting_event_ids\": [\n        \"wk10_CR_016\",\n        \"wk10_CR_017\",\n        \"wk10_CR_018\",\n        \"wk10_CR_019\",\n        \"wk10_CR_021\",\n        \"wk10_CR_024\",\n        \"wk10_CR_025\",\n        \"wk10_CR_026\",\n        \"wk10_CR_014\",\n        \"wk10_CR_020\",\n        \"wk10_CR_022\",\n        \"wk10_PA_003\",\n        \"wk10_PA_019\",\n        \"wk10_IG_007\"\n      ],\n      \"title\": \"Rights and policing: selective protections amid ongoing abuses and activism\",\n      \"why_it_matters\": \"The same institutions that can defend marginalized groups and protesters can also be turned against them, and this week\\u2019s mix of rulings, prosecutions, and scandals illustrates how fragile and contested civil-rights protections remain.\"\n    }\n  ],\n  \"period_label\": \"Week 10\",\n  \"recommended_development_count\": 8,\n  \"sanity_notes\": \"Developments are organized around eight coherent arcs: elections and voter data (D1); immigration and stratified citizenship (D2); weaponization of law and justice institutions (D3); crony capitalism and economic governance (D4); attacks on the administrative state and civil service (D5); information control and media/memory battles (D6); the Signal war-plans scandal and national-security accountability (D7); and a mixed picture of civil rights and policing (D8). Some events could plausibly sit in more than one cluster\\u2014for example, Columbia funding pressure appears under immigration/dissent rather than media/memory, and Tesla-related events are split between economic cronyism and civil-rights framing\\u2014but each event is assigned only once to keep storylines clean. Routine, highly technical regulatory notices and a few contextual items are left unassigned or only gestured to in notes so the main developments stay focused and narratively manageable.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk10_ES_010\",\n      \"why_unassigned\": \"Technical EPA regulatory actions with limited direct narrative impact this week; referenced only generically in a broader governance context.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_011\",\n      \"why_unassigned\": \"Routine DEA research-related notices that do not materially shift any main storyline.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_012\",\n      \"why_unassigned\": \"Technical TSA information-collection extension with marginal relevance to the week\\u2019s core developments.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_013\",\n      \"why_unassigned\": \"NG911 compliance timing is important policy but peripheral to the dominant democracy and power themes this week.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_014\",\n      \"why_unassigned\": \"FDA\\u2019s delay of a nonprescription drug rule is a narrow regulatory move not central to any chosen development.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_016\",\n      \"why_unassigned\": \"OSHA benzene data-collection extension is routine and not clearly tied to the week\\u2019s narrative arcs.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_017\",\n      \"why_unassigned\": \"EPA information-collection renewals are technical and do not significantly advance a main storyline.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_018\",\n      \"why_unassigned\": \"EIS notice publication is standard process; only tangentially related to transparency themes already covered elsewhere.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_020\",\n      \"why_unassigned\": \"San Francisco corruption probe is notable but secondary to larger national-level cronyism stories already anchored by clearer federal examples.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_021\",\n      \"why_unassigned\": \"Biden-era antitrust rhetoric is background context rather than a live driver of this week\\u2019s structural shifts.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_022\",\n      \"why_unassigned\": \"Description of IRA/CHIPS subsidy patterns is contextual and not a discrete new action this week.\"\n    },\n    {\n      \"event_id\": \"wk10_ES_023\",\n      \"why_unassigned\": \"India\\u2019s subsidy decision is international context and not central to U.S. democracy-clock narratives.\"\n    },\n    {\n      \"event_id\": \"wk10_IM_015\",\n      \"why_unassigned\": \"Historical framing of social legislation is useful context but not a new event shaping this week\\u2019s developments.\"\n    },\n    {\n      \"event_id\": \"wk10_IM_018\",\n      \"why_unassigned\": \"EPA and Census data-collection corrections are minor transparency adjustments already implicitly covered under broader governance themes.\"\n    }\n  ],\n  \"week_number\": 10,\n  \"window\": {\n    \"end\": \"2025-03-28\",\n    \"start\": \"2025-03-22\"\n  }\n}",
+    "digest": "The week opened with a visible assertion of presidential power over both the legal system and the federal bureaucracy. On Saturday, the administration abolished diversity, equity, and inclusion programs across the federal government by executive order, signaling a sharp retreat from policies aimed at addressing discrimination and unequal access. That same day, the White House moved against specific law firms that had represented Trump’s political adversaries. An order stripping Paul Weiss of security clearances and federal contracts was issued and then quickly withdrawn after the firm agreed to concessions, while similar measures targeted Perkins Coie and Covington & Burling. A separate directive instructed Attorney General Pam Bondi to flag “partisan” lawsuits for potential sanctions from the White House. Taken together, these actions used national security and administrative tools to punish disfavored legal actors and to warn the broader bar that representing certain clients could carry professional and economic risks.\n\nFederal power was also turned on vulnerable migrants and a core social insurance agency over the weekend. The administration cut more than $200 million in grants that fund legal representation for unaccompanied migrant children, leaving many to face complex immigration proceedings without counsel. ICE detained 18 Cuban immigrants at routine check-ins despite their special status, while reporting indicated that the IRS was moving toward sharing undocumented migrants’ tax data with ICE, reversing longstanding confidentiality norms meant to encourage tax compliance. At Social Security, Acting Commissioner Leland Dudek threatened to shut down the agency in response to a court order blocking data transfers to the Department of Government Efficiency, prompting Judge Ellen Hollander to clarify that her order did not touch benefit payments. The episode showed how essential services and personal data could be used as leverage in disputes between the executive branch and the courts.\n\nEducation and public memory also came under early pressure. On Sunday, Trump signed an executive order aimed at dismantling the Department of Education, part of a broader effort to reduce federal oversight of schools and student protections. In North Carolina, lawmakers advanced a bill targeting DEI initiatives in state agencies, echoing the federal rollback and signaling that institutions anticipating funding and compliance risks were already adjusting. At the same time, reports surfaced that more than 200 terms—including “racism,” “women,” and “BIPOC”—were being limited or removed from government websites and curricula. The National Park Service scrubbed references to Pauli Murray’s gender identity and erased trans women from Stonewall history, while pages on pioneering women in the Air Force and Jackie Robinson briefly disappeared before public pressure forced their restoration. These moves foreshadowed a coordinated effort to reshape how inequality, gender, and race are discussed in official settings.\n\nThe weekend also highlighted the growing entanglement of public policy and private wealth. Investigations detailed how Elon Musk’s companies, including SpaceX and Starlink, were receiving major federal contracts and policy support at the same time that the IRS was undergoing deep staff cuts projected to cost hundreds of billions in lost revenue from wealthy taxpayers. In response, a grassroots “TeslaTakedown” movement organized peaceful protests at Tesla dealerships. Organizer Valerie Costa reported threats after Musk accused her of crimes on social media, illustrating how online attacks by powerful figures can chill dissent. Meanwhile, Democrats including Bernie Sanders and Alexandria Ocasio-Cortez launched a “Fighting Oligarchy” tour in Republican districts, filling town halls that GOP incumbents had avoided. Abroad, Trump’s casual talk of acquiring territories such as Greenland, Canada, and Gaza alarmed experts who saw it as eroding postwar norms against territorial conquest.\n\nBy Monday, the campaign against disfavored law firms intensified. Building on the weekend’s orders, Trump issued new directives penalizing Covington & Burling, Perkins Coie, and others by barring their lawyers from federal buildings, revoking security clearances, and restricting interactions with agencies, explicitly citing their past representation of figures like Jack Smith and Hillary Clinton. Judge Beryl Howell quickly blocked parts of the order against Perkins Coie on First Amendment grounds, but the broader pattern of using security classifications and access to punish legal adversaries remained in place. In a parallel move on education, a second executive order instructed Education Secretary Linda McMahon to begin dismantling the Department of Education’s core functions and to oversee the firing of at least 300 Federal Student Aid employees. Critics warned that gutting the unit responsible for student loans and financial aid would invite fraud and leave millions of borrowers with fewer protections, even as it allowed the White House to pursue structural change without congressional approval.\n\nMonday also brought a series of economic and informational maneuvers that blurred the line between public office and private gain. The White House formally solicited corporate sponsors for the historic Easter Egg Roll, offering naming rights and branding in exchange for contributions, turning a longstanding civic tradition into a marketing opportunity. Reporting underscored how Musk’s firms were benefiting from large federal contracts amid weakened tax enforcement. Trump used his social platform to promote a meme coin bearing his name, $TRUMP, in which he holds an 80 percent stake through a private entity. The promotion briefly spiked the coin’s value, and a small group of traders made large profits on well-timed trades that resembled insider advantage. Shortly after $TRUMP was listed on Coinbase, the SEC abruptly dropped a major lawsuit against the exchange without conditions, raising questions about regulatory independence. At the same time, Health Secretary Robert F. Kennedy Jr. continued to spread dubious claims about vaccines, contributing to rising skepticism and documented outbreaks, while Trump used a Justice Department podium to label CNN and MSNBC “illegal” and “corrupt,” suggesting they should be investigated or outlawed. These moves collectively signaled a governing style that commercializes public events, favors politically connected firms, undermines science-based guidance, and delegitimizes critical media.\n\nCourts began to push back more visibly on Monday. Judge James Boasberg rejected the administration’s attempt to vacate restraining orders protecting Venezuelan migrants accused of gang ties, insisting they receive hearings before deportation. Columbia student Yunseo Chung sued over efforts to revoke her status after pro-Palestinian protests, arguing that immigration law was being used to punish speech. These cases foreshadowed a week in which judges would repeatedly insist that emergency powers and immigration tools remain subject to due process and constitutional limits.\n\nOn Tuesday, the White House turned directly to the rules of voting. Trump signed an executive order titled “Preserving and Protecting the Integrity of American Elections,” requiring documentary proof of citizenship for federal voter registration, directing the Justice Department to prioritize prosecution of “election crimes,” and seeking to bar counting ballots received after Election Day. A companion order threatened to cut federal funds to states that did not comply. Legal experts noted that the Constitution assigns most authority over election rules to states and Congress, not the president, and warned that millions of eligible voters—particularly naturalized citizens and those without ready access to documents—could be disenfranchised. In the same vein of punitive executive power, a new order singled out Jenner & Block, directing agencies to review its security clearances and contracts and to cease providing goods and services to the firm over alleged partisan activities, extending the blacklist of law firms.\n\nTuesday also saw the Yemen Signal scandal break into public view. During a Senate Intelligence Committee hearing, Democratic senators questioned intelligence leaders about a Signal group chat that had mistakenly included journalist Jeffrey Goldberg and discussed U.S. strikes in Yemen. Officials denied sharing classified details, even as a Pentagon bulletin had warned against using Signal and later reporting showed operational content in the chat. The hearing marked the first public airing of what would become a major national security and records-keeping controversy, raising questions about both operational security and compliance with laws requiring preservation of government records.\n\nAt the state level, Texas advanced sweeping ideological controls over schools and libraries. The state Senate moved forward SB 412, which would criminalize teachers and librarians for providing certain “sexually explicit” materials, even when educational, with penalties of up to 10 years in prison. A broader package mandated school prayer, Ten Commandments displays, defunding libraries that host drag story hours, and bans on instruction about gender identity and DEI policies. These measures embedded a particular religious and ideological framework into public education and narrowed what could be taught, echoing federal efforts to dismantle DEI and reshape curricula. Meanwhile, courts and academics mobilized against protest-linked deportations: a federal judge in Manhattan issued a temporary restraining order blocking ICE from detaining Yunseo Chung and prohibiting her transfer out of the district, and academic groups in Boston sued to stop deportations of foreign students and scholars targeted for pro-Palestinian views, arguing that the administration was creating a “climate of repression” on campuses.\n\nBy midweek, the confrontation between the executive branch and the legal system escalated. On Wednesday, an executive order directed Attorney General Bondi to investigate lawyers who take actions to block administration priorities, effectively turning prosecutorial power toward disciplining legal opposition. Additional orders extended punitive measures to Jenner & Block, Covington, Perkins Coie, Paul Weiss, and WilmerHale, revoking clearances, restricting access to federal buildings, and requiring clients to disclose if they were represented by these firms. Another order encouraged disciplinary action against attorneys filing “frivolous” litigation against the administration. In Congress, House Speaker Mike Johnson suggested that lawmakers could defund, restructure, or even eliminate federal district courts in response to decisions blocking Trump’s policies, emphasizing legislative control over court funding and existence. Although later framed as theoretical, the remarks echoed ongoing impeachment threats against judges and underscored a willingness to use structural levers against the judiciary.\n\nThe Yemen Signal scandal widened on Wednesday as more details emerged. Republican senators joined Democrats in calling for investigations into the leak and the use of an unapproved app for war planning. House and Senate hearings questioned intelligence chiefs, while watchdog group American Oversight filed suit arguing that auto-deleting Signal messages violated the Federal Records Act. Judge Boasberg issued a temporary restraining order requiring preservation of all messages from the chat, and the case was formally assigned to him. Former officials Tulsi Gabbard and John Ratcliffe denied sharing classified information, while Rep. Jim Himes pressed Gabbard on inconsistencies in her testimony. The episode exposed both security lapses and attempts to conduct sensitive policy discussions off the official record, prompting a rare bipartisan push for oversight.\n\nCourts continued to act as a counterweight on immigration and protest. A federal judge granted another temporary restraining order preventing ICE from detaining Yunseo Chung, reinforcing earlier rulings that she could not be deported while her case proceeds. In Boston, a judge ordered the Department of Homeland Security to explain the detention of Tufts doctoral student Rumeysa Ozturk, whose visa had been revoked over alleged support for Hamas without presented evidence. At the same time, reports confirmed that the administration had moved to withhold $400 million in federal grants from Columbia University over its handling of pro-Palestine protests, with the university beginning to comply with federal demands to restore funding. The Social Security Administration appointed Scott Coulter, a former member of the Department of Government Efficiency team, as its Chief Information Officer shortly after a court barred DOGE affiliates from accessing SSA databases, an apparent attempt to preserve his access to sensitive personal data despite the restraining order. In Wisconsin, new reporting showed Elon Musk’s PAC had spent $19 million on a state Supreme Court race and was offering $100 payments for signing a petition plus $1 million prizes, prompting the state Department of Justice to prepare a lawsuit alleging violations of election laws against vote buying.\n\nOn Thursday, the Yemen Signal controversy crystallized into formal oversight. Despite mounting criticism, Trump announced he would not dismiss National Security Adviser Mike Waltz or Defense Secretary Pete Hegseth for their roles in the chat, reportedly to avoid admitting fault. Meanwhile, the bipartisan leaders of the Senate Armed Services Committee, Roger Wicker and Jack Reed, sent a formal letter to the Pentagon’s acting inspector general demanding an investigation into the leak and the use of unclassified networks for war planning. American Oversight’s lawsuit advanced as Judge Boasberg ordered preservation of all messages and took formal control of the case, ensuring that the administration’s handling of digital communications would face judicial scrutiny.\n\nThe administration used Thursday to deepen its reliance on executive orders in other arenas as well. Trump signed an order excluding a wide range of security-related agencies from the Federal Labor-Management Relations Program, curtailing union rights for large segments of the federal workforce under a broad national security rationale. Another order targeted WilmerHale, directing agencies to review and potentially terminate its contracts and clearances, adding to the growing blacklist of law firms. In the cultural sphere, an executive order to “restore truth and sanity” to American history directed federal sites, including the Smithsonian and Independence National Historical Park, to present a more “positive” view of American heritage and to restore certain monuments by July 4, 2026. The vice president was tasked with ensuring that museums and memorials reflect the administration’s preferred narrative, casting critical or “revisionist” accounts as divisive.\n\nCourts issued several significant rulings on Thursday that limited emergency and personnel powers. A D.C. Circuit panel upheld an order blocking deportations to El Salvador under the Alien Enemies Act, constraining the administration’s use of a centuries-old wartime law for modern removals. A federal judge in Washington refused to lift an injunction against the administration’s transgender military ban, calling its self-reporting scheme an invasion of privacy. The Ninth Circuit declined to pause a ruling requiring reinstatement of more than 17,000 probationary federal employees fired in a workforce reduction plan. At the same time, HHS announced the cancellation of more than $12 billion in grants to states for mental health, addiction treatment, and infectious disease tracking, along with plans to cut 10,000 employees, while the VA outlined plans to lay off over 80,000 employees nationwide. A leaked Department of Energy “hit list” showed plans to cancel long-duration energy storage and other clean energy projects funded under the bipartisan infrastructure law, even as Trump announced new 25 percent tariffs on imported cars and parts, including from Canada and Mexico. These decisions pointed toward a hollowing out of public health and veterans’ services and injected uncertainty into major economic sectors.\n\nDespite these pressures, signs of political resistance and civic mobilization appeared. Democrat James Malone’s upset win in a Pennsylvania state senate district that Trump had carried by 57 percent suggested shifting voter sentiment in key areas. Civil society groups announced a national mobilization for April 5 against authoritarian measures, with more than 800 events planned. Analysts documented how Trump-era protest crackdowns were influencing local law enforcement tactics, including expanded surveillance and aggressive permitting and zoning strategies, raising the stakes for how upcoming demonstrations would be policed.\n\nFriday capped the week with aggressive new executive orders on immigration, labor, and culture, and with the first coordinated legal pushback from targeted law firms. Trump created the “DC safe and beautiful task force,” chaired by Stephen Miller, through an executive order directing federal and local coordination to enforce immigration laws, increase law enforcement presence, expedite concealed carry permits, and remove homeless encampments and graffiti from federal lands in Washington. The order effectively extended federal influence over local policing and public space under the banner of safety and aesthetics, blending immigration enforcement with encampment sweeps in the nation’s capital. Another order instructed agencies to terminate collective bargaining agreements and stop payroll dues collection for hundreds of thousands of federal workers, arguing that unions constrain the executive branch. Coming on top of earlier exclusions for security agencies and deep staff cuts across multiple departments, the move sharply reduced organized labor’s influence inside the federal government.\n\nThe administration also moved to bring the Smithsonian and national memory under more direct ideological control. A companion order to Thursday’s history directive instructed Vice President JD Vance to purge “improper, divisive, or anti-American ideology” from the Smithsonian’s museums, education, and research centers, and to ensure that the American Women’s History Museum does not recognize trans women as women. It called for restoring Confederate-era names and statues in federal parks. Critics saw the move as an attempt to erase diversity and dissent from the nation’s official story, building on earlier scrubbing of terms like “racism” and “BIPOC” from federal materials. Universities and international students felt the pressure as well: the University of Michigan closed its flagship DEI program and office, citing compliance with anti-DEI executive orders and the risk of losing federal funds, despite the program’s role in diversifying enrollment. The State Department ordered consular officers to conduct mandatory social media reviews of student visa applicants and to deny visas under a broad definition of support for terrorism, with instructions to preserve derogatory content as evidence, raising the prospect that political speech online could bar entry to the United States.\n\nIn the legal arena, Jenner & Block and WilmerHale filed lawsuits in federal court in Washington seeking to block executive orders that would halt their federal business and revoke their attorneys’ security clearances. The suits followed a successful challenge by Perkins Coie and argued that the orders were retaliatory and unconstitutional, marking a coordinated pushback from the bar against the administration’s campaign to punish firms associated with Trump’s adversaries. At the same time, the administration filed an emergency request with the U.S. Supreme Court to allow deportations under the Alien Enemies Act to resume, after lower courts blocked removals that bypassed hearings. Officials argued that the injunction forced the country to harbor individuals deemed national security threats, while human rights groups and intelligence assessments disputed the underlying claims. As civil society groups prepared for the April 5 national mobilization, analyses warned that evolving protest policing and surveillance tactics could be used to constrain turnout and visibility, underscoring how the right to assemble would be tested in the weeks ahead.\n\nAcross these seven days, the federal government’s use of executive power pressed hard against long-standing guardrails in law, administration, and civic life. Orders targeting law firms, unions, universities, and cultural institutions sought to reshape who can challenge the state, how history is told, and which voices are welcome in public space. At the same time, courts, watchdogs, state officials, and grassroots organizers repeatedly asserted countervailing authority—blocking deportations, insisting on record-keeping, probing security breaches, enforcing election laws, and taking the administration to court. The balance between concentrated executive action and these dispersed forms of resistance will shape not only the immediate policies at issue but also the durability of independent institutions that underpin democratic governance.\n"
+  }
+}

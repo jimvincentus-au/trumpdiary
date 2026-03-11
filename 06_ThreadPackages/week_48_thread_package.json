@@ -1,0 +1,616 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 48
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "1.0",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_04fd1dcf91af4a250069afa38a287081a2b9aebe0eb6ead494"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 48/step5_narrative_week48_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 48/development_allocator_week48.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 48/weekly_digest_week48.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_47_thread_package.json"
+  },
+  "week": {
+    "week_number": 48,
+    "start_date": "2025-12-13",
+    "end_date": "2025-12-19",
+    "headline": "The forty-eighth week of Trump’s second term did not hinge on a single order or spectacle.",
+    "summary": "The forty-eighth week of Trump’s second term did not hinge on a single order or spectacle. Its shape emerged from the way law, force, and story were pulled into closer orbit around the presidency. Immigration, protest, healthcare, science, media, and archives all moved a little, and mostly in the same direction. The pattern was not improvisation. It was consolidation: a state more willing to sort people into tiers, to call ordinary conflict “terrorism,” to bend institutions toward loyalty, and t"
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary foregrounds immigration as one of the domains moving in the same coercive direction",
+          "why_it_matters": "The final narrative identifies immigration as a central site where state power is being used to sort people into tiers and normalize coercive governance."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration developments linked to broader hierarchy of belonging",
+          "why_it_matters": "This supports treating immigration not as an isolated policy beat but as one of the main explanatory frames of the week."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week48.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator support for immigration enforcement/status developments",
+          "why_it_matters": "The allocator indicates this thread had enough week-level material to warrant active narrative treatment rather than background mention only."
+        }
+      ],
+      "summary": "Immigration remains one of the week’s strongest active mechanisms of control, helping define the broader pattern of tiered belonging and coercive state sorting.",
+      "continuity_notes": [
+        "This is a durable year-long lead thread and should be treated as continuing rather than newly activated.",
+        "Use prior-week continuity to show that immigration remains an operational testbed for authoritarian governance, not a separate policy silo.",
+        "Connect immigration developments to domestic force and dissent suppression where relevant, but keep status hierarchy as the primary engine."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary emphasizes law, force, and story pulled into closer orbit around the presidency",
+          "why_it_matters": "That framing strongly supports the domestic-militarization thread because force is presented as part of the week’s core structure, not a side incident."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Ordinary conflict described as increasingly labeled 'terrorism'",
+          "why_it_matters": "Terrorism framing of ordinary conflict is a hallmark of security logic being turned inward against civic and political space."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Protest/security developments treated as part of a consolidation pattern",
+          "why_it_matters": "This supports reading the week through inward-facing security deployment and emergency-style coercion."
+        }
+      ],
+      "summary": "Domestic security logic is one of the week’s central explanatory threads, especially through the treatment of ordinary conflict and protest as threats requiring force, emergency framing, or terrorism language.",
+      "continuity_notes": [
+        "Carry forward from the late-year rise of this thread rather than presenting it as a sudden novelty.",
+        "Tie this week’s security logic to the broader normalization of inward-facing force seen in recent weeks.",
+        "Where immigration operations overlap, emphasize militarized method here and status hierarchy under the immigration thread."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary includes media, science, and archives among the domains moving together",
+          "why_it_matters": "Media, science, and archives are core institutions of public knowledge, making information control one of the week’s main connective threads."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Summary describes institutions bent toward loyalty",
+          "why_it_matters": "When knowledge institutions are redirected toward loyalty, the information-control thread becomes central rather than incidental."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Archive/science/media developments grouped into broader narrative management",
+          "why_it_matters": "This indicates an active week for public-knowledge manipulation and record politics."
+        }
+      ],
+      "summary": "Information control is a major pillar of the week, linking pressure on media, science, and archives into a broader pattern of loyalty-driven knowledge management and memory politics.",
+      "continuity_notes": [
+        "This is a stable long-running thread and should be woven through the week rather than isolated into one paragraph.",
+        "Use archives and science as concrete evidence that control extends beyond rhetoric into institutional knowledge systems.",
+        "This thread also supports the Epstein-files and leader-symbolism subthreads where relevant."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Summary highlights institutions being bent toward loyalty",
+          "why_it_matters": "That language directly matches the administrative-capture pattern of subordinating institutions to personalist control."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Healthcare and science both named as sites of movement this week",
+          "why_it_matters": "These are classic domains where capture appears through mission rewrites, hollowing, and loyalist steering rather than open constitutional spectacle."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week48.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator includes institutional-control developments",
+          "why_it_matters": "This supports treating administrative capture as active again after not always leading recent weeks."
+        }
+      ],
+      "summary": "Administrative capture is active this week through the redirection of institutions toward loyalty, especially in health, science, and related governing machinery.",
+      "continuity_notes": [
+        "Mark as reborn because it appears to reassert itself clearly this week after more security- and law-centered recent emphasis.",
+        "Do not let this thread overshadow the more visible security and information-control leads.",
+        "Use it to explain mechanism: consolidation is not only rhetorical but institutional."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed through law being pulled closer to the presidency",
+          "why_it_matters": "This directly supports the asymmetrical use of legal process as part of presidential consolidation."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Archives and accountability issues are included in the week’s domain list",
+          "why_it_matters": "These details suggest legal and disclosure mechanisms are being managed in politically selective ways, consistent with this thread."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal and accountability developments tied to broader consolidation",
+          "why_it_matters": "The digest support indicates law is functioning as a governing instrument, not merely as litigation background."
+        }
+      ],
+      "summary": "Law remains an active supporting instrument this week, less as a single blockbuster case than as part of a broader pattern of selective legal power and managed accountability.",
+      "continuity_notes": [
+        "Keep this thread active in continuity with weeks 45–47 rather than introducing it afresh.",
+        "Use it where the week shows legal asymmetry, record control, or retaliatory framing.",
+        "Avoid turning the chapter into a legal-process inventory; keep the focus on how law supports consolidation."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Protest named among the week’s active domains",
+          "why_it_matters": "That makes dissent suppression part of the week’s explicit terrain rather than an inferred subtext."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Ordinary conflict increasingly framed as 'terrorism'",
+          "why_it_matters": "Treating civic conflict as terrorism is a core sign of dissent being recoded as a punishable threat."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Journalism/protest pressure linked to the week’s tightening pattern",
+          "why_it_matters": "This supports an active anti-dissent role rather than mere rhetorical spillover."
+        }
+      ],
+      "summary": "The week advances the anti-dissent thread by recasting protest and criticism as threats, helping justify punitive or exceptional treatment of opposition.",
+      "continuity_notes": [
+        "This thread should be connected closely to domestic militarization but not collapsed into it.",
+        "Use it to capture the target of coercion—opposition and civic resistance—while the security thread captures the coercive apparatus.",
+        "Carry over the late-year pattern of treating dissent as disorder, sabotage, or terrorism."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Summary centers a state more willing to sort people into tiers",
+          "why_it_matters": "Tiering people by status is a direct signal of the stratified-rights thread."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Healthcare and public institutions included in the week’s movement",
+          "why_it_matters": "These domains often materialize unequal recognition and access, not just symbolic hierarchy."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Rights/recognition effects embedded across policy areas",
+          "why_it_matters": "This supports treating unequal belonging as part of the week’s governing pattern rather than as one isolated culture-war item."
+        }
+      ],
+      "summary": "The week reinforces a stratified order of rights and belonging, with multiple policy domains pointing toward unequal recognition, access, and civic standing.",
+      "continuity_notes": [
+        "This thread should support, not replace, the immigration lead thread where status hierarchy is migration-centered.",
+        "Use it to widen the frame beyond immigration into healthcare, identity, and institutional recognition.",
+        "Keep the emphasis concrete: unequal belonging as policy effect, not just rhetoric."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "new",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Archives explicitly named in the week summary",
+          "why_it_matters": "Because this subthread is specifically about records, archival integrity, and elite accountability, archival emphasis is directly relevant."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Accountability and files-related conflict appears as a recurring late-year issue",
+          "why_it_matters": "This supports elevating the subthread distinctly rather than burying it inside the broader weaponized-law thread."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week48.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator appears to include elite-accountability/records material",
+          "why_it_matters": "Enough week-level evidence appears to justify activating the subthread for this specific week."
+        }
+      ],
+      "summary": "The late-year conflict over elite-accountability records appears meaningfully enough this week to warrant explicit tracking as an Epstein-files subthread.",
+      "continuity_notes": [
+        "Although week 48 is the first catalog-supported week for this subthread, the prior-week package may have already foreshadowed adjacent legal-accountability tension; keep the tone cautious.",
+        "Use this only if the rewrite includes concrete files, disclosure, or archival conflict.",
+        "Do not over-expand it into a generic scandal frame."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "new",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary links archives and story to presidential consolidation",
+          "why_it_matters": "That framing can include symbolic and memory-oriented reshaping around personal rule even if it is not the week’s main emphasis."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Memory and symbolic politics appear in the week’s information-control material",
+          "why_it_matters": "This supports a light-touch activation of the subthread as part of a wider public-memory project."
+        }
+      ],
+      "summary": "Leader-centered symbolic politics appears as a minor background element within the week’s broader information-control and memory-management story.",
+      "continuity_notes": [
+        "Treat this as newly explicit at the catalog level for week 48, but keep it subordinate to the parent information-control thread.",
+        "Only mention if there is a concrete symbolic or memory-politics detail in the source materials.",
+        "Do not let symbolic material distract from the harder institutional and coercive developments."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary stresses consolidation more than insider enrichment",
+          "why_it_matters": "This suggests that although private-state fusion remains part of the year’s backdrop, it is not a main explanatory driver this week."
+        }
+      ],
+      "summary": "Crony-capitalist dynamics remain part of the governing backdrop but do not appear to be a major active driver of week 48’s narrative.",
+      "continuity_notes": [
+        "Keep in background memory because state consolidation often enables insider benefit even when not foregrounded.",
+        "Do not allocate standalone rewrite space unless a concrete patronage detail appears in the source text."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week emphasizes consolidation of law and force around the presidency",
+          "why_it_matters": "This keeps executive aggrandizement relevant as constitutional context, even if the week is better explained through more specific operational threads."
+        }
+      ],
+      "summary": "Executive overreach remains an important constitutional backdrop, but week 48 is better narrated through the concrete threads of security, immigration, law, and institutional control.",
+      "continuity_notes": [
+        "Mention only if needed to frame the presidency as the center of the week’s converging powers.",
+        "Avoid using this as a catch-all umbrella that flattens the more specific active threads."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week described as consolidation rather than total closure",
+          "why_it_matters": "That leaves room for resistance as a counter-thread, even if it is not the main story."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week48.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Late-year institutional pushback remains part of the surrounding context",
+          "why_it_matters": "This supports retaining resistance as a minor but still relevant counterweight in the week."
+        }
+      ],
+      "summary": "Resistance remains present as a weak but meaningful counter-thread, mainly to show that consolidation is being contested unevenly rather than advancing without friction.",
+      "continuity_notes": [
+        "Use sparingly and only where the week includes concrete pushback by courts, states, journalists, or civil society.",
+        "Do not let resistance dilute the dominant sense of consolidation."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week’s institutional pressure appears broader than campus-specific coercion",
+          "why_it_matters": "This suggests the narrower civil-society-coercion thread is not independently foregrounded and is likely absorbed into wider information-control and anti-dissent patterns."
+        }
+      ],
+      "summary": "Campus and civil-society coercion does not appear as a distinct week-48 driver and should not receive standalone emphasis.",
+      "continuity_notes": [
+        "If universities or nonprofits appear, fold them into information control, immigration, or anti-dissent rather than reviving this as a separate frame without strong evidence."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week48_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No explicit election-administration or representation focus in week summary",
+          "why_it_matters": "This indicates the election-engineering thread should not shape the week’s rewrite."
+        }
+      ],
+      "summary": "Election engineering is not materially active in week 48 and should be omitted from the rewrite.",
+      "continuity_notes": [
+        "Do not import election material from earlier weeks unless a specific event in the supplied sources requires it."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "Week 48 is best understood as a consolidation week rather than a single-spectacle week.",
+    "The strongest narrative collision is among immigration control, domestic security logic, and information control; together they explain how law, force, and story are converging.",
+    "Administrative capture returns as a meaningful mechanism this week, but not as the principal public-facing frame.",
+    "The week appears to broaden coercive governance across multiple domains—immigration, protest, healthcare, science, media, and archives—rather than intensify only one policy lane.",
+    "Subthreads around archival accountability and symbolic memory become more visible, but they should remain subordinate to the larger law-and-information structure.",
+    "Resistance may be present, but the dominant mood is tightening consolidation rather than successful pushback."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+    ],
+    "supporting_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "background_threads": [
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_downplay": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+    ],
+    "threads_to_omit": [
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION"
+    ],
+    "opening_focus": "Open with the week’s defining pattern: not one spectacular decree, but the tightening convergence of law, force, and narrative around the presidency across immigration, protest, and knowledge institutions.",
+    "closing_focus": "Close on consolidation as the week’s real achievement—institutions increasingly sorted toward loyalty, dissent recoded as threat, and public knowledge managed so that coercion appears normal.",
+    "continuity_emphasis_notes": [
+      "Emphasize that immigration remains a core operational template for hierarchy and coercion, not a standalone policy arena.",
+      "Show how domestic militarization and anti-dissent framing extend the same logic inward into civic and protest space.",
+      "Use information control to connect media, science, and archives into one knowledge-governance story.",
+      "Treat administrative capture as the mechanism by which consolidation becomes durable inside institutions.",
+      "Keep resistance visible only in limited form so the chapter does not lose the sense of tightening presidential control."
+    ]
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 18
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_02911ba3372ba0b30069af9a489d5c8192ad030c1f493a5d97"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 18/step5_narrative_week18_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 18/development_allocator_week18.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 18/weekly_digest_week18.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_17_thread_package.json"
+  },
+  "week": {
+    "week_number": 18,
+    "start_date": "2025-05-17",
+    "end_date": "2025-05-23",
+    "headline": "The eighteenth week of Trump’s second term did not hinge on a single shock.",
+    "summary": "The eighteenth week of Trump’s second term did not hinge on a single shock. It unfolded instead as a week in which the basic terms of belonging and security were rewritten in law and practice. Fiscal policy, immigration enforcement, and the treatment of universities and media all moved in the same direction: away from equal citizenship and toward a system where status, safety, and voice depend on wealth, loyalty, and alignment with the regime’s story about the country."
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary emphasis on belonging and security being rewritten",
+          "why_it_matters": "The week summary explicitly frames belonging as a governing question, pointing directly to immigration and citizenship as mechanisms for sorting who counts and who is protected."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration enforcement developments",
+          "why_it_matters": "The digest identifies immigration enforcement as one of the week’s main moving fronts, making this an active governing thread rather than background context."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week18.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocated developments around immigration and status hierarchy",
+          "why_it_matters": "Allocator treatment indicates that immigration policy is not a stray mention but one of the structural categories organizing the week."
+        }
+      ],
+      "summary": "Immigration remained one of the clearest operational tools for turning status into policy this week. The week’s narrative treats belonging, safety, and voice as conditional, and immigration enforcement is one of the most direct instruments for imposing that hierarchy.",
+      "continuity_notes": [
+        "Carries forward from earlier weeks in which migration policy broadened into a general model of domestic control.",
+        "Should be written not just as border policy but as a regime-wide test case for tiered belonging.",
+        "Connect explicitly to university and dissent pressures where immigration status becomes leverage."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 5
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary on equal citizenship being displaced",
+          "why_it_matters": "The summary’s central claim is that equal citizenship is giving way to conditional status, which is the core logic of the stratified-rights thread."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Status, safety, and voice tied to wealth, loyalty, and ideological alignment",
+          "why_it_matters": "This broadens the week beyond immigration alone and frames a wider hierarchy of recognition and rights across institutions."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Cross-domain policy moves affecting public belonging",
+          "why_it_matters": "The digest apparently clusters fiscal, educational, and media developments into a common story about unequal civic standing, supporting this thread as a central explanatory frame."
+        }
+      ],
+      "summary": "This week is best understood as a broad reordering of belonging. Immigration enforcement, fiscal choices, and pressure on institutions all fed a larger hierarchy in which rights and public standing depended less on equal citizenship than on alignment, status, and usefulness to the regime.",
+      "continuity_notes": [
+        "This thread helps unify otherwise separate policy domains into one weekly frame.",
+        "Use it as the conceptual bridge between immigration, campus pressure, and media treatment.",
+        "Treat the week as a practical deepening of an anti-equality order rather than a set of isolated policy disputes."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 5
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Treatment of universities identified as a main front",
+          "why_it_matters": "The week summary explicitly names universities as one of the domains being moved in the same authoritarian direction, making campus coercion central rather than incidental."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "University pressure and federal leverage",
+          "why_it_matters": "Digest-level inclusion signals active use of state power against semi-independent institutions that can host dissent or contest the regime’s narrative."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week18.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional pressure developments allocated to higher education/civil society",
+          "why_it_matters": "Allocator categorization supports this as a distinct weekly mechanism, not merely a subpoint under information control."
+        }
+      ],
+      "summary": "Pressure on universities and related institutions remained a major live mechanism this week. The point was not only ideological signaling but the disciplining of institutions that produce expertise, dissent, and alternative sources of legitimacy.",
+      "continuity_notes": [
+        "This is a direct continuation from prior weeks of Harvard- and campus-centered federal coercion.",
+        "Connect to immigration where student or visa leverage is part of the pressure system.",
+        "Show how funding and status threats complement narrative control over media and public knowledge."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Treatment of media identified as a main front",
+          "why_it_matters": "The summary explicitly includes media among the institutions being pressed into the same broader pattern, placing information control squarely inside the week’s architecture."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media pressure and knowledge-institution conflict",
+          "why_it_matters": "Digest framing suggests the week included concrete developments affecting who can speak and what counts as legitimate public knowledge."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week18.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator recognition of media/information developments",
+          "why_it_matters": "Allocator treatment indicates this thread had enough substance to influence how the week should be rewritten."
+        }
+      ],
+      "summary": "Media and knowledge institutions were part of the same weekly drive toward controlled voice and managed legitimacy. Information control did not stand alone; it reinforced the broader effort to decide who may speak, who may be heard, and which institutions retain public authority.",
+      "continuity_notes": [
+        "Continue the long-running pattern of pressure on media, records, and knowledge systems.",
+        "Tie university coercion to information control where the institutional target is also a knowledge producer.",
+        "Keep this below the top conceptual frame of stratified belonging, but make clear it is one of the key enforcement mechanisms."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Fiscal policy used to sort status and security",
+          "why_it_matters": "The summary’s emphasis on fiscal policy suggests the week’s political economy was part of the same hierarchy-building process, making economic governance relevant to insider-favoring and conditional protection."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Fiscal and policy developments with distributive consequences",
+          "why_it_matters": "Digest inclusion indicates that economic policy was not neutral backdrop but part of how the regime rewarded some actors and exposed others."
+        }
+      ],
+      "summary": "Economic policy mattered this week less as a standalone corruption story than as part of a regime logic in which material security tracks loyalty, wealth, and political usefulness. Crony political economy therefore supports the week’s broader portrait of conditional citizenship.",
+      "continuity_notes": [
+        "Keep this thread present but subordinate unless the source materials give clear insider-benefit specifics.",
+        "Use it to explain how fiscal policy reinforces hierarchy rather than to shift the week into a pure corruption frame.",
+        "If paragraph space is tight, fold it into the opening or middle synthesis rather than isolate it."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Cross-domain movement in law and practice",
+          "why_it_matters": "The summary describes multiple domains moving together under executive direction, implying continued concentration of unilateral governing power even without a single emergency spectacle."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week18.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator pattern of executive-led multi-front change",
+          "why_it_matters": "Allocator structure suggests the week is organized around top-down action across policy arenas, a hallmark of executive overreach."
+        }
+      ],
+      "summary": "This was not a week dominated by one dramatic emergency declaration, but the cumulative pattern still reflected expanded executive power acting across domains with weakened practical checks. The constitutional story is present, though less narratively useful than the week’s status-hierarchy frame.",
+      "continuity_notes": [
+        "Treat as an enabling layer rather than the lead story.",
+        "Useful for explaining how immigration, university pressure, and media pressure could all move at once.",
+        "Avoid over-abstract constitutional framing if it dilutes the week’s lived hierarchy-of-belonging emphasis."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Policies implemented in coordinated law-and-practice shifts",
+          "why_it_matters": "The week’s cross-domain implementation presumes an administrative apparatus willing or forced to carry out these changes, making state capture an important but background explanatory layer."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week18.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Operationalized agency action across domains",
+          "why_it_matters": "Allocator evidence suggests bureaucracy is the machinery through which these weekly changes took practical form."
+        }
+      ],
+      "summary": "Administrative capture remained part of the week’s operating infrastructure. The bureaucracy appears less as the overt subject than as the vehicle through which hierarchy-building policies were normalized and enforced.",
+      "continuity_notes": [
+        "Do not foreground civil-service process unless the week sources specifically do so.",
+        "Use as machinery-of-rule context beneath immigration, fiscal, media, and university developments.",
+        "A brief sentence can remind readers that these shifts depend on already-captured institutions."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Voice and alignment described as conditions for safety",
+          "why_it_matters": "The summary implies a punitive legal-political environment in which disfavored actors face exposure while aligned actors enjoy protection, even if no single legal case dominates the week."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media and university pressure with punitive overtones",
+          "why_it_matters": "Where regulatory or legal pressure is used to discipline institutions, this thread remains relevant as background to the week’s coercive climate."
+        }
+      ],
+      "summary": "Selective punishment and protection remained part of the week’s atmosphere, but not as the clearest standalone storyline. The law appears here mainly as an auxiliary tool in a broader campaign to discipline institutions and people outside the favored circle.",
+      "continuity_notes": [
+        "Mention only if specific legal threats or asymmetries appear in the chapter text.",
+        "Better used as connective tissue with anti-dissent or campus coercion than as an independent section.",
+        "Do not let this thread overtake the stronger status-and-belonging frame."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Voice made conditional on alignment with regime story",
+          "why_it_matters": "The summary explicitly links public voice to political alignment, which is central to a week in which dissenting actors are implicitly or explicitly marginalized."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week18.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Pressure on universities and media",
+          "why_it_matters": "These institutional targets matter not only as information nodes but as containers for opposition, making anti-dissent suppression part of the week’s background logic."
+        }
+      ],
+      "summary": "The week carried a clear anti-dissent undertone: institutions that could host criticism or alternative narratives faced pressure, and public voice itself was depicted as conditional. Still, this worked more as a supporting atmosphere than the principal frame.",
+      "continuity_notes": [
+        "Use when connecting media and campus stories to the broader disciplining of opposition.",
+        "Keep it adjacent to civil-society coercion and information control rather than separate unless there are explicit repression episodes.",
+        "This remains active but should not displace the week’s broader belonging hierarchy."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Security named in week-level framing",
+          "why_it_matters": "The summary invokes security as part of the week’s reordered terms of belonging, so the coercive-security backdrop is conceptually relevant even if militarized force is not the dominant visible mechanism this week."
+        }
+      ],
+      "summary": "Domestic militarization is relevant as an available enforcement horizon, but this week appears to rely more on legal, administrative, fiscal, and institutional pressure than on overt security-force deployment.",
+      "continuity_notes": [
+        "Keep in background memory because immigration and dissent threads can slide into this domain quickly.",
+        "Do not foreground absent concrete force or emergency-security episodes.",
+        "A passing phrase about coercive-security backdrop is sufficient if needed."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "Election engineering does not appear to be a meaningful driver of this week’s events or structure.",
+      "continuity_notes": [
+        "Omit unless a supplied source explicitly connects week 18 developments to voting or representation rules."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "Leader-centered symbolic politics is not a distinct weekly concern here.",
+      "continuity_notes": [
+        "Do not import later symbolic-personalist material into this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "The Epstein files sub-thread is not part of week 18’s narrative structure.",
+      "continuity_notes": [
+        "Omit entirely."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week18_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed more by coordinated regime movement than by successful pushback",
+          "why_it_matters": "The absence of resistance from the week summary is itself meaningful: the week’s dominant impression is one of converging pressure rather than strong countervailing force."
+        }
+      ],
+      "summary": "Resistance may still exist at the margins, but it is not what organizes the week. The notable feature is the relative weakness or invisibility of effective counter-pressure against these converging moves.",
+      "continuity_notes": [
+        "A brief note on thin or uneven resistance may sharpen the sense of one-sided momentum.",
+        "Do not build the week around guardrails unless sources provide concrete resistance episodes."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    }
+  ],
+  "week_summary_notes": [
+    "Week 18 is best framed as convergence rather than spectacle: multiple policy arenas moved in the same hierarchical direction without one singular shock event.",
+    "The strongest organizing idea is the redefinition of belonging, security, and voice, with immigration, universities, media, and fiscal policy all reinforcing that shift.",
+    "This is a high-continuity week: several established threads continue simultaneously, but only a few should be allowed to lead the rewrite.",
+    "Campus coercion and information control matter because they show how institutions that could contest regime narratives are being disciplined alongside people whose legal status is insecure.",
+    "Resistance is comparatively faint in the available framing, which increases the sense of cumulative regime consolidation."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION"
+    ],
+    "supporting_threads": [
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION"
+    ],
+    "background_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION"
+    ],
+    "threads_to_downplay": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION"
+    ],
+    "threads_to_omit": [
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open on the idea that this was a week of cumulative regime sorting rather than a single dramatic break: immigration, fiscal policy, universities, and media all helped redefine who belongs, who is protected, and who gets to speak.",
+    "closing_focus": "Close by stressing that the week’s significance lies in normalization: equal citizenship gave way further to conditional status, with institutions of knowledge and belonging increasingly bent toward regime-defined loyalty.",
+    "continuity_emphasis_notes": [
+      "Emphasize that immigration remains the clearest operational model for the broader hierarchy of belonging.",
+      "Show that pressure on universities and media is not separate from the immigration story; both are tools for deciding whose presence and voice are legitimate.",
+      "Keep executive overreach and administrative capture as enabling structures, not the emotional or narrative center.",
+      "If fiscal policy is included, connect it to conditional security and unequal membership rather than treating it as a separate budget story.",
+      "Note the thinness of visible resistance to reinforce the chapter’s sense of converging authoritarian normalization."
+    ]
+  }
+}

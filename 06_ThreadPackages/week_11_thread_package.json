@@ -1,0 +1,608 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 11
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_0656e65d90c1044e0069af98280c8481968a224c1683e7984d"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 11/step5_narrative_week11_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 11/development_allocator_week11.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 11/weekly_digest_week11.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_10_thread_package.json"
+  },
+  "week": {
+    "week_number": 11,
+    "start_date": "2025-03-29",
+    "end_date": "2025-04-04",
+    "headline": "The eleventh week of Trump’s second term unfolded as a study in saturation.",
+    "summary": "The eleventh week of Trump’s second term unfolded as a study in saturation. Power was not asserted in one dramatic stroke but through a dense field of moves that reached into trade, bureaucracy, immigration, universities, media, and elections at once. Each action had its own justification—efficiency, security, integrity, patriotism—but together they described a government more willing to rule by decree, to punish dissenting institutions, and to treat law as a flexible tool rather than a binding "
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed as governance by saturation and decree",
+          "why_it_matters": "The weekly narrative explicitly presents the week as one in which power is exercised across multiple domains at once through decree-like action, making executive overreach one of the central explanatory frames."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Trade, immigration, elections, universities, and bureaucracy all moved simultaneously",
+          "why_it_matters": "The cross-domain simultaneity suggests not a single policy dispute but an overall method of expanding presidential discretion and weakening normal checks."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator emphasis on broad governing method rather than isolated episodes",
+          "why_it_matters": "The allocator-level grouping implies that the week should be understood through the constitutional method of unilateralism, not merely through separate policy beats."
+        }
+      ],
+      "summary": "Week 11 is best understood as an accumulation week for executive maximalism: rather than one spectacular emergency move, the presidency widened its reach across institutions and policy arenas in a way that normalized governing by unilateral pressure.",
+      "continuity_notes": [
+        "This continues the prior pattern of executive aggrandizement rather than inaugurating a wholly new phase.",
+        "The week’s density matters: multiple smaller moves together carry the constitutional story.",
+        "Use this thread as connective tissue between trade, immigration, election rules, and institutional punishment."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary highlights moves into bureaucracy and rule-by-decree",
+          "why_it_matters": "The summary directly identifies bureaucracy as one of the main terrains on which power was exercised, pointing to continued administrative capture."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Federal machinery targeted as instrument of control",
+          "why_it_matters": "The week’s actions appear to rely on bending agencies toward presidential priorities rather than preserving neutral administration."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Administrative developments grouped as structural rather than incidental",
+          "why_it_matters": "That grouping supports treating agency control as an ongoing governing method with real weekly narrative weight."
+        }
+      ],
+      "summary": "Administrative capture remains a major live thread this week, as bureaucratic machinery is used less as neutral capacity than as a pliable instrument of presidential control and enforcement.",
+      "continuity_notes": [
+        "This is a carry-forward thread from earlier weeks, not a new appearance.",
+        "Emphasize the cumulative hollowing and repurposing of institutions rather than personnel detail alone.",
+        "Show how bureaucratic control enables other weekly threads, especially immigration, university pressure, and information management."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration identified as one of the week’s central arenas of action",
+          "why_it_matters": "Its inclusion in the headline summary of the week indicates that immigration was not incidental but part of the governing saturation."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration power used alongside other coercive domains",
+          "why_it_matters": "The week situates immigration policy as a broader domestic control instrument, consistent with the year-long thread."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator preserves immigration as a major development lane",
+          "why_it_matters": "This suggests active continuation rather than mere background context."
+        }
+      ],
+      "summary": "Immigration continues to function this week as both a policy field and a model of coercive governance, reinforcing status hierarchy and demonstrating the administration’s willingness to use belonging itself as leverage.",
+      "continuity_notes": [
+        "This is one of the strongest running continuities and should be written as such.",
+        "Connect immigration not only to border politics but to the administration’s wider coercive style.",
+        "Where relevant, note overlap with campus pressure and selective punishment without losing immigration as the primary engine."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Universities named as a direct target of weekly pressure",
+          "why_it_matters": "The week summary specifically identifies universities as a site of coercive state action, making this thread directly present."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional punishment of semi-independent bodies",
+          "why_it_matters": "The weekly pattern fits the thread’s core mechanism: using federal leverage to discipline institutions that can host dissent or independent authority."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Civil-society pressure treated as a discrete development track",
+          "why_it_matters": "This supports keeping the thread distinct rather than absorbing it entirely into information control or immigration."
+        }
+      ],
+      "summary": "Pressure on universities and related institutions is one of the clearest concrete mechanisms in Week 11, showing the administration using funding and status leverage to discipline semi-independent centers of knowledge and dissent.",
+      "continuity_notes": [
+        "This thread was active in recent prior weeks and remains clearly live here.",
+        "Use it concretely: target institutions, leverage mechanisms, and the punitive logic matter more than abstract culture-war framing.",
+        "Tie it to broader executive overreach and information control, but preserve its institutional-coercion specificity."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media named among the week’s affected domains",
+          "why_it_matters": "Direct pressure on media and knowledge institutions brings the information-control thread into the week’s active pattern."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Narrative management accompanies institutional coercion",
+          "why_it_matters": "The week’s actions are not only administrative but also about controlling how events, legitimacy, and dissent are publicly understood."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Knowledge and media pressures appear as supporting structure",
+          "why_it_matters": "This supports a secondary but important role: the week’s power grab is accompanied by pressure on public-information channels."
+        }
+      ],
+      "summary": "Information control is not the single lead this week, but it remains an important supporting thread because media and knowledge institutions are part of the same governing push toward managed perception and disciplined memory.",
+      "continuity_notes": [
+        "Keep this in support of the broader saturation frame.",
+        "Use it especially where university pressure and media pressure converge.",
+        "Do not over-expand into every rhetorical dispute; focus on institutional control over what can be known or said."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary says law was treated as a flexible tool rather than a binding limit",
+          "why_it_matters": "That phrasing directly supports the idea of legal process being instrumentalized rather than neutrally applied."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Punitive use of state tools against disfavored actors",
+          "why_it_matters": "Where law serves to discipline institutions or opponents selectively, this thread is active even without a single blockbuster justice story."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal-flexibility framing in support of other moves",
+          "why_it_matters": "The allocator suggests law is operating as an enabling instrument across domains this week."
+        }
+      ],
+      "summary": "The week reinforces the pattern of law as instrument: not necessarily through one dominant prosecution story, but through the broader use of legal authority to shield presidential discretion and punish vulnerable institutions or adversaries.",
+      "continuity_notes": [
+        "This thread should support the rewrite rather than dominate it.",
+        "Emphasize asymmetry and instrumental use of legal authority.",
+        "Useful as a bridge between executive overreach and university/media pressure."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Elections named as one of the domains touched this week",
+          "why_it_matters": "Direct mention in the weekly frame indicates that election-related rule changes or pressures were part of the week’s governance pattern."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Election integrity style justification paired with structural action",
+          "why_it_matters": "This thread is activated when procedural changes ride under integrity rhetoric rather than remaining rhetorical alone."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week11.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Election administration or representation appears as a discrete weekly development",
+          "why_it_matters": "The allocator-level treatment supports keeping election engineering visible in the rewrite."
+        }
+      ],
+      "summary": "Election-related manipulation is part of the week’s broader saturation pattern, extending executive pressure into the rules of democratic competition rather than leaving the week confined to administrative or immigration domains.",
+      "continuity_notes": [
+        "This thread appears more clearly than in many earlier weeks and should be included as part of the week’s breadth.",
+        "Keep the treatment concise unless the rewrite finds a particularly sharp election episode.",
+        "Link election engineering to the broader willingness to govern by procedural manipulation."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Trade is present but not clearly framed around insider enrichment in the weekly summary",
+          "why_it_matters": "Trade activity could overlap with cronyism, but the supplied summary emphasizes decree and institutional pressure more than patronage or enrichment."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Economic action appears as governing force rather than patronage story",
+          "why_it_matters": "Without clear insider-benefit evidence in the supplied weekly frame, this thread remains contextual rather than active."
+        }
+      ],
+      "summary": "Economic and trade moves are present in the week, but the available evidence frames them chiefly as instruments of power and unilateral governance, not as a clearly foregrounded insider-enrichment story.",
+      "continuity_notes": [
+        "Keep in background memory because adjacent economic policy could imply private-state fusion.",
+        "Do not force patronage language unless the rewrite has concrete insider-benefit evidence.",
+        "This is better treated as context than as a major weekly thread."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week emphasizes coercive governance across institutions more than a distinct anti-equality policy push",
+          "why_it_matters": "The week may still implicate hierarchy and belonging, especially through immigration and campus moves, but that broader rights-order thread is not independently foregrounded in the supplied summary."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Identity hierarchy appears indirectly through other threads",
+          "why_it_matters": "This supports absent-but-relevant status: the logic is in the backdrop, but not the week’s clearest standalone storyline."
+        }
+      ],
+      "summary": "The anti-equality order remains part of the interpretive backdrop, especially where immigration and institutional coercion sort people by status and ideology, but it does not appear as a separately dominant weekly lane.",
+      "continuity_notes": [
+        "Use only if needed to interpret who is being targeted and why.",
+        "Do not let this overshadow the more concrete immigration and university-coercion mechanisms.",
+        "Best handled as contextual shading, not a lead frame."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week summary is dominated by offensive action rather than countervailing checks",
+          "why_it_matters": "The framing suggests saturation by executive moves, with resistance not central enough to structure the week."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Any pushback appears secondary to the administration’s initiative",
+          "why_it_matters": "This fits dormant status: resistance may exist but does not carry the week narratively."
+        }
+      ],
+      "summary": "If resistance existed this week, it was not strong enough in the supplied materials to define the chapter; the governing impression is of action outrunning constraint.",
+      "continuity_notes": [
+        "A useful closing note if the rewrite wants to observe the thinness or patchiness of checks.",
+        "Do not build the week around guardrails.",
+        "This thread mainly helps calibrate tone: the week feels saturated because resistance is comparatively weak in the evidence."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No clear security-force or militarized domestic deployment emphasis in supplied week framing",
+          "why_it_matters": "Although coercive governance is present, the specific militarized-security apparatus that defines this thread does not appear foregrounded."
+        }
+      ],
+      "summary": "The week is coercive, but not in a way that clearly activates the later-emerging domestic militarization thread.",
+      "continuity_notes": [
+        "Do not import later-year militarization framing into this week.",
+        "If force is mentioned, keep it within executive overreach or immigration unless concrete militarized deployment evidence appears."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week11_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media and institutions are pressured, but not clearly through an explicit dissent-criminalization frame",
+          "why_it_matters": "The supplied summary supports coercion of institutions more than a direct story of protest or opposition suppression as such."
+        }
+      ],
+      "summary": "There are overlaps with anti-dissent logic, especially where media or universities are pressured, but the week’s stronger framing is institutional coercion rather than direct suppression of protest or opposition movements.",
+      "continuity_notes": [
+        "Only mention if a specific weekly episode directly targeted dissenters.",
+        "Otherwise fold the material into campus coercion, information control, or weaponized law."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No supplied indication of leader-glorification symbolism as a weekly driver",
+          "why_it_matters": "The week concerns coercive governance across institutions, not symbolic personalization of the state."
+        }
+      ],
+      "summary": "Leader-glorification symbolism is not a meaningful frame for this week.",
+      "continuity_notes": [
+        "Omit unless the rewrite encounters a concrete symbolic episode."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week11.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No Epstein-files-related conflict indicated in the supplied week materials",
+          "why_it_matters": "This is a late-year sub-thread and does not belong in a Week 11 rewrite absent explicit evidence."
+        }
+      ],
+      "summary": "This sub-thread is not active in Week 11.",
+      "continuity_notes": [
+        "Omit entirely."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "Week 11 is best framed as a saturation week: many policy domains move at once, and the cumulative effect matters more than any single isolated episode.",
+    "Executive overreach and administrative capture jointly explain the week’s structure; immigration and university coercion are the clearest concrete manifestations.",
+    "Law functions in the week more as an enabling instrument than as a standalone legal-drama thread.",
+    "Election engineering is present enough to matter because it extends the week’s reach into democratic procedure, but it should not displace the broader governance frame.",
+    "Resistance appears weak or narratively secondary in the supplied materials, which intensifies the sense of unchecked accumulation."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_IMMIGRATION_AS_CONTROL"
+    ],
+    "supporting_threads": [
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+    ],
+    "background_threads": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_downplay": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_omit": [
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open on the week as a study in saturation: not one singular rupture but a simultaneous spread of presidential pressure across bureaucracy, immigration, universities, media, trade, and elections. Then identify executive overreach and administrative capture as the governing method beneath the pileup.",
+    "closing_focus": "Close on the cumulative meaning of the week: decree-style governance is becoming normalized because so many institutions are being bent at once, while visible counter-pressure remains weak or secondary.",
+    "continuity_emphasis_notes": [
+      "Stress continuation rather than novelty: Week 11 intensifies existing methods by layering them together.",
+      "Use immigration and university pressure as concrete cases showing how executive overreach is translated into lived coercive machinery.",
+      "Keep election-rule manipulation in the frame as evidence that the week reaches beyond administration into the structure of democratic competition.",
+      "Where law appears, emphasize its flexibility and asymmetry rather than treating it as a separate courtroom saga.",
+      "Avoid importing later-year militarization or late-year scandal sub-threads into this week."
+    ]
+  }
+}

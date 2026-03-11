@@ -1,0 +1,451 @@
+{
+  "schema_name": "weekly_thread_rewrite_manifest",
+  "schema_version": "1.0",
+  "program_name": "build_weekly_thread_rewrite_v1",
+  "program_version": "1.0.0",
+  "created_at": "2026-03-10T22:20:17Z",
+  "run_id": "20260310T222017Z",
+  "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+  "parameters": {
+    "week": 7,
+    "weeks": 47,
+    "end_week": 53,
+    "input_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs",
+    "prompt_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/12_Prompts/weekly_thread_rewrite_prompt_v1.md",
+    "output_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters",
+    "raw_output_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses",
+    "model": "gpt-5.4",
+    "api_base": "https://api.openai.com/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "timeout_seconds": 600,
+    "dry_run": false,
+    "force": true,
+    "level": "info"
+  },
+  "week_count": 47,
+  "weeks": [
+    {
+      "week_number": 7,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_07_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_07_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_07_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_068d67310682f3740069b099226ad081969f6617e0e26bd34b"
+    },
+    {
+      "week_number": 8,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_08_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_08_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_08_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ff387ae8fde776d0069b0994e8ae0819e9bb54f85ec967c95"
+    },
+    {
+      "week_number": 9,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_09_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_09_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_09_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0b32ac1be2e911d40069b0997dc094819cb9a6c856af0d1394"
+    },
+    {
+      "week_number": 10,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_10_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_10_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_10_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0bfa2f4f1214ba940069b099a95ec08197af03316208d0dc9e"
+    },
+    {
+      "week_number": 11,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_11_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_11_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_11_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_01e3e718e60f39e40069b099d2c89c8191bdd3816d69fecac9"
+    },
+    {
+      "week_number": 12,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_12_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_12_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_12_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_08fb527adb7814730069b099fdb61481919072239a710bc31a"
+    },
+    {
+      "week_number": 13,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_13_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_13_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_13_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_073c8fddf04c3e930069b09a320f10819daa07960ff79a4087"
+    },
+    {
+      "week_number": 14,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_14_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_14_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_14_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_01df69b7f17325910069b09a609d088193a3ad08b04afd62c5"
+    },
+    {
+      "week_number": 15,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_15_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_15_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_15_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_012b7192e5173ba20069b09a9170a88194b0f4d2c46efb59e9"
+    },
+    {
+      "week_number": 16,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_16_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_16_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_16_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_038562ce07589b980069b09abb9a548192ba6bc21e70c1e83b"
+    },
+    {
+      "week_number": 17,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_17_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_17_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_17_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0c911333674f0fce0069b09af49a1c81939bd7f57c3fa9366c"
+    },
+    {
+      "week_number": 18,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_18_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_18_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_18_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ea634226b58bc120069b09b27602081a1aa3a828be2e8fb6b"
+    },
+    {
+      "week_number": 19,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_19_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_19_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_19_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0aaf0321496b4e810069b09b5388d08194a46f4ad7fe7008dd"
+    },
+    {
+      "week_number": 20,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_20_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_20_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_20_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_01deafd5dbb8396a0069b09b8158c081968c882e3e653d755b"
+    },
+    {
+      "week_number": 21,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_21_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_21_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_21_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0fec8b86381000620069b09baf38fc81a1bcdda786b8956ea7"
+    },
+    {
+      "week_number": 22,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_22_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_22_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_22_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0aea3ca6a8240e170069b09be0273c819c8c1d05d275617077"
+    },
+    {
+      "week_number": 23,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_23_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_23_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_23_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0fdf7846e0ee67490069b09c1611808195871b4576791e09af"
+    },
+    {
+      "week_number": 24,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_24_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_24_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_24_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0c8969d5750a5b180069b09c447ec0819f8062c4a8aa39e0d8"
+    },
+    {
+      "week_number": 25,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_25_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_25_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_25_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_075b9982ff2aa2680069b09c6b9c6081a3ad3c306718fd8922"
+    },
+    {
+      "week_number": 26,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_26_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_26_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_26_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_07e5e8e4970363040069b09c955a4c819cae0f73addb8bf745"
+    },
+    {
+      "week_number": 27,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_27_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_27_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_27_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_03b60c445ab1bc590069b09cc1a5b481a28e66896449fdb6e1"
+    },
+    {
+      "week_number": 28,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_28_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_28_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_28_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_068571a00edf94b90069b09cfa751481908d8984bbfd105ca5"
+    },
+    {
+      "week_number": 29,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_29_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_29_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_29_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0069f4f8b19705fb0069b09d271600819ea6e47c8d31ad71e3"
+    },
+    {
+      "week_number": 30,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_30_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_30_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_30_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04de1f1779bd8bc10069b09d532b3081a1ad0b8dd140283608"
+    },
+    {
+      "week_number": 31,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_31_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_31_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_31_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0a06773a5e19c99e0069b09d80631c81929dd94f9525a36458"
+    },
+    {
+      "week_number": 32,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_32_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_32_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_32_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0fb689d3c5d2957b0069b09da9ed388197aeeaa41402ae8551"
+    },
+    {
+      "week_number": 33,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_33_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_33_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_33_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_092135f9c2bb2e8d0069b09dd5a4fc819f867fddc4d14c1fb1"
+    },
+    {
+      "week_number": 34,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_34_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_34_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_34_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04ad25cc536a77480069b09e049f0c81909060dac23edfe90b"
+    },
+    {
+      "week_number": 35,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_35_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_35_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_35_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0b56049e160365b50069b09e31f518819fae11efa8460ca215"
+    },
+    {
+      "week_number": 36,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_36_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_36_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_36_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0defbcdaf8fa476f0069b09e5f12088192889d5b2894e85967"
+    },
+    {
+      "week_number": 37,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_37_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_37_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_37_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_070cb695cd0d99d30069b09e88cb70819580b588b3a332a20e"
+    },
+    {
+      "week_number": 38,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_38_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_38_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_38_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0827dd41230282980069b09eba9dbc819ca229c3dea10d2325"
+    },
+    {
+      "week_number": 39,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_39_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_39_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_39_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_040ed388a7478d5f0069b09ee33b188194a65ab8aa2e1f61c7"
+    },
+    {
+      "week_number": 40,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_40_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_40_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_40_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0558be66b3249dd00069b09f0e124c8193af3be1c02557f393"
+    },
+    {
+      "week_number": 41,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_41_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_41_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_41_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ebe442b5e25969c0069b09f3a3e80819f828faf59c9ce3ab6"
+    },
+    {
+      "week_number": 42,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_42_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_42_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_42_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0f407542408de7ac0069b09f675d088195af3fcac49797a535"
+    },
+    {
+      "week_number": 43,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_43_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_43_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_43_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0266dee41e3f059c0069b09f8f74408197b0d75ecb5bcc4faa"
+    },
+    {
+      "week_number": 44,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_44_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_44_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_44_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_05959a3d3b7c436a0069b09fbf21b4819ca610bb86e0644b1f"
+    },
+    {
+      "week_number": 45,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_45_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_45_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_45_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0302ec6f83d843920069b09feb37e481909e789a2f19749205"
+    },
+    {
+      "week_number": 46,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_46_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_46_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_46_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_041a6070208b5d320069b0a01536048193af5192804e9aec3d"
+    },
+    {
+      "week_number": 47,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_47_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_47_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_47_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_08e3bca192d7f1c80069b0a047ef0c819ebc16b1368f1addb1"
+    },
+    {
+      "week_number": 48,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_48_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_48_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_48_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0235f23529ffa6930069b0a07249c881a18812c25a7268b8cc"
+    },
+    {
+      "week_number": 49,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_49_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_49_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_49_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_07df4e07abce37190069b0a09cb3b481948632f9f2f22ff1d4"
+    },
+    {
+      "week_number": 50,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_50_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_50_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_50_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_03d5d0092a9675660069b0a0c0155c8190bc64febfaa6918f0"
+    },
+    {
+      "week_number": 51,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_51_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_51_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_51_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0435038b2f93101f0069b0a0e42c9c819094342ab3832115fb"
+    },
+    {
+      "week_number": 52,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_52_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_52_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_52_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_037fa16987d751110069b0a10caacc81a1abe957749774e2d9"
+    },
+    {
+      "week_number": 53,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/07_RewriteInputs/week_53_rewrite_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/week_53_rewritten.md",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/08_RewrittenChapters/_raw_responses/week_53_rewrite_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0db5bbcc9838dddf0069b0a135f7f48196bcf19a5fa0b9fc42"
+    }
+  ]
+}

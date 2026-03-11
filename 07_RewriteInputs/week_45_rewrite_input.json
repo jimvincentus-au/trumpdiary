@@ -1,0 +1,600 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 45
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 45,
+    "start_date": "2025-11-22",
+    "end_date": "2025-11-28",
+    "headline": "The forty-fifth week of Trump’s second term did not hinge on a single shock.",
+    "summary": "The forty-fifth week of Trump’s second term did not hinge on a single shock. It unfolded as a dense layering of moves that pressed on law, borders, information, and memory at once. The pattern was not new, but its confidence was. Law was bent toward enemies and away from friends. Immigration rules and security forces were used to sort who belonged. Data and books and broadcast licenses became levers in the same struggle. The week’s story is less about a fresh descent than about the settling-in o"
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_45_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_final_week45.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/development_allocator_week45.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_final_week45.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 45
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_03d594d2a10f7fc30069afa288532881969430dff339c010bd"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/development_allocator_week45.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_week45.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_44_thread_package.json"
+    },
+    "week": {
+      "week_number": 45,
+      "start_date": "2025-11-22",
+      "end_date": "2025-11-28",
+      "headline": "The forty-fifth week of Trump’s second term did not hinge on a single shock.",
+      "summary": "The forty-fifth week of Trump’s second term did not hinge on a single shock. It unfolded as a dense layering of moves that pressed on law, borders, information, and memory at once. The pattern was not new, but its confidence was. Law was bent toward enemies and away from friends. Immigration rules and security forces were used to sort who belonged. Data and books and broadcast licenses became levers in the same struggle. The week’s story is less about a fresh descent than about the settling-in o"
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Law bent toward enemies and away from friends",
+            "why_it_matters": "The final weekly narrative explicitly frames selective legal treatment as one of the week’s defining patterns, making this a central explanatory thread rather than a passing note."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_week45.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week-level legal asymmetry pattern",
+            "why_it_matters": "The digest is cited in the input package as a core source for the week; the high-level summary indicates repeated use of law as an instrument of punishment and protection, supporting this thread’s primary role."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/development_allocator_week45.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator-supported legal and enforcement developments",
+            "why_it_matters": "The allocator is part of the week’s evidentiary base and would have organized legal and enforcement developments; that supports treating selective justice as structurally present in the week rather than inferred from rhetoric alone."
+          }
+        ],
+        "summary": "Selective legal treatment is one of the clearest organizing patterns of the week: legal power is presented as something redirected against adversaries while cushioning allies, reinforcing a two-tier order.",
+        "continuity_notes": [
+          "This thread was already active in prior late-year weeks and remains a strong continuity rather than a fresh development.",
+          "Week 45 appears to deepen normalization: less a singular scandal than the settled use of law as a governing instrument.",
+          "Should be linked to information control where secrecy or managed disclosure helps sustain impunity."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Immigration rules used to sort who belonged",
+            "why_it_matters": "The final markdown directly identifies immigration rules as a central mechanism of the week’s hierarchy of belonging, making this thread one of the principal narrative frames."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Borders and coercive governance layered into the week",
+            "why_it_matters": "The week summary says the story pressed on borders and belonging simultaneously, showing that immigration policy is not peripheral but part of the week’s governing method."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_week45.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Migration-control developments in weekly digest",
+            "why_it_matters": "The digest is part of the formal evidence base, and the input summary signals immigration as one of the central domains where coercive state power was exercised this week."
+          }
+        ],
+        "summary": "Immigration remains a major operational theater for coercion this week, with rules and enforcement logic serving to define status, belonging, and vulnerability.",
+        "continuity_notes": [
+          "This is one of the strongest year-long threads and clearly carries forward from prior weeks.",
+          "In Week 45 it should be framed less as isolated border policy than as a general method of domestic sorting and control.",
+          "Link closely to security and rights-order themes, but keep immigration machinery as the primary engine where belonging is at stake."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Data, books, and broadcast licenses as levers",
+            "why_it_matters": "The final markdown explicitly names multiple knowledge and media systems as instruments in the same struggle, strongly grounding this thread in the week’s text."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Information and memory treated as governance tools",
+            "why_it_matters": "The week’s summary emphasizes information and memory as coordinated sites of pressure, which is exactly the domain of this canonical thread."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/development_allocator_week45.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator-backed knowledge-system developments",
+            "why_it_matters": "The allocator’s inclusion indicates that these were tracked as substantive developments for the week, supporting more than a symbolic mention."
+          }
+        ],
+        "summary": "Control over knowledge systems—data, books, media permissions, and public memory—was one of the week’s central governing techniques, not just supporting rhetoric.",
+        "continuity_notes": [
+          "This thread has been durable all year and remains fully active.",
+          "Week 45 should emphasize convergence: information control is intertwined with law, administrative control, and identity hierarchy.",
+          "The rewrite should show that memory and records are being governed as part of the same coercive architecture, not treated as separate culture-war episodes."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Security forces used in the week’s sorting logic",
+            "why_it_matters": "The final markdown says immigration rules and security forces were used together to sort who belonged, tying coercive force to domestic governance."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_week45.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Security-state developments in weekly digest",
+            "why_it_matters": "The digest belongs to the evidence base and the input summary names security forces as active instruments this week, indicating more than abstract context."
+          }
+        ],
+        "summary": "Security force logic is clearly present this week, though more as an enforcing mechanism within the broader immigration-and-control story than as the sole frame of the week.",
+        "continuity_notes": [
+          "This thread was active in prior late-year weeks and remains in motion rather than reappearing after a lull.",
+          "In the rewrite, it should support the coercive atmosphere and the operational means of enforcement.",
+          "Do not let it eclipse immigration as the primary sorting mechanism unless the week text gives specific force-deployment scenes."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Settling-in of governing methods across law, borders, and information",
+            "why_it_matters": "The summary stresses not a fresh descent but the confident settling-in of a system, which aligns with a captured administrative machinery capable of coordinating pressure across domains."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Data and regulatory levers folded into rule",
+            "why_it_matters": "Use of data and institutional levers implies state machinery being repurposed, which supports administrative capture as a secondary explanatory thread."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/development_allocator_week45.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator evidence of institutional implementation",
+            "why_it_matters": "The allocator’s presence supports the inference that weekly developments were being carried through government machinery rather than only by rhetoric or emergency declaration."
+          }
+        ],
+        "summary": "The week’s confidence and cross-domain coordination imply a bureaucracy increasingly repurposed for loyalist and coercive ends, even if civil-service mechanics are not the most visible surface story.",
+        "continuity_notes": [
+          "This is a strong continuity thread from prior weeks rather than a new development.",
+          "In Week 45 it works best as institutional scaffolding beneath legal, immigration, and information episodes.",
+          "Keep emphasis on operationalization rather than staffing minutiae unless the source text foregrounds personnel actions."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Sorting who belonged",
+            "why_it_matters": "The final markdown explicitly frames the week around hierarchy of belonging, a core marker of this thread."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Memory and recognition pressures tied to belonging",
+            "why_it_matters": "The combination of books, information, and belonging suggests not just migration policy but a wider reordering of recognition and public status."
+          }
+        ],
+        "summary": "Beyond immigration machinery alone, the week conveyed a broader hierarchy of belonging and recognition, with state and cultural tools helping define whose status counts.",
+        "continuity_notes": [
+          "This thread carries forward from prior late-year identity-targeting episodes.",
+          "Use it to widen the week’s frame from border policy to a larger politics of second-class status.",
+          "Keep subordinate to immigration and information control unless rights-specific measures dominate the underlying sources."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week framed around coercive governance rather than insider enrichment",
+            "why_it_matters": "The provided weekly summary foregrounds law, borders, information, and memory, with no clear signal that patronage or insider profit is one of the week’s central mechanisms."
+          }
+        ],
+        "summary": "Private-state fusion may remain part of the broader governing environment, but it is not a meaningful explanatory driver of this week based on the supplied summary.",
+        "continuity_notes": [
+          "If the prior week package elevated this thread, Week 45 appears to let it recede behind coercive-governance themes.",
+          "At most, it should remain a faint backdrop to institutional capture, not a foregrounded frame."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Confidence of settled rule rather than one dramatic constitutional rupture",
+            "why_it_matters": "The week is described as lacking a single shock and instead showing normalized consolidation, suggesting executive overreach is contextually relevant but not the immediate surface story."
+          }
+        ],
+        "summary": "Underlying executive aggrandizement remains an important constitutional backdrop, but this week is better told through the practical operations of law, immigration, security, and information control than through emergency-rule framing alone.",
+        "continuity_notes": [
+          "This may underwrite the week structurally, but it is not the sharpest narrative handle.",
+          "Mention only if needed to remind the reader that these actions rest on weakened checks."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Law and information systems used against enemies",
+            "why_it_matters": "The summary’s contrast between enemies and friends implies a punitive orientation toward opponents, which supports this thread as a background pressure even without a single headline dissent crackdown."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/weekly_digest_week45.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Opposition-targeting atmosphere in digest",
+            "why_it_matters": "Given the digest’s role in the evidence base and the week’s broad coercive framing, suppression of critics likely functions as a supporting atmosphere rather than a lead development."
+          }
+        ],
+        "summary": "The week reinforces a governing atmosphere in which opponents and critics are targets of punishment, though dissent suppression seems embedded within broader legal and informational coercion rather than standing alone.",
+        "continuity_notes": [
+          "This is active in the late-year environment and carries forward cleanly.",
+          "Treat as a derivative but real consequence of weaponized law and information control this week.",
+          "Do not over-separate it unless the source materials give distinct protest or journalist episodes."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "new",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "other",
+            "source_ref": null,
+            "event_id": null,
+            "development_id": null,
+            "title": "Catalog support for Week 45 inclusion",
+            "why_it_matters": "The canonical catalogue lists Week 45 among this thread’s supporting weeks, indicating that election-structure material is part of the week’s official evidence base even though it does not appear in the short summary excerpt."
+          }
+        ],
+        "summary": "Election-engineering appears to have some presence in the week’s source base, but it does not emerge from the supplied summary as a dominant or even strong secondary frame.",
+        "continuity_notes": [
+          "Because the prior-week context is not reproduced here and Week 45 is explicitly in the catalogue support list, this is treated cautiously as newly meaningful in this week’s package.",
+          "Keep any reference brief unless the underlying digest or allocator gives a clearly concrete election-administration episode."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "new",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "other",
+            "source_ref": null,
+            "event_id": null,
+            "development_id": null,
+            "title": "Catalog support for Week 45 resistance thread",
+            "why_it_matters": "The catalogue marks Week 45 as a supporting week for the resistance counter-thread, implying the source set contains some meaningful pushback even though the short summary emphasizes authoritarian consolidation."
+          }
+        ],
+        "summary": "Some resistance is likely present in the week’s full materials, but it is not the dominant emotional or narrative center of the week, which is more about consolidation than successful checks.",
+        "continuity_notes": [
+          "Treat resistance as partial and uneven, not triumphant.",
+          "Use only if needed to keep the chapter from implying total passivity by institutions or civil society.",
+          "Do not let this counter-thread dilute the week’s main story of confident consolidation."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "No specific institutional-coercion signal in summary excerpt",
+            "why_it_matters": "Although books and information systems are mentioned, the supplied summary does not specifically foreground universities, law firms, or nonprofits as targeted institutions this week."
+          }
+        ],
+        "summary": "This narrower institutional-coercion thread does not appear strongly enough in the supplied week materials to warrant independent treatment.",
+        "continuity_notes": [
+          "Any relevant material is better absorbed into information control or anti-dissent framing.",
+          "Omit unless the full digest contains a distinct university or law-firm coercion episode."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Memory politics present without explicit leader-glorification marker",
+            "why_it_matters": "The week summary clearly points to memory manipulation, but not specifically to personalized civic symbolism or leader-centered public display."
+          }
+        ],
+        "summary": "Memory politics is active, but the narrower leader-glorification sub-thread does not appear distinctly enough to separate from the parent information-control thread this week.",
+        "continuity_notes": [
+          "Keep folded into the broader information-control frame.",
+          "Only surface if the underlying week materials include explicit renaming, monument, or civic-symbol episodes centered on Trump personally."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 45/step5_narrative_week45_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "No explicit Epstein-records signal in supplied week summary",
+            "why_it_matters": "The summary supports broader impunity and information-control themes but gives no direct indication that the recurring Epstein files fight is a material part of this specific week."
+          }
+        ],
+        "summary": "The broader elite-impunity frame is active, but the specific Epstein-files sub-thread is not evidenced strongly enough in the supplied week materials to merit inclusion.",
+        "continuity_notes": [
+          "Do not import this sub-thread automatically from nearby late weeks.",
+          "Only use if the digest or allocator contains a concrete Epstein-records development."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      }
+    ],
+    "week_summary_notes": [
+      "Week 45 is best understood as cumulative consolidation rather than a single shocking rupture.",
+      "The strongest collision is between weaponized law, immigration-based status sorting, and information control.",
+      "Security-force logic matters mainly as an enforcing mechanism inside broader coercive governance.",
+      "Administrative capture is important as the machinery making cross-domain pressure possible, even if it is not the week’s most visible surface story.",
+      "Several narrower late-year sub-threads should be resisted unless the underlying digest gives explicit evidence; the week already has enough density without overloading it.",
+      "If resistance appears, it should be framed as partial and secondary to the dominant mood of normalization and confidence."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+      ],
+      "supporting_threads": [
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION"
+      ],
+      "background_threads": [
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "threads_to_downplay": [
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "threads_to_omit": [
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+      ],
+      "opening_focus": "Open on the week’s defining quality of confident accumulation: not one spectacular break, but several familiar mechanisms of rule operating together—selective law, border-and-status coercion, and control over information and memory.",
+      "closing_focus": "Close on normalization: the week shows a government no longer merely testing powers but settling into a system where coercion across law, belonging, and public knowledge feels routine.",
+      "continuity_emphasis_notes": [
+        "Emphasize that the week continues late-year patterns rather than inaugurating a brand-new phase.",
+        "Show how legal asymmetry, immigration control, and information management increasingly reinforce one another.",
+        "Use administrative capture as the hidden infrastructure behind the week’s visible moves.",
+        "If security-force material appears, present it as the muscle attached to immigration and anti-opposition governance rather than a wholly separate story.",
+        "Avoid cluttering the rewrite with too many niche sub-threads; this week gains power from synthesis, not fragmentation."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "The week unfolded under the shadow of a clash between elected officials and the commander in chief over the basic rules that govern the military. Over the weekend, six Democratic lawmakers who are veterans of the armed forces or intelligence community released a video reminding service members that they are obligated to refuse unlawful orders. The message echoed long‑standing military law, but President Trump denounced the lawmakers as “seditious,” demanded their arrest and trial, and suggested that such conduct could be punishable by death. What began as a civics lesson about lawful service became a test of whether legal constraints on presidential power would be treated as treasonous.\n\nThat confrontation set the tone for the days that followed. On Tuesday, the FBI’s counterterrorism division opened an investigation into the six lawmakers, treating their video as a potential security matter rather than protected political speech. Defense Secretary Pete Hegseth ordered the Navy to investigate Senator Mark Kelly’s comments in the video and signaled that Kelly, a retired Navy captain and astronaut, could be recalled to active duty for court‑martial under laws that allow prosecution of some military retirees. Deploying counterterrorism tools and military law against sitting members of Congress for restating legal obligations blurred the line between civilian oversight and the security apparatus, and sent a message to other lawmakers about the risks of publicly questioning presidential orders.\n\nWhile that domestic struggle over dissent and military obedience was taking shape, another long‑running conflict was being reshaped abroad. Over the weekend, details emerged of a 28‑point Ukraine “peace” plan backed by the Trump administration that closely mirrored Russian demands. The proposal would recognize Russian control over Crimea and parts of eastern Ukraine, cap Ukraine’s military, and grant amnesty for Russian war crimes. Ukrainian President Volodymyr Zelensky warned his citizens that he was under intense pressure to sign the agreement before Thanksgiving. A senior adviser to Vladimir Putin publicly rejected an alternative European Union plan and instead praised Trump’s framework, underscoring Moscow’s preference for a deal that would lock in its territorial gains and limit accountability.\n\nBy Tuesday, the administration was not only promoting this framework but also shaping public perception through disinformation. Officials leaked to reporters that a Ukraine peace deal had already been reached, even as both Zelensky and Russian officials denied any such agreement. The leaked terms again tracked closely with a Russian‑drafted plan previously pushed by Trump’s envoys. The false story suggested an effort to create a sense of inevitability around concessions to Russia, potentially boxing in Ukraine and U.S. allies by presenting surrender terms as a fait accompli.\n\nThe week’s other early developments showed federal power being asserted in more routine but still consequential ways. House Democrats released emails suggesting that Trump had knowledge of Jeffrey Epstein’s abuse, intensifying bipartisan calls to unseal Epstein‑related records. The Justice Department renewed its own request to unseal grand jury materials in the case, and a federal judge ordered expedited processing of related Freedom of Information Act requests. These moves, combined with congressional pressure, increased the likelihood that the public will eventually see more of how authorities handled a major case involving elite sexual abuse, even as debates continued over how to protect victims’ privacy.\n\nOn immigration, the weekend brought a sharp contrast between judicial limits and administrative expansion. A federal appeals court blocked the administration’s attempt to broaden fast‑track deportations for people who had been in the United States less than two years, citing due process concerns and the need for basic hearing rights. At the same time, the Justice Department moved to recruit specialized “deportation judges,” signaling a structural expansion of the removal apparatus even as courts imposed procedural constraints. On the ground, Border Patrol and ICE operations spread fear far from the southern border: masked agents in North Carolina conducted street operations that residents described as kidnappings, keeping children from school and adults from work; in Oregon, ICE detained a U.S. citizen high‑school student during lunch and then sought to charge him; and a raid on a South Korean‑owned battery factory in Georgia prompted a diplomatic apology and questions about whether arrest quotas were driving enforcement.\n\nMonday showed how these threads—immigration, institutional capacity, and executive power—were being woven into broader policy. The administration ended Temporary Protected Status for nearly 4,000 people from Myanmar, ordered a review of all refugees admitted under the Biden administration with a freeze on their green‑card processing, and increased ICE detention of children separated from families after traffic stops. These steps built on the weekend’s announcement that TPS for about 700 Somalis was under review and signaled a coordinated tightening of humanitarian protections. ProPublica reporting the same day that ICE had detained more than 600 immigrant children in federal shelters this year, many separated from their families and held for extended periods, revived concerns that family separation was again functioning as an enforcement tool.\n\nAt the institutional core of federal law enforcement, Monday also brought news of a sweeping purge inside the Justice Department. Reports described about 5,500 DOJ employees being removed, including 70 percent of the civil rights division and most of the public integrity section, which was reduced to two lawyers. The voting section’s work was redirected toward advancing Trump’s electoral agenda. Against this backdrop, Georgia prosecutors moved to dismiss the last remaining 2020 election racketeering case against Trump and his allies after District Attorney Fani Willis was disqualified. The move effectively ended that line of criminal accountability for efforts to overturn the 2020 results in Georgia. At the same time, federal courts were pushing back on other politicized prosecutions: building on a weekend ruling, additional orders clarified that Lindsey Halligan’s appointment as interim U.S. attorney had been unconstitutional, voiding her indictments of former FBI Director James Comey and New York Attorney General Letitia James. The decisions underscored that even high‑profile cases must rest on lawful appointments, and that irregular personnel moves cannot be used to target political opponents without judicial scrutiny.\n\nMonday’s docket also showed the executive branch extending its reach into new domains. Trump signed an order creating the “Genesis Mission,” a national artificial intelligence initiative centered in the Department of Energy to harness federal datasets for scientific and security uses. Centralizing AI efforts under the executive branch promised long‑term influence over a strategic technology that touches defense, surveillance, and the economy. The same day, the administration designated certain Muslim Brotherhood chapters in Lebanon, Jordan, and Egypt as terrorist organizations, expanding sanctions and surveillance tools with limited congressional input. In public health, HHS Secretary Robert F. Kennedy Jr. acknowledged directing the Centers for Disease Control and Prevention to alter its website language on vaccines and autism, despite scientific consensus that there is no causal link. After public pushback from Senator Bill Cassidy and others, the CDC added a note referencing Kennedy’s prior promise not to change the statement, highlighting how political interference in scientific messaging can undermine trust in health institutions.\n\nTuesday deepened the theme of legal tools being used to reshape elections and shield allies. Details emerged of a November 7 Trump pardon intended for Rudy Giuliani and others involved in the fake elector scheme but written broadly enough that it may cover any U.S. citizen involved in 2020 voter fraud. Defendants in unrelated cases began invoking the pardon to seek dismissal. If courts interpret it expansively, the measure could immunize a wide range of election‑related crimes, weakening deterrence against future attempts to subvert results. At the same time, a federal court blocked Texas’s mid‑decade congressional map, which would have added several Republican‑leaning districts, pending Supreme Court review. In Indiana, lawmakers who resisted a Trump‑backed redistricting plan reported being swatted at their homes, and one Republican senator publicly opposed the plan, citing Trump’s derogatory remarks about people with intellectual disabilities. The combination of judicial intervention and intimidation tactics showed how the struggle over representation now involves both courtroom battles and coercive pressure on legislators.\n\nCivil liberties and social policy were also contested on Tuesday. Tennessee’s secretary of state ordered 181 public libraries to review and remove books with LGBTQ themes or characters, citing state anti‑DEI law and a Trump executive order against “gender ideology.” Libraries closed temporarily to conduct the purge, raising serious First Amendment and equal‑protection concerns about state‑mandated viewpoint censorship. Elsewhere, twenty states and Washington, D.C. filed suit against the administration’s changes to HUD homelessness policy that would cut funding and impose new conditions likely to harm trans and nonbinary people, using federalism and civil‑rights arguments to resist the shifts. Activists targeted the infrastructure of immigration enforcement through protests at airports in Houston and New Haven against Avelo Airlines’ role in deportation flights, legal challenges by contractors over lost ICE business, and a Thanksgiving‑week boycott campaign aimed at major retailers tied to ICE operations. These efforts showed how economic pressure and public disruption were being used to challenge the privatized systems that underpin mass deportation.\n\nBy midweek, the erosion of legal constraints on Trump was becoming more visible, even as some courts asserted themselves. On Wednesday, Georgia prosecutor Pete Skandalakis formally moved to dismiss the 2020 racketeering case against Trump and his co‑defendants, and a judge granted the request, closing one of the last major criminal avenues for holding a former president accountable for efforts to overturn certified election results. Yet the same day, the conservative 11th Circuit Court of Appeals upheld nearly $1 million in sanctions against Trump and lawyer Alina Habba for a conspiracy‑laden RICO suit targeting Hillary Clinton, the Democratic National Committee, and James Comey, describing it as part of a pattern of meritless litigation. The ruling signaled that at least some courts remained willing to penalize attempts to weaponize the judiciary for political vendettas.\n\nState courts were also wrestling with transparency and accountability in policing. The Florida Supreme Court ruled that Marsy’s Law, a victim‑rights measure, does not automatically grant anonymity to officers involved in fatal incidents, curbing its use to hide their identities. The Ohio Supreme Court, by contrast, allowed anonymity in one bank‑robbery shooting case while rejecting it in another involving the killing of Ta’Kiya Young, reflecting ongoing tension between public oversight and officer safety. In the social safety net, a coalition of 21 states and D.C. sued over new guidance restricting SNAP eligibility for some legal immigrants, including refugees and asylum seekers, arguing that the changes would worsen food insecurity and effectively narrow access to basic nutrition along lines of origin and legal category.\n\nEconomic policy and national security concerns intersected on Wednesday as well. The administration quietly implemented a $12 billion bailout for farmers hurt by its own trade war, aiming to offset losses from tariffs that had benefited foreign competitors. At the same time, Small Business Administration head Kelly Loeffler publicly blamed the previous administration for economic woes without offering remedies. The bailout, coming amid reports of rising power bills and utility shutoffs in multiple states, illustrated how public funds were being used to patch over self‑inflicted trade damage while political narratives deflected responsibility. Separately, reporting revealed that xAI’s Colossus data center in Tennessee, used by the U.S. military, relied on more than 2,000 metric tons of Chinese‑made transformers, and a lawsuit alleged that a subcontractor with Russian ties had taken unauthorized photos inside the facility. The revelations raised alarms about dependence on foreign hardware and potential insider breaches at a critical AI installation that had been elevated by the Genesis Mission initiative.\n\nThanksgiving Day brought a series of moves that went directly to the foundations of legal continuity and belonging. Trump announced that he would cancel most executive orders signed by President Biden that used an autopen, alleging without evidence that aides had acted without Biden’s consent and hinting at perjury charges. Autopen use has long been accepted for routine presidential signatures; framing it as inherently illegitimate opened the door to retroactively voiding prior executive actions on dubious grounds. In immigration, DHS and USCIS ordered expanded reviews of asylum cases and green cards and halted processing of Afghan nationals’ residency applications, including for people who had worked with U.S. forces. These steps, layered on top of earlier TPS cancellations and refugee reviews, signaled that even those who had assisted the United States in war zones could not rely on settled expectations of protection.\n\nIndividual cases illustrated the human impact of these policies. In Dallas, ICE detained Maher Tarabishi, a 62‑year‑old father and primary caregiver for his son with a rare disease, during a routine check‑in, labeling him a “criminal alien” and terrorist despite decades in the country and no criminal record. His family struggled to locate him after he was transferred to a remote detention facility. In Seattle, ICE officers detained Elaine Miles, a Native American actor, after claiming her tribal ID looked fake; they refused her offer to verify her identity with her tribe and tried to confiscate her phone before releasing her. The incident highlighted racial profiling and ignorance of tribal sovereignty, showing how Native Americans can be swept into immigration enforcement despite their citizenship. Chicago faith leaders responded to broader detention practices by filing a First Amendment lawsuit alleging that DHS had blocked clergy from providing spiritual care and sacraments to detained immigrants, framing enforcement as a test of religious freedom as well as civil rights.\n\nThe president’s Thanksgiving message itself underscored how citizenship was being rhetorically weaponized. In remarks that veered from holiday themes into a broadside against immigrants and communities of color, Trump threatened to strip citizenship from naturalized Americans he deemed “non‑compatible with Western civilization.” While no immediate legal mechanism accompanied the threat, it signaled a willingness to treat naturalization as conditional on cultural and political conformity. On the cultural front, the earlier Tennessee order to purge LGBTQ‑themed books from libraries foreshadowed a hearing in North Carolina, where the Chapel Hill School District was summoned before the state House Oversight Committee on charges of violating new anti‑trans and anti‑DEI laws by using preferred pronouns and endorsing diversity initiatives. The hearing showed how state legislatures were using oversight powers to enforce ideological conformity in schools and chill support for LGBTQ students.\n\nPolitical violence and speech were also linked on Thursday. In the wake of conservative activist Charlie Kirk’s assassination by a leftist radical, Trump and his allies issued threats against Democrats and floated new limits on freedom of speech, using rhetoric reminiscent of civil war. The killing was framed not only as a crime but as a justification for curbing what could be said by political opponents. In a separate but related pattern, Trump continued his habit of verbally attacking journalists, calling one female reporter a “stupid person” and referencing past insults about another’s appearance at a press conference, contributing to a hostile environment for the press and particularly for women reporters.\n\nFriday capped the week with further expansions of executive power and a clearer picture of foreign‑policy realignment. Domestically, Trump used emergency authority to order Consumers Energy to keep the JH Campbell coal plant in Michigan running despite plans to retire it, invoking a national energy emergency. The order shifted an estimated $113 million in costs onto ratepayers across the Midwest, prompting Michigan’s attorney general to move to challenge it. The decision illustrated how emergency powers can be used to override state decisions and favor particular industries, with consumers bearing the financial burden. In the realm of clemency, Trump announced his intention to grant a full pardon to former Honduran president Juan Orlando Hernández, who is serving a 45‑year U.S. sentence for drug trafficking and weapons charges tied to cocaine shipments. Extending clemency to a foreign leader convicted in U.S. courts signaled that pardons could be used to rehabilitate powerful allies abroad, complicating anti‑corruption and anti‑drug efforts.\n\nSymbolically, Trump signed an order designating the date of Charlie Kirk’s assassination as a National Day of Remembrance, framing the killing as the work of the “radical left” and embedding that narrative in official commemoration. The move followed earlier calls for speech restrictions and threats against Democrats, using the tools of presidential symbolism to enshrine a partisan reading of political violence. A broader review of the year’s actions noted that throughout 2025 Trump had issued numerous executive orders expanding presidential power beyond peacetime norms, challenging institutions from the media to the Federal Reserve and courts, with only the Supreme Court remaining as a partial check. Regulatory agencies continued their routine work—such as the FCC’s inquiry into local TV public‑interest obligations and paperwork for the E‑Rate program that funds internet access in schools and libraries—but these quieter processes unfolded against a backdrop of escalating rhetorical attacks on the press and threats to revoke broadcast licenses.\n\nAbroad, the Ukraine story that had opened the week reached a new stage. A transcript published by Bloomberg showed Trump adviser Steve Witkoff coordinating directly with senior Russian officials to pressure Ukraine into accepting the 28‑point surrender plan drafted in Moscow. Separate reports confirmed that Trump had sent envoys, including Witkoff and Jared Kushner, to Moscow with a proposal to recognize Russian control over eastern Ukraine. The disclosures made explicit that U.S. policy was being shaped in close consultation with Russian officials on terms favorable to Moscow. As these revelations emerged, Russia launched a major attack on Kyiv, firing 22 missiles and 460 drones that killed at least nine civilians and destroyed civilian infrastructure. Trump offered no substantive public response, focusing instead on domestic political moves. The silence during a significant escalation, combined with the documented coordination on a surrender plan, raised profound questions about whose interests U.S. foreign policy was serving and how reliable Washington remained as a security partner.\n\nOn the immigration front, there were signs that organized resistance could still alter federal tactics. In North Carolina, Border Patrol withdrew agents earlier than planned, ending “Operation Charlotte’s Web” after significant local resistance. Activists and students had organized protests, mutual aid, and food deliveries for those afraid to leave home during the street operations. The early withdrawal showed that coordinated local organizing could force changes in enforcement strategies, even when operations were framed as matters of national security.\n\nTaken together, the week’s events traced a pattern of executive power being used to shield allies, reshape legal baselines, and pressure institutions at home and abroad, while courts, states, faith leaders, and local communities mounted scattered resistance. Immigration and citizenship were increasingly treated as tools of control and fear, with status and even naturalization portrayed as contingent on political and cultural alignment. Foreign policy drifted toward Russian preferences in Ukraine, even as Russia escalated its assault on Kyiv. At the same time, some courts enforced appointment rules, sanctioned frivolous litigation, and limited secrecy around police violence; states and cities sued over social‑service cuts and detention practices; and consumers and activists targeted the corporate infrastructure of enforcement. The balance between concentrated executive authority and the diffuse checks of a constitutional system remained unsettled, with each new order, lawsuit, and protest helping to define the practical boundaries of democratic governance.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk45_PA_001\",\n      \"wk45_CR_003\",\n      \"wk45_CR_008\",\n      \"wk45_CR_009\",\n      \"wk45_PA_008\",\n      \"wk45_IG_015\",\n      \"wk45_CR_006\",\n      \"wk45_IG_005\",\n      \"wk45_IG_014\",\n      \"wk45_IG_008\",\n      \"wk45_IG_009\",\n      \"wk45_IG_010\",\n      \"wk45_PA_015\",\n      \"wk45_PA_010\",\n      \"wk45_PA_011\",\n      \"wk45_PA_014\",\n      \"wk45_PA_006\",\n      \"wk45_PA_004\",\n      \"wk45_PA_003\",\n      \"wk45_PA_005\",\n      \"wk45_ES_005\",\n      \"wk45_ES_007\",\n      \"wk45_ES_004\",\n      \"wk45_PA_012\",\n      \"wk45_CR_014\",\n      \"wk45_CR_007\",\n      \"wk45_CR_001\",\n      \"wk45_CR_004\",\n      \"wk45_CR_010\",\n      \"wk45_CR_012\",\n      \"wk45_CR_015\",\n      \"wk45_CR_016\",\n      \"wk45_CR_020\",\n      \"wk45_IG_004\",\n      \"wk45_IG_016\",\n      \"wk45_IG_017\",\n      \"wk45_IG_022\",\n      \"wk45_IG_023\",\n      \"wk45_CR_005\",\n      \"wk45_CR_013\",\n      \"wk45_CR_017\",\n      \"wk45_CR_011\",\n      \"wk45_ES_001\",\n      \"wk45_IM_002\",\n      \"wk45_IM_007\",\n      \"wk45_IM_008\",\n      \"wk45_PA_013\",\n      \"wk45_CR_018\",\n      \"wk45_IM_005\",\n      \"wk45_IM_004\",\n      \"wk45_IM_006\",\n      \"wk45_IM_011\",\n      \"wk45_IM_009\",\n      \"wk45_IM_012\",\n      \"wk45_IM_013\",\n      \"wk45_IM_014\",\n      \"wk45_IM_015\",\n      \"wk45_IM_001\",\n      \"wk45_IG_013\",\n      \"wk45_IG_012\",\n      \"wk45_ES_008\",\n      \"wk45_IM_010\",\n      \"wk45_ES_003\",\n      \"wk45_IG_002\",\n      \"wk45_IG_007\",\n      \"wk45_IG_020\",\n      \"wk45_IG_018\",\n      \"wk45_IG_019\",\n      \"wk45_IG_011\",\n      \"wk45_IM_003\",\n      \"wk45_CR_019\",\n      \"wk45_PA_007\",\n      \"wk45_PA_002\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 82,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk45_PA_001\",\n        \"wk45_CR_003\",\n        \"wk45_CR_008\",\n        \"wk45_CR_009\",\n        \"wk45_PA_008\",\n        \"wk45_IG_015\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Sequence this as a tightening arc: start with the veterans\\u2019 video on unlawful orders (wk45_CR_003) and Trump\\u2019s response calling for arrests and death (wk45_PA_001), then move to the Pentagon and DOJ/FBI investigations of the lawmakers (wk45_CR_008, wk45_CR_009) to show institutional follow-through. Fold in the Georgia election case dismissal and broad 2020-election pardon (wk45_IG_015, wk45_PA_008) as the flip side\\u2014impunity for Trump\\u2019s camp. Use wk45_IG_008\\u2013010 and wk45_IG_005/014 to illustrate DOJ\\u2019s structural capture and the patchy, sometimes resistant, role of courts. Mention the Tina Peters intervention (wk45_CR_006) and Hern\\u00e1ndez pardon (wk45_PA_015) as emblematic of rewarding loyal lawbreakers.\",\n      \"one_sentence_thesis\": \"The administration intensified its use of criminal rhetoric, federal law enforcement, and military legal tools to target Democratic lawmakers and shield pro-Trump election offenders, turning law into a weapon against opposition rather than a neutral constraint.\",\n      \"supporting_event_ids\": [\n        \"wk45_CR_006\",\n        \"wk45_IG_005\",\n        \"wk45_IG_014\",\n        \"wk45_IG_008\",\n        \"wk45_IG_009\",\n        \"wk45_IG_010\",\n        \"wk45_PA_015\"\n      ],\n      \"title\": \"Trump escalates use of law and security apparatus against political opponents\",\n      \"why_it_matters\": \"Criminalizing routine political speech and oversight while pardoning allies who attacked the electoral system erodes the expectation that law applies equally and signals that dissent can be treated as sedition. This chills opposition activity in Congress and beyond and normalizes impunity for regime-aligned actors.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_PA_010\",\n        \"wk45_PA_011\",\n        \"wk45_PA_014\",\n        \"wk45_PA_006\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Frame this as a pattern rather than isolated moves. Open with the autopen-based cancellation of Biden orders (wk45_PA_010) and the broader 2025 EO pattern (wk45_PA_011), then pivot to the coal-plant emergency order (wk45_PA_014) as a concrete, high-cost example of emergency powers being normalized. Bring in the OLC memo on Caribbean boat strikes (wk45_PA_006) to show war powers creep. Use Genesis Mission (wk45_PA_004), Muslim Brotherhood FTO designations (wk45_PA_003), TPS termination for Myanmar (wk45_PA_005), and the farm bailout/affordability crisis (wk45_ES_005, wk45_ES_007, wk45_ES_004) to illustrate how these tools are used to entrench ideological and crony priorities.\",\n      \"one_sentence_thesis\": \"Trump used expansive executive orders and emergency rationales\\u2014from voiding Biden-era directives to forcing a coal plant to stay open and broadening war powers\\u2014to consolidate unilateral control over major policy domains with minimal oversight.\",\n      \"supporting_event_ids\": [\n        \"wk45_PA_004\",\n        \"wk45_PA_003\",\n        \"wk45_PA_005\",\n        \"wk45_ES_005\",\n        \"wk45_ES_007\",\n        \"wk45_ES_004\"\n      ],\n      \"title\": \"Executive power stretches past traditional limits through sweeping orders and emergency claims\",\n      \"why_it_matters\": \"Treating emergency authority and technical legal theories as routine tools for undoing predecessors\\u2019 policies and bypassing Congress weakens checks and balances and makes future governance more dependent on a single leader\\u2019s will. This shift also embeds crony and ideological priorities into hard-to-reverse infrastructure and energy decisions.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_PA_012\",\n        \"wk45_CR_014\",\n        \"wk45_CR_007\",\n        \"wk45_PA_005\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Organize this around three layers: (1) policy-level moves\\u2014TPS terminations and reviews (wk45_PA_005, wk45_IG_004, wk45_CR_014), SNAP and HUD fights over immigrants and trans people (wk45_IG_016, wk45_IG_017, wk45_IG_022), and the de-naturalization threat (wk45_PA_012); (2) on-the-ground enforcement\\u2014child detentions and family separations (wk45_CR_007), detention of citizens and long-term residents (wk45_CR_004, wk45_CR_012, wk45_CR_015, wk45_CR_020), deportation flights and contractor entanglements (wk45_CR_010), and the North Carolina street snatches (wk45_CR_001); and (3) backlash and rights claims\\u2014state and faith-leader lawsuits (wk45_IG_016, wk45_IG_017, wk45_IG_022, wk45_IG_023). The Afghan shooter asylum case (wk45_CR_016) can be used to show how isolated incidents are politicized to justify broader crackdowns.\",\n      \"one_sentence_thesis\": \"Across DHS, ICE, USCIS, and the White House, the administration escalated aggressive enforcement, status reviews, and even threats of de-naturalization, turning immigration policy into a system for stratifying rights by origin and ideology.\",\n      \"supporting_event_ids\": [\n        \"wk45_CR_001\",\n        \"wk45_CR_004\",\n        \"wk45_CR_007\",\n        \"wk45_CR_010\",\n        \"wk45_CR_012\",\n        \"wk45_CR_014\",\n        \"wk45_CR_015\",\n        \"wk45_CR_016\",\n        \"wk45_CR_020\",\n        \"wk45_IG_004\",\n        \"wk45_IG_016\",\n        \"wk45_IG_017\",\n        \"wk45_IG_022\",\n        \"wk45_IG_023\"\n      ],\n      \"title\": \"Immigration and citizenship become central tools of social control\",\n      \"why_it_matters\": \"When lawful status and even citizenship can be questioned or revoked based on politics or identity, millions live under permanent insecurity, making them easier to intimidate and less able to participate fully in civic life. These practices also normalize errors and profiling\\u2014detaining citizens and long-term residents\\u2014as acceptable collateral.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_CR_001\",\n        \"wk45_CR_005\",\n        \"wk45_CR_013\",\n        \"wk45_CR_017\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Tell this as a story of fear as governance. Start with the North Carolina masked Border Patrol operations (wk45_CR_001) and the Georgia factory raid with diplomatic fallout (wk45_CR_005) to show spectacle-style enforcement. Then move to the Indiana redistricting fight: Bohacek\\u2019s opposition (wk45_CR_017) and the swatting of reluctant lawmakers (wk45_CR_013) to illustrate coercion around core democratic rules. Weave in ICE\\u2019s pattern of detaining children, citizens, and caregivers (wk45_CR_004, wk45_CR_007, wk45_CR_010, wk45_CR_012, wk45_CR_015, wk45_CR_020) and the activist boycotts (wk45_CR_011) as both evidence of harm and emerging resistance.\",\n      \"one_sentence_thesis\": \"Federal security agencies and off-the-books tactics\\u2014from masked street snatches and ICE raids to swatting of legislators\\u2014were deployed in ways that frighten targeted communities and pressure officials to align with Trump\\u2019s agenda.\",\n      \"supporting_event_ids\": [\n        \"wk45_CR_004\",\n        \"wk45_CR_007\",\n        \"wk45_CR_010\",\n        \"wk45_CR_011\",\n        \"wk45_CR_012\",\n        \"wk45_CR_015\",\n        \"wk45_CR_020\"\n      ],\n      \"title\": \"Security forces and quasi-paramilitary tactics are turned inward to intimidate communities and lawmakers\",\n      \"why_it_matters\": \"When police, immigration agents, and even prank-based SWAT responses are tolerated as tools of political pressure, the line between lawful enforcement and intimidation blurs, discouraging protest, everyday movement, and independent legislative judgment.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_ES_001\",\n        \"wk45_IM_002\",\n        \"wk45_IM_007\",\n        \"wk45_IM_008\",\n        \"wk45_PA_013\",\n        \"wk45_CR_018\",\n        \"wk45_IM_005\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"Structure this around three pillars: (1) hard data and science\\u2014GDP report cancellation (wk45_ES_001), CDC vaccine\\u2013autism edits (wk45_IM_002), and national test results plus grading/test policy shifts (wk45_IM_012, wk45_IM_013); (2) media pressure and propaganda\\u2014Trump\\u2019s license threats and attacks on reporters (wk45_IM_007, wk45_IM_009), FCC\\u2019s public-interest inquiries (wk45_IM_006, wk45_IM_011), and the Kimmel suspension backlash (wk45_IM_014); and (3) cultural memory and identity\\u2014Tennessee\\u2019s LGBTQ book purge (wk45_CR_018, wk45_IM_005), Trump\\u2019s Charlie Kirk remembrance order and speech-restriction talk (wk45_PA_013, wk45_IM_008), and the Ukraine disinformation campaign (wk45_IM_004). Use the X foreign-influence tool (wk45_IM_001) and consumer reactions to Tesla (wk45_IM_015) as contrasting examples of transparency and public pushback.\",\n      \"one_sentence_thesis\": \"The week saw intensified manipulation of information\\u2014from canceling economic data and rewriting CDC science to threatening broadcasters, purging LGBTQ books, and politicizing a national day of mourning\\u2014aimed at shaping what the public can know and remember.\",\n      \"supporting_event_ids\": [\n        \"wk45_IM_004\",\n        \"wk45_IM_006\",\n        \"wk45_IM_011\",\n        \"wk45_IM_009\",\n        \"wk45_IM_012\",\n        \"wk45_IM_013\",\n        \"wk45_IM_014\",\n        \"wk45_IM_015\",\n        \"wk45_IM_001\"\n      ],\n      \"title\": \"Information, media, and memory are aggressively curated to favor the regime\",\n      \"why_it_matters\": \"Controlling data, science communication, and cultural memory narrows the space for informed debate and makes it easier to justify repressive policies, especially when dissenting identities and viewpoints are literally removed from libraries and airwaves.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_IG_013\",\n        \"wk45_IM_004\",\n        \"wk45_IG_012\",\n        \"wk45_PA_003\",\n        \"wk45_ES_008\",\n        \"wk45_IM_010\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Open with the Ukraine peace-plan confusion (wk45_IG_013) and the leak of Russian-drafted terms as U.S. proposals (wk45_IM_004) to show foreign influence and narrative manipulation. Then cover the Venezuela-linked Cartel de los Soles terrorist designation (wk45_IG_012) and Muslim Brotherhood FTO order (wk45_PA_003) as examples of unilateral security labeling with broad downstream effects. Close with the xAI hardware and security issues (wk45_ES_008, wk45_IM_010) and the Genesis Mission centralization (wk45_PA_004) plus grid-upgrade shutoffs (wk45_ES_003) to illustrate how foreign and domestic elites shape both security posture and infrastructure for profit.\",\n      \"one_sentence_thesis\": \"The administration advanced a murky, Russia-influenced Ukraine peace plan, escalated terrorism designations tied to Venezuela and the Muslim Brotherhood, and relied on vulnerable private AI infrastructure, blending foreign authoritarian preferences with domestic crony interests.\",\n      \"supporting_event_ids\": [\n        \"wk45_PA_006\",\n        \"wk45_PA_004\",\n        \"wk45_ES_003\"\n      ],\n      \"title\": \"Foreign policy and security decisions tilt toward authoritarian interests and elite profit\",\n      \"why_it_matters\": \"When U.S. foreign policy is shaped through opaque deals, disinformation, and private tech arrangements rather than transparent democratic debate, it risks entangling national security with the fortunes of a few insiders and the agendas of hostile regimes.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_IG_002\",\n        \"wk45_IG_014\",\n        \"wk45_IG_015\",\n        \"wk45_IG_007\",\n        \"wk45_IG_020\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Contrast positive checks with enabling decisions. Start with the appeals court blocking rapid deportations (wk45_IG_002), sanctions on Trump for frivolous litigation (wk45_IG_014), and the Texas redistricting injunction (wk45_IG_020) as examples of judicial resistance. Then juxtapose these with the Georgia election case dismissal (wk45_IG_015) and North Dakota\\u2019s abortion-ban reinstatement (wk45_IG_007) to show how other rulings align with elite or conservative interests. Use the Marsy\\u2019s Law police-anonymity cases (wk45_IG_018, wk45_IG_019) and Epstein transparency orders (wk45_IG_011, wk45_IM_003) to illustrate the judiciary\\u2019s ongoing struggle over transparency and accountability.\",\n      \"one_sentence_thesis\": \"Judges across federal and state courts issued decisions that alternately sanctioned Trump for frivolous suits and protected due process, while also reviving abortion bans and ending a major election case against him, underscoring an uneven judicial role in the current crisis.\",\n      \"supporting_event_ids\": [\n        \"wk45_IG_005\",\n        \"wk45_IG_018\",\n        \"wk45_IG_019\",\n        \"wk45_IG_011\",\n        \"wk45_IM_003\"\n      ],\n      \"title\": \"Courts deliver mixed signals as some rulings check abuse while others entrench conservative power\",\n      \"why_it_matters\": \"Courts remain one of the few institutions capable of constraining executive overreach, but inconsistent rulings on reproductive rights, redistricting, and Trump\\u2019s own accountability create uncertainty about whether the judiciary will ultimately bolster or restrain democratic erosion.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk45_CR_018\",\n        \"wk45_IM_005\",\n        \"wk45_CR_019\",\n        \"wk45_PA_007\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Center this on Tennessee\\u2019s LGBTQ book purge (wk45_CR_018, wk45_IM_005) and the North Carolina oversight hearing targeting pronouns and DEI (wk45_CR_019) as emblematic state-level culture-war enforcement. Then bring in the State Department\\u2019s move against DEI-hiring universities (wk45_PA_007) and Trump\\u2019s use of funding threats and access with the NYC mayor-elect (wk45_PA_002) to show federal leverage over local and academic institutions. You can connect to the broader educational context\\u2014test results and grading/test policy shifts (wk45_IM_012, wk45_IM_013)\\u2014to underscore how civic education is being reshaped alongside ideological policing.\",\n      \"one_sentence_thesis\": \"State and federal officials escalated efforts to police pronouns, DEI policies, and LGBTQ content in schools and libraries, and to punish universities over hiring practices, embedding ideological enforcement into education policy.\",\n      \"supporting_event_ids\": [\n        \"wk45_IM_012\",\n        \"wk45_IM_013\",\n        \"wk45_PA_002\",\n        \"wk45_CR_019\"\n      ],\n      \"title\": \"Culture-war governance targets schools, libraries, and universities\",\n      \"why_it_matters\": \"Using state power to dictate acceptable identities and viewpoints in educational and cultural institutions narrows the next generation\\u2019s exposure to pluralism and signals that support for marginalized groups can trigger legal or financial retaliation.\"\n    }\n  ],\n  \"period_label\": \"Week 45\",\n  \"recommended_development_count\": 8,\n  \"sanity_notes\": \"Developments are organized around structural storylines\\u2014weaponized law, executive overreach, immigration as control, security/intimidation, information and memory control, foreign-policy capture, mixed judicial role, and culture-war governance. Some events logically touch multiple themes (e.g., book purges fit both information control and education culture wars; emergency coal order fits both executive overreach and crony capitalism), so they are anchored in the development where they are most narratively decisive and referenced only conceptually elsewhere to avoid duplicating event_ids. Unassigned events are mostly routine regulatory actions, background economic context, or items already conceptually folded into developments but left unmapped to keep the event-to-development linkage clean and non-overlapping.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk45_CR_002\",\n      \"why_unassigned\": \"Individual political career move (Greene resignation) that does not clearly advance a major structural narrative this week.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_002\",\n      \"why_unassigned\": \"Routine safety-based FDA action without clear linkage to the week\\u2019s core democratic or authoritarian developments.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_003\",\n      \"why_unassigned\": \"Economic-structure story about data centers and shutoffs that is somewhat peripheral to the main governance and rights arcs already covered.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_004\",\n      \"why_unassigned\": \"Background economic hardship context that is referenced in other developments but not central enough to anchor its own narrative.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_005\",\n      \"why_unassigned\": \"Duplicate/variant of the farm bailout story already captured via wk45_ES_007 in the executive-power/cronyism development.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_007\",\n      \"why_unassigned\": \"Substantively covered as part of the bailout/cronyism pattern in D2; left unassigned here to avoid double-counting.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_008\",\n      \"why_unassigned\": \"Used as an anchor in D6; no separate development needed.\"\n    },\n    {\n      \"event_id\": \"wk45_ES_009\",\n      \"why_unassigned\": \"Partisan blame-shifting on small business sentiment that adds color but not a distinct structural shift beyond existing economic-data and governance themes.\"\n    },\n    {\n      \"event_id\": \"wk45_IG_001\",\n      \"why_unassigned\": \"Epstein-related oversight move that is folded conceptually into transparency themes but not central to any chosen development.\"\n    },\n    {\n      \"event_id\": \"wk45_IG_006\",\n      \"why_unassigned\": \"Technical step in Epstein transparency that supports broader oversight themes but is too granular for a separate development.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_001\",\n      \"why_unassigned\": \"X\\u2019s foreign-account transparency tool is a countervailing measure that doesn\\u2019t fit cleanly into the main authoritarian-leaning arcs this week.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_003\",\n      \"why_unassigned\": \"Functionally included as supporting context in D7; listed here separately only to avoid duplication across developments.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_004\",\n      \"why_unassigned\": \"Used as an anchor in D6; not assigned elsewhere.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_005\",\n      \"why_unassigned\": \"Used as an anchor in D5/D8 cluster; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_006\",\n      \"why_unassigned\": \"Referenced in D5 as part of media-regulation context; not separately assigned to avoid overlap.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_007\",\n      \"why_unassigned\": \"Used as an anchor in D5; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_008\",\n      \"why_unassigned\": \"Used as an anchor in D5; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_009\",\n      \"why_unassigned\": \"Supporting example of media hostility folded into D5 conceptually; left unassigned to keep event-to-dev mapping clean.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_010\",\n      \"why_unassigned\": \"Used as an anchor in D6; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_011\",\n      \"why_unassigned\": \"Minor FCC process story that is referenced in D5 but not central enough to anchor a development.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_012\",\n      \"why_unassigned\": \"Educational data point that is used as context in D5/D8 but not assigned to avoid duplication.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_013\",\n      \"why_unassigned\": \"Policy trend in education referenced in D5/D8; left unassigned for mapping clarity.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_014\",\n      \"why_unassigned\": \"Consumer backlash to Kimmel suspension that illustrates media-market effects but is secondary within D5\\u2019s broader narrative.\"\n    },\n    {\n      \"event_id\": \"wk45_IM_015\",\n      \"why_unassigned\": \"Public reaction to corporate politics that is tangential to the week\\u2019s main institutional developments.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_002\",\n      \"why_unassigned\": \"Used as supporting context in D8; not separately assigned.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_003\",\n      \"why_unassigned\": \"Used as an anchor in D6; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_004\",\n      \"why_unassigned\": \"Used as supporting context in D2 and D6 conceptually; left unassigned here to avoid double-counting.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_005\",\n      \"why_unassigned\": \"Used as an anchor in D3; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_006\",\n      \"why_unassigned\": \"Used as an anchor in D2 and supporting in D6 conceptually; left unassigned in the list to avoid duplication.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_007\",\n      \"why_unassigned\": \"Used as an anchor in D8; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_008\",\n      \"why_unassigned\": \"Used as an anchor in D1; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_009\",\n      \"why_unassigned\": \"Example of misuse of public funds that fits within cronyism themes but is not central to any single development this week.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_010\",\n      \"why_unassigned\": \"Used as an anchor in D2; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_011\",\n      \"why_unassigned\": \"Used as an anchor in D2; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_012\",\n      \"why_unassigned\": \"Used as an anchor in D3; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_013\",\n      \"why_unassigned\": \"Used as an anchor in D5; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_014\",\n      \"why_unassigned\": \"Used as an anchor in D2; not duplicated.\"\n    },\n    {\n      \"event_id\": \"wk45_PA_015\",\n      \"why_unassigned\": \"Used as supporting context in D1; not duplicated.\"\n    }\n  ],\n  \"week_number\": 45,\n  \"window\": {\n    \"end\": \"2025-11-28\",\n    \"start\": \"2025-11-22\"\n  }\n}",
+    "digest": "The week unfolded under the shadow of a clash between elected officials and the commander in chief over the basic rules that govern the military. Over the weekend, six Democratic lawmakers who are veterans of the armed forces or intelligence community released a video reminding service members that they are obligated to refuse unlawful orders. The message echoed long‑standing military law, but President Trump denounced the lawmakers as “seditious,” demanded their arrest and trial, and suggested that such conduct could be punishable by death. What began as a civics lesson about lawful service became a test of whether legal constraints on presidential power would be treated as treasonous.\n\nThat confrontation set the tone for the days that followed. On Tuesday, the FBI’s counterterrorism division opened an investigation into the six lawmakers, treating their video as a potential security matter rather than protected political speech. Defense Secretary Pete Hegseth ordered the Navy to investigate Senator Mark Kelly’s comments in the video and signaled that Kelly, a retired Navy captain and astronaut, could be recalled to active duty for court‑martial under laws that allow prosecution of some military retirees. Deploying counterterrorism tools and military law against sitting members of Congress for restating legal obligations blurred the line between civilian oversight and the security apparatus, and sent a message to other lawmakers about the risks of publicly questioning presidential orders.\n\nWhile that domestic struggle over dissent and military obedience was taking shape, another long‑running conflict was being reshaped abroad. Over the weekend, details emerged of a 28‑point Ukraine “peace” plan backed by the Trump administration that closely mirrored Russian demands. The proposal would recognize Russian control over Crimea and parts of eastern Ukraine, cap Ukraine’s military, and grant amnesty for Russian war crimes. Ukrainian President Volodymyr Zelensky warned his citizens that he was under intense pressure to sign the agreement before Thanksgiving. A senior adviser to Vladimir Putin publicly rejected an alternative European Union plan and instead praised Trump’s framework, underscoring Moscow’s preference for a deal that would lock in its territorial gains and limit accountability.\n\nBy Tuesday, the administration was not only promoting this framework but also shaping public perception through disinformation. Officials leaked to reporters that a Ukraine peace deal had already been reached, even as both Zelensky and Russian officials denied any such agreement. The leaked terms again tracked closely with a Russian‑drafted plan previously pushed by Trump’s envoys. The false story suggested an effort to create a sense of inevitability around concessions to Russia, potentially boxing in Ukraine and U.S. allies by presenting surrender terms as a fait accompli.\n\nThe week’s other early developments showed federal power being asserted in more routine but still consequential ways. House Democrats released emails suggesting that Trump had knowledge of Jeffrey Epstein’s abuse, intensifying bipartisan calls to unseal Epstein‑related records. The Justice Department renewed its own request to unseal grand jury materials in the case, and a federal judge ordered expedited processing of related Freedom of Information Act requests. These moves, combined with congressional pressure, increased the likelihood that the public will eventually see more of how authorities handled a major case involving elite sexual abuse, even as debates continued over how to protect victims’ privacy.\n\nOn immigration, the weekend brought a sharp contrast between judicial limits and administrative expansion. A federal appeals court blocked the administration’s attempt to broaden fast‑track deportations for people who had been in the United States less than two years, citing due process concerns and the need for basic hearing rights. At the same time, the Justice Department moved to recruit specialized “deportation judges,” signaling a structural expansion of the removal apparatus even as courts imposed procedural constraints. On the ground, Border Patrol and ICE operations spread fear far from the southern border: masked agents in North Carolina conducted street operations that residents described as kidnappings, keeping children from school and adults from work; in Oregon, ICE detained a U.S. citizen high‑school student during lunch and then sought to charge him; and a raid on a South Korean‑owned battery factory in Georgia prompted a diplomatic apology and questions about whether arrest quotas were driving enforcement.\n\nMonday showed how these threads—immigration, institutional capacity, and executive power—were being woven into broader policy. The administration ended Temporary Protected Status for nearly 4,000 people from Myanmar, ordered a review of all refugees admitted under the Biden administration with a freeze on their green‑card processing, and increased ICE detention of children separated from families after traffic stops. These steps built on the weekend’s announcement that TPS for about 700 Somalis was under review and signaled a coordinated tightening of humanitarian protections. ProPublica reporting the same day that ICE had detained more than 600 immigrant children in federal shelters this year, many separated from their families and held for extended periods, revived concerns that family separation was again functioning as an enforcement tool.\n\nAt the institutional core of federal law enforcement, Monday also brought news of a sweeping purge inside the Justice Department. Reports described about 5,500 DOJ employees being removed, including 70 percent of the civil rights division and most of the public integrity section, which was reduced to two lawyers. The voting section’s work was redirected toward advancing Trump’s electoral agenda. Against this backdrop, Georgia prosecutors moved to dismiss the last remaining 2020 election racketeering case against Trump and his allies after District Attorney Fani Willis was disqualified. The move effectively ended that line of criminal accountability for efforts to overturn the 2020 results in Georgia. At the same time, federal courts were pushing back on other politicized prosecutions: building on a weekend ruling, additional orders clarified that Lindsey Halligan’s appointment as interim U.S. attorney had been unconstitutional, voiding her indictments of former FBI Director James Comey and New York Attorney General Letitia James. The decisions underscored that even high‑profile cases must rest on lawful appointments, and that irregular personnel moves cannot be used to target political opponents without judicial scrutiny.\n\nMonday’s docket also showed the executive branch extending its reach into new domains. Trump signed an order creating the “Genesis Mission,” a national artificial intelligence initiative centered in the Department of Energy to harness federal datasets for scientific and security uses. Centralizing AI efforts under the executive branch promised long‑term influence over a strategic technology that touches defense, surveillance, and the economy. The same day, the administration designated certain Muslim Brotherhood chapters in Lebanon, Jordan, and Egypt as terrorist organizations, expanding sanctions and surveillance tools with limited congressional input. In public health, HHS Secretary Robert F. Kennedy Jr. acknowledged directing the Centers for Disease Control and Prevention to alter its website language on vaccines and autism, despite scientific consensus that there is no causal link. After public pushback from Senator Bill Cassidy and others, the CDC added a note referencing Kennedy’s prior promise not to change the statement, highlighting how political interference in scientific messaging can undermine trust in health institutions.\n\nTuesday deepened the theme of legal tools being used to reshape elections and shield allies. Details emerged of a November 7 Trump pardon intended for Rudy Giuliani and others involved in the fake elector scheme but written broadly enough that it may cover any U.S. citizen involved in 2020 voter fraud. Defendants in unrelated cases began invoking the pardon to seek dismissal. If courts interpret it expansively, the measure could immunize a wide range of election‑related crimes, weakening deterrence against future attempts to subvert results. At the same time, a federal court blocked Texas’s mid‑decade congressional map, which would have added several Republican‑leaning districts, pending Supreme Court review. In Indiana, lawmakers who resisted a Trump‑backed redistricting plan reported being swatted at their homes, and one Republican senator publicly opposed the plan, citing Trump’s derogatory remarks about people with intellectual disabilities. The combination of judicial intervention and intimidation tactics showed how the struggle over representation now involves both courtroom battles and coercive pressure on legislators.\n\nCivil liberties and social policy were also contested on Tuesday. Tennessee’s secretary of state ordered 181 public libraries to review and remove books with LGBTQ themes or characters, citing state anti‑DEI law and a Trump executive order against “gender ideology.” Libraries closed temporarily to conduct the purge, raising serious First Amendment and equal‑protection concerns about state‑mandated viewpoint censorship. Elsewhere, twenty states and Washington, D.C. filed suit against the administration’s changes to HUD homelessness policy that would cut funding and impose new conditions likely to harm trans and nonbinary people, using federalism and civil‑rights arguments to resist the shifts. Activists targeted the infrastructure of immigration enforcement through protests at airports in Houston and New Haven against Avelo Airlines’ role in deportation flights, legal challenges by contractors over lost ICE business, and a Thanksgiving‑week boycott campaign aimed at major retailers tied to ICE operations. These efforts showed how economic pressure and public disruption were being used to challenge the privatized systems that underpin mass deportation.\n\nBy midweek, the erosion of legal constraints on Trump was becoming more visible, even as some courts asserted themselves. On Wednesday, Georgia prosecutor Pete Skandalakis formally moved to dismiss the 2020 racketeering case against Trump and his co‑defendants, and a judge granted the request, closing one of the last major criminal avenues for holding a former president accountable for efforts to overturn certified election results. Yet the same day, the conservative 11th Circuit Court of Appeals upheld nearly $1 million in sanctions against Trump and lawyer Alina Habba for a conspiracy‑laden RICO suit targeting Hillary Clinton, the Democratic National Committee, and James Comey, describing it as part of a pattern of meritless litigation. The ruling signaled that at least some courts remained willing to penalize attempts to weaponize the judiciary for political vendettas.\n\nState courts were also wrestling with transparency and accountability in policing. The Florida Supreme Court ruled that Marsy’s Law, a victim‑rights measure, does not automatically grant anonymity to officers involved in fatal incidents, curbing its use to hide their identities. The Ohio Supreme Court, by contrast, allowed anonymity in one bank‑robbery shooting case while rejecting it in another involving the killing of Ta’Kiya Young, reflecting ongoing tension between public oversight and officer safety. In the social safety net, a coalition of 21 states and D.C. sued over new guidance restricting SNAP eligibility for some legal immigrants, including refugees and asylum seekers, arguing that the changes would worsen food insecurity and effectively narrow access to basic nutrition along lines of origin and legal category.\n\nEconomic policy and national security concerns intersected on Wednesday as well. The administration quietly implemented a $12 billion bailout for farmers hurt by its own trade war, aiming to offset losses from tariffs that had benefited foreign competitors. At the same time, Small Business Administration head Kelly Loeffler publicly blamed the previous administration for economic woes without offering remedies. The bailout, coming amid reports of rising power bills and utility shutoffs in multiple states, illustrated how public funds were being used to patch over self‑inflicted trade damage while political narratives deflected responsibility. Separately, reporting revealed that xAI’s Colossus data center in Tennessee, used by the U.S. military, relied on more than 2,000 metric tons of Chinese‑made transformers, and a lawsuit alleged that a subcontractor with Russian ties had taken unauthorized photos inside the facility. The revelations raised alarms about dependence on foreign hardware and potential insider breaches at a critical AI installation that had been elevated by the Genesis Mission initiative.\n\nThanksgiving Day brought a series of moves that went directly to the foundations of legal continuity and belonging. Trump announced that he would cancel most executive orders signed by President Biden that used an autopen, alleging without evidence that aides had acted without Biden’s consent and hinting at perjury charges. Autopen use has long been accepted for routine presidential signatures; framing it as inherently illegitimate opened the door to retroactively voiding prior executive actions on dubious grounds. In immigration, DHS and USCIS ordered expanded reviews of asylum cases and green cards and halted processing of Afghan nationals’ residency applications, including for people who had worked with U.S. forces. These steps, layered on top of earlier TPS cancellations and refugee reviews, signaled that even those who had assisted the United States in war zones could not rely on settled expectations of protection.\n\nIndividual cases illustrated the human impact of these policies. In Dallas, ICE detained Maher Tarabishi, a 62‑year‑old father and primary caregiver for his son with a rare disease, during a routine check‑in, labeling him a “criminal alien” and terrorist despite decades in the country and no criminal record. His family struggled to locate him after he was transferred to a remote detention facility. In Seattle, ICE officers detained Elaine Miles, a Native American actor, after claiming her tribal ID looked fake; they refused her offer to verify her identity with her tribe and tried to confiscate her phone before releasing her. The incident highlighted racial profiling and ignorance of tribal sovereignty, showing how Native Americans can be swept into immigration enforcement despite their citizenship. Chicago faith leaders responded to broader detention practices by filing a First Amendment lawsuit alleging that DHS had blocked clergy from providing spiritual care and sacraments to detained immigrants, framing enforcement as a test of religious freedom as well as civil rights.\n\nThe president’s Thanksgiving message itself underscored how citizenship was being rhetorically weaponized. In remarks that veered from holiday themes into a broadside against immigrants and communities of color, Trump threatened to strip citizenship from naturalized Americans he deemed “non‑compatible with Western civilization.” While no immediate legal mechanism accompanied the threat, it signaled a willingness to treat naturalization as conditional on cultural and political conformity. On the cultural front, the earlier Tennessee order to purge LGBTQ‑themed books from libraries foreshadowed a hearing in North Carolina, where the Chapel Hill School District was summoned before the state House Oversight Committee on charges of violating new anti‑trans and anti‑DEI laws by using preferred pronouns and endorsing diversity initiatives. The hearing showed how state legislatures were using oversight powers to enforce ideological conformity in schools and chill support for LGBTQ students.\n\nPolitical violence and speech were also linked on Thursday. In the wake of conservative activist Charlie Kirk’s assassination by a leftist radical, Trump and his allies issued threats against Democrats and floated new limits on freedom of speech, using rhetoric reminiscent of civil war. The killing was framed not only as a crime but as a justification for curbing what could be said by political opponents. In a separate but related pattern, Trump continued his habit of verbally attacking journalists, calling one female reporter a “stupid person” and referencing past insults about another’s appearance at a press conference, contributing to a hostile environment for the press and particularly for women reporters.\n\nFriday capped the week with further expansions of executive power and a clearer picture of foreign‑policy realignment. Domestically, Trump used emergency authority to order Consumers Energy to keep the JH Campbell coal plant in Michigan running despite plans to retire it, invoking a national energy emergency. The order shifted an estimated $113 million in costs onto ratepayers across the Midwest, prompting Michigan’s attorney general to move to challenge it. The decision illustrated how emergency powers can be used to override state decisions and favor particular industries, with consumers bearing the financial burden. In the realm of clemency, Trump announced his intention to grant a full pardon to former Honduran president Juan Orlando Hernández, who is serving a 45‑year U.S. sentence for drug trafficking and weapons charges tied to cocaine shipments. Extending clemency to a foreign leader convicted in U.S. courts signaled that pardons could be used to rehabilitate powerful allies abroad, complicating anti‑corruption and anti‑drug efforts.\n\nSymbolically, Trump signed an order designating the date of Charlie Kirk’s assassination as a National Day of Remembrance, framing the killing as the work of the “radical left” and embedding that narrative in official commemoration. The move followed earlier calls for speech restrictions and threats against Democrats, using the tools of presidential symbolism to enshrine a partisan reading of political violence. A broader review of the year’s actions noted that throughout 2025 Trump had issued numerous executive orders expanding presidential power beyond peacetime norms, challenging institutions from the media to the Federal Reserve and courts, with only the Supreme Court remaining as a partial check. Regulatory agencies continued their routine work—such as the FCC’s inquiry into local TV public‑interest obligations and paperwork for the E‑Rate program that funds internet access in schools and libraries—but these quieter processes unfolded against a backdrop of escalating rhetorical attacks on the press and threats to revoke broadcast licenses.\n\nAbroad, the Ukraine story that had opened the week reached a new stage. A transcript published by Bloomberg showed Trump adviser Steve Witkoff coordinating directly with senior Russian officials to pressure Ukraine into accepting the 28‑point surrender plan drafted in Moscow. Separate reports confirmed that Trump had sent envoys, including Witkoff and Jared Kushner, to Moscow with a proposal to recognize Russian control over eastern Ukraine. The disclosures made explicit that U.S. policy was being shaped in close consultation with Russian officials on terms favorable to Moscow. As these revelations emerged, Russia launched a major attack on Kyiv, firing 22 missiles and 460 drones that killed at least nine civilians and destroyed civilian infrastructure. Trump offered no substantive public response, focusing instead on domestic political moves. The silence during a significant escalation, combined with the documented coordination on a surrender plan, raised profound questions about whose interests U.S. foreign policy was serving and how reliable Washington remained as a security partner.\n\nOn the immigration front, there were signs that organized resistance could still alter federal tactics. In North Carolina, Border Patrol withdrew agents earlier than planned, ending “Operation Charlotte’s Web” after significant local resistance. Activists and students had organized protests, mutual aid, and food deliveries for those afraid to leave home during the street operations. The early withdrawal showed that coordinated local organizing could force changes in enforcement strategies, even when operations were framed as matters of national security.\n\nTaken together, the week’s events traced a pattern of executive power being used to shield allies, reshape legal baselines, and pressure institutions at home and abroad, while courts, states, faith leaders, and local communities mounted scattered resistance. Immigration and citizenship were increasingly treated as tools of control and fear, with status and even naturalization portrayed as contingent on political and cultural alignment. Foreign policy drifted toward Russian preferences in Ukraine, even as Russia escalated its assault on Kyiv. At the same time, some courts enforced appointment rules, sanctioned frivolous litigation, and limited secrecy around police violence; states and cities sued over social‑service cuts and detention practices; and consumers and activists targeted the corporate infrastructure of enforcement. The balance between concentrated executive authority and the diffuse checks of a constitutional system remained unsettled, with each new order, lawsuit, and protest helping to define the practical boundaries of democratic governance.\n"
+  }
+}

@@ -1,0 +1,586 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 21
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 21,
+    "start_date": "2025-06-07",
+    "end_date": "2025-06-13",
+    "headline": "The twenty-first week of Trump’s second term unfolded as a study in how emergency tools can be made to feel routine.",
+    "summary": "The twenty-first week of Trump’s second term unfolded as a study in how emergency tools can be made to feel routine. Immigration enforcement, protest policing, and even public memory were drawn into a single field of action, with the presidency at its center. What might once have been treated as extraordinary—federal troops in a major American city, welfare data in the hands of deportation officers, monuments ordered by decree—was presented as management, security, and patriotism. The pattern di"
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_21_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/weekly_digest_final_week21.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/development_allocator_week21.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/weekly_digest_final_week21.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 21
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_007b679926c428f80069af9b30e9088193a6b7d71d73fb5b3e"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/step5_narrative_week21_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/development_allocator_week21.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 21/weekly_digest_week21.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_20_thread_package.json"
+    },
+    "week": {
+      "week_number": 21,
+      "start_date": "2025-06-07",
+      "end_date": "2025-06-13",
+      "headline": "The twenty-first week of Trump’s second term unfolded as a study in how emergency tools can be made to feel routine.",
+      "summary": "The twenty-first week of Trump’s second term unfolded as a study in how emergency tools can be made to feel routine. Immigration enforcement, protest policing, and even public memory were drawn into a single field of action, with the presidency at its center. What might once have been treated as extraordinary—federal troops in a major American city, welfare data in the hands of deportation officers, monuments ordered by decree—was presented as management, security, and patriotism. The pattern di"
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary/headline",
+            "event_id": null,
+            "development_id": null,
+            "title": "Emergency tools made to feel routine",
+            "why_it_matters": "The week is explicitly framed around normalization of extraordinary presidential powers, making executive overreach a central explanatory thread rather than incidental context."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Federal troops and protest policing treated as management",
+            "why_it_matters": "Use of federal force in domestic political space under a management/security rationale is a classic emergency-rule move that weakens normal constitutional and federalist restraints."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week21.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Presidency as organizing center of cross-domain action",
+            "why_it_matters": "The allocator framing ties disparate actions back to unilateral presidential method, supporting this thread as one of the week's main drivers."
+          }
+        ],
+        "summary": "This week should be read through the presidency's conversion of exceptional powers into ordinary administrative practice. The key point is not just harsh policy but the routine presentation of extraordinary authority across immigration, policing, and civic space.",
+        "continuity_notes": [
+          "Carries forward from prior weeks in which unilateral tools and weakened checks were already expanding.",
+          "This week intensifies the pattern by making emergency governance appear managerial rather than openly exceptional.",
+          "Closely overlaps with domestic militarization, but the rewrite should preserve the constitutional-method layer here."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Federal troops in a major American city",
+            "why_it_matters": "This is the clearest operational sign that security forces are being turned inward and normalized within domestic civic space."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Protest policing linked to broader federal posture",
+            "why_it_matters": "The protest response connects militarized force to political management of dissent, making this more than a narrow immigration story."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week21.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Emergency-style tools fused with domestic order narrative",
+            "why_it_matters": "The allocator appears to position force deployment as part of a coherent domestic-security method, supporting a lead role in the rewrite."
+          }
+        ],
+        "summary": "The concrete machinery of coercion was highly visible this week. Federal force and protest policing made domestic militarization one of the most legible ways emergency governance was experienced on the ground.",
+        "continuity_notes": [
+          "Continues the late-emerging pattern from prior weeks in which security powers increasingly target internal political space.",
+          "Should be paired with executive overreach, but as the operational face of that larger constitutional pattern.",
+          "Also intersects with anti-dissent suppression where protest is the immediate target."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Welfare data in the hands of deportation officers",
+            "why_it_matters": "This demonstrates expansion of deportation machinery into domestic administrative life, showing immigration enforcement as a general instrument of coercive control."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Immigration enforcement central to the week's action",
+            "why_it_matters": "The digest framing indicates that immigration is not background policy this week but one of the main channels through which extraordinary power is exercised."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week21.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Administrative systems repurposed for deportation",
+            "why_it_matters": "Repurposing welfare or civic data systems for immigration enforcement shows the thread broadening from border policy into domestic status-based control."
+          }
+        ],
+        "summary": "Immigration remained one of the strongest active threads, but this week its significance lies in how deportation power reached further into ordinary governance systems. The week shows immigration as a model for generalized coercive administration.",
+        "continuity_notes": [
+          "Strong carry-forward from prior weeks of detention, deportation, and status-based coercion.",
+          "This week deepens the thread through bureaucratic integration, not just raids or border rhetoric.",
+          "Should be linked to administrative state capture where data systems and agencies are repurposed for immigration enforcement."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Welfare data redirected into deportation enforcement",
+            "why_it_matters": "Using social-service administrative systems for deportation purposes reflects state machinery being repurposed away from neutral public administration."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Ordinary agencies drawn into coercive agenda",
+            "why_it_matters": "The digest suggests that institutions not originally built for punitive enforcement are being integrated into presidential control priorities."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week21.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Cross-agency management logic behind coercive actions",
+            "why_it_matters": "This indicates the week is not only about outcomes but about the administrative conversion of state capacity into a loyalist governing instrument."
+          }
+        ],
+        "summary": "Administrative capture was not the week's emotional center, but it supplied the machinery that made extraordinary enforcement seem routine. The key image is bureaucratic repurposing: neutral systems bent toward coercive ends.",
+        "continuity_notes": [
+          "Carries forward from earlier agency-hollowing and mission-rewrite patterns.",
+          "This week emphasizes repurposing of welfare and administrative systems rather than staffing purges alone.",
+          "Useful as a supporting explanation for how immigration and security powers become normalized."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Public memory drawn into a single field of action",
+            "why_it_matters": "The summary explicitly places memory politics alongside coercive enforcement, making information control part of the week's integrated governing pattern."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Monuments ordered by decree",
+            "why_it_matters": "State-directed monument politics is direct evidence of public-memory manipulation and symbolic curation from the center."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Patriotism frame used to normalize exceptional acts",
+            "why_it_matters": "Narrative management and symbolic framing help repackage extraordinary coercion as legitimate public order and national memory."
+          }
+        ],
+        "summary": "Information control mattered this week less through media suppression than through state-directed memory and symbolic framing. Monument politics and patriotic narrative helped convert coercion into a story of order and national purpose.",
+        "continuity_notes": [
+          "Continues the year-long pattern of record, narrative, and memory manipulation.",
+          "This week's emphasis is symbolic and interpretive rather than document suppression alone.",
+          "Can help the rewrite connect force and deportation to a larger politics of patriotic normalization."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Protest policing central to the week",
+            "why_it_matters": "The treatment of protest as a target of federal coercive response puts dissent suppression squarely in play."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Domestic order frame applied to protesters",
+            "why_it_matters": "When protest is handled through security logic, the immediate target is not abstract disorder but active civic opposition."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week21.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Civic space narrowed through security response",
+            "why_it_matters": "The allocator evidence suggests suppression of dissent is an important practical consequence of the week's force posture."
+          }
+        ],
+        "summary": "The week treated protest as something to be managed, contained, and disciplined. While domestic militarization provides the machinery, the political target is opposition in civic space.",
+        "continuity_notes": [
+          "Carries forward from week 20 and other recent weeks where dissent increasingly appears as a governing target.",
+          "Should not outrank domestic militarization in the rewrite, but should be used to clarify who the security apparatus is for.",
+          "Useful in scenes involving protest, policing, and rhetorical criminalization of resistance."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Immigration and citizenship powers create hierarchy of belonging",
+            "why_it_matters": "Even when immigration is primary, the week's logic clearly reinforces unequal membership and differentiated rights."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Security and patriotism linked to exclusionary governance",
+            "why_it_matters": "The week appears to naturalize who belongs, who is suspect, and whose rights are more conditional."
+          }
+        ],
+        "summary": "The anti-equality order is present mostly as an underlying logic: some people are sorted into protected belonging while others are exposed to coercive tools. It should inform the rewrite's moral frame more than dominate its structure.",
+        "continuity_notes": [
+          "Continues broader year-long hierarchy-of-belonging pattern.",
+          "This week expresses the thread mainly through immigration and patriotic sorting rather than standalone anti-DEI or gender policy.",
+          "Best used as background context rather than a separate major section."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Coercive governance expands through enforcement channels",
+            "why_it_matters": "Although not a primary legal-impunity week, the legal asymmetry backdrop remains relevant to how coercive state action is interpreted."
+          }
+        ],
+        "summary": "Selective justice is not one of the week's main live developments, but it remains a relevant backdrop because coercive state power continues to fall unevenly on targets rather than allies.",
+        "continuity_notes": [
+          "Present in prior weeks but not strongly developed here.",
+          "Mention only if needed to connect protest or immigration enforcement to broader asymmetrical legal order.",
+          "Do not let this thread compete with the week's stronger force-and-governance stories."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "No strong evidence in the supplied week materials makes insider enrichment or patronage economics a meaningful driver of this chapter.",
+        "continuity_notes": [
+          "If present at all, it is subordinate to coercive governance rather than material enrichment.",
+          "Omit unless the rewrite requires a passing continuity note from earlier weeks."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "The supplied week evidence does not indicate a distinct campus or civil-society coercion episode strong enough to structure the chapter independently.",
+        "continuity_notes": [
+          "Some protest-related material may touch civil society indirectly, but the central mechanism this week is security force deployment, not institutional funding or accreditation pressure.",
+          "Omit as a standalone thread."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "Election engineering does not appear to be meaningfully active in the week's supplied materials.",
+        "continuity_notes": [
+          "No practical rewrite value for this week."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "new",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Monuments ordered by decree",
+            "why_it_matters": "This is specific evidence of symbolic state action centered on curated public memory and potentially leader-centered civic display."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week21.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Patriotism and monument politics folded into governing style",
+            "why_it_matters": "The symbolic layer appears as part of the week's overall normalization strategy, making this sub-thread newly noticeable even if not dominant."
+          }
+        ],
+        "summary": "A faint but notable sub-thread appears in decree-driven monument and memory politics. It should not lead the week, but it can sharpen the chapter's sense that coercion and symbolism are moving together.",
+        "continuity_notes": [
+          "Use cautiously as an early or isolated appearance, since the stronger year-wide recurrence comes later.",
+          "Best nested under information control rather than treated as a separate major section."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [],
+        "summary": "This late-year sub-thread is not active in the current week.",
+        "continuity_notes": [
+          "Omit."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Presidency remains at the center of action",
+            "why_it_matters": "The summary emphasizes centralization rather than pushback, implying resistance is not a leading weekly development though it remains conceptually relevant as missing counterweight."
+          }
+        ],
+        "summary": "Resistance is more notable by its weakness or relative absence this week than by active breakthroughs. That absence helps explain why emergency tools could appear routine.",
+        "continuity_notes": [
+          "Use only as atmospheric context if the rewrite wants to note the thinness of effective counter-pressure.",
+          "Do not build scenes around resistance unless supplied week materials provide explicit examples elsewhere."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      }
+    ],
+    "week_summary_notes": [
+      "The week is best framed as a convergence week: immigration enforcement, protest policing, administrative repurposing, and memory politics all reinforce one another.",
+      "The dominant narrative move is normalization—extraordinary powers are presented as ordinary management, security, and patriotism.",
+      "Executive overreach and domestic militarization should be paired rather than treated as separate silos: one is the governing method, the other its operational face.",
+      "Immigration is not just another policy area this week; it functions as a model for generalized coercive administration.",
+      "Administrative capture matters mainly as hidden machinery enabling visible coercion.",
+      "Information and memory politics should appear as the interpretive wrapper that makes force and exclusion legible as patriotism rather than rupture.",
+      "Resistance and crony-capitalist stories are weak or absent and should not clutter the chapter."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_IMMIGRATION_AS_CONTROL"
+      ],
+      "supporting_threads": [
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER"
+      ],
+      "background_threads": [
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "threads_to_downplay": [
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION"
+      ],
+      "threads_to_omit": [
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+      ],
+      "opening_focus": "Open on the week's core pattern: extraordinary state tools—troops, deportation systems, administrative data, symbolic decrees—being made to feel ordinary. Establish immediately that normalization, not mere escalation, is the defining story.",
+      "closing_focus": "Close on the synthesis: coercion, bureaucracy, and memory politics now operate together so that emergency rule is experienced as routine governance and patriotic order.",
+      "continuity_emphasis_notes": [
+        "Emphasize carryover from week 20 in protest suppression and domestic force, but show that week 21 broadens the pattern into a more fully integrated governing style.",
+        "Keep the link between immigration enforcement and domestic militarization explicit; this week shows immigration methods migrating into general civic control.",
+        "Use administrative capture as the connective tissue explaining how coercive measures become embedded in ordinary institutions.",
+        "Let monument and patriotism material sharpen the theme of normalization, not distract from the main coercive threads.",
+        "Avoid overloading the chapter with weak side threads; this week is strongest when written as one tightly interlocking field of executive power."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "Los Angeles was the stage on which this week’s struggle over federal power, immigration enforcement, and the right to protest played out. What began as aggressive raids in immigrant neighborhoods and workplaces quickly drew in the National Guard, active-duty Marines, state officials, and federal courts. As the week unfolded, similar contests over authority and narrative appeared in universities, newsrooms, libraries, and election rules, while civil society prepared for mass “No Kings” protests against militarization and executive overreach.\n\nThe weekend opened with sweeping immigration raids across Los Angeles. Federal agents in military-style gear hit workplaces, day-labor sites, and community spaces, using armored vehicles and flash-bang grenades. More than 100 people were arrested, and civil-rights groups documented cases in which detainees were denied food, water, and medicine. Among those taken into custody was David Huerta, president of SEIU California, who had been observing a raid. The scale and tactics of the operation—raids at churches and community centers, heavily armed teams in residential streets—marked a shift toward paramilitary-style immigration enforcement in one of the country’s largest cities and sent fear through immigrant communities already wary of contact with authorities.\n\nProtests formed almost immediately around key raid sites and detention facilities. As crowds grew, President Trump signed orders activating and federalizing thousands of California National Guard troops for deployment in Los Angeles, doing so without the consent of Governor Gavin Newsom. It was the first such unilateral move in decades. Defense Secretary Pete Hegseth publicly warned that active-duty Marines at Camp Pendleton could be mobilized if unrest continued. Trump and his allies described the demonstrations as violent riots and an attack on U.S. sovereignty, even as local officials, including Mayor Karen Bass, insisted that protests were largely peaceful. California leaders denounced the deployments as unconstitutional and inflammatory, arguing that using state military forces to police civilian protests crossed long-standing civil-military boundaries.\n\nBeyond California, the administration pressed ahead with a broader enforcement campaign. ICE reported arresting more than 2,200 people in a single day nationwide, drawing heavily from monitoring programs that had previously been reserved for people not deemed public-safety threats. In New York City, officials expanded GPS monitoring and digital surveillance of immigrants, depressing business in affected neighborhoods as residents stayed home. In Chicago, ICE detained people during routine check-ins, raising questions about whether federal agents were circumventing state sanctuary laws and about the reliability of assurances given to those who voluntarily reported to authorities. The line between civil immigration control and criminal-style policing grew increasingly blurred.\n\nEven in the first hours after the Guard order, legal and political pushback began to form. California’s attorney general prepared challenges to the federalization of the Guard, arguing that the president had exceeded his authority. Every Democratic governor signed a joint statement condemning the deployment as an abuse of power. At the same time, the administration asked the Justice Department to investigate statements by Democratic politicians critical of ICE, signaling a willingness to scrutinize political speech. The clash between federal rhetoric, media scrutiny, and coordinated state opposition set the stage for a week-long confrontation over who controls armed forces on American streets.\n\nThe weekend also saw the administration continue its efforts to shape national memory. Trump promoted a planned “National Garden of American Heroes” filled with statues and pointed to earlier orders aimed at reinstating removed monuments. These cultural projects, framed as restoring “truth” to American history, sat alongside moves to favor celebratory narratives of the past and to marginalize more critical or inclusive accounts. They foreshadowed later fights over Confederate base names, museum leadership, and book bans that would surface as the week went on.\n\nBy Monday, the Los Angeles crisis had moved into the courts. California filed suit to rescind Trump’s federalization of its National Guard, arguing that deploying state troops to police protests violated state sovereignty and exceeded federal authority. Governor Newsom publicly demanded that the order be rescinded and dared the administration to arrest him if he refused to comply. Trump escalated his language, describing the protests as a “Migrant Invasion” and an “insurrection against the laws and sovereignty of the United States,” while Hegseth again raised the prospect of mobilizing Marines. The Los Angeles Police Department, however, described the demonstrations as peaceful, underscoring the gap between local assessments and federal justifications for military involvement.\n\nCourts elsewhere began to draw lines around immigration powers. A federal court in Texas ruled that Trump’s use of the Alien Enemies Act to deport migrants to El Salvador was illegal, requiring the administration to give affected individuals time to challenge their designation. In Florida and Oregon, lawmakers and legal nonprofits criticized and sued over immigration arrests at courthouses, arguing that such tactics undermined due process by deterring victims and witnesses from appearing in court. These actions showed that judges and some legislators were not prepared to accept the administration’s most expansive theories of enforcement.\n\nAt the same time, the administration widened its use of legal and financial tools against the press and other institutions. The Justice Department reversed a Biden-era policy and authorized subpoenas for journalists’ records in leak cases deemed to “undermine” Trump’s agenda, broadening surveillance of reporters. ABC News fired its chief political correspondent, Terry Moran, after a critical post about senior adviser Stephen Miller, amid reports of administration pressure. Press and civil-liberties groups warned that federal officers in Los Angeles were targeting journalists covering protests, a concern that would be borne out later in the week.\n\nUniversities, professional bodies, and public broadcasters also came under pressure. The Department of Education threatened to revoke federal funds from schools teaching about systemic racism. Trump moved to pull grants from the American Bar Association after it criticized administration policies, and he targeted Harvard with grant freezes and challenges to its tax-exempt status over its refusal to alter admissions and hiring to favor conservative viewpoints. In Congress, House Republicans advanced a bill to defund NPR and PBS, while Trump issued an order to cut their funding, prompting First Amendment lawsuits. These moves used federal money and regulation to punish disfavored institutions, blurring the line between neutral governance and political patronage.\n\nImmigration enforcement increasingly reached into the realm of speech. USCIS announced it would monitor immigrants’ social media for “antisemitic activity,” with the potential to revoke visas over pro-Palestine statements. ICE arrested immigrants for pro-Palestine speech, and a French scientist was denied entry after officials found messages critical of Trump on his phone. The State Department revoked visas for hundreds of international students involved in campus protests, though a judge partially blocked the move. Tying immigration status to political expression and activism turned immigration law into a tool for viewpoint-based punishment, with clear implications for free speech.\n\nOn the ground in Los Angeles, local institutions tried to shield residents from the fallout. The school district announced a security plan to protect students and families from immigration enforcement at graduations, including safety perimeters and virtual viewing options. Newsom formally requested that the Guard deployment be rescinded and delivered a prime-time address condemning militarization while urging peaceful protest. These steps illustrated how local leaders can buffer communities from federal actions, even as they highlighted the depth of conflict between different levels of government.\n\nTuesday broadened the conflict from the streets to campuses and laboratories. A cluster of executive orders and agency actions targeted higher education and research. The administration banned federal funds for grants using certain gender-related terms, froze billions in grants to Harvard, and threatened to cut funding to universities that allowed what it called “illegal protests,” leading to major losses at institutions such as Columbia. Federal agencies stopped funding projects that used disfavored terms, affecting more than 1,000 scientific grants, and intervened in the Fulbright Program to block DEI-related projects. Academic freedom and protest rights were tied directly to federal funding, conditioning institutional survival on ideological compliance.\n\nPublic and international media faced coordinated restructuring. Trump’s order to defund NPR and PBS, coupled with a House rescissions bill, pushed both organizations into court to argue that the moves violated the First Amendment. The administration also moved to dismantle the U.S. Agency for Global Media, which oversees Voice of America, though a judge partially blocked the effort. The FCC, under Chairman Brendan Carr, opened investigations and lawsuits against CBS and other outlets over content disfavored by Trump. Together with the new DOJ subpoena policy, these steps narrowed the information environment at a moment when independent coverage of government actions was especially critical.\n\nScientific and health advisory systems were not spared. Health and Human Services Secretary Robert F. Kennedy Jr. dismissed all 17 members of the CDC’s Advisory Committee on Immunization Practices, calling for a “clean sweep,” and began appointing new members, including figures known for controversial vaccine views. The administration accused medical journals of political bias and suggested restricting government scientists’ ability to publish in certain outlets. These moves raised alarms about the independence of scientific advice and the integrity of vaccine policy, with potential long-term consequences for public trust in health guidance.\n\nCultural symbols and historical narratives remained contested terrain. At Fort Bragg, Trump announced plans to restore the names of Army bases honoring Confederate generals, reversing prior efforts to remove such symbols. In Washington, he had already removed Kennedy Center leadership for being “too woke,” prompting cancellations and declining ticket sales. These actions, combined with the “heroes” garden initiative, signaled a broader attempt to align cultural and military symbols with a particular historical narrative. In contrast, a federal judge blocked Trump’s executive order requiring proof of citizenship to vote in federal elections, ruling that the Constitution does not grant the president specific powers over election rules. That decision, echoing an earlier injunction in Washington, D.C., underscored judicial skepticism toward unilateral executive changes to voting eligibility.\n\nIn Florida, the fight over what students can read intensified. The State Board of Education threatened Hillsborough County’s superintendent with criminal prosecution if he did not permanently remove 55 books labeled as “pornography,” even though they did not meet legal obscenity standards. The threat followed failed legislative attempts to mandate similar removals and came amid campaigns by groups such as Moms for Liberty to purge books on race, LGBTQ issues, and sex education, including reporting librarians to law enforcement. Criminalizing resistance to book removals weaponized state power against educators and narrowed the range of ideas available in schools.\n\nBy Wednesday, the militarization of Los Angeles had become more concrete and costly. The Pentagon confirmed that 700 active-duty Marines had been deployed to the city to protect federal property and personnel, alongside thousands of federalized National Guard troops. A Pentagon comptroller told Congress that the combined deployments would cost an estimated $134 million. Legal experts noted that activating Marines without invoking the Insurrection Act raised constitutional questions, and California’s lawsuit over the Guard federalization moved forward. The presence of active-duty troops on city streets, at significant expense, blurred civil-military boundaries and diverted resources from other missions.\n\nOn those same streets, journalists and protesters faced force. Reporters covering the protests, including CNN’s Jason Carroll and an Australian journalist, reported being shot with rubber bullets and pepper balls and briefly detained. Separate footage showed officers shooting a woman with a “less lethal” round at close range near her home. Press groups condemned the attacks, and the LAPD announced an investigation into excessive force. These incidents followed earlier warnings that federal officers might be violating journalists’ First Amendment rights and underscored the risks of covering public demonstrations in a heavily militarized environment.\n\nElected officials who tried to exercise oversight over immigration enforcement also encountered force. At a DHS press conference in Los Angeles, FBI agents forcibly removed and handcuffed Senator Alex Padilla as he attempted to question Homeland Security Secretary Kristi Noem about enforcement tactics; he was later released without charges. The Justice Department announced the indictment of Representative LaMonica McIver for allegedly impeding officers during a detention-center protest, and attorneys for Newark Mayor Ras Baraka pursued a lawsuit over his earlier arrest at a detention facility. These cases fueled claims that federal law enforcement was being used to intimidate lawmakers and mayors engaged in oversight, raising concerns about the health of checks and balances.\n\nElsewhere in the federal government, environmental and ethical issues surfaced. The EPA advanced plans to roll back power-plant greenhouse gas limits and weaken mercury and air toxics standards, aligning with fossil-fuel interests. Reporting detailed how the administration had delayed or altered economic and climate data, including a USDA deficit report and a congressionally mandated climate assessment, while cutting staff at statistical agencies. Critics argued that these moves hollowed out evidence-based policymaking. In Congress, Representative Mark Green announced he had accepted a private-sector job but would remain in office through a key reconciliation vote without disclosing his future employer, prompting ethics concerns. In the federal prison system, attorneys for R. Kelly alleged that Bureau of Prisons officials tried to recruit an inmate to murder him, based on a sworn statement from a terminally ill prisoner, raising serious questions about inmate safety and abuse of authority.\n\nImmigration raids continued to spread into sensitive spaces. ICE and allied agents conducted operations at Ventura County farms, detaining workers and alarming local officials who said the actions created chaos without improving safety. Agents detained a man in a church parking lot at gunpoint after refusing to show a warrant, and TikTok star Khaby Lame was held over visa issues before leaving the United States voluntarily. These incidents showed how enforcement now reached into workplaces, religious spaces, and the lives of global cultural figures, with potential to erode trust in public and religious institutions.\n\nThursday brought the first major court ruling against Trump’s troop deployment in Los Angeles. U.S. District Judge Charles Breyer held that the federalization of California’s National Guard to police protests exceeded statutory authority and violated the Tenth Amendment, ordering control returned to Governor Newsom. Within hours, however, a Ninth Circuit panel stayed the restraining order pending an emergency hearing set for June 17, temporarily restoring Trump’s control. The rapid back-and-forth illustrated both judicial willingness to check executive overreach and how quickly those checks can be suspended on appeal, leaving legal limits on domestic troop use contested and fragile.\n\nIn environmental policy, Congress and the president jointly moved to strip California of key clean-car authorities. Trump signed a resolution blocking the state’s rule to ban new gas-powered cars by 2035 and overturning EPA waivers that had allowed California to set stricter vehicle pollution standards. Two additional Congressional Review Act resolutions disapproved related EPA rules. California and ten other states sued, arguing that the federal action undermined their climate and air-quality efforts. The move centralized environmental policy in a deregulatory federal government and weakened state-led climate initiatives, complementing the EPA’s broader rollbacks of power-plant emissions limits.\n\nAs attention turned toward the June 14 military parade in Washington, states braced for nationwide “No Kings” protests planned for June 13. Texas activated thousands of National Guard troops and state police; Missouri and Texas deployed Guard units; South Carolina and Virginia warned that any violence or disruption would be met firmly; and a Florida sheriff threatened lethal force against protesters who harmed officers. Representative Anna Paulina Luna claimed, without evidence, that China was funding the protests and called for a committee investigation. Preemptive militarized responses and foreign-interference claims risked framing domestic dissent as a security threat before the protests had even begun.\n\nCultural and educational control efforts widened. Florida’s education authorities continued to pressure districts to remove books, while right-wing groups pushed bans on materials about race and LGBTQ issues. The Department of Defense ordered DEI-related books removed from the Naval Academy and Department of Defense Education Activity schools, and the Departments of Veterans Affairs and State banned pride flags in offices and consular posts. These actions followed earlier federal website censorship of DEI and gender terms and coincided with the Southern Baptist Convention’s endorsement of a resolution to overturn same-sex marriage. Coordinated restrictions on books, flags, and curricula narrowed the range of identities and histories that could be openly acknowledged in public institutions.\n\nScientists and economists warned of longer-term risks. More than 90 NIH scientists signed a letter opposing administration policies they said undermined the agency’s mission and public health. The World Bank projected that U.S. growth would fall sharply in 2025, citing Trump’s trade war as a key factor. Combined with earlier reports of data suppression and environmental rollbacks, these warnings suggested that short-term political gains might be coming at the expense of public health and economic stability. Amid this turbulence, the U.S. Election Assistance Commission quietly continued its technical work, announcing a July data summit at MIT and scheduling a committee meeting on updated voting system standards—routine but essential tasks that undergird election integrity regardless of high-profile political fights.\n\nBy Friday, the militarization of Los Angeles had reached a new threshold. For the first time since their deployment, U.S. Marines detained a civilian, Marcos Leao, outside the Wilshire Federal Building before handing him to DHS. The incident occurred as thousands of federalized Guard members and Marines continued to patrol the city over state objections, and as legal challenges to the deployments moved toward higher courts. Active-duty troops directly detaining civilians is a rare step in modern American history, underscoring how far military involvement in domestic enforcement had gone in just a few days.\n\nAcross the country, “No Kings” protests mobilized against raids, militarization, and the planned military parade. Organizers expected millions to join demonstrations at roughly 2,000 sites, funded in part by a Walmart heiress. The protests aimed to oppose mass deportations, defiance of court orders, and the use of military displays for personal glorification. Trump supporters called for boycotts of Walmart in response. Several governors had already activated Guard units or issued stern warnings, setting the stage for tense confrontations and testing how much space remained for mass dissent in a heavily policed environment.\n\nOther developments on Friday showed how executive power was reshaping civil-rights enforcement and data privacy. Reports confirmed that the acting chair of the Equal Employment Opportunity Commission, Andrea Lucas, had ordered the agency to stop processing gender-identity discrimination claims and to classify them as lowest priority. The EEOC dismissed several pending cases and removed the “X” gender marker from intake forms. Seventy members of Congress sent a letter demanding enforcement of civil-rights protections for transgender and nonbinary people, but for now the main federal workplace-discrimination agency had effectively stepped back from protecting those groups. Separately, new reporting revealed that the administration had transferred personal data, including immigration status, for millions of Medicaid enrollees to DHS, where it was being used to support ICE’s mass deportation campaign. Privacy advocates warned that repurposing health data for enforcement could deter vulnerable populations from seeking care and erode trust in public programs.\n\nThere were also small but notable instances of institutional resistance. The Smithsonian’s governing board rejected Trump’s claim that he had fired Kim Sajet, director of the National Portrait Gallery, for being “too woke,” asserting that personnel decisions rest with the institution’s leadership, not the president. In the courts, a federal judge in Massachusetts issued another injunction against parts of Trump’s proof-of-citizenship voting order, echoing earlier rulings that the president had overstepped his authority and risked disenfranchising voters. And in economic and environmental policy, Trump signed orders modifying a prior block on Nippon Steel’s acquisition of U.S. Steel—allowing the deal to proceed if a national-security agreement is reached—and consolidating federal wildfire prevention and response programs, while Congress enacted the Aerial Firefighting Enhancement Act to bolster aerial firefighting capacity. These actions showed how executive orders can reshape strategic industries and disaster response even as other branches push back on more overt power grabs.\n\nTaken together, the week traced a clear arc: from paramilitary-style immigration raids in Los Angeles to the federalization of the National Guard, the deployment of Marines, and the first direct detention of a civilian by active-duty troops; from courthouse arrests and social-media monitoring to the use of health and education data for enforcement; from monument plans and Confederate base names to book bans, pride flag prohibitions, and the quiet halting of gender-identity discrimination cases. Courts and some institutions pushed back, blocking certain deportation tools, limiting executive control over elections, and occasionally resisting cultural interference. But the overall picture was of an executive branch testing the outer edges of its authority across multiple fronts, while states, judges, civil servants, and protesters scrambled to define how much power any administration can wield over streets, classrooms, airwaves, and the stories a nation tells about itself.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk21_PA_003\",\n      \"wk21_PA_004\",\n      \"wk21_PA_017\",\n      \"wk21_PA_002\",\n      \"wk21_CR_001\",\n      \"wk21_CR_006\",\n      \"wk21_PA_007\",\n      \"wk21_PA_008\",\n      \"wk21_PA_005\",\n      \"wk21_CR_002\",\n      \"wk21_CR_004\",\n      \"wk21_CR_033\",\n      \"wk21_CR_036\",\n      \"wk21_CR_034\",\n      \"wk21_ES_013\",\n      \"wk21_ES_014\",\n      \"wk21_IM_016\",\n      \"wk21_IM_008\",\n      \"wk21_IM_002\",\n      \"wk21_IM_003\",\n      \"wk21_IM_018\",\n      \"wk21_IM_021\",\n      \"wk21_CR_021\",\n      \"wk21_CR_027\",\n      \"wk21_CR_035\",\n      \"wk21_CR_026\",\n      \"wk21_CR_025\",\n      \"wk21_IG_007\",\n      \"wk21_IG_009\",\n      \"wk21_IG_008\",\n      \"wk21_IG_019\",\n      \"wk21_IG_006\",\n      \"wk21_IG_020\",\n      \"wk21_IG_010\",\n      \"wk21_IG_011\",\n      \"wk21_IG_013\",\n      \"wk21_IG_017\",\n      \"wk21_IG_012\",\n      \"wk21_CR_005\",\n      \"wk21_IG_002\",\n      \"wk21_IG_042\",\n      \"wk21_IG_018\",\n      \"wk21_IG_035\",\n      \"wk21_IG_038\",\n      \"wk21_CR_003\",\n      \"wk21_ES_010\",\n      \"wk21_CR_029\",\n      \"wk21_CR_028\",\n      \"wk21_IM_017\",\n      \"wk21_CR_031\",\n      \"wk21_ES_008\",\n      \"wk21_CR_020\",\n      \"wk21_CR_030\",\n      \"wk21_CR_032\",\n      \"wk21_CR_037\",\n      \"wk21_CR_018\",\n      \"wk21_ES_023\",\n      \"wk21_CR_008\",\n      \"wk21_IG_014\",\n      \"wk21_CR_010\",\n      \"wk21_CR_012\",\n      \"wk21_IG_022\",\n      \"wk21_CR_009\",\n      \"wk21_IM_001\",\n      \"wk21_IM_005\",\n      \"wk21_CR_011\",\n      \"wk21_PA_021\",\n      \"wk21_PA_010\",\n      \"wk21_CR_007\",\n      \"wk21_IM_020\",\n      \"wk21_IM_012\",\n      \"wk21_IM_011\",\n      \"wk21_PA_014\",\n      \"wk21_IM_013\",\n      \"wk21_CR_013\",\n      \"wk21_CR_014\",\n      \"wk21_ES_002\",\n      \"wk21_PA_012\",\n      \"wk21_IM_004\",\n      \"wk21_IM_014\",\n      \"wk21_ES_005\",\n      \"wk21_ES_007\",\n      \"wk21_ES_009\",\n      \"wk21_ES_006\",\n      \"wk21_ES_004\",\n      \"wk21_ES_003\",\n      \"wk21_ES_011\",\n      \"wk21_CR_015\",\n      \"wk21_CR_017\",\n      \"wk21_CR_023\",\n      \"wk21_IG_024\",\n      \"wk21_CR_016\",\n      \"wk21_IG_036\",\n      \"wk21_IG_037\",\n      \"wk21_IM_010\",\n      \"wk21_IG_030\",\n      \"wk21_IM_019\",\n      \"wk21_IG_004\",\n      \"wk21_IG_005\",\n      \"wk21_IG_016\",\n      \"wk21_IG_028\",\n      \"wk21_IG_003\",\n      \"wk21_IG_001\",\n      \"wk21_IG_015\",\n      \"wk21_IG_027\",\n      \"wk21_PA_011\",\n      \"wk21_PA_001\",\n      \"wk21_IG_021\",\n      \"wk21_CR_022\",\n      \"wk21_IM_007\",\n      \"wk21_IM_015\",\n      \"wk21_ES_017\",\n      \"wk21_IM_006\",\n      \"wk21_ES_001\",\n      \"wk21_ES_012\",\n      \"wk21_ES_016\",\n      \"wk21_IG_031\",\n      \"wk21_IG_034\",\n      \"wk21_PA_018\",\n      \"wk21_PA_016\",\n      \"wk21_PA_015\",\n      \"wk21_PA_020\",\n      \"wk21_CR_024\",\n      \"wk21_CR_019\",\n      \"wk21_PA_006\",\n      \"wk21_IM_009\",\n      \"wk21_PA_009\",\n      \"wk21_IG_033\",\n      \"wk21_PA_019\",\n      \"wk21_IG_032\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 144,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk21_PA_003\",\n        \"wk21_PA_004\",\n        \"wk21_PA_017\",\n        \"wk21_PA_002\",\n        \"wk21_CR_001\",\n        \"wk21_CR_006\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Open with the decision to federalize the California National Guard and deploy Marines (wk21_PA_003, wk21_PA_004, wk21_PA_017), then move into the large-scale ICE raids and tactics on the ground (wk21_PA_002, wk21_CR_001, wk21_CR_006). Weave in rhetorical escalation (wk21_PA_008, wk21_PA_005) and denial of oversight (wk21_CR_004). Use individual incidents\\u2014the mistaken arrests, union leader detention, bystander shooting, and high-profile influencer detention\\u2014to humanize the impact. Close with the cost estimate (wk21_ES_013) and the broader protest wave and counter-mobilization (wk21_CR_026, wk21_CR_025, wk21_CR_027) to show how militarization and public resistance feed each other.\",\n      \"one_sentence_thesis\": \"The administration fused immigration crackdowns with domestic military deployments in Los Angeles, overriding California\\u2019s opposition and normalizing emergency-style force against immigrant communities and protesters.\",\n      \"supporting_event_ids\": [\n        \"wk21_PA_007\",\n        \"wk21_PA_008\",\n        \"wk21_PA_005\",\n        \"wk21_CR_002\",\n        \"wk21_CR_004\",\n        \"wk21_CR_033\",\n        \"wk21_CR_036\",\n        \"wk21_CR_034\",\n        \"wk21_ES_013\",\n        \"wk21_ES_014\",\n        \"wk21_IM_016\",\n        \"wk21_IM_008\",\n        \"wk21_IM_002\",\n        \"wk21_IM_003\",\n        \"wk21_IM_018\",\n        \"wk21_IM_021\",\n        \"wk21_CR_021\",\n        \"wk21_CR_027\",\n        \"wk21_CR_035\",\n        \"wk21_CR_026\",\n        \"wk21_CR_025\"\n      ],\n      \"title\": \"Trump militarizes immigration enforcement and protest control in California over state objections\",\n      \"why_it_matters\": \"Using federalized Guard troops, Marines, and militarized police tactics to run immigration raids and police demonstrations erodes the line between civilian law enforcement and war powers, weaponizes federal authority against a disfavored state, and chills basic rights of assembly and bodily security.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_IG_007\",\n        \"wk21_IG_009\",\n        \"wk21_IG_008\",\n        \"wk21_IG_019\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Frame this as a tug-of-war between executive power and institutional checks. Start with California\\u2019s legal fight over Guard federalization and the Breyer/Ninth Circuit sequence (wk21_IG_006, wk21_IG_007, wk21_IG_020). Then cover immigration-law limits\\u2014the Alien Enemies Act ruling and related cases (wk21_IG_009, wk21_IG_010, wk21_IG_011, wk21_IG_013). Move to election administration rulings (wk21_IG_008, wk21_IG_019). Contrast these with retaliation against oversight actors\\u2014indicting Rep. McIver, manhandling Sen. Padilla, blocking congressional access (wk21_IG_012, wk21_CR_005, wk21_CR_004). Close by noting broader judicial activity (wk21_IG_017, wk21_IG_018, wk21_IG_042) and legislative responses like the My Body, My Data Act and EAC work (wk21_IG_035, wk21_IG_038) to show a contested but active legal landscape.\",\n      \"one_sentence_thesis\": \"Judges and state officials mounted significant legal challenges to Trump\\u2019s immigration, election, and deployment moves, but rapid appeals, partial compliance, and criminalization of oversight showed how fragile these checks have become.\",\n      \"supporting_event_ids\": [\n        \"wk21_IG_006\",\n        \"wk21_IG_020\",\n        \"wk21_IG_010\",\n        \"wk21_IG_011\",\n        \"wk21_IG_013\",\n        \"wk21_IG_017\",\n        \"wk21_IG_012\",\n        \"wk21_CR_005\",\n        \"wk21_CR_004\",\n        \"wk21_IG_002\",\n        \"wk21_IG_042\",\n        \"wk21_IG_018\",\n        \"wk21_IG_035\",\n        \"wk21_IG_038\"\n      ],\n      \"title\": \"Oversight and courts push back on Trump\\u2019s emergency-style overreach\\u2014amid stays, workarounds, and retaliation\",\n      \"why_it_matters\": \"The week illustrates both the resilience and limits of rule-of-law constraints: courts can still block sweeping orders and abusive deportation tools, yet the executive\\u2019s willingness to stretch statutes, punish overseers, and exploit procedural delays undermines effective accountability.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_CR_003\",\n        \"wk21_ES_010\",\n        \"wk21_CR_029\",\n        \"wk21_CR_028\",\n        \"wk21_IM_017\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Center the narrative on how immigration tools are repurposed to police ideology. Begin with speech-based targeting of immigrants and activists (wk21_CR_003, wk21_ES_010, wk21_CR_029) and the revocation of student visas over protests (wk21_ES_010). Then show the expansion into welfare and health data (wk21_CR_028, wk21_IM_017) and the broader pattern of raids sweeping up citizens and officials (wk21_CR_001, wk21_CR_002, wk21_CR_035). Use LAUSD\\u2019s protective measures (wk21_CR_020, wk21_CR_030, wk21_CR_032, wk21_CR_037) as a counterpoint that reveals how local institutions adapt when federal enforcement becomes a threat. Close by tying in economic and diplomatic consequences (wk21_ES_014, wk21_ES_023) and legal pushback (wk21_IG_010, wk21_IG_011).\",\n      \"one_sentence_thesis\": \"The administration intensified its use of immigration status, surveillance, and data-sharing to target pro-Palestine speech, alleged antisemitism, and even Medicaid enrollees, deepening a tiered system where noncitizens and critics face heightened vulnerability.\",\n      \"supporting_event_ids\": [\n        \"wk21_CR_001\",\n        \"wk21_CR_002\",\n        \"wk21_PA_007\",\n        \"wk21_CR_029\",\n        \"wk21_CR_035\",\n        \"wk21_CR_031\",\n        \"wk21_ES_014\",\n        \"wk21_ES_008\",\n        \"wk21_CR_020\",\n        \"wk21_CR_030\",\n        \"wk21_CR_032\",\n        \"wk21_CR_037\",\n        \"wk21_IG_010\",\n        \"wk21_IG_011\",\n        \"wk21_CR_018\",\n        \"wk21_ES_023\"\n      ],\n      \"title\": \"Immigration and citizenship become tools to punish dissent and stratify rights\",\n      \"why_it_matters\": \"Turning visas, social media monitoring, and welfare data into instruments of ideological control undermines equal protection, deters political participation by immigrants and foreign students, and corrodes trust in public institutions like schools and health programs.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_CR_008\",\n        \"wk21_IG_014\",\n        \"wk21_CR_010\",\n        \"wk21_CR_012\",\n        \"wk21_IG_022\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Treat this as a multi-front campaign against independent media. Start with DOJ\\u2019s policy shift on journalist subpoenas (wk21_CR_008, wk21_IG_014), then move to regulatory harassment and funding attacks (wk21_CR_010, wk21_CR_011, wk21_CR_012, wk21_IG_022, wk21_PA_021). Use the Terry Moran case and AP retaliation (wk21_CR_009, wk21_IM_001, wk21_IM_005) as concrete examples of pressure on individual journalists and outlets. Fold in on-the-ground repression of reporters in LA (wk21_CR_007, wk21_IM_003, wk21_IM_018) and the use of embedded, sympathetic media in raids (wk21_IM_008, wk21_IM_002). Close by situating this within Trump\\u2019s broader use of executive power to target critics (wk21_PA_010).\",\n      \"one_sentence_thesis\": \"Trump and allied regulators escalated efforts to surveil, punish, and defund critical media\\u2014from DOJ leak subpoenas and FCC investigations to retaliation against specific journalists and public broadcasters\\u2014while promoting state-shaped narratives of enforcement.\",\n      \"supporting_event_ids\": [\n        \"wk21_CR_009\",\n        \"wk21_IM_001\",\n        \"wk21_IM_005\",\n        \"wk21_CR_011\",\n        \"wk21_PA_021\",\n        \"wk21_PA_010\",\n        \"wk21_CR_007\",\n        \"wk21_IM_003\",\n        \"wk21_IM_008\",\n        \"wk21_IM_002\",\n        \"wk21_IM_018\",\n        \"wk21_IM_020\"\n      ],\n      \"title\": \"Coordinated assault on independent media and journalism through law, regulation, and access\",\n      \"why_it_matters\": \"When the government can seize reporters\\u2019 records, sic regulators on disfavored outlets, and strip funding from public media, it narrows the information space citizens rely on to scrutinize power, making democratic accountability far harder.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_IM_012\",\n        \"wk21_IM_011\",\n        \"wk21_PA_014\",\n        \"wk21_IM_013\",\n        \"wk21_CR_013\",\n        \"wk21_CR_014\",\n        \"wk21_ES_002\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"Organize this as a story about control over culture and education. Begin with the monuments and military symbolism moves (wk21_IM_012, wk21_IM_011, wk21_PA_012, wk21_PA_014, wk21_IM_013). Then cover the systematic scrubbing of DEI and gender content from government and military education (wk21_IM_004, wk21_IM_014, wk21_CR_013, wk21_CR_014, wk21_ES_002, wk21_ES_005, wk21_ES_007, wk21_ES_009). Bring in parallel efforts in schools and libraries, including Florida\\u2019s prosecutions and Moms for Liberty campaigns (wk21_CR_023, wk21_IG_036, wk21_IG_037, wk21_IM_010). Note symbolic policies like pride flag bans and the Southern Baptist resolution (wk21_CR_015, wk21_CR_017). Close with the partial resistance from the Smithsonian board (wk21_IG_030) and the emergence of counter-narratives like Heather Cox Richardson\\u2019s series (wk21_IM_019).\",\n      \"one_sentence_thesis\": \"Through executive orders, funding threats, book bans, and leadership purges, the administration moved aggressively to reshape schools, military academies, arts institutions, and public symbols around a triumphalist, anti-DEI vision of American identity.\",\n      \"supporting_event_ids\": [\n        \"wk21_PA_012\",\n        \"wk21_IM_004\",\n        \"wk21_IM_014\",\n        \"wk21_ES_005\",\n        \"wk21_ES_007\",\n        \"wk21_ES_009\",\n        \"wk21_ES_006\",\n        \"wk21_ES_004\",\n        \"wk21_ES_003\",\n        \"wk21_ES_011\",\n        \"wk21_CR_015\",\n        \"wk21_CR_017\",\n        \"wk21_CR_023\",\n        \"wk21_IG_024\",\n        \"wk21_CR_016\",\n        \"wk21_IG_036\",\n        \"wk21_IG_037\",\n        \"wk21_IM_010\",\n        \"wk21_IG_030\",\n        \"wk21_IM_019\"\n      ],\n      \"title\": \"Cultural and educational institutions are remade to fit a nationalist, anti-DEI narrative\",\n      \"why_it_matters\": \"Rewriting curricula, censoring DEI and gender content, and politicizing museums and monuments reconfigures how future generations understand history and belonging, marginalizing dissenting and minority perspectives in the civic imagination.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_IG_004\",\n        \"wk21_IG_005\",\n        \"wk21_IG_016\",\n        \"wk21_IG_028\",\n        \"wk21_IG_003\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Tell this as a story of institutional capture. Start with the purges and appointments at HHS/CDC and in the intelligence community (wk21_IG_004, wk21_IG_005, wk21_IG_016). Then move to the EEOC\\u2019s effective halt of gender-identity enforcement (wk21_IG_003, wk21_CR_018) and the appointment of an IRS critic to run the IRS (wk21_IG_028). Fold in politicized use of DOJ tools against opposing lawyers (wk21_IG_015) and ethics concerns in Congress (wk21_IG_027). Use the 22-year-old DHS terrorism-prevention head and USAID hollowing (wk21_IG_001, wk21_PA_011, wk21_PA_001) as emblematic of loyalty-over-competence staffing. Close by highlighting internal resistance, such as NIH scientists\\u2019 letter (wk21_CR_022), and note how these structural changes set the stage for other abuses described in the week.\",\n      \"one_sentence_thesis\": \"The administration accelerated politicization of the civil service and watchdog bodies by installing loyalists, firing independent advisers, and sidelining enforcement of gender-identity protections, while some agencies and scientists tried to push back.\",\n      \"supporting_event_ids\": [\n        \"wk21_IG_001\",\n        \"wk21_CR_018\",\n        \"wk21_ES_008\",\n        \"wk21_IG_015\",\n        \"wk21_IG_027\",\n        \"wk21_PA_011\",\n        \"wk21_PA_001\",\n        \"wk21_IG_021\",\n        \"wk21_CR_022\"\n      ],\n      \"title\": \"Key oversight and civil-rights institutions are politicized and hollowed out\",\n      \"why_it_matters\": \"When agencies like HHS, DHS, EEOC, IRS, and intelligence oversight offices are staffed and directed for ideological loyalty rather than competence and neutrality, the basic machinery that protects public health, civil rights, and lawful conduct becomes an arm of partisan power.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_IM_007\",\n        \"wk21_IM_015\",\n        \"wk21_IM_021\",\n        \"wk21_ES_017\",\n        \"wk21_ES_003\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Link the information-control and economic-power themes. Begin with suppression and alteration of economic and climate data (wk21_IM_007, wk21_IM_015, wk21_IM_021, wk21_IM_006) and connect that to EPA rollbacks and NPS cuts (wk21_ES_001, wk21_ES_012). Then detail the pattern of using funding and regulation to discipline institutions (wk21_ES_003, wk21_ES_004, wk21_ES_006, wk21_ES_007, wk21_ES_011, wk21_ES_017), including the ABA and universities. Bring in macroeconomic warnings about the trade war (wk21_ES_016, wk21_IG_031) and the \\u201cOne Big, Beautiful Bill\\u201d budget push (wk21_IG_034). Note how these choices intersect with surveillance and enforcement infrastructure (tie briefly to Medicaid data transfer in D3 if needed) and with symbolic spending like the military parade (wk21_PA_020, wk21_ES_013).\",\n      \"one_sentence_thesis\": \"The administration expanded surveillance of immigrants and welfare recipients, manipulated or suppressed economic and climate data, and used funding and regulation to reward allies and punish critics, even as outside institutions warned of mounting economic costs.\",\n      \"supporting_event_ids\": [\n        \"wk21_IM_006\",\n        \"wk21_ES_007\",\n        \"wk21_ES_004\",\n        \"wk21_ES_006\",\n        \"wk21_ES_011\",\n        \"wk21_ES_001\",\n        \"wk21_ES_012\",\n        \"wk21_ES_013\",\n        \"wk21_ES_016\",\n        \"wk21_IG_031\",\n        \"wk21_IG_034\",\n        \"wk21_IG_027\",\n        \"wk21_PA_018\",\n        \"wk21_PA_016\",\n        \"wk21_PA_015\",\n        \"wk21_PA_020\",\n        \"wk21_ES_014\"\n      ],\n      \"title\": \"Data, surveillance, and statistics are weaponized while economic policy serves elite and ideological goals\",\n      \"why_it_matters\": \"Repurposing data systems for enforcement, obscuring key economic and environmental facts, and tying grants and tax status to political loyalty undermines informed policymaking and entrenches a cronyist economic order that is hard to reverse.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk21_CR_025\",\n        \"wk21_CR_024\",\n        \"wk21_CR_019\",\n        \"wk21_PA_006\",\n        \"wk21_IM_009\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Frame this as a clash between an increasingly personalist presidency and a mobilized public. Start with the build-up to and execution of the \\u201cNo Kings Day\\u201d and related protests (wk21_CR_024, wk21_CR_025), then show the administration\\u2019s rhetorical escalation\\u2014calling for Newsom\\u2019s arrest, investigating anti-ICE speech, branding protests foreign-funded or insurrectionary (wk21_PA_006, wk21_PA_009, wk21_CR_019, wk21_IM_009, wk21_PA_005, wk21_PA_008). Describe state and local responses, both repressive (Guard activations, threats of lethal force\\u2014wk21_CR_027) and resistant (Democratic governors\\u2019 statement and Newsom\\u2019s address\\u2014wk21_IG_021, wk21_CR_021). Close by noting signs of internal and public unease, such as GOP criticism of the parade (wk21_IG_033), Trump\\u2019s petty retaliation against Rand Paul (wk21_PA_019), and low approval ratings (wk21_IG_032).\",\n      \"one_sentence_thesis\": \"As millions prepared for and joined \\u201cNo Kings\\u201d protests against Trump\\u2019s militarization and raids, the president and allies labeled dissenters and Democratic officials as enemies or foreign agents and threatened arrests and heavy force, while some Republicans and institutions showed limited pushback.\",\n      \"supporting_event_ids\": [\n        \"wk21_PA_009\",\n        \"wk21_PA_005\",\n        \"wk21_PA_008\",\n        \"wk21_CR_027\",\n        \"wk21_IG_021\",\n        \"wk21_CR_021\",\n        \"wk21_IM_002\",\n        \"wk21_IM_018\",\n        \"wk21_IG_033\",\n        \"wk21_PA_019\",\n        \"wk21_IG_032\"\n      ],\n      \"title\": \"Trump escalates rhetoric against opponents as mass protests and state-level resistance grow\",\n      \"why_it_matters\": \"Casting domestic opposition as traitorous or foreign-backed while threatening to arrest governors and crush protests corrodes the norms of loyal opposition, but the scale of protest and pockets of intra-party and institutional dissent show that resistance remains robust.\"\n    }\n  ],\n  \"period_label\": \"Week 21\",\n  \"recommended_development_count\": 8,\n  \"sanity_notes\": \"Developments are organized around eight coherent arcs: (1) militarized immigration and protest control in California; (2) legal and oversight pushback versus executive overreach; (3) immigration and data as tools to punish dissent and stratify citizenship; (4) attacks on media and journalism; (5) cultural and educational remaking along nationalist, anti-DEI lines; (6) politicization of civil service and watchdog institutions; (7) weaponization of data, surveillance, and economic levers; and (8) escalating anti-opposition rhetoric amid mass protests and mixed resistance. Some events, especially around LA protests, media repression, and federal-state conflict, could plausibly sit in more than one development; they were assigned where they most clearly advance a single storyline, with cross-references suggested in notes. Routine regulatory and housekeeping items are left unassigned to keep the narrative focused on structural democratic risks and responses.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk21_ES_018\",\n      \"why_unassigned\": \"Routine technical EPA rule and information-collection adjustments lack a clear narrative link to the week\\u2019s major authoritarian or resistance storylines.\"\n    },\n    {\n      \"event_id\": \"wk21_ES_019\",\n      \"why_unassigned\": \"FCC\\u2019s foreign sponsorship and spectrum rules are largely technocratic and do not materially advance the main developments already covered.\"\n    },\n    {\n      \"event_id\": \"wk21_ES_020\",\n      \"why_unassigned\": \"FDA user-fee and device-classification actions are technical and peripheral to the week\\u2019s core democracy and power themes.\"\n    },\n    {\n      \"event_id\": \"wk21_ES_021\",\n      \"why_unassigned\": \"CDC data-collection requests are routine public health administration and do not significantly intersect with the week\\u2019s narrative arcs.\"\n    },\n    {\n      \"event_id\": \"wk21_ES_022\",\n      \"why_unassigned\": \"GSA\\u2019s generic clearance for service feedback is benign administrative housekeeping without strong ties to the main developments.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_025\",\n      \"why_unassigned\": \"The Aerial Firefighting Enhancement Act is a bipartisan public-safety measure that sits outside the week\\u2019s primary conflict-driven narratives.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_026\",\n      \"why_unassigned\": \"Louisiana\\u2019s anti-grooming legislation is notable but does not clearly connect to the dominant federal power, immigration, or information-control storylines this week.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_029\",\n      \"why_unassigned\": \"FDA\\u2019s call for consumer representatives is a positive governance step but tangential to the main developments.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_038\",\n      \"why_unassigned\": \"EAC meetings on voting systems are routine and only weakly connected to the more dramatic election-order litigation already captured in D2.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_039\",\n      \"why_unassigned\": \"FCC\\u2019s effort to terminate dormant proceedings is procedural housekeeping without a strong narrative hook.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_040\",\n      \"why_unassigned\": \"GSA\\u2019s OMB request on customer feedback is duplicative of wk21_ES_022 and not central to any major development.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_041\",\n      \"why_unassigned\": \"Utah\\u2019s hazardous waste program authorization is a standard cooperative-federalism action not clearly tied to the week\\u2019s democracy themes.\"\n    },\n    {\n      \"event_id\": \"wk21_IG_042\",\n      \"why_unassigned\": \"While included as supporting in D2 for color, its individual cases are not central enough to anchor or reshape any development.\"\n    },\n    {\n      \"event_id\": \"wk21_PA_013\",\n      \"why_unassigned\": \"Blocking California\\u2019s gas-car phaseout overlaps conceptually with federal-state conflict but would overcomplicate D1/D7 without adding much beyond what\\u2019s already covered.\"\n    },\n    {\n      \"event_id\": \"wk21_PA_015\",\n      \"why_unassigned\": \"Wildfire response restructuring is included as supporting in D7\\u2019s economic/governance frame; it does not warrant separate development treatment.\"\n    },\n    {\n      \"event_id\": \"wk21_PA_016\",\n      \"why_unassigned\": \"The Nippon Steel\\u2013U.S. Steel decision is a nuanced trade/CFIUS story that would distract from clearer economic-authoritarian patterns already in D7.\"\n    },\n    {\n      \"event_id\": \"wk21_PA_018\",\n      \"why_unassigned\": \"Tariff-pause signaling is a minor tactical move within trade policy and is already implicitly covered by broader trade-war economic analysis in D7.\"\n    },\n    {\n      \"event_id\": \"wk21_PA_019\",\n      \"why_unassigned\": \"Uninviting Rand Paul is used as supporting color in D8; on its own it is too small-bore to anchor a separate narrative.\"\n    },\n    {\n      \"event_id\": \"wk21_ES_015\",\n      \"why_unassigned\": \"Biden administration tariffs on Chinese goods are important but sit outside the Trump-focused authoritarian drift narrative of this week.\"\n    }\n  ],\n  \"week_number\": 21,\n  \"window\": {\n    \"end\": \"2025-06-13\",\n    \"start\": \"2025-06-07\"\n  }\n}",
+    "digest": "Los Angeles was the stage on which this week’s struggle over federal power, immigration enforcement, and the right to protest played out. What began as aggressive raids in immigrant neighborhoods and workplaces quickly drew in the National Guard, active-duty Marines, state officials, and federal courts. As the week unfolded, similar contests over authority and narrative appeared in universities, newsrooms, libraries, and election rules, while civil society prepared for mass “No Kings” protests against militarization and executive overreach.\n\nThe weekend opened with sweeping immigration raids across Los Angeles. Federal agents in military-style gear hit workplaces, day-labor sites, and community spaces, using armored vehicles and flash-bang grenades. More than 100 people were arrested, and civil-rights groups documented cases in which detainees were denied food, water, and medicine. Among those taken into custody was David Huerta, president of SEIU California, who had been observing a raid. The scale and tactics of the operation—raids at churches and community centers, heavily armed teams in residential streets—marked a shift toward paramilitary-style immigration enforcement in one of the country’s largest cities and sent fear through immigrant communities already wary of contact with authorities.\n\nProtests formed almost immediately around key raid sites and detention facilities. As crowds grew, President Trump signed orders activating and federalizing thousands of California National Guard troops for deployment in Los Angeles, doing so without the consent of Governor Gavin Newsom. It was the first such unilateral move in decades. Defense Secretary Pete Hegseth publicly warned that active-duty Marines at Camp Pendleton could be mobilized if unrest continued. Trump and his allies described the demonstrations as violent riots and an attack on U.S. sovereignty, even as local officials, including Mayor Karen Bass, insisted that protests were largely peaceful. California leaders denounced the deployments as unconstitutional and inflammatory, arguing that using state military forces to police civilian protests crossed long-standing civil-military boundaries.\n\nBeyond California, the administration pressed ahead with a broader enforcement campaign. ICE reported arresting more than 2,200 people in a single day nationwide, drawing heavily from monitoring programs that had previously been reserved for people not deemed public-safety threats. In New York City, officials expanded GPS monitoring and digital surveillance of immigrants, depressing business in affected neighborhoods as residents stayed home. In Chicago, ICE detained people during routine check-ins, raising questions about whether federal agents were circumventing state sanctuary laws and about the reliability of assurances given to those who voluntarily reported to authorities. The line between civil immigration control and criminal-style policing grew increasingly blurred.\n\nEven in the first hours after the Guard order, legal and political pushback began to form. California’s attorney general prepared challenges to the federalization of the Guard, arguing that the president had exceeded his authority. Every Democratic governor signed a joint statement condemning the deployment as an abuse of power. At the same time, the administration asked the Justice Department to investigate statements by Democratic politicians critical of ICE, signaling a willingness to scrutinize political speech. The clash between federal rhetoric, media scrutiny, and coordinated state opposition set the stage for a week-long confrontation over who controls armed forces on American streets.\n\nThe weekend also saw the administration continue its efforts to shape national memory. Trump promoted a planned “National Garden of American Heroes” filled with statues and pointed to earlier orders aimed at reinstating removed monuments. These cultural projects, framed as restoring “truth” to American history, sat alongside moves to favor celebratory narratives of the past and to marginalize more critical or inclusive accounts. They foreshadowed later fights over Confederate base names, museum leadership, and book bans that would surface as the week went on.\n\nBy Monday, the Los Angeles crisis had moved into the courts. California filed suit to rescind Trump’s federalization of its National Guard, arguing that deploying state troops to police protests violated state sovereignty and exceeded federal authority. Governor Newsom publicly demanded that the order be rescinded and dared the administration to arrest him if he refused to comply. Trump escalated his language, describing the protests as a “Migrant Invasion” and an “insurrection against the laws and sovereignty of the United States,” while Hegseth again raised the prospect of mobilizing Marines. The Los Angeles Police Department, however, described the demonstrations as peaceful, underscoring the gap between local assessments and federal justifications for military involvement.\n\nCourts elsewhere began to draw lines around immigration powers. A federal court in Texas ruled that Trump’s use of the Alien Enemies Act to deport migrants to El Salvador was illegal, requiring the administration to give affected individuals time to challenge their designation. In Florida and Oregon, lawmakers and legal nonprofits criticized and sued over immigration arrests at courthouses, arguing that such tactics undermined due process by deterring victims and witnesses from appearing in court. These actions showed that judges and some legislators were not prepared to accept the administration’s most expansive theories of enforcement.\n\nAt the same time, the administration widened its use of legal and financial tools against the press and other institutions. The Justice Department reversed a Biden-era policy and authorized subpoenas for journalists’ records in leak cases deemed to “undermine” Trump’s agenda, broadening surveillance of reporters. ABC News fired its chief political correspondent, Terry Moran, after a critical post about senior adviser Stephen Miller, amid reports of administration pressure. Press and civil-liberties groups warned that federal officers in Los Angeles were targeting journalists covering protests, a concern that would be borne out later in the week.\n\nUniversities, professional bodies, and public broadcasters also came under pressure. The Department of Education threatened to revoke federal funds from schools teaching about systemic racism. Trump moved to pull grants from the American Bar Association after it criticized administration policies, and he targeted Harvard with grant freezes and challenges to its tax-exempt status over its refusal to alter admissions and hiring to favor conservative viewpoints. In Congress, House Republicans advanced a bill to defund NPR and PBS, while Trump issued an order to cut their funding, prompting First Amendment lawsuits. These moves used federal money and regulation to punish disfavored institutions, blurring the line between neutral governance and political patronage.\n\nImmigration enforcement increasingly reached into the realm of speech. USCIS announced it would monitor immigrants’ social media for “antisemitic activity,” with the potential to revoke visas over pro-Palestine statements. ICE arrested immigrants for pro-Palestine speech, and a French scientist was denied entry after officials found messages critical of Trump on his phone. The State Department revoked visas for hundreds of international students involved in campus protests, though a judge partially blocked the move. Tying immigration status to political expression and activism turned immigration law into a tool for viewpoint-based punishment, with clear implications for free speech.\n\nOn the ground in Los Angeles, local institutions tried to shield residents from the fallout. The school district announced a security plan to protect students and families from immigration enforcement at graduations, including safety perimeters and virtual viewing options. Newsom formally requested that the Guard deployment be rescinded and delivered a prime-time address condemning militarization while urging peaceful protest. These steps illustrated how local leaders can buffer communities from federal actions, even as they highlighted the depth of conflict between different levels of government.\n\nTuesday broadened the conflict from the streets to campuses and laboratories. A cluster of executive orders and agency actions targeted higher education and research. The administration banned federal funds for grants using certain gender-related terms, froze billions in grants to Harvard, and threatened to cut funding to universities that allowed what it called “illegal protests,” leading to major losses at institutions such as Columbia. Federal agencies stopped funding projects that used disfavored terms, affecting more than 1,000 scientific grants, and intervened in the Fulbright Program to block DEI-related projects. Academic freedom and protest rights were tied directly to federal funding, conditioning institutional survival on ideological compliance.\n\nPublic and international media faced coordinated restructuring. Trump’s order to defund NPR and PBS, coupled with a House rescissions bill, pushed both organizations into court to argue that the moves violated the First Amendment. The administration also moved to dismantle the U.S. Agency for Global Media, which oversees Voice of America, though a judge partially blocked the effort. The FCC, under Chairman Brendan Carr, opened investigations and lawsuits against CBS and other outlets over content disfavored by Trump. Together with the new DOJ subpoena policy, these steps narrowed the information environment at a moment when independent coverage of government actions was especially critical.\n\nScientific and health advisory systems were not spared. Health and Human Services Secretary Robert F. Kennedy Jr. dismissed all 17 members of the CDC’s Advisory Committee on Immunization Practices, calling for a “clean sweep,” and began appointing new members, including figures known for controversial vaccine views. The administration accused medical journals of political bias and suggested restricting government scientists’ ability to publish in certain outlets. These moves raised alarms about the independence of scientific advice and the integrity of vaccine policy, with potential long-term consequences for public trust in health guidance.\n\nCultural symbols and historical narratives remained contested terrain. At Fort Bragg, Trump announced plans to restore the names of Army bases honoring Confederate generals, reversing prior efforts to remove such symbols. In Washington, he had already removed Kennedy Center leadership for being “too woke,” prompting cancellations and declining ticket sales. These actions, combined with the “heroes” garden initiative, signaled a broader attempt to align cultural and military symbols with a particular historical narrative. In contrast, a federal judge blocked Trump’s executive order requiring proof of citizenship to vote in federal elections, ruling that the Constitution does not grant the president specific powers over election rules. That decision, echoing an earlier injunction in Washington, D.C., underscored judicial skepticism toward unilateral executive changes to voting eligibility.\n\nIn Florida, the fight over what students can read intensified. The State Board of Education threatened Hillsborough County’s superintendent with criminal prosecution if he did not permanently remove 55 books labeled as “pornography,” even though they did not meet legal obscenity standards. The threat followed failed legislative attempts to mandate similar removals and came amid campaigns by groups such as Moms for Liberty to purge books on race, LGBTQ issues, and sex education, including reporting librarians to law enforcement. Criminalizing resistance to book removals weaponized state power against educators and narrowed the range of ideas available in schools.\n\nBy Wednesday, the militarization of Los Angeles had become more concrete and costly. The Pentagon confirmed that 700 active-duty Marines had been deployed to the city to protect federal property and personnel, alongside thousands of federalized National Guard troops. A Pentagon comptroller told Congress that the combined deployments would cost an estimated $134 million. Legal experts noted that activating Marines without invoking the Insurrection Act raised constitutional questions, and California’s lawsuit over the Guard federalization moved forward. The presence of active-duty troops on city streets, at significant expense, blurred civil-military boundaries and diverted resources from other missions.\n\nOn those same streets, journalists and protesters faced force. Reporters covering the protests, including CNN’s Jason Carroll and an Australian journalist, reported being shot with rubber bullets and pepper balls and briefly detained. Separate footage showed officers shooting a woman with a “less lethal” round at close range near her home. Press groups condemned the attacks, and the LAPD announced an investigation into excessive force. These incidents followed earlier warnings that federal officers might be violating journalists’ First Amendment rights and underscored the risks of covering public demonstrations in a heavily militarized environment.\n\nElected officials who tried to exercise oversight over immigration enforcement also encountered force. At a DHS press conference in Los Angeles, FBI agents forcibly removed and handcuffed Senator Alex Padilla as he attempted to question Homeland Security Secretary Kristi Noem about enforcement tactics; he was later released without charges. The Justice Department announced the indictment of Representative LaMonica McIver for allegedly impeding officers during a detention-center protest, and attorneys for Newark Mayor Ras Baraka pursued a lawsuit over his earlier arrest at a detention facility. These cases fueled claims that federal law enforcement was being used to intimidate lawmakers and mayors engaged in oversight, raising concerns about the health of checks and balances.\n\nElsewhere in the federal government, environmental and ethical issues surfaced. The EPA advanced plans to roll back power-plant greenhouse gas limits and weaken mercury and air toxics standards, aligning with fossil-fuel interests. Reporting detailed how the administration had delayed or altered economic and climate data, including a USDA deficit report and a congressionally mandated climate assessment, while cutting staff at statistical agencies. Critics argued that these moves hollowed out evidence-based policymaking. In Congress, Representative Mark Green announced he had accepted a private-sector job but would remain in office through a key reconciliation vote without disclosing his future employer, prompting ethics concerns. In the federal prison system, attorneys for R. Kelly alleged that Bureau of Prisons officials tried to recruit an inmate to murder him, based on a sworn statement from a terminally ill prisoner, raising serious questions about inmate safety and abuse of authority.\n\nImmigration raids continued to spread into sensitive spaces. ICE and allied agents conducted operations at Ventura County farms, detaining workers and alarming local officials who said the actions created chaos without improving safety. Agents detained a man in a church parking lot at gunpoint after refusing to show a warrant, and TikTok star Khaby Lame was held over visa issues before leaving the United States voluntarily. These incidents showed how enforcement now reached into workplaces, religious spaces, and the lives of global cultural figures, with potential to erode trust in public and religious institutions.\n\nThursday brought the first major court ruling against Trump’s troop deployment in Los Angeles. U.S. District Judge Charles Breyer held that the federalization of California’s National Guard to police protests exceeded statutory authority and violated the Tenth Amendment, ordering control returned to Governor Newsom. Within hours, however, a Ninth Circuit panel stayed the restraining order pending an emergency hearing set for June 17, temporarily restoring Trump’s control. The rapid back-and-forth illustrated both judicial willingness to check executive overreach and how quickly those checks can be suspended on appeal, leaving legal limits on domestic troop use contested and fragile.\n\nIn environmental policy, Congress and the president jointly moved to strip California of key clean-car authorities. Trump signed a resolution blocking the state’s rule to ban new gas-powered cars by 2035 and overturning EPA waivers that had allowed California to set stricter vehicle pollution standards. Two additional Congressional Review Act resolutions disapproved related EPA rules. California and ten other states sued, arguing that the federal action undermined their climate and air-quality efforts. The move centralized environmental policy in a deregulatory federal government and weakened state-led climate initiatives, complementing the EPA’s broader rollbacks of power-plant emissions limits.\n\nAs attention turned toward the June 14 military parade in Washington, states braced for nationwide “No Kings” protests planned for June 13. Texas activated thousands of National Guard troops and state police; Missouri and Texas deployed Guard units; South Carolina and Virginia warned that any violence or disruption would be met firmly; and a Florida sheriff threatened lethal force against protesters who harmed officers. Representative Anna Paulina Luna claimed, without evidence, that China was funding the protests and called for a committee investigation. Preemptive militarized responses and foreign-interference claims risked framing domestic dissent as a security threat before the protests had even begun.\n\nCultural and educational control efforts widened. Florida’s education authorities continued to pressure districts to remove books, while right-wing groups pushed bans on materials about race and LGBTQ issues. The Department of Defense ordered DEI-related books removed from the Naval Academy and Department of Defense Education Activity schools, and the Departments of Veterans Affairs and State banned pride flags in offices and consular posts. These actions followed earlier federal website censorship of DEI and gender terms and coincided with the Southern Baptist Convention’s endorsement of a resolution to overturn same-sex marriage. Coordinated restrictions on books, flags, and curricula narrowed the range of identities and histories that could be openly acknowledged in public institutions.\n\nScientists and economists warned of longer-term risks. More than 90 NIH scientists signed a letter opposing administration policies they said undermined the agency’s mission and public health. The World Bank projected that U.S. growth would fall sharply in 2025, citing Trump’s trade war as a key factor. Combined with earlier reports of data suppression and environmental rollbacks, these warnings suggested that short-term political gains might be coming at the expense of public health and economic stability. Amid this turbulence, the U.S. Election Assistance Commission quietly continued its technical work, announcing a July data summit at MIT and scheduling a committee meeting on updated voting system standards—routine but essential tasks that undergird election integrity regardless of high-profile political fights.\n\nBy Friday, the militarization of Los Angeles had reached a new threshold. For the first time since their deployment, U.S. Marines detained a civilian, Marcos Leao, outside the Wilshire Federal Building before handing him to DHS. The incident occurred as thousands of federalized Guard members and Marines continued to patrol the city over state objections, and as legal challenges to the deployments moved toward higher courts. Active-duty troops directly detaining civilians is a rare step in modern American history, underscoring how far military involvement in domestic enforcement had gone in just a few days.\n\nAcross the country, “No Kings” protests mobilized against raids, militarization, and the planned military parade. Organizers expected millions to join demonstrations at roughly 2,000 sites, funded in part by a Walmart heiress. The protests aimed to oppose mass deportations, defiance of court orders, and the use of military displays for personal glorification. Trump supporters called for boycotts of Walmart in response. Several governors had already activated Guard units or issued stern warnings, setting the stage for tense confrontations and testing how much space remained for mass dissent in a heavily policed environment.\n\nOther developments on Friday showed how executive power was reshaping civil-rights enforcement and data privacy. Reports confirmed that the acting chair of the Equal Employment Opportunity Commission, Andrea Lucas, had ordered the agency to stop processing gender-identity discrimination claims and to classify them as lowest priority. The EEOC dismissed several pending cases and removed the “X” gender marker from intake forms. Seventy members of Congress sent a letter demanding enforcement of civil-rights protections for transgender and nonbinary people, but for now the main federal workplace-discrimination agency had effectively stepped back from protecting those groups. Separately, new reporting revealed that the administration had transferred personal data, including immigration status, for millions of Medicaid enrollees to DHS, where it was being used to support ICE’s mass deportation campaign. Privacy advocates warned that repurposing health data for enforcement could deter vulnerable populations from seeking care and erode trust in public programs.\n\nThere were also small but notable instances of institutional resistance. The Smithsonian’s governing board rejected Trump’s claim that he had fired Kim Sajet, director of the National Portrait Gallery, for being “too woke,” asserting that personnel decisions rest with the institution’s leadership, not the president. In the courts, a federal judge in Massachusetts issued another injunction against parts of Trump’s proof-of-citizenship voting order, echoing earlier rulings that the president had overstepped his authority and risked disenfranchising voters. And in economic and environmental policy, Trump signed orders modifying a prior block on Nippon Steel’s acquisition of U.S. Steel—allowing the deal to proceed if a national-security agreement is reached—and consolidating federal wildfire prevention and response programs, while Congress enacted the Aerial Firefighting Enhancement Act to bolster aerial firefighting capacity. These actions showed how executive orders can reshape strategic industries and disaster response even as other branches push back on more overt power grabs.\n\nTaken together, the week traced a clear arc: from paramilitary-style immigration raids in Los Angeles to the federalization of the National Guard, the deployment of Marines, and the first direct detention of a civilian by active-duty troops; from courthouse arrests and social-media monitoring to the use of health and education data for enforcement; from monument plans and Confederate base names to book bans, pride flag prohibitions, and the quiet halting of gender-identity discrimination cases. Courts and some institutions pushed back, blocking certain deportation tools, limiting executive control over elections, and occasionally resisting cultural interference. But the overall picture was of an executive branch testing the outer edges of its authority across multiple fronts, while states, judges, civil servants, and protesters scrambled to define how much power any administration can wield over streets, classrooms, airwaves, and the stories a nation tells about itself.\n"
+  }
+}

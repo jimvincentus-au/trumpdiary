@@ -1,0 +1,358 @@
+
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "weekly_thread_package.schema.json",
+  "title": "Trump Diary Weekly Thread Package",
+  "description": "Week-level thread-state package used to drive thread-conscious chapter rewrites for The Trump Diary.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "package_type",
+    "scope",
+    "build",
+    "catalog_reference",
+    "sources",
+    "week",
+    "thread_states",
+    "week_summary_notes",
+    "rewrite_guidance"
+  ],
+  "properties": {
+    "schema_name": {
+      "type": "string",
+      "const": "weekly_thread_package"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "package_type": {
+      "type": "string",
+      "const": "thread_state_package"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project",
+        "period_label",
+        "week_number"
+      ],
+      "properties": {
+        "project": {
+          "type": "string"
+        },
+        "period_label": {
+          "type": "string"
+        },
+        "week_number": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "created_by",
+        "model",
+        "run_id",
+        "prompt_version",
+        "git_commit"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "model": {
+          "type": ["string", "null"]
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "git_commit": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "catalog_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "catalog_file",
+        "catalog_run_id",
+        "catalog_schema_name",
+        "catalog_schema_version"
+      ],
+      "properties": {
+        "catalog_file": {
+          "type": "string"
+        },
+        "catalog_run_id": {
+          "type": ["string", "null"]
+        },
+        "catalog_schema_name": {
+          "type": "string"
+        },
+        "catalog_schema_version": {
+          "type": "string"
+        }
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week_final_markdown",
+        "development_allocator_file",
+        "digest_file",
+        "event_log_file",
+        "prior_week_thread_package"
+      ],
+      "properties": {
+        "week_final_markdown": {
+          "type": ["string", "null"]
+        },
+        "development_allocator_file": {
+          "type": ["string", "null"]
+        },
+        "digest_file": {
+          "type": ["string", "null"]
+        },
+        "event_log_file": {
+          "type": ["string", "null"]
+        },
+        "prior_week_thread_package": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "week": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week_number",
+        "start_date",
+        "end_date",
+        "headline",
+        "summary"
+      ],
+      "properties": {
+        "week_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start_date": {
+          "type": "string"
+        },
+        "end_date": {
+          "type": "string"
+        },
+        "headline": {
+          "type": ["string", "null"]
+        },
+        "summary": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "thread_states": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/thread_state"
+      }
+    },
+    "week_summary_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rewrite_guidance": {
+      "$ref": "#/$defs/rewrite_guidance"
+    }
+  },
+  "$defs": {
+    "thread_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "thread_id",
+        "canonical_name",
+        "scope_level",
+        "status",
+        "salience",
+        "week_role",
+        "is_present",
+        "carry_forward_from_prior_week",
+        "evidence_items",
+        "summary",
+        "continuity_notes",
+        "rewrite_priority",
+        "recommended_paragraph_weight"
+      ],
+      "properties": {
+        "thread_id": {
+          "type": "string",
+          "pattern": "^THR_[A-Z0-9_]{3,100}$"
+        },
+        "canonical_name": {
+          "type": "string"
+        },
+        "scope_level": {
+          "type": "string",
+          "enum": ["super_thread", "thread", "sub_thread"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["new", "continuing", "dormant", "reborn", "inactive"]
+        },
+        "salience": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "week_role": {
+          "type": "string",
+          "enum": ["primary", "secondary", "background", "absent_but_relevant"]
+        },
+        "is_present": {
+          "type": "boolean"
+        },
+        "carry_forward_from_prior_week": {
+          "type": ["boolean", "null"]
+        },
+        "evidence_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence_item"
+          }
+        },
+        "summary": {
+          "type": "string"
+        },
+        "continuity_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rewrite_priority": {
+          "type": "string",
+          "enum": ["lead", "major", "supporting", "mention_only", "omit"]
+        },
+        "recommended_paragraph_weight": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "evidence_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_type",
+        "source_ref",
+        "event_id",
+        "development_id",
+        "title",
+        "why_it_matters"
+      ],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": ["development_allocator", "digest", "event_log", "week_markdown", "other"]
+        },
+        "source_ref": {
+          "type": ["string", "null"]
+        },
+        "event_id": {
+          "type": ["string", "null"]
+        },
+        "development_id": {
+          "type": ["string", "null"]
+        },
+        "title": {
+          "type": ["string", "null"]
+        },
+        "why_it_matters": {
+          "type": "string"
+        }
+      }
+    },
+    "rewrite_guidance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lead_threads",
+        "supporting_threads",
+        "background_threads",
+        "threads_to_downplay",
+        "threads_to_omit",
+        "opening_focus",
+        "closing_focus",
+        "continuity_emphasis_notes"
+      ],
+      "properties": {
+        "lead_threads": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "supporting_threads": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "background_threads": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "threads_to_downplay": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "threads_to_omit": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^THR_[A-Z0-9_]{3,100}$"
+          }
+        },
+        "opening_focus": {
+          "type": "string"
+        },
+        "closing_focus": {
+          "type": "string"
+        },
+        "continuity_emphasis_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

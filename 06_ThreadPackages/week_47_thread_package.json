@@ -1,0 +1,568 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 47
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_0326d200afdfb2ab0069afa33c70588197b2eba4b7f2929717"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 47/step5_narrative_week47_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 47/development_allocator_week47.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 47/weekly_digest_week47.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_46_thread_package.json"
+  },
+  "week": {
+    "week_number": 47,
+    "start_date": "2025-12-06",
+    "end_date": "2025-12-12",
+    "headline": "The forty-seventh week of Trump’s second term did not hinge on a single order or shock.",
+    "summary": "The forty-seventh week of Trump’s second term did not hinge on a single order or shock. It unfolded as a dense layering of moves that treated power as something to be extended wherever it met only friction, not firm resistance. Immigration, national security, regulation, media, and even the physical shape of the White House were all touched. The pattern was not improvisation. It was consolidation: existing tools used more boldly, limits tested more openly, and the costs of pushing back raised fo"
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration central to week’s layering of coercive moves",
+          "why_it_matters": "The week summary explicitly identifies immigration as one of the main domains through which power was extended, indicating active and central weekly development rather than residual background."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration enforcement and citizenship/status actions recur across the week",
+          "why_it_matters": "Repeated immigration-related actions support treating the thread as one of the main explanatory frames of the week, not a single isolated episode."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week47.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration assigned meaningful development weight",
+          "why_it_matters": "Allocator emphasis indicates the weekly source package treated immigration as an organizing line of action, consistent with lead-thread handling in the rewrite."
+        }
+      ],
+      "summary": "Immigration remains one of the week’s clearest governing instruments, with enforcement and belonging-status power functioning as an active method of consolidation rather than mere rhetorical backdrop.",
+      "continuity_notes": [
+        "This is a strong carry-forward thread from prior weeks rather than a new emergence.",
+        "The week should present immigration as part of an already normalized control architecture that is being applied more boldly.",
+        "Where immigration overlaps with security or dissent suppression, keep status hierarchy and coercive belonging as the core frame."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "National security named as a key domain of weekly consolidation",
+          "why_it_matters": "The weekly narrative identifies national security as one of the domains touched by the administration’s power-extending pattern, supporting this thread as central to interpretation of the week."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Security-state and force-oriented measures recur in domestic context",
+          "why_it_matters": "The recurrence of security-facing actions suggests continued normalization of inward-facing coercive force, not a one-off security vignette."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week47.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Security and force measures treated as an ongoing operational line",
+          "why_it_matters": "Allocator treatment supports reading domestic security logic as one of the week’s major operational mechanisms."
+        }
+      ],
+      "summary": "Domestic security power remains an active operating method this week, reinforcing the sense that emergency-style coercive tools are being normalized across internal governance.",
+      "continuity_notes": [
+        "This thread continues the late-year pattern of inward-directed security governance rather than representing a fresh turn.",
+        "Where immigration operations appear militarized, note the overlap but preserve the distinct security-apparatus dimension.",
+        "Use this thread to show how coercive force has become routine administrative texture."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media and symbolic control explicitly part of weekly pattern",
+          "why_it_matters": "The week summary names media among the affected domains, indicating active information-management pressure rather than only background context."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Physical shape of the White House altered as part of governing style",
+          "why_it_matters": "Changes to symbolic public space connect information control to memory politics and state presentation, especially in a week concerned with consolidation and display."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media/information pressure appears alongside other consolidation measures",
+          "why_it_matters": "The week’s informational actions reinforce that control over public knowledge and symbolic presentation remains part of the active toolkit."
+        }
+      ],
+      "summary": "Information control remains active this week through pressure on media and symbolic shaping of state presentation, helping knit disparate policy actions into a narrative of managed perception and memory.",
+      "continuity_notes": [
+        "This is continuing late-year intensification, not a reborn thread.",
+        "The rewrite should connect information control to how consolidation is perceived and normalized.",
+        "Use symbolic and media evidence together rather than treating them as unrelated side notes."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "new",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Even the physical shape of the White House was touched",
+          "why_it_matters": "This is unusually direct evidence of leader-centered symbolic remaking of public space, matching the sub-thread’s focus on personalist state symbolism."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "White House physical or symbolic alterations highlighted",
+          "why_it_matters": "The week’s attention to architectural or symbolic display indicates a distinct personalization of civic space, justifying explicit tracking of this sub-thread."
+        }
+      ],
+      "summary": "A notable sub-thread this week is the personalization of state space itself, with White House symbolism helping express consolidation not just through policy but through leader-centered civic display.",
+      "continuity_notes": [
+        "Although the catalogue marks this as a late-year recurring sub-thread, week 47 appears to be its first meaningful appearance in the immediate week-to-week sequence provided here, so 'new' is appropriate relative to prior-week context.",
+        "Treat this as a sharpened branch of the broader information-control thread rather than an independent week frame.",
+        "Use it to add texture to the rewrite, not to displace more operational coercive threads."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Regulation among the domains touched this week",
+          "why_it_matters": "Regulatory action points to the continuing use of state machinery as an instrument of control, supporting this thread’s reactivation in the week."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Existing tools used more boldly",
+          "why_it_matters": "This phrasing suggests administrative machinery already captured or bent to loyalist ends is being exercised more aggressively, fitting the thread’s logic even without a headline personnel purge."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week47.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Regulatory and bureaucratic actions receive meaningful weekly placement",
+          "why_it_matters": "Allocator emphasis indicates the bureaucracy itself remains part of the week’s operational story rather than mere background scenery."
+        }
+      ],
+      "summary": "Administrative capture reasserts itself this week through aggressive regulatory use and bolder deployment of already-subordinated state tools, even if there is no singular civil-service headline event.",
+      "continuity_notes": [
+        "Relative to the prior week context, this feels like renewed visibility rather than uninterrupted foregrounding, so 'reborn' is preferable to 'continuing'.",
+        "Frame this as infrastructure: the bureaucracy as machinery making the week’s layered consolidation possible.",
+        "Avoid overemphasizing staffing details if the evidence is more about use of captured institutions than fresh purge actions."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Costs of pushing back were raised for institutions and opponents",
+          "why_it_matters": "This phrasing strongly suggests retaliatory or asymmetric use of legal and coercive mechanisms against resistance, fitting the thread’s core logic."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal or accountability mechanisms used selectively within the week",
+          "why_it_matters": "Weekly legal actions appear connected to punishment of challengers rather than neutral enforcement, supporting continued activation of this thread."
+        }
+      ],
+      "summary": "The week continues the pattern of law and legal threat operating asymmetrically, with resistance made costlier and institutional pushback more dangerous.",
+      "continuity_notes": [
+        "This thread remains active from prior weeks and should be treated as part of the late-year coercive environment.",
+        "Use it where legal pressure clearly disciplines opponents or protects insiders; do not let it become an undifferentiated catch-all for every assertion of power.",
+        "This thread can be paired with anti-dissent suppression when the target is explicit critics or institutions."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Pushback made costlier for institutions and opponents",
+          "why_it_matters": "The weekly summary directly frames opposition as facing increased penalties for resistance, which aligns with suppression of dissent as a governing method."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week47.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Media and opposition-facing pressure evident in week’s actions",
+          "why_it_matters": "Pressure on media and other critics supports the interpretation that dissent itself remains a target, not just a side effect of other policies."
+        }
+      ],
+      "summary": "Opposition and institutional resistance are pressured this week through measures that raise the cost of defiance and reinforce a broader climate of intimidation.",
+      "continuity_notes": [
+        "This thread clearly carries forward from the prior week and remains part of the late-year pattern.",
+        "Keep it distinct from security-force deployment by centering the target—critics, opponents, and institutions of dissent.",
+        "Use it to interpret the week’s coercive mood, even where direct protest scenes are limited."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week framed around consolidation across state domains rather than insider enrichment",
+          "why_it_matters": "The weekly narrative emphasizes coercive and institutional consolidation, suggesting crony-enrichment dynamics may remain structurally relevant but are not foregrounded this week."
+        }
+      ],
+      "summary": "Private-state fusion remains part of the broader governing environment but is not a central explanatory frame for this week’s events.",
+      "continuity_notes": [
+        "Keep in background memory because administrative and symbolic consolidation can support patronage systems later.",
+        "Do not force enrichment analysis into a week primarily organized around coercive state extension.",
+        "Mention only if a specific insider-benefit example is indispensable from source material."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Limits tested more openly, but without one singular constitutional showdown",
+          "why_it_matters": "The week clearly implicates weakened checks, yet the summary frames the action more as diffuse consolidation than as a discrete emergency-rule confrontation."
+        }
+      ],
+      "summary": "Executive overreach remains an important constitutional backdrop, but this week is better understood through concrete operational threads than through a broad constitutional-maximalism frame.",
+      "continuity_notes": [
+        "Use sparingly as context for how other threads operate with reduced resistance.",
+        "Do not lead with abstract executive overreach if the week is more textured and domain-specific.",
+        "A brief contextual phrase may suffice if needed to anchor the pattern of weak checks."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Power extended wherever it met only friction, not firm resistance",
+          "why_it_matters": "This line makes the weakness and unevenness of resistance part of the week’s explanatory structure, even though resistance is not the main action-driver."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Costs of pushing back raised for institutions",
+          "why_it_matters": "The mention of institutions facing rising costs for resistance indicates that pushback exists but is constrained and fragmented, matching this counter-thread."
+        }
+      ],
+      "summary": "Resistance matters this week chiefly as a structural condition: it exists, but mostly as friction rather than a firm counterweight, allowing consolidation to proceed.",
+      "continuity_notes": [
+        "Carry forward from prior week as a late-year counter-thread.",
+        "Use this to sharpen the week’s interpretation: not absence of resistance, but inadequacy of resistance.",
+        "Keep it in supporting background rather than giving it parity with the administration’s active lines of action."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week touches belonging and public order mainly through immigration and media domains",
+          "why_it_matters": "Identity hierarchy remains relevant as background context, but the supplied week summary does not foreground broader anti-equality policy outside the more specific immigration frame."
+        }
+      ],
+      "summary": "The broader rights-hierarchy thread remains relevant context but is not independently developed enough this week to merit much space beyond overlap with immigration and memory politics.",
+      "continuity_notes": [
+        "If included at all, fold it into immigration or information-control discussion rather than giving it a standalone section.",
+        "Do not overread generic coercion as anti-equality policy without clearer weekly evidence."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No election-rule or representation focus in week summary",
+          "why_it_matters": "The supplied week framing does not indicate meaningful development of election engineering, so it should not shape the rewrite."
+        }
+      ],
+      "summary": "Election engineering does not appear to be a meaningful part of this week’s narrative structure.",
+      "continuity_notes": [
+        "Omit unless an isolated source item unexpectedly requires a passing mention.",
+        "Do not import prior election-thread momentum into a week organized around other domains."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutions mentioned in general, but no clear campus/civil-society coercion focus",
+          "why_it_matters": "The week references institutions broadly, yet there is no clear evidence that universities, law firms, or analogous bodies are the main federal targets in a way justifying this specific thread."
+        }
+      ],
+      "summary": "This narrower institutional-coercion thread is not distinctly active in the week’s supplied material.",
+      "continuity_notes": [
+        "Do not use unless the underlying digest contains a clearly central university or law-firm coercion episode.",
+        "Broader institutional pressure is better captured by anti-dissent or information-control threads this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week47_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "No explicit Epstein-files element in week summary",
+          "why_it_matters": "Despite the broader late-year importance of the sub-thread, nothing in the supplied weekly framing suggests it should shape this chapter."
+        }
+      ],
+      "summary": "The Epstein-files accountability fight is not meaningfully active in this week’s supplied materials.",
+      "continuity_notes": [
+        "Omit for this week.",
+        "Do not let late-year recurrence elsewhere force inclusion absent concrete weekly evidence."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "This week is best understood as layered consolidation across multiple domains rather than as a single headline shock.",
+    "Immigration and inward-facing security power appear to be the strongest operational threads.",
+    "Information control matters not only through media pressure but through symbolic state presentation, including the White House as a site of personalization.",
+    "Administrative capture is present less as a fresh purge story than as the bold use of already-subordinated machinery.",
+    "The weakness of resistance is part of the week’s meaning: power advances where it encounters friction but not firm blockage.",
+    "The rewrite should avoid overloading abstract constitutional language when concrete operational threads explain the week more clearly."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION"
+    ],
+    "supporting_threads": [
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION"
+    ],
+    "background_threads": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+    ],
+    "threads_to_downplay": [
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER"
+    ],
+    "threads_to_omit": [
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open with the week’s defining pattern: not one dramatic rupture but a dense extension of power across immigration, domestic security, regulation, media, and symbolic state space, all enabled by insufficient resistance.",
+    "closing_focus": "Close on consolidation as method—existing tools used more openly, opposition made costlier, and even public symbolism drawn into the logic of personal rule and control.",
+    "continuity_emphasis_notes": [
+      "Emphasize that immigration and security are not new eruptions but mature late-year instruments of domestic control.",
+      "Show administrative capture as enabling infrastructure behind the week’s many smaller moves.",
+      "Treat information control and leader symbolism as connective tissue that helps normalize and stage consolidation.",
+      "Mention resistance mainly to show its insufficiency and fragmentation, not to reframe the week as a resistance story.",
+      "Avoid dispersing the chapter into too many equal threads; keep a clear hierarchy led by coercive operational domains."
+    ]
+  }
+}

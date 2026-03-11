@@ -1,0 +1,538 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 4
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "weekly_thread_package_prompt_v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_0e0861776f073f310069af9611d6d8819cac95051911d5e765"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 4/step5_narrative_week4_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 4/development_allocator_week4.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 4/weekly_digest_week4.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_03_thread_package.json"
+  },
+  "week": {
+    "week_number": 4,
+    "start_date": "2025-02-08",
+    "end_date": "2025-02-14",
+    "headline": "The fourth week of Trump’s second term did not hinge on a single decree or spectacle.",
+    "summary": "The fourth week of Trump’s second term did not hinge on a single decree or spectacle. Its shape emerged from many decisions, scattered across agencies and domains, pointing in the same direction. Power moved inward, toward the presidency and a small circle around it. Expertise, procedure, and memory were pushed outward, treated as obstacles or raw material. The result was not yet a closed system, but the outline of one: a state that still bore the forms of a constitutional republic while its inn"
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Power moved inward; expertise and procedure pushed outward",
+          "why_it_matters": "The week summary explicitly frames governance as centralization of presidential control at the expense of expertise and institutional procedure, matching the core logic of agency hollowing and loyalist domination."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week4.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Scattered agency-level decisions forming one pattern",
+          "why_it_matters": "The allocator-level framing suggests multiple developments across departments that collectively point to capture of administrative machinery rather than a single isolated policy fight."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Agency actions across domains",
+          "why_it_matters": "Digest material for this week supports the idea that the story is distributed across agencies and functional areas, which is characteristic of administrative capture as a governing method rather than a one-off spectacle."
+        }
+      ],
+      "summary": "Week 4 is best understood as a consolidation week for administrative state capture: a set of dispersed actions across agencies that collectively subordinated expertise, process, and bureaucratic memory to presidential control.",
+      "continuity_notes": [
+        "This thread was already active in the opening weeks and remains a central explanatory frame.",
+        "The week does not present capture as a single purge headline so much as a widening administrative method.",
+        "Emphasize continuity from earlier DOGE/loyalist restructuring into broader institutional hollowing."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 5
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Power moved inward toward the presidency and a small circle around it",
+          "why_it_matters": "This is a direct week-level statement of executive aggrandizement and concentration of governing authority."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "State retains constitutional forms while inner logic changes",
+          "why_it_matters": "The summary describes weakened substantive checks beneath preserved formal structures, which is central to this thread."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Many decisions pointing in same direction",
+          "why_it_matters": "The week appears as cumulative unilateralism rather than a singular emergency declaration, but the practical effect is the same: expanded executive discretion and reduced constraint."
+        }
+      ],
+      "summary": "Executive overreach remains one of the two principal frames of the week, with the presidency drawing more authority to itself through cumulative unilateral action and weakened practical checks.",
+      "continuity_notes": [
+        "Carries forward directly from prior weeks of executive maximalism.",
+        "This week's form is quieter and more structural than dramatic, so the rewrite should stress cumulative overreach rather than spectacle.",
+        "Pair with administrative capture as mutually reinforcing rather than redundant."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal and enforcement decisions embedded in broader consolidation",
+          "why_it_matters": "Where week materials show selective use or non-use of legal machinery as part of the broader pattern, they support this thread as a secondary but active feature."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week4.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Justice and accountability mechanisms treated instrumentally",
+          "why_it_matters": "Allocator framing indicates that law is not simply neutral background administration but part of the restructuring of power and protection."
+        }
+      ],
+      "summary": "Weaponized law is present as a supporting dimension of the week, less as a standalone legal drama than as part of a broader pattern in which institutions of accountability are bent toward executive and allied interests.",
+      "continuity_notes": [
+        "This is not the week's dominant frame, but it remains active in the background architecture of consolidation.",
+        "Reference selectively if week-specific legal asymmetry helps explain how capture is enforced."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration developments continue inside broader coercive pattern",
+          "why_it_matters": "Week 4 remains within the early-year run where immigration policy is a key instrument of control, even if not the sole headline."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week4.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Status-based enforcement among scattered agency actions",
+          "why_it_matters": "If immigration items are one of the distributed developments across the week, they help show how coercive policy extends through multiple domains."
+        }
+      ],
+      "summary": "Immigration remains an active thread this week, but more as one component of the administration's broader coercive and hierarchical governing pattern than as the single organizing story.",
+      "continuity_notes": [
+        "Carry forward from the strong opening-week immigration focus, but do not let it eclipse the week's more diffuse institutional pattern.",
+        "Use as evidence that status-based control remains part of the administration's governing toolkit."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Expertise, procedure, and memory treated as obstacles or raw material",
+          "why_it_matters": "The explicit mention of memory being pushed outward and treated instrumentally is direct evidence for record and knowledge-system manipulation."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Outline of a state changing from within",
+          "why_it_matters": "This framing implies that public knowledge and institutional memory are being reordered as part of internal regime transformation, not merely as messaging."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Distributed assaults on expertise and institutional knowledge",
+          "why_it_matters": "Digest-level evidence of pressure on records, experts, or knowledge institutions makes this more than incidental rhetoric."
+        }
+      ],
+      "summary": "Information control is one of the week's central threads because the administration's push against expertise, procedure, and institutional memory is presented as part of the governing method itself.",
+      "continuity_notes": [
+        "This thread continues from earlier archive and data suppression themes, but in Week 4 it is more deeply fused with institutional restructuring.",
+        "Stress that control of information is not separate from state capture; it is one of its operating mechanisms."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week4.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Possible insider-benefit subtext within restructuring",
+          "why_it_matters": "Even if not foregrounded this week, administrative consolidation can create conditions for insider benefit; this keeps the thread relevant as context without making it a driver."
+        }
+      ],
+      "summary": "Crony capitalism is not a main Week 4 storyline, but the week's concentration of power and weakening of neutral administration remains compatible with later insider-benefit patterns.",
+      "continuity_notes": [
+        "Do not foreground enrichment unless a specific week event requires it.",
+        "Useful as latent context linking capture to who may profit, but not as a lead frame here."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Policy effects distributed across targeted groups and recognition regimes",
+          "why_it_matters": "Where the week's actions alter status, recognition, or rights for disfavored groups, they support this thread as a secondary explanatory layer."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Forms of constitutional order retained while substance shifts",
+          "why_it_matters": "This framing fits a week in which formal rights may remain nominally intact while practical belonging and recognition are being reordered underneath."
+        }
+      ],
+      "summary": "The week sustains the broader anti-equality pattern, though mostly as a supporting consequence of executive and administrative restructuring rather than as a separate headline conflict.",
+      "continuity_notes": [
+        "Present this thread through concrete policy consequences, not abstract culture-war language.",
+        "Use selectively where week developments show who is being pushed outward or downgraded in status."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No major civil-society coercion centerpiece this week",
+          "why_it_matters": "The absence of a clear campus or civil-society institutional target means this thread should not shape the week's main rewrite architecture."
+        }
+      ],
+      "summary": "This thread is not meaningfully developed in Week 4 and should remain outside the main narrative unless a brief connective mention is needed.",
+      "continuity_notes": [
+        "Avoid importing later-year civil-society pressure into this early week without direct evidence."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No clear inward security-force deployment as weekly driver",
+          "why_it_matters": "This late-emerging thread is not yet substantively active in the supplied Week 4 material."
+        }
+      ],
+      "summary": "Domestic militarization is not yet a meaningful Week 4 thread and should not be projected backward into this chapter.",
+      "continuity_notes": [
+        "Leave out unless a very brief foreshadowing line is absolutely necessary."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No election-structure development central to the week",
+          "why_it_matters": "Nothing in the supplied week framing suggests electoral administration or representation engineering as a significant explanatory thread."
+        }
+      ],
+      "summary": "Election engineering is not active in this week and should be omitted from the rewrite.",
+      "continuity_notes": [
+        "Do not force later-year electoral themes into an early administrative-consolidation week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No distinct anti-dissent campaign foregrounded",
+          "why_it_matters": "The week is framed more around institutional restructuring than direct punishment of dissent as such."
+        }
+      ],
+      "summary": "Anti-dissent suppression is not yet a distinct thread in Week 4, though some later mechanisms are being built.",
+      "continuity_notes": [
+        "At most, imply that weakened institutions reduce space for opposition; do not elevate this as a standalone theme."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Week emphasis is structural, not symbolic-personalist",
+          "why_it_matters": "The supplied framing focuses on institutional control and memory politics generally, not on leader-glorification symbolism specifically."
+        }
+      ],
+      "summary": "The parent information-control thread is active, but this narrower leader-glorification sub-thread is not meaningfully present in Week 4.",
+      "continuity_notes": [
+        "Do not substitute symbolic politics for the week's more material institutional story."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "No Epstein-related records fight in this early week",
+          "why_it_matters": "This late-year sub-thread has no meaningful Week 4 presence."
+        }
+      ],
+      "summary": "This sub-thread is absent and should be omitted.",
+      "continuity_notes": [
+        "None for this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week4.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Constitutional forms remain even as inner logic changes",
+          "why_it_matters": "The summary suggests surviving formal structures and incomplete closure, implying that checks and resistance still exist, albeit unevenly."
+        },
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week4_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Not yet a closed system",
+          "why_it_matters": "This phrase indicates lingering institutional friction and incomplete consolidation, which is the terrain of this counter-thread."
+        }
+      ],
+      "summary": "Resistance remains present mainly as residual friction: the system has not fully closed, and formal institutions still offer partial, uneven checks, but they do not define the week.",
+      "continuity_notes": [
+        "Keep resistance in the background rather than using it as the main dramatic engine.",
+        "Useful especially for the closing note: consolidation is advanced but not complete."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    }
+  ],
+  "week_summary_notes": [
+    "Week 4 is best framed as cumulative consolidation rather than a single headline event.",
+    "The strongest collision is between administrative state capture and executive overreach, with information control functioning as an operating mechanism rather than a separate side story.",
+    "Immigration and stratified-rights developments remain active, but they should support the broader frame of institutional hardening rather than displace it.",
+    "The week's distinctive tone is structural and distributed: many agency-level moves, one governing direction.",
+    "Resistance exists mainly as proof that consolidation is incomplete, not as the week's main source of drama."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+    ],
+    "supporting_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY"
+    ],
+    "background_threads": [
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION"
+    ],
+    "threads_to_downplay": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "threads_to_omit": [
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "opening_focus": "Open on the week's dispersed but convergent pattern: no single decree dominates, but across agencies power moves inward to the presidency while expertise, procedure, and institutional memory are pushed aside.",
+    "closing_focus": "Close by stressing that the system is not fully closed—formal constitutional structures and uneven resistance remain—but the week's cumulative actions make the outline of a more controlled state newly visible.",
+    "continuity_emphasis_notes": [
+      "Tie this week explicitly to the first three weeks as a shift from shock and decree to consolidation through machinery.",
+      "Emphasize that administrative capture, executive overreach, and information control are braided together, not separate silos.",
+      "Use immigration and rights hierarchy as examples of how the broader institutional turn lands on particular populations.",
+      "Avoid overstating spectacle; the narrative force comes from accumulation, diffusion, and institutional redesign."
+    ]
+  }
+}

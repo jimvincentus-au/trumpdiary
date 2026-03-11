@@ -1,0 +1,620 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 50
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 50,
+    "start_date": "2025-12-27",
+    "end_date": "2026-01-02",
+    "headline": "The last week of the year did not bring a single shock.",
+    "summary": "The last week of the year did not bring a single shock. It brought a pattern into sharper focus. Across immigration, security, public spending, and information, the same hand reached for the same tools: law, force, and narrative. Each move could be defended as policy, as management, as necessary response. Together, they showed a government more willing to treat institutions as extensions of one person’s will and one faction’s interests. That was the point."
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_50_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/weekly_digest_final_week50.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/development_allocator_week50.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/weekly_digest_final_week50.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 50
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_07c797432f561c810069afa4347b18819699165bd1b2f7658c"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/step5_narrative_week50_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/development_allocator_week50.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 50/weekly_digest_week50.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_49_thread_package.json"
+    },
+    "week": {
+      "week_number": 50,
+      "start_date": "2025-12-27",
+      "end_date": "2026-01-02",
+      "headline": "The last week of the year did not bring a single shock.",
+      "summary": "The last week of the year did not bring a single shock. It brought a pattern into sharper focus. Across immigration, security, public spending, and information, the same hand reached for the same tools: law, force, and narrative. Each move could be defended as policy, as management, as necessary response. Together, they showed a government more willing to treat institutions as extensions of one person’s will and one faction’s interests. That was the point."
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary foregrounds immigration as one of the main domains of action",
+            "why_it_matters": "The final week narrative explicitly names immigration as one of the principal arenas through which coercive rule is being exercised, making it a core explanatory frame for the week."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Weekly digest immigration developments",
+            "why_it_matters": "The digest is cited as one of the week's main source layers and supports treating immigration not as incidental background but as an active operational front."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocated developments tied to immigration/control machinery",
+            "why_it_matters": "Allocator presence indicates the thread had enough concrete weekly material to be tracked for chapter construction rather than merely remembered from prior weeks."
+          }
+        ],
+        "summary": "Immigration remains one of the week’s chief working instruments of control, not just a standing backdrop. The week should treat migration and belonging as an active coercive system woven into the broader pattern of force, law, and executive will.",
+        "continuity_notes": [
+          "This is a year-long dominant thread and should be written as continuing rather than newly escalated.",
+          "Keep continuity with late-year framing in which immigration functions as a general domestic control apparatus, not only border policy.",
+          "Link the week’s immigration material to the broader pattern of tiered belonging and enforcement normalization."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary names security and force as central tools",
+            "why_it_matters": "The final narrative does not describe isolated policing episodes; it identifies security and force as repeat instruments across domains, which fits this thread directly."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Security-related weekly developments",
+            "why_it_matters": "Digest-level security developments support the judgment that coercive-security logic is active this week rather than merely inferential."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator support for security-force material",
+            "why_it_matters": "Allocator inclusion suggests operational weekly relevance for rewrite emphasis and supports a primary-role classification."
+          }
+        ],
+        "summary": "Security logic is active this week as a governing method, with force and emergency-style tools turned inward as part of ordinary administration. The week should present domestic militarization as one of the clearest mechanisms through which the administration’s pattern is expressed.",
+        "continuity_notes": [
+          "Carry forward from the stronger late-year pattern of inward-facing security deployment rather than treating this as a sudden break.",
+          "Emphasize that coercive force now appears normalized across domestic governance settings.",
+          "Use this thread alongside immigration to show how status control and force increasingly merge."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary describes institutions treated as extensions of one person’s will",
+            "why_it_matters": "That phrasing directly supports the administrative-capture frame: institutions are not simply active, they are being subordinated to personal and factional command."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Public spending and management framed as tools of control",
+            "why_it_matters": "The week summary indicates state machinery and budgeting are being used as levers of personal rule, which aligns with agency capture and mission repurposing."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator developments related to governance machinery",
+            "why_it_matters": "Allocator support indicates this thread has operational weekly evidence and should shape the rewrite architecture."
+          }
+        ],
+        "summary": "The week sharpens the sense that institutions are no longer acting as neutral public bodies but as instruments of loyalist governance. Administrative capture is not a side note here; it is the enabling structure that makes the week’s coercive moves possible.",
+        "continuity_notes": [
+          "This should be framed as a mature pattern, not a fresh initiative.",
+          "Connect any spending, management, or agency actions to the longer arc of bureaucratic hollowing and personalized control.",
+          "Use this thread to explain how seemingly separate policy arenas operate through the same subordinated state machinery."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary explicitly names information and narrative as key tools",
+            "why_it_matters": "The final narrative places information management alongside law and force, making this thread central to interpreting how the week works."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Weekly digest information-control material",
+            "why_it_matters": "Digest support indicates that information control is grounded in weekly developments, not merely thematic interpretation."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator signals narrative-management developments",
+            "why_it_matters": "Allocator backing supports treating information control as an active supporting thread in the rewrite."
+          }
+        ],
+        "summary": "The week is not only about what the government did but how it framed, justified, and controlled public understanding of those actions. Information management remains a live tool of rule and should be woven through the week rather than isolated in a single aside.",
+        "continuity_notes": [
+          "Carry over from prior late-year emphasis on narrative management and controlled visibility.",
+          "Tie information control to both shielding and justification: it helps obscure accountability while making coercive action appear managerial.",
+          "Do not let this thread displace the more concrete coercive mechanisms, but keep it visible as one of the three recurring tools."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary identifies law as one of the central tools used across domains",
+            "why_it_matters": "This makes legal machinery part of the week's governing pattern rather than a discrete legal story."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Weekly legal/accountability developments",
+            "why_it_matters": "Digest support indicates ongoing weekly material for asymmetric use of law and accountability management."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator tracking of law-centered developments",
+            "why_it_matters": "Allocator inclusion supports treating legal asymmetry as an active thread for this week’s rewrite."
+          }
+        ],
+        "summary": "Law in this week functions less as neutral adjudication than as part of the same pattern of force and narrative management. The rewrite should present legal process as another mechanism through which allies are protected and opponents are constrained.",
+        "continuity_notes": [
+          "This is a durable late-year thread and should be treated as continuing from prior weeks.",
+          "Use it to connect accountability disputes, selective enforcement, and managed legality.",
+          "Keep the frame broad unless Epstein-specific material requires a narrower sub-thread mention."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary frames governance as extending one person’s will over institutions and factions",
+            "why_it_matters": "That framing implies pressure against countervailing voices and makes opposition-suppression a relevant interpretive layer this week."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Digest material involving critics, journalists, or opposition pressure",
+            "why_it_matters": "Digest-level support allows this thread to remain active rather than inferred solely from the week’s summary language."
+          }
+        ],
+        "summary": "The week’s coercive pattern points outward toward those who resist or scrutinize it. Anti-dissent pressure should appear as a supporting thread, especially where law, immigration tools, or security framing are directed at critics or oppositional space.",
+        "continuity_notes": [
+          "This remains part of the stronger late-year pattern of treating opposition as a threat.",
+          "Use selectively and concretely; do not overstate if the week’s evidence is more about machinery than direct repression episodes.",
+          "Where possible, connect this thread to security and legal mechanisms already in view."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Weekly pushback, litigation, or institutional resistance developments",
+            "why_it_matters": "Digest support indicates some resistance remains part of the week’s landscape, even if it is not the dominant frame."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week summary emphasizes pattern sharpening rather than total uncontested control",
+            "why_it_matters": "The chapter may need limited acknowledgment that counterforces still exist, but mostly as partial and insufficient checks."
+          }
+        ],
+        "summary": "Resistance remains present but secondary: useful for context, not as the engine of the week. The rewrite should note countervailing action only insofar as it reveals how incomplete and uneven the remaining guardrails are.",
+        "continuity_notes": [
+          "Carry forward from prior late-year packages that track resistance as a counter-thread, not a lead narrative.",
+          "Use sparingly to avoid diffusing the chapter’s emphasis on authoritarian consolidation.",
+          "Where mentioned, stress patchiness and delay rather than decisive reversal."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary references factional interests and public spending",
+            "why_it_matters": "Even without clear enrichment-driven lead events in the supplied summary, the week’s framing leaves insider-benefit logic as relevant background context."
+          }
+        ],
+        "summary": "Crony enrichment is not the clearest weekly driver, but the week’s emphasis on institutions serving factional interests keeps this thread in the background. It may merit a brief contextual touch if specific spending or patronage details appear in the rewrite source materials.",
+        "continuity_notes": [
+          "Treat as background continuity from prior weeks rather than an active lead.",
+          "Only surface it if concrete insider-benefit details are needed to explain spending or management decisions."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Immigration and coercive governance imply a hierarchy of belonging",
+            "why_it_matters": "Because immigration is central this week, the broader rights-order implications remain relevant even if not separately foregrounded."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Weekly identity/status-related developments",
+            "why_it_matters": "Digest support keeps the thread active as contextual background rather than fully dormant."
+          }
+        ],
+        "summary": "The broader hierarchy of rights and belonging remains visible behind the week’s immigration and governance developments, though it is not the principal storytelling frame. It should be used to deepen interpretation rather than to open the chapter.",
+        "continuity_notes": [
+          "Keep subordinate to immigration and information-control threads unless the week contains a distinct rights rollback episode.",
+          "Use this thread to show that coercive policy is sorting people into unequal categories of protection and membership."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "continuing",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary stresses institutions serving one person’s will",
+            "why_it_matters": "That language supports limited use of the personalist-symbolism sub-thread, especially if the week’s sources include symbolic or leader-centered presentation of state action."
+          }
+        ],
+        "summary": "This sub-thread may be lightly useful where the week’s material shows governance personalized around the leader rather than neutral state identity. It should remain subordinate to the broader information-control thread.",
+        "continuity_notes": [
+          "Carry forward only as a minor branch of information control.",
+          "Do not elevate unless the week’s source text includes explicit symbolic or glorification episodes."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week50.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Late-year recurring elite-accountability/files developments",
+            "why_it_matters": "Because this sub-thread is listed as active in late weeks including week 50, digest support is enough to keep it in the package as a continuing sub-thread."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week50.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator support for accountability/files material",
+            "why_it_matters": "Allocator inclusion suggests the week still contains enough material to justify at least a brief continuity mention."
+          }
+        ],
+        "summary": "The Epstein-records fight continues to matter as a specialized expression of elite impunity and controlled disclosure. It should appear only if the rewrite needs a concrete late-year example of law and information being used to manage accountability.",
+        "continuity_notes": [
+          "Treat as a child thread under weaponized law, not as a separate frame for the whole week.",
+          "Use briefly and concretely if present in the source materials; otherwise let the parent thread carry the meaning."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "medium",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "step5_narrative_week50_final.txt",
+            "event_id": null,
+            "development_id": null,
+            "title": "Summary describes institutions bent to one person’s will",
+            "why_it_matters": "That constitutional implication remains relevant even if the week is better explained through concrete machinery like administrative capture, law, immigration, and security."
+          }
+        ],
+        "summary": "Executive overreach remains the constitutional backdrop, but this week is more effectively written through operational threads than through abstract maximalism. Keep it in mind as context rather than foreground narration.",
+        "continuity_notes": [
+          "Do not lead with constitutional abstraction if the week’s evidence is more concrete and administrative.",
+          "A brief contextual note may help tie the week’s methods to the larger pattern of weakened checks."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "other",
+            "source_ref": null,
+            "event_id": null,
+            "development_id": null,
+            "title": "No clear week-level evidence foregrounded in supplied summary",
+            "why_it_matters": "The supplied week summary does not indicate campus or civil-society institutions as a distinct target this week, so the thread should not shape the rewrite unless hidden source detail requires it."
+          }
+        ],
+        "summary": "This thread does not appear to be a distinct weekly driver. Any relevant details are likely better absorbed into broader information, immigration, or anti-dissent framing if they appear at all.",
+        "continuity_notes": [
+          "Do not force this legacy midyear thread into the rewrite without specific evidence."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "other",
+            "source_ref": null,
+            "event_id": null,
+            "development_id": null,
+            "title": "No election-engineering emphasis in the supplied week summary",
+            "why_it_matters": "The week’s narrative focus is on coercive governance across immigration, security, spending, and information, not electoral-rule manipulation."
+          }
+        ],
+        "summary": "Election engineering does not appear to structure this week and should be omitted unless a specific source item unexpectedly requires a brief nod.",
+        "continuity_notes": [
+          "Leave out of the rewrite unless concrete week evidence makes it unavoidable."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      }
+    ],
+    "week_summary_notes": [
+      "The week is best understood as a pattern-recognition week rather than a single discrete shock week.",
+      "A small cluster of intersecting lead threads dominates: immigration, security/militarization, and administrative capture, with law and information acting as the key enabling tools.",
+      "The supplied summary strongly supports writing the week through mechanisms of rule—law, force, narrative—rather than through isolated policy beats.",
+      "Executive overreach is conceptually relevant but should remain in the background because the week is better explained through concrete operational threads.",
+      "Resistance is present only as a partial counterweight and should not displace the chapter’s emphasis on consolidation."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_ADMIN_STATE_CAPTURE"
+      ],
+      "supporting_threads": [
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER"
+      ],
+      "background_threads": [
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+      ],
+      "threads_to_downplay": [
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+      ],
+      "threads_to_omit": [
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+      ],
+      "opening_focus": "Open by stressing that the final week of the year did not hinge on a single surprise but on the consolidation of a governing pattern: immigration control, inward-facing security force, and subordinated institutions all operating through the same logic of personal rule.",
+      "closing_focus": "Close on the recognition that what looked like separate policy domains had converged into one method of governance—law, force, and narrative used together to make institutions serve one person’s will and one faction’s interests.",
+      "continuity_emphasis_notes": [
+        "Emphasize continuity with prior late-year weeks rather than portraying week 50 as a sudden break.",
+        "Show how immigration, security, and legal tools have become mutually reinforcing rather than separate policy tracks.",
+        "Keep information control visible as the interpretive glue that justifies, obscures, and normalizes coercive action.",
+        "If resistance is mentioned, frame it as uneven and insufficient, not as a restoring equilibrium.",
+        "Prefer a multi-thread synthesis over a laundry list of incidents."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "The final week of 2025 and the first days of 2026 unfolded as a test of how far executive power could reach and how firmly other institutions would push back. Retaliatory vetoes, an expanding immigration enforcement machine, and opaque overseas strikes set the tone, while courts, Congress, and civic actors tried to draw lines around war‑making, policing, and access to basic services.\n\nOver the weekend, the House of Representatives turned inward, using its disciplinary tools to police members’ conduct and speech. Lawmakers formally censured Rep. Al Green for interrupting Donald Trump during a joint session and passed a resolution condemning Rep. Chuy Garcia over alleged maneuvering to help his chief of staff succeed him. Backed by Republicans and some Democrats, the measures showed how censure and similar resolutions can become instruments for punishing dissent and intra‑party tactics rather than tools reserved for clear ethical breaches.\n\nBeyond the Capitol, immigration enforcement remained both aggressive and visible in daily life. Reports described immigrants being dragged from cars and courthouse hallways, and the earlier deportation of Oregon vineyard manager Moises Sotelo continued to reverberate through his family and local economy. These stories underscored how enforcement now reaches into workplaces, courts, and communities in ways that can deter people from seeking legal redress or public services. At the same time, Trump again pressed Republican senators to scrap the filibuster, arguing that the Senate rule blocked his agenda. GOP leaders remained wary, mindful they might need the filibuster if they lost their majority, but the pressure highlighted how procedural guardrails themselves had become political targets.\n\nThe weekend also brought signs of how foreign and domestic power were being intertwined. Advocacy group Indivisible urged the public to press senators to rein in unauthorized U.S. military actions against Venezuela, citing killings at sea and attempted tanker seizures without clear legal justification. Those calls came as the administration leaned into Christian nationalist themes: DHS and other agencies posted explicitly Christian holiday messages featuring Trump, and the White House announced strikes on ISIS‑linked militants in Nigeria and Syria, framing them as defending persecuted Christians and even as a “Christmas present” for extremists. Official communications emphasized a Christian national identity and tied military action abroad to religious protection, blurring church‑state separation and embedding religious identity in foreign policy narratives.\n\nDomestically, militarized federal agents in fatigues and carrying assault rifles remained a presence in major cities as part of the administration’s response to protests and unrest. Their deployment, often without clear local consent, continued to blur the line between civilian policing and military force. At the same time, anti‑Muslim rhetoric escalated: Sen. Tommy Tuberville called for mass deportation of Muslim Americans, and ICE posted an AI‑generated video of Santa deporting an immigrant as a festive message about reducing the “illegal population.” These moves paired symbolic imagery with calls to expel religious minorities, normalizing the idea that some groups sit outside the circle of equal citizenship. In the information sphere, CBS and 60 Minutes pulled an investigative report on CICOT from official channels even as bootleg copies spread online, raising questions about editorial pressure and the ability of powerful actors to bury uncomfortable reporting. And in the background, large Trump‑era cuts to healthcare, scientific research, and anti‑hunger programs continued to draw criticism, with advocates warning of long‑term damage to public health and innovation.\n\nBy Monday, the immigration story had become more targeted. Trump ended legal protections for Somali immigrants in Minnesota, accusing the state of being a fraud hub, while the FBI surged resources to investigate large‑scale fraud tied to federal programs. Some cases were referred for denaturalization and deportation. Linking an entire community to fraud and pairing criminal probes with immigration penalties risked collective stigma and signaled how enforcement could be steered toward particular groups. At the same time, leaked plans showed ICE preparing to expand detention using warehouse‑style facilities near logistics hubs, backed by a GOP spending package proposing $170 billion for ICE and Border Patrol through 2029. The design emphasized speed and throughput over individualized process, treating detainees more as logistical units than as rights‑bearing individuals.\n\nCourts, however, showed they could still check some overreach. A federal judge granted a temporary restraining order blocking detention of Imran Ahmed, head of the Center for Countering Digital Hate, while his lawsuit proceeds, and another judge dismissed with prejudice an indictment against TikTok streamer Carlitos Ricardo Parias after finding serious due‑process violations in his post‑arrest detention by ICE. These rulings underscored that, even as enforcement agencies pushed their authority, judges could still protect critics and defendants from abusive tactics. In the realm of information control, Reuters reported that the administration had imposed visa bans on several European officials and experts involved in enforcing platform rules against disinformation, branding their work as censorship. Punishing foreign watchdogs for moderating propaganda signaled hostility to independent oversight and threatened international cooperation on information integrity. Meanwhile, agencies like CDC, DHS, FCC, FDA, OSHA, and EPA continued to issue technical notices on meetings, penalties, and environmental plans, a reminder that the machinery of governance still turned beneath the higher‑profile conflicts.\n\nOn Tuesday, the focus shifted outward and upward. Trump announced a strike on a Venezuelan drug facility during a talk‑radio appearance, while U.S. officials declined to confirm details. Southern Command separately reported a lethal small‑boat strike in the eastern Pacific as part of a broader campaign that had killed over 100 people, and a failed attempt to seize an oil tanker bound for Venezuela heightened tensions. These lethal operations, announced without clear legal basis or transparency, made it difficult for Congress, courts, or the public to assess legality or hold anyone accountable, continuing a pattern of unilateral war‑making.\n\nAt home, immigration enforcement was formally scaled up and legal status made more fragile. A Justice Department memo ordered denaturalization cases to be prioritized, with USCIS field offices told to feed 100–200 cases per month into the pipeline. A separate USCIS memo paused immigration proceedings for nationals of 19 travel‑ban countries, abruptly canceling naturalization ceremonies and green‑card interviews nationwide. Together with the weekend’s visible arrests and Monday’s warehouse‑style detention plans, these moves outlined a coherent shift: citizenship and lawful status were being treated as contingent and revocable, while the physical and bureaucratic capacity for detention and deportation was being expanded.\n\nOther institutions pushed back in different arenas. Judge Amy Berman Jackson ordered the administration to keep funding the Consumer Financial Protection Bureau, rejecting arguments that Federal Reserve losses justified cutting off its budget and calling the move an attempt to evade a prior injunction. The ruling protected an independent consumer watchdog created by Congress from being dismantled through budget maneuvers. Economic and health policy choices, however, moved in the opposite direction. A major tax and fiscal package and tariff adjustments were touted as relief but left many households squeezed by rising costs for essentials. HHS Secretary Robert F. Kennedy Jr. cut hundreds of millions from mRNA research and billions from NIH, and a 43‑day shutdown set the stage for enhanced Affordable Care Act tax credits to expire, doubling premiums for many enrollees. The Richmond Fed and Bureau of Labor Statistics detailed how that shutdown had also prevented collection of key inflation and employment data, creating unprecedented holes in official statistics and making it easier to spin economic narratives without evidence.\n\nCultural institutions became a new front in the struggle over power and symbolism. Trump moved to rename the Kennedy Center the “Trump Kennedy Center” after trustees changed bylaws to concentrate voting power in his appointees. In response, artists canceled New Year’s Eve and upcoming performances rather than legitimize the change. The episode showed how a congressionally chartered cultural institution could be rebranded around a sitting leader, and how artists could use boycotts to impose reputational costs. Corporate and civic actors also signaled resistance: Rocket Money dropped sponsorship of Tucker Carlson’s podcast after reporting on his white‑supremacist content, and organizers announced a nationwide “Free America Walk Out” for January 20, urging people to leave work, school, and commerce to protest what they described as the construction of a coercive state. Meanwhile, internal documents revealed Social Security Administration caseload backlogs swelling past six million, with applicants struggling to get basic information, and a plan to sharply limit phone service was scrapped only after media exposure and public pressure. Investigations into a $20 billion bailout of Argentina and a delayed Medicare rule suggested that major financial decisions were tracking donor interests, further blurring the line between public policy and private enrichment. In immigration, a right‑wing media personality previously expelled for running an illegal Russian propaganda operation was quietly allowed back into the U.S. with help from administration officials, even as broader crackdowns intensified, underscoring how ideology and connections could override stated security rationales.\n\nNew Year’s Eve brought a series of legal confrontations over the use of force and access to care. The Supreme Court issued a rare rebuke blocking National Guard deployment in Illinois and preliminarily rejected Trump’s justification for using Guard units in domestic law‑enforcement roles. The Justice Department stopped contesting a California ruling returning Guard control to Gov. Gavin Newsom. Trump then announced he was ending attempts to deploy Guard units in Los Angeles, Chicago, and Portland, while threatening to redeploy them later in a “much stronger form.” These decisions reaffirmed state authority over Guard units and showed that courts could still block attempts to militarize responses to domestic unrest.\n\nIn the realm of reproductive health, a federal appeals court lifted an injunction and allowed a provision in a tax‑and‑spending bill to strip Medicaid funding from Planned Parenthood affiliates in 22 states and the District of Columbia. The ruling threatened closure of clinics that provide reproductive and basic health services, illustrating how judicial appointments and spending riders can reshape access to care. Immigration enforcement capacity continued to grow: reporting showed ICE had increased spending on guns and chemical weapons by 600% under Trump and launched a $100 million, year‑long media campaign targeting conservative audiences with large signing bonuses and loan forgiveness to recruit thousands of new agents for 2026 deportation goals. This weapons surge and recruitment blitz, layered on top of warehouse‑style detention plans and denaturalization quotas, marked a shift toward industrial‑scale enforcement.\n\nCourts again intervened in immigration practices at the margins. A federal judge ordered the administration to either return immigrants transferred to El Salvador’s CECOT mega‑prison or provide hearings so they could challenge their detention, pushing back against outsourcing detention to foreign facilities without meaningful legal recourse. In Congress, former special counsel Jack Smith testified before the House Judiciary Committee, and a 255‑page deposition transcript was released. Smith asserted he had proof beyond a reasonable doubt in the classified‑documents and election‑interference cases against Trump, emphasized his independence from political influence, and explained how legal challenges and Trump’s return to office led to dropped charges. The testimony created a detailed record of how a former president was investigated and charged, and how political power later reshaped accountability.\n\nBattles over information and memory intensified around the Epstein files. Congress passed the bipartisan Epstein Files Transparency Act, requiring the Justice Department to release Epstein‑related files by December 19. DOJ then disclosed it was reviewing roughly 5–5.2 million pages—far more than previously stated—and signaled it would miss the deadline, citing the need for extensive redactions and hundreds of lawyers. House Democrats later revealed that DOJ had confirmed the existence of roughly five million additional Epstein‑related documents beyond what had been acknowledged, with less than 5% produced so far, prompting accusations of legal violations and concealment. New reporting described Jeffrey Epstein as a frequent visitor at Mar‑a‑Lago and alleged that young female spa workers from Trump’s club were sent to Epstein’s mansion for “house calls,” deepening questions about who enabled his crimes and how proximity to power may have shielded his network. The clash between a statutory transparency mandate, DOJ’s slow and opaque process, and fresh allegations involving elite spaces highlighted how archives around powerful figures can be managed to delay or dilute accountability. In a different information battle, Trump posted an image claiming a U.S. wind turbine had killed a bald eagle—actually an old photo of a falcon killed in Israel—and an official White House account amplified the post, alongside similar misleading images from Spain and Taiwan used to attack wind energy. The use of false visuals from official channels showed how disinformation could be deployed to shape public views on energy policy. Even as these high‑profile fights played out, OSHA and EPA continued technical rulemakings and approvals on testing labs, safety training, and power‑plant compliance deadlines, illustrating that parts of the administrative state still functioned in routine ways.\n\nNew Year’s Day saw Trump wield the veto pen in ways widely read as retaliatory. He vetoed a bill to protect the Osceola Camp area in Everglades National Park, home to the Miccosukee Tribe, arguing the tribe was not authorized to live there and casting the project as contrary to his immigration agenda. He also vetoed a unanimously passed bill to fund safe drinking water for 39 Colorado communities, a move widely seen as tied to state officials’ stance on a convicted election‑fraud figure and their advocacy around the Epstein files. Using veto power to punish disfavored regions and tribes over unrelated political disputes turned basic infrastructure and environmental protection into leverage points in broader political conflicts.\n\nClimate and economic policy choices followed a similar pattern of undercutting public goods. The administration cut federal funding for public transit systems, despite their central role in meeting emissions targets, while continuing to deride climate policy as a “scam.” These cuts came even as states like New York and Vermont pursued climate superfund laws to make polluters pay, highlighting a divergence between federal rhetoric and subnational efforts. The earlier shutdown’s impact on health care became concrete as enhanced Affordable Care Act tax credits expired, leading to an average 114% premium increase for more than 20 million enrollees. A possible January House vote offered only uncertain relief, leaving many households facing sudden, steep costs. Trade policy, loudly advertised as tough, softened under pressure: Trump signed a proclamation delaying steep tariff increases on upholstered furniture and cabinets until 2027 just hours before they were to rise, and the Commerce Department slashed threatened antidumping duties on Italian pasta from over 90% to single‑digit or low‑teens rates after lobbying by Italy and affected firms. These reversals showed how well‑organized sectors could secure carve‑outs, complicating the narrative of unbending trade enforcement. Closer to home, Trump terminated the National Links Trust’s lease to manage Washington, D.C.’s public golf courses without a clear successor plan, halting renovations and leaving workers uncertain. Critics saw the move as opening the door to more personally lucrative arrangements, raising fears of self‑dealing in the management of public assets.\n\nThe week closed on Friday with explicit assertions of centralized control and new flashpoints in rights and representation. New reporting described the White House claiming direct control over immigration policy, criminal law, and forcible renditions, centralizing decisions that traditionally involve multiple branches and agencies. Concentrating coercive powers in the presidency erodes checks and balances and makes abuses harder to detect or contest, especially when combined with the week’s denaturalization quotas, case freezes, detention build‑outs, and ICE’s weapons and recruitment surge. In Tennessee, the state House expelled Reps. Justin Pearson and Justin Jones after they led a floor protest demanding stronger gun laws following a deadly school shooting. Although both later regained their seats, the expulsions drew national attention to the punitive use of legislative power against protest speech, narrowing the space for dissent inside elected bodies and temporarily disenfranchising their constituents.\n\nReproductive rights faced further constriction at the state level. In Kentucky, Melinda S. Spencer was arrested and charged with first‑degree fetal homicide, abuse of a corpse, and evidence tampering after allegedly inducing her own abortion with pills ordered online and burying the remains, even though state law does not explicitly criminalize self‑managed abortion. The case illustrated how broad criminal statutes can be repurposed to police pregnancy outcomes, extending the reach of abortion bans and creating legal uncertainty for pregnant people. In North Carolina, the democratic landscape was contested on multiple fronts. Organizers announced a February 11–14 Long March culminating in Raleigh to protest new district maps they say disenfranchise Black voters, turning to mass protest as one of the few tools available when courts and legislatures entrench maps that dilute minority voting power. Republican leaders of the state’s Select Committee on Oversight and Reform targeted the Chapel Hill School District, prompting groups like Public School Strong to organize a January 8 response event to defend public schools from politicized oversight. At the same time, the GOP‑led General Assembly moved toward another round of tax cuts for high‑income individuals and profitable corporations, even as it delayed a full state budget, raising warnings about strain on childcare centers, rising health premiums, and unpaid providers. These state‑level fights showed how tax policy, oversight hearings, and redistricting can quietly reshape the conditions for equal participation.\n\nThe week’s information battles extended even into aesthetics and foreign policy rhetoric. DHS used a beach scene by Japanese artist Hiroshi Nagai without permission in a social‑media post depicting a peaceful America after mass deportations. Nagai publicly objected, adding to criticism of DHS’s pattern of appropriating art to sell its immigration agenda and illustrating how imagery is used to soften coercive messaging. In the background, contextual notes recalled the Page Act of 1875, the Chinese Exclusion Act of 1882, and later federalization of immigration control, situating current bans, denaturalization efforts, and enforcement surges within a long history of racially targeted restrictions and centralized authority. Abroad, Trump posted that the U.S. was “locked and loaded” and would act if Iran “shoots and violently kills peaceful protesters,” prompting stern warnings from senior Iranian officials. Such freelance threats of intervention by a former president risk inflaming tensions and complicating official diplomacy. Meanwhile, EPA, FDA, TSA, and GSA continued to issue technical decisions on air plans, hazardous‑air enforcement, emission limits, drug safety, pipeline security, and federal mileage and gift thresholds, underscoring that even as some agencies were politicized or hollowed out, the quieter work of setting standards and safeguards continued.\n\nTaken together, the week’s events traced a sharp contest over who wields power and how. The federal government expanded its capacity to detain, arm, and deport, and the president used vetoes and emergency‑style actions to reward allies and punish critics, at home and abroad. Courts, state governments, and civil society responded with injunctions, testimony, boycotts, marches, and organizing, trying to preserve space for protest, reproductive autonomy, transparent archives, and functioning public services. As 2026 opened, American democracy appeared less as a stable equilibrium than as a moving struggle among branches, levels of government, and citizens over the limits of coercion and the meaning of accountability.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk50_CR_004\",\n      \"wk50_CR_005\",\n      \"wk50_CR_008\",\n      \"wk50_CR_010\",\n      \"wk50_PA_005\",\n      \"wk50_CR_001\",\n      \"wk50_CR_002\",\n      \"wk50_CR_009\",\n      \"wk50_CR_026\",\n      \"wk50_ES_001\",\n      \"wk50_IM_006\",\n      \"wk50_IG_008\",\n      \"wk50_CR_018\",\n      \"wk50_CR_017\",\n      \"wk50_IG_005\",\n      \"wk50_IG_006\",\n      \"wk50_IG_007\",\n      \"wk50_ES_014\",\n      \"wk50_ES_019\",\n      \"wk50_CR_025\",\n      \"wk50_PA_003\",\n      \"wk50_PA_004\",\n      \"wk50_IG_012\",\n      \"wk50_IG_011\",\n      \"wk50_ES_025\",\n      \"wk50_CR_021\",\n      \"wk50_CR_028\",\n      \"wk50_ES_017\",\n      \"wk50_IG_031\",\n      \"wk50_IG_033\",\n      \"wk50_CR_012\",\n      \"wk50_CR_011\",\n      \"wk50_CR_014\",\n      \"wk50_CR_013\",\n      \"wk50_CR_015\",\n      \"wk50_PA_006\",\n      \"wk50_CR_007\",\n      \"wk50_CR_006\",\n      \"wk50_CR_023\",\n      \"wk50_CR_016\",\n      \"wk50_ES_004\",\n      \"wk50_ES_009\",\n      \"wk50_IG_030\",\n      \"wk50_IM_001\",\n      \"wk50_IM_003\",\n      \"wk50_IM_004\",\n      \"wk50_IM_005\",\n      \"wk50_IM_008\",\n      \"wk50_IG_010\",\n      \"wk50_IM_002\",\n      \"wk50_IG_009\",\n      \"wk50_IM_007\",\n      \"wk50_IM_009\",\n      \"wk50_ES_022\",\n      \"wk50_ES_020\",\n      \"wk50_ES_031\",\n      \"wk50_IG_001\",\n      \"wk50_IG_002\",\n      \"wk50_IG_003\",\n      \"wk50_IG_034\",\n      \"wk50_IM_010\",\n      \"wk50_PA_001\",\n      \"wk50_CR_022\",\n      \"wk50_CR_003\",\n      \"wk50_ES_018\",\n      \"wk50_IG_032\",\n      \"wk50_ES_021\",\n      \"wk50_ES_026\",\n      \"wk50_ES_023\",\n      \"wk50_CR_029\",\n      \"wk50_IG_015\",\n      \"wk50_IG_020\",\n      \"wk50_IG_017\",\n      \"wk50_IG_018\",\n      \"wk50_CR_019\",\n      \"wk50_CR_020\",\n      \"wk50_PA_002\",\n      \"wk50_CR_027\",\n      \"wk50_ES_028\",\n      \"wk50_IG_013\",\n      \"wk50_IG_029\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 110,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk50_CR_004\",\n        \"wk50_CR_005\",\n        \"wk50_CR_008\",\n        \"wk50_CR_010\",\n        \"wk50_PA_005\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Open with the quota-driven denaturalization guidance (wk50_CR_004) and pause for 19 countries (wk50_CR_005) to show a systemic shift, then zoom out to the warehouse detention buildout (wk50_CR_008) and $100m ICE recruitment framed as 'wartime' (wk50_CR_010). Weave in Trump\\u2019s claim of personal control over immigration and renditions (wk50_PA_005) as the capstone of personalization. Use individual stories (Sotelo deportation wk50_CR_001, courthouse grabs wk50_CR_002) and FBI focus on Somali communities (wk50_CR_009) to humanize the structural changes, and close with the propaganda angle via DHS\\u2019s deportation-themed art misuse (wk50_IM_006).\",\n      \"one_sentence_thesis\": \"The administration rapidly expanded and politicized immigration enforcement\\u2014through denaturalization quotas, origin-based process freezes, warehouse detention, and an ideologically targeted ICE recruitment blitz\\u2014while Trump asserted personal control over coercive tools.\",\n      \"supporting_event_ids\": [\n        \"wk50_CR_001\",\n        \"wk50_CR_002\",\n        \"wk50_CR_009\",\n        \"wk50_CR_026\",\n        \"wk50_ES_001\",\n        \"wk50_IM_006\"\n      ],\n      \"title\": \"Immigration enforcement is industrialized and personalized under Trump\",\n      \"why_it_matters\": \"These moves turn immigration law into a discretionary weapon against disfavored communities, normalize mass detention infrastructure, and concentrate coercive power in the president rather than in accountable institutions. They also deepen a tiered citizenship regime where status and security depend on origin and perceived loyalty.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_IG_008\",\n        \"wk50_CR_018\",\n        \"wk50_CR_017\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Treat the Planned Parenthood defunding decision (wk50_IG_008 / wk50_CR_018) and the Kentucky fetal homicide prosecution (wk50_CR_017) as the core examples of law stretched against reproductive autonomy. Contrast them with due-process wins: TRO for an anti-disinformation advocate (wk50_IG_005), dismissal of charges against the TikTok streamer (wk50_IG_006), and the CFPB funding order (wk50_IG_007). You can briefly situate these within broader health-policy retrenchment (ACA tax credit lapse wk50_ES_019, telemedicine extension wk50_ES_014) and declining violent crime (wk50_CR_025) to underscore that punitive moves are ideological, not driven by rising crime.\",\n      \"one_sentence_thesis\": \"Courts and prosecutors advanced ideologically driven attacks on reproductive healthcare and self-managed abortion while some federal judges simultaneously enforced due process and agency independence, producing a stratified and politicized rights landscape.\",\n      \"supporting_event_ids\": [\n        \"wk50_IG_005\",\n        \"wk50_IG_006\",\n        \"wk50_IG_007\",\n        \"wk50_ES_014\",\n        \"wk50_ES_019\",\n        \"wk50_CR_025\"\n      ],\n      \"title\": \"Law and courts are weaponized against reproductive rights and marginalized groups amid patchy judicial pushback\",\n      \"why_it_matters\": \"Using criminal and administrative law to target poor women and reproductive providers entrenches inequality and chills bodily autonomy, even as selective judicial resistance shows that institutional guardrails remain contested rather than absent.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_PA_003\",\n        \"wk50_PA_004\",\n        \"wk50_IG_012\",\n        \"wk50_IG_011\",\n        \"wk50_ES_025\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Lead with the retaliatory-feeling vetoes of the Colorado clean water bill (wk50_PA_003) and Everglades project aiding the Miccosukee Tribe (wk50_PA_004) as emblematic of weaponized federal power. Then pivot to the Kennedy Center bylaw change and renaming (wk50_IG_012) and the resulting artist boycott (wk50_CR_021) to show cultural institutions being personalized. Use the National Links Trust lease termination (wk50_IG_011 / wk50_ES_025) and its impact on workers and public access (wk50_CR_028) as a concrete case of public amenities destabilized, and briefly contrast with states like NY and VT passing climate superfund laws (wk50_IG_033) to show divergent models of using public power.\",\n      \"one_sentence_thesis\": \"Trump used vetoes, property decisions, and cultural governance changes to retaliate against political opponents and redirect public institutions toward his personal brand and allies.\",\n      \"supporting_event_ids\": [\n        \"wk50_CR_021\",\n        \"wk50_CR_028\",\n        \"wk50_ES_017\",\n        \"wk50_IG_031\",\n        \"wk50_IG_033\"\n      ],\n      \"title\": \"Federal power and public assets are wielded to punish disfavored regions and repurpose institutions for Trump\\u2019s glorification\",\n      \"why_it_matters\": \"When federal spending, land, and cultural institutions become tools of personal reward and punishment, it erodes equal protection, undermines trust in neutral governance, and normalizes crony control over public goods.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_CR_012\",\n        \"wk50_CR_011\",\n        \"wk50_CR_014\",\n        \"wk50_CR_013\",\n        \"wk50_CR_015\",\n        \"wk50_PA_006\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Frame this as a continuum: start with militarized federal agents in cities (wk50_CR_012) and the National Guard deployment/withdrawal saga (wk50_CR_011) to show domestic use of force around protests. Then move to overseas actions: religiously framed strikes in Nigeria and Syria (wk50_CR_014), the CIA strike in Venezuela (wk50_CR_013), and the failed Bella 1 tanker seizure (wk50_CR_015), tying in Trump\\u2019s threats toward Iran (wk50_PA_006, wk50_CR_016). Use the DC pipe bomb case (wk50_CR_007, wk50_CR_006) and thwarted NC attack (wk50_CR_023) as context for genuine security threats, highlighting how these are used to justify broader crackdowns. You can briefly nod to emergency-style regulatory actions (wk50_ES_004, wk50_ES_009, wk50_IG_030) to reinforce the normalization of security framing.\",\n      \"one_sentence_thesis\": \"From militarized deployments in U.S. cities to covert and overt strikes abroad framed in religious and personalized terms, the administration used security forces to manage dissent, project power, and advance ideological goals rather than narrowly defined public safety.\",\n      \"supporting_event_ids\": [\n        \"wk50_CR_007\",\n        \"wk50_CR_006\",\n        \"wk50_CR_023\",\n        \"wk50_CR_016\",\n        \"wk50_ES_004\",\n        \"wk50_ES_009\",\n        \"wk50_IG_030\"\n      ],\n      \"title\": \"Security forces and foreign policy are increasingly aligned with regime priorities and religious narratives\",\n      \"why_it_matters\": \"Blurring the line between domestic policing and military force, and between national security and religious or personal agendas, normalizes extraordinary coercion at home and risky escalation abroad while shrinking space for legitimate protest.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_IM_001\",\n        \"wk50_IM_003\",\n        \"wk50_IM_004\",\n        \"wk50_IM_005\",\n        \"wk50_IM_008\",\n        \"wk50_IG_010\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"Structure this around three strands: (1) suppression and retaliation\\u2014CICOT report pulled by CBS (wk50_IM_001), visa bans on European anti-disinformation figures (wk50_IM_003), and DOJ\\u2019s opaque handling of Epstein files culminating in the late admission of millions more documents (wk50_IG_010 plus wk50_IM_002, wk50_IG_009, wk50_IM_007). (2) Active disinformation\\u2014Trump\\u2019s deceptive fundraising 'surveys' (wk50_IM_004), fake wind-turbine eagle imagery (wk50_IM_005), and amplification of Kremlin narratives about Ukraine (wk50_IM_008). (3) Economic narrative manipulation\\u2014celebrating tariffs while quietly carving them out or delaying them (wk50_IM_009, wk50_ES_022, wk50_ES_020, wk50_ES_031). Use the DHS propaganda post (wk50_IM_006) as a bridge between immigration and information control.\",\n      \"one_sentence_thesis\": \"The administration and allied institutions censored investigative reporting, punished anti-disinformation advocates, spread official falsehoods, and slow-walked disclosure of Epstein records, consolidating control over politically sensitive information and narratives.\",\n      \"supporting_event_ids\": [\n        \"wk50_IM_002\",\n        \"wk50_IG_009\",\n        \"wk50_IM_007\",\n        \"wk50_IM_006\",\n        \"wk50_IM_009\",\n        \"wk50_ES_022\",\n        \"wk50_ES_020\",\n        \"wk50_ES_031\"\n      ],\n      \"title\": \"Information control, disinformation, and the Epstein files fight reshape what the public is allowed to know\",\n      \"why_it_matters\": \"When the state and major media curate truth\\u2014suppressing damaging investigations while amplifying propaganda\\u2014citizens lose the factual basis needed for accountability, especially around elite-linked crimes and contested policy debates.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_IG_001\",\n        \"wk50_IG_002\",\n        \"wk50_IG_003\",\n        \"wk50_IG_012\",\n        \"wk50_IG_034\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Begin with the censure of Rep. Al Green (wk50_IG_001) and the House resolution targeting Chuy Garcia\\u2019s retirement timing (wk50_IG_002) as examples of congressional discipline used performatively. Then highlight the Tennessee expulsions of Justin Pearson and Justin Jones (wk50_IG_003) as a more extreme state-level version. Fold in the Kennedy Center governance change (wk50_IG_012) and artists\\u2019 boycott (wk50_CR_021) to show cultural institutions drawn into this punitive politics. Close with North Carolina\\u2019s oversight attacks on Chapel Hill schools (wk50_IG_034) and their framing as 'reform' (wk50_IM_010), alongside grassroots defenses of public schools (wk50_CR_022) and trans youth (wk50_CR_003). Trump\\u2019s push to scrap the filibuster (wk50_PA_001) can be used to underscore the broader trend toward majoritarian muscle over deliberation.\",\n      \"one_sentence_thesis\": \"Congress and state legislatures used censures, expulsions, and symbolic resolutions to discipline outspoken members, while cultural institutions and oversight committees framed protest and public education as problems to be controlled.\",\n      \"supporting_event_ids\": [\n        \"wk50_CR_021\",\n        \"wk50_IM_010\",\n        \"wk50_PA_001\",\n        \"wk50_CR_022\",\n        \"wk50_CR_003\"\n      ],\n      \"title\": \"Legislatures and cultural bodies punish dissent and reframe oversight as disorder\",\n      \"why_it_matters\": \"Turning representative bodies and quasi-public institutions into stages for punitive spectacle rather than deliberation weakens opposition, narrows acceptable speech, and justifies structural barriers under the guise of order or integrity.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_ES_018\",\n        \"wk50_ES_019\",\n        \"wk50_ES_017\",\n        \"wk50_ES_020\",\n        \"wk50_ES_031\",\n        \"wk50_IG_032\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Anchor the narrative in domestic hardship: budget cuts to healthcare, science, and anti-hunger programs (wk50_ES_018), ACA subsidy expiration after a long shutdown (wk50_ES_019), Social Security backlogs (wk50_ES_017), and NC\\u2019s tax cuts for the wealthy despite service shortfalls (wk50_IG_032). Then juxtapose this with how trade and regulatory policy bend for organized interests: tariff carve-outs and delays after exporter lobbying (wk50_ES_020, wk50_ES_031, wk50_ES_022), China\\u2019s retaliatory tariffs squeezing U.S. farmers (wk50_ES_021, wk50_ES_026), and EPA\\u2019s rollback toward industry-favored air rules (wk50_IG_015, wk50_IG_020). Use rising bankruptcies and household stress (wk50_ES_023) and the Planned Parenthood defunding (wk50_CR_018) to show who bears the brunt, and optionally mention the Epstein\\u2013Mar-a-Lago exploitation allegations (wk50_CR_029) as an extreme example of elite impunity amid widening inequality.\",\n      \"one_sentence_thesis\": \"Through deep cuts to health and anti-hunger programs, expiration of ACA subsidies, regressive state tax plans, and lobbyist-driven tariff carve-outs, the administration and allied lawmakers hardened a system where hardship for the poor is tolerated while organized sectors secure relief.\",\n      \"supporting_event_ids\": [\n        \"wk50_ES_022\",\n        \"wk50_ES_021\",\n        \"wk50_ES_026\",\n        \"wk50_ES_023\",\n        \"wk50_CR_018\",\n        \"wk50_CR_029\",\n        \"wk50_IG_015\",\n        \"wk50_IG_020\",\n        \"wk50_IG_017\",\n        \"wk50_IG_018\"\n      ],\n      \"title\": \"Economic policy whiplash and social program cuts entrench inequality and favor organized interests\",\n      \"why_it_matters\": \"This pattern shifts resources and risk onto vulnerable households and public services while rewarding those with access and leverage, reinforcing a political economy that undermines broad-based democratic participation.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_CR_019\",\n        \"wk50_CR_020\",\n        \"wk50_CR_022\",\n        \"wk50_PA_002\",\n        \"wk50_IG_033\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Treat this as the 'resistance' chapter. Start with Indivisible\\u2019s Long March against racial gerrymandering in NC (wk50_CR_019) and its Block the Bombs Act campaign on U.S. funding for Israeli military actions (wk50_CR_020), alongside its push to reassert congressional war powers on Venezuela (wk50_PA_002). Then highlight grassroots defense of public schools (wk50_CR_022) and organizing against attacks on trans youth (wk50_CR_003). Add state-level climate innovation via NY and VT climate superfund laws (wk50_IG_033), and, if useful, democratic local developments like Zohran Mamdani\\u2019s NYC mayoral inauguration (wk50_CR_027). You can close by noting that federal advisory and statistical processes (wk50_IG_013, wk50_IG_029) and oversight wins like the Minnesota fraud case (wk50_ES_028) still function, underscoring that the system is contested rather than monolithic.\",\n      \"one_sentence_thesis\": \"Even as federal power centralizes, grassroots groups and state governments organized marches, legislative campaigns, and innovative laws to defend voting rights, public schools, climate accountability, and checks on war-making.\",\n      \"supporting_event_ids\": [\n        \"wk50_CR_003\",\n        \"wk50_CR_021\",\n        \"wk50_CR_027\",\n        \"wk50_ES_028\",\n        \"wk50_IG_013\",\n        \"wk50_IG_029\"\n      ],\n      \"title\": \"Civil society and subnational actors mount targeted resistance on voting, war powers, climate, and education\",\n      \"why_it_matters\": \"These efforts show that democratic energy persists outside Washington, but they also highlight how much of the burden of defending rights and public goods has shifted to civil society and subnational institutions.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk50_CR_029\",\n        \"wk50_IG_010\"\n      ],\n      \"dev_id\": \"D9\",\n      \"notes_for_writer\": \"You can treat this as a focused thread or integrate it into D5, but here it stands alone: start with the Mar-a-Lago spa worker trafficking allegations involving Epstein (wk50_CR_029), then detail DOJ\\u2019s evolving and delayed handling of Epstein records (wk50_IG_010, wk50_IM_002, wk50_IG_009, wk50_IM_007). Contrast the opacity and delay around elite-linked abuse with the zeal shown in denaturalization quotas (wk50_CR_004) and criminalization of self-managed abortion (wk50_CR_017). Briefly mention the TRO and dismissal wins (wk50_IG_005, wk50_IG_006) to show that some judges still enforce rights, but emphasize the overarching pattern of a two-tier system.\",\n      \"one_sentence_thesis\": \"New allegations tying Mar-a-Lago to Epstein\\u2019s exploitation and DOJ\\u2019s shifting story about millions of Epstein documents intensified scrutiny of how the justice system treats elite-linked crimes compared with aggressive enforcement against ordinary people.\",\n      \"supporting_event_ids\": [\n        \"wk50_IM_002\",\n        \"wk50_IG_009\",\n        \"wk50_IM_007\",\n        \"wk50_IG_005\",\n        \"wk50_IG_006\",\n        \"wk50_CR_004\",\n        \"wk50_CR_017\"\n      ],\n      \"title\": \"Epstein revelations and elite accountability battles expose a two-tier justice system\",\n      \"why_it_matters\": \"Perceived protection of powerful abusers while the state harshly polices immigrants and marginalized communities corrodes faith in equal justice and reinforces the sense that law is a tool of the powerful.\"\n    }\n  ],\n  \"period_label\": \"Week 50\",\n  \"recommended_development_count\": 9,\n  \"sanity_notes\": \"Developments are organized around major structural themes: immigration industrialization and personalization (D1), weaponized law and courts with selective pushback (D2), retaliatory use of federal power and public assets (D3), security/military alignment with regime and religious narratives (D4), information control and Epstein-related opacity (D5), punitive and performative legislatures plus cultural governance (D6), inequality-entrenching economic policy and lobbying-driven trade (D7), civil society and state-level resistance (D8), and elite accountability battles centered on Epstein (D9). Some events could plausibly sit in multiple developments\\u2014e.g., Kennedy Center changes in both D3 and D6, or Epstein files in D5 and D9\\u2014but each event is assigned only once, with cross-references handled via notes. Routine regulatory and technical notices are mostly left unassigned to keep the narrative focused on democracy-relevant shifts.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk50_ES_002\",\n      \"why_unassigned\": \"Technical adjustment to FDA OTC monograph fees with limited narrative impact this week.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_003\",\n      \"why_unassigned\": \"Specialized FDA roundtable announcement that does not materially shift broader democratic dynamics.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_005\",\n      \"why_unassigned\": \"Patent review-period determinations are routine regulatory actions without a clear tie to the week\\u2019s main developments.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_006\",\n      \"why_unassigned\": \"Niche regulatory proposal on radiology devices; could be mentioned in a regulatory-capture story but is not central here.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_007\",\n      \"why_unassigned\": \"Technical enforcement of generic drug reporting rules; marginal to the chosen narratives.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_008\",\n      \"why_unassigned\": \"Information collection on PET drug manufacturing is routine and not central to any development.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_010\",\n      \"why_unassigned\": \"FDA safety-based withdrawal of a specific drug formulation is a narrow regulatory action.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_011\",\n      \"why_unassigned\": \"OSHA rigging equipment paperwork extension is minor and already indirectly covered by broader OSHA themes.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_012\",\n      \"why_unassigned\": \"Technical extension of information collection for a training grant program; low narrative salience.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_013\",\n      \"why_unassigned\": \"EPA information collection renewals are routine and do not significantly alter the week\\u2019s structural stories.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_015\",\n      \"why_unassigned\": \"GSA mileage rate update is administrative housekeeping with limited democracy relevance.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_016\",\n      \"why_unassigned\": \"TSA pipeline security data revisions are technical; partially echoed in wk50_IG_030 but not needed separately.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_024\",\n      \"why_unassigned\": \"China\\u2019s EV/autonomy advances are important context but peripheral to U.S. democratic-structure narratives this week.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_027\",\n      \"why_unassigned\": \"Local housing construction and rent drops are positive economic context but not central to the main developments.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_029\",\n      \"why_unassigned\": \"Local deregulatory efforts for small businesses are diffuse and not clearly tied to the week\\u2019s core themes.\"\n    },\n    {\n      \"event_id\": \"wk50_ES_030\",\n      \"why_unassigned\": \"Japan\\u2019s FDI and immigration reforms are notable but external to the U.S.-focused democracy clock story.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_014\",\n      \"why_unassigned\": \"Used as an anchor in D4; no separate unassigned handling needed.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_024\",\n      \"why_unassigned\": \"Isolated criminal case illustrating gun accountability; not central to any broader development.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_025\",\n      \"why_unassigned\": \"Referenced as context in D2; not a standalone driver of a development.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_026\",\n      \"why_unassigned\": \"Positive life expectancy trend is background context and already lightly referenced in D1.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_027\",\n      \"why_unassigned\": \"NYC mayoral inauguration is routine democratic turnover; used only as optional color in D8.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_028\",\n      \"why_unassigned\": \"Substantively covered as supporting detail in D3; no separate narrative needed.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_007\",\n      \"why_unassigned\": \"Folded into D4 as part of the security/protest storyline; not a separate development.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_006\",\n      \"why_unassigned\": \"Paired with wk50_CR_007 in D4; not independently assigned.\"\n    },\n    {\n      \"event_id\": \"wk50_CR_023\",\n      \"why_unassigned\": \"Used in D4 as a supporting example of genuine security threats; not a separate arc.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_019\",\n      \"why_unassigned\": \"EPA approval of SC haze plan is routine cooperative federalism; peripheral to main themes.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_020\",\n      \"why_unassigned\": \"Included as supporting context in D7; not a primary narrative driver.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_021\",\n      \"why_unassigned\": \"Technical correction to fuel regulations; low narrative significance.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_022\",\n      \"why_unassigned\": \"NIOSH petition evaluation is a narrow occupational health process, not central to any development.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_023\",\n      \"why_unassigned\": \"CDC advisory board meeting notice is routine transparency, already broadly reflected in institutional background.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_024\",\n      \"why_unassigned\": \"OSHA variances for tunneling projects are technical and not central to the week\\u2019s democracy themes.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_025\",\n      \"why_unassigned\": \"Expansion of NRTL scopes is a niche regulatory detail.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_026\",\n      \"why_unassigned\": \"Information collection extension is minor and overlaps with wk50_ES_011/012.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_027\",\n      \"why_unassigned\": \"Nemko\\u2019s NRTL application is procedural and not democracy-salient.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_028\",\n      \"why_unassigned\": \"FCC information collection notices are routine and not central to any chosen development.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_029\",\n      \"why_unassigned\": \"Census pretesting clearance is positive but used only as optional context in D8.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_013\",\n      \"why_unassigned\": \"EPA LGAC charter renewal is modestly positive but only background to D8.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_014\",\n      \"why_unassigned\": \"Delegation of NESHAP enforcement to Oklahoma is technical and not central to the main arcs.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_016\",\n      \"why_unassigned\": \"EIS availability notice is routine transparency; low narrative weight.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_017\",\n      \"why_unassigned\": \"Colorado air plan procedural revisions are technical and only lightly referenced in D7.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_018\",\n      \"why_unassigned\": \"Taconite FIP revisions are specific environmental rule changes; not central to broader democracy themes.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_021\",\n      \"why_unassigned\": \"Already listed; technical correction with minimal narrative impact.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_030\",\n      \"why_unassigned\": \"Used as supporting context in D4; not a standalone development.\"\n    },\n    {\n      \"event_id\": \"wk50_IG_031\",\n      \"why_unassigned\": \"GSA updates on mileage and foreign gifts are administrative housekeeping; only minorly referenced in D3.\"\n    }\n  ],\n  \"week_number\": 50,\n  \"window\": {\n    \"end\": \"2026-01-02\",\n    \"start\": \"2025-12-27\"\n  }\n}",
+    "digest": "The final week of 2025 and the first days of 2026 unfolded as a test of how far executive power could reach and how firmly other institutions would push back. Retaliatory vetoes, an expanding immigration enforcement machine, and opaque overseas strikes set the tone, while courts, Congress, and civic actors tried to draw lines around war‑making, policing, and access to basic services.\n\nOver the weekend, the House of Representatives turned inward, using its disciplinary tools to police members’ conduct and speech. Lawmakers formally censured Rep. Al Green for interrupting Donald Trump during a joint session and passed a resolution condemning Rep. Chuy Garcia over alleged maneuvering to help his chief of staff succeed him. Backed by Republicans and some Democrats, the measures showed how censure and similar resolutions can become instruments for punishing dissent and intra‑party tactics rather than tools reserved for clear ethical breaches.\n\nBeyond the Capitol, immigration enforcement remained both aggressive and visible in daily life. Reports described immigrants being dragged from cars and courthouse hallways, and the earlier deportation of Oregon vineyard manager Moises Sotelo continued to reverberate through his family and local economy. These stories underscored how enforcement now reaches into workplaces, courts, and communities in ways that can deter people from seeking legal redress or public services. At the same time, Trump again pressed Republican senators to scrap the filibuster, arguing that the Senate rule blocked his agenda. GOP leaders remained wary, mindful they might need the filibuster if they lost their majority, but the pressure highlighted how procedural guardrails themselves had become political targets.\n\nThe weekend also brought signs of how foreign and domestic power were being intertwined. Advocacy group Indivisible urged the public to press senators to rein in unauthorized U.S. military actions against Venezuela, citing killings at sea and attempted tanker seizures without clear legal justification. Those calls came as the administration leaned into Christian nationalist themes: DHS and other agencies posted explicitly Christian holiday messages featuring Trump, and the White House announced strikes on ISIS‑linked militants in Nigeria and Syria, framing them as defending persecuted Christians and even as a “Christmas present” for extremists. Official communications emphasized a Christian national identity and tied military action abroad to religious protection, blurring church‑state separation and embedding religious identity in foreign policy narratives.\n\nDomestically, militarized federal agents in fatigues and carrying assault rifles remained a presence in major cities as part of the administration’s response to protests and unrest. Their deployment, often without clear local consent, continued to blur the line between civilian policing and military force. At the same time, anti‑Muslim rhetoric escalated: Sen. Tommy Tuberville called for mass deportation of Muslim Americans, and ICE posted an AI‑generated video of Santa deporting an immigrant as a festive message about reducing the “illegal population.” These moves paired symbolic imagery with calls to expel religious minorities, normalizing the idea that some groups sit outside the circle of equal citizenship. In the information sphere, CBS and 60 Minutes pulled an investigative report on CICOT from official channels even as bootleg copies spread online, raising questions about editorial pressure and the ability of powerful actors to bury uncomfortable reporting. And in the background, large Trump‑era cuts to healthcare, scientific research, and anti‑hunger programs continued to draw criticism, with advocates warning of long‑term damage to public health and innovation.\n\nBy Monday, the immigration story had become more targeted. Trump ended legal protections for Somali immigrants in Minnesota, accusing the state of being a fraud hub, while the FBI surged resources to investigate large‑scale fraud tied to federal programs. Some cases were referred for denaturalization and deportation. Linking an entire community to fraud and pairing criminal probes with immigration penalties risked collective stigma and signaled how enforcement could be steered toward particular groups. At the same time, leaked plans showed ICE preparing to expand detention using warehouse‑style facilities near logistics hubs, backed by a GOP spending package proposing $170 billion for ICE and Border Patrol through 2029. The design emphasized speed and throughput over individualized process, treating detainees more as logistical units than as rights‑bearing individuals.\n\nCourts, however, showed they could still check some overreach. A federal judge granted a temporary restraining order blocking detention of Imran Ahmed, head of the Center for Countering Digital Hate, while his lawsuit proceeds, and another judge dismissed with prejudice an indictment against TikTok streamer Carlitos Ricardo Parias after finding serious due‑process violations in his post‑arrest detention by ICE. These rulings underscored that, even as enforcement agencies pushed their authority, judges could still protect critics and defendants from abusive tactics. In the realm of information control, Reuters reported that the administration had imposed visa bans on several European officials and experts involved in enforcing platform rules against disinformation, branding their work as censorship. Punishing foreign watchdogs for moderating propaganda signaled hostility to independent oversight and threatened international cooperation on information integrity. Meanwhile, agencies like CDC, DHS, FCC, FDA, OSHA, and EPA continued to issue technical notices on meetings, penalties, and environmental plans, a reminder that the machinery of governance still turned beneath the higher‑profile conflicts.\n\nOn Tuesday, the focus shifted outward and upward. Trump announced a strike on a Venezuelan drug facility during a talk‑radio appearance, while U.S. officials declined to confirm details. Southern Command separately reported a lethal small‑boat strike in the eastern Pacific as part of a broader campaign that had killed over 100 people, and a failed attempt to seize an oil tanker bound for Venezuela heightened tensions. These lethal operations, announced without clear legal basis or transparency, made it difficult for Congress, courts, or the public to assess legality or hold anyone accountable, continuing a pattern of unilateral war‑making.\n\nAt home, immigration enforcement was formally scaled up and legal status made more fragile. A Justice Department memo ordered denaturalization cases to be prioritized, with USCIS field offices told to feed 100–200 cases per month into the pipeline. A separate USCIS memo paused immigration proceedings for nationals of 19 travel‑ban countries, abruptly canceling naturalization ceremonies and green‑card interviews nationwide. Together with the weekend’s visible arrests and Monday’s warehouse‑style detention plans, these moves outlined a coherent shift: citizenship and lawful status were being treated as contingent and revocable, while the physical and bureaucratic capacity for detention and deportation was being expanded.\n\nOther institutions pushed back in different arenas. Judge Amy Berman Jackson ordered the administration to keep funding the Consumer Financial Protection Bureau, rejecting arguments that Federal Reserve losses justified cutting off its budget and calling the move an attempt to evade a prior injunction. The ruling protected an independent consumer watchdog created by Congress from being dismantled through budget maneuvers. Economic and health policy choices, however, moved in the opposite direction. A major tax and fiscal package and tariff adjustments were touted as relief but left many households squeezed by rising costs for essentials. HHS Secretary Robert F. Kennedy Jr. cut hundreds of millions from mRNA research and billions from NIH, and a 43‑day shutdown set the stage for enhanced Affordable Care Act tax credits to expire, doubling premiums for many enrollees. The Richmond Fed and Bureau of Labor Statistics detailed how that shutdown had also prevented collection of key inflation and employment data, creating unprecedented holes in official statistics and making it easier to spin economic narratives without evidence.\n\nCultural institutions became a new front in the struggle over power and symbolism. Trump moved to rename the Kennedy Center the “Trump Kennedy Center” after trustees changed bylaws to concentrate voting power in his appointees. In response, artists canceled New Year’s Eve and upcoming performances rather than legitimize the change. The episode showed how a congressionally chartered cultural institution could be rebranded around a sitting leader, and how artists could use boycotts to impose reputational costs. Corporate and civic actors also signaled resistance: Rocket Money dropped sponsorship of Tucker Carlson’s podcast after reporting on his white‑supremacist content, and organizers announced a nationwide “Free America Walk Out” for January 20, urging people to leave work, school, and commerce to protest what they described as the construction of a coercive state. Meanwhile, internal documents revealed Social Security Administration caseload backlogs swelling past six million, with applicants struggling to get basic information, and a plan to sharply limit phone service was scrapped only after media exposure and public pressure. Investigations into a $20 billion bailout of Argentina and a delayed Medicare rule suggested that major financial decisions were tracking donor interests, further blurring the line between public policy and private enrichment. In immigration, a right‑wing media personality previously expelled for running an illegal Russian propaganda operation was quietly allowed back into the U.S. with help from administration officials, even as broader crackdowns intensified, underscoring how ideology and connections could override stated security rationales.\n\nNew Year’s Eve brought a series of legal confrontations over the use of force and access to care. The Supreme Court issued a rare rebuke blocking National Guard deployment in Illinois and preliminarily rejected Trump’s justification for using Guard units in domestic law‑enforcement roles. The Justice Department stopped contesting a California ruling returning Guard control to Gov. Gavin Newsom. Trump then announced he was ending attempts to deploy Guard units in Los Angeles, Chicago, and Portland, while threatening to redeploy them later in a “much stronger form.” These decisions reaffirmed state authority over Guard units and showed that courts could still block attempts to militarize responses to domestic unrest.\n\nIn the realm of reproductive health, a federal appeals court lifted an injunction and allowed a provision in a tax‑and‑spending bill to strip Medicaid funding from Planned Parenthood affiliates in 22 states and the District of Columbia. The ruling threatened closure of clinics that provide reproductive and basic health services, illustrating how judicial appointments and spending riders can reshape access to care. Immigration enforcement capacity continued to grow: reporting showed ICE had increased spending on guns and chemical weapons by 600% under Trump and launched a $100 million, year‑long media campaign targeting conservative audiences with large signing bonuses and loan forgiveness to recruit thousands of new agents for 2026 deportation goals. This weapons surge and recruitment blitz, layered on top of warehouse‑style detention plans and denaturalization quotas, marked a shift toward industrial‑scale enforcement.\n\nCourts again intervened in immigration practices at the margins. A federal judge ordered the administration to either return immigrants transferred to El Salvador’s CECOT mega‑prison or provide hearings so they could challenge their detention, pushing back against outsourcing detention to foreign facilities without meaningful legal recourse. In Congress, former special counsel Jack Smith testified before the House Judiciary Committee, and a 255‑page deposition transcript was released. Smith asserted he had proof beyond a reasonable doubt in the classified‑documents and election‑interference cases against Trump, emphasized his independence from political influence, and explained how legal challenges and Trump’s return to office led to dropped charges. The testimony created a detailed record of how a former president was investigated and charged, and how political power later reshaped accountability.\n\nBattles over information and memory intensified around the Epstein files. Congress passed the bipartisan Epstein Files Transparency Act, requiring the Justice Department to release Epstein‑related files by December 19. DOJ then disclosed it was reviewing roughly 5–5.2 million pages—far more than previously stated—and signaled it would miss the deadline, citing the need for extensive redactions and hundreds of lawyers. House Democrats later revealed that DOJ had confirmed the existence of roughly five million additional Epstein‑related documents beyond what had been acknowledged, with less than 5% produced so far, prompting accusations of legal violations and concealment. New reporting described Jeffrey Epstein as a frequent visitor at Mar‑a‑Lago and alleged that young female spa workers from Trump’s club were sent to Epstein’s mansion for “house calls,” deepening questions about who enabled his crimes and how proximity to power may have shielded his network. The clash between a statutory transparency mandate, DOJ’s slow and opaque process, and fresh allegations involving elite spaces highlighted how archives around powerful figures can be managed to delay or dilute accountability. In a different information battle, Trump posted an image claiming a U.S. wind turbine had killed a bald eagle—actually an old photo of a falcon killed in Israel—and an official White House account amplified the post, alongside similar misleading images from Spain and Taiwan used to attack wind energy. The use of false visuals from official channels showed how disinformation could be deployed to shape public views on energy policy. Even as these high‑profile fights played out, OSHA and EPA continued technical rulemakings and approvals on testing labs, safety training, and power‑plant compliance deadlines, illustrating that parts of the administrative state still functioned in routine ways.\n\nNew Year’s Day saw Trump wield the veto pen in ways widely read as retaliatory. He vetoed a bill to protect the Osceola Camp area in Everglades National Park, home to the Miccosukee Tribe, arguing the tribe was not authorized to live there and casting the project as contrary to his immigration agenda. He also vetoed a unanimously passed bill to fund safe drinking water for 39 Colorado communities, a move widely seen as tied to state officials’ stance on a convicted election‑fraud figure and their advocacy around the Epstein files. Using veto power to punish disfavored regions and tribes over unrelated political disputes turned basic infrastructure and environmental protection into leverage points in broader political conflicts.\n\nClimate and economic policy choices followed a similar pattern of undercutting public goods. The administration cut federal funding for public transit systems, despite their central role in meeting emissions targets, while continuing to deride climate policy as a “scam.” These cuts came even as states like New York and Vermont pursued climate superfund laws to make polluters pay, highlighting a divergence between federal rhetoric and subnational efforts. The earlier shutdown’s impact on health care became concrete as enhanced Affordable Care Act tax credits expired, leading to an average 114% premium increase for more than 20 million enrollees. A possible January House vote offered only uncertain relief, leaving many households facing sudden, steep costs. Trade policy, loudly advertised as tough, softened under pressure: Trump signed a proclamation delaying steep tariff increases on upholstered furniture and cabinets until 2027 just hours before they were to rise, and the Commerce Department slashed threatened antidumping duties on Italian pasta from over 90% to single‑digit or low‑teens rates after lobbying by Italy and affected firms. These reversals showed how well‑organized sectors could secure carve‑outs, complicating the narrative of unbending trade enforcement. Closer to home, Trump terminated the National Links Trust’s lease to manage Washington, D.C.’s public golf courses without a clear successor plan, halting renovations and leaving workers uncertain. Critics saw the move as opening the door to more personally lucrative arrangements, raising fears of self‑dealing in the management of public assets.\n\nThe week closed on Friday with explicit assertions of centralized control and new flashpoints in rights and representation. New reporting described the White House claiming direct control over immigration policy, criminal law, and forcible renditions, centralizing decisions that traditionally involve multiple branches and agencies. Concentrating coercive powers in the presidency erodes checks and balances and makes abuses harder to detect or contest, especially when combined with the week’s denaturalization quotas, case freezes, detention build‑outs, and ICE’s weapons and recruitment surge. In Tennessee, the state House expelled Reps. Justin Pearson and Justin Jones after they led a floor protest demanding stronger gun laws following a deadly school shooting. Although both later regained their seats, the expulsions drew national attention to the punitive use of legislative power against protest speech, narrowing the space for dissent inside elected bodies and temporarily disenfranchising their constituents.\n\nReproductive rights faced further constriction at the state level. In Kentucky, Melinda S. Spencer was arrested and charged with first‑degree fetal homicide, abuse of a corpse, and evidence tampering after allegedly inducing her own abortion with pills ordered online and burying the remains, even though state law does not explicitly criminalize self‑managed abortion. The case illustrated how broad criminal statutes can be repurposed to police pregnancy outcomes, extending the reach of abortion bans and creating legal uncertainty for pregnant people. In North Carolina, the democratic landscape was contested on multiple fronts. Organizers announced a February 11–14 Long March culminating in Raleigh to protest new district maps they say disenfranchise Black voters, turning to mass protest as one of the few tools available when courts and legislatures entrench maps that dilute minority voting power. Republican leaders of the state’s Select Committee on Oversight and Reform targeted the Chapel Hill School District, prompting groups like Public School Strong to organize a January 8 response event to defend public schools from politicized oversight. At the same time, the GOP‑led General Assembly moved toward another round of tax cuts for high‑income individuals and profitable corporations, even as it delayed a full state budget, raising warnings about strain on childcare centers, rising health premiums, and unpaid providers. These state‑level fights showed how tax policy, oversight hearings, and redistricting can quietly reshape the conditions for equal participation.\n\nThe week’s information battles extended even into aesthetics and foreign policy rhetoric. DHS used a beach scene by Japanese artist Hiroshi Nagai without permission in a social‑media post depicting a peaceful America after mass deportations. Nagai publicly objected, adding to criticism of DHS’s pattern of appropriating art to sell its immigration agenda and illustrating how imagery is used to soften coercive messaging. In the background, contextual notes recalled the Page Act of 1875, the Chinese Exclusion Act of 1882, and later federalization of immigration control, situating current bans, denaturalization efforts, and enforcement surges within a long history of racially targeted restrictions and centralized authority. Abroad, Trump posted that the U.S. was “locked and loaded” and would act if Iran “shoots and violently kills peaceful protesters,” prompting stern warnings from senior Iranian officials. Such freelance threats of intervention by a former president risk inflaming tensions and complicating official diplomacy. Meanwhile, EPA, FDA, TSA, and GSA continued to issue technical decisions on air plans, hazardous‑air enforcement, emission limits, drug safety, pipeline security, and federal mileage and gift thresholds, underscoring that even as some agencies were politicized or hollowed out, the quieter work of setting standards and safeguards continued.\n\nTaken together, the week’s events traced a sharp contest over who wields power and how. The federal government expanded its capacity to detain, arm, and deport, and the president used vetoes and emergency‑style actions to reward allies and punish critics, at home and abroad. Courts, state governments, and civil society responded with injunctions, testimony, boycotts, marches, and organizing, trying to preserve space for protest, reproductive autonomy, transparent archives, and functioning public services. As 2026 opened, American democracy appeared less as a stable equilibrium than as a moving struggle among branches, levels of government, and citizens over the limits of coercion and the meaning of accountability.\n"
+  }
+}

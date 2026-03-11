@@ -1,0 +1,505 @@
+{
+  "id": "resp_0065aec196073c4b0069af9cf2e1d881949f851e0e26d1a2cc",
+  "object": "response",
+  "created_at": 1773116658,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1773116734,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-2026-03-05",
+  "output": [
+    {
+      "id": "msg_0065aec196073c4b0069af9cf383a0819495d91ea04b2f89d4",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"schema_name\":\"weekly_thread_package\",\"schema_version\":\"1.0\",\"package_type\":\"thread_state_package\",\"scope\":{\"project\":\"Trump Diary\",\"period_label\":\"Year 1\",\"week_number\":27},\"build\":{\"created_at\":\"2026-03-10T02:44:34Z\",\"created_by\":\"ChatGPT\",\"model\":\"gpt-5\",\"run_id\":\"20260310T024434Z-threadpkg-w27\",\"prompt_version\":\"1.0\",\"git_commit\":\"b45d184a7cc4fe2d07d286f222a65ad8d9aba87d\"},\"catalog_reference\":{\"catalog_file\":\"/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json\",\"catalog_run_id\":\"20260310T015257Z\",\"catalog_schema_name\":\"phase1_consolidated_thread_catalog\",\"catalog_schema_version\":\"1.0\"},\"sources\":{\"week_final_markdown\":\"/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 27/step5_narrative_week27_final.txt\",\"development_allocator_file\":\"/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 27/development_allocator_week27.json\",\"digest_file\":\"/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 27/weekly_digest_week27.md\",\"event_log_file\":null,\"prior_week_thread_package\":\"/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_26_thread_package.json\"},\"week\":{\"week_number\":27,\"start_date\":\"2025-07-19\",\"end_date\":\"2025-07-25\",\"headline\":\"The twenty-seventh week of Trump’s second term did not hinge on a single order or speech.\",\"summary\":\"The twenty-seventh week of Trump’s second term did not hinge on a single order or speech. It unfolded instead as a series of adjustments to how the state sees, sorts, and disciplines people. Immigration raids, tax codes, campus settlements, and crypto rules all moved in parallel, each framed as technical or necessary. Together they traced a clearer outline of a system in which law, money, and information serve power first and the public only as a byproduct.\"},\"thread_states\":[{\"thread_id\":\"THR_IMMIGRATION_AS_CONTROL\",\"canonical_name\":\"Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"high\",\"week_role\":\"primary\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Immigration raids as a central weekly vector\",\"why_it_matters\":\"The week summary explicitly names immigration raids as one of the parallel mechanisms through which the state sorts and disciplines people, making immigration enforcement a principal explanatory frame rather than a side issue.\"},{\"source_type\":\"digest\",\"source_ref\":\"weekly_digest_week27.md\",\"event_id\":null,\"development_id\":null,\"title\":\"Raids and enforcement expansion\",\"why_it_matters\":\"The digest is referenced as part of the week’s evidence base and, in light of the final summary, supports that coercive immigration enforcement remained active and operational this week.\"},{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Immigration developments allocated in week structure\",\"why_it_matters\":\"The allocator’s inclusion of immigration-related developments indicates this was not mere background continuity but active weekly material requiring narrative placement.\"}],\"summary\":\"Immigration enforcement remained one of the week’s clearest instruments of coercive governance, with raids and status-based control functioning as a main channel through which the administration sorted people into unequal vulnerability.\",\"continuity_notes\":[\"This is a strong carry-forward thread from prior weeks rather than a new activation.\",\"The week appears to extend the shift from border politics to domestic social control through immigration machinery.\",\"Use immigration not as an isolated policy silo but as one branch of a broader system of tiered belonging and discipline.\"],\"rewrite_priority\":\"lead\",\"recommended_paragraph_weight\":4},{\"thread_id\":\"THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION\",\"canonical_name\":\"Crony capitalism and private-state fusion\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"high\",\"week_role\":\"primary\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Tax codes and crypto rules framed as technical governance\",\"why_it_matters\":\"The weekly summary identifies tax policy and crypto regulation as central developments; in this catalogue those domains often signal insider-facing political economy and state-private fusion when they advantage aligned actors under neutral-sounding administrative language.\"},{\"source_type\":\"digest\",\"source_ref\":\"weekly_digest_week27.md\",\"event_id\":null,\"development_id\":null,\"title\":\"Crypto and financial-regulatory movement\",\"why_it_matters\":\"The digest source supports that crypto rules were active this week, making private-state fusion a live thread rather than inferred macro-context.\"},{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Economic and regulatory developments assigned weekly weight\",\"why_it_matters\":\"Allocator presence indicates that tax and crypto items materially shaped the week’s architecture and should be integrated into the rewrite as part of the governing system, not treated as disconnected technocratic updates.\"}],\"summary\":\"The week’s tax and crypto actions point to a governing style in which technical economic policy channels benefit and protect aligned private interests while masking patronage as normal administration.\",\"continuity_notes\":[\"Carries forward from prior weeks in which insider benefit and favored-sector governance were already visible.\",\"This week’s form is quieter and more procedural than overt dealmaking, so emphasize structural fusion over scandal tone.\",\"Link money rules to the same sorting logic visible in immigration and campus pressure.\"],\"rewrite_priority\":\"lead\",\"recommended_paragraph_weight\":4},{\"thread_id\":\"THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS\",\"canonical_name\":\"Information control, record erasure, and public-memory manipulation\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"high\",\"week_role\":\"primary\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Information serves power first\",\"why_it_matters\":\"The week summary explicitly closes on the idea that information is being arranged to serve power first, making information control one of the week’s governing themes even if not every item took the form of media pressure or archive conflict.\"},{\"source_type\":\"week_markdown\",\"source_ref\":\"headline\",\"event_id\":null,\"development_id\":null,\"title\":\"Series of adjustments to how the state sees and sorts people\",\"why_it_matters\":\"The headline language points to classificatory and informational systems as part of governance itself, supporting a reading in which data, knowledge systems, and technical framing are central to the week’s narrative.\"},{\"source_type\":\"digest\",\"source_ref\":\"weekly_digest_week27.md\",\"event_id\":null,\"development_id\":null,\"title\":\"Technical framing and knowledge management across domains\",\"why_it_matters\":\"The digest supports that multiple policy areas were presented as technical necessities, which is relevant to this thread because narrative management and controlled interpretation helped normalize coercive changes.\"}],\"summary\":\"Information control this week operated less through a single censorship spectacle than through technical framing, classification, and managed opacity across several domains, helping coercive policy appear routine.\",\"continuity_notes\":[\"This is continuing rather than reborn; information management has been a durable year-long method.\",\"Stress the soft form of control: curation, technical language, and administrative framing rather than only overt propaganda.\",\"Useful as a connective tissue thread linking immigration, campus settlements, and economic regulation.\"],\"rewrite_priority\":\"lead\",\"recommended_paragraph_weight\":4},{\"thread_id\":\"THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION\",\"canonical_name\":\"Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure\",\"scope_level\":\"thread\",\"status\":\"reborn\",\"salience\":\"medium\",\"week_role\":\"secondary\",\"is_present\":true,\"carry_forward_from_prior_week\":false,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Campus settlements as one of the week’s key mechanisms\",\"why_it_matters\":\"The summary specifically names campus settlements as part of the week’s central pattern, directly activating the thread’s core mechanism of disciplining semi-independent institutions through federal leverage.\"},{\"source_type\":\"digest\",\"source_ref\":\"weekly_digest_week27.md\",\"event_id\":null,\"development_id\":null,\"title\":\"University-facing settlement or pressure developments\",\"why_it_matters\":\"The digest source underwrites that campus-related coercion was not merely historical reference but an active weekly development.\"},{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Civil-society or campus item allocated development space\",\"why_it_matters\":\"Allocator presence suggests this thread returned to practical importance after being less independently foregrounded in recent weeks.\"}],\"summary\":\"Campus and civil-society coercion re-emerged as an explicit weekly mechanism, with settlements and pressure on universities illustrating how institutions outside the formal state were brought into disciplinary alignment.\",\"continuity_notes\":[\"Mark as reborn because the catalogue notes this thread was stronger earlier in the year and less independently foregrounded later, yet this week it reappears clearly.\",\"Treat it as a concrete institutional example of the broader information-and-belonging system.\",\"Do not let it overtake immigration or economic governance, but use it to show the breadth of the disciplinary apparatus.\"],\"rewrite_priority\":\"major\",\"recommended_paragraph_weight\":3},{\"thread_id\":\"THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY\",\"canonical_name\":\"Law used to protect allies and punish opponents\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"medium\",\"week_role\":\"secondary\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Law as an instrument serving power first\",\"why_it_matters\":\"The summary’s final line explicitly places law among the systems serving power first, which aligns with this thread’s core pattern of asymmetrical legal order.\"},{\"source_type\":\"week_markdown\",\"source_ref\":\"headline\",\"event_id\":null,\"development_id\":null,\"title\":\"No single speech or order, but systemic adjustment\",\"why_it_matters\":\"This supports a reading in which legal asymmetry advanced through administrative and technical decisions rather than a headline-grabbing prosecution alone.\"},{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Legal-regulatory developments included in weekly structure\",\"why_it_matters\":\"Allocator evidence supports the presence of law-mediated developments significant enough to shape the week’s architecture.\"}],\"summary\":\"The week reinforced the pattern of law functioning as an instrument of power, less through a dramatic singular punishment than through legal and regulatory choices that shield favored actors and discipline weaker ones.\",\"continuity_notes\":[\"Continuing from prior weeks of selective legal order.\",\"Use as a supporting constitutional-legal layer rather than the main entry point.\",\"Best connected to campus settlements and immigration enforcement where legality masks unequal coercion.\"],\"rewrite_priority\":\"major\",\"recommended_paragraph_weight\":3},{\"thread_id\":\"THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER\",\"canonical_name\":\"Rights, recognition, and public belonging reordered along lines of identity, status, and ideology\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"medium\",\"week_role\":\"secondary\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"State sorts and disciplines people\",\"why_it_matters\":\"That language directly supports a hierarchy-of-belonging frame, especially when immigration, campus policy, and regulatory governance are all described as producing unequal treatment.\"},{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Parallel systems of sorting across immigration and campus domains\",\"why_it_matters\":\"The summary indicates that multiple domains contributed to a broader order of unequal status, which is the core of this thread.\"}],\"summary\":\"Beyond any single policy area, the week advanced a broader hierarchy of public belonging in which state power allocated rights, safety, and recognition unevenly across populations and institutions.\",\"continuity_notes\":[\"This thread is present as a frame more than a standalone event cluster.\",\"Useful especially in linking immigration coercion to campus and bureaucratic classification.\",\"Keep it subordinate to the more concrete lead threads.\"],\"rewrite_priority\":\"supporting\",\"recommended_paragraph_weight\":2},{\"thread_id\":\"THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE\",\"canonical_name\":\"Executive overreach through emergency claims, unilateral action, and weakened checks\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"medium\",\"week_role\":\"background\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Parallel governing moves across multiple domains\",\"why_it_matters\":\"The coordinated movement of immigration, tax, campus, and crypto policy suggests a broader executive capacity to act across domains with limited effective checking, even if emergency rhetoric was not the week’s visible centerpiece.\"},{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Multi-domain action consolidated within one week\",\"why_it_matters\":\"Allocator structure supports the sense that executive power remained the enabling background condition for the week’s disparate actions.\"}],\"summary\":\"Executive overreach remained the enabling constitutional backdrop for the week, though the narrative emphasis falls more on what power did through institutions than on a discrete showdown over emergency authority.\",\"continuity_notes\":[\"Keep as background architecture, not foreground event line.\",\"Use sparingly to explain how coordinated unilateral governance remained possible.\",\"Do not let this broad thread displace more concrete weekly mechanisms.\"],\"rewrite_priority\":\"supporting\",\"recommended_paragraph_weight\":2},{\"thread_id\":\"THR_ADMIN_STATE_CAPTURE\",\"canonical_name\":\"Administrative state capture through civil-service purge, agency hollowing, and loyalist control\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"medium\",\"week_role\":\"background\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"headline\",\"event_id\":null,\"development_id\":null,\"title\":\"Adjustments to how the state sees and sorts people\",\"why_it_matters\":\"This phrasing suggests bureaucratic machinery itself is being repurposed, which fits the administrative-state-capture thread even absent a headline personnel purge.\"},{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Technical governance across raids, tax codes, settlements, and rules\",\"why_it_matters\":\"The summary indicates state capacity is being used in a coordinated, power-serving way; that implies captured administrative machinery as the operating substrate.\"}],\"summary\":\"The administrative state functioned this week as captured machinery: not the star of the narrative, but the operational means by which sorting, regulation, and discipline were carried out across domains.\",\"continuity_notes\":[\"This is background continuity from prior weeks rather than a new bureaucratic showdown.\",\"Best used to explain how seemingly technical policy changes were executable at scale.\",\"Avoid overemphasis unless the source materials explicitly describe staffing or agency-control details.\"],\"rewrite_priority\":\"supporting\",\"recommended_paragraph_weight\":2},{\"thread_id\":\"THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION\",\"canonical_name\":\"Security forces and emergency powers turned inward against domestic opposition and civic space\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"medium\",\"week_role\":\"background\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Immigration raids as disciplinary state action\",\"why_it_matters\":\"Raids can function as the operational vehicle for domestic coercion; the summary’s emphasis on discipline and enforcement gives this thread background relevance even if no major Guard deployment led the week.\"},{\"source_type\":\"digest\",\"source_ref\":\"weekly_digest_week27.md\",\"event_id\":null,\"development_id\":null,\"title\":\"Enforcement activity with coercive domestic posture\",\"why_it_matters\":\"Digest support indicates that the week’s immigration or internal enforcement activity carried a domestic-security flavor relevant to this thread.\"}],\"summary\":\"Domestic militarization did not dominate the week on its own terms, but coercive enforcement activity—especially raids—kept the inward-facing security posture alive in the background.\",\"continuity_notes\":[\"Treat as overlap with immigration rather than an independent lead.\",\"Use only if the rewrite needs to stress the coercive apparatus behind raids and domestic enforcement.\",\"Do not overstate militarization if the sources emphasize administration more than force display.\"],\"rewrite_priority\":\"supporting\",\"recommended_paragraph_weight\":2},{\"thread_id\":\"THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING\",\"canonical_name\":\"Elections, voting rules, and representation engineered for partisan entrenchment\",\"scope_level\":\"thread\",\"status\":\"continuing\",\"salience\":\"low\",\"week_role\":\"background\",\"is_present\":true,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"development_allocator\",\"source_ref\":\"development_allocator_week27.json\",\"event_id\":null,\"development_id\":null,\"title\":\"Potential election-administration or representation item in week structure\",\"why_it_matters\":\"The catalogue lists week 27 among supporting weeks, so allocator inclusion would justify retaining this thread in the package even if it is not central to the final narrative summary.\"}],\"summary\":\"Election-engineering appears relevant enough to retain in the week’s architecture but does not seem to be one of the principal explanatory frames given the final summary’s focus elsewhere.\",\"continuity_notes\":[\"Keep brief unless the digest contains a clearly substantial election-rule development.\",\"This is a classic downplay thread for a crowded week.\",\"If mentioned, tie it to the larger theme of technical systems being tuned for partisan power.\"],\"rewrite_priority\":\"mention_only\",\"recommended_paragraph_weight\":1},{\"thread_id\":\"THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION\",\"canonical_name\":\"Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized\",\"scope_level\":\"thread\",\"status\":\"dormant\",\"salience\":\"low\",\"week_role\":\"absent_but_relevant\",\"is_present\":false,\"carry_forward_from_prior_week\":true,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"Campus and disciplinary pressures imply chilling effects\",\"why_it_matters\":\"Even without a direct protest or journalist-centered episode in the summary, the week’s coercive moves against institutions and populations remain relevant to the broader anti-dissent trajectory.\"}],\"summary\":\"Anti-dissent suppression is not directly foregrounded this week, but the disciplinary treatment of campuses and targeted populations keeps the logic of chilling resistance in the background.\",\"continuity_notes\":[\"Use only as implicit context, not a standalone segment.\",\"Dormant rather than inactive because the week’s coercive institutional moves still resonate with the broader repression of dissent.\",\"Prefer folding any mention into campus coercion or immigration control.\"],\"rewrite_priority\":\"mention_only\",\"recommended_paragraph_weight\":1},{\"thread_id\":\"THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE\",\"canonical_name\":\"Uneven resistance by courts, states, legislatures, and civil society\",\"scope_level\":\"thread\",\"status\":\"inactive\",\"salience\":\"low\",\"week_role\":\"absent_but_relevant\",\"is_present\":false,\"carry_forward_from_prior_week\":false,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"No resistance frame in weekly summary\",\"why_it_matters\":\"The summary emphasizes coordinated state adjustment rather than meaningful pushback, suggesting resistance is not a shaping feature of this week’s narrative.\"}],\"summary\":\"There is no strong evidence that institutional resistance materially shaped the week; if present at all, it did not define the narrative structure.\",\"continuity_notes\":[\"Omit unless a source document contains a significant court or state pushback omitted from the final summary.\",\"The absence of a resistance frame may itself sharpen the week’s mood of coordinated consolidation.\"],\"rewrite_priority\":\"omit\",\"recommended_paragraph_weight\":0},{\"thread_id\":\"THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION\",\"canonical_name\":\"Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule\",\"scope_level\":\"sub_thread\",\"status\":\"inactive\",\"salience\":\"low\",\"week_role\":\"absent_but_relevant\",\"is_present\":false,\"carry_forward_from_prior_week\":false,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"No leader-symbolism emphasis\",\"why_it_matters\":\"The week is framed through technical governance and coercive systems rather than personalized symbolic dominance, so this sub-thread is not active here.\"}],\"summary\":\"Leader glorification does not appear to be a meaningful component of the week’s events or framing.\",\"continuity_notes\":[\"Omit.\",\"Do not import symbolic-personalist material from other weeks into this chapter.\"],\"rewrite_priority\":\"omit\",\"recommended_paragraph_weight\":0},{\"thread_id\":\"THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY\",\"canonical_name\":\"Epstein files, archival noncompliance, and elite-accountability conflict\",\"scope_level\":\"sub_thread\",\"status\":\"inactive\",\"salience\":\"low\",\"week_role\":\"absent_but_relevant\",\"is_present\":false,\"carry_forward_from_prior_week\":false,\"evidence_items\":[{\"source_type\":\"week_markdown\",\"source_ref\":\"week_summary\",\"event_id\":null,\"development_id\":null,\"title\":\"No Epstein-specific accountability struggle in week framing\",\"why_it_matters\":\"Nothing in the provided week summary indicates this late-year sub-thread is active in week 27.\"}],\"summary\":\"The Epstein-files sub-thread is not part of this week’s evidence or narrative logic.\",\"continuity_notes\":[\"Omit entirely.\",\"Do not gesture toward this sub-thread unless directly present in source materials.\"],\"rewrite_priority\":\"omit\",\"recommended_paragraph_weight\":0}],\"week_summary_notes\":[\"This is a systems week rather than a spectacle week: the chapter should emphasize coordinated adjustments across domains rather than search for one dominant single event.\",\"Immigration, economic-regulatory favoritism, and information management form the strongest three-part frame for understanding the week.\",\"Campus coercion matters because it shows the disciplinary model extending beyond the formal state into semi-independent institutions.\",\"Law and executive power are present mainly as enabling structures, not as the week’s most vivid standalone storyline.\",\"The week’s mood is technocratic normalization: coercion and favoritism are presented as routine administration.\"],\"rewrite_guidance\":{\"lead_threads\":[\"THR_IMMIGRATION_AS_CONTROL\",\"THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION\",\"THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS\"],\"supporting_threads\":[\"THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION\",\"THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY\",\"THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER\",\"THR_ADMIN_STATE_CAPTURE\",\"THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE\"],\"background_threads\":[\"THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION\",\"THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING\",\"THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION\"],\"threads_to_downplay\":[\"THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING\",\"THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION\",\"THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION\"],\"threads_to_omit\":[\"THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE\",\"THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION\",\"THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY\"],\"opening_focus\":\"Open on the week as a dispersed but coherent exercise in state sorting: raids, rules, settlements, and codes all presented as technical adjustments while collectively deepening coercive governance.\",\"closing_focus\":\"Close on the convergence of law, money, and information into a governing system that serves power first and leaves the public as an afterthought.\",\"continuity_emphasis_notes\":[\"Stress that immigration remains one of the administration’s most durable domestic control mechanisms.\",\"Use information control as connective tissue: the state not only coerces but also defines how coercion is described and justified.\",\"Show campus settlements as a reactivated example of pressure on semi-independent institutions.\",\"Keep executive overreach and administrative capture in the background as enabling conditions rather than headline topics.\",\"The week should read as consolidation through procedure, not rupture through spectacle.\"]}}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": null,
+  "reasoning": {
+    "effort": "none",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": true,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "weekly_thread_package",
+      "schema": {
+        "title": "Trump Diary Weekly Thread Package",
+        "description": "Week-level thread-state package used to drive thread-conscious chapter rewrites for The Trump Diary.",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema_name",
+          "schema_version",
+          "package_type",
+          "scope",
+          "build",
+          "catalog_reference",
+          "sources",
+          "week",
+          "thread_states",
+          "week_summary_notes",
+          "rewrite_guidance"
+        ],
+        "properties": {
+          "schema_name": {
+            "type": "string",
+            "const": "weekly_thread_package"
+          },
+          "schema_version": {
+            "type": "string",
+            "const": "1.0"
+          },
+          "package_type": {
+            "type": "string",
+            "const": "thread_state_package"
+          },
+          "scope": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "project",
+              "period_label",
+              "week_number"
+            ],
+            "properties": {
+              "project": {
+                "type": "string"
+              },
+              "period_label": {
+                "type": "string"
+              },
+              "week_number": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          },
+          "build": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "created_at",
+              "created_by",
+              "model",
+              "run_id",
+              "prompt_version",
+              "git_commit"
+            ],
+            "properties": {
+              "created_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "model": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "run_id": {
+                "type": "string"
+              },
+              "prompt_version": {
+                "type": "string"
+              },
+              "git_commit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "catalog_reference": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "catalog_file",
+              "catalog_run_id",
+              "catalog_schema_name",
+              "catalog_schema_version"
+            ],
+            "properties": {
+              "catalog_file": {
+                "type": "string"
+              },
+              "catalog_run_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "catalog_schema_name": {
+                "type": "string"
+              },
+              "catalog_schema_version": {
+                "type": "string"
+              }
+            }
+          },
+          "sources": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "week_final_markdown",
+              "development_allocator_file",
+              "digest_file",
+              "event_log_file",
+              "prior_week_thread_package"
+            ],
+            "properties": {
+              "week_final_markdown": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "development_allocator_file": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "digest_file": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "event_log_file": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "prior_week_thread_package": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "week": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "week_number",
+              "start_date",
+              "end_date",
+              "headline",
+              "summary"
+            ],
+            "properties": {
+              "week_number": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "start_date": {
+                "type": "string"
+              },
+              "end_date": {
+                "type": "string"
+              },
+              "headline": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "summary": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "thread_states": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/thread_state"
+            }
+          },
+          "week_summary_notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rewrite_guidance": {
+            "$ref": "#/$defs/rewrite_guidance"
+          }
+        },
+        "$defs": {
+          "thread_state": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "thread_id",
+              "canonical_name",
+              "scope_level",
+              "status",
+              "salience",
+              "week_role",
+              "is_present",
+              "carry_forward_from_prior_week",
+              "evidence_items",
+              "summary",
+              "continuity_notes",
+              "rewrite_priority",
+              "recommended_paragraph_weight"
+            ],
+            "properties": {
+              "thread_id": {
+                "type": "string",
+                "pattern": "^THR_[A-Z0-9_]{3,100}$"
+              },
+              "canonical_name": {
+                "type": "string"
+              },
+              "scope_level": {
+                "type": "string",
+                "enum": [
+                  "super_thread",
+                  "thread",
+                  "sub_thread"
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "new",
+                  "continuing",
+                  "dormant",
+                  "reborn",
+                  "inactive"
+                ]
+              },
+              "salience": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "week_role": {
+                "type": "string",
+                "enum": [
+                  "primary",
+                  "secondary",
+                  "background",
+                  "absent_but_relevant"
+                ]
+              },
+              "is_present": {
+                "type": "boolean"
+              },
+              "carry_forward_from_prior_week": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "evidence_items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/evidence_item"
+                }
+              },
+              "summary": {
+                "type": "string"
+              },
+              "continuity_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "rewrite_priority": {
+                "type": "string",
+                "enum": [
+                  "lead",
+                  "major",
+                  "supporting",
+                  "mention_only",
+                  "omit"
+                ]
+              },
+              "recommended_paragraph_weight": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "evidence_item": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_type",
+              "source_ref",
+              "event_id",
+              "development_id",
+              "title",
+              "why_it_matters"
+            ],
+            "properties": {
+              "source_type": {
+                "type": "string",
+                "enum": [
+                  "development_allocator",
+                  "digest",
+                  "event_log",
+                  "week_markdown",
+                  "other"
+                ]
+              },
+              "source_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "event_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "development_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "why_it_matters": {
+                "type": "string"
+              }
+            }
+          },
+          "rewrite_guidance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "lead_threads",
+              "supporting_threads",
+              "background_threads",
+              "threads_to_downplay",
+              "threads_to_omit",
+              "opening_focus",
+              "closing_focus",
+              "continuity_emphasis_notes"
+            ],
+            "properties": {
+              "lead_threads": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^THR_[A-Z0-9_]{3,100}$"
+                }
+              },
+              "supporting_threads": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^THR_[A-Z0-9_]{3,100}$"
+                }
+              },
+              "background_threads": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^THR_[A-Z0-9_]{3,100}$"
+                }
+              },
+              "threads_to_downplay": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^THR_[A-Z0-9_]{3,100}$"
+                }
+              },
+              "threads_to_omit": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^THR_[A-Z0-9_]{3,100}$"
+                }
+              },
+              "opening_focus": {
+                "type": "string"
+              },
+              "closing_focus": {
+                "type": "string"
+              },
+              "continuity_emphasis_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 13193,
+    "input_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "output_tokens": 5315,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18508
+  },
+  "user": null,
+  "metadata": {}
+}

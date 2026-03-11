@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase2_timeline_output.schema.json",
+  "title": "Trump Chronicles Timeline By Week Output",
+  "description": "Schema for the back-matter Timeline by Week appendix output for Trump Chronicles.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "section",
+    "book_title",
+    "generated_from",
+    "entries"
+  ],
+  "properties": {
+    "schema_name": {
+      "type": "string",
+      "const": "phase2_timeline_output"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "section": {
+      "type": "string",
+      "const": "timeline_by_week"
+    },
+    "book_title": {
+      "type": "string"
+    },
+    "generated_from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metadata_stack",
+        "weekly_spine"
+      ],
+      "properties": {
+        "metadata_stack": {
+          "type": "string"
+        },
+        "weekly_spine": {
+          "type": "string"
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/timeline_entry"
+      }
+    }
+  },
+  "$defs": {
+    "timeline_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week",
+        "start_date",
+        "end_date",
+        "date_display",
+        "chapter_title",
+        "gloss",
+        "source_priority_used"
+      ],
+      "properties": {
+        "week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "end_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "date_display": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chapter_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gloss": {
+          "type": "string",
+          "minLength": 1,
+          "description": "One-sentence reader-facing gloss describing the week’s main democratic significance."
+        },
+        "source_priority_used": {
+          "type": "string",
+          "enum": [
+            "metadata.week_summary",
+            "metadata.short_synopsis",
+            "spine.week_summary",
+            "metadata.long_synopsis",
+            "whole_week_arcs"
+          ]
+        }
+      }
+    }
+  }
+}

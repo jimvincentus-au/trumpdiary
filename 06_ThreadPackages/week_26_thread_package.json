@@ -1,0 +1,522 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 26
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "1.0",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_034ac829fb9e435e0069af9ca6229c8196a3071fd87f5906b3"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 26/step5_narrative_week26_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 26/development_allocator_week26.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 26/weekly_digest_week26.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_25_thread_package.json"
+  },
+  "week": {
+    "week_number": 26,
+    "start_date": "2025-07-12",
+    "end_date": "2025-07-18",
+    "headline": "The twenty-sixth week of Trump’s second term did not hinge on a single shock.",
+    "summary": "The twenty-sixth week of Trump’s second term did not hinge on a single shock. It unfolded instead as a week in which the tools of government were tuned a little finer to the needs of those in power. Immigration raids, staffing orders, budget cuts, and court rulings arrived as separate stories. Together, they described a state that was learning how to use its reach—over bodies, data, money, and memory—with greater confidence and less restraint."
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 final summary/headline",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration raids are named as one of the defining instruments of the week",
+          "why_it_matters": "The week summary explicitly places raids among the separate stories that together define the state’s expanding coercive reach, making immigration enforcement a central operating mechanism this week."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Raids and immigration enforcement actions recur in the weekly digest",
+          "why_it_matters": "Digest-level recurrence shows this was not a passing mention but an active weekly line of development tied to coercive governance."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week26.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration/deportation machinery allocated as a week development",
+          "why_it_matters": "Allocator inclusion indicates the source set treated immigration enforcement as a structured development worth carrying into narrative emphasis."
+        }
+      ],
+      "summary": "Immigration remains one of the clearest active coercive systems in the week. Raids and enforcement actions are not isolated incidents here; they are part of the broader portrait of a government using state reach more confidently over vulnerable populations.",
+      "continuity_notes": [
+        "This thread is year-long and clearly carries forward from prior weeks rather than debuting here.",
+        "Week 26 continues the shift from immigration policy as border politics to immigration as a domestic control apparatus.",
+        "If prior week 25 foregrounded coercive enforcement, week 26 reads as consolidation rather than escalation-by-shock."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Staffing orders and budget cuts are central to the week's meaning",
+          "why_it_matters": "The summary explicitly links staffing orders and budget cuts to the idea that government tools are being tuned to serve those in power, which is a direct expression of administrative capture."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Agency actions and management decisions structure the week",
+          "why_it_matters": "Digest treatment of staffing and institutional changes suggests the bureaucracy itself is being reshaped as the mechanism of control."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week26.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Administrative restructuring appears as a mapped development",
+          "why_it_matters": "Allocator support shows this is not incidental context but one of the week’s defined lines of state action."
+        }
+      ],
+      "summary": "Week 26 strongly advances the administrative-capture thread through personnel control, management directives, and cuts that weaken neutral capacity while increasing political control. The week’s frame is less spectacle than institutional tuning.",
+      "continuity_notes": [
+        "This is a mature thread that clearly continues from earlier DOGE-style and loyalist-control episodes.",
+        "Week 26 emphasizes refinement and normalization rather than first-wave purge drama.",
+        "The rewrite should connect budget cuts and staffing directives as part of one governing method rather than separate bureaucratic stories."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "The week's synthesis includes state reach over data and memory",
+          "why_it_matters": "The week summary explicitly identifies data and memory as domains of tightening control, making information management part of the explanatory structure of the week."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Data or records-related governance actions appear in the digest",
+          "why_it_matters": "Digest evidence supports that information control is operational, not merely thematic language in the summary."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week26.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Knowledge/records manipulation included as a development strand",
+          "why_it_matters": "Allocator inclusion indicates practical rewrite relevance for this thread even if it is not the sole lead frame."
+        }
+      ],
+      "summary": "Information control is a meaningful supporting thread this week, especially because the chapter’s own synthesis highlights state reach over data and memory. The thread helps explain how administrative actions and legal maneuvers also shape what can be known and preserved.",
+      "continuity_notes": [
+        "This remains a durable continuing thread from earlier archive, data, and narrative-management fights.",
+        "Week 26 uses information control more as connective tissue than as the single dominant storyline.",
+        "The rewrite should tie data and memory control to the broader institutionalization of power rather than isolate it as a media story."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Court rulings are listed as one of the component stories shaping the week",
+          "why_it_matters": "The presence of court rulings in the week’s core synthesis suggests legal process remains part of how power is distributed and constrained unevenly."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal and court developments appear among weekly items",
+          "why_it_matters": "Digest inclusion indicates legal process matters this week, though likely as one supporting mechanism rather than the dominant frame."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week26.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Justice/court-related developments carried in weekly allocation",
+          "why_it_matters": "Allocator support gives this thread enough grounding to retain as a secondary layer in the rewrite."
+        }
+      ],
+      "summary": "Law is present this week less as a standalone scandal than as one of the systems through which unequal power is maintained. Court rulings and legal process contribute to the atmosphere of selective restraint and practical impunity.",
+      "continuity_notes": [
+        "This thread was active in prior weeks and remains in motion here, though not at peak intensity.",
+        "The rewrite should avoid overclaiming unless specific rulings clearly demonstrate asymmetry; frame it as a supporting legal architecture.",
+        "Useful as a bridge between executive method and the practical consequences for targets and allies."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Immigration raids are framed as instruments of state reach over bodies",
+          "why_it_matters": "When raids are narrated as part of expanding state reach over bodies, the coercive-security dimension becomes relevant, especially where immigration operations function as inward-directed force."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Enforcement actions carry a militarized or coercive operational profile",
+          "why_it_matters": "Digest evidence likely supports the operational overlap between immigration enforcement and domestic security-style tactics."
+        }
+      ],
+      "summary": "Domestic militarization is present through the coercive operational character of raids and enforcement, though it does not fully overtake immigration as the main frame. It helps describe the style of state action more than the week’s constitutional theory.",
+      "continuity_notes": [
+        "This thread has been active in recent weeks and continues through enforcement tactics rather than a headline Guard deployment.",
+        "Keep it subordinate to immigration unless the source material shows explicit security-force escalation.",
+        "Useful for describing how coercive methods are becoming normalized in domestic governance."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Court rulings and unilateral governing tools sit in the background of the week",
+          "why_it_matters": "Even if the week is not led by a fresh emergency-power showdown, the summary’s emphasis on low-restraint governing implies weakened checks remain part of the interpretive backdrop."
+        },
+        {
+          "source_type": "other",
+          "source_ref": "prior week thread package context",
+          "event_id": null,
+          "development_id": null,
+          "title": "Prior-week continuity likely carried executive-power concerns forward",
+          "why_it_matters": "The supplied prior-week package is relevant for judging this as continuing context rather than a newly foregrounded constitutional clash."
+        }
+      ],
+      "summary": "Executive overreach remains part of the week’s constitutional backdrop, but Week 26 is told more effectively through the concrete machinery of agencies, raids, cuts, and rulings than through an abstract emergency-rule frame.",
+      "continuity_notes": [
+        "The underlying pattern of weakened checks remains relevant even if not freshly developed this week.",
+        "Use sparingly as context for how these separate policy arenas became possible.",
+        "Do not let this umbrella thread flatten more concrete administrative and immigration mechanisms."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Budget cuts and state retuning imply governance aligned to those in power",
+          "why_it_matters": "The summary language suggests policy is being adjusted to serve insiders, but without specific profit-taking or patronage evidence this week the thread stays contextual rather than active."
+        }
+      ],
+      "summary": "The week’s logic of government being tuned to the needs of those in power brushes against the crony-capitalism thread, but the supplied summary does not make insider enrichment the central mechanism.",
+      "continuity_notes": [
+        "Carry as contextual resonance from prior weeks, not as a foregrounded narrative line.",
+        "Only mention if the rewrite can tie specific cuts or directives to favored interests.",
+        "Otherwise keep the focus on capture and coercion rather than profiteering."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "new",
+      "salience": "low",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week26.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Election-rule or representation issue appears in weekly allocation",
+          "why_it_matters": "The catalogue marks week 26 as a supporting week for this thread, and allocator inclusion would justify treating it as a newly meaningful but not dominant weekly strand."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week26.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Digest includes an election-administration or representation-related item",
+          "why_it_matters": "This supports identifying the thread as present in the week without elevating it to the main frame."
+        }
+      ],
+      "summary": "Election engineering appears to enter the week as a real but secondary development. It matters as an early sign of structural entrenchment rather than as the central storyline of Week 26.",
+      "continuity_notes": [
+        "Catalog support begins here for this thread in the late-spring/summer sequence, so 'new' is appropriate at the week-package level if prior week 25 did not foreground it.",
+        "Keep treatment brief unless the source materials show a concrete rule change with broader implications.",
+        "Useful as a side signal that coercive governance is extending into representation rules."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "The week emphasizes state reach over bodies and belonging-adjacent systems",
+          "why_it_matters": "Although not directly foregrounded, the week’s coercive themes still sit within the broader year-long hierarchy of rights and belonging."
+        }
+      ],
+      "summary": "The anti-equality order is not directly developed as a standalone story this week, but it remains a relevant backdrop because immigration and administrative actions continue to sort populations into more and less protected categories.",
+      "continuity_notes": [
+        "Keep this in reserve as interpretive context, especially where immigration enforcement implies differential belonging.",
+        "Do not foreground unless the week materials include explicit identity-targeting policy."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "No strong evidence in the supplied week frame indicates that universities, law firms, or comparable civil-society institutions are a meaningful independent target this week.",
+      "continuity_notes": [
+        "Do not force this thread into the rewrite merely because adjacent information-control themes are present.",
+        "Omit unless a specific weekly item clearly centers institutional coercion of semi-independent organizations."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "The supplied week summary stresses coercive governance broadly, but does not clearly center dissenters, journalists, or organized opposition as the week’s direct target.",
+      "continuity_notes": [
+        "Leave out unless specific raids, rulings, or legal actions are explicitly aimed at protest or opposition communities.",
+        "Do not substitute this thread for the more concrete immigration and administrative-control lines."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "There is no meaningful evidence that leader-glorification or personalist symbolism is a driver of Week 26.",
+      "continuity_notes": [
+        "Omit entirely for this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "This late-year sub-thread is not active in Week 26.",
+      "continuity_notes": [
+        "Omit entirely for this week."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "week 26 summary",
+          "event_id": null,
+          "development_id": null,
+          "title": "Court rulings appear, but not as a resistance-centered week",
+          "why_it_matters": "The presence of rulings does not by itself make resistance the weekly frame; the summary instead stresses the state’s growing confidence and reduced restraint."
+        }
+      ],
+      "summary": "While courts appear in the week, resistance is not the story. The overall balance of the week favors consolidation of power rather than meaningful pushback.",
+      "continuity_notes": [
+        "Any court constraint should be treated as limited friction, not as a coequal theme.",
+        "Avoid ending the chapter on false reassurance."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "Week 26 is best understood as a consolidation week: dispersed actions across immigration, staffing, budgets, and courts combine into one pattern of more confident state use.",
+    "The strongest collision is between administrative state capture and immigration as control; together they show both the machinery and the targets of coercive governance.",
+    "Information control matters as connective tissue because the week’s own synthesis highlights power over data and memory alongside bodies and money.",
+    "Executive overreach is real but should remain background; this week works better through concrete mechanisms than constitutional abstraction.",
+    "Court activity should not be overread as resistance; the narrative balance remains one of tightened reach and reduced restraint."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_ADMIN_STATE_CAPTURE",
+      "THR_IMMIGRATION_AS_CONTROL"
+    ],
+    "supporting_threads": [
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION"
+    ],
+    "background_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+    ],
+    "threads_to_downplay": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING"
+    ],
+    "threads_to_omit": [
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "opening_focus": "Open on the absence of a single spectacular rupture and frame the week instead as one of institutional calibration: raids, staffing orders, cuts, and rulings all showing government being tuned for more disciplined political control.",
+    "closing_focus": "Close on the idea that the week’s significance lies in normalization—the state learning to exercise reach over bodies, data, money, and memory with greater confidence and less visible restraint.",
+    "continuity_emphasis_notes": [
+      "Emphasize that immigration enforcement is no longer a separate policy lane but part of a wider domestic coercive model.",
+      "Link staffing orders and budget cuts as two sides of the same administrative-capture process: replacing neutrality with obedience while shrinking independent capacity.",
+      "Use information control as a bridge thread connecting administrative change to the management of data, records, and public memory.",
+      "Treat legal and court developments as part of the operating environment, not as evidence that checks are regaining strength.",
+      "Keep the chapter disciplined: two lead threads, a few supporting mechanisms, and minimal diversion into weaker side stories."
+    ]
+  }
+}

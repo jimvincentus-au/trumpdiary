@@ -1,0 +1,506 @@
+{
+  "schema_name": "weekly_thread_package_manifest",
+  "schema_version": "1.0",
+  "program_name": "build_weekly_thread_package_v1",
+  "program_version": "1.0.0",
+  "created_at": "2026-03-10T03:50:55Z",
+  "run_id": "20260310T035055Z",
+  "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+  "parameters": {
+    "week": 1,
+    "weeks": 53,
+    "end_week": 53,
+    "input_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs",
+    "prompt_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/12_Prompts/weekly_thread_package_prompt_v1.md",
+    "schema_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/11_Schemas/weekly_thread_package.schema.json",
+    "output_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages",
+    "raw_output_dir": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses",
+    "model": "gpt-5.4",
+    "api_base": "https://api.openai.com/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "timeout_seconds": 600,
+    "dry_run": false,
+    "force": true,
+    "level": "debug"
+  },
+  "week_count": 53,
+  "weeks": [
+    {
+      "week_number": 1,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_01_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_01_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_01_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0bd80ca786678fbd0069af95201a8c819fbf4e48bf4dcb1d37"
+    },
+    {
+      "week_number": 2,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_02_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_02_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_02_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0fbb128be5d108e10069af956e2b4881a2af01eb1038bc1899"
+    },
+    {
+      "week_number": 3,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_03_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_03_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_03_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ef2aa0872f74bf10069af95bfc40081a39756d310b5aa0131"
+    },
+    {
+      "week_number": 4,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_04_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_04_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_04_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0e0861776f073f310069af9611d6d8819cac95051911d5e765"
+    },
+    {
+      "week_number": 5,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_05_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_05_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_05_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0d348cbd9d416ae30069af96588340819d973eb8d93684a88f"
+    },
+    {
+      "week_number": 6,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_06_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_06_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_06_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0d21e284aea905f40069af96a82c0c81a282b0a5bc4d9e7759"
+    },
+    {
+      "week_number": 7,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_07_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_07_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_07_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_009f25a2beb2640e0069af96e62ce48192a9c3b78a8ef46c69"
+    },
+    {
+      "week_number": 8,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_08_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_08_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_08_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_084b7f60d32bef090069af9742f3948195849e8903815e536b"
+    },
+    {
+      "week_number": 9,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_09_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_09_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_09_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_00a933d58527cb800069af979a0d388190a2f3c950b3c3a657"
+    },
+    {
+      "week_number": 10,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_10_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_10_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_10_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_074d1b56ac860dc00069af97dd67c88190a300ba8104bb3198"
+    },
+    {
+      "week_number": 11,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_11_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_11_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_11_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0656e65d90c1044e0069af98280c8481968a224c1683e7984d"
+    },
+    {
+      "week_number": 12,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_12_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_12_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_12_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04ad1643b42a69c10069af9873c8ac8193a56e331e866575ea"
+    },
+    {
+      "week_number": 13,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_13_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_13_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_13_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_09df770c8313ffc90069af98c7888c81a28910b5786948cc91"
+    },
+    {
+      "week_number": 14,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_14_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_14_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_14_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04c6d470d47e74670069af9910617081a089e232bca4ad596a"
+    },
+    {
+      "week_number": 15,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_15_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_15_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_15_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0e75459286728b390069af995bb380819e98c91fc55c5193ba"
+    },
+    {
+      "week_number": 16,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_16_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_16_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_16_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04d23d699d3654700069af99b109fc819f99b5ee0ad9a71b3b"
+    },
+    {
+      "week_number": 17,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_17_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_17_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_17_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0617585dec30a85d0069af99f956ec8192911d28e9fc2eb078"
+    },
+    {
+      "week_number": 18,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_18_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_18_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_18_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_02911ba3372ba0b30069af9a489d5c8192ad030c1f493a5d97"
+    },
+    {
+      "week_number": 19,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_19_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_19_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_19_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_09d09a6fd54ec2ac0069af9a95ba68819eb55fd4c63e444ee5"
+    },
+    {
+      "week_number": 20,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_20_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_20_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_20_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0086e58f3b7becb10069af9add33a481938a14987eeaa015b1"
+    },
+    {
+      "week_number": 21,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_21_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_21_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_21_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_007b679926c428f80069af9b30e9088193a6b7d71d73fb5b3e"
+    },
+    {
+      "week_number": 22,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_22_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_22_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_22_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04c6d126ccad9d550069af9b7a71e0819487a6b36c8fd1495d"
+    },
+    {
+      "week_number": 23,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_23_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_23_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_23_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0b27d8d5f7e30a550069af9bcbdd1c819c826bf1083aad9ffa"
+    },
+    {
+      "week_number": 24,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_24_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_24_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_24_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0c632244458611770069af9c0e7e648190942254470f63043a"
+    },
+    {
+      "week_number": 25,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_25_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_25_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_25_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_03ce0915ca0aa0660069af9c56960081949038f40d2c53af23"
+    },
+    {
+      "week_number": 26,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_26_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_26_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_26_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_034ac829fb9e435e0069af9ca6229c8196a3071fd87f5906b3"
+    },
+    {
+      "week_number": 27,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_27_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_27_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_27_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0065aec196073c4b0069af9cf2e1d881949f851e0e26d1a2cc"
+    },
+    {
+      "week_number": 28,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_28_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_28_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_28_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_05f1056fd8014b8a0069af9d3f63008195a792fe6c1e3c3012"
+    },
+    {
+      "week_number": 29,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_29_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_29_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_29_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0149a4346bf01bb30069af9d95a2f88193b6fb494fd6eb3e10"
+    },
+    {
+      "week_number": 30,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_30_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_30_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_30_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0daa5cbffe44f6fb0069af9de211e481958867dc3ddfdf4f4b"
+    },
+    {
+      "week_number": 31,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_31_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_31_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_31_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04a261fb06461be90069af9e36ebfc819fa63b58b1a61bb74c"
+    },
+    {
+      "week_number": 32,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_32_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_32_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_32_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_086a8698c712e7800069af9e7d307881968359f94187709798"
+    },
+    {
+      "week_number": 33,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_33_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_33_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_33_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ae601bec74e53160069af9eceb5e88191932f10dd80d25cb7"
+    },
+    {
+      "week_number": 34,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_34_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_34_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_34_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0e48b27b978700160069af9f120054819685dc31f37f451185"
+    },
+    {
+      "week_number": 35,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_35_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_35_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_35_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_065236634d54eaab0069af9f63c4ac819095f1f8d2d18d00fb"
+    },
+    {
+      "week_number": 36,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_36_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_36_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_36_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_02c0750a0a8f4ea40069af9fba50e48194baf73035b1e78eb1"
+    },
+    {
+      "week_number": 37,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_37_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_37_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_37_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_014bb80c723e77c20069afa0125880819e9f0a08fae22c3757"
+    },
+    {
+      "week_number": 38,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_38_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_38_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_38_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_05637f08964b58ac0069afa059e3848192996baab99a99cdf7"
+    },
+    {
+      "week_number": 39,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_39_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_39_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_39_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0282490606c2097d0069afa09cebb481a3be79e0141d27673c"
+    },
+    {
+      "week_number": 40,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_40_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_40_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_40_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_03ab3cda0c8c10b00069afa0ea8f2c819fa28575797e2cb66b"
+    },
+    {
+      "week_number": 41,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_41_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_41_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_41_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0228b63726d08bbc0069afa142e19c81948ba5e0978d9dca80"
+    },
+    {
+      "week_number": 42,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_42_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_42_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_42_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0b93cd29231084320069afa18c51b0819c8b6844c9bc9f5a68"
+    },
+    {
+      "week_number": 43,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_43_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_43_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_43_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0af88eca183076190069afa1db40408192aaabe3bd6a27e6d6"
+    },
+    {
+      "week_number": 44,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_44_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_44_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_44_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_041ad0af9136fda10069afa2340b908195bcac9983c053b0ac"
+    },
+    {
+      "week_number": 45,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_45_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_45_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_45_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_03d594d2a10f7fc30069afa288532881969430dff339c010bd"
+    },
+    {
+      "week_number": 46,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_46_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_46_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_46_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0d92438ecaf58a8f0069afa2e03bd88194a3424ec5fd715683"
+    },
+    {
+      "week_number": 47,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_47_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_47_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_47_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0326d200afdfb2ab0069afa33c70588197b2eba4b7f2929717"
+    },
+    {
+      "week_number": 48,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_48_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_48_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_48_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_04fd1dcf91af4a250069afa38a287081a2b9aebe0eb6ead494"
+    },
+    {
+      "week_number": 49,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_49_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_49_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_49_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_07032f95e747825c0069afa3e6dfe8819794e44d0359da82fe"
+    },
+    {
+      "week_number": 50,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_50_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_50_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_50_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_07c797432f561c810069afa4347b18819699165bd1b2f7658c"
+    },
+    {
+      "week_number": 51,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_51_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_51_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_51_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_02c95a85b06f2f410069afa487617481919ed5e28617614f8e"
+    },
+    {
+      "week_number": 52,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_52_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_52_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_52_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_0ee5774613625de60069afa4d47f188194b7c8bc31433a5a23"
+    },
+    {
+      "week_number": 53,
+      "input_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/05_WeeklyThreadInputs/week_53_thread_input.json",
+      "output_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_53_thread_package.json",
+      "raw_response_path": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/_raw_responses/week_53_thread_package_raw_response.json",
+      "requested_model": "gpt-5.4",
+      "actual_model": "gpt-5.4-2026-03-05",
+      "response_id": "resp_06806b8df58e82430069afa51f716c81979fa5dded581055bb"
+    }
+  ]
+}

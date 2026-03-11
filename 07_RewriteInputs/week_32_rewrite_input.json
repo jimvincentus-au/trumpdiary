@@ -1,0 +1,608 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 32
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 32,
+    "start_date": "2025-08-23",
+    "end_date": "2025-08-29",
+    "headline": "The week did not turn on a single order or speech.",
+    "summary": "The week did not turn on a single order or speech. It unfolded as a series of moves that, taken together, showed a government more willing to rule by decree, to treat opposition as a security problem, and to sort people into tiers of protection and risk. The pattern was not new, but the confidence with which it was applied across policing, elections, labor, and memory gave the period its weight. It felt coordinated, not incidental."
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_32_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/weekly_digest_final_week32.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/development_allocator_week32.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/weekly_digest_final_week32.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 32
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_086a8698c712e7800069af9e7d307881968359f94187709798"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/step5_narrative_week32_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/development_allocator_week32.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 32/weekly_digest_week32.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_31_thread_package.json"
+    },
+    "week": {
+      "week_number": 32,
+      "start_date": "2025-08-23",
+      "end_date": "2025-08-29",
+      "headline": "The week did not turn on a single order or speech.",
+      "summary": "The week did not turn on a single order or speech. It unfolded as a series of moves that, taken together, showed a government more willing to rule by decree, to treat opposition as a security problem, and to sort people into tiers of protection and risk. The pattern was not new, but the confidence with which it was applied across policing, elections, labor, and memory gave the period its weight. It felt coordinated, not incidental."
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "reborn",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 headline/summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Government ruling by decree as week-level frame",
+            "why_it_matters": "The week summary explicitly frames the period as one of governing by decree rather than ordinary process, making executive unilateralism a central explanatory thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Cross-domain unilateral moves",
+            "why_it_matters": "The digest is identified as covering moves across policing, elections, labor, and memory; that breadth suggests the presidency and aligned apparatus acting across domains with weakened procedural restraint."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week32.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator likely distributes multiple institutional moves rather than one flagship act",
+            "why_it_matters": "The week is described as a cumulative pattern rather than a single speech or order, which fits an overreach frame built from many unilateral decisions accruing into a governing method."
+          }
+        ],
+        "summary": "Executive overreach returns to the foreground this week not as a single emergency proclamation but as an accumulated mode of rule: decisions taken across several policy areas with decree-like confidence and reduced regard for ordinary checks.",
+        "continuity_notes": [
+          "The underlying constitutional pattern has been durable year-wide, but this week reactivates it as an explicit framing device after recent weeks in which narrower security or election threads may have carried more of the burden.",
+          "Treat this as the method-level thread tying together otherwise separate developments in policing, labor, elections, and memory.",
+          "Emphasize that the week's significance lies in normalization of unilateral governance rather than spectacle."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Opposition treated as a security problem",
+            "why_it_matters": "The summary directly states that the government was increasingly willing to treat opposition as a security problem, which is almost definitional for this thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Policing developments as part of the week's pattern",
+            "why_it_matters": "Policing is named among the week's key domains, indicating that domestic coercive apparatus, not just rhetoric, helped structure the week's events."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week32.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Security logic spread across civic space",
+            "why_it_matters": "Allocator support for policing-linked developments would confirm that domestic force and emergency-style logic remain operational rather than merely thematic."
+          }
+        ],
+        "summary": "Domestic militarization remains one of the week's main drivers, with policing and security framing helping convert political opposition into a target of internal control.",
+        "continuity_notes": [
+          "This is a carry-forward thread from recent weeks rather than a new development.",
+          "Keep the focus concrete: security logic turned inward, not abstract authoritarian mood.",
+          "Link it to executive overreach, but do not let the constitutional umbrella erase the operational coercive apparatus."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Opposition reframed as threat",
+            "why_it_matters": "The week's own summary says opposition was treated as a security problem, which indicates dissent itself was being recoded as punishable or dangerous."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Policing and related coercive moves",
+            "why_it_matters": "When policing developments are part of the week's architecture, they often matter because they chill or neutralize opposition, not merely because force is available."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 headline",
+            "event_id": null,
+            "development_id": null,
+            "title": "No single event but a cumulative suppressive pattern",
+            "why_it_matters": "The absence of one marquee order underscores that the suppression of dissent is embedded in a sequence of smaller actions, which should shape the rewrite's tone."
+          }
+        ],
+        "summary": "The week treated organized opposition less as legitimate democratic contestation than as a category to be managed, chilled, or securitized, making anti-dissent suppression a co-equal frame with domestic militarization.",
+        "continuity_notes": [
+          "This overlaps with domestic militarization but should be retained because the target is political opposition itself.",
+          "Use this thread to interpret why policing developments matter narratively.",
+          "Stress that the week's pattern was cumulative and normalized rather than episodic."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Elections named as one of the core domains",
+            "why_it_matters": "The week summary specifically includes elections among the areas where the governing pattern was applied, making this a direct rather than inferred thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Election-related procedural or administrative moves",
+            "why_it_matters": "The digest is expected to contain the concrete election developments supporting the summary's claim that electoral administration was part of the week's coordinated pattern."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week32.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator support for election-engineering material",
+            "why_it_matters": "If development slots were assigned to voting rules, representation, or election administration, that would justify treating this as a real supporting thread rather than rhetorical backdrop."
+          }
+        ],
+        "summary": "Election manipulation remains active this week as part of the broader pattern of rule by structure rather than persuasion, but it supports the week's main coercion-and-decree frame rather than replacing it.",
+        "continuity_notes": [
+          "This thread was already active in prior weeks and carries forward cleanly.",
+          "Keep it subordinate to the larger story of governance by decree and internal control.",
+          "Use one clear example if available, not a sprawling subchapter."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "People sorted into tiers of protection and risk",
+            "why_it_matters": "That language directly signals a hierarchy of public belonging and unequal protection, which is central to this thread."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Cross-domain stratification effects",
+            "why_it_matters": "Because the week spans policing, elections, labor, and memory, the key narrative role of this thread is to show who is protected, who is exposed, and how the hierarchy is distributed."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week32.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Allocator evidence of rights-tiering consequences",
+            "why_it_matters": "Any development coded to labor, identity, or public recognition would help ground the summary's hierarchy-of-risk framing in specific institutional effects."
+          }
+        ],
+        "summary": "Beyond coercion alone, the week was organized by unequal distribution of safety, legitimacy, and standing; this makes the anti-equality order an important supporting thread.",
+        "continuity_notes": [
+          "Use this thread to interpret the meaning of the week's sorting language, not just to list identity-policy items.",
+          "Connect it to immigration where relevant, but do not force immigration to carry all hierarchy-of-belonging material.",
+          "Best used as an interpretive layer beneath elections, labor, and policing."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Memory named as a domain of coordinated action",
+            "why_it_matters": "The summary explicitly includes memory among the areas where the pattern was applied, making public-memory control a concrete part of the week."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Memory or record-related developments",
+            "why_it_matters": "The digest should provide the specific acts of curation, erasure, or symbolic control that justify the week's memory-politics element."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary final sentence",
+            "event_id": null,
+            "development_id": null,
+            "title": "Pattern felt coordinated, not incidental",
+            "why_it_matters": "Information control often matters most when it is integrated with other governing moves; the summary's coordination language supports that interpretation."
+          }
+        ],
+        "summary": "Memory politics is not incidental this week; it is one of the domains through which the administration displayed confidence in shaping what counts as public reality and legitimate historical understanding.",
+        "continuity_notes": [
+          "This is a durable year-long thread and clearly active here.",
+          "Use it to show that control was exercised not only through force and rules but through narrative and memory institutions.",
+          "If examples are thin, keep treatment concise but explicit."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Coordinated pattern across multiple state domains",
+            "why_it_matters": "A week that feels coordinated across policing, elections, labor, and memory implies an administrative machinery capable of translating central priorities across institutions."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "development_allocator_week32.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Cross-agency implementation",
+            "why_it_matters": "Allocator evidence of developments in several agencies would support the view that bureaucratic capture underlies the week's visible outputs."
+          }
+        ],
+        "summary": "Administrative capture sits underneath the week's visible actions: the government can move across disparate domains because the machinery of state has been made more obedient and more politicized.",
+        "continuity_notes": [
+          "Keep this thread in the background unless the week's source materials contain explicit staffing, purge, or agency-control developments.",
+          "Use it as infrastructural context for why coordinated decree-style governance is possible.",
+          "Do not let it displace the more visible coercion and election threads."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Opposition treated as a security problem",
+            "why_it_matters": "When opposition is framed as a security issue, law often functions asymmetrically to expose critics while insulating aligned actors."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Policing and elections overlap with legal asymmetry",
+            "why_it_matters": "Any week where policing and election administration are active may also feature legal mechanisms that burden opponents selectively, even if that is not the principal frame."
+          }
+        ],
+        "summary": "Selective legal treatment is part of the week's architecture, but it functions more as a supporting mechanism for repression and entrenchment than as the week's standalone lead story.",
+        "continuity_notes": [
+          "Retain as context because the week's anti-opposition pattern likely relies on unequal application of law.",
+          "Avoid overexpansion unless the source materials contain a discrete DOJ, prosecution, or court episode.",
+          "This is supporting machinery, not the narrative center."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Labor named among the week's domains",
+            "why_it_matters": "Labor policy can signal insider-favoring state action, especially where government power redistributes risk downward and protection upward."
+          },
+          {
+            "source_type": "digest",
+            "source_ref": "weekly_digest_week32.md",
+            "event_id": null,
+            "development_id": null,
+            "title": "Labor or economic governance moves",
+            "why_it_matters": "If the week's labor developments advantaged aligned firms or weakened worker protections in patronage-serving ways, this thread is modestly present."
+          }
+        ],
+        "summary": "Private-state fusion is visible mainly through the labor and governance backdrop, suggesting that coercive policy choices also reorganize who benefits materially, though that is not the week's main story.",
+        "continuity_notes": [
+          "Mention only if the labor material clearly reveals insider advantage or patronage logic.",
+          "Do not force a corruption frame onto the week if the evidence mainly shows coercion and hierarchy.",
+          "Best treated as a brief connective note."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "dormant",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Tiered protection and risk frame echoes immigration logic",
+            "why_it_matters": "Even without a clearly identified immigration development in the summary, the week's hierarchy-of-belonging language resonates with this long-running thread and may shape interpretation indirectly."
+          }
+        ],
+        "summary": "Immigration does not appear to be a direct weekly driver, but its governing logic of tiered belonging remains relevant as background context for the week's broader sorting of people into protected and exposed groups.",
+        "continuity_notes": [
+          "Do not foreground immigration unless the digest provides a concrete migration-status development.",
+          "A brief contextual echo may be useful if the rewrite wants to show how migration logic has spread into other domains.",
+          "Otherwise keep dormant."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "continuing",
+        "salience": "low",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week 32 summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Memory politics may include symbolic curation",
+            "why_it_matters": "Because memory is one of the week's named domains, there may be a leader-centered symbolic component nested inside broader information-control developments."
+          }
+        ],
+        "summary": "A personalist-symbolic element may be present inside the week's memory politics, but it should remain nested within the broader information-control thread unless the source materials provide a strong standalone example.",
+        "continuity_notes": [
+          "Keep subordinate to information control.",
+          "Only surface explicitly if the week includes renaming, official display, or leader-centered civic symbolism.",
+          "Otherwise collapse into the parent thread's treatment."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [],
+        "summary": "No clear evidence in the supplied week summary points to universities, law firms, or comparable civil-society institutions as distinct targets this week.",
+        "continuity_notes": [
+          "Omit unless the digest contains a specific institutional coercion episode.",
+          "Do not infer campus or law-firm pressure simply from the broader anti-dissent climate."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [],
+        "summary": "This late-year elite-accountability sub-thread does not appear to be part of week 32.",
+        "continuity_notes": [
+          "Omit entirely; no supplied evidence links the week to Epstein-related disclosure conflict."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": null,
+        "evidence_items": [],
+        "summary": "The supplied framing emphasizes coordinated assertion of power rather than meaningful pushback, so resistance does not appear to structure this week.",
+        "continuity_notes": [
+          "Do not add balancing material unless the digest contains a concrete and consequential resistance episode.",
+          "The absence of resistance may itself sharpen the week's tone of confidence and coordination."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      }
+    ],
+    "week_summary_notes": [
+      "The week is best understood as an accumulation of coordinated moves rather than a single marquee event.",
+      "Executive overreach, domestic militarization, and anti-dissent suppression collide and reinforce one another more than they appear as separate stories.",
+      "Election engineering, memory politics, and rights hierarchy support the main frame by showing the same governing confidence applied across non-identical domains.",
+      "Administrative capture remains important as infrastructure, but not as the surface narrative lead.",
+      "The week's tone should emphasize normalization and confidence: coercive and tiered governance appearing routine rather than exceptional.",
+      "Resistance is not a major structuring feature in the supplied framing, which makes the week's asymmetry more stark."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION"
+      ],
+      "supporting_threads": [
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY"
+      ],
+      "background_threads": [
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION"
+      ],
+      "threads_to_downplay": [
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION"
+      ],
+      "threads_to_omit": [
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+      ],
+      "opening_focus": "Open on the fact that no single decree defined the week; instead, the administration's governing style emerged through a coordinated series of actions that treated opposition as a security concern and made decree-like rule feel ordinary.",
+      "closing_focus": "Close by stressing that the week mattered because the same logic appeared across policing, elections, labor, and memory, giving the sense of a government increasingly comfortable assigning unequal protection and using multiple institutions in concert.",
+      "continuity_emphasis_notes": [
+        "Emphasize carryover from prior weeks in the security and anti-dissent threads; this was not a sudden break but a more confident continuation.",
+        "Note that executive overreach is reactivated here as a unifying frame, even if recent weeks may have expressed it through narrower threads.",
+        "Treat election engineering and memory politics as evidence that coercive governance now extends well beyond street-level force.",
+        "If labor material is used, connect it to the week's broader distribution of risk and protection rather than making economics a separate lead story.",
+        "Preserve the sense of coordination: the week should read as a pattern consolidating, not as disconnected incidents."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "The week opened with a rapid series of moves that reshaped the legal terrain for protest, criminal justice, and local control in the nation’s capital, even as longer-running battles over elections, immigration, and economic power intensified. By week’s end, those early steps were joined by a purge of public health leadership, sweeping rollbacks of labor protections, and new efforts to lock in partisan advantages in Congress, leaving courts, governors, and civil society scrambling to respond.\n\nOver the weekend, the administration signaled how aggressively it was prepared to wield executive power. In the energy sector, it ordered work stopped on the nearly complete Revolution Wind project off Rhode Island and Connecticut, citing national security concerns. The decision jeopardized a project expected to power hundreds of thousands of homes and underscored the president’s broader hostility to wind power, which Environmental Protection Agency leaders publicly defended. Coming after years of planning and investment, the halt showed that even near-finished clean energy projects could be reversed by fiat, with climate and regional economic implications.\n\nAt the same time, Texas lawmakers approved, and Governor Greg Abbott signed, a new congressional map projected to give Republicans as many as five additional U.S. House seats. Civil rights groups immediately prepared lawsuits, arguing that the map diluted the voting strength of Black and Latino communities in violation of the Voting Rights Act. In a fast-growing, diverse state, the map promised to shape national political power for a decade and set the stage for a week in which redistricting fights in multiple states would become a central front in the struggle over representation.\n\nThe Justice Department also turned its attention to some of the president’s most prominent critics. Federal investigators opened probes into former FBI Director James Comey and former CIA Director John Brennan over their testimony about Russian interference, while Attorney General Pam Bondi launched mortgage-fraud investigations into figures including Representative Adam Schiff and New York Attorney General Letitia James. An early-morning FBI raid on former national security adviser John Bolton’s home and office departed from the negotiated procedures typically used for former senior officials. Together, these actions blurred the line between neutral law enforcement and political retaliation, especially when viewed alongside the administration’s use of mortgage data and other tools against perceived opponents.\n\nCourts, however, were not passive. A federal judge expanded an order blocking the administration from cutting funds to 34 sanctuary jurisdictions, reinforcing limits on using federal grants to coerce local immigration policy. Another judge ordered the closure of Florida’s remote “Alligator Alcatraz” detention facility over environmental and human rights violations, while yet another temporarily halted the deportation of Kilmar Ábrego García and demanded testimony on government conduct. These rulings showed the judiciary acting as a counterweight to executive efforts to punish sanctuary policies and to use detention and deportation in ways that skirted due process.\n\nThe weekend also brought direct challenges to independent economic and judicial institutions. The president threatened to fire Federal Reserve Governor Lisa Cook over unproven mortgage allegations, an extraordinary intervention in central bank independence. He criticized the Senate’s “blue slip” tradition, which allows home-state senators to block judicial nominees, signaling a desire to weaken one of the chamber’s informal checks on appointments. At the same time, he announced that the federal government now owned 10 percent of Intel after personally demanding the stake from the company’s CEO, and he floated a broader plan to take equity in major federal contractors. These moves pointed toward a model in which the executive branch would hold direct ownership stakes in key firms while exerting greater influence over the courts.\n\nElection rules and political speech were also pulled into the orbit of executive power. The president revealed that lawyers were drafting an executive order to eliminate mail-in balloting nationwide, citing a conversation with Vladimir Putin in which the Russian leader allegedly claimed mail voting had cost him the 2020 election. Mail ballots are used by roughly a third of U.S. voters and have not been credibly linked to widespread fraud; ending them by executive order would sharply restrict access to the ballot and bypass Congress in rewriting core election rules. In parallel, the president escalated attacks on critical media outlets, calling on the Federal Communications Commission to revoke ABC and NBC broadcast licenses as supposed threats to democracy. He threatened to investigate former New Jersey Governor Chris Christie after public criticism and began laying rhetorical groundwork for criminalizing flag burning as unpatriotic incitement, framing dissenting speech as a danger to the nation.\n\nBy Monday, those rhetorical threats had been translated into formal directives. The president signed multiple overlapping executive orders instructing the Justice Department to pursue criminal charges against people who burn the American flag, despite Supreme Court precedent protecting such acts as speech. The orders encouraged prosecutors to use public order, environmental, and immigration laws to punish flag desecration, with the president touting a one-year prison term and immigration consequences for noncitizens. Using executive orders to criminalize a form of political expression already deemed protected tested constitutional limits and signaled a willingness to chill protest through prosecutorial pressure.\n\nThe same day, two more executive orders targeted criminal justice policy. One moved to end cashless bail nationally by directing the Justice Department to identify jurisdictions that had reduced or eliminated cash bail and threatening to cut federal funds if they did not reverse course. A separate order required that more arrestees in Washington, D.C. be held in federal custody before trial. Framed as crime control, these steps were likely to increase pretrial detention for poor defendants and used federal funding as leverage over local bail practices, deepening the administration’s influence over local criminal justice systems.\n\nIn Washington, D.C., the declared “crime emergency” became the basis for a deeper federal takeover of local policing. A new order expanded federal control over the city’s law enforcement, mandating more U.S. Park Police and federal prosecutors, specialized National Guard units, and federal review of D.C. police policies. Representative Andy Biggs introduced legislation to make extended federal takeovers the default in future emergencies. For a city without full statehood, the normalization of emergency powers to justify federal control over policing raised questions about home rule and the ease with which armed forces could be deployed against protests in the capital.\n\nEven as the administration consolidated power, courts and advocates pushed back on other fronts. A Utah state judge invalidated the state’s Republican-drawn congressional maps for violating a voter-approved independent redistricting initiative and ordered new maps by late September, potentially making at least one seat more competitive. In Texas, the NAACP and allied groups filed suit against the new congressional map, alleging it stripped Black voters of political power in violation of the Voting Rights Act. These cases showed courts and civil rights groups using state law and federal voting protections to resist partisan and racial gerrymanders that skew representation.\n\nJudges also continued to rein in irregular appointments and deportations. A federal court ruled that Alina Habba was not lawfully serving as U.S. attorney for New Jersey, underscoring limits on interim appointments to powerful prosecutorial posts. In immigration cases, Judge Paula Xinis extended orders blocking the deportation of Kilmar Ábrego García and required that he remain within reach of the Maryland court, reflecting skepticism about the government’s conduct. Meanwhile, the administration’s economic nationalism deepened: beyond the Intel stake, officials floated a broader policy of taking equity in private firms heavily reliant on federal contracts, arguing that taxpayers deserved ownership. Critics warned that such moves blurred the line between government and business, especially as the White House announced cancellation of CHIPS Act-funded solar and wind projects in favor of fossil fuels.\n\nOther institutions also clashed with federal power. The House Oversight Committee subpoenaed extensive records from Jeffrey Epstein’s estate, including his “Black Book,” while the Justice Department responded to a separate subpoena with a largely redundant document dump. In another election-adjacent case, DOJ filed new allegations that a Smartmatic executive had used funds from a Los Angeles voting machine contract to feed slush funds tied to foreign bribery, highlighting the risk that election technology contracts could be tainted by corruption. At the same time, governors Gavin Newsom of California, J.B. Pritzker of Illinois, and Wes Moore of Maryland publicly criticized the militarization of cities and threats to deploy troops, framing them as unlawful power grabs. Inside FEMA, more than 180 employees warned Congress that staffing cuts and mismanagement risked a Katrina-level disaster; around 30 signatories were later placed on leave, suggesting retaliation against internal critics.\n\nOn Tuesday, the confrontation between the executive and the judiciary sharpened. A federal judge dismissed the administration’s extraordinary lawsuit against all 15 judges of Maryland’s federal district court, which had challenged a chief judge’s order briefly pausing deportations when detainees filed legal challenges. The ruling reaffirmed absolute judicial immunity and criticized the administration for bypassing normal appeals, defending the principle that the executive cannot sue judges en masse for issuing rulings it dislikes.\n\nIllinois escalated its resistance to federal militarization. Governor Pritzker condemned the president’s plan to send armed military personnel to Chicago as an unprecedented overreach and vowed to sue if the deployment proceeded, arguing there was no emergency to justify it. He also pointed out that the administration had cut hundreds of millions in crime-prevention grants while claiming to prioritize public safety. His stance framed domestic troop deployments as a constitutional crisis over federalism and civil-military boundaries, adding state-level pushback to the institutional checks emerging in the courts.\n\nRedistricting battles continued as civil rights groups formally sued Texas over its new congressional map, arguing it was a racial gerrymander that stripped Black voters of political power and violated Section 2 of the Voting Rights Act. The suit sought to block use of the map before upcoming elections, testing how far courts would go to enforce minority voting protections against aggressive partisan line-drawing. On the economic front, the administration’s removal of the de minimis tariff exemption for imports under $800 took effect, prompting postal services in nearly 30 countries to suspend deliveries to the United States as they adjusted to new tariff rules. The change, later formalized in an executive order, was expected to add billions in costs and delays for consumers and small businesses reliant on low-value imports.\n\nThe administration also doubled down on its campaign against protest speech. The president publicly ordered the Justice Department to prosecute flag burning with a mandatory one-year sentence, reiterating his intent to override existing First Amendment protections and reinforcing the previous day’s executive orders. Direct presidential pressure on prosecutors to pursue constitutionally protected expression raised serious rule-of-law concerns. In immigration enforcement, reports emerged that ICE had transferred 18-year-old Benjamin Guerrero-Cruz from California to Arizona without notifying his family, nearly sending him to Louisiana for deportation, prompting proposed legislation to require family notification. Separately, Venezuelan detainee Luis Manuel Rivas Velásquez was quietly moved from “Alligator Alcatraz” to Fort Bliss, Texas, in what his lawyer described as retaliation for complaining about conditions. These opaque transfers and alleged reprisals made it harder for families and lawyers to protect detainees’ rights.\n\nData security also came under scrutiny. Whistleblower Charles Borges reported that a former senior official at the Department of Government Efficiency had copied Social Security data for over 300 million Americans to an unsecured cloud server, in violation of law. The disclosure raised questions about internal controls and whether politically connected officials would face consequences for mishandling sensitive information. In the background, agencies continued routine regulatory housekeeping—adjusting environmental rules, correcting communications regulations, and updating health data frameworks—reminding that even amid high-profile clashes, the machinery of governance continued to shape markets, data, and protections in quieter ways.\n\nWednesday marked a turning point in public health governance. CDC Director Susan Monarez was removed after refusing to endorse what she viewed as reckless, unscientific vaccine directives from Health Secretary Robert F. Kennedy Jr. Her lawyers argued that only the president could legally fire her, raising procedural questions about the dismissal. In protest, four top CDC officials, including leaders in infectious disease and injury prevention, resigned, citing data manipulation and political interference. The loss of a Senate-confirmed director and multiple senior scientists in the midst of an ongoing pandemic undermined the agency’s independence and capacity, and it foreshadowed the confusing vaccine policies that would follow.\n\nCourts again intervened in immigration enforcement. Judge Paula Xinis extended her order preventing the deportation of Kilmar Ábrego García and required administration officials to testify about efforts to re-deport him, signaling concern about potential retaliation or disregard for court orders. The earlier order to close “Alligator Alcatraz” began to take effect, with detainees being relocated despite state appeals. These rulings suggested that judges were scrutinizing not just individual deportations but broader patterns of conduct in detention and removal practices.\n\nElection administration remained contested at the local level. In Georgia, a judge fined the Fulton County Commission $10,000 per day for refusing to appoint two Republicans—both tied to election denialism—to the county election board, ruling that the commission had acted in bad faith. The decision highlighted the tension between legal mandates and local discretion over who runs elections. In Utah, Judge Dianna Gibson’s earlier order requiring new congressional maps before 2026 underscored judicial willingness to enforce voter-approved redistricting standards against legislative resistance. In Washington, a D.C. grand jury declined to indict Sean Charles Dunn, accused of throwing a sandwich at a federal agent during protests against troop deployments. The refusal was widely seen as a symbolic rebuke of the administration’s heavy-handed response to demonstrations.\n\nInside the federal bureaucracy, dissent carried risks. Following the “Katrina Declaration” letter signed by 182 FEMA employees warning that staffing cuts and mismanagement could lead to catastrophic failures, around 30 staffers were placed on administrative leave. The suspensions were widely interpreted as retaliation against whistleblowers, discouraging internal criticism at an agency central to disaster response. Meanwhile, the U.S. Election Assistance Commission scheduled a public meeting of its Technical Guidelines Development Committee to discuss updated voting system standards, and the Census Bureau advanced a national survey of registered nurses—technical steps aimed at improving the reliability of elections and health workforce planning, even as more visible conflicts dominated headlines.\n\nOn Thursday, the turmoil at the CDC translated into policy confusion. In the wake of Monarez’s ouster and the senior resignations, Health Secretary Kennedy announced new Covid vaccine restrictions that left eligibility and availability unclear, with contradictory statements about who qualified. The changes raised fears that high-risk groups could lose access and that vaccine policy was being driven more by politics than by science. Confusing and politicized guidance threatened to erode public trust and leave vulnerable populations unprotected.\n\nFederal control over Washington, D.C. deepened further. Transportation Secretary Sean Duffy announced a federal takeover of Union Station, framed as part of a “beautification” program but also increasing visible federal presence in the capital’s central transit hub. Separately, the president issued an order excluding additional agencies and subdivisions from the federal labor-management relations program, limiting collective bargaining rights in the name of national security. These moves extended executive influence over key infrastructure and weakened labor protections for security-related workers, consolidating control in the capital.\n\nCultural policy also shifted. The president signed an executive order titled “Making Federal Architecture Beautiful Again,” directing that new federal buildings, especially in Washington, favor classical and traditional styles. The General Services Administration revised its Art-in-Architecture program data collection to prioritize works depicting historically significant Americans and events, aligning cultural spending with the administration’s aesthetic and historical preferences. At the same time, new reporting underscored that a $1.1 billion cut to the Corporation for Public Broadcasting was degrading rural access to severe weather alerts and civic information. At the Pentagon, officials prepared to reinstall a portrait of Confederate General Robert E. Lee at West Point’s library, despite a law requiring removal of Confederate tributes from military installations. Together, these steps used design, art, and funding decisions to privilege certain narratives and weaken noncommercial information channels.\n\nImmigration enforcement intersected with public safety in new ways. During a wildfire in Washington state, border agents arrested two firefighters from a contract crew after lining up workers to check IDs, prompting outrage over the impact on emergency response. In a separate case, ICE’s transfer of Benjamin Guerrero-Cruz across states without notifying his family spurred a congressional proposal to require notification within 24 hours of transfers. These incidents highlighted how enforcement priorities could undermine firefighting efforts and family rights. In the background, agencies advanced data and transparency rules: the National Archives convened a FOIA Advisory Committee meeting on vexatious requests, the FCC sought comment on accessibility and registration-related information collections, and the EPA, FDA, and GSA moved forward with projects on air quality, patient experience, and federal customer service, shaping how accessible government information would be and how public input would be incorporated into policy.\n\nFriday capped the week with sweeping attacks on labor protections and social supports. Building on earlier moves to limit collective bargaining in security-related agencies, the administration proposed eliminating federal minimum wage and overtime protections for 3.7 million childcare and home care workers, rescinded a minimum wage requirement for disabled workers, and cut the minimum wage for federal contractors from $17.75 to $13.30. In a separate action, it attempted to rescind collective bargaining rights from about one million federal workers, which unions described as the largest single act of union busting in U.S. history. These changes shifted economic power toward employers, particularly in low-wage and care sectors, and weakened organized labor’s role in public service.\n\nReproductive rights for veterans came under new pressure. A proposed rule would bar Department of Veterans Affairs doctors from performing abortions except when a physician certified that the mother’s life was at risk, eliminating existing exceptions for rape and incest. Female veterans and advocacy groups, many representing survivors of sexual assault, condemned the move as a rollback of limited reproductive services restored in 2022. On trade, the president signed an executive order officially ending the de minimis tariff exemption for packages under $800, a change expected to add up to $13 billion in costs and delays for consumers and small businesses. The White House justified the move as protecting American manufacturers and addressing national security concerns tied to foreign e-commerce platforms, but the immediate impact would fall on small retailers and lower-income consumers who depend on affordable imports.\n\nThe week also saw personal security arrangements pulled into partisan conflict. The president issued a directive canceling the one-year extension of Secret Service protection for former Vice President Kamala Harris that had been granted by President Biden, effective September 1. California Governor Gavin Newsom and Los Angeles Mayor Karen Bass criticized the move as endangering Harris and driven by personal animus, raising concerns about the politicization of protective services for former officials. In Missouri, Governor Mike Kehoe called a special legislative session to redraw the state’s congressional districts with the explicit goal of gaining another Republican seat, following pressure from the president. The session would also consider changes to initiative petition rules that could make citizen-led ballot measures harder to pass, extending the week’s pattern of using redistricting and procedural changes to entrench partisan control and weaken direct democracy tools.\n\nImmigration and historical memory remained contested. A federal judge’s earlier order to close “Alligator Alcatraz” moved forward as a motion to stay was denied, while the secret transfer of a Venezuelan detainee to Fort Bliss drew further scrutiny as possible retaliation. At the same time, the Pentagon’s plan to restore Robert E. Lee’s portrait at West Point sparked debate over compliance with laws removing Confederate tributes. Civil society groups began organizing responses to the week’s developments: Indivisible announced a September 6 march in Washington to demand withdrawal of federal troops from the District, framing deployments as racially targeted militarization, while in North Carolina, the Legislative Response Team prepared a Labor Day “die-in” to dramatize the human impact of a sweeping “One Big Ugly Bill” and the new anti-worker rules, under the banner #WorkersOverBillionaires. Historical retrospectives on the 1968 Chicano student walkouts, the 1970 Chicano Moratorium, and the killing of journalist Rubén Salazar resurfaced in public discourse, tracing how police violence and educational inequities had spurred earlier waves of organizing and providing context for current debates about race, protest, and state power.\n\nTaken together, the week’s events traced a clear pattern: the executive branch moved to centralize authority over policing, elections, economic levers, and public health, often by executive order, while weakening protections for dissent, workers, immigrants, and vulnerable populations. Courts, governors, career officials, and grassroots groups responded with lawsuits, public letters, and planned protests, offering partial checks but also revealing the limits of institutional resistance when power is concentrated in the presidency. As redistricting battles, labor rollbacks, and public health purges unfolded side by side, the basic questions at stake were who gets represented, who is protected, and how far existing institutions can go in defending democratic norms under sustained pressure.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk32_PA_005\",\n      \"wk32_PA_008\",\n      \"wk32_IG_007\",\n      \"wk32_PA_006\",\n      \"wk32_PA_015\",\n      \"wk32_ES_007\",\n      \"wk32_CR_017\",\n      \"wk32_CR_018\",\n      \"wk32_IG_014\",\n      \"wk32_IM_009\",\n      \"wk32_CR_010\",\n      \"wk32_IG_004\",\n      \"wk32_CR_027\",\n      \"wk32_CR_002\",\n      \"wk32_CR_003\",\n      \"wk32_CR_004\",\n      \"wk32_IG_005\",\n      \"wk32_IM_001\",\n      \"wk32_IG_003\",\n      \"wk32_CR_006\",\n      \"wk32_PA_010\",\n      \"wk32_CR_001\",\n      \"wk32_IG_002\",\n      \"wk32_IG_009\",\n      \"wk32_IG_008\",\n      \"wk32_IG_010\",\n      \"wk32_IG_012\",\n      \"wk32_IM_008\",\n      \"wk32_CR_016\",\n      \"wk32_PA_009\",\n      \"wk32_CR_007\",\n      \"wk32_PA_003\",\n      \"wk32_IM_002\",\n      \"wk32_IM_003\",\n      \"wk32_CR_026\",\n      \"wk32_CR_005\",\n      \"wk32_CR_012\",\n      \"wk32_CR_013\",\n      \"wk32_CR_015\",\n      \"wk32_CR_008\",\n      \"wk32_PA_022\",\n      \"wk32_PA_024\",\n      \"wk32_CR_009\",\n      \"wk32_CR_014\",\n      \"wk32_CR_021\",\n      \"wk32_PA_014\",\n      \"wk32_CR_011\",\n      \"wk32_CR_020\",\n      \"wk32_PA_016\",\n      \"wk32_PA_019\",\n      \"wk32_PA_013\",\n      \"wk32_IM_006\",\n      \"wk32_IM_004\",\n      \"wk32_ES_021\",\n      \"wk32_PA_012\",\n      \"wk32_ES_003\",\n      \"wk32_ES_002\",\n      \"wk32_ES_009\",\n      \"wk32_PA_023\",\n      \"wk32_ES_004\",\n      \"wk32_ES_006\",\n      \"wk32_ES_015\",\n      \"wk32_ES_001\",\n      \"wk32_PA_018\",\n      \"wk32_PA_020\",\n      \"wk32_PA_021\",\n      \"wk32_ES_008\",\n      \"wk32_IG_001\",\n      \"wk32_IG_013\",\n      \"wk32_IG_011\",\n      \"wk32_IG_015\",\n      \"wk32_IG_017\",\n      \"wk32_IG_016\",\n      \"wk32_CR_028\",\n      \"wk32_ES_005\",\n      \"wk32_IM_007\",\n      \"wk32_PA_017\",\n      \"wk32_IM_010\",\n      \"wk32_IM_011\",\n      \"wk32_ES_017\",\n      \"wk32_IM_005\",\n      \"wk32_ES_020\",\n      \"wk32_ES_024\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 108,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_005\",\n        \"wk32_PA_008\",\n        \"wk32_IG_007\",\n        \"wk32_PA_006\",\n        \"wk32_PA_015\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Center the D.C. 'crime emergency' declaration and follow-on EO (wk32_PA_005, wk32_PA_008) as the spine: describe how Trump seizes control of D.C. police and expands measures, then zoom out to Andy Biggs\\u2019s bill (wk32_IG_007) that would make such takeovers semi-permanent. Weave in the threat to send troops to Baltimore (wk32_PA_006) and the federal takeover of Union Station (wk32_PA_015) as examples of creeping occupation of the capital and punitive signaling to blue jurisdictions. Use Newsom and Pritzker\\u2019s pushback (wk32_CR_017, wk32_CR_018, wk32_IG_014) plus Indivisible\\u2019s framing (wk32_IM_009) and the planned D.C. march (wk32_CR_027) to show emerging resistance. The D.C. budget freeze (wk32_ES_007) and sanctuary funding injunction (wk32_IG_004) can be briefly noted as the fiscal and legal backdrop. The grand jury\\u2019s refusal to indict the sandwich-throwing protester (wk32_CR_010) is a small counterpoint showing not all institutions are aligned.\",\n      \"one_sentence_thesis\": \"The White House used a manufactured \\\"crime emergency\\\" and threats of troop deployments to extend federal control over local policing in Washington, D.C. and intimidate Democratic-led cities like Chicago and Baltimore.\",\n      \"supporting_event_ids\": [\n        \"wk32_ES_007\",\n        \"wk32_CR_017\",\n        \"wk32_CR_018\",\n        \"wk32_IG_014\",\n        \"wk32_IM_009\",\n        \"wk32_CR_010\",\n        \"wk32_IG_004\",\n        \"wk32_CR_027\"\n      ],\n      \"title\": \"Trump consolidates direct control over policing and security in D.C. and targets Democratic cities\",\n      \"why_it_matters\": \"Normalizing emergency declarations and federal takeovers of local law enforcement erodes federalism, blurs civil-military boundaries, and creates a template for partisan control of urban governance, especially in majority-Black jurisdictions. The push also invites legal and political confrontation with governors and courts over the limits of presidential power at home.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_CR_002\",\n        \"wk32_CR_003\",\n        \"wk32_CR_004\",\n        \"wk32_IG_005\",\n        \"wk32_IM_001\",\n        \"wk32_IG_003\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Open with the dramatic, irregular actions: the arrest of Newark Mayor Ras Baraka (wk32_CR_002) and the FBI raid on John Bolton (wk32_CR_003) as examples of law enforcement turned on critics. Layer in DOJ\\u2019s coercive plea tactics against Kilmar Abrego Garcia (wk32_CR_004) and the retaliatory mortgage-fraud probes of Schiff, Letitia James, and Lisa Cook (wk32_IG_005) built from FHFA data (wk32_IM_001). Then contrast this aggression with DOJ\\u2019s minimal Epstein document production (wk32_IG_003) and the cushier placement of Ghislaine Maxwell (wk32_CR_001) to illustrate elite impunity. Fold in Trump\\u2019s threat to investigate Chris Christie (wk32_CR_006) and the flag-burning prosecution order (wk32_PA_010) as rhetorical and legal moves to criminalize dissent. Close with the courts as partial brakes: Judge Xinis blocking Abrego\\u2019s deportation (wk32_IG_008), the ruling against Alina Habba\\u2019s appointment (wk32_IG_010), and Judge Cullen\\u2019s dismissal of Trump\\u2019s suit against Maryland\\u2019s judges (wk32_IG_012). The Social Security data breach whistleblower (wk32_IM_008) and the LA mother\\u2019s civil claim (wk32_CR_016) can be used to show how ordinary people and insiders are trying to push back against this lawfare environment.\",\n      \"one_sentence_thesis\": \"The administration escalated its use of DOJ, FBI, and regulatory data to target political opponents and immigrants, even as it slow-walked or softened accountability in elite-linked cases like Epstein and Maxwell.\",\n      \"supporting_event_ids\": [\n        \"wk32_CR_006\",\n        \"wk32_PA_010\",\n        \"wk32_CR_001\",\n        \"wk32_IG_002\",\n        \"wk32_IG_009\",\n        \"wk32_IG_008\",\n        \"wk32_IG_010\",\n        \"wk32_IG_012\",\n        \"wk32_IM_008\",\n        \"wk32_CR_016\"\n      ],\n      \"title\": \"Law enforcement and courts are weaponized against critics while elite-linked cases are shielded\",\n      \"why_it_matters\": \"Turning criminal investigations, raids, and data-mining into tools of political retaliation undermines the rule of law and chills dissent, while selective leniency for powerful figures signals a two-tier justice system. Judicial pushback in a few cases shows remaining checks but also how much pressure they face.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_009\",\n        \"wk32_PA_010\",\n        \"wk32_CR_007\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Treat the EO against cashless bail (wk32_PA_009) and the order to prioritize flag-burning prosecutions (wk32_PA_010) as a pair: both recast policy disagreements and symbolic speech as criminal threats. Connect this to Trump\\u2019s call to revoke ABC and NBC broadcast licenses (wk32_CR_007) and his false claims of record poll numbers (wk32_IM_002) as part of a narrative that equates criticism with disloyalty and insists on his overwhelming popular mandate. Mention the draft EO to eliminate mail-in balloting (wk32_PA_003) as another attempt to frame normal democratic practices as suspect. Use the planned Labor Day die-in against the \\\"One Big Ugly Bill\\\" (wk32_CR_026) and the upcoming D.C. march (wk32_CR_027) to show civil society still mobilizing despite these threats, with the D.C. grand jury\\u2019s refusal to indict the sandwich-throwing protester (wk32_CR_010) as a small sign that not all institutions are buying the criminalization of protest. Nancy Mace\\u2019s amplification of a false shooter report (wk32_IM_003) can be a brief example of how misinformation feeds the security narrative.\",\n      \"one_sentence_thesis\": \"Through new executive orders, threats, and prosecutions, the administration framed protest and progressive criminal justice reforms as security threats, using emergency logic to justify crackdowns on dissent.\",\n      \"supporting_event_ids\": [\n        \"wk32_PA_003\",\n        \"wk32_IM_002\",\n        \"wk32_IM_003\",\n        \"wk32_CR_026\",\n        \"wk32_CR_027\",\n        \"wk32_CR_010\"\n      ],\n      \"title\": \"Emergency rhetoric and security forces are used to suppress protest and redefine dissent as crime\",\n      \"why_it_matters\": \"When symbolic acts like flag burning or policies like cashless bail are treated as national security issues, it expands the scope of what can be criminalized and makes it easier to deploy extraordinary powers against political opponents and marginalized communities.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_CR_005\",\n        \"wk32_CR_012\",\n        \"wk32_CR_013\",\n        \"wk32_CR_015\",\n        \"wk32_CR_008\",\n        \"wk32_PA_022\",\n        \"wk32_PA_024\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Build a through-line from immigration to broader civil rights. Start with the Fort Bliss mega-detention site (wk32_CR_005) and the pattern of harsh or opaque ICE actions: arresting wildfire firefighters (wk32_CR_012), transferring an 18-year-old without family notice (wk32_CR_013), and secretly moving Luis Manuel Rivas Vel\\u00e1squez after he complained (wk32_CR_015). Contrast this with the court-ordered closure of the abusive 'Alligator Alcatraz' facility (wk32_CR_009) as a rare corrective. Then pivot to domestic policy that similarly narrows rights: conditioning sex-ed funds on erasing transgender content (wk32_CR_008), the proposed near-total abortion ban in VA facilities (wk32_PA_022), and revoking extended Secret Service protection for Kamala Harris (wk32_PA_024) as punitive use of security discretion. Fold in the confusing COVID vaccine restrictions (wk32_PA_014) and the mass CDC resignations (wk32_CR_021) to show how politicized health policy can disproportionately harm vulnerable groups. FEMA whistleblower retaliation (wk32_CR_011, wk32_CR_020) and the order shrinking labor rights for disabled workers (wk32_PA_019) can be used to underscore that those who are already at risk\\u2014immigrants, disabled people, internal critics\\u2014bear the brunt of these choices.\",\n      \"one_sentence_thesis\": \"ICE operations, detention practices, and new restrictions on transgender-inclusive education and reproductive care collectively pushed the U.S. toward a more stratified system of rights based on immigration status, gender identity, and ideology.\",\n      \"supporting_event_ids\": [\n        \"wk32_CR_009\",\n        \"wk32_CR_014\",\n        \"wk32_CR_016\",\n        \"wk32_CR_021\",\n        \"wk32_PA_014\",\n        \"wk32_CR_011\",\n        \"wk32_CR_020\",\n        \"wk32_PA_016\",\n        \"wk32_PA_019\"\n      ],\n      \"title\": \"Immigration enforcement and social policy deepen a tiered citizenship regime\",\n      \"why_it_matters\": \"Using detention, opaque transfers, and conditional funding to target migrants, LGBTQ youth, and women veterans normalizes the idea that some groups are less entitled to safety, due process, and bodily autonomy, entrenching second-class citizenship.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_013\",\n        \"wk32_CR_021\",\n        \"wk32_CR_011\",\n        \"wk32_CR_020\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"Narratively, start with the ouster of Senate-confirmed CDC Director Monarez (wk32_PA_013) over vaccine policy disputes and the subsequent mass resignations of senior CDC officials (wk32_CR_021). Pair this with the confusing, politically driven COVID vaccine restrictions (wk32_PA_014) to show how policy is being dictated from the top rather than through transparent expert processes. Then bring in FEMA: employees\\u2019 'Katrina Declaration' warning Congress about disaster risks (wk32_CR_020) followed by leadership placing signatories on leave (wk32_CR_011) as a clear case of punishing whistleblowers. The EO excluding more units from labor-management rules (wk32_PA_016) can be framed as part of a broader effort to strip civil servants of protections. Close by noting that some formal processes\\u2014ACIP\\u2019s scheduled vaccine meeting (wk32_IM_006), CDC and FDA data initiatives (wk32_IM_004, wk32_ES_021)\\u2014continue on paper, raising the question of how long procedural normalcy can coexist with politicized leadership.\",\n      \"one_sentence_thesis\": \"The firing of CDC Director Susan Monarez, mass resignations of senior CDC officials, and retaliation against FEMA staff who warned of disaster risks marked a sharp escalation in political control over expert agencies.\",\n      \"supporting_event_ids\": [\n        \"wk32_PA_014\",\n        \"wk32_PA_016\",\n        \"wk32_IM_006\",\n        \"wk32_IM_004\",\n        \"wk32_ES_021\"\n      ],\n      \"title\": \"Public health and emergency agencies are purged and politicized\",\n      \"why_it_matters\": \"When scientific and emergency management agencies are reshaped around loyalty rather than expertise, the country\\u2019s capacity to respond to pandemics and disasters is degraded, and public health guidance becomes another instrument of partisan power.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_012\",\n        \"wk32_ES_003\",\n        \"wk32_ES_002\",\n        \"wk32_ES_009\",\n        \"wk32_PA_023\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Lead with Trump\\u2019s announcement that the U.S. government has taken a 10% stake in Intel (wk32_PA_012) and the administration\\u2019s broader plan to buy into major federal contractors (wk32_ES_003) as emblematic of crony capitalism dressed up as industrial strategy. Then move to trade: the implementation of tariffs on small inbound packages (wk32_ES_002) and the formal end of the de minimis exemption via EO (wk32_ES_009, wk32_PA_023), noting the disruption to small importers and the concentration of trade discretion in the White House. Briefly connect this to other economic direction-setting from the top\\u2014canceling CHIPS-funded renewables in favor of fossil fuels (wk32_ES_004), the proposal to admit 600,000 Chinese students to stabilize university finances (wk32_ES_006), and EPA\\u2019s refinery exemptions (wk32_ES_015)\\u2014to show how sector after sector is being reoriented around executive preferences. The Ukraine missile-use restriction (wk32_ES_001) can be mentioned as another example of Washington tightly controlling how its leverage is used, though it\\u2019s more foreign-policy adjacent.\",\n      \"one_sentence_thesis\": \"By personally announcing a federal equity stake in Intel, floating broader ownership of major contractors, and unilaterally ending the de minimis tariff exemption, Trump further blurred the line between state and favored corporations while centralizing trade policy in the executive.\",\n      \"supporting_event_ids\": [\n        \"wk32_ES_004\",\n        \"wk32_ES_006\",\n        \"wk32_ES_015\",\n        \"wk32_ES_001\"\n      ],\n      \"title\": \"Crony industrial policy and tariff shocks concentrate economic power in the presidency\",\n      \"why_it_matters\": \"When industrial and trade policy are driven by presidential fiat and insider negotiations rather than transparent, rule-bound processes, it invites favoritism, undermines market fairness, and makes the broader economy more dependent on the whims of a single leader.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_018\",\n        \"wk32_PA_019\",\n        \"wk32_PA_020\",\n        \"wk32_PA_021\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Treat this as a coordinated labor offensive. Start with the proposal to eliminate federal minimum wage and overtime protections for childcare and home care workers (wk32_PA_018), then the rollback of minimum wage protections for disabled workers (wk32_PA_019). Add the move to rescind collective bargaining rights from about one million federal workers (wk32_PA_020) and the cut in minimum wage for federal contractors (wk32_PA_021). Note how these actions collectively strip protections from some of the lowest-paid and most vulnerable workers. The $800+ million cut in public safety and crime-prevention grants (wk32_ES_008) can be framed as part of a broader shift away from social investment toward punitive control. Close by tying in the planned Labor Day die-in against the \\\"One Big Ugly Bill\\\" (wk32_CR_026) as an early sign of organized resistance from labor and allied groups.\",\n      \"one_sentence_thesis\": \"Through a cluster of executive actions, Trump moved to slash minimum wages, overtime, and collective bargaining rights for millions of workers, especially in care sectors, federal service, and among disabled and contract workers.\",\n      \"supporting_event_ids\": [\n        \"wk32_ES_008\",\n        \"wk32_CR_026\"\n      ],\n      \"title\": \"A sweeping assault on labor protections and unions reshapes the social contract\",\n      \"why_it_matters\": \"Rolling back wage floors and union rights at this scale weakens workers\\u2019 bargaining power, increases economic precarity, and removes organized labor as a counterweight to executive and corporate power.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_PA_003\",\n        \"wk32_IG_001\",\n        \"wk32_IG_013\",\n        \"wk32_IG_011\",\n        \"wk32_IG_015\",\n        \"wk32_IG_017\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Anchor this development in Trump\\u2019s announcement of a draft EO to eliminate mail-in balloting nationwide (wk32_PA_003), situating it in his broader pattern of false claims about his popularity and election integrity (wk32_IM_002). Then move to structural representation: Texas\\u2019s new GOP-favoring congressional map (wk32_IG_001) and the NAACP\\u2019s lawsuit challenging it as a racial gerrymander (wk32_IG_013); Utah\\u2019s state court invalidating Republican-drawn maps for violating an independent commission requirement (wk32_IG_011); and Missouri\\u2019s governor calling a special session to redraw districts and tighten initiative rules (wk32_IG_017). Include the Fulton County judge fining commissioners for refusing to seat two Republicans on the election board (wk32_IG_015) as a more ambiguous case where enforcement of state law may entrench election-denier influence. The Election Assistance Commission\\u2019s public meeting on voting system guidelines (wk32_IG_016) and grassroots efforts like Wake County Indivisible\\u2019s candidate meet-and-greet (wk32_CR_028) can be used to show ongoing efforts to preserve electoral integrity and civic engagement amid these power plays.\",\n      \"one_sentence_thesis\": \"State and federal actors advanced partisan redistricting and floated an executive order to end mail-in voting, while courts and civil rights groups mounted legal challenges to defend fair maps and access.\",\n      \"supporting_event_ids\": [\n        \"wk32_IM_002\",\n        \"wk32_IM_003\",\n        \"wk32_IG_016\",\n        \"wk32_CR_028\"\n      ],\n      \"title\": \"Elections and representation are reshaped through gerrymanders and attacks on voting methods\",\n      \"why_it_matters\": \"Manipulating district lines and voting methods under the banner of 'integrity' can lock in minority rule and weaken the ability of voters\\u2014especially minorities and urban residents\\u2014to hold leaders accountable.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk32_CR_007\",\n        \"wk32_ES_005\",\n        \"wk32_IM_007\",\n        \"wk32_PA_017\",\n        \"wk32_IM_010\"\n      ],\n      \"dev_id\": \"D9\",\n      \"notes_for_writer\": \"Open with Trump\\u2019s call to revoke ABC and NBC broadcast licenses (wk32_CR_007) and immediately pair it with the $1.1 billion cut to the Corporation for Public Broadcasting (wk32_ES_005), using the follow-on service impacts (wk32_IM_007) to show how independent and rural media are being starved. Then shift to symbolic control: the EO mandating classical styles for new federal buildings (wk32_PA_017) and the Pentagon\\u2019s decision to reinstall a Robert E. Lee portrait at West Point (wk32_IM_010) as examples of curating national identity around a particular, often exclusionary, historical narrative. The GSA\\u2019s Art-in-Architecture data changes emphasizing certain historical subjects (wk32_IM_011) can be folded in as a quieter bureaucratic lever for the same project. Close by briefly noting that some transparency and accessibility processes continue\\u2014FOIA advisory work (wk32_IM_005), data collection on accessibility (wk32_ES_020), and environmental impact statement notices (wk32_ES_024)\\u2014but that these operate in an environment where the loudest structural moves favor state-aligned stories and outlets.\",\n      \"one_sentence_thesis\": \"From threatening broadcast licenses and slashing public media funding to mandating classical architecture and reinstalling Confederate imagery, the administration intensified efforts to tilt the information and symbolic landscape toward its preferred story of America.\",\n      \"supporting_event_ids\": [\n        \"wk32_IM_011\",\n        \"wk32_ES_017\",\n        \"wk32_IM_005\",\n        \"wk32_IM_004\",\n        \"wk32_ES_020\",\n        \"wk32_ES_024\"\n      ],\n      \"title\": \"Media, memory, and culture are reshaped to favor state-aligned narratives\",\n      \"why_it_matters\": \"Controlling who can broadcast, which institutions survive, and what history is honored narrows the range of voices and memories in public life, making it harder for citizens to access independent information or imagine alternative futures.\"\n    }\n  ],\n  \"period_label\": \"Week 32\",\n  \"recommended_development_count\": 9,\n  \"sanity_notes\": \"Developments are organized around nine coherent arcs: (1) federal takeovers and threats against cities; (2) weaponization of law and selective impunity; (3) emergency/security framing used to criminalize dissent; (4) stratified citizenship via immigration and social policy; (5) politicization of CDC/FEMA and the civil service; (6) crony industrial policy and tariffs; (7) structural rollback of labor protections; (8) manipulation of elections and representation; and (9) control of media and symbolic memory. Some events could plausibly fit in multiple developments (e.g., CPB cuts as both economic and media policy, ICE abuses as both lawfare and stratified citizenship); in those cases they were assigned where they best advance a single narrative and not duplicated. Many technical regulatory and historical-context events are left unassigned to keep the outline focused on the week\\u2019s main democracy-relevant shifts.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk32_CR_023\",\n      \"why_unassigned\": \"Historical background on Chicano youth organizing; useful context but not part of this week\\u2019s narrative developments.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_022\",\n      \"why_unassigned\": \"1968 Chicano walkouts; historical precedent rather than a current-week driver.\"\n    },\n    {\n      \"event_id\": \"wk32_IG_018\",\n      \"why_unassigned\": \"1968 LA school board response; historical context not central to current-week storylines.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_025\",\n      \"why_unassigned\": \"1970 Rub\\u00e9n Salazar killing; important history but outside the temporal focus of this week.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_029\",\n      \"why_unassigned\": \"1970 Chicano Moratorium; historical reference rather than a live development.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_024\",\n      \"why_unassigned\": \"1970 formation of Raza Unida Party; background on movement-to-electoral shift, not a current event.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_011\",\n      \"why_unassigned\": \"Technical FCC rule updates on broadband and satellite licensing without clear linkage to the week\\u2019s main democratic-risk narratives.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_012\",\n      \"why_unassigned\": \"Routine FDA patent and drug approval decisions; important economically but peripheral to the week\\u2019s core democracy themes.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_014\",\n      \"why_unassigned\": \"EPA interim rule on disaster incinerators; technical environmental policy with limited direct democracy implications this week.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_022\",\n      \"why_unassigned\": \"FDA information collection on GRAS and device registration; procedural oversight rather than a narrative driver.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_013\",\n      \"why_unassigned\": \"Procurement threshold adjustments; routine administrative calibration not central to the main developments.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_016\",\n      \"why_unassigned\": \"EPA experimental pesticide and emergency chemical applications; niche regulatory matter without clear tie to broader themes.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_018\",\n      \"why_unassigned\": \"Census identity certification and nurse survey collections; background administrative data work.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_010\",\n      \"why_unassigned\": \"State air quality plan approvals; technical environmental governance not central to this week\\u2019s democracy storylines.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_019\",\n      \"why_unassigned\": \"EPA information collections on economic focus groups and pesticide labeling; routine data-gathering.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_023\",\n      \"why_unassigned\": \"FDA priority review voucher for a rare pediatric disease drug; health-regulatory but not democracy-salient this week.\"\n    },\n    {\n      \"event_id\": \"wk32_IG_006\",\n      \"why_unassigned\": \"House subpoena of Epstein estate records; related to accountability but secondary to DOJ\\u2019s stonewalling already captured in D2.\"\n    },\n    {\n      \"event_id\": \"wk32_IM_004\",\n      \"why_unassigned\": \"CDC data management plan proposal; positive transparency step but used only lightly as background and not central to any development.\"\n    },\n    {\n      \"event_id\": \"wk32_IM_005\",\n      \"why_unassigned\": \"FOIA Advisory Committee meeting; incremental transparency governance not driving a major narrative.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_017\",\n      \"why_unassigned\": \"GSA information collections on audits, art, and customer experience; partially referenced conceptually in D9 but not needed as a discrete anchor.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_020\",\n      \"why_unassigned\": \"FCC information collection on registration and accessibility; minor procedural step only tangentially related to media themes.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_024\",\n      \"why_unassigned\": \"EPA EIS notice; routine NEPA process not central to the week\\u2019s democracy dynamics.\"\n    },\n    {\n      \"event_id\": \"wk32_IM_012\",\n      \"why_unassigned\": \"FCC accessibility comment request; positive but peripheral to main storylines.\"\n    },\n    {\n      \"event_id\": \"wk32_ES_021\",\n      \"why_unassigned\": \"FDA staffing and patient-experience meetings; modest capacity-building step not central to the week\\u2019s core developments.\"\n    },\n    {\n      \"event_id\": \"wk32_IM_006\",\n      \"why_unassigned\": \"ACIP vaccine meeting scheduling; mentioned conceptually in D5 but not needed as a separate narrative element.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_018\",\n      \"why_unassigned\": \"Pritzker\\u2019s criticism of Guard deployment to Chicago is already represented via his legal-threat event (wk32_IG_014) in D1; this would be duplicative.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_019\",\n      \"why_unassigned\": \"Wes Moore\\u2019s rhetorical pushback, while notable, is a smaller echo of broader gubernatorial resistance already captured in D1.\"\n    },\n    {\n      \"event_id\": \"wk32_IG_016\",\n      \"why_unassigned\": \"EAC public meeting on voting guidelines is a modest positive step; elections coverage in D8 focuses on higher-impact structural moves.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_014\",\n      \"why_unassigned\": \"FBI\\u2019s handling of the Minneapolis school shooting as domestic terrorism/hate crime is important but not tightly connected to the week\\u2019s main democracy-risk arcs.\"\n    },\n    {\n      \"event_id\": \"wk32_CR_028\",\n      \"why_unassigned\": \"Local candidate meet-and-greet is a positive civic action but plays only a minor supporting role to the larger election-structure story in D8.\"\n    }\n  ],\n  \"week_number\": 32,\n  \"window\": {\n    \"end\": \"2025-08-29\",\n    \"start\": \"2025-08-23\"\n  }\n}",
+    "digest": "The week opened with a rapid series of moves that reshaped the legal terrain for protest, criminal justice, and local control in the nation’s capital, even as longer-running battles over elections, immigration, and economic power intensified. By week’s end, those early steps were joined by a purge of public health leadership, sweeping rollbacks of labor protections, and new efforts to lock in partisan advantages in Congress, leaving courts, governors, and civil society scrambling to respond.\n\nOver the weekend, the administration signaled how aggressively it was prepared to wield executive power. In the energy sector, it ordered work stopped on the nearly complete Revolution Wind project off Rhode Island and Connecticut, citing national security concerns. The decision jeopardized a project expected to power hundreds of thousands of homes and underscored the president’s broader hostility to wind power, which Environmental Protection Agency leaders publicly defended. Coming after years of planning and investment, the halt showed that even near-finished clean energy projects could be reversed by fiat, with climate and regional economic implications.\n\nAt the same time, Texas lawmakers approved, and Governor Greg Abbott signed, a new congressional map projected to give Republicans as many as five additional U.S. House seats. Civil rights groups immediately prepared lawsuits, arguing that the map diluted the voting strength of Black and Latino communities in violation of the Voting Rights Act. In a fast-growing, diverse state, the map promised to shape national political power for a decade and set the stage for a week in which redistricting fights in multiple states would become a central front in the struggle over representation.\n\nThe Justice Department also turned its attention to some of the president’s most prominent critics. Federal investigators opened probes into former FBI Director James Comey and former CIA Director John Brennan over their testimony about Russian interference, while Attorney General Pam Bondi launched mortgage-fraud investigations into figures including Representative Adam Schiff and New York Attorney General Letitia James. An early-morning FBI raid on former national security adviser John Bolton’s home and office departed from the negotiated procedures typically used for former senior officials. Together, these actions blurred the line between neutral law enforcement and political retaliation, especially when viewed alongside the administration’s use of mortgage data and other tools against perceived opponents.\n\nCourts, however, were not passive. A federal judge expanded an order blocking the administration from cutting funds to 34 sanctuary jurisdictions, reinforcing limits on using federal grants to coerce local immigration policy. Another judge ordered the closure of Florida’s remote “Alligator Alcatraz” detention facility over environmental and human rights violations, while yet another temporarily halted the deportation of Kilmar Ábrego García and demanded testimony on government conduct. These rulings showed the judiciary acting as a counterweight to executive efforts to punish sanctuary policies and to use detention and deportation in ways that skirted due process.\n\nThe weekend also brought direct challenges to independent economic and judicial institutions. The president threatened to fire Federal Reserve Governor Lisa Cook over unproven mortgage allegations, an extraordinary intervention in central bank independence. He criticized the Senate’s “blue slip” tradition, which allows home-state senators to block judicial nominees, signaling a desire to weaken one of the chamber’s informal checks on appointments. At the same time, he announced that the federal government now owned 10 percent of Intel after personally demanding the stake from the company’s CEO, and he floated a broader plan to take equity in major federal contractors. These moves pointed toward a model in which the executive branch would hold direct ownership stakes in key firms while exerting greater influence over the courts.\n\nElection rules and political speech were also pulled into the orbit of executive power. The president revealed that lawyers were drafting an executive order to eliminate mail-in balloting nationwide, citing a conversation with Vladimir Putin in which the Russian leader allegedly claimed mail voting had cost him the 2020 election. Mail ballots are used by roughly a third of U.S. voters and have not been credibly linked to widespread fraud; ending them by executive order would sharply restrict access to the ballot and bypass Congress in rewriting core election rules. In parallel, the president escalated attacks on critical media outlets, calling on the Federal Communications Commission to revoke ABC and NBC broadcast licenses as supposed threats to democracy. He threatened to investigate former New Jersey Governor Chris Christie after public criticism and began laying rhetorical groundwork for criminalizing flag burning as unpatriotic incitement, framing dissenting speech as a danger to the nation.\n\nBy Monday, those rhetorical threats had been translated into formal directives. The president signed multiple overlapping executive orders instructing the Justice Department to pursue criminal charges against people who burn the American flag, despite Supreme Court precedent protecting such acts as speech. The orders encouraged prosecutors to use public order, environmental, and immigration laws to punish flag desecration, with the president touting a one-year prison term and immigration consequences for noncitizens. Using executive orders to criminalize a form of political expression already deemed protected tested constitutional limits and signaled a willingness to chill protest through prosecutorial pressure.\n\nThe same day, two more executive orders targeted criminal justice policy. One moved to end cashless bail nationally by directing the Justice Department to identify jurisdictions that had reduced or eliminated cash bail and threatening to cut federal funds if they did not reverse course. A separate order required that more arrestees in Washington, D.C. be held in federal custody before trial. Framed as crime control, these steps were likely to increase pretrial detention for poor defendants and used federal funding as leverage over local bail practices, deepening the administration’s influence over local criminal justice systems.\n\nIn Washington, D.C., the declared “crime emergency” became the basis for a deeper federal takeover of local policing. A new order expanded federal control over the city’s law enforcement, mandating more U.S. Park Police and federal prosecutors, specialized National Guard units, and federal review of D.C. police policies. Representative Andy Biggs introduced legislation to make extended federal takeovers the default in future emergencies. For a city without full statehood, the normalization of emergency powers to justify federal control over policing raised questions about home rule and the ease with which armed forces could be deployed against protests in the capital.\n\nEven as the administration consolidated power, courts and advocates pushed back on other fronts. A Utah state judge invalidated the state’s Republican-drawn congressional maps for violating a voter-approved independent redistricting initiative and ordered new maps by late September, potentially making at least one seat more competitive. In Texas, the NAACP and allied groups filed suit against the new congressional map, alleging it stripped Black voters of political power in violation of the Voting Rights Act. These cases showed courts and civil rights groups using state law and federal voting protections to resist partisan and racial gerrymanders that skew representation.\n\nJudges also continued to rein in irregular appointments and deportations. A federal court ruled that Alina Habba was not lawfully serving as U.S. attorney for New Jersey, underscoring limits on interim appointments to powerful prosecutorial posts. In immigration cases, Judge Paula Xinis extended orders blocking the deportation of Kilmar Ábrego García and required that he remain within reach of the Maryland court, reflecting skepticism about the government’s conduct. Meanwhile, the administration’s economic nationalism deepened: beyond the Intel stake, officials floated a broader policy of taking equity in private firms heavily reliant on federal contracts, arguing that taxpayers deserved ownership. Critics warned that such moves blurred the line between government and business, especially as the White House announced cancellation of CHIPS Act-funded solar and wind projects in favor of fossil fuels.\n\nOther institutions also clashed with federal power. The House Oversight Committee subpoenaed extensive records from Jeffrey Epstein’s estate, including his “Black Book,” while the Justice Department responded to a separate subpoena with a largely redundant document dump. In another election-adjacent case, DOJ filed new allegations that a Smartmatic executive had used funds from a Los Angeles voting machine contract to feed slush funds tied to foreign bribery, highlighting the risk that election technology contracts could be tainted by corruption. At the same time, governors Gavin Newsom of California, J.B. Pritzker of Illinois, and Wes Moore of Maryland publicly criticized the militarization of cities and threats to deploy troops, framing them as unlawful power grabs. Inside FEMA, more than 180 employees warned Congress that staffing cuts and mismanagement risked a Katrina-level disaster; around 30 signatories were later placed on leave, suggesting retaliation against internal critics.\n\nOn Tuesday, the confrontation between the executive and the judiciary sharpened. A federal judge dismissed the administration’s extraordinary lawsuit against all 15 judges of Maryland’s federal district court, which had challenged a chief judge’s order briefly pausing deportations when detainees filed legal challenges. The ruling reaffirmed absolute judicial immunity and criticized the administration for bypassing normal appeals, defending the principle that the executive cannot sue judges en masse for issuing rulings it dislikes.\n\nIllinois escalated its resistance to federal militarization. Governor Pritzker condemned the president’s plan to send armed military personnel to Chicago as an unprecedented overreach and vowed to sue if the deployment proceeded, arguing there was no emergency to justify it. He also pointed out that the administration had cut hundreds of millions in crime-prevention grants while claiming to prioritize public safety. His stance framed domestic troop deployments as a constitutional crisis over federalism and civil-military boundaries, adding state-level pushback to the institutional checks emerging in the courts.\n\nRedistricting battles continued as civil rights groups formally sued Texas over its new congressional map, arguing it was a racial gerrymander that stripped Black voters of political power and violated Section 2 of the Voting Rights Act. The suit sought to block use of the map before upcoming elections, testing how far courts would go to enforce minority voting protections against aggressive partisan line-drawing. On the economic front, the administration’s removal of the de minimis tariff exemption for imports under $800 took effect, prompting postal services in nearly 30 countries to suspend deliveries to the United States as they adjusted to new tariff rules. The change, later formalized in an executive order, was expected to add billions in costs and delays for consumers and small businesses reliant on low-value imports.\n\nThe administration also doubled down on its campaign against protest speech. The president publicly ordered the Justice Department to prosecute flag burning with a mandatory one-year sentence, reiterating his intent to override existing First Amendment protections and reinforcing the previous day’s executive orders. Direct presidential pressure on prosecutors to pursue constitutionally protected expression raised serious rule-of-law concerns. In immigration enforcement, reports emerged that ICE had transferred 18-year-old Benjamin Guerrero-Cruz from California to Arizona without notifying his family, nearly sending him to Louisiana for deportation, prompting proposed legislation to require family notification. Separately, Venezuelan detainee Luis Manuel Rivas Velásquez was quietly moved from “Alligator Alcatraz” to Fort Bliss, Texas, in what his lawyer described as retaliation for complaining about conditions. These opaque transfers and alleged reprisals made it harder for families and lawyers to protect detainees’ rights.\n\nData security also came under scrutiny. Whistleblower Charles Borges reported that a former senior official at the Department of Government Efficiency had copied Social Security data for over 300 million Americans to an unsecured cloud server, in violation of law. The disclosure raised questions about internal controls and whether politically connected officials would face consequences for mishandling sensitive information. In the background, agencies continued routine regulatory housekeeping—adjusting environmental rules, correcting communications regulations, and updating health data frameworks—reminding that even amid high-profile clashes, the machinery of governance continued to shape markets, data, and protections in quieter ways.\n\nWednesday marked a turning point in public health governance. CDC Director Susan Monarez was removed after refusing to endorse what she viewed as reckless, unscientific vaccine directives from Health Secretary Robert F. Kennedy Jr. Her lawyers argued that only the president could legally fire her, raising procedural questions about the dismissal. In protest, four top CDC officials, including leaders in infectious disease and injury prevention, resigned, citing data manipulation and political interference. The loss of a Senate-confirmed director and multiple senior scientists in the midst of an ongoing pandemic undermined the agency’s independence and capacity, and it foreshadowed the confusing vaccine policies that would follow.\n\nCourts again intervened in immigration enforcement. Judge Paula Xinis extended her order preventing the deportation of Kilmar Ábrego García and required administration officials to testify about efforts to re-deport him, signaling concern about potential retaliation or disregard for court orders. The earlier order to close “Alligator Alcatraz” began to take effect, with detainees being relocated despite state appeals. These rulings suggested that judges were scrutinizing not just individual deportations but broader patterns of conduct in detention and removal practices.\n\nElection administration remained contested at the local level. In Georgia, a judge fined the Fulton County Commission $10,000 per day for refusing to appoint two Republicans—both tied to election denialism—to the county election board, ruling that the commission had acted in bad faith. The decision highlighted the tension between legal mandates and local discretion over who runs elections. In Utah, Judge Dianna Gibson’s earlier order requiring new congressional maps before 2026 underscored judicial willingness to enforce voter-approved redistricting standards against legislative resistance. In Washington, a D.C. grand jury declined to indict Sean Charles Dunn, accused of throwing a sandwich at a federal agent during protests against troop deployments. The refusal was widely seen as a symbolic rebuke of the administration’s heavy-handed response to demonstrations.\n\nInside the federal bureaucracy, dissent carried risks. Following the “Katrina Declaration” letter signed by 182 FEMA employees warning that staffing cuts and mismanagement could lead to catastrophic failures, around 30 staffers were placed on administrative leave. The suspensions were widely interpreted as retaliation against whistleblowers, discouraging internal criticism at an agency central to disaster response. Meanwhile, the U.S. Election Assistance Commission scheduled a public meeting of its Technical Guidelines Development Committee to discuss updated voting system standards, and the Census Bureau advanced a national survey of registered nurses—technical steps aimed at improving the reliability of elections and health workforce planning, even as more visible conflicts dominated headlines.\n\nOn Thursday, the turmoil at the CDC translated into policy confusion. In the wake of Monarez’s ouster and the senior resignations, Health Secretary Kennedy announced new Covid vaccine restrictions that left eligibility and availability unclear, with contradictory statements about who qualified. The changes raised fears that high-risk groups could lose access and that vaccine policy was being driven more by politics than by science. Confusing and politicized guidance threatened to erode public trust and leave vulnerable populations unprotected.\n\nFederal control over Washington, D.C. deepened further. Transportation Secretary Sean Duffy announced a federal takeover of Union Station, framed as part of a “beautification” program but also increasing visible federal presence in the capital’s central transit hub. Separately, the president issued an order excluding additional agencies and subdivisions from the federal labor-management relations program, limiting collective bargaining rights in the name of national security. These moves extended executive influence over key infrastructure and weakened labor protections for security-related workers, consolidating control in the capital.\n\nCultural policy also shifted. The president signed an executive order titled “Making Federal Architecture Beautiful Again,” directing that new federal buildings, especially in Washington, favor classical and traditional styles. The General Services Administration revised its Art-in-Architecture program data collection to prioritize works depicting historically significant Americans and events, aligning cultural spending with the administration’s aesthetic and historical preferences. At the same time, new reporting underscored that a $1.1 billion cut to the Corporation for Public Broadcasting was degrading rural access to severe weather alerts and civic information. At the Pentagon, officials prepared to reinstall a portrait of Confederate General Robert E. Lee at West Point’s library, despite a law requiring removal of Confederate tributes from military installations. Together, these steps used design, art, and funding decisions to privilege certain narratives and weaken noncommercial information channels.\n\nImmigration enforcement intersected with public safety in new ways. During a wildfire in Washington state, border agents arrested two firefighters from a contract crew after lining up workers to check IDs, prompting outrage over the impact on emergency response. In a separate case, ICE’s transfer of Benjamin Guerrero-Cruz across states without notifying his family spurred a congressional proposal to require notification within 24 hours of transfers. These incidents highlighted how enforcement priorities could undermine firefighting efforts and family rights. In the background, agencies advanced data and transparency rules: the National Archives convened a FOIA Advisory Committee meeting on vexatious requests, the FCC sought comment on accessibility and registration-related information collections, and the EPA, FDA, and GSA moved forward with projects on air quality, patient experience, and federal customer service, shaping how accessible government information would be and how public input would be incorporated into policy.\n\nFriday capped the week with sweeping attacks on labor protections and social supports. Building on earlier moves to limit collective bargaining in security-related agencies, the administration proposed eliminating federal minimum wage and overtime protections for 3.7 million childcare and home care workers, rescinded a minimum wage requirement for disabled workers, and cut the minimum wage for federal contractors from $17.75 to $13.30. In a separate action, it attempted to rescind collective bargaining rights from about one million federal workers, which unions described as the largest single act of union busting in U.S. history. These changes shifted economic power toward employers, particularly in low-wage and care sectors, and weakened organized labor’s role in public service.\n\nReproductive rights for veterans came under new pressure. A proposed rule would bar Department of Veterans Affairs doctors from performing abortions except when a physician certified that the mother’s life was at risk, eliminating existing exceptions for rape and incest. Female veterans and advocacy groups, many representing survivors of sexual assault, condemned the move as a rollback of limited reproductive services restored in 2022. On trade, the president signed an executive order officially ending the de minimis tariff exemption for packages under $800, a change expected to add up to $13 billion in costs and delays for consumers and small businesses. The White House justified the move as protecting American manufacturers and addressing national security concerns tied to foreign e-commerce platforms, but the immediate impact would fall on small retailers and lower-income consumers who depend on affordable imports.\n\nThe week also saw personal security arrangements pulled into partisan conflict. The president issued a directive canceling the one-year extension of Secret Service protection for former Vice President Kamala Harris that had been granted by President Biden, effective September 1. California Governor Gavin Newsom and Los Angeles Mayor Karen Bass criticized the move as endangering Harris and driven by personal animus, raising concerns about the politicization of protective services for former officials. In Missouri, Governor Mike Kehoe called a special legislative session to redraw the state’s congressional districts with the explicit goal of gaining another Republican seat, following pressure from the president. The session would also consider changes to initiative petition rules that could make citizen-led ballot measures harder to pass, extending the week’s pattern of using redistricting and procedural changes to entrench partisan control and weaken direct democracy tools.\n\nImmigration and historical memory remained contested. A federal judge’s earlier order to close “Alligator Alcatraz” moved forward as a motion to stay was denied, while the secret transfer of a Venezuelan detainee to Fort Bliss drew further scrutiny as possible retaliation. At the same time, the Pentagon’s plan to restore Robert E. Lee’s portrait at West Point sparked debate over compliance with laws removing Confederate tributes. Civil society groups began organizing responses to the week’s developments: Indivisible announced a September 6 march in Washington to demand withdrawal of federal troops from the District, framing deployments as racially targeted militarization, while in North Carolina, the Legislative Response Team prepared a Labor Day “die-in” to dramatize the human impact of a sweeping “One Big Ugly Bill” and the new anti-worker rules, under the banner #WorkersOverBillionaires. Historical retrospectives on the 1968 Chicano student walkouts, the 1970 Chicano Moratorium, and the killing of journalist Rubén Salazar resurfaced in public discourse, tracing how police violence and educational inequities had spurred earlier waves of organizing and providing context for current debates about race, protest, and state power.\n\nTaken together, the week’s events traced a clear pattern: the executive branch moved to centralize authority over policing, elections, economic levers, and public health, often by executive order, while weakening protections for dissent, workers, immigrants, and vulnerable populations. Courts, governors, career officials, and grassroots groups responded with lawsuits, public letters, and planned protests, offering partial checks but also revealing the limits of institutional resistance when power is concentrated in the presidency. As redistricting battles, labor rollbacks, and public health purges unfolded side by side, the basic questions at stake were who gets represented, who is protected, and how far existing institutions can go in defending democratic norms under sustained pressure.\n"
+  }
+}

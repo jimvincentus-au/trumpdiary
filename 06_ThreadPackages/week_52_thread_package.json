@@ -1,0 +1,555 @@
+{
+  "schema_name": "weekly_thread_package",
+  "schema_version": "1.0",
+  "package_type": "thread_state_package",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 52
+  },
+  "build": {
+    "created_at": "2026-03-10T03:50:55Z",
+    "created_by": "build_weekly_thread_package_v1",
+    "model": "gpt-5.4-2026-03-05",
+    "run_id": "20260310T035055Z",
+    "prompt_version": "Trump Diary Weekly Thread Package Prompt v1",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+    "response_id": "resp_0ee5774613625de60069afa4d47f188194b7c8bc31433a5a23"
+  },
+  "catalog_reference": {
+    "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+    "catalog_run_id": "20260310T015257Z",
+    "catalog_schema_name": "phase1_consolidated_thread_catalog",
+    "catalog_schema_version": "1.0"
+  },
+  "sources": {
+    "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 52/step5_narrative_week52_final.txt",
+    "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 52/development_allocator_week52.json",
+    "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 52/weekly_digest_week52.md",
+    "event_log_file": null,
+    "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_51_thread_package.json"
+  },
+  "week": {
+    "week_number": 52,
+    "start_date": "2026-01-10",
+    "end_date": "2026-01-16",
+    "headline": "The fifty-second week of Trump’s second term did not hinge on a single order or speech.",
+    "summary": "The fifty-second week of Trump’s second term did not hinge on a single order or speech. It unfolded instead as a convergence: immigration enforcement on a war footing, economic power wielded as personal leverage, and the information system bent to protect both. The center of gravity was Minnesota, where a federal operation turned a metropolitan region into something close to occupied territory. Around that center, law, money, and narrative were adjusted to make such operations easier to launch, "
+  },
+  "thread_states": [
+    {
+      "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+      "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Minnesota federal operation as week center of gravity",
+          "why_it_matters": "The supplied week summary explicitly identifies immigration enforcement on a war footing and a federal operation in Minnesota as the week's central development, making immigration machinery the main explanatory frame."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Mass enforcement and metropolitan crackdown",
+          "why_it_matters": "Digest-level coverage of the Minnesota operation supports that deportation and immigration enforcement were not isolated incidents but the organizing mechanism of the week."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator emphasis on immigration enforcement escalation",
+          "why_it_matters": "Allocator inclusion indicates the week's development structure treated immigration enforcement as a major line rather than passing context."
+        }
+      ],
+      "summary": "Immigration enforcement was the central operational thread of the week, with Minnesota serving as the vivid demonstration of a deportation-and-belonging regime expanding into metropolitan civic life.",
+      "continuity_notes": [
+        "Carries forward a year-long pattern in which immigration policy functions as a domestic control apparatus rather than a narrow border issue.",
+        "This week intensifies the pattern by making large-scale enforcement inside a major U.S. metro the narrative anchor.",
+        "Should be linked to domestic militarization rather than narrated as ordinary policy administration."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 5
+    },
+    {
+      "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+      "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "primary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Minnesota region described as close to occupied territory",
+          "why_it_matters": "That description signals not just immigration enforcement but inward-directed security logic, militarized presence, and emergency-style control over domestic civic space."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Federal operation on war footing",
+          "why_it_matters": "War-footing language is direct evidence that the week should be understood through coercive-security escalation, not merely administrative enforcement."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Operational emphasis on force deployment and civic intimidation",
+          "why_it_matters": "Allocator treatment suggests the coercive apparatus itself was a major week-level driver and should shape paragraph structure in the rewrite."
+        }
+      ],
+      "summary": "The week translated security-state logic into domestic urban space, with the Minnesota operation functioning as a demonstration of militarized federal force turned inward.",
+      "continuity_notes": [
+        "Continues the late-year pattern in which immigration operations double as tests of domestic militarization.",
+        "Should be paired with immigration as the method-versus-apparatus distinction: immigration is the policy instrument; militarization is the mode of execution.",
+        "This is not background texture; it is one of the two main engines of the week's atmosphere."
+      ],
+      "rewrite_priority": "lead",
+      "recommended_paragraph_weight": 4
+    },
+    {
+      "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "canonical_name": "Crony capitalism and private-state fusion",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Economic power wielded as personal leverage",
+          "why_it_matters": "The week summary explicitly frames economic power as personalized leverage, directly matching the patronage and insider-benefit logic of private-state fusion."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Money and policy adjusted around enforcement climate",
+          "why_it_matters": "This indicates that financial and state power were intertwined with coercive operations rather than operating as a separate policy domain."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator recognition of economic leverage strand",
+          "why_it_matters": "Its development status supports treating crony political economy as a real supporting frame, not a throwaway aside."
+        }
+      ],
+      "summary": "Alongside the raids and force posture, the week showed economic power being used in a personalized, insider-serving way that reinforced the broader authoritarian pattern.",
+      "continuity_notes": [
+        "Build from prior weeks in which policy and leverage increasingly served personal or allied advantage.",
+        "Should be framed as reinforcing coercive governance rather than replacing the immigration-security lead.",
+        "Useful as the second movement of the week: after force comes leverage."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "canonical_name": "Information control, record erasure, and public-memory manipulation",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "high",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Information system bent to protect enforcement and leverage",
+          "why_it_matters": "The week's own summary makes information management one of the three converging pillars, showing that narrative control was integral to how the week functioned."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Narrative adjustment around Minnesota operation",
+          "why_it_matters": "Coverage indicating managed framing, opacity, or selective presentation supports the thread as active rather than merely implied."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator placement of media or records-control material",
+          "why_it_matters": "This supports practical rewrite use: the writer should show how narrative management protected the visible coercive actions."
+        }
+      ],
+      "summary": "The week did not only deploy force; it also managed what could be known and how it would be understood, making information control a key supporting frame.",
+      "continuity_notes": [
+        "Continues a year-long pattern in which opacity and narrative management protect coercive or corrupt exercises of power.",
+        "Should be interwoven with the Minnesota story rather than handled as a separate media subplot.",
+        "This thread helps explain why the week felt like a convergence instead of a sequence of disconnected incidents."
+      ],
+      "rewrite_priority": "major",
+      "recommended_paragraph_weight": 3
+    },
+    {
+      "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "canonical_name": "Law used to protect allies and punish opponents",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "secondary",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Law adjusted to make operations easier to launch",
+          "why_it_matters": "The summary says law was adjusted around the week's center, indicating legal process was functioning asymmetrically in service of executive aims."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Legal facilitation and protective framing",
+          "why_it_matters": "Digest evidence likely tying legal discretion to enforcement or shielding makes this thread present as a mechanism of impunity and punishment."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator inclusion of legal-retaliation or shielding strand",
+          "why_it_matters": "Allocator weight suggests a meaningful but not dominant role in the week's structure."
+        }
+      ],
+      "summary": "Legal authority in the week appeared less as neutral adjudication than as a tool for clearing space for coercive action and protecting those directing it.",
+      "continuity_notes": [
+        "This is a continuing late-year pattern of selective legal application rather than a fresh emergence.",
+        "Keep the focus on asymmetry and facilitation, not on abstract constitutional debate.",
+        "Can bridge the immigration-security lead to the Epstein sub-thread if needed."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+      "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+      "scope_level": "sub_thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator continuation of Epstein-files accountability conflict",
+          "why_it_matters": "This week is listed among the thread's supporting weeks, so allocator-level inclusion is enough to treat it as an ongoing late-year accountability conflict."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Continuing records or disclosure fight",
+          "why_it_matters": "Any week-level mention of delay, curation, or disclosure conflict keeps the sub-thread alive even if it does not drive the chapter opening."
+        }
+      ],
+      "summary": "The Epstein records fight remained part of the late-year background, reinforcing the broader sense of elite shielding and managed disclosure without displacing the week's Minnesota-centered coercive story.",
+      "continuity_notes": [
+        "This is a carry-forward late-year sub-thread, not a fresh escalation.",
+        "Mention only if it sharpens the elite-impunity atmosphere of the week.",
+        "Do not let it compete with the immigration-security convergence for narrative center."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "War-footing and federal unilateralism in background",
+          "why_it_matters": "Even if the week was narrated more concretely through raids and force posture, the emergency-rule logic remains an important interpretive backdrop."
+        },
+        {
+          "source_type": "other",
+          "source_ref": "prior_week_thread_package",
+          "event_id": null,
+          "development_id": null,
+          "title": "Prior-week continuity context",
+          "why_it_matters": "Prior week context helps justify treating executive overreach as continuing backdrop rather than a front-burner weekly thread."
+        }
+      ],
+      "summary": "The constitutional pattern of unchecked executive action remained present as context, but the week was better explained through the concrete security and immigration apparatus than through high-level overreach language.",
+      "continuity_notes": [
+        "Keep as backdrop, not as lead framing.",
+        "Use only to clarify that the Minnesota operation sat within a broader architecture of weakened checks.",
+        "Avoid duplicating material already better captured under domestic militarization."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ADMIN_STATE_CAPTURE",
+      "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Institutional machinery enabling operations",
+          "why_it_matters": "The week's enforcement capacity presupposes captured institutions, but the immediate story is not primarily about staffing or bureaucratic purge."
+        }
+      ],
+      "summary": "Agency capture helped make the week's actions possible, but the chapter should not foreground internal administrative restructuring unless the source material gives a specific operational example.",
+      "continuity_notes": [
+        "Treat as enabling context only.",
+        "Do not spend scarce paragraph space on general bureaucracy unless tied directly to Minnesota or information suppression.",
+        "Best folded into a sentence about machinery made ready over previous months."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+      "scope_level": "thread",
+      "status": "dormant",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Tiered belonging implied by immigration-centered coercion",
+          "why_it_matters": "The immigration crackdown expresses a hierarchy of belonging even if the week's direct evidence centers on raids rather than broader identity-policy changes."
+        }
+      ],
+      "summary": "The week's enforcement story carried an underlying message about who belongs and who can be exposed to extraordinary force, but that broader rights hierarchy remained implicit rather than independently developed.",
+      "continuity_notes": [
+        "Useful as thematic undertone, not as a separate section.",
+        "If mentioned, connect it to the hierarchy embedded in immigration control.",
+        "Do not broaden into unrelated anti-DEI or anti-trans policy unless sources demand it."
+      ],
+      "rewrite_priority": "mention_only",
+      "recommended_paragraph_weight": 1
+    },
+    {
+      "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+      "scope_level": "thread",
+      "status": "continuing",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "week_markdown",
+          "source_ref": "step5_narrative_week52_final.txt",
+          "event_id": null,
+          "development_id": null,
+          "title": "Domestic operation narrowed civic space",
+          "why_it_matters": "A region treated as occupied territory implies not only enforcement against migrants but intimidation of communities, observers, and local opposition."
+        },
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "Pressure on critics or local resistance",
+          "why_it_matters": "Any week-level reporting on intimidation, suppression, or framing of opponents as threats supports this thread as present in the background."
+        }
+      ],
+      "summary": "The week's coercive display likely had a chilling effect on local resistance and public scrutiny, making anti-dissent suppression part of the atmosphere even if not the explicit headline thread.",
+      "continuity_notes": [
+        "Keep subordinate to domestic militarization unless the sources give a specific punishment-of-dissent episode.",
+        "Useful for explaining how such operations discipline more than their nominal targets.",
+        "Could help close the chapter on what the week taught critics and local officials."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+      "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+      "scope_level": "thread",
+      "status": "reborn",
+      "salience": "medium",
+      "week_role": "background",
+      "is_present": true,
+      "carry_forward_from_prior_week": true,
+      "evidence_items": [
+        {
+          "source_type": "digest",
+          "source_ref": "weekly_digest_week52.md",
+          "event_id": null,
+          "development_id": null,
+          "title": "State, local, or civil-society pushback around Minnesota operation",
+          "why_it_matters": "This week is one of the thread's supporting weeks, suggesting some meaningful but partial resistance re-entered the story."
+        },
+        {
+          "source_type": "development_allocator",
+          "source_ref": "development_allocator_week52.json",
+          "event_id": null,
+          "development_id": null,
+          "title": "Allocator treatment of resistance responses",
+          "why_it_matters": "If the allocator preserved resistance as a development line, it indicates the week should not read as uncontested even if resistance was weaker than federal force."
+        }
+      ],
+      "summary": "Resistance reappeared as a meaningful but secondary feature of the week, likely through local, state, legal, or civic efforts to answer the Minnesota operation and its surrounding coercive architecture.",
+      "continuity_notes": [
+        "Use cautiously: resistance is part of the week's shape but not its center of gravity.",
+        "The value of this thread is tonal and structural—showing that pushback existed but remained fragmented.",
+        "Best placed late in the chapter, after establishing the scale of federal action."
+      ],
+      "rewrite_priority": "supporting",
+      "recommended_paragraph_weight": 2
+    },
+    {
+      "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "No meaningful week-level evidence suggests election-system engineering was part of this chapter's active structure.",
+      "continuity_notes": [
+        "Omit unless a supplied source explicitly ties Minnesota or legal maneuvering to voting or representation rules."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+      "scope_level": "thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "No clear weekly evidence indicates universities, law firms, or comparable institutions were independently central this week.",
+      "continuity_notes": [
+        "Do not revive this thread unless the sources specifically show institutional retaliation beyond the broader information-control frame."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    },
+    {
+      "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+      "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+      "scope_level": "sub_thread",
+      "status": "inactive",
+      "salience": "low",
+      "week_role": "absent_but_relevant",
+      "is_present": false,
+      "carry_forward_from_prior_week": false,
+      "evidence_items": [],
+      "summary": "Leader-centered symbolism does not appear to be a meaningful part of the week's operative narrative.",
+      "continuity_notes": [
+        "Omit; the week is about coercive convergence, not symbolic glorification."
+      ],
+      "rewrite_priority": "omit",
+      "recommended_paragraph_weight": 0
+    }
+  ],
+  "week_summary_notes": [
+    "This week is best understood as a convergence chapter rather than a single-policy chapter: immigration, domestic force, economic leverage, and information management reinforce one another.",
+    "Minnesota is the week's center of gravity and should anchor the rewrite's opening scene or first major movement.",
+    "Immigration as control and domestic militarization are distinct but inseparable here; one describes the target regime, the other the coercive method.",
+    "Crony political economy and information control matter because they make the crackdown sustainable and narratively defensible, not because they replace the crackdown as the lead story.",
+    "Executive overreach and administrative capture remain part of the architecture but should mostly stay in the background to avoid abstracting away from the concrete operation.",
+    "If resistance appears, it should be presented as partial and reactive, not as a coequal frame with the federal action."
+  ],
+  "rewrite_guidance": {
+    "lead_threads": [
+      "THR_IMMIGRATION_AS_CONTROL",
+      "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION"
+    ],
+    "supporting_threads": [
+      "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+      "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+      "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+      "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+      "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE"
+    ],
+    "background_threads": [
+      "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+      "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+      "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+    ],
+    "threads_to_downplay": [
+      "THR_ADMIN_STATE_CAPTURE"
+    ],
+    "threads_to_omit": [
+      "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+      "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+      "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION"
+    ],
+    "opening_focus": "Open with the Minnesota operation as the week's concrete center, emphasizing how immigration enforcement on a war footing made a metropolitan region feel occupied and revealed the inward turn of federal coercive power.",
+    "closing_focus": "Close on the larger convergence: force, legal asymmetry, economic leverage, and information management were being aligned to make such operations easier to launch and harder to resist, while any resistance remained fragmented.",
+    "continuity_emphasis_notes": [
+      "Stress that this was not a sudden rupture but the maturation of year-long immigration and domestic-security threads.",
+      "Show how the week fused previously distinct patterns—coercive enforcement, insider leverage, and narrative control—into a single governing style.",
+      "Use executive-overreach language sparingly and only when it helps connect the concrete operation to the broader erosion of checks.",
+      "If mentioning Epstein or other elite-accountability material, keep it brief and subordinate to the main convergence frame.",
+      "Preserve the sense that the week's significance lies in normalization: extraordinary force was presented as ordinary governance."
+    ]
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "schema_name": "weekly_thread_rewrite_input",
+  "schema_version": "1.0",
+  "package_type": "thread_conscious_rewrite_input",
+  "scope": {
+    "project": "Trump Diary",
+    "period_label": "Year 1",
+    "week_number": 5
+  },
+  "build": {
+    "created_at": "2026-03-10T18:44:36Z",
+    "created_by": "build_weekly_thread_rewrite_input_v1",
+    "program_name": "build_weekly_thread_rewrite_input_v1",
+    "program_version": "1.0.0",
+    "run_id": "20260310T184436Z",
+    "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d"
+  },
+  "week": {
+    "week_number": 5,
+    "start_date": "2025-02-15",
+    "end_date": "2025-02-21",
+    "headline": "The fifth week of Trump’s second term read less like a series of disputes and more like a coordinated test of how much of the state could be bent at once.",
+    "summary": "The fifth week of Trump’s second term read less like a series of disputes and more like a coordinated test of how much of the state could be bent at once. The same names and tools recurred across domains: executive orders, emergency language, a Musk-led efficiency project, and a Justice Department willing to lean on its own lawyers. Agencies that once stood apart from day-to-day politics were pulled into the orbit of a single project. The pattern was not subtle. It was dense."
+  },
+  "sources": {
+    "weekly_thread_package_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_05_thread_package.json",
+    "prior_final_chapter_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/weekly_digest_final_week5.md",
+    "optional_supporting_material_files": {
+      "development_allocator": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+      "digest": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/weekly_digest_final_week5.md"
+    }
+  },
+  "weekly_thread_package": {
+    "schema_name": "weekly_thread_package",
+    "schema_version": "1.0",
+    "package_type": "thread_state_package",
+    "scope": {
+      "project": "Trump Diary",
+      "period_label": "Year 1",
+      "week_number": 5
+    },
+    "build": {
+      "created_at": "2026-03-10T03:50:55Z",
+      "created_by": "build_weekly_thread_package_v1",
+      "model": "gpt-5.4-2026-03-05",
+      "run_id": "20260310T035055Z",
+      "prompt_version": "Trump Diary — Weekly Thread Package Prompt v1",
+      "git_commit": "b45d184a7cc4fe2d07d286f222a65ad8d9aba87d",
+      "response_id": "resp_0d348cbd9d416ae30069af96588340819d973eb8d93684a88f"
+    },
+    "catalog_reference": {
+      "catalog_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/04_Catalog/phase1_consolidated_thread_catalog.json",
+      "catalog_run_id": "20260310T015257Z",
+      "catalog_schema_name": "phase1_consolidated_thread_catalog",
+      "catalog_schema_version": "1.0"
+    },
+    "sources": {
+      "week_final_markdown": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/step5_narrative_week5_final.txt",
+      "development_allocator_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+      "digest_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/weekly_digest_week5.md",
+      "event_log_file": null,
+      "prior_week_thread_package": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/06_ThreadPackages/week_04_thread_package.json"
+    },
+    "week": {
+      "week_number": 5,
+      "start_date": "2025-02-15",
+      "end_date": "2025-02-21",
+      "headline": "The fifth week of Trump’s second term read less like a series of disputes and more like a coordinated test of how much of the state could be bent at once.",
+      "summary": "The fifth week of Trump’s second term read less like a series of disputes and more like a coordinated test of how much of the state could be bent at once. The same names and tools recurred across domains: executive orders, emergency language, a Musk-led efficiency project, and a Justice Department willing to lean on its own lawyers. Agencies that once stood apart from day-to-day politics were pulled into the orbit of a single project. The pattern was not subtle. It was dense."
+    },
+    "thread_states": [
+      {
+        "thread_id": "THR_ADMIN_STATE_CAPTURE",
+        "canonical_name": "Administrative state capture through civil-service purge, agency hollowing, and loyalist control",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week headline/summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Coordinated bending of the state",
+            "why_it_matters": "The week summary itself frames the story as a multi-agency effort to bend state institutions at once, which directly matches the thread’s core logic of subordinating the bureaucracy to centralized loyalist control."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Musk-led efficiency project recurring across domains",
+            "why_it_matters": "The explicit recurrence of a Musk-led efficiency apparatus across agencies points to DOGE-style restructuring and agency hollowing as an operating mechanism, not a one-off administrative dispute."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Agencies pulled into one political orbit",
+            "why_it_matters": "The summary’s emphasis that agencies once insulated from politics were drawn into a single project is strong evidence of administrative capture rather than ordinary policy change."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week allocator expected to cluster agency-control developments",
+            "why_it_matters": "The allocator is a direct week source and, together with the narrative summary, supports treating agency subordination as one of the week’s principal structuring developments."
+          }
+        ],
+        "summary": "Administrative capture remained one of the week’s chief explanatory frames. The government was depicted not as operating through separate policy disputes but as being reorganized through repeated executive tools, loyalist pressure, and cross-agency coordination associated with the Musk-led efficiency drive.",
+        "continuity_notes": [
+          "This is clearly carrying forward from the opening weeks rather than newly appearing here.",
+          "Week 5 intensifies the thread by showing density and simultaneity across multiple agencies, not just isolated staffing or purge stories.",
+          "In rewrite terms, present this as a governing method that is becoming normalized."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 5
+      },
+      {
+        "thread_id": "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE",
+        "canonical_name": "Executive overreach through emergency claims, unilateral action, and weakened checks",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "high",
+        "week_role": "primary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week headline",
+            "event_id": null,
+            "development_id": null,
+            "title": "Coordinated test of how much of the state could be bent",
+            "why_it_matters": "That framing indicates not only capture of agencies but the use of presidential power in an expansive, weakly checked way across domains."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Executive orders and emergency language as recurring tools",
+            "why_it_matters": "The summary explicitly names executive orders and emergency language as repeat instruments, which is direct evidence for executive maximalism and emergency-style rule."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Cross-domain unilateralism",
+            "why_it_matters": "The fact that the same presidential tools recur across domains suggests the week should be read through a constitutional-method lens, not merely as disconnected policy fights."
+          }
+        ],
+        "summary": "Executive overreach was inseparable from the week’s administrative story. Emergency language and unilateral presidential tools were used as a common operating method, helping explain how so many institutions could be pressed simultaneously.",
+        "continuity_notes": [
+          "This thread remains active from prior weeks and should be treated as a co-equal frame with administrative capture.",
+          "The week appears less about a single legal showdown than about normalization of unilateralism across domains.",
+          "Stress the interaction between emergency rhetoric and bureaucratic takeover rather than treating them as separate chapters."
+        ],
+        "rewrite_priority": "lead",
+        "recommended_paragraph_weight": 4
+      },
+      {
+        "thread_id": "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "canonical_name": "Law used to protect allies and punish opponents",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Justice Department willing to lean on its own lawyers",
+            "why_it_matters": "This is direct evidence that legal institutions were being pressured internally in ways consistent with politicized law enforcement and asymmetrical use of the justice system."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Justice apparatus folded into the single project",
+            "why_it_matters": "The summary places DOJ behavior inside the same coordinated pattern affecting other institutions, supporting the view that law was being bent to executive priorities rather than operating neutrally."
+          }
+        ],
+        "summary": "The justice system was not the sole focus of the week, but DOJ pressure was significant enough to show the law-enforcement apparatus being bent toward the broader project. That makes weaponized law a meaningful secondary thread.",
+        "continuity_notes": [
+          "Carries forward from earlier weeks where legal asymmetry and DOJ politicization were already active.",
+          "This week’s emphasis is internal pressure on legal actors rather than a fully distinct retaliation storyline.",
+          "Use as an important supporting strand, not the main frame."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_IMMIGRATION_AS_CONTROL",
+        "canonical_name": "Immigration, asylum, and citizenship used as instruments of coercion and tiered belonging",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Likely inclusion of immigration developments in week allocator",
+            "why_it_matters": "Given this thread’s continuous presence in weeks 1-5 and the broader emergency-governance framing of the week, immigration likely remained one operational domain even if not the best top-level frame for the chapter."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Emergency language recurring across domains",
+            "why_it_matters": "Immigration is one of the recurring domains through which emergency governance and coercive state practice have been expressed, making it relevant even if not foregrounded in the supplied summary text."
+          }
+        ],
+        "summary": "Immigration remained part of the week’s governing backdrop, especially as one of the domains through which emergency-style coercion had already been normalized. But in this week’s narrative structure, it appears more as one front in a larger state-bending project than as the principal frame.",
+        "continuity_notes": [
+          "Treat as continuing from prior weeks rather than newly escalated here.",
+          "Mention if needed as one of the domains showing how the larger method traveled across government.",
+          "Do not let it displace the stronger frame of coordinated state capture unless the week’s detailed materials require it."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS",
+        "canonical_name": "Information control, record erasure, and public-memory manipulation",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Dense coordinated pattern rather than isolated disputes",
+            "why_it_matters": "Even without a major information-control episode foregrounded in the summary, the week’s dense, managed cross-agency pattern makes opacity and narrative control relevant context."
+          },
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Possible supporting data/records developments",
+            "why_it_matters": "The allocator may contain week-specific informational or records angles, but based on the supplied high-level evidence they appear contextual rather than central."
+          }
+        ],
+        "summary": "Information control does not appear to drive the week on its own, but it remains part of the interpretive background because cross-agency capture often depends on managed opacity, data control, or narrative discipline.",
+        "continuity_notes": [
+          "Keep in memory from prior weeks but do not foreground unless detailed week materials contain a specific records or media episode.",
+          "Useful as connective tissue when describing how state capture also narrows what outsiders can know."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      },
+      {
+        "thread_id": "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "canonical_name": "Crony capitalism and private-state fusion",
+        "scope_level": "thread",
+        "status": "reborn",
+        "salience": "medium",
+        "week_role": "secondary",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Musk-led efficiency project as state actor",
+            "why_it_matters": "The centrality of a Musk-linked project in reorganizing government makes private-state fusion unusually visible this week; the mechanism is not just capture but capture through a favored private actor."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week headline/summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Same names and tools recurring across domains",
+            "why_it_matters": "The repeat role of Musk and allied instruments across multiple institutions suggests an oligarchic governance pattern, not merely neutral technocratic reform."
+          }
+        ],
+        "summary": "Private-state fusion regained visibility this week because the Musk-linked efficiency drive was not peripheral; it appeared as one of the main vehicles through which institutions were being bent. That makes crony governance more salient than in a routine week of internal administrative maneuvering alone.",
+        "continuity_notes": [
+          "If this thread was less foregrounded in the immediate prior week, Week 5 reads like a reactivation rather than simple background continuity.",
+          "Frame Musk not as colorful accompaniment but as part of the governing mechanism linking private power to state restructuring.",
+          "Keep financial-enrichment implications subordinate to the more immediate institutional-control story."
+        ],
+        "rewrite_priority": "major",
+        "recommended_paragraph_weight": 3
+      },
+      {
+        "thread_id": "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "canonical_name": "Rights, recognition, and public belonging reordered along lines of identity, status, and ideology",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "development_allocator",
+            "source_ref": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week 5/development_allocator_week5.json",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week likely includes rights-order consequences of executive action",
+            "why_it_matters": "This thread is supported in week 5 in the annual catalogue, and the week’s broad state-bending frame implies that some executive actions likely bore on recognition, exclusion, or unequal belonging even if the summary does not highlight them."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Agencies repurposed away from neutral administration",
+            "why_it_matters": "When agencies are repurposed politically, one consequence is often uneven rights recognition and discriminatory administration, making this thread relevant as a downstream effect."
+          }
+        ],
+        "summary": "The anti-equality order remained in play, but more as a consequence and background layer of institutional repurposing than as the week’s top-line narrative. The week seems to show machinery being bent first, with unequal rights outcomes flowing through that machinery.",
+        "continuity_notes": [
+          "Continue from prior weeks without elevating unless the detailed materials show a major anti-DEI, anti-trans, or similar policy burst.",
+          "Useful in the rewrite as an effect of captured institutions rather than a separate lead frame this week."
+        ],
+        "rewrite_priority": "supporting",
+        "recommended_paragraph_weight": 2
+      },
+      {
+        "thread_id": "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "canonical_name": "Universities, law firms, and civil-society institutions coerced through funding, regulation, and status pressure",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "No direct campus or civil-society target highlighted in supplied summary",
+            "why_it_matters": "The available week framing emphasizes agencies, executive tools, Musk, and DOJ, not federal coercion of universities or comparable semi-independent institutions."
+          }
+        ],
+        "summary": "Civil-society coercion does not appear to be a meaningful standalone thread in the supplied account of Week 5. If present in raw materials at all, it is not central enough to shape the rewrite.",
+        "continuity_notes": [
+          "Do not force this thread into the chapter without specific evidence.",
+          "Omit unless a major university, nonprofit, or law-firm pressure episode appears in detailed source review."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "canonical_name": "Security forces and emergency powers turned inward against domestic opposition and civic space",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Emergency language present but no domestic force deployment highlighted",
+            "why_it_matters": "The summary supports executive overreach but does not point to guard deployments, militarized raids, or domestic security operations as a distinct weekly development."
+          }
+        ],
+        "summary": "Domestic militarization is not yet an active standalone thread for this week. Emergency language matters here at the constitutional level, but the coercive-security apparatus does not appear to be the key weekly mechanism.",
+        "continuity_notes": [
+          "Do not import later-year militarization themes into this early week.",
+          "If mentioned at all, do so only to note the emergency rhetoric that will later support harsher operational forms."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "canonical_name": "Elections, voting rules, and representation engineered for partisan entrenchment",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "No election-administration or representation changes foregrounded",
+            "why_it_matters": "Nothing in the supplied week framing indicates that electoral rules or representation engineering were major components of the week."
+          }
+        ],
+        "summary": "Election engineering does not appear to be part of the week’s narrative structure and should not shape the rewrite.",
+        "continuity_notes": [
+          "Omit unless detailed source materials show a concrete voting-rule or representation story."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "canonical_name": "Opposition, protest, journalism, and dissent treated as threats to be punished or neutralized",
+        "scope_level": "thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "No explicit protest or opposition-targeting episode in supplied summary",
+            "why_it_matters": "The week as summarized is about institutional bending and internal state control more than direct punishment of protest or journalism as such."
+          }
+        ],
+        "summary": "Anti-dissent suppression is not a standalone week driver in the supplied materials. The pressure appears aimed more at institutions and internal legal actors than at protest movements or journalism directly.",
+        "continuity_notes": [
+          "Do not elevate this thread without explicit evidence of targeting dissenters.",
+          "Any indirect chilling effect can remain implicit inside other threads."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "canonical_name": "Public institutions, symbols, and civic memory reshaped around leader glorification and personal rule",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "No symbolic glorification angle foregrounded",
+            "why_it_matters": "The week’s stress is operational capture, not leader-centered symbolism or memorial politics."
+          }
+        ],
+        "summary": "This late-year symbolic sub-thread is not active in Week 5 and should be omitted.",
+        "continuity_notes": [
+          "Do not project later symbolic-personalist themes backward into this early week."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY",
+        "canonical_name": "Epstein files, archival noncompliance, and elite-accountability conflict",
+        "scope_level": "sub_thread",
+        "status": "inactive",
+        "salience": "low",
+        "week_role": "absent_but_relevant",
+        "is_present": false,
+        "carry_forward_from_prior_week": false,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "No Epstein-records conflict indicated",
+            "why_it_matters": "This is a late-year sub-thread with no sign of activation in the supplied Week 5 materials."
+          }
+        ],
+        "summary": "Not active this week.",
+        "continuity_notes": [
+          "Omit entirely."
+        ],
+        "rewrite_priority": "omit",
+        "recommended_paragraph_weight": 0
+      },
+      {
+        "thread_id": "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "canonical_name": "Uneven resistance by courts, states, legislatures, and civil society",
+        "scope_level": "thread",
+        "status": "continuing",
+        "salience": "medium",
+        "week_role": "background",
+        "is_present": true,
+        "carry_forward_from_prior_week": true,
+        "evidence_items": [
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week headline/summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Week framed as a test of how much the state could be bent",
+            "why_it_matters": "A 'test' formulation implies the presence or weakening of countervailing forces; resistance matters here less as a set of victories than as the measure against which the week’s pressure campaign is judged."
+          },
+          {
+            "source_type": "week_markdown",
+            "source_ref": "week summary",
+            "event_id": null,
+            "development_id": null,
+            "title": "Agencies once standing apart were pulled inward",
+            "why_it_matters": "That phrasing suggests erosion of institutional independence, which makes the condition of resistance an important background counter-thread even if resistance was not triumphant or heavily narrated."
+          }
+        ],
+        "summary": "Resistance remained relevant mainly as a shrinking or uneven counterweight. The week’s emphasis is not on successful pushback but on the sense that guardrails were being tested across multiple institutions at once.",
+        "continuity_notes": [
+          "Carry forward from earlier weeks where courts and other institutions still functioned as partial brakes.",
+          "Use carefully: the point this week is the insufficiency or fragmentation of resistance, not a full resistance-centered chapter.",
+          "A brief note on weakening guardrails can sharpen the rewrite’s sense of stakes."
+        ],
+        "rewrite_priority": "mention_only",
+        "recommended_paragraph_weight": 1
+      }
+    ],
+    "week_summary_notes": [
+      "Week 5 is best understood as a convergence week: multiple authoritarian methods that had appeared separately now look coordinated.",
+      "Administrative capture and executive overreach are the two dominant explanatory threads and should be treated as mutually reinforcing, not redundant.",
+      "The Musk-linked efficiency apparatus makes private-state fusion more visible than in some earlier weeks and helps explain how state capture is being operationalized.",
+      "DOJ pressure matters chiefly as evidence that even legal institutions are being bent into the same project.",
+      "Several other year-wide threads remain relevant only as background consequences or context; the rewrite should resist overloading the chapter with every possible domain.",
+      "The week should read as dense and systemic rather than episodic."
+    ],
+    "rewrite_guidance": {
+      "lead_threads": [
+        "THR_ADMIN_STATE_CAPTURE",
+        "THR_EXECUTIVE_OVERREACH_AND_EMERGENCY_RULE"
+      ],
+      "supporting_threads": [
+        "THR_WEAPONIZED_LAW_AND_ELITE_IMPUNITY",
+        "THR_CRONY_CAPITALISM_AND_PRIVATE_STATE_FUSION",
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER"
+      ],
+      "background_threads": [
+        "THR_INSTITUTIONAL_AND_CIVIL_SOCIETY_RESISTANCE",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+      ],
+      "threads_to_downplay": [
+        "THR_IMMIGRATION_AS_CONTROL",
+        "THR_STRATIFIED_RIGHTS_AND_ANTI_EQUALITY_ORDER",
+        "THR_INFORMATION_CONTROL_AND_MEMORY_POLITICS"
+      ],
+      "threads_to_omit": [
+        "THR_CAMPUS_AND_CIVIL_SOCIETY_COERCION",
+        "THR_SECURITY_FORCES_AND_DOMESTIC_MILITARIZATION",
+        "THR_ELECTION_RULES_AND_REPRESENTATION_ENGINEERING",
+        "THR_ANTI_DISSENT_AND_OPPOSITION_SUPPRESSION",
+        "THR_PERSONALIST_STATE_SYMBOLISM_AND_LEADER_GLORIFICATION",
+        "THR_EPSTEIN_FILES_AND_ELITE_ACCOUNTABILITY"
+      ],
+      "opening_focus": "Open on the sense that the administration was no longer merely generating controversies but subjecting multiple parts of the state to a coordinated stress test, using executive orders, emergency language, and a Musk-linked restructuring drive as common instruments.",
+      "closing_focus": "Close by emphasizing that the significance of the week lay in the normalization of method: agencies, legal actors, and policy domains were being folded into one project, while whatever resistance remained looked fragmented and reactive.",
+      "continuity_emphasis_notes": [
+        "Stress continuity from the first month: this week intensifies patterns already established rather than introducing a wholly new governing style.",
+        "Show how executive overreach enables administrative capture, and how administrative capture in turn makes unilateral rule easier to sustain.",
+        "Use DOJ pressure as a sign that legal neutrality is being bent inward, not as a separate legal-drama chapter.",
+        "Mention Musk/private-state fusion as an operational bridge between bureaucratic hollowing and oligarchic governance.",
+        "If immigration or rights-rollbacks appear in the chapter, present them as domains through which the broader machinery is operating, not as competing lead narratives."
+      ]
+    }
+  },
+  "prior_final_chapter_text": "The week opened with a rapid, coordinated effort to shrink and reshape the federal government. The White House empowered Elon Musk’s DOGE committee to drive downsizing, agencies began firing and furloughing thousands of workers, and the same group moved to gain access to some of the government’s most sensitive data systems. At the same time, the administration pressed ahead with deregulatory orders, hard‑line immigration enforcement, and efforts to control what the public can read and remember—from renaming the Gulf of Mexico to erasing references to transgender people and Black history from federal sites. By week’s end, mass firings were underway, courts had mostly declined to stop them, and talk of a possible third presidential term and open celebration of January 6 offenders underscored how far the boundaries of executive power and democratic norms were being tested.\n\nOver the weekend, the administration’s new approach to the federal workforce came into view. Trump signed an order giving Musk’s DOGE committee authority to drive federal downsizing, and agencies quickly followed with plans for large layoffs. Health agencies, including the CDC and HHS, prepared to fire thousands of staff even as they continued to manage public health threats. The Forest Service and National Park Service targeted 4,400 probationary workers, raising alarms about wildfire response and conservation capacity. A court approved Musk’s offer of eight months’ pay to encourage resignations across the two‑million‑person workforce, effectively turning a private ally into a central architect of public employment policy. Unions and several states rushed to court, and Judge Tanya Chutkan set an emergency hearing on DOGE’s cuts, but the machinery of the purge was already in motion.\n\nAt the same time, the administration imposed an across‑the‑board federal spending freeze as a March 14 shutdown deadline loomed. Trump’s allies in Congress clashed with Democrats over a funding bill, but the freeze went further, threatening to halt congressionally mandated programs even before any shutdown. Legal experts questioned its lawfulness, noting that the Constitution gives Congress, not the president, control over spending. Yet Republicans, who controlled Washington, still needed Democratic votes in the Senate to keep the government open, turning the freeze into leverage in a broader budget fight.\n\nImmigration policy hardened over the weekend as well. The administration threatened to end parole and Temporary Protected Status protections for Ukrainians and ordered a review of TPS for about a million people from 17 countries. The Justice Department fired more than two dozen immigration judges and candidates, and ICE intensified arrests at courthouses and mandatory check‑ins, including of DACA recipients and people with minimal records, under new daily arrest quotas. These moves signaled a strategy that combined status insecurity, fewer independent adjudicators, and more aggressive enforcement in and around the courts, reshaping who could safely access the legal system.\n\nInside the Justice Department, political pressure produced immediate institutional shock. Leadership confined lawyers in the Public Integrity Section and gave them an hour to decide who would move to dismiss the corruption indictment of New York Mayor Eric Adams or face firing. At least five Public Integrity lawyers and acting SDNY U.S. attorney Danielle Sassoon resigned rather than comply. Reporting indicated that the dismissal was tied to Adams’s cooperation with federal immigration operations, suggesting that prosecutorial decisions were being traded for policy concessions. The episode foreshadowed a week in which the department’s independence would be repeatedly tested.\n\nDOGE’s reach extended beyond personnel decisions into the machinery of regulation and oversight. Representatives from Musk‑aligned entities obtained access to payment and contracting systems at health agencies like CDC and CMS, while USDA and FDA fired staff reviewing Musk’s Neuralink, raising conflict‑of‑interest concerns. SpaceX personnel visited the FAA’s command center to review air traffic control systems, even though the company is regulated by the FAA. These steps blurred the line between regulator and regulated, embedding a politically connected private actor inside systems meant to provide neutral oversight.\n\nCourts and unions began to push back, but only selectively. The DC Circuit refused Trump’s bid to fire whistleblower watchdog Hampton Dellinger, preserving an injunction that kept him in place for the moment. Judge Chutkan scheduled an emergency hearing on DOGE’s cuts, and five federal employee unions sued over mass firings, arguing that the administration was bypassing reduction‑in‑force rules designed to protect against arbitrary dismissals. Yet the Justice Department simultaneously appealed to the Supreme Court to remove Dellinger, framing judicial limits on removals as an impermissible check on presidential power. The result was an early glimpse of a broader struggle over whether independent oversight could survive in the face of an assertive executive.\n\nThe weekend also saw education, culture, and media drawn into the same vortex of executive power. Trump issued an order cutting discretionary federal funds to schools that require COVID‑19 vaccination, tying public health decisions to ideological priorities, and called for shuttering the Department of Education, with reports of plans for an executive order to abolish it. The National Endowment for the Arts canceled grants focused on diversity, equity, and inclusion, and Trump executed a hostile takeover of the Kennedy Center, installing loyalists in leadership. In the realm of language and public memory, Trump proclaimed February 9 “Gulf of America Day” and asserted authority to rename the Gulf of Mexico and even Denali by executive order. When the Associated Press refused to adopt the new name, the administration barred AP from White House briefings, the Oval Office, and Air Force One. Other outlets criticized the move but did not boycott in solidarity, illustrating how access can be used to pressure media without provoking a unified response.\n\nBudget politics sharpened these themes. The House Budget Committee’s Republican majority advanced a plan that would add $4.5 trillion to the deficit by extending tax cuts for the wealthy and corporations, while cutting $1.5 trillion from Medicare, Medicaid, and nutrition assistance. This early blueprint foreshadowed deeper fights over the social safety net and aligned with the administration’s spending freeze. At the same time, LGBTQ+ rights and history came under renewed pressure: protesters gathered at Stonewall after the National Park Service removed “TQ+” from LGBTQ+ references on the monument’s website, and the EEOC moved to dismiss six gender‑identity discrimination cases under a new executive order recognizing only two sexes. The juxtaposition of these symbolic erasures with the depraved‑indifference murder of Sam Nordquist, a transgender man in New York, underscored the real‑world stakes of narrowing legal and cultural recognition.\n\nBy Monday, DOGE’s ambitions had moved from agency systems to the heart of federal data. Reports surfaced that the IRS was preparing to give DOGE broad access to classified taxpayer systems, including detailed returns, while DOGE also sought Social Security data on millions of Americans. Michelle King, acting head of the Social Security Administration, resigned rather than release beneficiary data. A White House spokesperson defended DOGE’s access as necessary to fight “waste, fraud, and abuse,” even as senators Ron Wyden and Elizabeth Warren demanded answers and later fact‑checks exposed major exaggerations in DOGE’s claimed savings. Centralizing access to tax and benefits data in a politically directed unit raised the prospect that financial and personal information could be weaponized against opponents or used to reward allies, with limited external oversight.\n\nThe Justice Department saw further resignations over politicized orders. Denise Cheung, Criminal Division Chief in the U.S. Attorney’s Office in DC, resigned after refusing an order from a Trump appointee to open a criminal probe and freeze assets tied to a Biden‑era contract that she said lacked legal basis. DOJ leadership sent a letter accusing Rep. Robert Garcia of “threatening” Elon Musk over critical comments and launched “Operation Whirlwind” to investigate threats against officials, including inquiries into statements by Sen. Chuck Schumer and Garcia. The use of investigative tools to scrutinize political critics, alongside pressure on career officials to open baseless probes, further eroded the norm that law enforcement should be insulated from partisan agendas.\n\nCensorship spread inside federal workplaces and military schools. OSHA ordered the destruction of 18 workplace safety publications—many unrelated to diversity initiatives beyond containing words like “diversity” or “gender”—including guidance on restroom access for transgender workers. A detailed Defense Department memo directed its 161 schools to strip curricula and libraries of materials on “gender ideology” and “discriminatory equity ideology,” cancel cultural awareness events, and remove content honoring figures like Susan B. Anthony and Martin Luther King Jr. These steps went beyond policy disagreement to the active destruction of documents and narrowing of what students could read about gender, race, and civil rights, using state power to curate memory for a generation of students.\n\nOn Tuesday, the labor and regulatory offensive widened. The administration unilaterally canceled collective bargaining agreements with federal workers and rescinded worker protections for federal contractors, while firing thousands of probationary employees and pressuring 75,000 more to accept resignation offers. Employment lawyers warned that the moves likely violated employee protections, and unions filed suits, but a judge would later allow the downsizing to proceed. In parallel, Trump issued an executive order requiring most independent agencies to submit proposed rules to the White House’s Office of Information and Regulatory Affairs for review, and a companion order granting the White House and attorney general direct authority over independent regulatory agencies’ priorities and budgets. A separate order, framed as “Ensuring Accountability for All Agencies,” further centralized oversight of rulemaking. Together, these orders pulled financial, consumer, and safety regulators under tighter presidential supervision, eroding a key layer of checks and balances.\n\nCourts and states clashed over climate accountability. New York and Vermont’s climate superfund laws, which make fossil fuel companies pay for climate damages, drew a lawsuit from 22 red states and oil trade groups claiming state overreach. Youth climate activists lost a high‑profile case against the EPA, while the agency extended comment periods and published environmental impact statements for major energy projects. These legal battles unfolded as the administration prepared to declare an “energy emergency” and fast‑track fossil fuel projects, setting up a conflict between state‑level attempts to hold polluters financially responsible and federal efforts to ease their path.\n\nNot all judicial decisions favored the administration. A federal appeals court in San Francisco denied the administration’s request to reinstate Trump’s executive order ending birthright citizenship for children of non‑citizens and non‑permanent residents, leaving in place an injunction from a Washington state court. A separate appeals court later rejected an emergency DOJ application on the same issue. By upholding the 14th Amendment’s guarantee of birthright citizenship, the courts preserved a core constitutional principle against an aggressive attempt to redefine who counts as American, even as other parts of the immigration system were being hardened.\n\nWednesday brought a dense cluster of moves that tied together deregulation, personnel purges, and information control. Trump announced that he had instructed DOJ to terminate all remaining U.S. attorneys appointed by Biden, following earlier removals of about 20 holdovers. While presidents routinely replace U.S. attorneys, the scope and timing—paired with ongoing pressure in specific cases like Eric Adams’s—signaled an effort to align federal prosecution more closely with White House priorities. On the same day, Trump signed an executive order directing agencies to identify and rescind or stop enforcing regulations deemed unconstitutional or beyond statutory authority, and another to shrink or terminate several federal entities, including the U.S. Institute of Peace and African Development Foundation. These orders encouraged agencies to unilaterally downgrade rules without waiting for courts, shifting legal and regulatory power toward the executive.\n\nJudges mostly allowed mass firings and furloughs to proceed. A federal judge declined to issue a temporary restraining order blocking mass federal worker firings, redirecting unions to the labor board. Another judge allowed the administration to place more than 2,000 USAID workers on leave. Combined with earlier decisions, these rulings cleared the way for layoffs at IRS, USAID, and other agencies to continue while legal challenges moved slowly. In contrast, a separate judge temporarily blocked the firing of 11 diversity, equity, and inclusion staffers at the CIA and Office of the Director of National Intelligence, underscoring how fragmented judicial checks could be when the executive targeted specific policy areas and agencies.\n\nEnvironmental and local climate policy came under renewed pressure. Invoking an “energy emergency,” the administration created a new fast‑track permit category at the Army Corps of Engineers, allowing 688 pending projects—including over 100 pipelines—to bypass normal environmental review and public comment. Environmental groups sued to restore Biden‑era protections for 625 million acres of federal waters. At the same time, the administration moved to revoke federal approval for New York City’s congestion pricing program, undermining a local effort to reduce traffic and emissions. These steps accelerated fossil fuel expansion while sidelining communities and states that bear environmental and health costs.\n\nCensorship and erasure of marginalized histories intensified online and in schools. Reports showed that federal websites were scrubbing mentions of Black people during Black History Month, while the National Park Service removed transgender references from Stonewall and other pages. In Defense Department schools, librarians and teachers were ordered to remove books on gender and equity, with some libraries closing entirely to comply. These actions built on earlier NEA and OSHA moves to purge DEI‑related content, using federal authority to narrow who appears in official narratives of the nation’s past and present.\n\nPublic resistance grew alongside these changes. Thousands of people protested across the country against Musk’s DOGE‑driven budget cuts, including a rally of more than 1,000 federal workers outside SpaceX’s Washington building led by Rep. Alexandria Ocasio‑Cortez. Separate nationwide protests denounced the administration’s broader actions as undermining democracy and alliances. In the courts, Judge Dale Ho pressed acting Deputy Attorney General Emil Bove on DOJ’s motion to dismiss the Eric Adams indictment, noting that the rationale was policy‑based rather than about the case’s merits. The hearing ended without a decision, leaving open the possibility that charges could be refiled even as key prosecutors had already resigned. Meanwhile, the Associated Press responded to its exclusion from White House events by filing federal lawsuits against the administration and White House officials, arguing that the bans violated First Amendment protections and seeking restoration of access.\n\nThursday shifted attention to the boundaries of presidential power and political violence. At a White House event, Trump asked supporters whether he should run for a third term and mused about constitutional limits. At CPAC, Steve Bannon promoted a constitutional amendment to allow Trump to serve a third term, backed by a “Third Term Project” think tank. While such a change would require a difficult amendment process, the public discussion chipped away at the perceived inviolability of the two‑term limit established after Franklin Roosevelt’s presidency and codified in the 22nd Amendment. At the same conference, individuals convicted for their roles in the January 6 Capitol attack, including Richard Barnett, appeared as honored guests after being pardoned by Trump on his first day back in office. Proud Boys leader Enrique Tarrio, also pardoned, was later arrested for assaulting a protester near the Capitol. Celebrating and pardoning those who attacked Congress signaled tolerance for political violence and weakened deterrence against future assaults on democratic institutions.\n\nImmigration and budget policy moved in tandem. The Senate passed a budget resolution allocating $175 billion for border security and Trump’s mass deportation plan, while also boosting Pentagon spending. Trump then signed an executive order titled “Ending Taxpayer Subsidization of Open Borders,” directing agencies to align programs so that undocumented immigrants could not receive federal benefits and to report “improper” use to DOJ and DHS. In parallel, Trump endorsed the hard‑line House budget plan that extended tax cuts for the wealthy, added $4.5 trillion to the deficit, and mandated $880 billion in cuts from the Energy & Commerce Committee—effectively targeting Medicaid and other health programs. His endorsement undercut Senate Republicans’ more limited proposal and increased the risk of a shutdown as deadlines approached.\n\nDOGE’s narrative about “waste” faced mounting factual challenges. Fact‑checkers and lawmakers highlighted major errors in DOGE’s claims of canceling $16 billion in wasteful contracts, including one touted $8 billion contract that was actually about $8 million. Congressman Nick Begich amplified false claims that millions of people over 100 were receiving Social Security benefits, and later told constituents he was powerless to stop DOGE cuts that cost Alaska federal jobs. These inflated and false claims were being used to justify deep cuts and data grabs, making accurate information a central battleground in the debate over government spending.\n\nForeign policy proposals raised alarms about U.S. security and leverage. The administration floated a “deal” to repeal tariffs on China in exchange for purchase promises, despite past failures of similar agreements, and Trump proposed that the U.S. and China each cut military spending in half—a move analysts warned would amount to unilateral U.S. disarmament given China’s opaque off‑budget spending. In parallel, a White House official pressed Ukraine to stop criticizing Trump and accept a $500 billion deal transferring half its mineral wealth to the U.S., echoing earlier mineral‑for‑support proposals that President Zelensky had rejected. These initiatives suggested a foreign policy that traded long‑term security and alliance credibility for short‑term economic or political gains, and that sought economic leverage over a partner at war.\n\nFriday confirmed that the federal workforce purge would continue and that the state’s capacity in key areas would shrink. The administration moved ahead with mass firings across the federal workforce, often citing “poor performance” even for employees with positive reviews. A judge ruled that federal courts lacked jurisdiction to block the firings, directing unions to the labor board instead. Agencies managing public lands, health, and foreign aid reported deep staffing losses, with particular concern about wildfire response and conservation capacity. In science and environmental policy, the administration removed grants and support for research that used the term “climate” and scrubbed climate references from government websites, as part of a broader campaign that had already halted DEI programs and fast‑tracked fossil fuel permits. Defunding and erasing climate research from official channels further hampered evidence‑based policymaking on a central global challenge.\n\nCourts again acted as a partial counterweight on citizenship. A U.S. appeals court denied DOJ’s emergency application to reinstate Trump’s ban on birthright citizenship, reinforcing the earlier Ninth Circuit decision. The rulings kept in place injunctions that preserved citizenship for children born in the U.S. to non‑citizen and non‑permanent resident parents, reaffirming a core constitutional guarantee and limiting the administration’s ability to redefine membership in the political community by executive order.\n\nOther institutions saw their leadership reshaped along ideological lines. Trump fired Air Force General CQ Brown Jr., the first Black chair of the Joint Chiefs of Staff, along with other top military officials, after Defense Secretary Pete Hegseth criticized Brown’s appointment as driven by diversity considerations. The move followed Hegseth’s earlier directive to plan for significant defense budget cuts and fit into a broader campaign against diversity initiatives in the military. In the civilian sphere, the administration proposed cuts to Social Security, Medicare, Medicaid, and food assistance programs, framing them as efforts to eliminate “waste, fraud, and abuse” despite limited evidence. Analysts noted that many of the hardest‑hit communities were in Republican‑dominated regions that rely heavily on these programs, suggesting that the social safety net was being narrowed even where it was most needed. Immigration enforcement leadership was also reshuffled: top ICE officials, including acting director Caleb Vitello, were reassigned or removed over dissatisfaction with deportation numbers, reinforcing a numbers‑driven enforcement culture that prioritized removals over due process and humanitarian considerations.\n\nTaken together, the week’s developments traced a coherent pattern rather than a series of isolated controversies. Mass firings and the dismantling of collective bargaining made the civil service more vulnerable to political direction. Executive orders pulled independent regulators, prosecutors, and watchdogs closer to the White House, while DOGE’s expanding reach into data systems and budgets gave a private‑aligned unit unusual influence over public policy. Immigration crackdowns, social safety net cuts, and the celebration of January 6 offenders all pointed toward a more stratified vision of rights and belonging. At the same time, efforts to control information—through media access, school curricula, federal websites, and climate research—narrowed the space for independent knowledge and public memory. Courts, unions, states, and protesters mounted pockets of resistance, preserving birthright citizenship, temporarily shielding some watchdogs and diversity staff, and challenging censorship and environmental rollbacks. But the overall trajectory was one of a leaner, more politicized state, with fewer internal checks and a more contested boundary between executive power and the constitutional and civic norms that have historically constrained it.\n",
+  "optional_supporting_materials": {
+    "development_allocator": "{\n  \"coverage_report\": {\n    \"covered_event_ids\": [\n      \"wk05_PA_003\",\n      \"wk05_PA_001\",\n      \"wk05_ES_008\",\n      \"wk05_IG_014\",\n      \"wk05_CR_016\",\n      \"wk05_IG_002\",\n      \"wk05_IG_006\",\n      \"wk05_IG_008\",\n      \"wk05_CR_001\",\n      \"wk05_CR_013\",\n      \"wk05_CR_015\",\n      \"wk05_ES_006\",\n      \"wk05_ES_007\",\n      \"wk05_PA_004\",\n      \"wk05_IG_016\",\n      \"wk05_CR_014\",\n      \"wk05_ES_012\",\n      \"wk05_ES_013\",\n      \"wk05_ES_017\",\n      \"wk05_ES_014\",\n      \"wk05_ES_019\",\n      \"wk05_ES_022\",\n      \"wk05_PA_008\",\n      \"wk05_PA_011\",\n      \"wk05_PA_013\",\n      \"wk05_IG_003\",\n      \"wk05_PA_014\",\n      \"wk05_PA_022\",\n      \"wk05_IG_011\",\n      \"wk05_IG_009\",\n      \"wk05_IG_001\",\n      \"wk05_IG_013\",\n      \"wk05_IG_019\",\n      \"wk05_IG_005\",\n      \"wk05_IG_017\",\n      \"wk05_IG_018\",\n      \"wk05_IG_021\",\n      \"wk05_IG_004\",\n      \"wk05_IG_010\",\n      \"wk05_PA_018\",\n      \"wk05_PA_019\",\n      \"wk05_CR_004\",\n      \"wk05_CR_005\",\n      \"wk05_CR_017\",\n      \"wk05_CR_018\",\n      \"wk05_CR_012\",\n      \"wk05_CR_019\",\n      \"wk05_CR_010\",\n      \"wk05_IG_022\",\n      \"wk05_CR_020\",\n      \"wk05_PA_002\",\n      \"wk05_PA_015\",\n      \"wk05_PA_012\",\n      \"wk05_IG_007\",\n      \"wk05_PA_021\",\n      \"wk05_CR_011\",\n      \"wk05_PA_016\",\n      \"wk05_PA_017\",\n      \"wk05_IG_015\",\n      \"wk05_IM_002\",\n      \"wk05_IM_018\",\n      \"wk05_ES_005\",\n      \"wk05_IM_022\",\n      \"wk05_IM_001\",\n      \"wk05_IM_012\",\n      \"wk05_IM_013\",\n      \"wk05_IM_011\",\n      \"wk05_IG_020\",\n      \"wk05_IM_003\",\n      \"wk05_IM_016\",\n      \"wk05_IM_017\",\n      \"wk05_IM_021\",\n      \"wk05_IM_019\",\n      \"wk05_IM_009\",\n      \"wk05_IM_006\",\n      \"wk05_IM_020\",\n      \"wk05_IM_010\",\n      \"wk05_CR_009\",\n      \"wk05_CR_002\",\n      \"wk05_CR_003\",\n      \"wk05_IM_005\",\n      \"wk05_PA_005\",\n      \"wk05_IM_004\",\n      \"wk05_IM_007\",\n      \"wk05_IM_008\",\n      \"wk05_ES_001\",\n      \"wk05_IM_015\",\n      \"wk05_IM_014\",\n      \"wk05_ES_023\",\n      \"wk05_ES_002\",\n      \"wk05_ES_003\",\n      \"wk05_ES_016\",\n      \"wk05_ES_009\",\n      \"wk05_ES_004\",\n      \"wk05_ES_018\",\n      \"wk05_ES_021\",\n      \"wk05_ES_029\",\n      \"wk05_ES_020\",\n      \"wk05_ES_032\",\n      \"wk05_ES_010\",\n      \"wk05_ES_011\",\n      \"wk05_ES_030\",\n      \"wk05_ES_031\",\n      \"wk05_ES_015\",\n      \"wk05_CR_006\",\n      \"wk05_CR_007\",\n      \"wk05_CR_008\",\n      \"wk05_IG_012\",\n      \"wk05_ES_027\"\n    ],\n    \"curated_categories\": [\n      \"Power and Authority\",\n      \"Institutions and Governance\",\n      \"Economic Structure\",\n      \"Civil Rights and Dissent\",\n      \"Information, Memory and Manipulation\"\n    ],\n    \"input_event_count\": 118,\n    \"notes\": \"Auto-filled by step4_8_v1 runner because model output omitted coverage_report. Re-run after updating prompts to emit a full coverage_report.\",\n    \"payload_mode\": \"curated_minimal\",\n    \"uncovered_event_ids\": []\n  },\n  \"developments\": [\n    {\n      \"anchor_event_ids\": [\n        \"wk05_PA_003\",\n        \"wk05_PA_001\",\n        \"wk05_ES_008\",\n        \"wk05_IG_014\",\n        \"wk05_CR_016\"\n      ],\n      \"dev_id\": \"D1\",\n      \"notes_for_writer\": \"Center the narrative on DOGE as a parallel power center: start with Trump\\u2019s order empowering Musk\\u2019s DOGE committee (wk05_PA_003), then move through sectoral impacts\\u2014health (wk05_PA_001, wk05_ES_012), immigration courts (wk05_CR_001), public lands (wk05_PA_004), aviation (wk05_CR_013, wk05_ES_013), foreign aid (wk05_IG_016, wk05_CR_016), and labor protections (wk05_ES_006, wk05_ES_007, wk05_ES_008). Use the court decisions (wk05_IG_002, wk05_IG_014, wk05_IG_006, wk05_IG_012, wk05_IG_016) to show where the judiciary greenlights or modestly checks the purge. You can briefly note the partial walk-back at NNSA (wk05_CR_014) as evidence of vulnerability plus resistance.\",\n      \"one_sentence_thesis\": \"The Trump\\u2013Musk DOGE project accelerated mass layoffs and structural changes across key agencies, with courts mostly allowing rapid downsizing that weakens state capacity and politicizes the civil service.\",\n      \"supporting_event_ids\": [\n        \"wk05_IG_002\",\n        \"wk05_IG_006\",\n        \"wk05_IG_008\",\n        \"wk05_CR_001\",\n        \"wk05_CR_013\",\n        \"wk05_CR_015\",\n        \"wk05_ES_006\",\n        \"wk05_ES_007\",\n        \"wk05_PA_004\",\n        \"wk05_CR_016\",\n        \"wk05_IG_016\",\n        \"wk05_CR_014\",\n        \"wk05_ES_012\",\n        \"wk05_ES_013\",\n        \"wk05_ES_017\",\n        \"wk05_ES_014\",\n        \"wk05_ES_019\",\n        \"wk05_ES_022\"\n      ],\n      \"title\": \"DOGE-Driven Purge Reshapes the Federal Workforce and Public Services\",\n      \"why_it_matters\": \"By hollowing out health, safety, environmental, foreign-aid, and transportation agencies while bypassing normal reduction-in-force rules, the administration both degrades core public functions and entrenches loyalty- and ideology-based control over who serves in government. This shift is hard to reverse and lays the groundwork for a more compliant, less expert state.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_PA_008\",\n        \"wk05_PA_011\",\n        \"wk05_PA_013\",\n        \"wk05_IG_003\"\n      ],\n      \"dev_id\": \"D2\",\n      \"notes_for_writer\": \"Open with the illegal spending freeze (wk05_PA_008) and DOGE deregulatory order (wk05_PA_013) as emblematic of Trump reinterpreting statutes on his own. Then fold in the order bringing independent agencies under OIRA/White House review (wk05_PA_011), plans to disband the USPS board (wk05_PA_022), and elimination of diplomacy/development entities (wk05_PA_014). Use the defiance of court orders (wk05_IG_003) and the Supreme Court appeal over the whistleblower watchdog (wk05_IG_009) to show confrontation with the judiciary, contrasting with a few rulings that still check him (wk05_IG_013, wk05_IG_005, wk05_IG_012). Tie in the EV/CHIPS funding freeze (wk05_ES_014) and \\u201cenergy emergency\\u201d fast-track (wk05_ES_022) as concrete examples of impoundment and emergency-style governance.\",\n      \"one_sentence_thesis\": \"Trump used executive orders, spending freezes, and defiance of injunctions to assert unilateral control over spending, regulation, and independent agencies, eroding the separation of powers.\",\n      \"supporting_event_ids\": [\n        \"wk05_PA_014\",\n        \"wk05_PA_022\",\n        \"wk05_ES_014\",\n        \"wk05_ES_022\",\n        \"wk05_IG_011\",\n        \"wk05_IG_009\",\n        \"wk05_IG_001\",\n        \"wk05_IG_013\",\n        \"wk05_IG_019\",\n        \"wk05_IG_005\",\n        \"wk05_IG_017\",\n        \"wk05_IG_018\",\n        \"wk05_IG_021\"\n      ],\n      \"title\": \"Executive Power Sidesteps Congress and Courts to Centralize Control\",\n      \"why_it_matters\": \"Normalizing impoundment, selective enforcement of laws, and White House oversight of nominally independent regulators weakens Congress\\u2019s power of the purse and judicial authority, making it easier for a single leader to govern without effective checks.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_IG_004\",\n        \"wk05_IG_010\",\n        \"wk05_PA_018\",\n        \"wk05_PA_019\"\n      ],\n      \"dev_id\": \"D3\",\n      \"notes_for_writer\": \"Frame this as a story of selective legality: start with DOJ coercing prosecutors to drop the Eric Adams indictment (wk05_IG_004) and the Criminal Division chief\\u2019s resignation (wk05_IG_010). Then move to Trump\\u2019s mass firing of Biden-appointed US attorneys (wk05_PA_018) and the pardons and celebration of January 6 attackers at CPAC (wk05_PA_019). Weave in immigration enforcement as weaponized law\\u2014ICE courthouse detentions (wk05_CR_004), benefit cuts and deportation budget (wk05_CR_017), ICE leadership reshuffle (wk05_CR_018)\\u2014and labor-law weakening via the unlawful NLRB firing (wk05_CR_005). You can contrast with isolated instances where the justice system still functions (e.g., charges in the Sam Nordquist murder, wk05_CR_019) to highlight the asymmetry.\",\n      \"one_sentence_thesis\": \"The administration intensified its capture of law enforcement and prosecutorial power, dropping corruption cases, purging legal officials, and pardoning January 6 attackers while redeploying enforcement against immigrants and critics.\",\n      \"supporting_event_ids\": [\n        \"wk05_CR_004\",\n        \"wk05_CR_005\",\n        \"wk05_CR_017\",\n        \"wk05_CR_018\",\n        \"wk05_CR_012\",\n        \"wk05_CR_019\",\n        \"wk05_CR_010\",\n        \"wk05_IG_009\",\n        \"wk05_IG_022\",\n        \"wk05_CR_020\"\n      ],\n      \"title\": \"Justice System Bent Toward Regime Protection and Impunity for Allies\",\n      \"why_it_matters\": \"When the law is applied to shield allies and punish opponents, it ceases to be a neutral constraint and becomes a tool of regime preservation, undermining equal justice and encouraging future political violence.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_PA_002\",\n        \"wk05_PA_015\",\n        \"wk05_CR_017\",\n        \"wk05_CR_004\"\n      ],\n      \"dev_id\": \"D4\",\n      \"notes_for_writer\": \"Tell this as a tightening net: begin with Trump threatening TPS and Uniting for Ukraine protections (wk05_PA_002) and restricting benefits for undocumented immigrants (wk05_PA_015, echoed in wk05_CR_017). Add the brief removal of legal aid for unaccompanied children (wk05_PA_012) and ICE\\u2019s courthouse and check-in arrests (wk05_CR_004) to show enforcement targeting those engaging with the system. Fold in structural moves like firing immigration judges (wk05_CR_001) and reassigned ICE leadership to speed deportations (wk05_CR_018). Use the EEOC\\u2019s retreat from gender-identity cases (wk05_IG_007) and the Maine funding threat over trans sports policy (wk05_PA_021) to show how identity and status intersect in access to rights.\",\n      \"one_sentence_thesis\": \"Through benefit cuts, status threats, courthouse arrests, and targeted enforcement, the administration deepened a stratified system where immigration status and identity determine access to basic protections.\",\n      \"supporting_event_ids\": [\n        \"wk05_PA_012\",\n        \"wk05_CR_001\",\n        \"wk05_CR_018\",\n        \"wk05_IG_007\",\n        \"wk05_IG_013\",\n        \"wk05_PA_021\",\n        \"wk05_CR_011\",\n        \"wk05_CR_012\"\n      ],\n      \"title\": \"Immigration and Citizenship Policy Harden Into a Tiered System of Rights\",\n      \"why_it_matters\": \"Creating a large class of people who live and work under constant threat of deportation or loss of status undermines equal protection, chills civic participation, and normalizes using legal precarity as a political tool.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_PA_016\",\n        \"wk05_PA_017\",\n        \"wk05_PA_019\"\n      ],\n      \"dev_id\": \"D5\",\n      \"notes_for_writer\": \"This can be a compact but high-impact development. Start with Trump floating a third term (wk05_PA_016), then show how Bannon and CPAC allies immediately turn that into a concrete constitutional project (wk05_PA_017). Pair this with the January 6 pardons and celebration at CPAC (wk05_PA_019) to underline the message that violence in service of Trump is acceptable. You can briefly situate this against the backdrop of Congress\\u2019s earlier NATO-exit guardrail (wk05_IG_021) to show that some institutions anticipated these moves but are now being outpaced.\",\n      \"one_sentence_thesis\": \"Trump\\u2019s public musing about a third term, allied calls to change the Constitution, and mass pardons for January 6 attackers together normalized the idea of extended personal rule and impunity for attacks on democratic institutions.\",\n      \"supporting_event_ids\": [\n        \"wk05_IG_021\",\n        \"wk05_IG_001\",\n        \"wk05_IG_021\",\n        \"wk05_IG_015\"\n      ],\n      \"title\": \"Trump and Allies Openly Test Third-Term Norms and Reward Anti-Democratic Violence\",\n      \"why_it_matters\": \"Challenging the two-term limit and celebrating those who used violence against Congress erodes core guardrails of peaceful rotation of power and signals that future anti-democratic actions may be rewarded, not punished.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_IM_002\",\n        \"wk05_IM_018\",\n        \"wk05_ES_005\",\n        \"wk05_IM_022\"\n      ],\n      \"dev_id\": \"D6\",\n      \"notes_for_writer\": \"Structure this around three pillars: (1) media control\\u2014ban of AP from key venues (wk05_IM_002) and AP\\u2019s lawsuit (wk05_IM_018), plus Musk\\u2019s call to imprison 60 Minutes journalists (wk05_IM_003); (2) data grabs\\u2014DOGE access to CDC/CMS systems (wk05_IM_001), push for IRS data (wk05_ES_005) defended with dubious savings claims (wk05_IM_012), and attempts to access Social Security and Notify.gov that trigger resignations (wk05_IM_011, wk05_IM_013), with courts sometimes enabling access (wk05_IG_011) and senators probing (wk05_IG_020); and (3) criminalization of criticism\\u2014Operation Whirlwind linking criticism of Musk/DOGE to threats (wk05_IM_022). Use RFK Jr.\\u2019s anti-vaccine messaging (wk05_IM_016) and Begich\\u2019s amplification of false DOGE claims (wk05_IM_017, wk05_ES_015) as examples of regime-aligned disinformation filling the space created by these controls.\",\n      \"one_sentence_thesis\": \"The administration escalated efforts to control information flows by punishing independent media, expanding DOGE access to sensitive data, and framing criticism of Musk and DOGE as potential criminal threats.\",\n      \"supporting_event_ids\": [\n        \"wk05_IM_001\",\n        \"wk05_IM_012\",\n        \"wk05_IM_013\",\n        \"wk05_IM_011\",\n        \"wk05_IG_011\",\n        \"wk05_IG_020\",\n        \"wk05_IM_003\",\n        \"wk05_IM_016\",\n        \"wk05_IM_017\",\n        \"wk05_IM_021\",\n        \"wk05_IM_019\"\n      ],\n      \"title\": \"Information Control Tightens: Media Punished, Data Seized, and Critics Cast as Threats\",\n      \"why_it_matters\": \"Constraining independent reporting while centralizing access to citizen data in opaque hands undermines informed consent, chills scrutiny, and enables targeted manipulation or retaliation against opponents.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_IM_009\",\n        \"wk05_IM_006\",\n        \"wk05_IM_020\",\n        \"wk05_IM_010\"\n      ],\n      \"dev_id\": \"D7\",\n      \"notes_for_writer\": \"Treat this as a coordinated cultural project. Start with DoDEA\\u2019s curriculum and book bans (wk05_IM_009, wk05_CR_009) and OSHA\\u2019s destruction of safety/DEI publications (wk05_CR_010, wk05_IM_008). Then move to the Stonewall edits and trans erasure (wk05_IM_006, wk05_CR_011, wk05_CR_002) and removal of Black-history references during Black History Month (wk05_CR_012). Add the Kennedy Center takeover (wk05_IM_010) and NEA\\u2019s cancellation of DEI grants (wk05_ES_001) to show capture of high culture. Use the Gulf renaming and symbolic EO (wk05_IM_005, wk05_PA_005) plus Trump\\u2019s 14th Amendment misrepresentation (wk05_IM_004) as examples of rewriting national symbols and constitutional memory. Close with resistance\\u2014student walkouts (wk05_CR_003) and public commentary on disinformation (wk05_IM_015)\\u2014to show this is contested, not uncontested.\",\n      \"one_sentence_thesis\": \"Across schools, monuments, arts institutions, and federal websites, the administration systematically erased DEI, LGBTQ+, and Black history content while asserting unilateral control over national symbols and cultural funding.\",\n      \"supporting_event_ids\": [\n        \"wk05_CR_009\",\n        \"wk05_CR_011\",\n        \"wk05_CR_002\",\n        \"wk05_CR_003\",\n        \"wk05_CR_010\",\n        \"wk05_IM_005\",\n        \"wk05_PA_005\",\n        \"wk05_IM_001\",\n        \"wk05_IM_004\",\n        \"wk05_IM_007\",\n        \"wk05_IM_008\",\n        \"wk05_CR_012\",\n        \"wk05_ES_001\",\n        \"wk05_IM_015\",\n        \"wk05_IM_014\",\n        \"wk05_IM_016\",\n        \"wk05_ES_023\"\n      ],\n      \"title\": \"Civic Education, Culture, and Public Memory Are Rewritten Along Ideological Lines\",\n      \"why_it_matters\": \"Rewriting curricula and public memory narrows the stories a society tells about itself, making it easier to justify present-day exclusion and authoritarianism while marginalizing communities whose histories are erased.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_ES_002\",\n        \"wk05_ES_003\",\n        \"wk05_ES_016\",\n        \"wk05_ES_009\"\n      ],\n      \"dev_id\": \"D8\",\n      \"notes_for_writer\": \"Organize this around three strands: (1) social safety net cuts\\u2014House and Trump-backed budgets (wk05_ES_002, wk05_ES_003) and proposed cuts to Social Security/Medicare/Medicaid/food aid (wk05_ES_016), often framed with unsubstantiated fraud claims (wk05_ES_020, wk05_ES_032, wk05_IM_021); (2) climate and industrial policy reversals\\u2014environmental rollbacks and fossil expansion (wk05_ES_009, wk05_ES_022, wk05_ES_023), EV/CHIPS funding freeze (wk05_ES_014), congestion pricing interference (wk05_ES_019), and ISS defunding rhetoric (wk05_ES_018), contrasted with state-level climate superfund efforts and pushback (wk05_ES_010, wk05_ES_011); and (3) transactional foreign and trade policy\\u2014Ukraine mineral-resource proposal (wk05_ES_029) and tariff maneuvers (wk05_ES_004, wk05_ES_021, wk05_ES_030, wk05_ES_031). Use Begich\\u2019s stance (wk05_ES_015) to show how elected officials normalize harms to their own constituents.\",\n      \"one_sentence_thesis\": \"Trump and congressional allies advanced deep cuts to social programs, climate and industrial policy rollbacks, and fossil-fuel-friendly measures, often justified by inflated or misleading claims of waste and fraud.\",\n      \"supporting_event_ids\": [\n        \"wk05_ES_004\",\n        \"wk05_ES_014\",\n        \"wk05_ES_018\",\n        \"wk05_ES_019\",\n        \"wk05_ES_021\",\n        \"wk05_ES_022\",\n        \"wk05_ES_023\",\n        \"wk05_ES_029\",\n        \"wk05_ES_020\",\n        \"wk05_ES_032\",\n        \"wk05_IM_021\",\n        \"wk05_IM_012\",\n        \"wk05_ES_010\",\n        \"wk05_ES_011\",\n        \"wk05_ES_030\",\n        \"wk05_ES_031\",\n        \"wk05_ES_015\"\n      ],\n      \"title\": \"Austerity and Fossil-Fuel Policy Shift Economic Burdens Onto the Vulnerable\",\n      \"why_it_matters\": \"Redirecting resources away from safety nets, climate resilience, and public goods toward elite and fossil interests both deepens inequality and locks in an economic model that favors regime-aligned actors over democratic accountability.\"\n    },\n    {\n      \"anchor_event_ids\": [\n        \"wk05_CR_006\",\n        \"wk05_CR_007\",\n        \"wk05_CR_008\"\n      ],\n      \"dev_id\": \"D9\",\n      \"notes_for_writer\": \"This development can close the week\\u2019s narrative. Highlight mass protests against DOGE cuts and Trump policies (wk05_CR_006, wk05_CR_007, wk05_CR_008) and localized actions like the DoD school walkout (wk05_CR_003) and Stonewall protests (wk05_CR_002). Pair these with institutional pushback: AP\\u2019s lawsuit (wk05_IM_018), union suits over firings (wk05_IG_008), senators\\u2019 DOGE data oversight (wk05_IG_020), and resignations over data demands (wk05_IM_011, wk05_IM_013). Note court orders temporarily protecting some DEI staff (wk05_IG_012) and whistleblower channels (wk05_IG_005), and ongoing FOIA and environmental process work (wk05_IG_017, wk05_ES_027). Emphasize that while these efforts slow or modify some actions, they do not yet cohere into a force capable of reversing the broader authoritarian drift.\",\n      \"one_sentence_thesis\": \"Protests, resignations, lawsuits, and some court rulings showed pockets of resistance to DOGE cuts, censorship, and purges, but these efforts were scattered and often overruled.\",\n      \"supporting_event_ids\": [\n        \"wk05_CR_003\",\n        \"wk05_CR_002\",\n        \"wk05_IM_018\",\n        \"wk05_IG_012\",\n        \"wk05_IG_005\",\n        \"wk05_IG_006\",\n        \"wk05_IG_008\",\n        \"wk05_IG_020\",\n        \"wk05_IM_011\",\n        \"wk05_IM_013\",\n        \"wk05_IM_015\",\n        \"wk05_ES_010\",\n        \"wk05_ES_027\",\n        \"wk05_IG_017\"\n      ],\n      \"title\": \"Public and Bureaucratic Resistance Emerges but Remains Fragmented\",\n      \"why_it_matters\": \"These actions demonstrate that democratic norms and actors are still fighting back, yet their limited success underscores how quickly structural changes can outpace traditional forms of opposition.\"\n    }\n  ],\n  \"period_label\": \"Week 5\",\n  \"recommended_development_count\": 9,\n  \"sanity_notes\": \"Developments are organized around structural themes rather than categories: DOGE/civil service purge (D1), separation-of-powers erosion (D2), justice system capture (D3), stratified citizenship and immigration (D4), term-limit and January 6 normalization (D5), information and data control (D6), cultural and educational memory rewriting (D7), economic and climate policy realignment (D8), and fragmented resistance (D9). Some events could plausibly sit in multiple developments (e.g., Stonewall edits in both D6 and D7, protests in D6 and D9); to avoid duplication, each event is assigned once where it best advances a coherent narrative. A handful of routine or weakly connected items are left unassigned to keep the outline focused and manageable for a human writer.\",\n  \"unassigned_events\": [\n    {\n      \"event_id\": \"wk05_IG_021\",\n      \"why_unassigned\": \"Background NATO safeguard law from 2023; relevant context but not a moving part of this week\\u2019s main storylines.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_024\",\n      \"why_unassigned\": \"Routine regulatory notices on controlled substances without clear connection to the week\\u2019s major democratic developments.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_025\",\n      \"why_unassigned\": \"Technical FCC updates on FM allotments and accessibility; positive but peripheral to the core narratives.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_026\",\n      \"why_unassigned\": \"Census survey planning is important infrastructure but does not materially shift any of the week\\u2019s highlighted developments.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_028\",\n      \"why_unassigned\": \"Telemedicine buprenorphine rule delay is a discrete policy choice that doesn\\u2019t strongly link to the main authoritarian or resistance arcs this week.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_021\",\n      \"why_unassigned\": \"Consumer confidence data is an economic indicator rather than a driver of the week\\u2019s political developments.\"\n    },\n    {\n      \"event_id\": \"wk05_PA_010\",\n      \"why_unassigned\": \"IVF access order modestly expands rights and sits somewhat at odds with the dominant patterns; can be mentioned in passing if needed but not central to any cluster.\"\n    },\n    {\n      \"event_id\": \"wk05_IG_018\",\n      \"why_unassigned\": \"Closed FEC enforcement meeting is routine and opaque, offering little narrative leverage this week.\"\n    },\n    {\n      \"event_id\": \"wk05_IM_019\",\n      \"why_unassigned\": \"FCC security advisory council meeting is a technical governance step not clearly tied into the week\\u2019s main themes.\"\n    },\n    {\n      \"event_id\": \"wk05_ES_027\",\n      \"why_unassigned\": \"Environmental rule corrections are supportive of process but already lightly referenced as context; not central enough to anchor a development.\"\n    },\n    {\n      \"event_id\": \"wk05_IG_022\",\n      \"why_unassigned\": \"Mangione criminal case is high-profile but not clearly connected to the regime\\u2019s structural moves this week.\"\n    },\n    {\n      \"event_id\": \"wk05_CR_020\",\n      \"why_unassigned\": \"Georgia IVF litigation is important rights context but tangential to the week\\u2019s main authoritarian trends.\"\n    }\n  ],\n  \"week_number\": 5,\n  \"window\": {\n    \"end\": \"2025-02-21\",\n    \"start\": \"2025-02-15\"\n  }\n}",
+    "digest": "The week opened with a rapid, coordinated effort to shrink and reshape the federal government. The White House empowered Elon Musk’s DOGE committee to drive downsizing, agencies began firing and furloughing thousands of workers, and the same group moved to gain access to some of the government’s most sensitive data systems. At the same time, the administration pressed ahead with deregulatory orders, hard‑line immigration enforcement, and efforts to control what the public can read and remember—from renaming the Gulf of Mexico to erasing references to transgender people and Black history from federal sites. By week’s end, mass firings were underway, courts had mostly declined to stop them, and talk of a possible third presidential term and open celebration of January 6 offenders underscored how far the boundaries of executive power and democratic norms were being tested.\n\nOver the weekend, the administration’s new approach to the federal workforce came into view. Trump signed an order giving Musk’s DOGE committee authority to drive federal downsizing, and agencies quickly followed with plans for large layoffs. Health agencies, including the CDC and HHS, prepared to fire thousands of staff even as they continued to manage public health threats. The Forest Service and National Park Service targeted 4,400 probationary workers, raising alarms about wildfire response and conservation capacity. A court approved Musk’s offer of eight months’ pay to encourage resignations across the two‑million‑person workforce, effectively turning a private ally into a central architect of public employment policy. Unions and several states rushed to court, and Judge Tanya Chutkan set an emergency hearing on DOGE’s cuts, but the machinery of the purge was already in motion.\n\nAt the same time, the administration imposed an across‑the‑board federal spending freeze as a March 14 shutdown deadline loomed. Trump’s allies in Congress clashed with Democrats over a funding bill, but the freeze went further, threatening to halt congressionally mandated programs even before any shutdown. Legal experts questioned its lawfulness, noting that the Constitution gives Congress, not the president, control over spending. Yet Republicans, who controlled Washington, still needed Democratic votes in the Senate to keep the government open, turning the freeze into leverage in a broader budget fight.\n\nImmigration policy hardened over the weekend as well. The administration threatened to end parole and Temporary Protected Status protections for Ukrainians and ordered a review of TPS for about a million people from 17 countries. The Justice Department fired more than two dozen immigration judges and candidates, and ICE intensified arrests at courthouses and mandatory check‑ins, including of DACA recipients and people with minimal records, under new daily arrest quotas. These moves signaled a strategy that combined status insecurity, fewer independent adjudicators, and more aggressive enforcement in and around the courts, reshaping who could safely access the legal system.\n\nInside the Justice Department, political pressure produced immediate institutional shock. Leadership confined lawyers in the Public Integrity Section and gave them an hour to decide who would move to dismiss the corruption indictment of New York Mayor Eric Adams or face firing. At least five Public Integrity lawyers and acting SDNY U.S. attorney Danielle Sassoon resigned rather than comply. Reporting indicated that the dismissal was tied to Adams’s cooperation with federal immigration operations, suggesting that prosecutorial decisions were being traded for policy concessions. The episode foreshadowed a week in which the department’s independence would be repeatedly tested.\n\nDOGE’s reach extended beyond personnel decisions into the machinery of regulation and oversight. Representatives from Musk‑aligned entities obtained access to payment and contracting systems at health agencies like CDC and CMS, while USDA and FDA fired staff reviewing Musk’s Neuralink, raising conflict‑of‑interest concerns. SpaceX personnel visited the FAA’s command center to review air traffic control systems, even though the company is regulated by the FAA. These steps blurred the line between regulator and regulated, embedding a politically connected private actor inside systems meant to provide neutral oversight.\n\nCourts and unions began to push back, but only selectively. The DC Circuit refused Trump’s bid to fire whistleblower watchdog Hampton Dellinger, preserving an injunction that kept him in place for the moment. Judge Chutkan scheduled an emergency hearing on DOGE’s cuts, and five federal employee unions sued over mass firings, arguing that the administration was bypassing reduction‑in‑force rules designed to protect against arbitrary dismissals. Yet the Justice Department simultaneously appealed to the Supreme Court to remove Dellinger, framing judicial limits on removals as an impermissible check on presidential power. The result was an early glimpse of a broader struggle over whether independent oversight could survive in the face of an assertive executive.\n\nThe weekend also saw education, culture, and media drawn into the same vortex of executive power. Trump issued an order cutting discretionary federal funds to schools that require COVID‑19 vaccination, tying public health decisions to ideological priorities, and called for shuttering the Department of Education, with reports of plans for an executive order to abolish it. The National Endowment for the Arts canceled grants focused on diversity, equity, and inclusion, and Trump executed a hostile takeover of the Kennedy Center, installing loyalists in leadership. In the realm of language and public memory, Trump proclaimed February 9 “Gulf of America Day” and asserted authority to rename the Gulf of Mexico and even Denali by executive order. When the Associated Press refused to adopt the new name, the administration barred AP from White House briefings, the Oval Office, and Air Force One. Other outlets criticized the move but did not boycott in solidarity, illustrating how access can be used to pressure media without provoking a unified response.\n\nBudget politics sharpened these themes. The House Budget Committee’s Republican majority advanced a plan that would add $4.5 trillion to the deficit by extending tax cuts for the wealthy and corporations, while cutting $1.5 trillion from Medicare, Medicaid, and nutrition assistance. This early blueprint foreshadowed deeper fights over the social safety net and aligned with the administration’s spending freeze. At the same time, LGBTQ+ rights and history came under renewed pressure: protesters gathered at Stonewall after the National Park Service removed “TQ+” from LGBTQ+ references on the monument’s website, and the EEOC moved to dismiss six gender‑identity discrimination cases under a new executive order recognizing only two sexes. The juxtaposition of these symbolic erasures with the depraved‑indifference murder of Sam Nordquist, a transgender man in New York, underscored the real‑world stakes of narrowing legal and cultural recognition.\n\nBy Monday, DOGE’s ambitions had moved from agency systems to the heart of federal data. Reports surfaced that the IRS was preparing to give DOGE broad access to classified taxpayer systems, including detailed returns, while DOGE also sought Social Security data on millions of Americans. Michelle King, acting head of the Social Security Administration, resigned rather than release beneficiary data. A White House spokesperson defended DOGE’s access as necessary to fight “waste, fraud, and abuse,” even as senators Ron Wyden and Elizabeth Warren demanded answers and later fact‑checks exposed major exaggerations in DOGE’s claimed savings. Centralizing access to tax and benefits data in a politically directed unit raised the prospect that financial and personal information could be weaponized against opponents or used to reward allies, with limited external oversight.\n\nThe Justice Department saw further resignations over politicized orders. Denise Cheung, Criminal Division Chief in the U.S. Attorney’s Office in DC, resigned after refusing an order from a Trump appointee to open a criminal probe and freeze assets tied to a Biden‑era contract that she said lacked legal basis. DOJ leadership sent a letter accusing Rep. Robert Garcia of “threatening” Elon Musk over critical comments and launched “Operation Whirlwind” to investigate threats against officials, including inquiries into statements by Sen. Chuck Schumer and Garcia. The use of investigative tools to scrutinize political critics, alongside pressure on career officials to open baseless probes, further eroded the norm that law enforcement should be insulated from partisan agendas.\n\nCensorship spread inside federal workplaces and military schools. OSHA ordered the destruction of 18 workplace safety publications—many unrelated to diversity initiatives beyond containing words like “diversity” or “gender”—including guidance on restroom access for transgender workers. A detailed Defense Department memo directed its 161 schools to strip curricula and libraries of materials on “gender ideology” and “discriminatory equity ideology,” cancel cultural awareness events, and remove content honoring figures like Susan B. Anthony and Martin Luther King Jr. These steps went beyond policy disagreement to the active destruction of documents and narrowing of what students could read about gender, race, and civil rights, using state power to curate memory for a generation of students.\n\nOn Tuesday, the labor and regulatory offensive widened. The administration unilaterally canceled collective bargaining agreements with federal workers and rescinded worker protections for federal contractors, while firing thousands of probationary employees and pressuring 75,000 more to accept resignation offers. Employment lawyers warned that the moves likely violated employee protections, and unions filed suits, but a judge would later allow the downsizing to proceed. In parallel, Trump issued an executive order requiring most independent agencies to submit proposed rules to the White House’s Office of Information and Regulatory Affairs for review, and a companion order granting the White House and attorney general direct authority over independent regulatory agencies’ priorities and budgets. A separate order, framed as “Ensuring Accountability for All Agencies,” further centralized oversight of rulemaking. Together, these orders pulled financial, consumer, and safety regulators under tighter presidential supervision, eroding a key layer of checks and balances.\n\nCourts and states clashed over climate accountability. New York and Vermont’s climate superfund laws, which make fossil fuel companies pay for climate damages, drew a lawsuit from 22 red states and oil trade groups claiming state overreach. Youth climate activists lost a high‑profile case against the EPA, while the agency extended comment periods and published environmental impact statements for major energy projects. These legal battles unfolded as the administration prepared to declare an “energy emergency” and fast‑track fossil fuel projects, setting up a conflict between state‑level attempts to hold polluters financially responsible and federal efforts to ease their path.\n\nNot all judicial decisions favored the administration. A federal appeals court in San Francisco denied the administration’s request to reinstate Trump’s executive order ending birthright citizenship for children of non‑citizens and non‑permanent residents, leaving in place an injunction from a Washington state court. A separate appeals court later rejected an emergency DOJ application on the same issue. By upholding the 14th Amendment’s guarantee of birthright citizenship, the courts preserved a core constitutional principle against an aggressive attempt to redefine who counts as American, even as other parts of the immigration system were being hardened.\n\nWednesday brought a dense cluster of moves that tied together deregulation, personnel purges, and information control. Trump announced that he had instructed DOJ to terminate all remaining U.S. attorneys appointed by Biden, following earlier removals of about 20 holdovers. While presidents routinely replace U.S. attorneys, the scope and timing—paired with ongoing pressure in specific cases like Eric Adams’s—signaled an effort to align federal prosecution more closely with White House priorities. On the same day, Trump signed an executive order directing agencies to identify and rescind or stop enforcing regulations deemed unconstitutional or beyond statutory authority, and another to shrink or terminate several federal entities, including the U.S. Institute of Peace and African Development Foundation. These orders encouraged agencies to unilaterally downgrade rules without waiting for courts, shifting legal and regulatory power toward the executive.\n\nJudges mostly allowed mass firings and furloughs to proceed. A federal judge declined to issue a temporary restraining order blocking mass federal worker firings, redirecting unions to the labor board. Another judge allowed the administration to place more than 2,000 USAID workers on leave. Combined with earlier decisions, these rulings cleared the way for layoffs at IRS, USAID, and other agencies to continue while legal challenges moved slowly. In contrast, a separate judge temporarily blocked the firing of 11 diversity, equity, and inclusion staffers at the CIA and Office of the Director of National Intelligence, underscoring how fragmented judicial checks could be when the executive targeted specific policy areas and agencies.\n\nEnvironmental and local climate policy came under renewed pressure. Invoking an “energy emergency,” the administration created a new fast‑track permit category at the Army Corps of Engineers, allowing 688 pending projects—including over 100 pipelines—to bypass normal environmental review and public comment. Environmental groups sued to restore Biden‑era protections for 625 million acres of federal waters. At the same time, the administration moved to revoke federal approval for New York City’s congestion pricing program, undermining a local effort to reduce traffic and emissions. These steps accelerated fossil fuel expansion while sidelining communities and states that bear environmental and health costs.\n\nCensorship and erasure of marginalized histories intensified online and in schools. Reports showed that federal websites were scrubbing mentions of Black people during Black History Month, while the National Park Service removed transgender references from Stonewall and other pages. In Defense Department schools, librarians and teachers were ordered to remove books on gender and equity, with some libraries closing entirely to comply. These actions built on earlier NEA and OSHA moves to purge DEI‑related content, using federal authority to narrow who appears in official narratives of the nation’s past and present.\n\nPublic resistance grew alongside these changes. Thousands of people protested across the country against Musk’s DOGE‑driven budget cuts, including a rally of more than 1,000 federal workers outside SpaceX’s Washington building led by Rep. Alexandria Ocasio‑Cortez. Separate nationwide protests denounced the administration’s broader actions as undermining democracy and alliances. In the courts, Judge Dale Ho pressed acting Deputy Attorney General Emil Bove on DOJ’s motion to dismiss the Eric Adams indictment, noting that the rationale was policy‑based rather than about the case’s merits. The hearing ended without a decision, leaving open the possibility that charges could be refiled even as key prosecutors had already resigned. Meanwhile, the Associated Press responded to its exclusion from White House events by filing federal lawsuits against the administration and White House officials, arguing that the bans violated First Amendment protections and seeking restoration of access.\n\nThursday shifted attention to the boundaries of presidential power and political violence. At a White House event, Trump asked supporters whether he should run for a third term and mused about constitutional limits. At CPAC, Steve Bannon promoted a constitutional amendment to allow Trump to serve a third term, backed by a “Third Term Project” think tank. While such a change would require a difficult amendment process, the public discussion chipped away at the perceived inviolability of the two‑term limit established after Franklin Roosevelt’s presidency and codified in the 22nd Amendment. At the same conference, individuals convicted for their roles in the January 6 Capitol attack, including Richard Barnett, appeared as honored guests after being pardoned by Trump on his first day back in office. Proud Boys leader Enrique Tarrio, also pardoned, was later arrested for assaulting a protester near the Capitol. Celebrating and pardoning those who attacked Congress signaled tolerance for political violence and weakened deterrence against future assaults on democratic institutions.\n\nImmigration and budget policy moved in tandem. The Senate passed a budget resolution allocating $175 billion for border security and Trump’s mass deportation plan, while also boosting Pentagon spending. Trump then signed an executive order titled “Ending Taxpayer Subsidization of Open Borders,” directing agencies to align programs so that undocumented immigrants could not receive federal benefits and to report “improper” use to DOJ and DHS. In parallel, Trump endorsed the hard‑line House budget plan that extended tax cuts for the wealthy, added $4.5 trillion to the deficit, and mandated $880 billion in cuts from the Energy & Commerce Committee—effectively targeting Medicaid and other health programs. His endorsement undercut Senate Republicans’ more limited proposal and increased the risk of a shutdown as deadlines approached.\n\nDOGE’s narrative about “waste” faced mounting factual challenges. Fact‑checkers and lawmakers highlighted major errors in DOGE’s claims of canceling $16 billion in wasteful contracts, including one touted $8 billion contract that was actually about $8 million. Congressman Nick Begich amplified false claims that millions of people over 100 were receiving Social Security benefits, and later told constituents he was powerless to stop DOGE cuts that cost Alaska federal jobs. These inflated and false claims were being used to justify deep cuts and data grabs, making accurate information a central battleground in the debate over government spending.\n\nForeign policy proposals raised alarms about U.S. security and leverage. The administration floated a “deal” to repeal tariffs on China in exchange for purchase promises, despite past failures of similar agreements, and Trump proposed that the U.S. and China each cut military spending in half—a move analysts warned would amount to unilateral U.S. disarmament given China’s opaque off‑budget spending. In parallel, a White House official pressed Ukraine to stop criticizing Trump and accept a $500 billion deal transferring half its mineral wealth to the U.S., echoing earlier mineral‑for‑support proposals that President Zelensky had rejected. These initiatives suggested a foreign policy that traded long‑term security and alliance credibility for short‑term economic or political gains, and that sought economic leverage over a partner at war.\n\nFriday confirmed that the federal workforce purge would continue and that the state’s capacity in key areas would shrink. The administration moved ahead with mass firings across the federal workforce, often citing “poor performance” even for employees with positive reviews. A judge ruled that federal courts lacked jurisdiction to block the firings, directing unions to the labor board instead. Agencies managing public lands, health, and foreign aid reported deep staffing losses, with particular concern about wildfire response and conservation capacity. In science and environmental policy, the administration removed grants and support for research that used the term “climate” and scrubbed climate references from government websites, as part of a broader campaign that had already halted DEI programs and fast‑tracked fossil fuel permits. Defunding and erasing climate research from official channels further hampered evidence‑based policymaking on a central global challenge.\n\nCourts again acted as a partial counterweight on citizenship. A U.S. appeals court denied DOJ’s emergency application to reinstate Trump’s ban on birthright citizenship, reinforcing the earlier Ninth Circuit decision. The rulings kept in place injunctions that preserved citizenship for children born in the U.S. to non‑citizen and non‑permanent resident parents, reaffirming a core constitutional guarantee and limiting the administration’s ability to redefine membership in the political community by executive order.\n\nOther institutions saw their leadership reshaped along ideological lines. Trump fired Air Force General CQ Brown Jr., the first Black chair of the Joint Chiefs of Staff, along with other top military officials, after Defense Secretary Pete Hegseth criticized Brown’s appointment as driven by diversity considerations. The move followed Hegseth’s earlier directive to plan for significant defense budget cuts and fit into a broader campaign against diversity initiatives in the military. In the civilian sphere, the administration proposed cuts to Social Security, Medicare, Medicaid, and food assistance programs, framing them as efforts to eliminate “waste, fraud, and abuse” despite limited evidence. Analysts noted that many of the hardest‑hit communities were in Republican‑dominated regions that rely heavily on these programs, suggesting that the social safety net was being narrowed even where it was most needed. Immigration enforcement leadership was also reshuffled: top ICE officials, including acting director Caleb Vitello, were reassigned or removed over dissatisfaction with deportation numbers, reinforcing a numbers‑driven enforcement culture that prioritized removals over due process and humanitarian considerations.\n\nTaken together, the week’s developments traced a coherent pattern rather than a series of isolated controversies. Mass firings and the dismantling of collective bargaining made the civil service more vulnerable to political direction. Executive orders pulled independent regulators, prosecutors, and watchdogs closer to the White House, while DOGE’s expanding reach into data systems and budgets gave a private‑aligned unit unusual influence over public policy. Immigration crackdowns, social safety net cuts, and the celebration of January 6 offenders all pointed toward a more stratified vision of rights and belonging. At the same time, efforts to control information—through media access, school curricula, federal websites, and climate research—narrowed the space for independent knowledge and public memory. Courts, unions, states, and protesters mounted pockets of resistance, preserving birthright citizenship, temporarily shielding some watchdogs and diversity staff, and challenging censorship and environmental rollbacks. But the overall trajectory was one of a leaner, more politicized state, with fewer internal checks and a more contested boundary between executive power and the constitutional and civic norms that have historically constrained it.\n"
+  }
+}

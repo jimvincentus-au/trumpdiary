@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "phase2_key_themes_output.schema.json",
+  "title": "Trump Chronicles Key Themes Output",
+  "description": "Schema for the back-matter Key Themes appendix output for Trump Chronicles.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_name",
+    "schema_version",
+    "section",
+    "book_title",
+    "build",
+    "generated_from",
+    "themes"
+  ],
+  "properties": {
+    "schema_name": {
+      "type": "string",
+      "const": "phase2_key_themes_output"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "2.0"
+    },
+    "section": {
+      "type": "string",
+      "const": "key_themes"
+    },
+    "book_title": {
+      "type": "string",
+      "const": "Trump Chronicles"
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "created_at",
+        "created_by",
+        "model",
+        "run_id",
+        "prompt_version",
+        "git_commit"
+      ],
+      "properties": {
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "prompt_version": {
+          "type": "string"
+        },
+        "git_commit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "generated_from": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analytic_brief_pattern",
+        "metadata_stack_pattern",
+        "weekly_spine_pattern",
+        "timeline_by_week_file"
+      ],
+      "properties": {
+        "analytic_brief_pattern": {
+          "type": "string"
+        },
+        "metadata_stack_pattern": {
+          "type": "string"
+        },
+        "weekly_spine_pattern": {
+          "type": "string"
+        },
+        "timeline_by_week_file": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "themes": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Theme entries in intended print order.",
+      "items": {
+        "$ref": "#/$defs/theme_entry"
+      }
+    }
+  },
+  "$defs": {
+    "theme_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "theme_id",
+        "theme_name",
+        "sort_order",
+        "framing_line",
+        "body",
+        "recurring_forms",
+        "locator_weeks",
+        "source_summary"
+      ],
+      "properties": {
+        "theme_id": {
+          "type": "string",
+          "pattern": "^THEME_[A-Z0-9_]{3,100}$"
+        },
+        "theme_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sort_order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "framing_line": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short defining line for the theme."
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Reader-facing paragraph explaining why the theme matters in democratic terms and how it operates in the book."
+        },
+        "recurring_forms": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "description": "Recurring forms or common methods through which the theme appears in the book.",
+          "items": {
+            "$ref": "#/$defs/recurring_form"
+          }
+        },
+        "locator_weeks": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Selected weeks in which the theme is especially visible or illustrative.",
+          "items": {
+            "$ref": "#/$defs/week_locator"
+          }
+        },
+        "source_summary": {
+          "$ref": "#/$defs/source_summary"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "recurring_form": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "form_id",
+        "form_name",
+        "form_description"
+      ],
+      "properties": {
+        "form_id": {
+          "type": "string",
+          "pattern": "^FORM_[A-Z0-9_]{3,100}$"
+        },
+        "form_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "form_description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "patterns": {
+          "type": "array",
+          "description": "Optional internal pattern list used by deterministic detection code.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "week_locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "week",
+        "relevance"
+      ],
+      "properties": {
+        "week": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "relevance": {
+          "type": "string",
+          "enum": [
+            "primary",
+            "secondary",
+            "supporting"
+          ]
+        }
+      }
+    },
+    "source_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analytic_brief_weeks",
+        "metadata_stack_weeks",
+        "weekly_spine_weeks"
+      ],
+      "properties": {
+        "analytic_brief_weeks": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "metadata_stack_weeks": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "weekly_spine_weeks": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    }
+  }
+}

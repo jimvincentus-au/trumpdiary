@@ -1,0 +1,238 @@
+{
+  "schema_name": "phase2_key_themes_output",
+  "schema_version": "2.0",
+  "section": "key_themes",
+  "book_title": "Trump Chronicles",
+  "build": {
+    "created_at": null,
+    "created_by": "build_key_themes.py",
+    "model": null,
+    "run_id": null,
+    "prompt_version": "deterministic-v2",
+    "git_commit": null
+  },
+  "generated_from": {
+    "analytic_brief_pattern": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week N/weekly_analytic_brief_weekN.json",
+    "metadata_stack_pattern": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week N/weekly_digest_metadata_stack_weekN.json",
+    "weekly_spine_pattern": "/Volumes/PRINTIFY24/Democracy Clock Automation/Step 3/Weeks/Week N/weekly_digest_spine_weekN.json",
+    "timeline_by_week_file": "/Volumes/PRINTIFY24/Democracy Clock Automation/Trump Diary/10_BackMatter/timeline_by_week.json"
+  },
+  "themes": [
+    {
+      "theme_id": "THEME_EXECUTIVE_OVERREACH",
+      "theme_name": "Executive Overreach",
+      "sort_order": 1,
+      "framing_line": "The recurrent use of unilateral executive action to outrun deliberation, oversight, and normal institutional process.",
+      "body": "This book repeatedly shows the presidency pressing beyond ordinary democratic restraint: using orders, emergency claims, agency control, personnel power, and unilateral directives to reset policy before Congress, the courts, or the public can fully respond.",
+      "recurring_forms": [
+        {
+          "form_id": "FORM_CIRCUMVENTION_OF_OVERSIGHT",
+          "form_name": "Circumvention of Oversight",
+          "form_description": "Weakening, sidelining, or bypassing Congress, inspectors general, reporting duties, or public scrutiny.",
+          "patterns": ["oversight", "inspectors general", "inspector general", "reporting duty", "congressional scrutiny", "subpoena", "stonewall", "ignore requests"]
+        },
+        {
+          "form_id": "FORM_EMERGENCY_OR_EXCEPTIONAL_POWERS",
+          "form_name": "Emergency or Exceptional Powers",
+          "form_description": "Invoking crisis, invasion, national security, or extraordinary necessity to enlarge executive latitude.",
+          "patterns": ["emergency", "national security", "invasion", "extraordinary powers", "exceptional powers", "crisis authority"]
+        },
+        {
+          "form_id": "FORM_USURPATION_OF_OTHER_POWERS",
+          "form_name": "Usurpation of Other Powers",
+          "form_description": "Asserting powers assigned to Congress, the courts, independent agencies, or the states.",
+          "patterns": ["congressional power", "states' powers", "state authority", "independent agency", "court authority", "power of the purse", "preemption"]
+        },
+        {
+          "form_id": "FORM_ADMINISTRATIVE_COMMANDEERING",
+          "form_name": "Administrative Commandeering",
+          "form_description": "Repurposing agencies, budgets, hiring systems, classifications, or internal procedures for political control.",
+          "patterns": ["schedule f", "budget freeze", "funding freeze", "civil service", "agency control", "reclassification", "personnel files"]
+        },
+        {
+          "form_id": "FORM_AFTER_THE_FACT_GOVERNANCE",
+          "form_name": "After-the-Fact Governance",
+          "form_description": "Acting first, then forcing institutions to respond after the decision has already changed facts on the ground.",
+          "patterns": ["after the fact", "fait accompli", "implemented before review", "already in effect", "retroactive justification"]
+        }
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_EXECUTIVE_PRIVATE_FUSION",
+      "theme_name": "Executive–Private Fusion",
+      "sort_order": 2,
+      "framing_line": "Private actors, business interests, and loyalist networks become embedded in state power rather than kept at arm’s length from it.",
+      "body": "Again and again, the year shows the boundary between public authority and private leverage eroding. This matters democratically because state power becomes harder to audit, less accountable to law, and more vulnerable to patronage, self-dealing, and coercive informality.",
+      "recurring_forms": [
+        {"form_id": "FORM_PRIVATE_ACTORS_INSIDE_STATE_FUNCTIONS", "form_name": "Private Actors Inside State Functions", "form_description": "Unofficial or thinly supervised private operatives gain access to government machinery, data, or decision channels.", "patterns": ["DOGE", "Musk", "private team", "outside advisers", "personnel files", "federal data"]},
+        {"form_id": "FORM_PATRONAGE_AND_SELF_DEALING", "form_name": "Patronage and Self-Dealing", "form_description": "Public decisions track private advantage, donor networks, or personal loyalties rather than public purpose.", "patterns": ["patronage", "self-dealing", "donor", "ally business", "conflict of interest"]},
+        {"form_id": "FORM_INFORMAL_POWER_CHANNELS", "form_name": "Informal Power Channels", "form_description": "Influence flows through ad hoc relationships, personal networks, and opaque side channels rather than ordinary accountability structures.", "patterns": ["backchannel", "informal channel", "private leverage", "side channel", "opaque process"]},
+        {"form_id": "FORM_OUTSOURCED_COERCION_OR_CONTROL", "form_name": "Outsourced Coercion or Control", "form_description": "State functions are effectively outsourced to actors whose authority is unclear but whose influence is real.", "patterns": ["outsourced", "contractor control", "private enforcement", "external team"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_RULE_OF_LAW_INVERSION",
+      "theme_name": "Rule-of-Law Inversion",
+      "sort_order": 3,
+      "framing_line": "Independent enforcement is recast as partisan abuse while allies are shielded and opponents are targeted.",
+      "body": "A democratic system depends on law being applied by institutions that are not simply instruments of the ruler. Across the year, prosecutions, pardons, purges, investigative priorities, and legal rhetoric repeatedly shift in ways that protect regime allies, weaken corruption controls, and redefine accountability as persecution.",
+      "recurring_forms": [
+        {"form_id": "FORM_PROTECTION_OF_ALLIES", "form_name": "Protection of Allies", "form_description": "Pardons, non-enforcement, personnel shielding, or selective lenience for loyalists and politically useful actors.", "patterns": ["pardon", "clemency", "ally protected", "lenience", "non-enforcement"]},
+        {"form_id": "FORM_TARGETING_OF_OPPONENTS", "form_name": "Targeting of Opponents", "form_description": "Investigations, threats, prosecutions, or administrative burdens directed at critics, rivals, or disfavored groups.", "patterns": ["retaliation", "investigation of critics", "targeted opponents", "administrative burden", "threatened prosecution"]},
+        {"form_id": "FORM_POLITICIZATION_OF_ENFORCEMENT", "form_name": "Politicization of Enforcement", "form_description": "DOJ, FBI, or related enforcement priorities are reshaped around loyalty, grievance, or ideological objectives.", "patterns": ["DOJ", "FBI", "public integrity", "weaponization", "law enforcement priorities"]},
+        {"form_id": "FORM_CORRUPTION_CONTROL_AS_PERSECUTION", "form_name": "Corruption Control as “Persecution”", "form_description": "Bribery, ethics, influence, or accountability inquiries are reframed as illegitimate partisan warfare.", "patterns": ["persecution", "witch hunt", "ethics inquiry", "corruption probe", "accountability as persecution"]},
+        {"form_id": "FORM_LAW_AS_DETERRENT_THEATER", "form_name": "Law as Deterrent Theater", "form_description": "The threat of legal exposure is used to chill dissent and discipline institutions even without a final legal win.", "patterns": ["chilling effect", "threat of prosecution", "deterrent", "legal threat", "discipline institutions"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_CIVIL_SERVICE_AS_TARGET_AND_TERRAIN",
+      "theme_name": "Civil Service as Target and Terrain",
+      "sort_order": 4,
+      "framing_line": "The professional bureaucracy is weakened, politicized, or hollowed out so it can be replaced by loyalists, contractors, or fear-driven compliance.",
+      "body": "The struggle over personnel is not administrative trivia. It determines whether government acts through law, expertise, and continuity, or through personal loyalty, intimidation, and ideological capture.",
+      "recurring_forms": [
+        {"form_id": "FORM_PURGES_AND_REMOVALS", "form_name": "Purges and Removals", "form_description": "Career officials are fired, sidelined, or pressured out in ways that weaken institutional independence.", "patterns": ["fired", "purged", "removed", "administrative leave", "forced out"]},
+        {"form_id": "FORM_RECLASSIFICATION_AND_LOYALTY_REDESIGN", "form_name": "Reclassification and Loyalty Redesign", "form_description": "Personnel systems are reworked to make career roles more vulnerable to ideological control.", "patterns": ["Schedule F", "reclassification", "loyalty test", "at-will"]},
+        {"form_id": "FORM_CAPACITY_HOLLOWING", "form_name": "Capacity Hollowing", "form_description": "Buyouts, freezes, reorganizations, and attrition reduce state capacity while preserving political control.", "patterns": ["buyout", "hiring freeze", "attrition", "capacity", "staff cuts"]},
+        {"form_id": "FORM_FEAR_DRIVEN_COMPLIANCE", "form_name": "Fear-Driven Compliance", "form_description": "Officials remain in place but are pushed toward obedience by uncertainty, threat, or anticipatory self-censorship.", "patterns": ["fear", "compliance", "self-censorship", "chilling effect inside agencies"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_INFORMATION_AND_MEMORY_CONTROL",
+      "theme_name": "Information and Memory Control",
+      "sort_order": 5,
+      "framing_line": "Data, history, media access, and the public factual baseline are repeatedly manipulated as instruments of power.",
+      "body": "This book is not only about policy decisions. It is also about who gets to define reality. When records vanish, media access is reshuffled, public history is rewritten, and disfavored facts are suppressed, democratic self-government loses the common ground it requires.",
+      "recurring_forms": [
+        {"form_id": "FORM_RECORD_ERASURE_OR_SUPPRESSION", "form_name": "Record Erasure or Suppression", "form_description": "Public records, datasets, reports, or institutional memory are removed, altered, or hidden.", "patterns": ["deleted", "scrubbed", "removed from website", "dataset", "report suppressed"]},
+        {"form_id": "FORM_HISTORY_REWRITING", "form_name": "History Rewriting", "form_description": "Public history and civic memory are revised to fit ideological priorities.", "patterns": ["rewrote history", "Stonewall", "museum", "curriculum", "public history"]},
+        {"form_id": "FORM_MEDIA_ACCESS_MANIPULATION", "form_name": "Media Access Manipulation", "form_description": "Press access, platform visibility, or media hierarchy is reorganized to reward friendlier narratives.", "patterns": ["press access", "credential", "briefing room", "friendlier outlets", "public broadcasting"]},
+        {"form_id": "FORM_FACTUAL_BASELINE_DESTABILIZATION", "form_name": "Factual Baseline Destabilization", "form_description": "Conflicting claims, denials, propaganda, and selective disclosure undermine the public’s shared understanding of events.", "patterns": ["false claims", "denial", "propaganda", "misleading", "statistical manipulation"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_ATTACKS_ON_DISSENT",
+      "theme_name": "Attacks on Dissent",
+      "sort_order": 6,
+      "framing_line": "Speech, protest, academic independence, and civil-society opposition are treated as threats to be chilled, punished, or administratively constrained.",
+      "body": "A democracy depends on dissent not merely being legal but being politically survivable. Across the book, protest, campus speech, critical media, and civic opposition face escalating pressure through funding threats, prosecutions, immigration tools, and policing.",
+      "recurring_forms": [
+        {"form_id": "FORM_PROTEST_CRIMINALIZATION_OR_CHILLING", "form_name": "Protest Criminalization or Chilling", "form_description": "Demonstration, assembly, or disruptive criticism is met with punitive threats, policing, or regulatory pressure.", "patterns": ["protest", "assembly", "crackdown", "police response", "permit pressure"]},
+        {"form_id": "FORM_ACADEMIC_AND_CAMPUS_PRESSURE", "form_name": "Academic and Campus Pressure", "form_description": "Universities, students, or faculty are pressured through funding, investigations, speech rules, or immigration consequences.", "patterns": ["campus", "university", "student visa", "faculty", "campus speech"]},
+        {"form_id": "FORM_MEDIA_AND_CIVIL_SOCIETY_INTIMIDATION", "form_name": "Media and Civil Society Intimidation", "form_description": "Critical media outlets and civic organizations are threatened, defunded, delegitimized, or constrained.", "patterns": ["NGO", "media outlet", "defund", "delegitimize", "civil society"]},
+        {"form_id": "FORM_ADMINISTRATIVE_RETALIATION_FOR_CRITICISM", "form_name": "Administrative Retaliation for Criticism", "form_description": "Government levers are used to penalize opposition voices without needing direct censorship.", "patterns": ["retaliation", "funding threat", "audit threat", "regulatory threat", "visa threat"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_SELECTIVE_ENFORCEMENT",
+      "theme_name": "Selective Enforcement",
+      "sort_order": 7,
+      "framing_line": "State power is applied unevenly depending on loyalty, vulnerability, usefulness, or ideological fit.",
+      "body": "One of the clearest democratic warning signs is not simply harsher enforcement, but unequal enforcement. Throughout the year, coercive authority appears repeatedly to fall hardest on the weak, the disfavored, and the politically exposed, while allies and aligned constituencies are treated differently.",
+      "recurring_forms": [
+        {"form_id": "FORM_VULNERABILITY_TARGETING", "form_name": "Vulnerability Targeting", "form_description": "Enforcement falls most heavily on groups least able to resist politically, legally, or financially.", "patterns": ["vulnerable", "migrant", "student", "noncitizen", "poor communities"]},
+        {"form_id": "FORM_LOYALTY_BASED_LENIENCE", "form_name": "Loyalty-Based Lenience", "form_description": "Aligned actors receive softer treatment, exemptions, or slower enforcement.", "patterns": ["ally", "favored", "exemption", "lenience", "special treatment"]},
+        {"form_id": "FORM_IDEOLOGICAL_ASYMMETRY", "form_name": "Ideological Asymmetry", "form_description": "The state responds differently to similar conduct depending on political or ideological alignment.", "patterns": ["uneven enforcement", "asymmetry", "double standard", "political alignment"]},
+        {"form_id": "FORM_DETERRENT_EXAMPLE_MAKING", "form_name": "Deterrent Example-Making", "form_description": "A few visible cases are used to send a broader warning to others.", "patterns": ["make an example", "deterrent", "warning shot", "visible case"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_IMMIGRATION_AS_A_TEST_CASE_FOR_POWER",
+      "theme_name": "Immigration as a Test Case for Power",
+      "sort_order": 8,
+      "framing_line": "Immigration becomes the proving ground for exceptional powers, reduced due process, and coercive governance at scale.",
+      "body": "The book shows immigration policy functioning as more than border policy. It becomes the administration’s most elastic field for detention, expulsion, militarization, surveillance, and jurisdictional experimentation, with consequences that spill into the wider constitutional order.",
+      "recurring_forms": [
+        {"form_id": "FORM_DUE_PROCESS_REDUCTION", "form_name": "Due Process Reduction", "form_description": "Immigration enforcement is used to normalize weaker procedural protections and faster coercive outcomes.", "patterns": ["due process", "summary removal", "expedited", "hearing denied", "deportation without review"]},
+        {"form_id": "FORM_DETENTION_AND_EXPULSION_ESCALATION", "form_name": "Detention and Expulsion Escalation", "form_description": "Detention, removal, and exclusion are expanded in scale, speed, or severity.", "patterns": ["detention", "deportation", "expulsion", "Guantánamo", "ICE"]},
+        {"form_id": "FORM_EXCEPTIONAL_AUTHORITY_TESTING", "form_name": "Exceptional Authority Testing", "form_description": "Immigration becomes the field in which the administration tests broader claims of emergency, war, or executive authority.", "patterns": ["Alien Enemies Act", "emergency", "national security", "wartime authority", "invasion"]},
+        {"form_id": "FORM_SPILLOVER_INTO_BROADER_CONSTITUTIONAL_ORDER", "form_name": "Spillover into the Broader Constitutional Order", "form_description": "Methods developed in immigration enforcement begin to reshape norms beyond immigration itself.", "patterns": ["birthright citizenship", "militarized enforcement", "jurisdictional experiment", "constitutional spillover"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_TRANSACTIONAL_NATIONALISM",
+      "theme_name": "Transactional Nationalism",
+      "sort_order": 9,
+      "framing_line": "Foreign policy, trade, aid, and security are repeatedly used as unilateral bargaining tools rather than constrained public policy.",
+      "body": "International actions in this book often mirror domestic ones: shock, centralization, and leverage. Aid, tariffs, sanctions, territorial rhetoric, and multilateral withdrawals are used not as elements of a stable rules-based order but as executive instruments of pressure and spectacle.",
+      "recurring_forms": [
+        {"form_id": "FORM_AID_AND_SECURITY_AS_LEVERAGE", "form_name": "Aid and Security as Leverage", "form_description": "Assistance, defense commitments, or humanitarian tools are repurposed as coercive bargaining chips.", "patterns": ["foreign aid", "USAID", "security assistance", "leverage", "suspend aid"]},
+        {"form_id": "FORM_TARIFFS_AND_SANCTIONS_AS_EXECUTIVE_WEAPONS", "form_name": "Tariffs and Sanctions as Executive Weapons", "form_description": "Trade and sanctions policy become instruments of personalistic pressure and unilateral showmanship.", "patterns": ["tariff", "sanction", "trade war", "executive leverage"]},
+        {"form_id": "FORM_TERRITORIAL_OR_SOVEREIGNTY_PRESSURE", "form_name": "Territorial or Sovereignty Pressure", "form_description": "Territorial claims, border rhetoric, or sovereignty disputes are used as spectacles of executive strength.", "patterns": ["Panama", "Greenland", "Canada", "territory", "annex"]},
+        {"form_id": "FORM_MULTILATERAL_DISRUPTION", "form_name": "Multilateral Disruption", "form_description": "International institutions and rules-based commitments are weakened in favor of unilateral executive maneuver.", "patterns": ["UN", "withdrawal", "multilateral", "ICC", "alliance pressure"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_COURTS_AS_COUNTERWEIGHT",
+      "theme_name": "Courts as Counterweight",
+      "sort_order": 10,
+      "framing_line": "Judges, litigation, and procedural challenges repeatedly emerge as the principal institutional brakes on executive acceleration.",
+      "body": "The judiciary is not portrayed here as a guaranteed savior. But week after week, it appears as one of the few institutions still capable of slowing, clarifying, or temporarily blocking executive moves that other branches will not stop in time.",
+      "recurring_forms": [
+        {"form_id": "FORM_TEMPORARY_BLOCKS_AND_INJUNCTIONS", "form_name": "Temporary Blocks and Injunctions", "form_description": "Courts slow executive action through injunctions, stays, and temporary restraining orders.", "patterns": ["injunction", "TRO", "temporary restraining order", "stay", "blocked"]},
+        {"form_id": "FORM_PROCEDURAL_ACCOUNTABILITY", "form_name": "Procedural Accountability", "form_description": "Litigation forces the administration to explain, document, or justify actions it sought to rush through.", "patterns": ["procedural", "APA", "record", "justification", "court filing"]},
+        {"form_id": "FORM_TIME_BUYING_FOR_OTHER_ACTORS", "form_name": "Time-Buying for Other Actors", "form_description": "Judicial intervention creates space for states, institutions, media, or civil society to respond.", "patterns": ["temporary relief", "pause", "delayed implementation", "time to respond"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_LOYALTY_OVER_COMPETENCE",
+      "theme_name": "Loyalty Over Competence",
+      "sort_order": 11,
+      "framing_line": "Appointments, restructurings, and removals repeatedly favor ideological obedience over expertise, independence, or administrative capacity.",
+      "body": "A recurring pattern in the book is not just that institutions are politicized, but that competence itself is downgraded. This matters because democratic governance depends on capable institutions, not merely obedient ones.",
+      "recurring_forms": [
+        {"form_id": "FORM_IDEOLOGICAL_APPOINTMENT_PREFERENCE", "form_name": "Ideological Appointment Preference", "form_description": "Leadership choices prioritize loyalty, grievance, or ideological conformity over experience and independence.", "patterns": ["appointed", "loyalist", "ideologue", "confirmed", "political ally"]},
+        {"form_id": "FORM_EXPERTISE_DEVALUATION", "form_name": "Expertise Devaluation", "form_description": "Professional knowledge and administrative experience are sidelined in favor of obedience or spectacle.", "patterns": ["expertise", "career official", "scientific staff", "dismissed experts"]},
+        {"form_id": "FORM_CAPACITY_SACRIFICED_FOR_CONTROL", "form_name": "Capacity Sacrificed for Control", "form_description": "Institutional competence is knowingly weakened because control is treated as more important than performance.", "patterns": ["capacity", "vacancy", "hollowed out", "control over competence"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    },
+    {
+      "theme_id": "THEME_NORMALIZATION_THROUGH_REPETITION",
+      "theme_name": "Normalization Through Repetition",
+      "sort_order": 12,
+      "framing_line": "Methods that begin as shocks gradually become routine through repetition, fatigue, and the steady lowering of expectations.",
+      "body": "Part of the book’s force comes from chronology itself. Similar moves recur across weeks—purges, threats, denials, emergency claims, retaliations—until once-exceptional conduct starts to look ordinary. This appendix gathers those repetitions back into view.",
+      "recurring_forms": [
+        {"form_id": "FORM_SHOCK_TO_ROUTINE", "form_name": "Shock to Routine", "form_description": "Conduct that initially appears extraordinary becomes normal through repetition and habituation.", "patterns": ["again", "repeatedly", "continued", "routine", "normalized"]},
+        {"form_id": "FORM_FATIGUE_AND_LOWERED_EXPECTATIONS", "form_name": "Fatigue and Lowered Expectations", "form_description": "Public and institutional exhaustion reduces the perceived severity of recurring abuses.", "patterns": ["fatigue", "outrage cycle", "attention shift", "lowered expectations"]},
+        {"form_id": "FORM_METHOD_REUSE_ACROSS_DOMAINS", "form_name": "Method Reuse Across Domains", "form_description": "The same governing methods recur in immigration, speech, personnel, justice, and foreign policy.", "patterns": ["same pattern", "across agencies", "across domains", "reused method"]}
+      ],
+      "locator_weeks": [],
+      "source_summary": {"analytic_brief_weeks": [], "metadata_stack_weeks": [], "weekly_spine_weeks": []},
+      "notes": []
+    }
+  ]
+}

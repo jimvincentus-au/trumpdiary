@@ -57,8 +57,15 @@
       ],
       "properties": {
         "created_at": {
-          "type": "string",
-          "format": "date-time"
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "created_by": {
           "type": "string"

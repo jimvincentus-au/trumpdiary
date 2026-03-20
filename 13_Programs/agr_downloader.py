@@ -15,7 +15,7 @@ from playwright.sync_api import sync_playwright
 
 LOGIN_URL = "https://agr.makebettinggreat.com"
 REPORT_URL_TEMPLATE = "https://agrapi.makebettinggreat.com/v1/race/detail/report/{yyyymmdd}"
-DEFAULT_OUTPUT_DIR = "/Volumes/SCANDISK128/AU Mutts"
+DEFAULT_OUTPUT_DIR = "/Volumes/SCANDISK128/Horse Analysis/AU Mutts"
 DEFAULT_TIMEOUT_MS = 30000
 
 
